@@ -9,8 +9,8 @@ rerun the tool, and the artwork follows.
 
 | Theme | Where | Contents |
 |---|---|---|
-| Dark | `src/skin/default/` (in place) | all 441 PNG and 57 SVG recoloured |
-| Light | `src/skin/light/` | the same 441 PNG and 57 SVG, recoloured for light |
+| Dark | `src/skin/default/` (in place) | all 433 PNG and 57 SVG recoloured |
+| Light | `src/skin/light/` | the same 433 PNG and 57 SVG, recoloured for light |
 
 `src/skin/light/` holds only the files that change. The files left alone (see
 [Left unchanged](#left-unchanged)) are not copied, so a light skin takes
@@ -23,7 +23,7 @@ Each file has one of six treatments. The first matching rule in the tool's
 
 | Treatment | For | Neutral (grey) pixels | Coloured pixels |
 |---|---|---|---|
-| `icon` | status icons, most of `icons/`, `dvr/`, `obh/`, `infobar/` | tone ramp | role for the hue, shading kept |
+| `icon` | status icons, most of `icons/`, `dvr/`, `infobar/` | tone ramp | role for the hue, shading kept |
 | `neutral` | menu icons, `screen_icons/`, audio/video logos, `window/`, `border/` | tone ramp | left as drawn |
 | `plate` | keycaps in `buttons/` | plate ramp | none |
 | `tile` | the thin EPG entry backgrounds in `epg/` | tone ramp | container role for the hue |
@@ -66,15 +66,13 @@ vanish on a dark surface but would turn into a grey haze once inverted.
 
 ## Left unchanged
 
-111 files are skipped in both themes because they are full-colour artwork that
+100 files are skipped in both themes because they are full-colour artwork that
 reads on either surface, or are not part of the on-screen theme:
 
 - `weather_icons/` (weather illustrations)
 - `ratings/` (age-rating badges, whose colours carry meaning)
 - `iconsVFD/` (front-panel display icons)
 - logos, the preview image, the default picon and the `.jpg`
-- device illustrations and test images in `obh/` (set-top box, smartcards,
-  positioner test card, monitor lights)
 - the red-to-green signal bar in `infobar/`
 
 Coloured pixels in `neutral` files (for example the Jellyfin and Emby menu
