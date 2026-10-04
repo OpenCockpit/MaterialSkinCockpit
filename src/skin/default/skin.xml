@@ -2375,31 +2375,31 @@ if callable(loadLogo):
 		<widget enableWrapAround="1" itemCornerRadius="6" position="515,495" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_surface_container_lowest" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" size="889,320" source="streams" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-												{"default": ( 45, [ 
-													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+														{"default": ( 45, [ 
+															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
 				], True, "showNever"),
-												"notselected": (45, [ 
-													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+														"notselected": (45, [ 
+															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-												], False, "showNever"),
-												"subs": (45, [
-													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+														], False, "showNever"),
+														"subs": (45, [
+															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-												], True, "showNever"),
-												"subs_notselected": (45, [
-													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+														], True, "showNever"),
+														"subs_notselected": (45, [
+															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-												], False, "showNever")
-												},
+														], False, "showNever")
+														},
 				"fonts": [gFont("Regular",28), gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -2743,10 +2743,10 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(15,3), size=(825,37), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the essid
-											MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
-											MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
-											MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
-											MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
+													MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
+													MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
+													MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
+													MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",27)],
 				"itemHeight": 75
@@ -2770,7 +2770,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(15,29), size=(48,48), png=2), # index 3 is the interface pixmap
-										MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
+												MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",25)],
 				"itemHeight": 105
@@ -2878,111 +2878,111 @@ if callable(loadLogo):
 		<widget conditional="indicatorU0" position="125,150" render="Listbox" scrollbarMode="showNever" size="1300,743" source="list" transparent="0">
 			<convert type="TemplatedMultiContent">
 			{
-										"templates": {
-											# Simple help with no headings ("flat")
-											# data[1:]=[helpText]
-											"default": [
-											57,  # itemHeight
-											[
-											MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
-											]
+												"templates": {
+													# Simple help with no headings ("flat")
+													# data[1:]=[helpText]
+													"default": [
+													57,  # itemHeight
+													[
+													MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
+													]
 				],
-											# Simple help with headings
-											# data[1:]=[heading, None]  # For heading entries
-											# data[1:]=[None, helpText]  # For help entries
-											"default+headings": [  # data[1:]=[helpText]
-											57,  # itemHeight
-											[
-											MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
+													# Simple help with headings
+													# data[1:]=[heading, None]  # For heading entries
+													# data[1:]=[None, helpText]  # For help entries
+													"default+headings": [  # data[1:]=[helpText]
+													57,  # itemHeight
+													[
+													MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
 					MultiContentEntryText(pos=(30,6), size=(1070,57), font=1, text=2),
-											]
-											],
-											# Extended help with no headings
-											# data[1:]=[helpText, extendedHelpText]
-											"extended": [
-											86,  # itemHeight
-											[
-											MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
+													]
+													],
+													# Extended help with no headings
+													# data[1:]=[helpText, extendedHelpText]
+													"extended": [
+													86,  # itemHeight
+													[
+													MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
 					MultiContentEntryText(pos=(0,60), size=(1100,40), color=0x009e9fa4, font=3, text=2),
-											],
-											],
-											# Extended help with headings
-											# data[1:]=[heading, None, None]  # For heading entries
-											# data[1:]=[None, helpText, extendedHelpText]  # For help entries
-											"extended+headings": [
-											86,  # itemHeight
-											[
-											MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
+													],
+													],
+													# Extended help with headings
+													# data[1:]=[heading, None, None]  # For heading entries
+													# data[1:]=[None, helpText, extendedHelpText]  # For help entries
+													"extended+headings": [
+													86,  # itemHeight
+													[
+													MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
 					MultiContentEntryText(pos=(30,0), size=(1070,45), font=2, text=2),
 					MultiContentEntryText(pos=(30,45), size=(1070,40), color=0x009e9fa4, font=3, text=3),
-											],
-											],
-										},
+													],
+													],
+												},
 				"fonts": [gFont("Regular",39), gFont("Regular",36), gFont("Regular",38), gFont("Regular",38)],
 				"itemHeight": 57
-										}
-										#{
-										# Template for use when "description" is used
-										#  "templates": {
-										#    # Simple help with no headings ("flat")
-										#    # data[1:]=[helpText]
-										#    "default": [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-										#      ]
-										#    ],
-										#    # Simple help with headings
-										#    # data[1:]=[heading, None]  # For heading entries
-										#    # data[1:]=[None, helpText]  # For help entries
-										#    "default+headings": [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-										#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-										#      ]
-										#    ],
-										#    # Extended help with no headings
-										#    # data[1:]=[helpText, extendedHelpText]
-										#    "extended": [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-										#      ]
-										#    ],
-										#    # Extended help with headings
-										#    # data[1:]=[heading, None, None]  # For heading entries
-										#    # data[1:]=[None, helpText, extendedHelpText]  # For help entries
-										#    "extended+headings": [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-										#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-										#      ]
-										#    ],
-										#  },
-										#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
-										#  "itemHeight": 57
-										#}
-										# Compact template for use when "description" is used
-										#{ "templates": dict(
-										#    list(dict.fromkeys(("default", "extended"), [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-										#      ]
-										#    ]).items()) +
-										#    list(dict.fromkeys(("default+headings", "extended+headings"), [
-										#      57,  # itemHeight
-										#      [
-										#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-										#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-										#      ]
-										#    ]).items())
-										#  ),
-										#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
-										#  "itemHeight": 57
-										#
+												}
+												#{
+												# Template for use when "description" is used
+												#  "templates": {
+												#    # Simple help with no headings ("flat")
+												#    # data[1:]=[helpText]
+												#    "default": [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
+												#      ]
+												#    ],
+												#    # Simple help with headings
+												#    # data[1:]=[heading, None]  # For heading entries
+												#    # data[1:]=[None, helpText]  # For help entries
+												#    "default+headings": [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
+												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
+												#      ]
+												#    ],
+												#    # Extended help with no headings
+												#    # data[1:]=[helpText, extendedHelpText]
+												#    "extended": [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
+												#      ]
+												#    ],
+												#    # Extended help with headings
+												#    # data[1:]=[heading, None, None]  # For heading entries
+												#    # data[1:]=[None, helpText, extendedHelpText]  # For help entries
+												#    "extended+headings": [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
+												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
+												#      ]
+												#    ],
+												#  },
+												#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
+												#  "itemHeight": 57
+												#}
+												# Compact template for use when "description" is used
+												#{ "templates": dict(
+												#    list(dict.fromkeys(("default", "extended"), [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
+												#      ]
+												#    ]).items()) +
+												#    list(dict.fromkeys(("default+headings", "extended+headings"), [
+												#      57,  # itemHeight
+												#      [
+												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
+												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
+												#      ]
+												#    ]).items())
+												#  ),
+												#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
+												#  "itemHeight": 57
+												#
 			}
 			</convert>
 		</widget>
@@ -3900,8 +3900,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(5,2), size=(829,28), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-											MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
-											MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
+													MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
+													MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
 				],
 				"fonts": [gFont("Regular",22), gFont("Regular",14)],
 				"itemHeight": 54
@@ -4378,9 +4378,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(125,9), size=(660,48), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is the interfacename
-										MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
-										MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
-										MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
+												MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
+												MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
+												MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
 				],
 				"fonts": [gFont("Regular",42), gFont("Regular",30)],
 				"itemHeight": 105
@@ -4446,11 +4446,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(2,15), size=(72,72), png=1), # index 1 is the expandable/expanded/verticalline icon
-										MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
-										MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
-										MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
-										MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
-										MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
+												MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
+												MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
+												MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
+												MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
+												MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
 				],
 				"fonts": [gFont("Regular",27), gFont("Regular",19), gFont("Regular",33)],
 				"itemHeight": 78
@@ -4473,8 +4473,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(90,7), size=(870,42), font=0, flags=RT_HALIGN_LEFT, text=0), # index 2 is the Menu Titel
-												MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
-												MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
+														MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
+														MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",23)],
 				"itemHeight": 90
@@ -4534,11 +4534,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(22,15), size=(72,72), png=0), # index 0 is the isMounted pixmap
-											MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
-											MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
-											MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
-											MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
-											MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
+													MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
+													MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
+													MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
+													MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
+													MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
 				],
 				"fonts": [gFont("Regular",37), gFont("Regular",27)],
 				"itemHeight": 75
@@ -5769,9 +5769,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-										MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
-										MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
-										MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
+												MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
+												MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
+												MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
 				],
 				"fonts": [gFont("Regular",28) , gFont("Regular",22)],
 				"itemHeight": 70
@@ -5804,7 +5804,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-										MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
+												MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
 				],
 				"fonts": [gFont("Regular",40), gFont("Regular",28) , gFont("Regular",22), gFont("Regular",16)],
 				"itemHeight": 70
@@ -6587,9 +6587,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(0,0), flags=BT_SCALE, size=(150,108), png=2), # Thumbnail
-											MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
-											MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
-											MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+													MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+													MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+													MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
 				],
 				"fonts": [gFont("Regular",30), gFont("Regular",24)],
 				"itemHeight": 108
@@ -6749,10 +6749,10 @@ if callable(loadLogo):
 		<widget font="Regular;28" itemCornerRadius="6" position="515,234" render="Listbox" scrollbarMode="showNever" size="890,400" source="menuList" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-										{"default": (45, [
-											MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
+												{"default": (45, [
+													MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
 				], True, "showNever"),
-										},
+												},
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -6878,11 +6878,11 @@ if callable(loadLogo):
 		<widget position="140,165" render="Listbox" scrollbarMode="showNever" size="1640,225" source="search_info" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-										{"default": (33, [
-											MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color=0xDAA520, flags=RT_HALIGN_LEFT,  text=0), # langname,
+											{"default": (33, [
+												MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color=0xDAA520, flags=RT_HALIGN_LEFT,  text=0), # langname,
 					MultiContentEntryText(pos=(307,0),   size=(920,33),  font=0, flags=RT_HALIGN_LEFT,  text=1)
 				], False, "showNever"),
-										},
+											},
 				"fonts": [gFont("Regular",27)],
 				"itemHeight": 33,
 			}
@@ -6898,14 +6898,14 @@ if callable(loadLogo):
 		<widget itemCornerRadius="6" position="132,465" render="Listbox" scrollbarMode="showNever" size="1655,440" source="subtitles" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-										{"default": (40, [
-											MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
+											{"default": (40, [
+												MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
 					MultiContentEntryText(pos=(55,2),   size=(150,37),  font=0, flags=RT_HALIGN_LEFT,  text=1), # language,
 					MultiContentEntryText(pos=(220,2),  size=(1022,37),  font=0, flags=RT_HALIGN_LEFT,  text=2), # filename,
 					MultiContentEntryText(pos=(1270,2), size=(302,37), font=0, flags=RT_HALIGN_LEFT,  text=3), # site,
 					MultiContentEntryPixmapAlphaBlend(pos=(1607,8),   size=(36,36), png=4), # syncPng,
 				], True, "showNever"),
-										},
+											},
 				"fonts": [gFont("Regular",27), gFont("Regular",16)],
 				"itemHeight": 40
 			}
@@ -7419,12 +7419,12 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(120,0), size=(15,45), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=1), #arrow
-												MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x00ffffff, color_sel=0x00ffc000), #service name
-												MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x00ffffff, color_sel=0x00ffc000), #event name
-												MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color=0x00ffffff, color_sel=0x00ffc000), #orbital position
-												MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color=0x00ffffff, color_sel=0x00ffc000), #duration
-												MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color=0x00ffffff, color_sel=0x00ffc000), #epg
-												MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
+														MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x00ffffff, color_sel=0x00ffc000), #service name
+														MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x00ffffff, color_sel=0x00ffc000), #event name
+														MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color=0x00ffffff, color_sel=0x00ffc000), #orbital position
+														MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color=0x00ffffff, color_sel=0x00ffc000), #duration
+														MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color=0x00ffffff, color_sel=0x00ffc000), #epg
+														MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
 				],
 				"fonts": [gFont("Regular",24), gFont("Regular",20), gFont("Regular",17), gFont("Regular",16), gFont("Regular",26)],
 				"itemHeight": 150
@@ -7829,8 +7829,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(135,7), size=(975,39), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-											MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
-											MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
+													MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
+													MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",25)],
 				"itemHeight": 112
