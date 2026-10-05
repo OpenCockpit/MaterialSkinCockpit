@@ -1040,6 +1040,7 @@
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1054,8 +1055,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1077,24 +1078,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1103,7 +1104,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1113,32 +1114,27 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="menu_mainmenu" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1153,8 +1149,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1176,24 +1172,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1202,7 +1198,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1212,32 +1208,27 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="MenuSort" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1252,8 +1243,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1275,24 +1266,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1301,7 +1292,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1311,26 +1302,20 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 		<ePixmap alphatest="blend" pixmap="buttons/key_prev.png" position="30,1031" size="52,38"/>
 		<ePixmap alphatest="blend" pixmap="buttons/key_next.png" position="82,1031" size="52,38"/>
 	</screen>
@@ -1339,6 +1324,7 @@ self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1353,8 +1339,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1376,24 +1362,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1402,7 +1388,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1412,32 +1398,27 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="menu_system" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1452,8 +1433,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1475,24 +1456,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1501,7 +1482,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1511,32 +1492,27 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="menu_information" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1551,8 +1527,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1574,24 +1550,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1600,7 +1576,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1610,32 +1586,27 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="menu_scan" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -1650,8 +1621,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -1673,24 +1644,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -1699,7 +1670,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -1709,26 +1680,20 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="Setup" position="fill" title="Setup">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
@@ -8476,6 +8441,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menuicon image="menu/e2_jellyfin_menu.png" key="e2_jellyfin_menu"/>
 	</menuicons>
 	<menus>
+		<menu image="screen_icons/menu.png" key="mainmenu"/>
 		<menu image="screen_icons/windows.png" key="default"/>
 	</menus>
 	<screen name="MenuTemplate">
@@ -8483,6 +8449,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Addons.Pager import Pager
+from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
@@ -8497,8 +8464,8 @@ if "menu_list" not in self:
 	self["menu_list"] = MainMenuAddon()
 	self["menu_list"].connectRelatedElement("menu", self)
 	self["menu_list"].GUIcreate(self.instance)
-	self["menu_list"].instance.move(ePoint(82, 249))
-	self["menu_list"].instance.resize(eSize(minWidth, 522))
+	self["menu_list"].instance.move(ePoint(108, 140))
+	self["menu_list"].instance.resize(eSize(minWidth, 754))
 	font = parseFont("Regular;34", ((1, 1), (1, 1)))
 	self["menu_list"].font = font
 	self["menu_list"].l.setFont(0, font)
@@ -8520,24 +8487,24 @@ if "blayer" not in self:
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
-	self["blayer"].instance.move(ePoint(70,163))
+	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
-self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,739))
+self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
 
 if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
-	self["tlayer"].instance.move(ePoint(72,229))
+	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
-self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,607))
+self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
 
 if "pager" not in self:
 	self["pager"] = Pager()
 	self["pager"].connectRelatedElement("menu", self)
 	self["pager"].GUIcreate(self.instance)
-	self["pager"].instance.move(ePoint(82, 784))
+	self["pager"].instance.move(ePoint(108, 907))
 	
 self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
@@ -8546,7 +8513,7 @@ if "logo" not in self:
 	self["logo"].GUIcreate(self.instance)
 	self["logo"].instance.setAlphatest(BT_ALPHABLEND)
 	self["logo"].setZPosition(10)
-	self["logo"].instance.move(ePoint(72,837))
+	self["logo"].instance.move(ePoint(98,961))
 
 logoCurrentSize = self["logo"].instance.size()
 if logoCurrentSize.width() != menu_list_size.width() + 20:
@@ -8556,26 +8523,20 @@ if logoCurrentSize.width() != menu_list_size.width() + 20:
 if callable(loadLogo):
 	loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
 	
-if "title_label" not in self:
-	font = parseFont("Regular; 34", ((1, 1), (1, 1)))
-	self["title_label"] = Label(self["Title"].text)
-	self["title_label"].GUIcreate(self.instance)
-	self["title_label"].instance.setBackgroundColor(parseColor("background5"))
-	self["title_label"].instance.move(ePoint(82,163))
-	self["title_label"].instance.setFont(font)
-	self["title_label"].instance.setHAlign(self["title_label"].instance.alignLeft)
-	self["title_label"].instance.setVAlign(self["title_label"].instance.alignCenter)
-self["title_label"].instance.resize(eSize(menu_list_size.width() - 10,66))
-
-if "screen_path" not in self:
-	font = parseFont("Regular; 19", ((1, 1), (1, 1)))
-	self["screen_path"] = Label(self["ScreenPath"].text)
-	self["screen_path"].GUIcreate(self.instance)
-	self["screen_path"].instance.setBackgroundColor(parseColor("background"))
-	self["screen_path"].instance.move(ePoint(78,805))
-	self["screen_path"].instance.setFont(font)
-	self["screen_path"].instance.setHAlign(self["screen_path"].instance.alignRight)
-self["screen_path"].instance.resize(eSize(menu_list_size.width(),25))</applet>
+if "header" not in self:
+	self["header"] = ScreenHeader()
+	self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+	self["header"].GUIcreate(self.instance)
+	self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+	self["header"].instance.move(ePoint(108,56))
+	self["header"].titleForeground = parseColor("md_primary").argb()
+	self["header"].pathForeground = parseColor("md_primary").argb()
+	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
+	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+self["header"].onContainerShown()</applet>
 	</screen>
 	<screen name="Screen_1_1">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>

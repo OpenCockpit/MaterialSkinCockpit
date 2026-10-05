@@ -6,10 +6,10 @@ This skin is based on E2-DarkOS-skin by DimitarCC
 
 The skin uses a **Material Design 3 dark** colour scheme. Every colour a screen
 uses is a symbolic *role* (`md_surface`, `md_primary`, ...) defined once in
-[`src/skin/default/colors.xmlinc`](../src/skin/default/colors.xmlinc). Screens
+[`src/skin/default/colors.xmlinc`](src/skin/default/colors.xmlinc). Screens
 never contain hex values and never use the old colour names.
 
-A [light variant](color-concept-light.md) with the same role names is available
+A [light variant](docs/color-concept-light.md) with the same role names is available
 as an alternative.
 
 ## Principles
@@ -89,14 +89,5 @@ Values are enigma2 `#AARRGGBB`; alpha `00` is opaque.
 `md_key_red` `#00f28b82`, `md_key_green` `#0081c995`, `md_key_yellow`
 `#00fdd663`, `md_key_blue` `#008ab4f8`. These stay clearly recognisable on
 purpose, so the on-screen keys match the buttons on the remote.
-## Disclaimer
-The project author is not responsible for how this software is used by others. It is not intended to be used for accessing or distributing copyrighted materials without authorization.
-Users are solely responsible for determining the legality of their actions.
-
-This repository has no control over the streams, links, or the legality of the content provided by the different hosts (including all mirror sites). It is the end user's responsibility to ensure the legal use of these streams, and we strongly recommend verifying that the content complies with all applicable laws, including copyright laws and regulations of your country's jurisdiction before use.
-
-## Limitations
-- Tested on OpenViX and OpenATV with DM900.
-
 ## Links
 - Installation: https://xcentaurix.github.io/MaterialSkinCockpit
