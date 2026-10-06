@@ -82,48 +82,6 @@
 		<color name="md_key_blue" value="#008ab4f8"/>
 		<color name="md_shadow" value="#00000000"/>
 		<color name="md_transparent" value="#ff000000"/>
-		<color name="background" value="#02121212"/>
-		<color name="background2" value="#001d1d1d"/>
-		<color name="background3" value="#00232323"/>
-		<color name="background5" value="#022c2c2c"/>
-		<color name="black" value="#00000000"/>
-		<color name="blue" value="#00a8c7fa"/>
-		<color name="bluetransparent" value="#080842a0"/>
-		<color name="dark" value="#00232323"/>
-		<color name="dark_grey" value="#00363636"/>
-		<color name="darkblue" value="#000842a0"/>
-		<color name="darkgreen" value="#000f5223"/>
-		<color name="darkgrey" value="#00363636"/>
-		<color name="darkorange" value="#006b3f00"/>
-		<color name="fallback" value="#00c4c4c4"/>
-		<color name="foreground" value="#00e3e3e3"/>
-		<color name="green" value="#0081c995"/>
-		<color name="grey" value="#00c4c4c4"/>
-		<color name="light_green" value="#00a8c7fa"/>
-		<color name="light_yellow" value="#00e3e3e3"/>
-		<color name="listbox" value="#000842a0"/>
-		<color name="noTransBG" value="#00121212"/>
-		<color name="orange" value="#00ffb74d"/>
-		<color name="potem" value="#00bdc7dc"/>
-		<color name="progress" value="#00232323"/>
-		<color name="red" value="#00f28b82"/>
-		<color name="secondBG" value="#18121212"/>
-		<color name="secondFG" value="#00bdc7dc"/>
-		<color name="selectedFG" value="#00a8c7fa"/>
-		<color name="separator" value="#01424242"/>
-		<color name="toptemplatecolor" value="#000e0e0e"/>
-		<color name="transparent" value="#ff000000"/>
-		<color name="transpBlack" value="#2d121212"/>
-		<color name="transponderinfo" value="#00e3e3e3"/>
-		<color name="transpPIG" value="#fa121212"/>
-		<color name="un33333a" value="#022c2c2c"/>
-		<color name="un40a0aa0" value="#003f4759"/>
-		<color name="un4a00a0a" value="#000842a0"/>
-		<color name="uncccccc" value="#00c4c4c4"/>
-		<color name="white" value="#00e3e3e3"/>
-		<color name="yellow" value="#00a8c7fa"/>
-		<color name="yellowsoft" value="#00bdc7dc"/>
-		<color name="yellowtransparent" value="#080842a0"/>
 	</colors>
 	<parameters>
 		<parameter name="hasInfobarCryptoInfo" value="0"/>
@@ -1063,7 +1021,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1077,7 +1035,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1086,7 +1044,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1125,7 +1083,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1157,7 +1115,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1171,7 +1129,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1180,7 +1138,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1219,7 +1177,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1251,7 +1209,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1265,7 +1223,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1274,7 +1232,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1313,7 +1271,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 		<ePixmap alphatest="blend" pixmap="buttons/key_prev.png" position="30,1031" size="52,38"/>
@@ -1347,7 +1305,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1361,7 +1319,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1370,7 +1328,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1409,7 +1367,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1441,7 +1399,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1455,7 +1413,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1464,7 +1422,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1503,7 +1461,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1535,7 +1493,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1549,7 +1507,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1558,7 +1516,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1597,7 +1555,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1629,7 +1587,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -1643,7 +1601,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -1652,7 +1610,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -1691,7 +1649,7 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
@@ -1758,7 +1716,7 @@ self["header"].onContainerShown()</applet>
 		<widget font="Regular;28" foregroundColor="md_primary" halign="center" name="footnote" objectTypes="footnote,Button,Label" position="145,865" size="1630,30" valign="center" zPosition="5"/>
 		<widget font="Regular;28" foregroundColor="md_primary" halign="center" objectTypes="footnote,StaticText" position="145,865" render="Label" size="1630,30" source="footnote" valign="center" zPosition="1000"/>
 	</screen>
-	<screen name="ScanStatusTemplate">
+	<screen name="ScanStatusTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="5,5" size="1912,1071" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="7,77" size="1908,927" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_high" position="29,5" size="1864,2" zPosition="-7"/>
@@ -1909,14 +1867,14 @@ self["blayer"] = Label()
 self["blayer"].GUIcreate(self.instance)
 self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 self["blayer"].instance.resize(eSize(wsizex,wsizey-15))
-self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["blayer"].instance.move(ePoint(0,0))
 self["blayer"].setZPosition(-7)
 self["tlayer"] = Label()
 self["tlayer"].GUIcreate(self.instance)
 self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-15-64-45))
-self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 self["tlayer"].instance.move(ePoint(2,47))
 self["tlayer"].setZPosition(-6)
 self["logo"] = Pixmap()
@@ -2018,14 +1976,14 @@ self["blayer"] = Label()
 self["blayer"].GUIcreate(self.instance)
 self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 self["blayer"].instance.resize(eSize(wsizex,wsizey-15))
-self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["blayer"].instance.move(ePoint(0,0))
 self["blayer"].setZPosition(-7)
 self["tlayer"] = Label()
 self["tlayer"].GUIcreate(self.instance)
 self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-15-64-45))
-self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 self["tlayer"].instance.move(ePoint(2,47))
 self["tlayer"].setZPosition(-6)
 self["logo"] = Pixmap()
@@ -2112,14 +2070,14 @@ self["blayer"] = Label()
 self["blayer"].GUIcreate(self.instance)
 self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 self["blayer"].instance.resize(eSize(wsizex,wsizey-15))
-self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["blayer"].instance.move(ePoint(0,0))
 self["blayer"].setZPosition(-7)
 self["tlayer"] = Label()
 self["tlayer"].GUIcreate(self.instance)
 self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-15-64-45))
-self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 self["tlayer"].instance.move(ePoint(2,47))
 self["tlayer"].setZPosition(-6)
 self["logo"] = Pixmap()
@@ -2340,31 +2298,31 @@ if callable(loadLogo):
 		<widget enableWrapAround="1" itemCornerRadius="6" position="515,495" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_surface_container_lowest" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" size="889,320" source="streams" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-														{"default": ( 45, [ 
-															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																{"default": ( 45, [ 
+																	MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
 				], True, "showNever"),
-														"notselected": (45, [ 
-															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																"notselected": (45, [ 
+																	MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-														], False, "showNever"),
-														"subs": (45, [
-															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																], False, "showNever"),
+																"subs": (45, [
+																	MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-														], True, "showNever"),
-														"subs_notselected": (45, [
-															MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																], True, "showNever"),
+																"subs_notselected": (45, [
+																	MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-														], False, "showNever")
-														},
+																], False, "showNever")
+																},
 				"fonts": [gFont("Regular",28), gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -2708,10 +2666,10 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(15,3), size=(825,37), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the essid
-													MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
-													MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
-													MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
-													MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
+															MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
+															MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
+															MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
+															MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",27)],
 				"itemHeight": 75
@@ -2735,7 +2693,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(15,29), size=(48,48), png=2), # index 3 is the interface pixmap
-												MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
+														MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",25)],
 				"itemHeight": 105
@@ -2843,111 +2801,48 @@ if callable(loadLogo):
 		<widget conditional="indicatorU0" position="125,150" render="Listbox" scrollbarMode="showNever" size="1300,743" source="list" transparent="0">
 			<convert type="TemplatedMultiContent">
 			{
-												"templates": {
-													# Simple help with no headings ("flat")
-													# data[1:]=[helpText]
-													"default": [
-													57,  # itemHeight
-													[
-													MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
-													]
+														"templates": {
+															# Simple help with no headings ("flat")
+															# data[1:]=[helpText]
+															"default": [
+															57,  # itemHeight
+															[
+															MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
+															]
 				],
-													# Simple help with headings
-													# data[1:]=[heading, None]  # For heading entries
-													# data[1:]=[None, helpText]  # For help entries
-													"default+headings": [  # data[1:]=[helpText]
-													57,  # itemHeight
-													[
-													MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
+															# Simple help with headings
+															# data[1:]=[heading, None]  # For heading entries
+															# data[1:]=[None, helpText]  # For help entries
+															"default+headings": [  # data[1:]=[helpText]
+															57,  # itemHeight
+															[
+															MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
 					MultiContentEntryText(pos=(30,6), size=(1070,57), font=1, text=2),
-													]
-													],
-													# Extended help with no headings
-													# data[1:]=[helpText, extendedHelpText]
-													"extended": [
-													86,  # itemHeight
-													[
-													MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
-					MultiContentEntryText(pos=(0,60), size=(1100,40), color=0x009e9fa4, font=3, text=2),
-													],
-													],
-													# Extended help with headings
-													# data[1:]=[heading, None, None]  # For heading entries
-													# data[1:]=[None, helpText, extendedHelpText]  # For help entries
-													"extended+headings": [
-													86,  # itemHeight
-													[
-													MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
+															]
+															],
+															# Extended help with no headings
+															# data[1:]=[helpText, extendedHelpText]
+															"extended": [
+															86,  # itemHeight
+															[
+															MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
+					MultiContentEntryText(pos=(0,60), size=(1100,40), color="md_on_surface_variant", font=3, text=2),
+															],
+															],
+															# Extended help with headings
+															# data[1:]=[heading, None, None]  # For heading entries
+															# data[1:]=[None, helpText, extendedHelpText]  # For help entries
+															"extended+headings": [
+															86,  # itemHeight
+															[
+															MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
 					MultiContentEntryText(pos=(30,0), size=(1070,45), font=2, text=2),
-					MultiContentEntryText(pos=(30,45), size=(1070,40), color=0x009e9fa4, font=3, text=3),
-													],
-													],
-												},
+					MultiContentEntryText(pos=(30,45), size=(1070,40), color="md_on_surface_variant", font=3, text=3),
+															],
+															],
+														},
 				"fonts": [gFont("Regular",39), gFont("Regular",36), gFont("Regular",38), gFont("Regular",38)],
 				"itemHeight": 57
-												}
-												#{
-												# Template for use when "description" is used
-												#  "templates": {
-												#    # Simple help with no headings ("flat")
-												#    # data[1:]=[helpText]
-												#    "default": [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-												#      ]
-												#    ],
-												#    # Simple help with headings
-												#    # data[1:]=[heading, None]  # For heading entries
-												#    # data[1:]=[None, helpText]  # For help entries
-												#    "default+headings": [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-												#      ]
-												#    ],
-												#    # Extended help with no headings
-												#    # data[1:]=[helpText, extendedHelpText]
-												#    "extended": [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-												#      ]
-												#    ],
-												#    # Extended help with headings
-												#    # data[1:]=[heading, None, None]  # For heading entries
-												#    # data[1:]=[None, helpText, extendedHelpText]  # For help entries
-												#    "extended+headings": [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-												#      ]
-												#    ],
-												#  },
-												#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
-												#  "itemHeight": 57
-												#}
-												# Compact template for use when "description" is used
-												#{ "templates": dict(
-												#    list(dict.fromkeys(("default", "extended"), [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,42), font=1, text=1),
-												#      ]
-												#    ]).items()) +
-												#    list(dict.fromkeys(("default+headings", "extended+headings"), [
-												#      57,  # itemHeight
-												#      [
-												#	MultiContentEntryText(pos=(0,0), size=(1100,48), font=0, text=1),
-												#	MultiContentEntryText(pos=(30,0), size=(1070,42), font=1, text=2),
-												#      ]
-												#    ]).items())
-												#  ),
-												#  "fonts": [gFont("Regular",42), gFont("Regular",36), gFont("Regular",27)],
-												#  "itemHeight": 57
-												#
 			}
 			</convert>
 		</widget>
@@ -3076,14 +2971,14 @@ self["blayer"] = Label()
 self["blayer"].GUIcreate(self.instance)
 self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 self["blayer"].instance.resize(eSize(wsizex,wsizey-20))
-self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["blayer"].instance.move(ePoint(0,0))
 self["blayer"].setZPosition(-7)
 self["tlayer"] = Label()
 self["tlayer"].GUIcreate(self.instance)
 self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-20-64-45))
-self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 self["tlayer"].instance.move(ePoint(2,47))
 self["tlayer"].setZPosition(-6)
 self["logo"] = Pixmap()
@@ -3178,14 +3073,14 @@ self["blayer"] = Label()
 self["blayer"].GUIcreate(self.instance)
 self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
 self["blayer"].instance.resize(eSize(wsizex,wsizey-20))
-self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["blayer"].instance.move(ePoint(0,0))
 self["blayer"].setZPosition(-7)
 self["tlayer"] = Label()
 self["tlayer"].GUIcreate(self.instance)
 self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
 self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-20-64-45))
-self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 self["tlayer"].instance.move(ePoint(2,47))
 self["tlayer"].setZPosition(-6)
 self["logo"] = Pixmap()
@@ -3865,8 +3760,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(5,2), size=(829,28), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-													MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
-													MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
+															MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
+															MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
 				],
 				"fonts": [gFont("Regular",22), gFont("Regular",14)],
 				"itemHeight": 54
@@ -4343,9 +4238,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(125,9), size=(660,48), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is the interfacename
-												MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
-												MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
-												MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
+														MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
+														MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
+														MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
 				],
 				"fonts": [gFont("Regular",42), gFont("Regular",30)],
 				"itemHeight": 105
@@ -4411,11 +4306,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(2,15), size=(72,72), png=1), # index 1 is the expandable/expanded/verticalline icon
-												MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
-												MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
-												MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
-												MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
-												MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
+														MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
+														MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
+														MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
+														MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
+														MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
 				],
 				"fonts": [gFont("Regular",27), gFont("Regular",19), gFont("Regular",33)],
 				"itemHeight": 78
@@ -4438,8 +4333,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(90,7), size=(870,42), font=0, flags=RT_HALIGN_LEFT, text=0), # index 2 is the Menu Titel
-														MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
-														MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
+																MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
+																MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",23)],
 				"itemHeight": 90
@@ -4499,11 +4394,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(22,15), size=(72,72), png=0), # index 0 is the isMounted pixmap
-													MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
-													MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
-													MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
-													MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
-													MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
+															MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
+															MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
+															MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
+															MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
+															MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
 				],
 				"fonts": [gFont("Regular",37), gFont("Regular",27)],
 				"itemHeight": 75
@@ -4969,7 +4864,7 @@ if callable(loadLogo):
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="390,120" size="920,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 		<widget font="Regular;28" itemCornerRadius="6" itemHeight="45" name="config" position="396,210" scrollbarMode="showNever" size="1130,500" valign="center"/>
-		<widget backgroundColor="md_surface" connection="config" pagerBackground="background" pagerForeground="white" position="396,730" render="Pager" size="1130,25" transparent="1"/>
+		<widget backgroundColor="md_surface" connection="config" pagerBackground="md_surface" pagerForeground="md_on_surface" position="396,730" render="Pager" size="1130,25" transparent="1"/>
 		<widget font="Regular;30" itemCornerRadius="6" itemHeight="45" name="description" position="396,653" size="0,0" valign="top"/>
 		<widget font="Regular;30" name="statusbar" position="396,856" size="1110,34"/>
 		<widget font="Regular;30" name="status" position="396,770" size="1110,90"/>
@@ -4984,7 +4879,7 @@ if callable(loadLogo):
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="390,120" size="920,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 		<widget font="Regular;28" itemCornerRadius="6" itemHeight="45" name="config" position="396,210" scrollbarMode="showNever" size="1130,635" valign="center"/>
-		<widget backgroundColor="md_surface" connection="config" pagerBackground="background" pagerForeground="white" position="396,849" render="Pager" size="1130,25" transparent="1"/>
+		<widget backgroundColor="md_surface" connection="config" pagerBackground="md_surface" pagerForeground="md_on_surface" position="396,849" render="Pager" size="1130,25" transparent="1"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="EPGImportSources" position="fill" title="EPG Import Sources">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,118" size="1180,838" zPosition="-11"/>
@@ -4996,7 +4891,7 @@ if callable(loadLogo):
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="390,120" size="920,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 		<widget font="Regular;28" itemCornerRadius="6" itemHeight="45" name="list" position="396,210" scrollbarMode="showNever" size="1130,635" valign="center"/>
-		<widget backgroundColor="md_surface" connection="list" pagerBackground="background" pagerForeground="white" position="396,849" render="Pager" size="1130,25" transparent="1"/>
+		<widget backgroundColor="md_surface" connection="list" pagerBackground="md_surface" pagerForeground="md_on_surface" position="396,849" render="Pager" size="1130,25" transparent="1"/>
 	</screen>
 	<screen flags="wfNoBorder" name="EPGImportLog" position="fill" title="EPG Import Log">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
@@ -5009,7 +4904,7 @@ if callable(loadLogo):
 		<eLabel backgroundColor="md_surface_container_high" position="116,57" size="1468,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="116,56" size="1468,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1" zPosition="20"/>
 		<widget font="Regular;28" itemCornerRadius="6" itemHeight="45" name="list" position="135,160" scrollbarMode="showNever" size="1650,12*45" valign="center"/>
-		<widget backgroundColor="md_surface" connection="list" pagerBackground="background" pagerForeground="white" position="145,915" render="Pager" size="1630,25" transparent="1"/>
+		<widget backgroundColor="md_surface" connection="list" pagerBackground="md_surface" pagerForeground="md_on_surface" position="145,915" render="Pager" size="1630,25" transparent="1"/>
 	</screen>
 	<screen backgroundColor="md_surface_overlay" flags="wfNoBorder" name="downloader" position="0,0" size="1920,60">
 		<widget backgroundColor="md_surface_overlay" font="Regular;34" name="action" position="10,5" size="650,45"/>
@@ -5490,7 +5385,7 @@ if callable(loadLogo):
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="390,120" size="920,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 		<widget font="Regular;28" itemHeight="45" name="config" position="396,210" scrollbarMode="showNever" size="1130,635"/>
-		<widget backgroundColor="md_surface" name="pager" pagerBackground="background" pagerForeground="white" position="396,849" size="1130,25" transparent="1"/>
+		<widget backgroundColor="md_surface" name="pager" pagerBackground="md_surface" pagerForeground="md_on_surface" position="396,849" size="1130,25" transparent="1"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="AutoBouquetsMaker_Setup" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,118" size="1180,838" zPosition="-11"/>
@@ -5734,9 +5629,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-												MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
-												MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
-												MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
+														MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
+														MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
+														MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
 				],
 				"fonts": [gFont("Regular",28) , gFont("Regular",22)],
 				"itemHeight": 70
@@ -5769,7 +5664,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-												MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
+														MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
 				],
 				"fonts": [gFont("Regular",40), gFont("Regular",28) , gFont("Regular",22), gFont("Regular",16)],
 				"itemHeight": 70
@@ -6552,9 +6447,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(0,0), flags=BT_SCALE, size=(150,108), png=2), # Thumbnail
-													MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
-													MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
-													MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+															MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+															MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+															MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
 				],
 				"fonts": [gFont("Regular",30), gFont("Regular",24)],
 				"itemHeight": 108
@@ -6714,10 +6609,10 @@ if callable(loadLogo):
 		<widget font="Regular;28" itemCornerRadius="6" position="515,234" render="Listbox" scrollbarMode="showNever" size="890,400" source="menuList" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-												{"default": (45, [
-													MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
+														{"default": (45, [
+															MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
 				], True, "showNever"),
-												},
+														},
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -6843,11 +6738,11 @@ if callable(loadLogo):
 		<widget position="140,165" render="Listbox" scrollbarMode="showNever" size="1640,225" source="search_info" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-											{"default": (33, [
-												MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color=0xDAA520, flags=RT_HALIGN_LEFT,  text=0), # langname,
+												{"default": (33, [
+													MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color="md_primary", flags=RT_HALIGN_LEFT,  text=0), # langname,
 					MultiContentEntryText(pos=(307,0),   size=(920,33),  font=0, flags=RT_HALIGN_LEFT,  text=1)
 				], False, "showNever"),
-											},
+												},
 				"fonts": [gFont("Regular",27)],
 				"itemHeight": 33,
 			}
@@ -6863,14 +6758,14 @@ if callable(loadLogo):
 		<widget itemCornerRadius="6" position="132,465" render="Listbox" scrollbarMode="showNever" size="1655,440" source="subtitles" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-											{"default": (40, [
-												MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
+												{"default": (40, [
+													MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
 					MultiContentEntryText(pos=(55,2),   size=(150,37),  font=0, flags=RT_HALIGN_LEFT,  text=1), # language,
 					MultiContentEntryText(pos=(220,2),  size=(1022,37),  font=0, flags=RT_HALIGN_LEFT,  text=2), # filename,
 					MultiContentEntryText(pos=(1270,2), size=(302,37), font=0, flags=RT_HALIGN_LEFT,  text=3), # site,
 					MultiContentEntryPixmapAlphaBlend(pos=(1607,8),   size=(36,36), png=4), # syncPng,
 				], True, "showNever"),
-											},
+												},
 				"fonts": [gFont("Regular",27), gFont("Regular",16)],
 				"itemHeight": 40
 			}
@@ -7078,7 +6973,7 @@ if callable(loadLogo):
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="272,113" size="1156,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
-		<widget itemCornerRadius="6" orientation="orGrid" position="center,210" render="Listbox" scrollbarMode="showNever" size="1356,610" source="list">
+		<widget itemCornerRadius="6" orientation="orGrid" position="center,210" render="Listbox" scrollbarMode="showNever" size="1356,580" source="list">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -7384,12 +7279,12 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(120,0), size=(15,45), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=1), #arrow
-														MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color=0x00ffffff, color_sel=0x00ffc000), #service name
-														MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color=0x00ffffff, color_sel=0x00ffc000), #event name
-														MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color=0x00ffffff, color_sel=0x00ffc000), #orbital position
-														MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color=0x00ffffff, color_sel=0x00ffc000), #duration
-														MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color=0x00ffffff, color_sel=0x00ffc000), #epg
-														MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
+																MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color="md_on_surface", color_sel="md_primary"), #service name
+																MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color="md_on_surface", color_sel="md_primary"), #event name
+																MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color="md_on_surface", color_sel="md_primary"), #orbital position
+																MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color="md_on_surface", color_sel="md_primary"), #duration
+																MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color="md_on_surface", color_sel="md_primary"), #epg
+																MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
 				],
 				"fonts": [gFont("Regular",24), gFont("Regular",20), gFont("Regular",17), gFont("Regular",16), gFont("Regular",26)],
 				"itemHeight": 150
@@ -7639,7 +7534,7 @@ if callable(loadLogo):
 		<widget alphatest="on" name="dlnainactive" pixmap="icons/lock_off.png" position="750,760" size="48,48" zPosition="1"/>
 		<widget alphatest="on" name="dlnaactive" pixmap="icons/lock_on.png" position="750,760" size="48,48" zPosition="2"/>
 	</screen>
-	<screen name="VixListTemplate">
+	<screen name="VixListTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="98,116" size="1724,848" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="98,978" size="1618,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -7794,8 +7689,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(135,7), size=(975,39), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-													MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
-													MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
+															MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
+															MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
 				],
 				"fonts": [gFont("Regular",33), gFont("Regular",25)],
 				"itemHeight": 112
@@ -7842,7 +7737,7 @@ if callable(loadLogo):
 		<widget enableWrapAround="1" font="SelectionList;30" foregroundColor="md_on_surface" itemCornerRadius="6" name="list" position="673,481" scrollbarMode="showNever" size="450,9*40" valign="center"/>
 		<applet type="onLayoutFinish">self["list"].instance.setItemHeight(40)</applet>
 	</screen>
-	<screen name="SoftcamSpinnerTemplate">
+	<screen name="SoftcamSpinnerTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,118" size="1180,838" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="372,180" size="1176,714" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="372,908" size="1070,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -7882,6 +7777,7 @@ if callable(loadLogo):
 		<widget font="Regular;21" name="text" position="0,0" size="0,0"/>
 		<widget enableWrapAround="1" itemHeight="45" name="list" position="15,15" size="330,150"/>
 		<applet type="onLayoutFinish">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
+from skin import parseColor
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
@@ -7935,13 +7831,13 @@ self["brc"].instance.resize(eSize(5,5))
 self["brc"].instance.move(ePoint(wsizex-6,wsizey-6))
 self["bcGround"] = Label("")
 self["bcGround"].GUIcreate(self.instance)
-self["bcGround"].instance.setBackgroundColor(gRGB(0x02444444))
+self["bcGround"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 self["bcGround"].instance.resize(eSize(*(wsizex - 2, wsizey - 2)))
 self["bcGround"].instance.move(ePoint(1,1))
 self["bcGround"].setZPosition(-7)
 self["bcGroundOver"] = Label("")
 self["bcGroundOver"].GUIcreate(self.instance)
-self["bcGroundOver"].instance.setBackgroundColor(gRGB(0x02111111))
+self["bcGroundOver"].instance.setBackgroundColor(parseColor("md_surface"))
 self["bcGroundOver"].instance.resize(eSize(*(wsizex-4, wsizey - 4)))
 self["bcGroundOver"].instance.move(ePoint(2,2))
 self["bcGroundOver"].setZPosition(-7)</applet>
@@ -7978,21 +7874,21 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		</widget>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1720,971" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 	</screen>
-	<screen name="BrandLogoTemplate">
+	<screen name="BrandLogoTemplate" position="fill">
 		<widget alphatest="blend" halign="right" logoType="brand" position="0,0" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 	</screen>
-	<screen name="ConfigButtonsTemplate">
+	<screen name="ConfigButtonsTemplate" position="fill">
 		<widget addon="ButtonSequence" alignment="right" backgroundColor="md_transparent" connection="key_info,key_help,key_pvr,key_next,key_menu,key_previous,key_text,VKeyIcon,key_play" pixmaps="key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png" position="0,0" size="270,36" transparent="1" zPosition="10"/>
 	</screen>
-	<screen name="Color_Buttons_Screen_1">
+	<screen name="Color_Buttons_Screen_1" position="fill">
 		<widget addon="ColorButtonsSequence" alignment="left" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue" font="Regular;26" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png" position="0,0" size="e,36" spacing="40" spacingPixmapText="10" zPosition="10"/>
 	</screen>
-	<screen name="FrameTemplate">
+	<screen name="FrameTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="70,145" size="570,785" zPosition="-6"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="72,147" size="566,717" zPosition="-5"/>
 		<eLabel backgroundColor="md_surface_container_high" position="94,145" size="522,2" zPosition="-7"/>
 	</screen>
-	<screen name="Screen_menu2">
+	<screen name="Screen_menu2" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="495,136" size="932,805" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="497,198" size="928,681" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="497,893" size="822,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -8002,7 +7898,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="515,138" size="672,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 	</screen>
-	<screen name="Screen_3">
+	<screen name="Screen_3" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="252,111" size="1416,838" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="254,173" size="1412,714" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="254,901" size="1306,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -8012,7 +7908,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="272,113" size="1156,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 	</screen>
-	<screen name="Screen_Window_Full">
+	<screen name="Screen_Window_Full" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="5,5" size="1912,1071" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="7,77" size="1908,927" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_high" position="29,5" size="1864,2" zPosition="-7"/>
@@ -8025,7 +7921,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="5,1025" size="1810,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 	</screen>
-	<screen name="Screen_Window_Full_Pig">
+	<screen name="Screen_Window_Full_Pig" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="5,5" size="1912,1071" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="7,77" size="1908,927" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_high" position="29,5" size="1864,2" zPosition="-7"/>
@@ -8039,7 +7935,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1536,100" render="Pig" size="354,200" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 	</screen>
-	<screen name="Screen_Window_Full_Big_Pig">
+	<screen name="Screen_Window_Full_Big_Pig" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="5,5" size="1912,1071" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="7,77" size="1908,927" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_high" position="29,5" size="1864,2" zPosition="-7"/>
@@ -8053,7 +7949,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,100" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 	</screen>
-	<screen name="Screen_Menu1">
+	<screen name="Screen_Menu1" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,118" size="1180,838" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="372,180" size="1176,714" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="372,908" size="1070,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -8063,7 +7959,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		</widget>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold; 18" pathForegroundColor="md_primary" position="390,120" size="920,60" titleFont="Bold; 28" titleForegroundColor="md_primary" titleSingleFont="Bold; 34" transparent="1"/>
 	</screen>
-	<screen name="ConfigScreenTemplate">
+	<screen name="ConfigScreenTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="98,116" size="1724,848" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="98,978" size="1618,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
@@ -8084,7 +7980,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget font="Regular;28" foregroundColor="md_primary" halign="center" name="footnote" objectTypes="footnote,Button,Label" position="145,865" size="1630,30" valign="center" zPosition="5"/>
 		<widget font="Regular;28" foregroundColor="md_primary" halign="center" objectTypes="footnote,StaticText" position="145,865" render="Label" size="1630,30" source="footnote" valign="center" zPosition="1000"/>
 	</screen>
-	<screen name="InfoBarTemplate">
+	<screen name="InfoBarTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="12" position="38,862" size="1839,184" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="10" position="370,864" size="1505,180" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_highest" position="380,915" size="1485,2" zPosition="-9"/>
@@ -8208,7 +8104,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 			<convert type="PliExtraInfo">CryptoBar</convert>
 		</widget>
 	</screen>
-	<screen name="PlayerTemplate">
+	<screen name="PlayerTemplate" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="38,862" size="1839,184" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="370,864" size="1505,180" zPosition="-10"/>
 		<eLabel backgroundColor="md_surface_container_highest" position="380,915" size="1485,2" zPosition="-9"/>
@@ -8279,7 +8175,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 			<convert type="ConditionalShowHide">Blink,4000,1000</convert>
 		</widget>
 	</screen>
-	<screen name="RcPanel">
+	<screen name="RcPanel" position="fill">
 		<widget alphatest="blend" backgroundColor="md_shadow" name="rc" pixmap="rc.png" position="0,0" size="154,500" transparent="1" zPosition="10"/>
 		<widget alphatest="blend" conditional="arrowdown" name="arrowdown" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
 		<widget alphatest="blend" conditional="arrowdown" name="arrowdown2" pixmap="arrowdown.png" position="-100,-100" size="37,70" zPosition="11"/>
@@ -8318,7 +8214,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget alphatest="blend" conditional="indicatorU0" name="indicatorL14" offset="11,11" pixmap="yellow_circle23x23.png" position="0,0" scale="1" size="23,23" zPosition="11"/>
 		<widget alphatest="blend" conditional="indicatorU0" name="indicatorL15" offset="11,11" pixmap="yellow_circle23x23.png" position="0,0" scale="1" size="23,23" zPosition="11"/>
 	</screen>
-	<screen name="DownloadBar">
+	<screen name="DownloadBar" position="fill">
 		<widget backgroundColor="md_surface_overlay" font="Regular;34" name="action" position="10,5" size="650,45"/>
 		<widget backgroundColor="md_surface_overlay" font="Regular;34" halign="center" name="status" position="700,5" size="650,45"/>
 		<widget alphatest="blend" conditional="Frontend" pixmap="icons/lock_on.png" position="1393,5" render="Pixmap" size="38,36" source="Frontend">
@@ -8351,7 +8247,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<widget name="slider" position="30,970" size="1110,20" transparent="1" zPosition="100"/>
 		<widget foregroundColor="md_on_surface_variant" name="activityslider" position="30,990" size="1860,6" transparent="1" zPosition="100"/>
 	</screen>
-	<screen name="VirtualKeyBoardTemplate">
+	<screen name="VirtualKeyBoardTemplate" position="fill">
 		<widget backgroundColor="md_surface" font="Regular;30" name="prompt" noWrap="1" position="4,0" size="810,39" valign="top"/>
 		<widget backgroundColor="md_surface" font="Regular;38" halign="right" name="text" noWrap="1" position="0,70" size="968,48" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1"/>
 		<eLabel backgroundColor="md_surface" position="0,159" size="968,342" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="-5"/>
@@ -8444,7 +8340,7 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menu image="screen_icons/menu.png" key="mainmenu"/>
 		<menu image="screen_icons/windows.png" key="default"/>
 	</menus>
-	<screen name="MenuTemplate">
+	<screen name="MenuTemplate" position="fill">
 		<applet type="onContentChanged">from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
 from Components.Label import Label
 from Components.Pixmap import Pixmap
@@ -8472,7 +8368,7 @@ if "menu_list" not in self:
 	self["menu_list"].setMinWidth(str(minWidth))
 	self["menu_list"].setMaxWidth("900")
 	self["menu_list"].setIconSize("48")
-	self["menu_list"].setForegroundColorSelected("selectedFG")
+	self["menu_list"].setForegroundColorSelected("md_primary")
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
@@ -8486,7 +8382,7 @@ if "blayer" not in self:
 	self["blayer"] = Label()
 	self["blayer"].GUIcreate(self.instance)
 	self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-	self["blayer"].instance.setBackgroundColor(parseColor("background5"))
+	self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
 	self["blayer"].instance.move(ePoint(96,54))
 	self["blayer"].setZPosition(-7)
 self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
@@ -8495,7 +8391,7 @@ if "tlayer" not in self:
 	self["tlayer"] = Label()
 	self["tlayer"].GUIcreate(self.instance)
 	self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-	self["tlayer"].instance.setBackgroundColor(parseColor("background"))
+	self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
 	self["tlayer"].instance.move(ePoint(98,120))
 	self["tlayer"].setZPosition(-6)
 self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
@@ -8534,11 +8430,11 @@ if "header" not in self:
 	self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
 	self["header"].l.setFont(0, parseFont("Bold; 28", ((1, 1), (1, 1))))
 	self["header"].l.setFont(1, parseFont("Bold; 18", ((1, 1), (1, 1))))
-	self["header"].l.setFont(2, parseFont("Bold; 34", ((1, 1), (1, 1))))
+	self["header"].l.setFont(2, parseFont("Bold; 42", ((1, 1), (1, 1))))
 self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
 self["header"].onContainerShown()</applet>
 	</screen>
-	<screen name="Screen_1_1">
+	<screen name="Screen_1_1" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="14" position="98,116" size="1724,848" zPosition="-10"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="98,978" size="1618,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
