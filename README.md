@@ -1,7 +1,7 @@
 # Material Skin for Open Enigma2 settop boxes
 
 - This skin is based on E2-DarkOS-skin by DimitarCC.
-- It was completely refactored by Claude Code AI to support SkinForge's object oriented, hierarchical model using relative positioning of screenpart includes.
+- It was completely refactored by Claude Code AI to support [SkinForge](https://github.com/OpenCockpit/SkinForge)'s object oriented, hierarchical model using relative positioning of screenpart includes.
 - The skin only supports OpenVix.
 
 ![Screenshot](s1.jpg)
