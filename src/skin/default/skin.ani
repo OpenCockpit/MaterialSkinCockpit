@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Default animations for this skin (skin.ani, next to skin.xml).
+
+  Format: see enigma2/doc/ANIMATIONS_HOWTO.md. Tag and attribute names are Kodi's, the rules are
+  collected here instead of being written into skin.xml.
+
+  The values are those of Kodi's default skin, Estuary (the same as enigma2's own data/skin.ani):
+    (windows       fade 200 ms, linear, both ways (OpenClose_Fade): not used, see below)
+    dialogs        zoom 80 -> 100 (tween back) and fade, delay 160, 240 ms; closing
+                   zooms back to 80 (tween back, easing in) and fades, 240 ms        (Animation_DialogPopupOpenClose)
+    OSD            fade 300 ms plus a 200 px slide, cubic out, both ways             (Animation_BottomSlide)
+    widgets        fade 200 ms when they appear or disappear                         (Visible_Fade)
+    list focus     the selected item fades in over 300 ms (Estuary starts at 70%, 30% here: more noticeable)
+    grid focus     the focused cell zooms 100 -> 110 over 250 ms (sine)              (SettingsPanel)
+  Kodi's defaults apply where it writes nothing: tween linear, easing out. Estuary scrolls lists in 500 ms;
+  with key repeat the rows would trail the selection by about two rows, so <scrolltime> is 250 ms.
+
+  Selectors (screen/widget elements):
+    name, screen, render, source, addon     comma separated lists, * and ? wildcards
+    a rule without selectors applies to everything of its kind (all screens / all widgets);
+    name matches any entry of the screen's name list (skin name, class names), so a rule can
+    target a base class such as Setup or ChannelSelectionBase
+  Cascade, evaluated per animation type:
+    1. <animation> written inside skin.xml (most specific)
+    2. the matching rule with the most selector attributes, a later rule wins a tie
+    3. nothing (no animation)
+  An empty <animation type="..."/> cancels what a less specific rule would give.
+
+  Times are milliseconds. With the "Enable animations" switch (AnimationSetup) on, whatever a rule names is animated.
+-->
+<animations version="1">
+
+	<!-- No fade for every window (Estuary's OpenClose_Fade): a window animation takes a snapshot of the area of
+	     its widgets, which is slow for a full screen window. Only the OSD (a bar at the screen edge) and the
+	     dialogs below get one. -->
+
+	<!-- info bars and player bars: the OSD (Animation_BottomSlide) -->
+	<screen name="InfoBar,SecondInfoBar,SecondInfoBarSimple,RadioInfoBar,MoviePlayer,DVDPlayer,CatchupPlayer,MediaPlayer">
+		<animation type="windowopen">
+			<effect type="fade" start="0" end="100" time="300"/>
+			<effect type="slide" start="0,200" end="0,0" time="300" tween="cubic" easing="out"/>
+		</animation>
+		<animation type="windowclose">
+			<effect type="fade" start="100" end="0" time="300"/>
+			<effect type="slide" start="0,0" end="0,200" time="300" tween="cubic" easing="out"/>
+		</animation>
+	</screen>
+
+	<!-- dialogs and context menus (Animation_DialogPopupOpenClose) -->
+	<screen name="ChoiceBox,MessageBox,MessageBoxSimple,InputBox,PinInput,*ContextMenu,MinuteInput,RecordTimerQuestion,NumericalTextInputHelpDialog,AC3LipSync,PiPSetup,QuickSubtitlesConfigMenu,SubservicesQuickzap,QuickSubtitlesClearRests">
+		<animation type="windowopen">
+			<effect type="zoom" start="80" end="100" center="auto" delay="160" time="240" tween="back" easing="out"/>
+			<effect type="fade" start="0" end="100" delay="160" time="240"/>
+		</animation>
+		<animation type="windowclose">
+			<effect type="zoom" start="100" end="80" center="auto" time="240" tween="back" easing="in"/>
+			<effect type="fade" start="100" end="0" time="240"/>
+		</animation>
+	</screen>
+
+	<!-- permanent status overlays and the standby screen: never animate -->
+	<screen name="BufferIndicator,ClockScreen,PVRState,TimeshiftState,TimeshiftLive,Dish,Dishpip,SubtitleDisplay,RdsInfoDisplay,Standby,downloader">
+		<animation type="windowopen"/>
+		<animation type="windowclose"/>
+	</screen>
+
+	<!-- lists: smooth pixel scrolling and the selected row fading in (rows fill the list width and everything
+	     is clipped to the list, so a row cannot zoom) -->
+	<widget render="Listbox">
+		<scrolltime tween="cubic" easing="out">250</scrolltime>
+		<focusedlayout>
+			<animation type="focus">
+				<effect type="fade" start="30" end="100" time="300"/>
+			</animation>
+		</focusedlayout>
+	</widget>
+
+	<!-- plugin browser (icon grid): all cells fade in together, the focused cell zooms.
+	     itemopen takes a `stagger` (ms between two cells) to let them come in one after the other. -->
+	<widget render="Listbox" screen="PluginBrowser">
+		<animation type="itemopen">
+			<effect type="fade" start="0" end="100" time="200"/>
+		</animation>
+		<focusedlayout>
+			<animation type="focus">
+				<effect type="zoom" start="100" end="110" center="auto" time="250" tween="sine"/>
+			</animation>
+			<animation type="unfocus">
+				<effect type="zoom" start="110" end="100" center="auto" time="250" tween="sine"/>
+			</animation>
+		</focusedlayout>
+	</widget>
+
+	<!-- widgets that show and hide on a condition (Visible_Fade; the old form VisibleChange) -->
+	<widget render="Label,FixedLabel,Pixmap,MultiPixmap,Picon">
+		<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+	</widget>
+
+	<!-- lists and progress bars never fade when shown or hidden -->
+	<widget render="Listbox,Progress">
+		<animation type="visible"/>
+		<animation type="hidden"/>
+	</widget>
+
+</animations>
