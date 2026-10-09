@@ -295,49 +295,49 @@
 		<widget backgroundColor="md_surface" font="Regular;36" foregroundColor="md_primary" noWrap="1" position="114,65" render="Label" size="730,45" source="session.Event_Now">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="114,133" render="Label" size="60,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="114,133" render="Label" size="75,40" source="session.Event_Now">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="174,133" render="Label" size="70,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="189,133" render="Label" size="95,40" source="session.Event_Now">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="244,130" render="Label" size="580,40" source="session.Event_Now" valign="center" zPosition="1">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="288,130" render="Label" size="518,40" source="session.Event_Now" valign="center" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" extendDirection="left" font="Bold;26" halign="center" position="913,70" render="RatingIconLabel" size="32,32" source="session.Event_Now" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" position="840,130" render="Label" size="100,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" noWrap="1" position="810,130" render="Label" size="130,40" source="session.Event_Now">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" foregroundColor="md_on_surface" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="114,185" render="RunningText" size="842,505" source="session.Event_Now" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" foregroundColor="md_on_surface" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="114,185" render="COCRunningText" size="842,505" source="session.Event_Now" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="975,133" render="Label" size="60,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="975,133" render="Label" size="75,40" source="session.Event_Next">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="1035,133" render="Label" size="70,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="1050,133" render="Label" size="95,40" source="session.Event_Next">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="1105,130" render="Label" size="620,40" source="session.Event_Next" valign="center" zPosition="1">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="1149,130" render="Label" size="517,40" source="session.Event_Next" valign="center" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" extendDirection="left" font="Bold;26" halign="center" position="1775,70" render="RatingIconLabel" size="32,32" source="session.Event_Next" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" position="1700,130" render="Label" size="100,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" noWrap="1" position="1670,130" render="Label" size="130,40" source="session.Event_Next">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="Regular;36" noWrap="1" position="975,65" render="Label" size="730,45" source="session.Event_Next">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="975,185" render="RunningText" size="842,505" source="session.Event_Next" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="975,185" render="COCRunningText" size="842,505" source="session.Event_Next" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget alphatest="blend" backgroundColor="md_surface" position="138,782" render="Picon" size="227,130" source="session.CurrentService" zPosition="1">
@@ -367,49 +367,49 @@
 		<widget backgroundColor="md_surface" font="Regular;36" foregroundColor="md_primary" noWrap="1" position="114,65" render="Label" size="730,45" source="session.Event_Now">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="114,133" render="Label" size="60,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="114,133" render="Label" size="75,40" source="session.Event_Now">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="174,133" render="Label" size="70,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="189,133" render="Label" size="95,40" source="session.Event_Now">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="244,130" render="Label" size="580,40" source="session.Event_Now" valign="center" zPosition="1">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="288,130" render="Label" size="518,40" source="session.Event_Now" valign="center" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" extendDirection="left" font="Bold;26" halign="center" position="913,70" render="RatingIconLabel" size="32,32" source="session.Event_Now" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" position="840,130" render="Label" size="100,40" source="session.Event_Now">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" noWrap="1" position="810,130" render="Label" size="130,40" source="session.Event_Now">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" foregroundColor="md_on_surface" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="114,185" render="RunningText" size="842,505" source="session.Event_Now" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" foregroundColor="md_on_surface" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="114,185" render="COCRunningText" size="842,505" source="session.Event_Now" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="975,133" render="Label" size="60,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="975,133" render="Label" size="75,40" source="session.Event_Next">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" halign="left" position="1035,133" render="Label" size="70,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" halign="left" noWrap="1" position="1050,133" render="Label" size="95,40" source="session.Event_Next">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="1105,130" render="Label" size="620,40" source="session.Event_Next" valign="center" zPosition="1">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_tertiary" halign="center" position="1149,130" render="Label" size="517,40" source="session.Event_Next" valign="center" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" extendDirection="left" font="Bold;26" halign="center" position="1775,70" render="RatingIconLabel" size="32,32" source="session.Event_Next" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" position="1700,130" render="Label" size="100,40" source="session.Event_Next">
+		<widget backgroundColor="md_surface" font="Bold;34" foregroundColor="md_secondary" halign="right" noWrap="1" position="1670,130" render="Label" size="130,40" source="session.Event_Next">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="Regular;36" noWrap="1" position="975,65" render="Label" size="730,45" source="session.Event_Next">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="975,185" render="RunningText" size="842,505" source="session.Event_Next" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="975,185" render="COCRunningText" size="842,505" source="session.Event_Next" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget alphatest="blend" backgroundColor="md_surface" position="138,782" render="Picon" size="227,130" source="session.CurrentService" zPosition="1">
@@ -641,7 +641,7 @@
 		<eLabel backgroundColor="md_outline_variant" position="1203,105" size="1,870" zPosition="-5"/>
 		<widget additionalInfoFont="Regular;24" backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success_container" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarBorder="md_outline" colorEventProgressbarBorderSelected="md_outline" colorEventProgressbarSelected="md_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_primary" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_secondary" foregroundColorServiceNotAvail="md_outline" forgroundColorEventProgressbarBorder="md_surface" itemCornerRadius="6" itemHeight="52" itemHeightTwoLine="84" markerLine="1" markerLineColor="md_outline_variant" markerTextAlignment="center" name="list" nonplayableMargins="0" piconMargin="2" position="28,100" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" serviceEventSeparator=" • " serviceInfoFont="Regular;26" serviceNameFont="Regular;30" serviceNumberFont="Regular;30" serviceRemainingInfoFont="Regular;24" sidesMargin="20" size="1152,840" textSeparator="  •  "/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="list" maxPages="15" position="20,955" size="1160,25" transparent="1"/>
-		<widget backgroundColor="md_surface_container_low" font="Regular;28" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1235,485" render="RunningText" size="645,310" source="ServiceEvent" transparent="1" valign="top">
+		<widget backgroundColor="md_surface_container_low" font="Regular;28" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1235,485" render="COCRunningText" size="645,310" source="ServiceEvent" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget backgroundColor="md_outline_variant" position="1231,825" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
@@ -685,7 +685,7 @@
 		<eLabel backgroundColor="md_outline_variant" position="1203,105" size="1,870" zPosition="-5"/>
 		<widget additionalInfoFont="Regular;24" backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success_container" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarBorder="md_outline" colorEventProgressbarBorderSelected="md_outline" colorEventProgressbarSelected="md_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_primary" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_secondary" foregroundColorServiceNotAvail="md_outline" forgroundColorEventProgressbarBorder="md_surface" itemCornerRadius="6" itemHeight="52" itemHeightTwoLine="84" markerLine="1" markerLineColor="md_outline_variant" markerTextAlignment="center" name="list" nonplayableMargins="0" piconMargin="2" position="28,100" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" serviceEventSeparator=" • " serviceInfoFont="Regular;26" serviceNameFont="Regular;30" serviceNumberFont="Regular;30" serviceRemainingInfoFont="Regular;24" sidesMargin="20" size="1152,840" textSeparator="  •  "/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="list" maxPages="15" position="20,955" size="1160,25" transparent="1"/>
-		<widget backgroundColor="md_surface_container_low" font="Regular;28" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1235,485" render="RunningText" size="645,310" source="ServiceEvent" transparent="1" valign="top">
+		<widget backgroundColor="md_surface_container_low" font="Regular;28" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1235,485" render="COCRunningText" size="645,310" source="ServiceEvent" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget backgroundColor="md_outline_variant" position="1231,825" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
@@ -731,7 +731,7 @@
 		<widget font="Regular;34" foregroundColor="md_primary" position="1160,382" render="Label" size="720,36" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Regular;30" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1159,467" render="RunningText" size="720,470" source="Event" transparent="1" valign="top">
+		<widget font="Regular;30" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1159,467" render="COCRunningText" size="720,470" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="Regular;30" foregroundColor="md_secondary" position="1162,958" render="Label" size="330,34" source="Event" transparent="1">
@@ -800,7 +800,7 @@
 		<widget backgroundColor="md_surface" itemCornerRadius="6" itemHeight="45" name="list" position="35,225" scrollbarMode="showNever" setColGap="20" setColWidths="350,150" setEventItemFont="Regular;28" setEventTimeFont="Regular;24" setIconDistance="10" setTimeWidth="135" sidesMargin="25" size="1110,17*45" transparent="1"/>
 		<widget backgroundColor="md_surface" backgroundColorSelected="md_outline_variant" borderColor="md_surface" font="Regular;34" foregroundColorSelected="md_primary" itemCornerRadius="6" itemHeight="45" name="bouquetlist" position="35,225" scrollbarMode="showNever" sidesMargin="25" size="1110,17*45" transparent="0" zPosition="4"/>
 		<eLabel backgroundColor="md_outline_variant" position="1203,105" size="1,870" zPosition="-5"/>
-		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1235,455" render="RunningText" size="645,500" source="Event" transparent="1" valign="top">
+		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1235,455" render="COCRunningText" size="645,500" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget alphatest="blend" position="1260,125" render="Picon" size="220,132" source="Service" zPosition="12">
@@ -844,7 +844,7 @@
 		<widget backgroundColor="md_surface_overlay_soft" font="Regular;26" foregroundColor="md_secondary" halign="right" position="1730,355" render="Label" size="150,30" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceOrbitalPosition"/>
 		</widget>
-		<widget font="Regular;30" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1200,404" render="RunningText" size="680,580" source="Event" transparent="1" valign="top">
+		<widget font="Regular;30" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1200,404" render="COCRunningText" size="680,580" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget alphatest="blend" position="1220,145" render="Picon" size="220,132" source="Service" zPosition="12">
@@ -920,7 +920,7 @@
 		<widget backgroundColor="md_surface" font="Regular;36" foregroundColor="md_primary" halign="left" position="30,95" render="Label" size="790,47" source="Event" transparent="1" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="30,163" render="RunningText" size="1385,175" source="Event" transparent="1" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="30,163" render="COCRunningText" size="1385,175" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -991,7 +991,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1014,7 +1018,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1086,7 +1091,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1109,7 +1118,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1181,7 +1191,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1204,7 +1218,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1278,7 +1293,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1301,7 +1320,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1373,7 +1393,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1396,7 +1420,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1468,7 +1493,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1491,7 +1520,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -1563,7 +1593,11 @@ from Components.Addons.ScreenHeader import ScreenHeader
 from Components.Addons.MainMenu import MainMenu as MainMenuAddon
 from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
 from Tools.LoadPixmap import LoadPixmap
-from skin import parseRadius, parseColor, parseFont, setListAnimation
+from skin import parseRadius, parseColor, parseFont
+try:
+	from skin import setListAnimation  # animation engine, not in every build
+except ImportError:
+	setListAnimation = None
 try:
 	from Components.Renderer.BoxLogo import setLogo as loadLogo
 except:
@@ -1586,7 +1620,8 @@ if "menu_list" not in self:
 	self["menu_list"].setItemHeight("58")
 	self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
 	self["menu_list"].instance.setWrapAround(True)
-	setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+	if setListAnimation:
+		setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
 	
 menu_list_size = self["menu_list"].instance.size()
 	
@@ -2212,7 +2247,7 @@ if callable(loadLogo):
 		<widget conditional="waitingtext" font="Regular;36" halign="center" name="waitingtext" position="35,429" size="1845,508" valign="center" zPosition="1"/>
 		<widget columnsCompactDescription="280,240,200" columnsOriginal="270,300" compactColumn="400" dateWidth="260" dirShift="10" font="Regular;30" fontSizesCompact="36,28" fontSizesMinimal="34,30" fontSizesOriginal="36,26,24" iconsWidth="33" itemCornerRadius="6" itemHeight="55" itemHeights="107,78,50" name="list" partIconeShiftCompact="8" partIconeShiftMinimal="12" partIconeShiftOriginal="12" pbarHeight="20" pbarLargeWidth="72" pbarShift="17" position="35,429" scrollbarMode="showNever" size="1845,508" spaceIconeText="6" spaceLeft="10" spaceRight="25" transparent="1" trashShift="10" treeDescription="250"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="list" maxPages="15" position="30,950" size="1855,25" transparent="1"/>
-		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="30,167" render="RunningText" size="1385,175" source="Service" transparent="1" valign="top">
+		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="30,167" render="COCRunningText" size="1385,175" source="Service" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget alphatest="blend" name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png,icons/azold.png,icons/za.png,icons/longest.png,icons/shortest.png,icons/dtsrt.png,icons/dtsdt.png" position="40,387" size="42,30" zPosition="1"/>
@@ -2245,7 +2280,7 @@ if callable(loadLogo):
 		<widget conditional="waitingtext" font="Regular;36" halign="center" name="waitingtext" position="20,100" size="1160,860" valign="center" zPosition="1"/>
 		<widget columnsCompactDescription="280,240,200" columnsOriginal="270,300" compactColumn="400" dateWidth="260" dirShift="10" font="Regular;30" fontSizesCompact="36,28" fontSizesMinimal="34,30" fontSizesOriginal="36,26,24" iconsWidth="33" itemCornerRadius="6" itemHeight="55" itemHeights="107,78,50" name="list" partIconeShiftCompact="8" partIconeShiftMinimal="12" partIconeShiftOriginal="12" pbarHeight="20" pbarLargeWidth="72" pbarShift="17" position="20,95" scrollbarMode="showNever" size="1160,860" spaceIconeText="6" spaceLeft="25" spaceRight="25" transparent="1" trashShift="10" treeDescription="250"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="list" maxPages="15" position="20,960" size="1160,25" transparent="1"/>
-		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="1235,570" render="RunningText" size="645,300" source="Service" transparent="1" valign="top">
+		<widget backgroundColor="md_surface_container_low" font="Regular;30" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1235,570" render="COCRunningText" size="645,300" source="Service" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="Regular;28" foregroundColor="md_primary" halign="left" position="1235,500" render="Label" size="645,40" source="Service" valign="center">
@@ -7092,7 +7127,7 @@ if callable(loadLogo):
 		<widget backgroundColor="md_surface" font="Regular;36" foregroundColor="md_primary" halign="left" position="30,95" render="Label" size="790,47" source="Event" transparent="1" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,wrap,repeat=1" position="30,163" render="RunningText" size="1385,175" source="Event" transparent="1" valign="top">
+		<widget backgroundColor="md_surface" font="Regular;30" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="30,163" render="COCRunningText" size="1385,175" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget font="Regular;28" itemHeight="38" name="bouquetlist" position="1512,80" scrollbarMode="showNever" size="384,7*38" transparent="0" zPosition="100"/>

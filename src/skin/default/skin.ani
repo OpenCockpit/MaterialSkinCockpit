@@ -27,13 +27,13 @@
     3. nothing (no animation)
   An empty <animation type="..."/> cancels what a less specific rule would give.
 
-  Times are milliseconds. With the "Enable animations" switch (AnimationSetup) on, whatever a rule names is animated.
+  Times are milliseconds. With "Show animations" (GUI settings) on, whatever a rule names is animated.
 -->
 <animations version="1">
 
 	<!-- No fade for every window (Estuary's OpenClose_Fade): a window animation takes a snapshot of the area of
-	     its widgets, which is slow for a full screen window. Only the OSD (a bar at the screen edge) and the
-	     dialogs below get one. -->
+	     its widgets, which is slow for a full screen window. Only the OSD (a bar at the screen edge), the menus
+	     (a panel) and the dialogs below get one. -->
 
 	<!-- info bars and player bars: the OSD (Animation_BottomSlide) -->
 	<screen name="InfoBar,SecondInfoBar,SecondInfoBarSimple,RadioInfoBar,MoviePlayer,DVDPlayer,CatchupPlayer,MediaPlayer">
@@ -44,6 +44,17 @@
 		<animation type="windowclose">
 			<effect type="fade" start="100" end="0" time="300"/>
 			<effect type="slide" start="0,0" end="0,200" time="300" tween="cubic" easing="out"/>
+		</animation>
+	</screen>
+
+	<!-- menu screens (every menu of menu.xml, e.g. menu_mainmenu, menu_setup): fade in and out, like the info bar
+	     without the slide (OpenClose_Fade) -->
+	<screen name="menu_*">
+		<animation type="windowopen">
+			<effect type="fade" start="0" end="100" time="200"/>
+		</animation>
+		<animation type="windowclose">
+			<effect type="fade" start="100" end="0" time="200"/>
 		</animation>
 	</screen>
 
@@ -84,10 +95,10 @@
 		</animation>
 		<focusedlayout>
 			<animation type="focus">
-				<effect type="zoom" start="100" end="110" center="auto" time="250" tween="sine"/>
+				<effect type="zoom" start="100" end="102" center="auto" time="250" tween="sine"/>
 			</animation>
 			<animation type="unfocus">
-				<effect type="zoom" start="110" end="100" center="auto" time="250" tween="sine"/>
+				<effect type="zoom" start="102" end="100" center="auto" time="250" tween="sine"/>
 			</animation>
 		</focusedlayout>
 	</widget>
