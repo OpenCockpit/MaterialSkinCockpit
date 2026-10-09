@@ -1,6 +1,6 @@
 # Material Skin for Open Enigma2 settop boxes
 
-- This skin is based on E2-DarkOS-skin by DimitarCC.
+- This skin is based on E2-DarkOS skin by DimitarCC.
 - It was completely refactored by Claude Code AI to support [SkinForge](https://github.com/OpenCockpit/SkinForge)'s object oriented, hierarchical model using relative positioning of screenpart includes.
 - The skin only supports OpenVix.
 
@@ -8,11 +8,13 @@
 
 ![Screenshot](s2.jpg)
 
+![Screenshot](s3.jpg)
+
 # Colour concept
 
 The skin uses a **Material Design 3 dark** colour scheme. Every colour a screen
 uses is a symbolic *role* (`md_surface`, `md_primary`, ...) defined once in
-[`colors.xmlinc`](../src/skin/default/colors.xmlinc). Screens
+[`colors.xmlinc`](src/skin/default/colors.xmlinc). Screens
 never contain hex values and never use the old colour names.
 
 A [light variant](docs/color-concept-light.md) with the same role names is available
@@ -97,4 +99,4 @@ Values are enigma2 `#AARRGGBB`; alpha `00` is opaque.
 purpose, so the on-screen keys match the buttons on the remote.
 
 ## Links
-- Installation: https://xcentaurix.github.io/MaterialSkinCockpit
+- Installation: https://OpenCockpit.github.io/MaterialSkinCockpit
