@@ -71,9 +71,6 @@ screen:
           self.textRenderer.instance.setFont(font)
           self.textRenderer.text = self["Title"].text
 
-
-
-
           titleSize = self.textRenderer.getSize()
           textsize = self["text"].getSize()
           textHeight = textsize[1]
@@ -99,6 +96,11 @@ screen:
           if descriptionHeight > 0:
           	wsizey += 10
           # move and resize elements
+          borderWidth = 2
+          for titleRenderer in self.renderer:
+          	if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
+          		titleRenderer.instance.move(ePoint(borderWidth, 3))
+          		titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
           self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
           self["description"].resize(wsizex - 40, descriptionHeight)
           self["list"].move(15, textHeight + textPadding + 60)

@@ -1854,9 +1854,6 @@ self.textRenderer.move(-1920,-40)
 self.textRenderer.instance.setFont(font)
 self.textRenderer.text = self["Title"].text
 
-
-
-
 titleSize = self.textRenderer.getSize()
 textsize = self["text"].getSize()
 textHeight = textsize[1]
@@ -1882,6 +1879,11 @@ wsizey = textHeight + textPadding + offset + descriptionHeight + 60 + 104
 if descriptionHeight &gt; 0:
 	wsizey += 10
 # move and resize elements
+borderWidth = 2
+for titleRenderer in self.renderer:
+	if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
+		titleRenderer.instance.move(ePoint(borderWidth, 3))
+		titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
 self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
 self["description"].resize(wsizex - 40, descriptionHeight)
 self["list"].move(15, textHeight + textPadding + 60)
@@ -1963,9 +1965,6 @@ self.textRenderer.move(-1920,-40)
 self.textRenderer.instance.setFont(font)
 self.textRenderer.text = self["Title"].text
 
-
-
-
 titleSize = self.textRenderer.getSize()
 textsize = self["text"].getSize()
 textHeight = textsize[1]
@@ -1991,6 +1990,11 @@ wsizey = textHeight + textPadding + offset + descriptionHeight + 60 + 104
 if descriptionHeight &gt; 0:
 	wsizey += 10
 # move and resize elements
+borderWidth = 2
+for titleRenderer in self.renderer:
+	if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
+		titleRenderer.instance.move(ePoint(borderWidth, 3))
+		titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
 self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
 self["description"].resize(wsizex - 40, descriptionHeight)
 self["list"].move(15, textHeight + textPadding + 60)
@@ -2057,9 +2061,6 @@ self.textRenderer.move(-1920,-40)
 self.textRenderer.instance.setFont(font)
 self.textRenderer.text = self["Title"].text
 
-
-
-
 titleSize = self.textRenderer.getSize()
 textsize = self["text"].getSize()
 textHeight = textsize[1]
@@ -2085,6 +2086,11 @@ wsizey = textHeight + textPadding + offset + descriptionHeight + 60 + 104
 if descriptionHeight &gt; 0:
 	wsizey += 10
 # move and resize elements
+borderWidth = 2
+for titleRenderer in self.renderer:
+	if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
+		titleRenderer.instance.move(ePoint(borderWidth, 3))
+		titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
 self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
 self["description"].resize(wsizex - 40, descriptionHeight)
 self["list"].move(15, textHeight + textPadding + 60)
@@ -7908,6 +7914,8 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menuicon image="menu/softcam.svg" key="softcsa_settings"/>
 		<menuicon image="menu/devices_selection.svg" key="devices_selection"/>
 		<menuicon image="menu/network_setup.svg" key="device_setup"/>
+		<menuicon image="menu/mounts.svg" key="netmounts_setup"/>
+		<menuicon image="menu/password.svg" key="password_setup"/>
 		<menuicon image="menu/display_skin_selector.svg" key="display_skin_selector"/>
 		<menuicon image="menu/epg_menu.svg" key="epg"/>
 		<menuicon image="menu/epg_menu.svg" key="epg_menu"/>
@@ -7971,12 +7979,57 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menuicon image="menu/tuner_setup.svg" key="tuner_setup"/>
 		<menuicon image="menu/usage_setup.svg" key="usage_setup"/>
 		<menuicon image="menu/gui_settings.svg" key="user_interface"/>
+		<menuicon image="menu/osd.svg" key="osd_menu"/>
+		<menuicon image="menu/osd.svg" key="osd3dsetup"/>
+		<menuicon image="menu/osd.svg" key="osdsetup"/>
+		<menuicon image="menu/front_display.svg" key="display"/>
+		<menuicon image="menu/front_display.svg" key="display_setup"/>
+		<menuicon image="menu/front_display.svg" key="leddisplay"/>
+		<menuicon image="menu/button_setup.svg" key="buttonsetup_setup"/>
+		<menuicon image="menu/subtitle_setup.svg" key="subtitle_setup"/>
 		<menuicon image="menu/video_selection.svg" key="video_selection"/>
 		<menuicon image="menu/vod.svg" key="iptv_vod_menu"/>
 		<menuicon image="menu/film.svg" key="vod_movies"/>
 		<menuicon image="menu/tvshow.svg" key="vod_series"/>
 		<menuicon image="menu/e2_emby_menu.png" key="e2_emby_menu"/>
 		<menuicon image="menu/e2_jellyfin_menu.png" key="e2_jellyfin_menu"/>
+		<menuicon image="menu/tuner_setup.svg" key="client_mode"/>
+		<menuicon image="menu/tuner_setup.svg" key="tunermisc_setup"/>
+		<menuicon image="menu/tuner_setup.svg" key="fallback_mode"/>
+		<menuicon image="menu/epg_menu.svg" key="epgloadsave_menu"/>
+		<menuicon image="menu/save.svg" key="saveepgcache"/>
+		<menuicon image="menu/download.svg" key="loadepgcache"/>
+		<menuicon image="menu/download.svg" key="netsabnzbd_setup"/>
+		<menuicon image="menu/delete.svg" key="deleteepgcache"/>
+		<menuicon image="menu/display_skin_selector.svg" key="lcd_skin_setup"/>
+		<menuicon image="menu/ftp.svg" key="netftp_setup"/>
+		<menuicon image="menu/globe.svg" key="Inadyn_setup"/>
+		<menuicon image="menu/media_share.svg" key="netdlna_setup"/>
+		<menuicon image="menu/media_share.svg" key="netushare_setup"/>
+		<menuicon image="menu/media_share.svg" key="streaming_clients_info_screen"/>
+		<menuicon image="menu/network_share.svg" key="netnfs_setup"/>
+		<menuicon image="menu/network_share.svg" key="netsmba_setup"/>
+		<menuicon image="menu/vpn.svg" key="netvpn_setup"/>
+		<menuicon image="menu/terminal.svg" key="nettelnet_setup"/>
+		<menuicon image="menu/broadcast.svg" key="streamrelay_settings"/>
+		<menuicon image="menu/broadcast.svg" key="rfmod_setup"/>
+		<menuicon image="menu/record.svg" key="recording_setup"/>
+		<menuicon image="menu/playback.svg" key="playback_setup"/>
+		<menuicon image="menu/timeshift.svg" key="timeshift_setup"/>
+		<menuicon image="menu/logs.svg" key="logs_menu"/>
+		<menuicon image="menu/logs.svg" key="logs_setup"/>
+		<menuicon image="menu/logs.svg" key="logs_man"/>
+		<menuicon image="menu/update.svg" key="onlineupdate_setup"/>
+		<menuicon image="menu/update.svg" key="software_update"/>
+		<menuicon image="menu/info_screen.svg" key="about_screen"/>
+		<menuicon image="menu/devices_selection.svg" key="device_screen"/>
+		<menuicon image="menu/memory.svg" key="memory_screen"/>
+		<menuicon image="menu/network_setup.svg" key="network_screen"/>
+		<menuicon image="menu/dish.svg" key="service_info_screen"/>
+		<menuicon image="menu/receiver.svg" key="boxinfo_screen"/>
+		<menuicon image="menu/scart.svg" key="scart_switch"/>
+		<menuicon image="menu/multiboot.svg" key="chkroot_multiboot"/>
+		<menuicon image="menu/recovery.svg" key="maintenance_mode"/>
 	</menuicons>
 	<menus>
 		<menu image="screen_icons/menu.png" key="mainmenu"/>
