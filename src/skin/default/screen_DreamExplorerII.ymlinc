@@ -1,0 +1,26 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "DreamExplorerII"
+  position: "fill"
+  title: "Dream-Explorer"
+  children:
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_on_surface"
+        itemHeight: "45"
+        name: "filelist"
+        position: "396,200"
+        scrollbarMode: "showNever"
+        size: "1130,675"
+        transparent: "1"
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "buttons/key_menu.png"
+        position: "1388,911"
+        size: "36,26"
+        zPosition: "2"

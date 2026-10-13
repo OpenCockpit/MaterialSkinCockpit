@@ -1,0 +1,21 @@
+screen:
+  backgroundColor: "md_shadow"
+  flags: "wfNoBorder"
+  name: "QuitMainloopScreen"
+  position: "fill"
+  zPosition: "100"
+  children:
+    - widget:
+        alphatest: "blend"
+        position: "center,c-65"
+        render: "BoxLogo"
+        size: "302,65"
+        source: "global.CurrentTime"
+        zPosition: "10"
+    - widget:
+        backgroundColor: "md_shadow"
+        font: "$list_font"
+        halign: "center"
+        name: "text"
+        position: "c-885,c+15"
+        size: "1770,150"

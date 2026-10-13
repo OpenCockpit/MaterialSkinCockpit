@@ -1,0 +1,9 @@
+screen:
+  flags: "wfNoBorder"
+  name: "ButtonSetup"
+  position: "fill"
+  title: ""
+  children:
+    - xmlinc:
+        file: "screen_HotkeySetup.ymlinc"
+        position: "5,5"

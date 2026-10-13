@@ -1,0 +1,21 @@
+screen:
+  name: "ScanStatusTemplate"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full.ymlinc"
+        position: "5,5"
+    - widget:
+        font: "$list_font"
+        name: "scan_state"
+        position: "40,327"
+        size: "810,70"
+        transparent: "1"
+        valign: "top"
+        zPosition: "2"
+    - widget:
+        borderColor: "md_outline"
+        borderWidth: "2"
+        name: "scan_progress"
+        pixmap: "progress_big.png"
+        position: "40,290"
+        size: "810,22"

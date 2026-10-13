@@ -1,0 +1,108 @@
+- widget:
+    alphatest: "on"
+    pixmap: "icons/scan-s.png"
+    position: "0,5"
+    render: "Pixmap"
+    size: "96,96"
+    source: "FrontendInfo"
+    transparent: "1"
+    zPosition: "2"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "TYPE"
+      - convert:
+          type: "ValueRange"
+          text: "0,0"
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    alphatest: "on"
+    pixmap: "icons/scan-c.png"
+    position: "0,5"
+    render: "Pixmap"
+    size: "96,96"
+    source: "FrontendInfo"
+    transparent: "1"
+    zPosition: "2"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "TYPE"
+      - convert:
+          type: "ValueRange"
+          text: "1,1"
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    alphatest: "on"
+    pixmap: "icons/scan-t.png"
+    position: "0,5"
+    render: "Pixmap"
+    size: "96,96"
+    source: "FrontendInfo"
+    transparent: "1"
+    zPosition: "2"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "TYPE"
+      - convert:
+          type: "ValueRange"
+          text: "2,2"
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    font: "$list_large_font"
+    name: "network"
+    position: "105,5"
+    size: "675,45"
+    transparent: "1"
+    valign: "center"
+    zPosition: "2"
+- widget:
+    font: "$list_large_font"
+    name: "transponder"
+    position: "105,57"
+    size: "675,45"
+    transparent: "1"
+    valign: "center"
+    zPosition: "2"
+- widget:
+    borderColor: "md_outline"
+    borderWidth: "2"
+    name: "scan_progress"
+    pixmap: "progress_big.png"
+    position: "0,170"
+    size: "810,22"
+- widget:
+    font: "$list_font"
+    name: "scan_state"
+    position: "0,207"
+    size: "810,70"
+    transparent: "1"
+    valign: "top"
+    zPosition: "2"
+- widget:
+    font: "$list_large_font"
+    name: "pass"
+    position: "0,280"
+    size: "810,45"
+    transparent: "1"
+    valign: "center"
+- widget:
+    font: "$text_font"
+    itemHeight: "45"
+    name: "servicelist"
+    position: "840,0"
+    scrollbarMode: "showNever"
+    selectionDisabled: "1"
+    size: "1020,800"
+    textOffset: "25,5"
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    connection: "servicelist"
+    position: "840,810"
+    size: "1020,25"
+    transparent: "1"

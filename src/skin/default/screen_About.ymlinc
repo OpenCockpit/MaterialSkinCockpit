@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "About"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface"
+        colposition: "0"
+        dividechar: ":"
+        font: "$text_font"
+        name: "AboutScrollLabel"
+        position: "29,96"
+        scrollbarMode: "showNever"
+        size: "1696,734"
+        split: "1"
+        zPosition: "2"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "AboutScrollLabel"
+        position: "29,850"
+        size: "1696,25"
+        transparent: "1"

@@ -1,0 +1,28 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "$list_large_font"
+    foregroundColor: "md_primary"
+    name: "searchinfo"
+    position: "30,123"
+    size: "830,40"
+- eLabel:
+    backgroundColor: "md_surface"
+    cornerRadius: "$radius_panel"
+    position: "$width-342,121"
+    size: "324,484"
+    widgetBorderColor: "md_outline_variant"
+    widgetBorderWidth: "1"
+- widget:
+    alphatest: "blend"
+    cornerRadius: "$radius_panel"
+    name: "cover"
+    position: "$width-340,123"
+    size: "320,480"
+    zPosition: "100"
+- widget:
+    alphatest: "blend"
+    conditional: "backdrop"
+    name: "backdrop"
+    position: "0,0"
+    size: "0,0"
+    zPosition: "-5"

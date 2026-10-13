@@ -1,0 +1,55 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "JobView"
+  position: "fill"
+  title: "Job View"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$subtitle_font"
+        position: "405,246"
+        render: "Label"
+        size: "1110,52"
+        source: "job_name"
+    - widget:
+        font: "$subtitle_font"
+        position: "408,355"
+        render: "Label"
+        size: "1110,45"
+        source: "job_task"
+    - widget:
+        backgroundColor: "md_primary_container_translucent"
+        borderWidth: "2"
+        position: "408,458"
+        render: "Progress"
+        size: "1110,54"
+        source: "job_progress"
+    - widget:
+        font: "$display_font"
+        foregroundColor: "md_shadow"
+        halign: "center"
+        position: "405,462"
+        render: "Label"
+        size: "1110,48"
+        source: "job_progress"
+        transparent: "1"
+        zPosition: "2"
+        children:
+          - convert:
+              type: "ProgressToText"
+    - widget:
+        font: "$list_large_font"
+        position: "408,572"
+        render: "Label"
+        size: "1110,39"
+        source: "job_status"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "38"
+        name: "config"
+        position: "408,675"
+        size: "1110,36"

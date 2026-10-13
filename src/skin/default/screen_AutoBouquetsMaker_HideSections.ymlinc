@@ -1,0 +1,36 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoBouquetsMaker_HideSections"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "0,0"
+    - widget:
+        position: "26,92"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1130,14*45"
+        source: "list"
+        transparent: "0"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryPixmapAlphaBlend(pos = (20, 2), size = (38, 36), png = 0),
+                				MultiContentEntryText(pos = (67, 0), size = (700, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+                				MultiContentEntryText(pos = (780, 0), size = (330, 45), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
+                			],
+                			"fonts": [gFont("Regular", $text_font_size)],
+                			"itemHeight": 45
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "26,731"
+        size: "1130,25"
+        transparent: "1"

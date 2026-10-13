@@ -1,0 +1,33 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "LCDdisplayFile"
+  position: "fill"
+  title: "Select File/Dir..."
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        enableWrapAround: "1"
+        font: "$label_font"
+        foregroundColor: "md_on_surface_variant"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "35"
+        name: "LCDfile"
+        position: "410,230"
+        scrollbarMode: "showOnDemand"
+        scrollbarSliderBorderColor: "md_primary"
+        scrollbarSliderBorderWidth: "1"
+        scrollbarSliderForegroundColor: "md_primary"
+        scrollbarWidth: "6"
+        size: "1126,560"
+    - widget:
+        font: "$label_font"
+        foregroundColor: "md_secondary"
+        halign: "center"
+        position: "410,820"
+        render: "Label"
+        size: "1126,45"
+        source: "File"
+        valign: "center"

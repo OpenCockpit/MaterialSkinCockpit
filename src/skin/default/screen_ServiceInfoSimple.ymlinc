@@ -1,0 +1,24 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "ServiceInfoSimple"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$text_font"
+        itemHeight: "38"
+        name: "infolist"
+        position: "29,96"
+        scrollbarMode: "showOnDemand"
+        selectionDisabled: "1"
+        size: "1696,741"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "infolist"
+        position: "29,846"
+        size: "1696,25"
+        transparent: "1"

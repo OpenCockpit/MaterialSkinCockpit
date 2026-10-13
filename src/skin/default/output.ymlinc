@@ -1,0 +1,7 @@
+output:
+  id: "0"
+  children:
+    - resolution:
+        bpp: "32"
+        xres: "1920"
+        yres: "1080"

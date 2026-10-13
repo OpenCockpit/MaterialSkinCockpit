@@ -1,0 +1,7 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PVRState"
+  position: "192,172"
+  size: "225,45"
+  zPosition: "2"

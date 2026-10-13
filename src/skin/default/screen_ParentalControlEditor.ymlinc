@@ -1,0 +1,18 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "ParentalControlEditor"
+  position: "fill"
+  title: "Parental control services Editor"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        enableWrapAround: "1"
+        itemHeight: "45"
+        name: "servicelist"
+        position: "392,199"
+        scrollbarMode: "showNever"
+        size: "1130,635"
+        transparent: "1"

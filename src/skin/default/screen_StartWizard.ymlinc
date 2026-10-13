@@ -1,0 +1,8 @@
+screen:
+  flags: "wfNoBorder"
+  name: "StartWizard"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_DefaultWizard.ymlinc"
+        position: "192,86"

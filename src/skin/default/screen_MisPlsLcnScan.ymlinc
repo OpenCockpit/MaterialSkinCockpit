@@ -1,0 +1,10 @@
+screen:
+  backgroundColor: "md_surface_overlay"
+  flags: "wfNoBorder"
+  name: "MisPlsLcnScan"
+  position: "0,0"
+  size: "1920,60"
+  children:
+    - xmlinc:
+        file: "screenpart_DownloadBar.ymlinc"
+        position: "10,5"

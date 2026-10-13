@@ -1,0 +1,10 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SecondInfoBarSimple"
+  position: "fill"
+  title: "Second InfoBar"
+  children:
+    - xmlinc:
+        file: "screenpart_SecondInfoBarTemplate.ymlinc"
+        position: "96,54"

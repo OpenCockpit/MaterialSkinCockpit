@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "tmdbScreenPerson"
+  position: "fill"
+  title: "TMDb - The Movie Database - Actor"
+  children:
+    - xmlinc:
+        file: "screenpart_tmdbTemplate1.ymlinc"
+        position: "96,40"
+    - xmlinc:
+        file: "screenpart_tmdbScreenPersonPanel.ymlinc"
+        position: "150,223"
+        size: "1690,902"

@@ -1,0 +1,12 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "NetworkInadyn"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - xmlinc:
+        file: "screenpart_NetworkInadynPanel.ymlinc"
+        position: "405,284"

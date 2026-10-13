@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "IMDB"
+  position: "fill"
+  title: "Internet Movie Database Details Plugin"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - xmlinc:
+        file: "screenpart_IMDBPanel.ymlinc"
+        position: "130,140"
+        size: "1690,902"

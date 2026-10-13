@@ -1,0 +1,10 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "tmdbScreenPeople"
+  position: "fill"
+  title: "TMDb - The Movie Database - Cast"
+  children:
+    - xmlinc:
+        file: "screenpart_tmdbTemplate2.ymlinc"
+        position: "96,40"

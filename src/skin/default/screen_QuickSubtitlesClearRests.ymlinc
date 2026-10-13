@@ -1,0 +1,17 @@
+screen:
+  backgroundColor: "md_scrim"
+  flags: "wfNoBorder"
+  name: "QuickSubtitlesClearRests"
+  position: "20,30"
+  size: "724,204"
+  title: "Subtitle settings"
+  children:
+    - widget:
+        font: "$text_font"
+        itemHeight: "38"
+        name: "config"
+        position: "7,7"
+        size: "710,190"
+        transparent: "1"
+        valign: "center"
+        zPosition: "1"

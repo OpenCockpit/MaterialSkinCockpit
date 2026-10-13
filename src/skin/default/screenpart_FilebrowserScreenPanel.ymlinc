@@ -1,0 +1,12 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "list_left"
+    position: "0,0"
+    scrollbarMode: "showOnDemand"
+    size: "830,790"
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "list_right"
+    position: "840,0"
+    scrollbarMode: "showOnDemand"
+    size: "830,790"

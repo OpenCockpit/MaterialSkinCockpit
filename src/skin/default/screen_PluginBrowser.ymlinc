@@ -1,0 +1,38 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PluginBrowser"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_3.ymlinc"
+        position: "252,111"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        orientation: "orGrid"
+        position: "center,210"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1356,580"
+        source: "list"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryPixmapAlphaBlend(pos = (17, 8), size = (190, 96), png = 3, cornerRadius=$radius_icon, flags = BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_HALIGN_CENTER|BT_VALIGN_CENTER),
+                				MultiContentEntryText(pos = (5, 120), size = (214, 64), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 1),
+                			],
+                			"fonts": [gFont("Regular", $hint_font_size)],
+                			"itemHeight": 190,
+                			"itemWidth": 226,
+                			"orientation": "orGrid",
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,835"
+        size: "1130,25"
+        transparent: "1"

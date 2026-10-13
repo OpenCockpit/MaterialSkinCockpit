@@ -1,0 +1,37 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TimerLog"
+  position: "fill"
+  title: "Timer log"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$list_large_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "38"
+        name: "loglist"
+        position: "391,210"
+        scrollbarMode: "showNever"
+        size: "1130,535"
+        textOffset: "20,0"
+    - eLabel:
+        backgroundColor: "md_outline_variant"
+        position: "391,760"
+        size: "1130,2"
+        zPosition: "-5"
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        name: "logentry"
+        position: "420,790"
+        size: "1090,36"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "loglist"
+        position: "396,850"
+        size: "1130,25"
+        transparent: "1"

@@ -1,0 +1,23 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "RemoteTimerChannelList"
+  position: "fill"
+  children:
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        name: "text"
+        position: "780,100"
+        size: "1110,912"
+        valign: "center"
+        zPosition: "1"
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        name: "channellist"
+        position: "516,222"
+        scrollbarMode: "showOnDemand"
+        size: "889,630"

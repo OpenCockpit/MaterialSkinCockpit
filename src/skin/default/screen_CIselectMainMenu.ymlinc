@@ -1,0 +1,17 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "CIselectMainMenu"
+  position: "fill"
+  title: "CI assignment"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        font: "$subtitle_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "CiList"
+        position: "516,222"
+        scrollbarMode: "showOnDemand"
+        size: "889,630"

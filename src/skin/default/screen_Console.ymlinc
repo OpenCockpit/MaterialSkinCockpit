@@ -1,0 +1,19 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "Console"
+  position: "fill"
+  title: "Command execution"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$mono_font"
+        foregroundColor: "md_on_surface"
+        itemHeight: "38"
+        name: "text"
+        position: "394,204"
+        scrollbarMode: "showOnDemand"
+        size: "1130,680"
+        transparent: "1"

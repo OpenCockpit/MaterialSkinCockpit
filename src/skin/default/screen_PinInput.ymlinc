@@ -1,0 +1,34 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PinInput"
+  position: "fill"
+  title: "Change pin code"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        name: "service"
+        position: "42,300"
+        size: "1110,40"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        name: "text"
+        position: "42,368"
+        size: "1110,35"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        name: "tries"
+        position: "43,418"
+        size: "1110,35"
+    - widget:
+        font: "$huge_font"
+        halign: "center"
+        name: "input"
+        position: "43,491"
+        size: "1110,63"

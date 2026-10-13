@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "VIXIPKInstaller"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_IpkgInstaller.ymlinc"
+        position: "0,0"

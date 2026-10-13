@@ -1,0 +1,16 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "ServiceAppDetectPlayers"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$text_font"
+        halign: "center"
+        name: "text"
+        position: "center,center"
+        size: "490,325"
+        valign: "center"

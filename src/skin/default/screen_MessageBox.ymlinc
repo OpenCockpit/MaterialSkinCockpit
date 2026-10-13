@@ -1,0 +1,11 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "MessageBox"
+  position: "center,center"
+  size: "920,15"
+  title: "Message"
+  children:
+    - xmlinc:
+        file: "screen_MessageBoxSimple.ymlinc"
+        position: "0,0"

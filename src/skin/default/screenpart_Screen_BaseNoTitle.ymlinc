@@ -1,0 +1,20 @@
+screen:
+  name: "Screen_BaseNoTitle"
+  children:
+    - eLabel:
+        backgroundColor: "md_surface_container_high"
+        cornerRadius: "$radius_window"
+        position: "0,0"
+        size: "$width,$height-20"
+        zPosition: "-11"
+    - eLabel:
+        backgroundColor: "md_surface"
+        cornerRadius: "$radius_window_inner"
+        position: "2,2"
+        size: "$width-4,$height-84"
+        zPosition: "-10"
+    - eLabel:
+        backgroundColor: "md_surface_container_highest"
+        position: "8,66"
+        size: "$width-16,2"
+        zPosition: "-5"

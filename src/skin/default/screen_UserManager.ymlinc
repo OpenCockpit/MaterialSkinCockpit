@@ -1,0 +1,40 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "UserManager"
+  position: "fill"
+  title: "UserManager"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        position: "405,205"
+        render: "Listbox"
+        scrollbarMode: "showOnDemand"
+        size: "1110,6*90"
+        source: "config"
+        transparent: "1"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (90, 24), size = (870, 42), font=0, flags = RT_HALIGN_LEFT, text = 0),
+                				MultiContentEntryPixmapAlphaBlend(pos = (15, 15), size = (72, 72), png = 3),
+                			],
+                			"fonts": [gFont("Regular", $list_large_font_size), gFont("Regular", $hint_font_size)],
+                			"itemHeight": 90
+                		}
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        position: "405,780"
+        render: "Label"
+        size: "1110,34"
+        source: "introduction"
+        transparent: "1"
+        valign: "center"
+        zPosition: "10"

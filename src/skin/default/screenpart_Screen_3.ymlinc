@@ -1,0 +1,7 @@
+screen:
+  name: "Screen_3"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_3Panel.ymlinc"
+        position: "0,0"
+        size: "1416,858"

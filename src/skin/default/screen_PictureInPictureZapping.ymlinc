@@ -1,0 +1,20 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PictureInPictureZapping"
+  position: "870,45"
+  size: "180,39"
+  title: "PiPZap"
+  zPosition: "2"
+  children:
+    - eLabel:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "3"
+        font: "$list_large_font"
+        halign: "center"
+        position: "0,0"
+        size: "180,39"
+        text: "PiP-Zap"
+        transparent: "1"
+        valign: "center"

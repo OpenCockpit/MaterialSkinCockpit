@@ -1,0 +1,9 @@
+screen:
+  flags: "wfNoBorder"
+  name: "ButtonSetupSelect"
+  position: "fill"
+  title: ""
+  children:
+    - xmlinc:
+        file: "screen_HotkeySetupSelect.ymlinc"
+        position: "5,5"

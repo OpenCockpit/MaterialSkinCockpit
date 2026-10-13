@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "BlindscanState"
+  position: "fill"
+  title: "Blind scan"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_primary"
+        halign: "center"
+        name: "progress"
+        position: "145,865"
+        size: "1630,32"
+        zPosition: "5"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_on_surface"
+        halign: "center"
+        name: "post_action"
+        position: "145,730"
+        size: "1620,150"
+        valign: "center"

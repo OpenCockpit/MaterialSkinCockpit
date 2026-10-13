@@ -1,0 +1,41 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "VlcServerConfigScreen"
+  position: "fill"
+  title: ""
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - eLabel:
+        backgroundColor: "md_surface"
+        font: "global_title;51"
+        foregroundColor: "md_on_surface"
+        halign: "left"
+        position: "87,54"
+        size: "1200,75"
+        text: "VLC Video Player"
+        transparent: "1"
+    - eLabel:
+        backgroundColor: "md_surface"
+        font: "$heading_font"
+        halign: "center"
+        position: "1245,180"
+        size: "615,44"
+        text: "Edit VLC Server"
+        transparent: "1"
+    - widget:
+        enableWrapAround: "1"
+        name: "config"
+        position: "105,180"
+        scrollbarMode: "showNever"
+        size: "1095,735"
+        transparent: "1"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "MaterialSkinCockpit/icons/db.png"
+        position: "1245,840"
+        size: "600,99"
+        transparent: "1"
+        zPosition: "2"

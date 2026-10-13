@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TranslationInfo"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$text_font"
+        halign: "center"
+        position: "401,196"
+        render: "Label"
+        size: "1110,120"
+        source: "TranslatorName"
+        transparent: "1"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$text_font"
+        halign: "center"
+        position: "401,317"
+        render: "Label"
+        size: "1110,570"
+        source: "TranslationInfo"
+        transparent: "1"

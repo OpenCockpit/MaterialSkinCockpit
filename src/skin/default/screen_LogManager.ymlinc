@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "LogManager"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        enableWrapAround: "1"
+        font: "$list_font"
+        name: "list"
+        position: "396,210"
+        scrollbarMode: "showNever"
+        size: "1130,16*38"
+        transparent: "0"
+    - applet:
+        type: "onLayoutFinish"
+        text: "self[\"list\"].instance.setItemHeight(38)"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,665"
+        size: "1130,25"
+        transparent: "1"

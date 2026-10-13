@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AnimationSetupConfig"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"

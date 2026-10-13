@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "BouquetSelector"
+  position: "fill"
+  title: "Choose bouquet"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        font: "$list_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "menu"
+        position: "512,215"
+        scrollbarMode: "showNever"
+        size: "889,585"
+        textOffset: "15,5"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "menu"
+        connection: "menu"
+        position: "512,849"
+        size: "889,25"
+        transparent: "1"

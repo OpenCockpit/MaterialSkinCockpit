@@ -1,0 +1,7 @@
+screen:
+  backgroundColor: "md_surface"
+  flags: "wfNoBorder"
+  name: "RadioInfoBar"
+  position: "0,0"
+  size: "0,0"
+  title: "InfoBar"

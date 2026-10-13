@@ -1,0 +1,31 @@
+- xmlinc:
+    file: "screenpart_Screen_1.ymlinc"
+    position: "0,0"
+- widget:
+    font: "$list_font"
+    foregroundColor: "md_secondary"
+    name: "channel"
+    position: "30,540"
+    size: "720,45"
+    transparent: "1"
+- widget:
+    font: "$list_font"
+    foregroundColor: "md_secondary"
+    name: "datetime"
+    position: "405,540"
+    size: "345,45"
+    transparent: "1"
+- widget:
+    font: "$list_font"
+    foregroundColor: "md_secondary"
+    halign: "right"
+    name: "duration"
+    position: "405,540"
+    size: "345,45"
+    transparent: "1"
+- widget:
+    font: "$list_large_font"
+    name: "epg_description"
+    position: "780,100"
+    size: "1110,912"
+    transparent: "1"

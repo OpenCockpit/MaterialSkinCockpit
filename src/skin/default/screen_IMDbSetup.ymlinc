@@ -1,0 +1,15 @@
+screen:
+  flags: "wfNoBorder"
+  name: "IMDbSetup"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$text_font"
+        foregroundColor: "md_secondary"
+        position: "145,755"
+        render: "Label"
+        size: "1630,100"
+        source: "help"

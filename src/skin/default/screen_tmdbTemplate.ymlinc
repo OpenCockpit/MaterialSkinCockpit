@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "tmdbTemplate"
+  position: "fill"
+  title: "TMDb - The Movie Database"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - xmlinc:
+        file: "screenpart_tmdbTemplatePanel.ymlinc"
+        position: "120,130"
+        size: "1690,902"

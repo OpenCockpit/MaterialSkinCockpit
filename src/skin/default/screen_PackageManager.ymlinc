@@ -1,0 +1,38 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "PackageManager"
+  position: "fill"
+  title: "Packet manager"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        itemHeight: "54"
+        position: "514,221"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "889,11*54"
+        source: "list"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (5, 2), size = (829, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                																						MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+                																						MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
+                			],
+                			"fonts": [gFont("Regular", $hint_font_size), gFont("Regular", $micro_font_size)],
+                			"itemHeight": 54
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "list"
+        connection: "list"
+        position: "514,833"
+        size: "889,25"
+        transparent: "1"

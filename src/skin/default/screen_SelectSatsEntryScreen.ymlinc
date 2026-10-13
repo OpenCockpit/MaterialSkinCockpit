@@ -1,0 +1,26 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "SelectSatsEntryScreen"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        name: "list"
+        position: "405,205"
+        scrollbarMode: "showNever"
+        size: "1110,540"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        name: "hint"
+        position: "405,780"
+        size: "1110,35"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

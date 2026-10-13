@@ -1,0 +1,37 @@
+screen:
+  flags: "wfNoBorder"
+  name: "Pic_Exif"
+  position: "fill"
+  title: "Info"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        position: "125,150"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        selectionDisabled: "1"
+        size: "1670,11*52"
+        source: "menu"
+        transparent: "1"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (7, 10), size = (375, 45), flags = RT_HALIGN_LEFT, text = 0),
+                				MultiContentEntryText(pos = (390, 10), size = (645, 45), flags = RT_HALIGN_LEFT, text = 1)
+                			],
+                			"fonts": [gFont("Regular", $list_font_size)],
+                			"itemHeight": 52
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "menu"
+        connection: "menu"
+        position: "145,915"
+        size: "1630,25"
+        transparent: "1"

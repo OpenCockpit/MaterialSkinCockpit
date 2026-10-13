@@ -1,0 +1,21 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoTimerHelp"
+  position: "fill"
+  title: "AutoTimerHelp"
+  children:
+    - widget:
+        font: "$list_large_font"
+        halign: "left"
+        position: "780,105"
+        render: "Label"
+        size: "1110,75"
+        source: "title"
+        zPosition: "1"
+    - widget:
+        font: "$list_font"
+        name: "detailtext"
+        position: "780,205"
+        size: "1110,805"
+        transparent: "1"

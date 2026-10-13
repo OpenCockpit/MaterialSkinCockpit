@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TextBoxSplit"
+  position: "fill"
+  title: "Message"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        colposition: "0"
+        dividechar: ":"
+        font: "$mono_font"
+        halign: "block"
+        name: "text"
+        position: "121,138"
+        scrollbarMode: "showNever"
+        size: "1674,760"
+        split: "1"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "text"
+        position: "121,904"
+        size: "1696,25"
+        transparent: "1"

@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TagEditor"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_MovieTagEditor.ymlinc"
+        position: "96,54"

@@ -1,0 +1,32 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SHOUTcastStreamripperRecordingPath"
+  position: "fill"
+  title: "Select record path for streamripper"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$label_font"
+        foregroundColor: "md_secondary"
+        name: "target"
+        position: "410,820"
+        size: "1126,35"
+        valign: "center"
+    - widget:
+        enableWrapAround: "1"
+        font: "$label_font"
+        foregroundColor: "md_on_surface_variant"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "35"
+        name: "filelist"
+        position: "410,225"
+        scrollbarMode: "showOnDemand"
+        scrollbarSliderBorderColor: "md_primary"
+        scrollbarSliderBorderWidth: "1"
+        scrollbarSliderForegroundColor: "md_primary"
+        scrollbarWidth: "6"
+        size: "1126,560"
+        zPosition: "1"

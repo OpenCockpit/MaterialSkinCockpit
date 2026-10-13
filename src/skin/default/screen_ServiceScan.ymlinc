@@ -1,0 +1,13 @@
+screen:
+  flags: "wfNoBorder"
+  name: "ServiceScan"
+  position: "fill"
+  title: "Service scan"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full.ymlinc"
+        position: "5,5"
+    - xmlinc:
+        file: "screenpart_ServiceScanPanel.ymlinc"
+        position: "40,120"
+        size: "1900,850"

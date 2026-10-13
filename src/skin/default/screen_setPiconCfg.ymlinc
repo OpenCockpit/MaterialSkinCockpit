@@ -1,0 +1,17 @@
+screen:
+  flags: "wfNoBorder"
+  name: "setPiconCfg"
+  position: "fill"
+  title: "SetPicon Setup"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        halign: "center"
+        name: "statusbar"
+        position: "145,865"
+        size: "1630,32"
+        zPosition: "5"

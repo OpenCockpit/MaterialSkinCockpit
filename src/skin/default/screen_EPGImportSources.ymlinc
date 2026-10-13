@@ -1,0 +1,28 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "EPGImportSources"
+  position: "fill"
+  title: "EPG Import Sources"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "396,210"
+        scrollbarMode: "showNever"
+        size: "1130,635"
+        valign: "center"
+    - widget:
+        backgroundColor: "md_surface"
+        connection: "list"
+        pagerBackground: "md_surface"
+        pagerForeground: "md_on_surface"
+        position: "396,849"
+        render: "Pager"
+        size: "1130,25"
+        transparent: "1"

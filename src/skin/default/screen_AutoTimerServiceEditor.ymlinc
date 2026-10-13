@@ -1,0 +1,28 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoTimerServiceEditor"
+  position: "fill"
+  title: "Edit AutoTimer Services"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "0,0"
+    - widget:
+        conditional: "config"
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "config"
+        position: "29,96"
+        scrollbarMode: "showNever"
+        size: "1670,13*45"
+        valign: "center"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "config"
+        connection: "config"
+        position: "49,861"
+        size: "1630,25"
+        transparent: "1"

@@ -1,0 +1,34 @@
+screen:
+  flags: "wfNoBorder"
+  name: "MinuteInput"
+  position: "center,center"
+  size: "360,82"
+  children:
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "chzap_bg.png"
+        position: "0,0"
+        size: "364,86"
+        zPosition: "-9"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "chzap_overlay.png"
+        position: "2,2"
+        size: "360,82"
+        zPosition: "-8"
+    - eLabel:
+        backgroundColor: "md_surface_overlay_soft"
+        font: "$list_large_font"
+        foregroundColor: "md_secondary"
+        position: "30,22"
+        size: "150,37"
+        text: "Seek"
+        transparent: "1"
+    - widget:
+        font: "$list_large_font"
+        halign: "right"
+        name: "minutes"
+        position: "180,22"
+        size: "150,37"
+        transparent: "1"
+        zPosition: "1"

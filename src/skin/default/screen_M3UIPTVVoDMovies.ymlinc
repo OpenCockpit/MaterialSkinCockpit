@@ -1,0 +1,82 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "M3UIPTVVoDMovies"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$text_font"
+        halign: "center"
+        name: "overlay"
+        position: "125,150"
+        shadowColor: "md_shadow"
+        shadowOffset: "-1,-1"
+        size: "1320,12*45"
+        valign: "center"
+        zPosition: "12"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        position: "125,150"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1320,12*45"
+        source: "list"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (50, 0), size = (1250, 45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+                				MultiContentEntryPixmapAlphaBlend(pos = (10, 8), size = (30, 30), png = 2, flags=BT_SCALE|BT_KEEP_ASPECT_RATIO),
+                			],
+                			"fonts": [gFont("Regular", $list_font_size)],
+                			"itemHeight": 45
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "list"
+        connection: "list"
+        position: "125,705"
+        size: "1320,25"
+        transparent: "1"
+    - eLabel:
+        backgroundColor: "md_outline_variant"
+        position: "125,755"
+        size: "1670,2"
+        zPosition: "-7"
+    - eLabel:
+        backgroundColor: "md_outline_variant"
+        position: "1470,150"
+        size: "2,575"
+        zPosition: "-7"
+    - eLabel:
+        backgroundColor: "md_surface"
+        cornerRadius: "$radius_poster_frame"
+        position: "1495,150"
+        size: "302,447"
+        widgetBorderColor: "md_outline_variant"
+        widgetBorderWidth: "1"
+    - widget:
+        cornerRadius: "$radius_poster"
+        name: "poster"
+        position: "1496,151"
+        size: "300,445"
+        zPosition: "12"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        halign: "center"
+        position: "125,790"
+        render: "Label"
+        shadowColor: "md_shadow"
+        shadowOffset: "-1,-1"
+        size: "1670,140"
+        source: "description"
+        valign: "center"
+        zPosition: "10"

@@ -1,0 +1,31 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "NetworkAdapterTest"
+  position: "fill"
+  title: "Network test"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full.ymlinc"
+        position: "5,5"
+    - xmlinc:
+        file: "screenpart_NetworkAdapterTestPanel.ymlinc"
+        position: "80,105"
+        size: "2625,850"
+    - widget:
+        alphatest: "blend"
+        backgroundColor: "md_surface_container_high"
+        name: "EditSettingsButton"
+        pixmaps: "buttons/key_grey.png,buttons/key_blue.png"
+        position: "885,e-49"
+        size: "40,20"
+        zPosition: "20"
+    - widget:
+        backgroundColor: "md_surface_container_high"
+        font: "$label_font"
+        foregroundColors: "md_on_surface,md_outline,md_success"
+        halign: "left"
+        name: "EditSettings_Text"
+        position: "935,e-58"
+        size: "370,38"
+        zPosition: "21"

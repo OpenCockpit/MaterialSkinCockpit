@@ -1,0 +1,24 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "LCDdisplayMenu"
+  position: "fill"
+  title: "LCD4linux - Config"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        enableWrapAround: "1"
+        font: "$list_font"
+        foregroundColor: "md_on_surface_variant"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "menu"
+        position: "515,230"
+        scrollbarMode: "showOnDemand"
+        scrollbarSliderBorderColor: "md_primary"
+        scrollbarSliderBorderWidth: "1"
+        scrollbarSliderForegroundColor: "md_primary"
+        scrollbarWidth: "6"
+        size: "889,592"

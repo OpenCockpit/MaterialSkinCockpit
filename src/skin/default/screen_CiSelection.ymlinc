@@ -1,0 +1,29 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "CiSelection"
+  position: "fill"
+  title: "Common Interface"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$list_large_font"
+        name: "text"
+        position: "395,202"
+        size: "1100,36"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "38"
+        name: "entries"
+        position: "396,245"
+        scrollbarMode: "showOnDemand"
+        size: "1130,600"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "entries"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

@@ -1,0 +1,31 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoTimerOverview"
+  position: "fill"
+  title: "AutoTimer Overview"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        DayNameFont: "$list_font"
+        EventNameFont: "$list_large_font"
+        ServiceNameFont: "$list_large_font"
+        iconMargin: "20"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "90"
+        name: "entries"
+        position: "115,160"
+        rowHeight: "42"
+        rowSplit1: "50"
+        rowSplit2: "45"
+        scrollbarMode: "showNever"
+        size: "1690,8*90"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "entries"
+        position: "145,915"
+        size: "1630,25"
+        transparent: "1"

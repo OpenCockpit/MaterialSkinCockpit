@@ -1,0 +1,16 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AC3LipSyncSetup"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$label_font"
+        foregroundColor: "md_on_surface_variant"
+        name: "PluginInfo"
+        position: "30,570"
+        size: "0,0"
+        zPosition: "4"

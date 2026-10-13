@@ -1,0 +1,48 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "WlanScan"
+  position: "fill"
+  title: "Choose a Wireless Network"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        position: "125,150"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1670,8*75"
+        source: "list"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (15, 3), size = (825, 37), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+                																						MultiContentEntryText(pos = (15, 39), size = (262, 30), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+                																						MultiContentEntryText(pos = (300, 39), size = (262, 30), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
+                																						MultiContentEntryText(pos = (600, 3), size = (352, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
+                																						MultiContentEntryText(pos = (600, 39), size = (352, 30), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
+                			],
+                			"fonts": [gFont("Regular", $list_large_font_size), gFont("Regular", $label_font_size)],
+                			"itemHeight": 75
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "list"
+        connection: "list"
+        position: "145,915"
+        size: "1630,25"
+        transparent: "1"
+    - widget:
+        font: "$text_font"
+        halign: "center"
+        position: "145,755"
+        render: "Label"
+        size: "1630,100"
+        source: "info"
+        transparent: "1"
+        valign: "center"

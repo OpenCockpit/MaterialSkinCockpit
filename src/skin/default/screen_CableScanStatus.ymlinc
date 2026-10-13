@@ -1,0 +1,33 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "CableScanStatus"
+  position: "fill"
+  title: "Cable Scan"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        alphatest: "on"
+        name: "frontend"
+        pixmap: "icons/scan-c.png"
+        position: "780,180"
+        size: "96,96"
+        transparent: "1"
+        zPosition: "2"
+    - widget:
+        font: "$list_font"
+        name: "scan_state"
+        position: "780,345"
+        size: "720,45"
+        transparent: "1"
+        valign: "center"
+        zPosition: "2"
+    - widget:
+        borderColor: "md_on_surface_variant"
+        borderWidth: "2"
+        name: "scan_progress"
+        pixmap: "progress_big.png"
+        position: "780,397"
+        size: "720,22"

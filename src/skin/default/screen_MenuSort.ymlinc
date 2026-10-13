@@ -1,0 +1,19 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "MenuSort"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_MenuTemplate.ymlinc"
+        position: "0,0"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "buttons/key_prev.png"
+        position: "30,1031"
+        size: "52,38"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "buttons/key_next.png"
+        position: "82,1031"
+        size: "52,38"

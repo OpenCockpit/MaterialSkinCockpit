@@ -1,0 +1,10 @@
+screen:
+  name: "Screen_1"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Base.ymlinc"
+        position: "0,0"
+    - xmlinc:
+        file: "screenpart_ButtonsBarTemplate.ymlinc"
+        position: "20,$height-68"
+        size: "$width-128,62"

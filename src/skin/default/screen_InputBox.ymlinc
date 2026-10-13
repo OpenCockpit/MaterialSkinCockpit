@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "InputBox"
+  position: "fill"
+  title: "Input"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$list_large_font"
+        name: "text"
+        position: "396,210"
+        size: "1110,39"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "buttons/vkey_text.png"
+        position: "543,315"
+        size: "816,78"
+        zPosition: "-1"
+    - widget:
+        font: "$heading_font"
+        name: "input"
+        position: "548,332"
+        size: "806,45"
+        valign: "center"

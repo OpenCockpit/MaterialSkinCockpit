@@ -1,0 +1,32 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PluginDownloadBrowser"
+  position: "fill"
+  title: "Downloadable plugins"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_3.ymlinc"
+        position: "252,111"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        name: "list"
+        position: "center,210"
+        scrollbarMode: "showNever"
+        size: "1356,610"
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        name: "text"
+        position: "399,225"
+        size: "1110,75"
+        transparent: "1"
+        valign: "center"
+        zPosition: "-1"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,835"
+        size: "1130,25"
+        transparent: "1"

@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "MSNWeatherPlugin"
+  position: "fill"
+  title: "Weather Plugin"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - xmlinc:
+        file: "screenpart_MSNWeatherPluginPanel.ymlinc"
+        position: "400,208"
+        size: "1100,818"

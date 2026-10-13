@@ -1,0 +1,19 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SHOUTcastSetup"
+  position: "fill"
+  title: "SHOUTcast Setup"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        font: "$label_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "37"
+        name: "config"
+        position: "515,230"
+        scrollbarMode: "showOnDemand"
+        size: "889,592"
+        transparent: "1"

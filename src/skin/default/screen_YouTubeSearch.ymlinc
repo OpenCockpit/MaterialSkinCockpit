@@ -1,0 +1,43 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "YouTubeSearch"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        itemHeight: "45"
+        name: "config"
+        position: "396,225"
+        size: "1130,45"
+        zPosition: "1"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        position: "396,290"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1130,585"
+        source: "list"
+        transparent: "0"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
+                			],
+                			"fonts": [gFont("Regular", $list_font_size)],
+                			"itemHeight": 45
+                		}
+    - widget:
+        alphatest: "blend"
+        name: "HelpWindow"
+        position: "1050,710"
+        size: "1,1"
+        transparent: "1"
+        zPosition: "3"

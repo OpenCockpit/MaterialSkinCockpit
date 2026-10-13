@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AboutOE"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_About.ymlinc"
+        position: "96,54"

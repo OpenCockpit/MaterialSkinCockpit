@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SubsSetupEmbedded"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_SubsSetupGeneral.ymlinc"
+        position: "0,0"

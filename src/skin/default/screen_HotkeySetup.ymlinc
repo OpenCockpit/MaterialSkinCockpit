@@ -1,0 +1,29 @@
+screen:
+  flags: "wfNoBorder"
+  name: "HotkeySetup"
+  position: "fill"
+  title: ""
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full_Big_Pig.ymlinc"
+        position: "0,0"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "24,89"
+        scrollbarMode: "showNever"
+        size: "1130,900"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        name: "choosen"
+        position: "1177,446"
+        scrollbarMode: "showOnDemand"
+        size: "703,495"
+    - widget:
+        font: "$hint_font"
+        halign: "center"
+        name: "description"
+        position: "1174,952"
+        size: "708,29"
+        zPosition: "1"

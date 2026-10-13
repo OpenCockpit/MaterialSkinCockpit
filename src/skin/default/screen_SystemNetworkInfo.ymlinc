@@ -1,0 +1,12 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SystemNetworkInfo"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_About.ymlinc"
+        position: "96,54"
+    - xmlinc:
+        file: "screenpart_NetworkStatusTemplate.ymlinc"
+        position: "125,838"

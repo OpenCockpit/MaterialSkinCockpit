@@ -1,0 +1,43 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SubservicesQuickzap"
+  position: "c-384,c-15"
+  size: "768,300"
+  title: "Subservices"
+  children:
+    - widget:
+        alphatest: "on"
+        pixmap: "icons/record.png"
+        position: "675,0"
+        render: "Pixmap"
+        size: "21,21"
+        source: "session.RecordState"
+        zPosition: "2"
+        children:
+          - convert:
+              type: "ConditionalShowHide"
+              text: "Blink,1000,4000"
+    - eLabel:
+        backgroundColor: "md_surface_container_lowest"
+        font: "$caption_font"
+        position: "0,0"
+        size: "705,30"
+        text: "Subservices"
+    - widget:
+        backgroundColor: "md_surface_container_lowest"
+        font: "$list_large_font"
+        name: "CurrentSubserviceNumber"
+        position: "0,30"
+        size: "75,36"
+    - widget:
+        backgroundColor: "md_surface_container_lowest"
+        font: "$list_large_font"
+        position: "75,30"
+        render: "Label"
+        size: "630,36"
+        source: "session.CurrentService"
+        children:
+          - convert:
+              type: "ServiceName"
+              text: "Name"

@@ -1,0 +1,46 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "DevicesMountPanel"
+  position: "fill"
+  title: "Mount Manager"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        position: "396,200"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "990,836"
+        source: "list"
+        transparent: "1"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (135, 0), size = (900, 45), font=0, text = 0),
+                				MultiContentEntryText(pos = (165, 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
+                				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (120, 120), png = 2),
+                			],
+                			"fonts": [gFont("Regular", $subtitle_font_size), gFont("Regular", $list_font_size)],
+                			"itemHeight": 128
+                		}
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "buttons/key_menu.png"
+        position: "1415,910"
+        size: "36,26"
+        zPosition: "2"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_on_surface"
+        halign: "left"
+        name: "key_menu"
+        position: "1250,825"
+        size: "278,57"
+        valign: "center"
+        zPosition: "1"

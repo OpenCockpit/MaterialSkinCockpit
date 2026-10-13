@@ -1,0 +1,27 @@
+- widget:
+    alphatest: "blend"
+    name: "thn"
+    position: "0,0"
+    size: "390,375"
+- widget:
+    font: "$text_font"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "45"
+    name: "filelist"
+    position: "420,0"
+    scrollbarMode: "showNever"
+    size: "1220,17*45"
+    zPosition: "3"
+- widget:
+    font: "$list_font"
+    name: "label"
+    position: "420,858"
+    size: "390,34"
+    transparent: "1"
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    connection: "filelist"
+    position: "420,780"
+    size: "1210,25"
+    transparent: "1"

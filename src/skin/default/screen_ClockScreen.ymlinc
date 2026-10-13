@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "ClockScreen"
+  position: "center,30"
+  size: "235,55"
+  title: "Clock"
+  zPosition: "-1"
+  children:
+    - widget:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "2"
+        font: "$clock_large_font"
+        foregroundColor: "md_warning"
+        halign: "right"
+        position: "1,1"
+        render: "Label"
+        size: "180,55"
+        source: "global.CurrentTime"
+        transparent: "1"
+        valign: "center"
+        zPosition: "0"
+        children:
+          - convert:
+              type: "ClockToText"
+              text: "Format:%H:%M"

@@ -1,0 +1,8 @@
+switchpixmap:
+  children:
+    - pixmap:
+        filename: "icons/menu_on.png"
+        name: "menu_on"
+    - pixmap:
+        filename: "icons/menu_off.png"
+        name: "menu_off"

@@ -1,0 +1,29 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TimerSelection"
+  position: "fill"
+  title: "Timer selection"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        itemHeight: "76"
+        name: "timerlist"
+        position: "396,210"
+        rowSplit: "42"
+        satPosLeft: "250"
+        scrollbarMode: "showNever"
+        setEventNameFont: "$list_large_font"
+        setFont: "$text_font"
+        setServiceNameFont: "$text_font"
+        size: "1130,635"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "timerlist"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

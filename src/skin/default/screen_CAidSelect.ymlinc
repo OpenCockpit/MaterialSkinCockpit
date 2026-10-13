@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "CAidSelect"
+  position: "fill"
+  title: "Select CAId's"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$subtitle_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "21,86"
+        scrollbarMode: "showOnDemand"
+        size: "889,590"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$caption_font"
+        halign: "center"
+        position: "21,686"
+        render: "Label"
+        size: "889,40"
+        source: "introduction"
+        valign: "center"
+        zPosition: "10"

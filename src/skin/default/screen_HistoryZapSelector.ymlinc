@@ -1,0 +1,41 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "HistoryZapSelector"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        backgroundColor: "md_surface"
+        foregroundColor: "md_on_surface"
+        position: "125,150"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1670,750"
+        source: "menu"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (120, 0), size = (15, 45), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 1), #arrow
+                																							MultiContentEntryText(pos = (145, 0), size = (350, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2, color = "md_on_surface", color_sel = "md_primary"), #service name
+                																							MultiContentEntryText(pos = (425, 0), size = (450, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3, color = "md_on_surface", color_sel = "md_primary"), #event name
+                																							MultiContentEntryText(pos = (145, 30), size = (350, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 7, color = "md_on_surface", color_sel = "md_primary"), #orbital position
+                																							MultiContentEntryText(pos = (425, 30), size = (450, 30), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5, color = "md_on_surface", color_sel = "md_primary"), #duration
+                																							MultiContentEntryText(pos = (10, 70), size = (1650, 90), font = 4, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = "md_on_surface", color_sel = "md_primary"), #epg
+                																							MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags = BT_SCALE) #picon must be last otherwise won't work
+                			],
+                			"fonts": [gFont("Regular", $hint_font_size), gFont("Regular", $caption_font_size), gFont("Regular", $micro_font_size), gFont("Regular", $micro_font_size), gFont("Regular", $label_font_size)],
+                			"itemHeight": 150
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "menu"
+        position: "396,915"
+        size: "1130,25"
+        transparent: "1"

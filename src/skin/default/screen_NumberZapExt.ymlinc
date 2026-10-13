@@ -1,0 +1,34 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "NumberZapExt"
+  position: "40,40"
+  size: "860,155"
+  title: " "
+  children:
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "extzap_overlay.png"
+        position: "2,2"
+        size: "856,151"
+        zPosition: "-11"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "extzap_bg.png"
+        position: "0,0"
+        size: "860,155"
+        zPosition: "-12"
+    - widget:
+        alphatest: "blend"
+        name: "chPicon"
+        position: "30,10"
+        scale: "1"
+        size: "220,132"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$display_font"
+        halign: "left"
+        name: "chNumName"
+        position: "290,50"
+        size: "560,55"
+        valign: "center"

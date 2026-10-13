@@ -1,0 +1,17 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "CurrentRemoteTV"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        name: "text"
+        position: "125,150"
+        size: "1670,630"
+        valign: "center"
+        zPosition: "1"

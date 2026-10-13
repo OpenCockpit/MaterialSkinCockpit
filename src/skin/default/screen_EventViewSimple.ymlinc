@@ -1,0 +1,10 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "EventViewSimple"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_EventViewSimplePanel.ymlinc"
+        position: "96,54"
+        size: "1728,987"

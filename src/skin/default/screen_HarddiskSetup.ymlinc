@@ -1,0 +1,24 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "HarddiskSetup"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$subtitle_font"
+        name: "model"
+        position: "412,332"
+        size: "1110,38"
+    - widget:
+        font: "$subtitle_font"
+        name: "capacity"
+        position: "416,485"
+        size: "1110,38"
+    - widget:
+        font: "$subtitle_font"
+        name: "bus"
+        position: "416,541"
+        size: "1110,38"

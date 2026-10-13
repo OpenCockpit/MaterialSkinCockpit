@@ -1,0 +1,8 @@
+setups:
+  children:
+    - setup:
+        image: "screen_icons/setup.png"
+        key: "default"
+    - setup:
+        image: "screen_icons/timer_setup.png"
+        key: "timerentry"

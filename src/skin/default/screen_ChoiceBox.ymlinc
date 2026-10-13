@@ -1,0 +1,134 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "ChoiceBox"
+  position: "0,0"
+  size: "1920,15"
+  title: "Choice Box"
+  children:
+    - widget:
+        backgroundColor: "md_surface_container_high"
+        font: "$title_font"
+        foregroundColor: "md_primary"
+        halign: "left"
+        position: "15,3"
+        render: "Label"
+        size: "250,40"
+        source: "Title"
+        transparent: "1"
+        valign: "center"
+        zPosition: "2"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$event_font"
+        foregroundColor: "md_secondary"
+        name: "text"
+        position: "15,15"
+        size: "880,0"
+        valign: "center"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$text_font"
+        foregroundColor: "md_primary"
+        name: "description"
+        position: "0,0"
+        size: "570,0"
+        transparent: "1"
+    - widget:
+        backgroundColor: "md_surface"
+        enableWrapAround: "1"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "525,330"
+        scrollbarMode: "showNever"
+        scrollbarSliderBorderColor: "md_surface_container_lowest"
+        scrollbarSliderBorderWidth: "0"
+        scrollbarSliderForegroundColor: "md_on_surface_variant"
+        scrollbarWidth: "3"
+        size: "869,498"
+        transparent: "1"
+        zPosition: "2"
+    - applet:
+        type: "onLayoutFinish"
+        text: |
+          from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
+          from Components.Label import Label
+          from Components.Pixmap import Pixmap
+          from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
+          from Tools.LoadPixmap import LoadPixmap
+          from skin import parseRadius, parseColor, parseFont
+          try:
+          	from Components.Renderer.BoxLogo import setLogo as loadLogo
+          except:
+          	loadLogo = None
+          	
+          font = parseFont("$title_font", ((1, 1), (1, 1)))
+          self.textRenderer = Label("")
+          self.textRenderer.GUIcreate(self.instance)
+          self.textRenderer.resize(1920,40)
+          self.textRenderer.move(-1920,-40)
+          self.textRenderer.instance.setFont(font)
+          self.textRenderer.text = self["Title"].text
+
+
+
+
+          titleSize = self.textRenderer.getSize()
+          textsize = self["text"].getSize()
+          textHeight = textsize[1]
+          textpos = self["text"].instance.position()
+          if textpos.x() < 0 and textpos.y() < 0: 
+          	textHeight = 0
+          self["text"].move(20, 55)
+          descriptionHeight = 0
+          if bool(self.list) and any([(True if len(x[0]) > 2 and x[0][2] and isinstance(x[0][2], str) else False) for x in self.list]):
+          	descriptionHeight = 75
+          count = len(self.list)
+          count, scrollbar = (10, self["list"].instance.getScrollbarWidth() + 5) if count > 10 else (count, 0)
+          offset = self["list"].l.getItemSize().height() * count
+          wsizex = max(max(self["list"].instance.getMaxItemTextWidth(), textsize[0]), titleSize[0] + 30) + 10 + 30
+          self["text"].resize(wsizex - 40, textHeight)
+          textsize = self["text"].getSize()
+          textHeight = textsize[1]
+          self["text"].resize(wsizex - 40, textHeight)
+          textPadding = 0
+          if textHeight > 0:
+          	textPadding = 10
+          wsizey = textHeight + textPadding + offset + descriptionHeight + 60 + 104
+          if descriptionHeight > 0:
+          	wsizey += 10
+          # move and resize elements
+          self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
+          self["description"].resize(wsizex - 40, descriptionHeight)
+          self["list"].move(15, textHeight + textPadding + 60)
+          self.instance.resize(eSize(*(wsizex, wsizey)))
+          # resize list
+          self["list"].resize(wsizex - 30, offset)
+          # center window
+          width, height = getDesktop(0).size().width(), getDesktop(0).size().height()
+          wintlcpos = ePoint((width - wsizex) // 2, (height - wsizey) // 2)
+          radiusBLayer, edgeValueBLayer = parseRadius("$radius_window")
+          radiusTLayer, edgeValueTLayer = parseRadius("$radius_window_inner")
+          self.instance.move(wintlcpos)
+          self["blayer"] = Label()
+          self["blayer"].GUIcreate(self.instance)
+          self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
+          self["blayer"].instance.resize(eSize(wsizex,wsizey-15))
+          self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+          self["blayer"].instance.move(ePoint(0,0))
+          self["blayer"].setZPosition(-7)
+          self["tlayer"] = Label()
+          self["tlayer"].GUIcreate(self.instance)
+          self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
+          self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-15-64-45))
+          self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
+          self["tlayer"].instance.move(ePoint(2,47))
+          self["tlayer"].setZPosition(-6)
+          self["logo"] = Pixmap()
+          self["logo"].GUIcreate(self.instance)
+          self["logo"].instance.resize(eSize(74,34))
+          self["logo"].instance.move(ePoint(wsizex-94,wsizey-70))
+          self["logo"].instance.setAlphatest(BT_ALPHABLEND)
+          if callable(loadLogo):
+          	loadLogo(self["logo"].instance, "brand", 74, 34, "right")

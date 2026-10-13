@@ -1,0 +1,40 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "UpdatePlugin"
+  position: "fill"
+  title: "Software Update"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_on_surface"
+        position: "396,220"
+        render: "Label"
+        size: "1050,45"
+        source: "package"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$list_font"
+        foregroundColor: "md_on_surface"
+        position: "396,295"
+        render: "Label"
+        size: "1050,45"
+        source: "status"
+    - widget:
+        backgroundColor: "md_surface"
+        name: "slider"
+        position: "396,670"
+        size: "1128,20"
+        zPosition: "100"
+    - widget:
+        alphatest: "blend"
+        backgroundColor: "md_surface"
+        foregroundColor: "md_on_surface_variant"
+        name: "activityslider"
+        position: "396,690"
+        size: "1128,6"
+        zPosition: "100"

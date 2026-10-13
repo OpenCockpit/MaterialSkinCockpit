@@ -1,0 +1,9 @@
+screen:
+  flags: "wfNoBorder"
+  name: "RemoteTimerSetup"
+  position: "fill"
+  title: "Timer entry"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"

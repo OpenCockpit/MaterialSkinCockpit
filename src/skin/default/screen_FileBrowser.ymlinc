@@ -1,0 +1,15 @@
+screen:
+  flags: "wfNoBorder"
+  name: "FileBrowser"
+  position: "fill"
+  title: "DVD File Browser"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        name: "filelist"
+        position: "396,201"
+        scrollbarMode: "showOnDemand"
+        size: "1110,640"

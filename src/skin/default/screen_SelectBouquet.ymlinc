@@ -1,0 +1,18 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SelectBouquet"
+  position: "fill"
+  title: "Choose bouquet"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        font: "$subtitle_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "menu"
+        position: "516,222"
+        scrollbarMode: "showOnDemand"
+        size: "889,630"

@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "FilebrowserScreen"
+  position: "fill"
+  title: "File browser"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - xmlinc:
+        file: "screenpart_FilebrowserScreenPanel.ymlinc"
+        position: "125,140"
+        size: "1690,902"

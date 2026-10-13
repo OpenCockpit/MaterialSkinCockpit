@@ -1,0 +1,17 @@
+screen:
+  flags: "wfNoBorder"
+  name: "GraphicalEPGPIG"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_GraphMultiEPG.ymlinc"
+        position: "5,5"
+    - widget:
+        font: "$text_font"
+        itemHeight: "38"
+        name: "bouquetlist"
+        position: "1512,80"
+        scrollbarMode: "showNever"
+        size: "384,7*38"
+        transparent: "0"
+        zPosition: "100"

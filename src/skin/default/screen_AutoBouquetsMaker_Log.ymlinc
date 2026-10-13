@@ -1,0 +1,16 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoBouquetsMaker_Log"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$text_font"
+        itemHeight: "38"
+        name: "list"
+        position: "396,210"
+        size: "1130,630"
+        valign: "top"

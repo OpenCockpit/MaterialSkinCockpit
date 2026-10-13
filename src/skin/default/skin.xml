@@ -2228,7 +2228,49 @@ if callable(loadLogo):
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="TimeshiftLive" position="105,105" size="450,45" zPosition="2">
 		<eLabel backgroundColor="md_transparent" borderColor="md_shadow" borderWidth="2" font="Regular;36" position="0,0" size="450,45" text="Timeshift Live"/>
 	</screen>
-	<screen flags="wfNoBorder" name="ChannelSelectionRadio" position="fill"/>
+	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="ChannelSelectionRadio" position="fill" title="Radio Channel Selection">
+		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="0,0" size="1912,1071" zPosition="-11"/>
+		<eLabel backgroundColor="md_surface" cornerRadius="14" position="2,72" size="1908,927" zPosition="-10"/>
+		<eLabel backgroundColor="md_surface_container_high" position="24,0" size="1864,2" zPosition="-7"/>
+		<eLabel backgroundColor="md_surface_container_high" position="0,24" size="2,982" zPosition="-7"/>
+		<eLabel backgroundColor="md_surface_container_high" position="1910,24" size="2,982" zPosition="-7"/>
+		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="Bold;18" pathForegroundColor="md_primary" position="20,3" size="1700,66" titleFont="Bold;28" titleForegroundColor="md_primary" titleSingleFont="Bold;42" transparent="1"/>
+		<widget backgroundColor="md_shadow" font="Bold;40" foregroundColor="md_on_surface" halign="right" position="1750,0" render="Label" size="120,70" source="global.CurrentTime" transparent="1" valign="center" zPosition="20">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="20,1020" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
+		<widget alphatest="blend" halign="right" logoType="brand" position="1815,1020" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
+		<eLabel backgroundColor="md_outline_variant" position="1198,100" size="1,870" zPosition="-5"/>
+		<widget additionalInfoFont="Regular;24" backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success_container" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarBorder="md_outline" colorEventProgressbarBorderSelected="md_outline" colorEventProgressbarSelected="md_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_primary" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_secondary" foregroundColorServiceNotAvail="md_outline" forgroundColorEventProgressbarBorder="md_surface" itemCornerRadius="6" itemHeight="52" itemHeightTwoLine="84" markerLine="1" markerLineColor="md_outline_variant" markerTextAlignment="center" name="list" nonplayableMargins="0" piconMargin="2" position="23,95" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarSliderBorderColor="md_on_surface" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" serviceEventSeparator=" • " serviceInfoFont="Regular;26" serviceNameFont="Regular;30" serviceNumberFont="Regular;30" serviceRemainingInfoFont="Regular;24" sidesMargin="20" size="1152,840" textSeparator="  •  "/>
+		<widget addon="Pager" backgroundColor="md_surface" connection="list" maxPages="15" position="15,950" size="1160,25" transparent="1"/>
+		<widget backgroundColor="md_surface_container_low" font="Regular;28" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1230,480" render="COCRunningText" size="645,310" source="ServiceEvent" transparent="1" valign="top">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget backgroundColor="md_outline_variant" position="1226,820" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
+			<convert type="EventName">Name</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget NumberOfItems="4" backgroundColor="md_surface" font="Regular;28" foregroundColor="md_on_surface" noLabel="1" noWrap="1" position="1230,840" render="NextEpgInfo" size="645,160" source="ServiceEvent" timeColor="md_on_surface" transparent="1" valign="bottom"/>
+		<widget alphatest="blend" position="1230,140" render="Picon" size="200,120" source="ServiceEvent" zPosition="12">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget backgroundColor="md_surface" font="Bold;36" foregroundColor="md_primary" halign="center" noWrap="1" position="1230,245" render="Label" size="200,80" source="ServiceEvent" transparent="1" valign="bottom" zPosition="14">
+			<convert nostrip="1" type="ServiceName">  •  ,ORBPOS,TUNERSYSTEM</convert>
+		</widget>
+		<widget backgroundColor="md_surface_container_low" font="Regular;34" foregroundColor="md_primary" halign="left" noWrap="1" position="1230,425" render="Label" size="645,40" source="ServiceEvent" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="md_surface_container_low" font="Bold;26" position="1235,380" render="Label" size="160,30" source="ServiceEvent" transparent="1">
+			<convert nostrip="1" type="EventName">  •  ,TIMERANGE</convert>
+		</widget>
+		<widget backgroundColor="md_surface" borderColor="md_outline" borderWidth="1" cornerRadius="3" foregroundColor="md_on_surface_variant" position="1373,394" render="Progress" size="400,6" source="ServiceEvent" zPosition="6">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget backgroundColor="md_surface" font="Bold;26" halign="right" position="1795,380" render="Label" size="85,30" source="ServiceEvent" transparent="1" zPosition="2">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+	</screen>
 	<screen backgroundColor="md_surface" flags="wfNoBorder" name="RadioInfoBar" position="0,0" size="0,0" title="InfoBar"/>
 	<screen flags="wfNoBorder" name="MovieSelection" position="fill" title="Movie Selection">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="5,5" size="1912,1071" zPosition="-11"/>
@@ -2329,31 +2371,31 @@ if callable(loadLogo):
 		<widget enableWrapAround="1" itemCornerRadius="6" position="515,495" render="Listbox" scrollbarMode="showNever" scrollbarSliderBorderColor="md_surface_container_lowest" scrollbarSliderBorderWidth="0" scrollbarSliderForegroundColor="md_on_surface_variant" scrollbarWidth="3" size="889,320" source="streams" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-																										{"default": ( 45, [
-																											MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																												{"default": ( 45, [
+																													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
 				], True, "showNever"),
-																										"notselected": (45, [
-																											MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																												"notselected": (45, [
+																													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-																										], False, "showNever"),
-																										"subs": (45, [
-																											MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																												], False, "showNever"),
+																												"subs": (45, [
+																													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-																										], True, "showNever"),
-																										"subs_notselected": (45, [
-																											MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
+																												], True, "showNever"),
+																												"subs_notselected": (45, [
+																													MultiContentEntryText(pos=(25,2), size=(60,40), font=0, flags=RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text=2), # key,
 					MultiContentEntryText(pos=(90,2), size=(310,40), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=3), # description,
 					MultiContentEntryText(pos=(420,2), size=(400,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=4), # language,
 					MultiContentEntryPixmapAlphaBlend(pos=(840,6), size=(32,32), png=6), # selection,
-																										], False, "showNever")
-																										},
+																												], False, "showNever")
+																												},
 				"fonts": [gFont("Regular",28), gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -2697,10 +2739,10 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(15,3), size=(825,37), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the essid
-																									MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
-																									MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
-																									MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
-																									MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
+																											MultiContentEntryText(pos=(15,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=5), # index 5 is the interface
+																											MultiContentEntryText(pos=(300,39), size=(262,30), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the encryption
+																											MultiContentEntryText(pos=(600,3), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the signal
+																											MultiContentEntryText(pos=(600,39), size=(352,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the maxrate
 				],
 				"fonts": [gFont("Regular",34), gFont("Regular",26)],
 				"itemHeight": 75
@@ -2724,7 +2766,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(15,29), size=(48,48), png=2), # index 3 is the interface pixmap
-																								MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
+																										MultiContentEntryText(pos=(120,9), size=(990,81), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=1), # index 1 is the interfacename
 				],
 				"fonts": [gFont("Regular",34), gFont("Regular",24)],
 				"itemHeight": 105
@@ -2832,46 +2874,46 @@ if callable(loadLogo):
 		<widget conditional="indicatorU0" position="125,150" render="Listbox" scrollbarMode="showNever" size="1300,743" source="list" transparent="0">
 			<convert type="TemplatedMultiContent">
 			{
-																								"templates": {
-																									# Simple help with no headings ("flat")
-																									# data[1:]=[helpText]
-																									"default": [
-																									57,  # itemHeight
-																									[
-																									MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
-																									]
+																										"templates": {
+																											# Simple help with no headings ("flat")
+																											# data[1:]=[helpText]
+																											"default": [
+																											57,  # itemHeight
+																											[
+																											MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
+																											]
 				],
-																									# Simple help with headings
-																									# data[1:]=[heading, None]  # For heading entries
-																									# data[1:]=[None, helpText]  # For help entries
-																									"default+headings": [  # data[1:]=[helpText]
-																									57,  # itemHeight
-																									[
-																									MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
+																											# Simple help with headings
+																											# data[1:]=[heading, None]  # For heading entries
+																											# data[1:]=[None, helpText]  # For help entries
+																											"default+headings": [  # data[1:]=[helpText]
+																											57,  # itemHeight
+																											[
+																											MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
 					MultiContentEntryText(pos=(30,6), size=(1070,57), font=1, text=2),
-																									]
-																									],
-																									# Extended help with no headings
-																									# data[1:]=[helpText, extendedHelpText]
-																									"extended": [
-																									86,  # itemHeight
-																									[
-																									MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
+																											]
+																											],
+																											# Extended help with no headings
+																											# data[1:]=[helpText, extendedHelpText]
+																											"extended": [
+																											86,  # itemHeight
+																											[
+																											MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
 					MultiContentEntryText(pos=(0,60), size=(1100,40), color="md_on_surface_variant", font=3, text=2),
-																									],
-																									],
-																									# Extended help with headings
-																									# data[1:]=[heading, None, None]  # For heading entries
-																									# data[1:]=[None, helpText, extendedHelpText]  # For help entries
-																									"extended+headings": [
-																									86,  # itemHeight
-																									[
-																									MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
+																											],
+																											],
+																											# Extended help with headings
+																											# data[1:]=[heading, None, None]  # For heading entries
+																											# data[1:]=[None, helpText, extendedHelpText]  # For help entries
+																											"extended+headings": [
+																											86,  # itemHeight
+																											[
+																											MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
 					MultiContentEntryText(pos=(30,0), size=(1070,45), font=2, text=2),
 					MultiContentEntryText(pos=(30,45), size=(1070,40), color="md_on_surface_variant", font=3, text=3),
-																									],
-																									],
-																								},
+																											],
+																											],
+																										},
 				"fonts": [gFont("Regular",40), gFont("Regular",36), gFont("Regular",40), gFont("Regular",40)],
 				"itemHeight": 57
 			}
@@ -3791,8 +3833,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(5,2), size=(829,28), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-																									MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
-																									MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
+																											MultiContentEntryText(pos=(5,28), size=(829,20), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the description
+																											MultiContentEntryPixmapAlphaBlend(pos=(840,3), size=(48,48), png=4, flags=BT_SCALE), # index 4 is the status pixmap
 				],
 				"fonts": [gFont("Regular",24), gFont("Regular",16)],
 				"itemHeight": 54
@@ -4269,9 +4311,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(125,9), size=(660,48), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is the interfacename
-																								MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
-																								MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
-																								MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
+																										MultiContentEntryText(pos=(125,60), size=(660,36), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text=2), # index 2 is the description
+																										MultiContentEntryPixmapAlphaBlend(pos=(12,12), size=(81,81), png=3), # index 3 is the interface pixmap
+																										MultiContentEntryPixmapAlphaBlend(pos=(105,63), size=(22,24), png=4), # index 4 is the default pixmap
 				],
 				"fonts": [gFont("Regular",44), gFont("Regular",30)],
 				"itemHeight": 105
@@ -4337,11 +4379,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(2,15), size=(72,72), png=1), # index 1 is the expandable/expanded/verticalline icon
-																								MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
-																								MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
-																								MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
-																								MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
-																								MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
+																										MultiContentEntryText(pos=(75,6), size=(630,39), font=2, flags=RT_HALIGN_LEFT, text=2), # index 2 is the Hostname
+																										MultiContentEntryText(pos=(210,7), size=(480,37), font=0, flags=RT_HALIGN_LEFT, text=3), # index 3 is the sharename
+																										MultiContentEntryText(pos=(210,39), size=(480,25), font=1, flags=RT_HALIGN_LEFT, text=4), # index 4 is the sharedescription
+																										MultiContentEntryPixmapAlphaTest(pos=(67,0), size=(72,72), png=5), # index 5 is the nfs/cifs icon
+																										MultiContentEntryPixmapAlphaTest(pos=(135,0), size=(72,72), png=6), # index 6 is the isMounted icon
 				],
 				"fonts": [gFont("Regular",26), gFont("Regular",20), gFont("Regular",34)],
 				"itemHeight": 78
@@ -4364,8 +4406,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(90,7), size=(870,42), font=0, flags=RT_HALIGN_LEFT, text=0), # index 2 is the Menu Titel
-																										MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
-																										MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
+																												MultiContentEntryText(pos=(90,52), size=(870,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 3 is the Description
+																												MultiContentEntryPixmapAlphaBlend(pos=(15,15), size=(72,72), png=3), # index 4 is the pixmap
 				],
 				"fonts": [gFont("Regular",34), gFont("Regular",24)],
 				"itemHeight": 90
@@ -4425,11 +4467,11 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(22,15), size=(72,72), png=0), # index 0 is the isMounted pixmap
-																									MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
-																									MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
-																									MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
-																									MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
-																									MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
+																											MultiContentEntryText(pos=(150,15), size=(285,37), font=0, flags=RT_HALIGN_LEFT, text=1), # index 1 is the sharename
+																											MultiContentEntryText(pos=(435,5), size=(345,30), font=1, flags=RT_HALIGN_LEFT, text=2), # index 2 is the IPdescription
+																											MultiContentEntryText(pos=(435,35), size=(720,30), font=1, flags=RT_HALIGN_LEFT, text=3), # index 3 is the DIRdescription
+																											MultiContentEntryPixmapAlphaTest(pos=(950,25), size=(72,72), png=4), # index 4 is the activepng pixmap
+																											MultiContentEntryPixmapAlphaTest(pos=(995,15), size=(72,72), png=5), # index 4 is the mounttype pixmap
 				],
 				"fonts": [gFont("Regular",36), gFont("Regular",26)],
 				"itemHeight": 75
@@ -5660,9 +5702,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-																								MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
-																								MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
-																								MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
+																										MultiContentEntryText(pos=(80,40), size=(250,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=1), # index 1 is type
+																										MultiContentEntryText(pos=(350,40), size=(400,20), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_TOP, text=2), # index 2 is status
+																										MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=3), # index 3 is bt_icon
 				],
 				"fonts": [gFont("Regular",28) , gFont("Regular",24)],
 				"itemHeight": 70
@@ -5695,7 +5737,7 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(80,0), size=(1000,40), font=1, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=0), # index 0 is Name
-																								MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
+																										MultiContentEntryPixmapAlphaTest(pos=(10,10), size=(50,50), png=1), # index 1 is bt_icon
 				],
 				"fonts": [gFont("Regular",40), gFont("Regular",28) , gFont("Regular",24), gFont("Regular",16)],
 				"itemHeight": 70
@@ -6445,9 +6487,9 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryPixmapAlphaTest(pos=(0,0), flags=BT_SCALE, size=(150,108), png=2), # Thumbnail
-																									MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
-																									MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
-																									MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+																											MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+																											MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+																											MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
 				],
 				"fonts": [gFont("Regular",30), gFont("Regular",24)],
 				"itemHeight": 108
@@ -6607,10 +6649,10 @@ if callable(loadLogo):
 		<widget font="Regular;28" itemCornerRadius="6" position="515,234" render="Listbox" scrollbarMode="showNever" size="890,400" source="menuList" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-																								{"default": (45, [
-																									MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
+																										{"default": (45, [
+																											MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
 				], True, "showNever"),
-																								},
+																										},
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 45
 			}
@@ -6736,11 +6778,11 @@ if callable(loadLogo):
 		<widget position="140,165" render="Listbox" scrollbarMode="showNever" size="1640,225" source="search_info" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-																	{"default": (33, [
-																		MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color="md_primary", flags=RT_HALIGN_LEFT,  text=0), # langname,
+																		{"default": (33, [
+																			MultiContentEntryText(pos=(0,0),   size=(620,33),  font=0, color="md_primary", flags=RT_HALIGN_LEFT,  text=0), # langname,
 					MultiContentEntryText(pos=(307,0),   size=(920,33),  font=0, flags=RT_HALIGN_LEFT,  text=1)
 				], False, "showNever"),
-																	},
+																		},
 				"fonts": [gFont("Regular",26)],
 				"itemHeight": 33,
 			}
@@ -6756,14 +6798,14 @@ if callable(loadLogo):
 		<widget itemCornerRadius="6" position="132,465" render="Listbox" scrollbarMode="showNever" size="1655,440" source="subtitles" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 			{"templates":
-																	{"default": (40, [
-																		MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
+																		{"default": (40, [
+																			MultiContentEntryPixmapAlphaBlend(pos=(10,4),   size=(36,36), png=0), # key,
 					MultiContentEntryText(pos=(55,2),   size=(150,37),  font=0, flags=RT_HALIGN_LEFT,  text=1), # language,
 					MultiContentEntryText(pos=(220,2),  size=(1022,37),  font=0, flags=RT_HALIGN_LEFT,  text=2), # filename,
 					MultiContentEntryText(pos=(1270,2), size=(302,37), font=0, flags=RT_HALIGN_LEFT,  text=3), # site,
 					MultiContentEntryPixmapAlphaBlend(pos=(1607,8),   size=(36,36), png=4), # syncPng,
 				], True, "showNever"),
-																	},
+																		},
 				"fonts": [gFont("Regular",26), gFont("Regular",16)],
 				"itemHeight": 40
 			}
@@ -7277,12 +7319,12 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(120,0), size=(15,45), font=0, flags=RT_HALIGN_CENTER|RT_VALIGN_CENTER, text=1), #arrow
-																										MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color="md_on_surface", color_sel="md_primary"), #service name
-																										MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color="md_on_surface", color_sel="md_primary"), #event name
-																										MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color="md_on_surface", color_sel="md_primary"), #orbital position
-																										MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color="md_on_surface", color_sel="md_primary"), #duration
-																										MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color="md_on_surface", color_sel="md_primary"), #epg
-																										MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
+																												MultiContentEntryText(pos=(145,0), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=2, color="md_on_surface", color_sel="md_primary"), #service name
+																												MultiContentEntryText(pos=(425,0), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=3, color="md_on_surface", color_sel="md_primary"), #event name
+																												MultiContentEntryText(pos=(145,30), size=(350,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=7, color="md_on_surface", color_sel="md_primary"), #orbital position
+																												MultiContentEntryText(pos=(425,30), size=(450,30), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER, text=5, color="md_on_surface", color_sel="md_primary"), #duration
+																												MultiContentEntryText(pos=(10,70), size=(1650,90), font=4, flags=RT_HALIGN_LEFT|RT_WRAP, text=4, color="md_on_surface", color_sel="md_primary"), #epg
+																												MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags=BT_SCALE) #picon must be last otherwise won't work
 				],
 				"fonts": [gFont("Regular",24), gFont("Regular",20), gFont("Regular",16), gFont("Regular",16), gFont("Regular",26)],
 				"itemHeight": 150
@@ -7672,8 +7714,8 @@ if callable(loadLogo):
 			{
 				"template": [
 					MultiContentEntryText(pos=(135,7), size=(975,39), font=0, flags=RT_HALIGN_LEFT, text=0), # index 0 is the name
-																									MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
-																									MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
+																											MultiContentEntryText(pos=(135,49), size=(975,57), font=1, flags=RT_HALIGN_LEFT, text=1), # index 1 is the state
+																											MultiContentEntryPixmapAlphaBlend(pos=(22,7), size=(72,72), png=2), # index 2 is the status pixmap
 				],
 				"fonts": [gFont("Regular",34), gFont("Regular",24)],
 				"itemHeight": 112
@@ -7858,6 +7900,12 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menuicon image="menu/ci_assign.svg" key="ci_assign"/>
 		<menuicon image="menu/ci_setup.svg" key="ci_setup"/>
 		<menuicon image="menu/ci_setup.svg" key="cicam"/>
+		<menuicon image="menu/softcam.svg" key="cam"/>
+		<menuicon image="menu/softcam.svg" key="softcam_setup"/>
+		<menuicon image="menu/softcam.svg" key="cccaminfo"/>
+		<menuicon image="menu/softcam.svg" key="oscam/Ncaminfo"/>
+		<menuicon image="menu/softcam.svg" key="softcam_initD"/>
+		<menuicon image="menu/softcam.svg" key="softcsa_settings"/>
 		<menuicon image="menu/devices_selection.svg" key="devices_selection"/>
 		<menuicon image="menu/network_setup.svg" key="device_setup"/>
 		<menuicon image="menu/display_skin_selector.svg" key="display_skin_selector"/>
@@ -7869,10 +7917,15 @@ self["bcGroundOver"].setZPosition(-7)</applet>
 		<menuicon image="menu/gui_settings.svg" key="skin_selection"/>
 		<menuicon image="menu/gui_settings.svg" key="gui_settings"/>
 		<menuicon image="menu/hardisk_selection.svg" key="hardisk"/>
+		<menuicon image="menu/storage.svg" key="harddisk"/>
+		<menuicon image="menu/storage.svg" key="harddisk_setup"/>
+		<menuicon image="menu/storage.svg" key="harddisk_init"/>
+		<menuicon image="menu/storage.svg" key="harddisk_check"/>
 		<menuicon image="menu/hardisk_selection.svg" key="hardisk_selection"/>
 		<menuicon image="menu/info_screen.svg" key="info_screen"/>
 		<menuicon image="menu/info_screen.svg" key="information"/>
-		<menuicon image="menu/hdmi_cec.png" key="hdmi_cec"/>
+		<menuicon image="menu/hdmi_cec.svg" key="hdmi_cec"/>
+		<menuicon image="menu/hdmi_cec.svg" key="hdmicec"/>
 		<menuicon image="menu/input_device_setup.svg" key="input_device_setup"/>
 		<menuicon image="menu/keyboard.svg" key="keyboard"/>
 		<menuicon image="menu/keyboard_setup.svg" key="keyboard_setup"/>

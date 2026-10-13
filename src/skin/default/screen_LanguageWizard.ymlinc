@@ -1,0 +1,33 @@
+screen:
+  flags: "wfNoBorder"
+  name: "LanguageWizard"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_RemoteControlTemplate.ymlinc"
+        position: "1628,136"
+    - widget:
+        font: "$list_large_font"
+        name: "text"
+        position: "202,86"
+        size: "1416,240"
+        valign: "center"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        position: "202,326"
+        render: "Listbox"
+        scrollbarMode: "showOnDemand"
+        size: "1416,605"
+        source: "languages"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+                				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+                			],
+                			"fonts": [gFont("Regular", $list_font_size)],
+                			"itemHeight": 50
+                		}

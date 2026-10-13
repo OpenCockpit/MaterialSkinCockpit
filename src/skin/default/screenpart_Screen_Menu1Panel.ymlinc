@@ -1,0 +1,35 @@
+- xmlinc:
+    file: "screenpart_Screen_1.ymlinc"
+    position: "0,0"
+- xmlinc:
+    file: "screenpart_BrandLogoTemplate.ymlinc"
+    position: "$width-100,$height-70"
+    size: "74,34"
+- widget:
+    backgroundColor: "md_surface_container_low"
+    font: "$header_font"
+    foregroundColor: "md_on_surface"
+    halign: "right"
+    position: "$width-438,2"
+    render: "Label"
+    size: "420,64"
+    source: "global.CurrentTime"
+    transparent: "1"
+    valign: "center"
+    zPosition: "20"
+    children:
+      - convert:
+          type: "ClockToText"
+          text: "Default"
+- widget:
+    addon: "ScreenHeader"
+    backgroundColor: "md_surface_container_high"
+    connection: "Image,Title,ScreenPath"
+    pathFont: "$path_font"
+    pathForegroundColor: "md_primary"
+    position: "20,2"
+    size: "$width-260,60"
+    titleFont: "$title_font"
+    titleForegroundColor: "md_primary"
+    titleSingleFont: "$title_single_font"
+    transparent: "1"

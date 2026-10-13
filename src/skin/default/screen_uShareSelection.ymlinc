@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "uShareSelection"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_BackupSelection.ymlinc"
+        position: "370,118"

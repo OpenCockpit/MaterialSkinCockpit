@@ -1,0 +1,13 @@
+- widget:
+    font: "$list_large_font"
+    name: "fulldescription"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "830,680"
+    transparent: "1"
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    connection: "fulldescription"
+    position: "0,687"
+    size: "830,25"

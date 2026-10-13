@@ -1,0 +1,33 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "IpkgInstaller"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface"
+        conditional: "introduction"
+        font: "$text_font"
+        foregroundColor: "md_primary"
+        halign: "center"
+        position: "145,865"
+        render: "Label"
+        size: "1630,35"
+        source: "introduction"
+        transparent: "1"
+        zPosition: "10"
+    - widget:
+        backgroundColor: "md_surface"
+        conditional: "lab1"
+        font: "$text_font"
+        foregroundColor: "md_primary"
+        halign: "center"
+        position: "145,865"
+        render: "Label"
+        size: "1630,35"
+        source: "lab1"
+        transparent: "1"
+        zPosition: "10"

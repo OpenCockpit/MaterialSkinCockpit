@@ -1,0 +1,26 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "MSNWeatherPluginSearch"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        conditional: "entrylist"
+        font: "$text_font"
+        itemHeight: "45"
+        name: "entrylist"
+        position: "125,150"
+        scrollbarMode: "showNever"
+        size: "1670,13*45"
+        valign: "center"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "entrylist"
+        connection: "entrylist"
+        position: "145,915"
+        size: "1630,25"
+        transparent: "1"

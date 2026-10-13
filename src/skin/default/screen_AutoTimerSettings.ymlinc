@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoTimerSettings"
+  position: "fill"
+  title: "AutoTimer Settings"
+  children:
+    - xmlinc:
+        file: "screen_AutoTimerEditor.ymlinc"
+        position: "96,54"
+    - widget:
+        name: "HelpWindow"
+        position: "e,650"
+        size: "80,0"

@@ -1,0 +1,18 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoTimerEditor"
+  position: "fill"
+  title: "Edit AutoTimer"
+  children:
+    - xmlinc:
+        file: "screen_AutoTimerServiceEditor.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$text_font"
+        halign: "center"
+        position: "49,701"
+        render: "Label"
+        size: "1630,100"
+        source: "help"
+        valign: "center"

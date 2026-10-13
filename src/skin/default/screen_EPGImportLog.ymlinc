@@ -1,0 +1,27 @@
+screen:
+  flags: "wfNoBorder"
+  name: "EPGImportLog"
+  position: "fill"
+  title: "EPG Import Log"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "135,160"
+        scrollbarMode: "showNever"
+        size: "1650,12*45"
+        valign: "center"
+    - widget:
+        backgroundColor: "md_surface"
+        connection: "list"
+        pagerBackground: "md_surface"
+        pagerForeground: "md_on_surface"
+        position: "145,915"
+        render: "Pager"
+        size: "1630,25"
+        transparent: "1"

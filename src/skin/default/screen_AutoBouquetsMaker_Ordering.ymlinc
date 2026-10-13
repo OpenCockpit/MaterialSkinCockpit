@@ -1,0 +1,34 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoBouquetsMaker_Ordering"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        position: "396,210"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1130,14*45"
+        source: "list"
+        transparent: "0"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (18, 0), size = (1060, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+                			],
+                			"fonts": [gFont("Regular", $text_font_size)],
+                			"itemHeight": 45
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

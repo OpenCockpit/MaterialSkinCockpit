@@ -1,0 +1,18 @@
+screen:
+  flags: "wfNoBorder"
+  name: "CrossEPG_Ordering"
+  position: "fill"
+  title: "Cross EPG - Providers start order"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "38"
+        name: "list"
+        position: "396,210"
+        scrollbarMode: "showNever"
+        size: "1130,660"
+        transparent: "1"

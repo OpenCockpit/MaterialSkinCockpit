@@ -1,0 +1,11 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "RemoteTimerEventView"
+  position: "fill"
+  title: "Eventview"
+  children:
+    - xmlinc:
+        file: "screenpart_RemoteTimerEventViewPanel.ymlinc"
+        position: "96,54"
+        size: "1728,987"

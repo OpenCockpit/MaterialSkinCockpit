@@ -1,0 +1,16 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "TimeshiftLive"
+  position: "105,105"
+  size: "450,45"
+  zPosition: "2"
+  children:
+    - eLabel:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "2"
+        font: "$subtitle_font"
+        position: "0,0"
+        size: "450,45"
+        text: "Timeshift Live"

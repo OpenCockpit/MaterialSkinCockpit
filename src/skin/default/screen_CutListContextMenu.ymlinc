@@ -1,0 +1,38 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "CutListContextMenu"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        enableWrapAround: "1"
+        font: "$list_font"
+        foregroundColor: "md_on_surface_variant"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "60"
+        position: "515,220"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "889,10*60"
+        source: "menu"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (60, 0), size = (809, 60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)
+                			],
+                			"fonts": [gFont("Regular", $subtitle_font_size)],
+                			"itemHeight": 60
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "menu"
+        position: "515,837"
+        size: "889,25"
+        transparent: "1"

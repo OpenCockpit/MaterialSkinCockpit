@@ -1,0 +1,13 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "VirtualKeyBoard"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - xmlinc:
+        file: "screenpart_VirtualKeyBoardPanel.ymlinc"
+        position: "478,250"
+        size: "964,580"

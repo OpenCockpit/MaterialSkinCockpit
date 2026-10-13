@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "VideoEnhancementSetup"
+  position: "fill"
+  title: "VideoEnhancementSetup"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"

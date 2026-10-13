@@ -1,0 +1,25 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "BackupSelection"
+  position: "fill"
+  title: "Select files/folders to backup"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$text_font"
+        itemHeight: "45"
+        name: "checkList"
+        position: "26,92"
+        scrollbarMode: "showNever"
+        size: "1130,635"
+        valign: "center"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "checkList"
+        position: "26,731"
+        size: "1130,25"
+        transparent: "1"

@@ -1,0 +1,27 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PositionerSetup"
+  position: "fill"
+  title: "Positioner setup"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$list_font"
+        foregroundColor: "md_primary"
+        halign: "center"
+        name: "status_bar"
+        position: "center,140"
+        size: "330,37"
+    - xmlinc:
+        file: "screenpart_PositionerSetupPanel.ymlinc"
+        position: "405,205"
+    - widget:
+        font: "$list_font"
+        foregroundColor: "md_primary"
+        halign: "center"
+        name: "status_bar"
+        position: "1120,847"
+        size: "425,37"

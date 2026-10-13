@@ -1,0 +1,26 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "MovieTagEditor"
+  position: "fill"
+  title: "Edit tags"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "29,96"
+        scrollbarMode: "showNever"
+        size: "1670,13*45"
+        valign: "center"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "49,861"
+        size: "1630,25"
+        transparent: "1"

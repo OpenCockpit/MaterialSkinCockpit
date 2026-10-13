@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "VIXStopCam"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_SoftcamSpinnerTemplate.ymlinc"
+        position: "0,0"

@@ -1,0 +1,9 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "LogManagerFb"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_LogManagerViewLog.ymlinc"
+        position: "370,118"

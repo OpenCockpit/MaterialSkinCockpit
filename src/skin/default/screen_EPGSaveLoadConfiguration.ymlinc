@@ -1,0 +1,30 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "EPGSaveLoadConfiguration"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface_overlay_soft"
+        font: "$text_font"
+        halign: "left"
+        position: "145,755"
+        render: "Label"
+        size: "1630,100"
+        source: "epgcachelocation"
+        transparent: "1"
+        zPosition: "1"
+    - widget:
+        backgroundColor: "md_surface_overlay_soft"
+        font: "$text_font"
+        halign: "left"
+        itemHeight: "45"
+        position: "e,755"
+        render: "Label"
+        size: "1630,100"
+        source: "help"
+        transparent: "1"
+        zPosition: "1"

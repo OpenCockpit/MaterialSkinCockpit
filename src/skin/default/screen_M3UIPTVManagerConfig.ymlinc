@@ -1,0 +1,58 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "M3UIPTVManagerConfig"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_1_1.ymlinc"
+        position: "96,54"
+    - widget:
+        itemCornerRadius: "$radius_item"
+        position: "125,150"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1670,13*45"
+        source: "list"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (10, 5), size = (950, 35), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+                				MultiContentEntryText(pos = (970, 10), size = (500, 35), font=1, flags = RT_HALIGN_RIGHT, text = 4),
+                				MultiContentEntryPixmapAlphaBlend(pos = (1520, 1), size = (42, 42), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 3),
+                				MultiContentEntryPixmapAlphaBlend(pos = (1572, 12), size = (88, 20), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 2),
+                			],
+                			"fonts": [gFont("Regular", $list_font_size), gFont("Regular", $caption_font_size)],
+                			"itemHeight": 45
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        conditional: "list"
+        connection: "list"
+        position: "145,915"
+        size: "1630,25"
+        transparent: "1"
+    - widget:
+        font: "$text_font"
+        halign: "center"
+        objectTypes: "description,StaticText"
+        position: "145,801"
+        render: "Label"
+        size: "1630,94"
+        source: "description"
+        valign: "center"
+    - widget:
+        backgroundColor: "md_surface"
+        borderColor: "md_outline"
+        borderWidth: "0"
+        cornerRadius: "$radius_bar"
+        foregroundColor: "md_on_surface_variant"
+        position: "145,755"
+        render: "Progress"
+        size: "1630,6"
+        source: "progress"
+        zPosition: "1"

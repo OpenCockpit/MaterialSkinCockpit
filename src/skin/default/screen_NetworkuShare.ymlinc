@@ -1,0 +1,12 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "NetworkuShare"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - xmlinc:
+        file: "screenpart_NetworkuSharePanel.ymlinc"
+        position: "420,219"

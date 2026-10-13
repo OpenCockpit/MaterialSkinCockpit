@@ -1,0 +1,107 @@
+- widget:
+    position: "8,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "1640,225"
+    source: "search_info"
+    transparent: "1"
+    zPosition: "3"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+            	{"templates":
+            														{"default": (33, [
+            															MultiContentEntryText(pos = (0, 0),   size = (620, 33),  font = 0, color = "md_primary", flags = RT_HALIGN_LEFT,  text = 0), # langname,
+            			MultiContentEntryText(pos = (307, 0),   size = (920, 33),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
+            		], False, "showNever"),
+            														},
+            		"fonts": [gFont("Regular", $label_font_size)],
+            		"itemHeight": 33,
+            	}
+- widget:
+    font: "$label_font"
+    foregroundColor: "md_on_surface_variant"
+    halign: "left"
+    position: "13,247"
+    render: "Label"
+    size: "500,37"
+    source: "header_country"
+- widget:
+    font: "$label_font"
+    foregroundColor: "md_on_surface_variant"
+    halign: "left"
+    position: "220,247"
+    render: "Label"
+    size: "500,37"
+    source: "header_release"
+- widget:
+    font: "$label_font"
+    foregroundColor: "md_on_surface_variant"
+    halign: "left"
+    position: "1270,247"
+    render: "Label"
+    size: "400,37"
+    source: "header_provider"
+- widget:
+    font: "$label_font"
+    foregroundColor: "md_on_surface_variant"
+    halign: "left"
+    position: "1613,247"
+    render: "Label"
+    size: "30,37"
+    source: "header_sync"
+- eLabel:
+    backgroundColor: "md_on_surface_variant"
+    position: "0,292"
+    size: "1655,1"
+- widget:
+    font: "$text_font"
+    foregroundColor: "md_on_surface"
+    halign: "center"
+    name: "loadmessage"
+    position: "0,300"
+    size: "1655,390"
+    valign: "center"
+    zPosition: "4"
+- widget:
+    font: "$text_font"
+    foregroundColor: "md_error"
+    halign: "center"
+    name: "errormessage"
+    position: "0,300"
+    size: "1655,390"
+    valign: "center"
+    zPosition: "5"
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,300"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "1655,440"
+    source: "subtitles"
+    transparent: "1"
+    zPosition: "3"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+            	{"templates":
+            														{"default": (40, [
+            															MultiContentEntryPixmapAlphaBlend(pos = (10, 4),   size = (36, 36), png=0), # key,
+            			MultiContentEntryText(pos = (55, 2),   size = (150, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+            			MultiContentEntryText(pos = (220, 2),  size = (1022, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+            			MultiContentEntryText(pos = (1270, 2), size = (302, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # site,
+            			MultiContentEntryPixmapAlphaBlend(pos = (1607, 8),   size = (36, 36), png=4), # syncPng,
+            		], True, "showNever"),
+            														},
+            		"fonts": [gFont("Regular", $label_font_size), gFont("Regular", $micro_font_size)],
+            		"itemHeight": 40
+            	}
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    connection: "subtitles"
+    position: "0,750"
+    size: "1655,25"
+    transparent: "1"

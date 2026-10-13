@@ -1,0 +1,23 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "AutoBouquetsMaker_About"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "$text_font"
+        name: "about"
+        position: "396,210"
+        size: "1130,660"
+    - widget:
+        alphatest: "blend"
+        backgroundColor: "md_surface"
+        conditional: "oealogo"
+        name: "oealogo"
+        position: "1350,728"
+        size: "176,142"
+        transparent: "1"

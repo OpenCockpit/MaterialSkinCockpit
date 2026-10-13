@@ -1,0 +1,8 @@
+menus:
+  children:
+    - menu:
+        image: "screen_icons/menu.png"
+        key: "mainmenu"
+    - menu:
+        image: "screen_icons/windows.png"
+        key: "default"

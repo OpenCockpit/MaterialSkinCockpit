@@ -1,0 +1,20 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "BufferIndicator"
+  position: "c-300,45"
+  size: "600,48"
+  title: ""
+  zPosition: "100"
+  children:
+    - widget:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "2"
+        font: "$subtitle_font"
+        halign: "center"
+        name: "status"
+        position: "0,0"
+        size: "600,48"
+        transparent: "1"
+        valign: "center"

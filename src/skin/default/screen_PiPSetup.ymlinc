@@ -1,0 +1,19 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PiPSetup"
+  position: "360,390"
+  size: "1200,300"
+  zPosition: "2"
+  children:
+    - widget:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "3"
+        font: "$list_large_font"
+        halign: "center"
+        name: "text"
+        position: "0,0"
+        size: "1200,300"
+        transparent: "1"
+        valign: "center"

@@ -1,0 +1,35 @@
+screen:
+  flags: "wfNoBorder"
+  name: "CrossEPG_Providers"
+  position: "fill"
+  title: "CrossEPG Providers"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        position: "396,210"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "1130,10*60"
+        source: "list"
+        transparent: "0"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(pos = (18, 0), size = (660, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+                				MultiContentEntryPixmapAlphaTest(pos = (1060, 10), size = (60, 60), png = 1),
+                			],
+                			"fonts": [gFont("Regular", $list_font_size)],
+                			"itemHeight": 60
+                		}
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

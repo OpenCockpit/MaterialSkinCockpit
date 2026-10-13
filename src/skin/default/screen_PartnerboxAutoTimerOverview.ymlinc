@@ -1,0 +1,25 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "PartnerboxAutoTimerOverview"
+  position: "fill"
+  title: "AutoTimer Overview"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Menu1.ymlinc"
+        position: "370,118"
+    - widget:
+        font: "$text_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "38"
+        name: "entries"
+        position: "396,245"
+        scrollbarMode: "showOnDemand"
+        size: "1130,600"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "entries"
+        position: "396,849"
+        size: "1130,25"
+        transparent: "1"

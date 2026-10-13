@@ -1,0 +1,9 @@
+screen:
+  flags: "wfNoBorder"
+  name: "SimpleChannelSelection"
+  position: "fill"
+  title: "Channel Selection"
+  children:
+    - xmlinc:
+        file: "screen_ChannelSelection.ymlinc"
+        position: "5,5"

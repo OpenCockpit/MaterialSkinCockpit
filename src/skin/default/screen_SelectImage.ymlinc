@@ -1,0 +1,31 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SelectImage"
+  position: "fill"
+  title: ""
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_menu2.ymlinc"
+        position: "495,136"
+    - widget:
+        backgroundColor: "md_surface"
+        enableWrapAround: "1"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "45"
+        name: "list"
+        position: "515,230"
+        scrollbarMode: "showNever"
+        scrollbarSliderBorderColor: "md_surface_container_lowest"
+        scrollbarSliderBorderWidth: "0"
+        scrollbarSliderForegroundColor: "md_on_surface_variant"
+        scrollbarWidth: "3"
+        size: "889,592"
+        transparent: "1"
+    - widget:
+        addon: "Pager"
+        backgroundColor: "md_surface"
+        connection: "list"
+        position: "516,838"
+        size: "887,25"
+        transparent: "1"

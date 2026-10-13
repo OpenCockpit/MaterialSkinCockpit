@@ -1,0 +1,33 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "SoftwareUpdateChoices"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full_Pig.ymlinc"
+        position: "5,5"
+    - eLabel:
+        backgroundColor: "md_outline_variant"
+        position: "1200,105"
+        size: "1,870"
+        zPosition: "-5"
+    - widget:
+        font: "$list_font"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "50"
+        name: "list"
+        position: "25,100"
+        scrollbarMode: "showOnDemand"
+        size: "1110,550"
+    - widget:
+        font: "$list_font"
+        foregroundColor: "md_primary"
+        name: "text"
+        position: "25,700"
+        size: "1110,200"
+        valign: "bottom"
+        zPosition: "2"
+    - xmlinc:
+        file: "screenpart_FeedsStatusTemplate.ymlinc"
+        position: "1202,165"

@@ -1,0 +1,14 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "NetworkVpnLog"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full.ymlinc"
+        position: "5,5"
+    - widget:
+        font: "$hint_font"
+        name: "infotext"
+        position: "25,123"
+        size: "1870,855"

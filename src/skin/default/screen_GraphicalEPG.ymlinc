@@ -1,0 +1,8 @@
+screen:
+  flags: "wfNoBorder"
+  name: "GraphicalEPG"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_GraphMultiEPGList.ymlinc"
+        position: "5,5"

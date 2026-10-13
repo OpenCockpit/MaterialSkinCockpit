@@ -1,0 +1,77 @@
+screen:
+  backgroundColor: "md_transparent"
+  flags: "wfNoBorder"
+  name: "CutListEditor"
+  position: "fill"
+  title: "Cutlist editor"
+  children:
+    - xmlinc:
+        file: "screenpart_Screen_Window_Full.ymlinc"
+        position: "5,5"
+    - widget:
+        backgroundColor: "md_transparent"
+        name: "Video"
+        position: "771,118"
+        size: "1044,566"
+        zPosition: "1"
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        position: "771,710"
+        render: "Label"
+        size: "1044,75"
+        source: "session.CurrentService"
+        valign: "center"
+        children:
+          - convert:
+              type: "ServiceName"
+              text: "Name"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        position: "771,787"
+        render: "Label"
+        size: "1044,42"
+        source: "session.CurrentService"
+        valign: "center"
+        zPosition: "1"
+        children:
+          - convert:
+              type: "ServicePosition"
+              text: "Position,Detailed"
+    - widget:
+        font: "$list_font"
+        halign: "center"
+        name: "SeekState"
+        position: "771,830"
+        size: "1044,38"
+        valign: "center"
+        zPosition: "1"
+    - widget:
+        enableWrapAround: "1"
+        itemCornerRadius: "$radius_item"
+        position: "105,118"
+        render: "Listbox"
+        scrollbarMode: "showNever"
+        size: "430,750"
+        source: "cutlist"
+        zPosition: "1"
+        children:
+          - convert:
+              type: "TemplatedMultiContent"
+              text: |
+                		{
+                			"template": [
+                				MultiContentEntryText(size=(188,30), text = 1, backcolor = MultiContentTemplateColor(3)),
+                				MultiContentEntryText(pos=(198,0), size=(75,30), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
+                			],
+                			"fonts": [gFont("Regular", $label_font_size)],
+                			"itemHeight": 30
+                		}
+    - widget:
+        backgroundColor: "md_on_surface_variant"
+        foregroundColor: "md_shadow"
+        name: "Timeline"
+        pointer: "skin_default/position_arrow.png:3,5"
+        position: "105,925"
+        size: "1712,30"

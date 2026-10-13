@@ -1,0 +1,18 @@
+screen:
+  flags: "wfNoBorder"
+  name: "InstallWizardOpkgUpdater"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_RemoteControlTemplate.ymlinc"
+        position: "1628,236"
+    - widget:
+        font: "$list_large_font"
+        halign: "center"
+        position: "202,186"
+        render: "Label"
+        size: "1416,795"
+        source: "statusbar"
+        transparent: "1"
+        valign: "center"
+        zPosition: "10"

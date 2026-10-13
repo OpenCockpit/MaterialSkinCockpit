@@ -1,0 +1,28 @@
+screen:
+  backgroundColor: "md_scrim"
+  flags: "wfNoBorder"
+  name: "QuickSubtitlesConfigMenu"
+  position: "20,30"
+  size: "924,462"
+  title: "Subtitle settings"
+  children:
+    - widget:
+        font: "$text_font"
+        itemHeight: "38"
+        name: "config"
+        position: "7,7"
+        size: "910,418"
+        transparent: "1"
+        valign: "center"
+        zPosition: "1"
+    - widget:
+        backgroundColor: "md_surface_overlay_soft"
+        font: "$hint_font"
+        foregroundColor: "md_tertiary"
+        halign: "left"
+        name: "videofps"
+        position: "10,428"
+        size: "910,30"
+        transparent: "1"
+        valign: "center"
+        zPosition: "1"

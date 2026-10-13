@@ -1,0 +1,8 @@
+screen:
+  backgroundColor: "md_transparent"
+  name: "TunerScreen"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "0,0"
