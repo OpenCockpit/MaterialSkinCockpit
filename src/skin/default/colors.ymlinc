@@ -2,7 +2,7 @@ colors:
   children:
     - color:
         name: "md_surface"
-        value: "#02121212"
+        value: "#00121212"
     - color:
         name: "md_surface_solid"
         value: "#00121212"
@@ -17,7 +17,7 @@ colors:
         value: "#00232323"
     - color:
         name: "md_surface_container_high"
-        value: "#022c2c2c"
+        value: "#002c2c2c"
     - color:
         name: "md_surface_container_highest"
         value: "#00363636"
@@ -38,7 +38,7 @@ colors:
         value: "#00919191"
     - color:
         name: "md_outline_variant"
-        value: "#01424242"
+        value: "#00424242"
     - color:
         name: "md_on_surface"
         value: "#00e3e3e3"

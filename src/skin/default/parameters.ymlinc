@@ -35,7 +35,7 @@ parameters:
         value: "0,2,1920,25"
     - parameter:
         name: "ChoicelistSeparatorColor"
-        value: "0x01424242"
+        value: "0x00424242"
     - parameter:
         name: "HelpMenuListHlp"
         value: "15,2,800,31"
@@ -53,10 +53,10 @@ parameters:
         value: "0x00E3E3E3,0x00E3E3E3,0x00A8C7FA,0x007FD6C8"
     - parameter:
         name: "VirtualKeyBoardCellBackgroundColor"
-        value: "0x022C2C2C"
+        value: "0x002C2C2C"
     - parameter:
         name: "VirtualKeyBoardCellBorderColor"
-        value: "0x02121212"
+        value: "0x00121212"
     - parameter:
         name: "VirtualKeyBoardCellBorderWidth"
         value: "1"

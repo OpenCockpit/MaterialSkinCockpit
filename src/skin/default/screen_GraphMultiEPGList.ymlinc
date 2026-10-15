@@ -13,7 +13,7 @@ screen:
         pixmap: "window/timeline-now.png"
         position: "0,126"
         scale: "1"
-        size: "19,792"
+        size: "28,792"
         zPosition: "2"
     - eLabel:
         backgroundColor: "md_surface"

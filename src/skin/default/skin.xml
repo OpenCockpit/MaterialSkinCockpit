@@ -46,19 +46,19 @@
 		<alias font="Regular" name="AutomaticVolumeAdjustment1" size="28"/>
 	</fonts>
 	<colors>
-		<color name="md_surface" value="#02121212"/>
+		<color name="md_surface" value="#00121212"/>
 		<color name="md_surface_solid" value="#00121212"/>
 		<color name="md_surface_container_lowest" value="#000e0e0e"/>
 		<color name="md_surface_container_low" value="#001d1d1d"/>
 		<color name="md_surface_container" value="#00232323"/>
-		<color name="md_surface_container_high" value="#022c2c2c"/>
+		<color name="md_surface_container_high" value="#002c2c2c"/>
 		<color name="md_surface_container_highest" value="#00363636"/>
 		<color name="md_scrim" value="#7f000000"/>
 		<color name="md_surface_overlay_soft" value="#18121212"/>
 		<color name="md_surface_overlay" value="#2d121212"/>
 		<color name="md_surface_overlay_strong" value="#fa121212"/>
 		<color name="md_outline" value="#00919191"/>
-		<color name="md_outline_variant" value="#01424242"/>
+		<color name="md_outline_variant" value="#00424242"/>
 		<color name="md_on_surface" value="#00e3e3e3"/>
 		<color name="md_on_surface_variant" value="#00c4c4c4"/>
 		<color name="md_primary" value="#00a8c7fa"/>
@@ -95,14 +95,14 @@
 		<parameter name="ChoicelistButtonIcon" value="15,10,45,30"/>
 		<parameter name="ChoicelistUseGraphicalSeparator" value="1"/>
 		<parameter name="ChoicelistDash" value="0,2,1920,25"/>
-		<parameter name="ChoicelistSeparatorColor" value="0x01424242"/>
+		<parameter name="ChoicelistSeparatorColor" value="0x00424242"/>
 		<parameter name="HelpMenuListHlp" value="15,2,800,31"/>
 		<parameter name="ExpandableListIcon" value="0,0,55,38"/>
 		<parameter name="ExpandableListDescr" value="55,2,1000,45"/>
 		<parameter name="VirtualKeyBoard" value="69,68"/>
 		<parameter name="VirtualKeyBoardShiftColors" value="0x00E3E3E3,0x00E3E3E3,0x00A8C7FA,0x007FD6C8"/>
-		<parameter name="VirtualKeyBoardCellBackgroundColor" value="0x022C2C2C"/>
-		<parameter name="VirtualKeyBoardCellBorderColor" value="0x02121212"/>
+		<parameter name="VirtualKeyBoardCellBackgroundColor" value="0x002C2C2C"/>
+		<parameter name="VirtualKeyBoardCellBorderColor" value="0x00121212"/>
 		<parameter name="VirtualKeyBoardCellBorderWidth" value="1"/>
 		<parameter name="VirtualKeyBoardCellSelectedColor" value="0x00A8C7FA"/>
 		<parameter name="VirtualKeyBoardCellEnterColor" value="0x0081C995"/>
@@ -900,7 +900,7 @@
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="25,1025" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,100" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
-		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,409" scale="1" size="19,516" zPosition="2"/>
+		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,409" scale="1" size="28,516" zPosition="2"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="6" position="25,373" size="1866,607" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="-2"/>
 		<widget backgroundColor="md_surface" borderColor="md_outline_variant" borderWidth="1" foregroundColor="md_on_surface" fullBorder="0" name="timeline_text" position="27,375" size="1862,31" zPosition="2"/>
 		<eLabel backgroundColor="md_outline_variant" position="25,408" size="1866,1" zPosition="10"/>
@@ -936,7 +936,7 @@
 		</widget>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="25,1025" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
-		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,131" scale="1" size="19,792" zPosition="2"/>
+		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,131" scale="1" size="28,792" zPosition="2"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="6" position="25,95" size="1866,885" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="-2"/>
 		<eLabel backgroundColor="md_outline_variant" position="25,101" size="1,873" zPosition="3"/>
 		<widget backgroundColor="md_surface" cornerRadius="6;top" foregroundColor="md_on_surface" itemCornerRadius="6;top" name="timeline_text" position="27,98" size="1862,29" zPosition="2"/>
@@ -7155,7 +7155,7 @@ if callable(loadLogo):
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="25,1025" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,100" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
-		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,409" scale="1" size="19,516" zPosition="2"/>
+		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,409" scale="1" size="28,516" zPosition="2"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="6" position="25,373" size="1866,607" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="-2"/>
 		<widget backgroundColor="md_surface" borderColor="md_outline_variant" borderWidth="1" foregroundColor="md_on_surface" fullBorder="0" name="timeline_text" position="27,375" size="1862,31" zPosition="2"/>
 		<eLabel backgroundColor="md_outline_variant" position="25,408" size="1866,1" zPosition="10"/>
@@ -7192,7 +7192,7 @@ if callable(loadLogo):
 		</widget>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="Regular;26" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="25,1025" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1820,1025" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
-		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,131" scale="1" size="19,792" zPosition="2"/>
+		<widget alphatest="blend" name="timeline_now" pixmap="window/timeline-now.png" position="5,131" scale="1" size="28,792" zPosition="2"/>
 		<eLabel backgroundColor="md_surface" cornerRadius="6" position="25,95" size="1866,885" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="-2"/>
 		<eLabel backgroundColor="md_outline_variant" position="25,101" size="1,873" zPosition="3"/>
 		<widget backgroundColor="md_surface" cornerRadius="6;top" foregroundColor="md_on_surface" itemCornerRadius="6;top" name="timeline_text" position="27,98" size="1862,29" zPosition="2"/>
