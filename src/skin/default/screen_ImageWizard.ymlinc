@@ -8,7 +8,7 @@ screen:
         position: "5,5"
     - eLabel:
         backgroundColor: "md_surface_overlay_soft"
-        font: "md_headline_small"
+        font: "md_title_large"
         halign: "left"
         position: "30,7"
         size: "1830,75"

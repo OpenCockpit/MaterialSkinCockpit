@@ -59,10 +59,10 @@ screen:
           from Tools.LoadPixmap import LoadPixmap
           from skin import parseRadius, parseColor, parseFont
           try:
-          	from Components.Renderer.BoxLogo import setLogo as loadLogo
+              from Components.Renderer.BoxLogo import setLogo as loadLogo
           except:
-          	loadLogo = None
-          	
+              loadLogo = None
+              
           font = parseFont("md_title_small_emphasized", ((1, 1), (1, 1)))
           self.textRenderer = Label("")
           self.textRenderer.GUIcreate(self.instance)
@@ -76,11 +76,11 @@ screen:
           textHeight = textsize[1]
           textpos = self["text"].instance.position()
           if textpos.x() < 0 and textpos.y() < 0: 
-          	textHeight = 0
+              textHeight = 0
           self["text"].move(20, 55)
           descriptionHeight = 0
           if bool(self.list) and any([(True if len(x[0]) > 2 and x[0][2] and isinstance(x[0][2], str) else False) for x in self.list]):
-          	descriptionHeight = 75
+              descriptionHeight = 75
           count = len(self.list)
           count, scrollbar = (10, self["list"].instance.getScrollbarWidth() + 5) if count > 10 else (count, 0)
           offset = self["list"].l.getItemSize().height() * count
@@ -91,16 +91,16 @@ screen:
           self["text"].resize(wsizex - 40, textHeight)
           textPadding = 0
           if textHeight > 0:
-          	textPadding = 10
+              textPadding = 10
           wsizey = textHeight + textPadding + offset + descriptionHeight + 60 + 104
           if descriptionHeight > 0:
-          	wsizey += 10
+              wsizey += 10
           # move and resize elements
           borderWidth = 2
           for titleRenderer in self.renderer:
-          	if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
-          		titleRenderer.instance.move(ePoint(borderWidth, 3))
-          		titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
+              if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
+                  titleRenderer.instance.move(ePoint(borderWidth, 3))
+                  titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
           self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
           self["description"].resize(wsizex - 40, descriptionHeight)
           self["list"].move(15, textHeight + textPadding + 60)
@@ -133,4 +133,4 @@ screen:
           self["logo"].instance.move(ePoint(wsizex-94,wsizey-70))
           self["logo"].instance.setAlphatest(BT_ALPHABLEND)
           if callable(loadLogo):
-          	loadLogo(self["logo"].instance, "brand", 74, 34, "right")
+              loadLogo(self["logo"].instance, "brand", 74, 34, "right")

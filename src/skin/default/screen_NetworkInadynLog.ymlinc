@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Window_Full.ymlinc"
         position: "5,5"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         name: "infotext"
         position: "25,123"
         size: "1870,855"

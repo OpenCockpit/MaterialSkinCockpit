@@ -27,13 +27,13 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
-                			],
-                			"fonts": [parseFont("md_body_large")],
-                			"itemHeight": 45
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
+                            ],
+                            "fonts": [parseFont("md_body_large")],
+                            "itemHeight": 45
+                        }
     - widget:
         alphatest: "blend"
         name: "HelpWindow"

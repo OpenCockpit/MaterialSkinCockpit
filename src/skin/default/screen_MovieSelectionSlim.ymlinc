@@ -14,7 +14,7 @@ screen:
         zPosition: "-5"
     - widget:
         conditional: "waitingtext"
-        font: "md_headline_small"
+        font: "md_title_large"
         halign: "center"
         name: "waitingtext"
         position: "20,100"
@@ -105,7 +105,7 @@ screen:
               text: "RecordServiceName"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_headline_small"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         halign: "left"
         position: "1235,450"

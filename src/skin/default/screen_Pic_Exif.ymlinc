@@ -19,14 +19,14 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (7, 10), size = (375, 45), flags = RT_HALIGN_LEFT, text = 0),
-                				MultiContentEntryText(pos = (390, 10), size = (645, 45), flags = RT_HALIGN_LEFT, text = 1)
-                			],
-                			"fonts": [parseFont("md_body_large")],
-                			"itemHeight": 52
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (7, 10), size = (375, 45), flags = RT_HALIGN_LEFT, text = 0),
+                                MultiContentEntryText(pos = (390, 10), size = (645, 45), flags = RT_HALIGN_LEFT, text = 1)
+                            ],
+                            "fonts": [parseFont("md_body_large")],
+                            "itemHeight": 52
+                        }
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"

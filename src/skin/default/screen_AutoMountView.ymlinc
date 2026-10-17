@@ -48,18 +48,18 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryPixmapAlphaTest(pos = (22, 15), size = (72, 72), png = 0), # index 0 is the isMounted pixmap
-                																						MultiContentEntryText(pos = (150, 15), size = (285, 37), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-                																						MultiContentEntryText(pos = (435, 5), size = (345, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-                																						MultiContentEntryText(pos = (435, 35), size = (720, 30), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-                																						MultiContentEntryPixmapAlphaTest(pos = (950, 25), size = (72, 72), png = 4), # index 4 is the activepng pixmap
-                																						MultiContentEntryPixmapAlphaTest(pos = (995, 15), size = (72, 72), png = 5), # index 4 is the mounttype pixmap
-                			],
-                			"fonts": [parseFont("md_headline_small"), parseFont("md_body_small")],
-                			"itemHeight": 75
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryPixmapAlphaTest(pos = (22, 15), size = (72, 72), png = 0), # index 0 is the isMounted pixmap
+                                                                                                        MultiContentEntryText(pos = (150, 15), size = (285, 37), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
+                                                                                                        MultiContentEntryText(pos = (435, 5), size = (345, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
+                                                                                                        MultiContentEntryText(pos = (435, 35), size = (720, 30), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
+                                                                                                        MultiContentEntryPixmapAlphaTest(pos = (950, 25), size = (72, 72), png = 4), # index 4 is the activepng pixmap
+                                                                                                        MultiContentEntryPixmapAlphaTest(pos = (995, 15), size = (72, 72), png = 5), # index 4 is the mounttype pixmap
+                            ],
+                            "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
+                            "itemHeight": 75
+                        }
     - widget:
         font: "md_body_large"
         halign: "center"

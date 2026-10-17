@@ -20,18 +20,18 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryPixmapAlphaTest(pos = (2, 15), size = (72, 72), png = 1), # index 1 is the expandable/expanded/verticalline icon
-                																					MultiContentEntryText(pos = (75, 6), size = (630, 39), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-                																					MultiContentEntryText(pos = (210, 7), size = (480, 37), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-                																					MultiContentEntryText(pos = (210, 39), size = (480, 25), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-                																					MultiContentEntryPixmapAlphaTest(pos = (67, 0), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
-                																					MultiContentEntryPixmapAlphaTest(pos = (135, 0), size = (72, 72), png = 6), # index 6 is the isMounted icon
-                			],
-                			"fonts": [parseFont("md_body_small"), parseFont("md_label_medium"), parseFont("md_title_large")],
-                			"itemHeight": 78
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryPixmapAlphaTest(pos = (2, 15), size = (72, 72), png = 1), # index 1 is the expandable/expanded/verticalline icon
+                                                                                                    MultiContentEntryText(pos = (75, 6), size = (630, 39), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+                                                                                                    MultiContentEntryText(pos = (210, 7), size = (480, 37), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+                                                                                                    MultiContentEntryText(pos = (210, 39), size = (480, 25), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+                                                                                                    MultiContentEntryPixmapAlphaTest(pos = (67, 0), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
+                                                                                                    MultiContentEntryPixmapAlphaTest(pos = (135, 0), size = (72, 72), png = 6), # index 6 is the isMounted icon
+                            ],
+                            "fonts": [parseFont("md_body_small"), parseFont("md_label_medium"), parseFont("md_title_large")],
+                            "itemHeight": 78
+                        }
     - widget:
         font: "md_body_large"
         halign: "center"

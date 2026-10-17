@@ -20,15 +20,15 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (90, 7), size = (870, 42), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-                																							MultiContentEntryText(pos = (90, 52), size = (870, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-                																							MultiContentEntryPixmapAlphaBlend(pos = (15, 15), size = (72, 72), png = 3), # index 4 is the pixmap
-                			],
-                			"fonts": [parseFont("md_title_large"), parseFont("md_label_large")],
-                			"itemHeight": 90
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (90, 7), size = (870, 42), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+                                                                                                            MultiContentEntryText(pos = (90, 52), size = (870, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+                                                                                                            MultiContentEntryPixmapAlphaBlend(pos = (15, 15), size = (72, 72), png = 3), # index 4 is the pixmap
+                            ],
+                            "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
+                            "itemHeight": 90
+                        }
     - widget:
         font: "md_body_large"
         halign: "center"

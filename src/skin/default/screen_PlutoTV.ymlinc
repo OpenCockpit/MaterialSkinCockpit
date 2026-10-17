@@ -40,7 +40,7 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         halign: "center"
         position: "70,920"
         render: "Label"
@@ -72,7 +72,7 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        font: "md_headline_small"
+        font: "md_title_large"
         foregroundColor: "md_warning"
         position: "778,150"
         render: "Label"

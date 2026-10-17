@@ -42,7 +42,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_shadow"
-        font: "md_headline_medium_emphasized"
+        font: "md_headline_large_emphasized"
         foregroundColor: "md_on_surface"
         halign: "right"
         position: "1750,0"

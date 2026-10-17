@@ -9,13 +9,13 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "md_headline_small"
+        font: "md_title_large"
         position: "405,246"
         render: "Label"
         size: "1110,52"
         source: "job_name"
     - widget:
-        font: "md_headline_small"
+        font: "md_title_large"
         position: "408,355"
         render: "Label"
         size: "1110,45"
@@ -28,7 +28,7 @@ screen:
         size: "1110,54"
         source: "job_progress"
     - widget:
-        font: "md_headline_large"
+        font: "md_headline_medium"
         foregroundColor: "md_shadow"
         halign: "center"
         position: "405,462"

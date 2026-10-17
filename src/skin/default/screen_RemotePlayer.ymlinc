@@ -18,7 +18,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "DateTime"
@@ -28,7 +28,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "right"
         name: "IP"

@@ -119,7 +119,7 @@ screen:
         borderColor: "md_shadow"
         borderWidth: "1"
         cornerRadius: "$radius_rating"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         halign: "center"
         position: "33,931"
         render: "RatingIconLabel"
@@ -150,7 +150,7 @@ screen:
               text: "Genre"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_headline_small"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         halign: "left"
         position: "25,90"

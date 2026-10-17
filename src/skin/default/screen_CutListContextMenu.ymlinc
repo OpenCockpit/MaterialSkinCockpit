@@ -22,13 +22,13 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (60, 0), size = (809, 60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)
-                			],
-                			"fonts": [parseFont("md_headline_small")],
-                			"itemHeight": 60
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (60, 0), size = (809, 60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)
+                            ],
+                            "fonts": [parseFont("md_title_large")],
+                            "itemHeight": 60
+                        }
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"

@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         conditional: "rotorstatus"
-        font: "md_display_medium"
+        font: "md_display_small"
         foregroundColor: "md_secondary"
         halign: "center"
         name: "rotorstatus"

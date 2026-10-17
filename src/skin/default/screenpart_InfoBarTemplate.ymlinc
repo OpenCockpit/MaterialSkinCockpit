@@ -60,7 +60,7 @@ screen:
         backgroundColor: "md_surface"
         connection: "session"
         elements: "gamma,videoRes,separator,crypt,currentCrypto,separator,txt,dolby,audiotrack,subtitletrack,subservices,stream,hbbtv,separator,catchup,separator,servicetype,separator,record"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         foregroundColor: "md_success"
         permanent: "videoRes,crypt,currentCrypto"
         pixmaps: "IS_HDR:icons/hdr_on.png,IS_HDR10:icons/hdr10_on.png,IS_HLG:icons/hlg_on.png,IS_HD:icons/HD_s_n.png,IS_4K:icons/4K_s_n.png,IS_SD:icons/SD_s_n.png,txt:icons/ico_txt_on.png,dolby:icons/dd_s.png,crypt:icons/crypt.png,IS_CRYPT:icons/crypt.png,IS_CRYPT_CSA:icons/cryptscsa.png,audiotrack:icons/ml_s_alt2.png,subtitletrack:icons/subs_s.png,hbbtv:icons/hbbtv_s.png,subservices:icons/ico_subs_on.png,stream:icons/streaming.png,record:icons/rec2.png,catchup:icons/ico_catchup.png,sat:icons/satdish.png,cable:icons/ico_dvb-c.png,terestrial:icons/ico_dvb-t.png,iptv:icons/ico_stream.png"

@@ -25,7 +25,7 @@ screen:
         setColGap: "20"
         setColWidths: "350,150"
         setEventItemFont: "md_body_medium"
-        setEventTimeFont: "md_label_large"
+        setEventTimeFont: "md_body_small"
         setIconDistance: "10"
         setTimeWidth: "135"
         sidesMargin: "25"
@@ -94,7 +94,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         position: "1240,345"
         render: "Label"
         size: "160,30"

@@ -17,7 +17,7 @@ screen:
         zPosition: "-2"
     - widget:
         conditional: "waitingtext"
-        font: "md_headline_small"
+        font: "md_title_large"
         halign: "center"
         name: "waitingtext"
         position: "35,429"
@@ -108,7 +108,7 @@ screen:
               text: "  •  ,RECSERVICE,TIMECREATED,DURATION,FILESIZE"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_headline_small"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         halign: "left"
         position: "30,97"

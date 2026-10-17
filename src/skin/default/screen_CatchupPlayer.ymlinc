@@ -34,7 +34,7 @@ screen:
         size: "90,90"
         zPosition: "3"
     - widget:
-        font: "md_headline_medium_emphasized"
+        font: "md_headline_large_emphasized"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "speed"
@@ -43,7 +43,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_headline_large"
+        font: "md_headline_medium"
         noWrap: "1"
         position: "400,935"
         render: "Label"
@@ -57,7 +57,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "time_info"

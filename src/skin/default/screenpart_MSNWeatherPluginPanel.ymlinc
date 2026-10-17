@@ -1,6 +1,6 @@
 - widget:
     backgroundColor: "md_surface"
-    font: "md_headline_medium_emphasized"
+    font: "md_headline_large_emphasized"
     position: "10,10"
     render: "Label"
     size: "600,60"
@@ -32,7 +32,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "md_display_small_emphasized"
+    font: "md_headline_large_emphasized"
     position: "440,170"
     render: "Label"
     size: "200,80"

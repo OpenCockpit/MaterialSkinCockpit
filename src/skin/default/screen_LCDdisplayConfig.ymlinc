@@ -22,7 +22,7 @@ screen:
         scrollbarMode: "showNever"
         size: "928,807"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_primary"
         halign: "center"
         noWrap: "1"
@@ -90,7 +90,7 @@ screen:
         source: "LCD3text"
         zPosition: "2"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_surface_container_highest"
         halign: "left"
         position: "1002,958"
@@ -99,7 +99,7 @@ screen:
         source: "Version"
         zPosition: "2"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_surface_container_highest"
         halign: "right"
         position: "1630,958"
@@ -108,7 +108,7 @@ screen:
         source: "About"
         zPosition: "2"
     - widget:
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_error"
         halign: "center"
         position: "1466,958"

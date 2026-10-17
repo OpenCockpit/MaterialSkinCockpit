@@ -27,7 +27,7 @@ screen:
         position: "43,418"
         size: "1110,35"
     - widget:
-        font: "md_display_medium"
+        font: "md_display_small"
         halign: "center"
         name: "input"
         position: "43,491"

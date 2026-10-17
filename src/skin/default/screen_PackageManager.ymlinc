@@ -19,15 +19,15 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (5, 2), size = (829, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-                																						MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-                																						MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
-                			],
-                			"fonts": [parseFont("md_label_large"), parseFont("md_label_small")],
-                			"itemHeight": 54
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (5, 2), size = (829, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                                                                                                        MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+                                                                                                        MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
+                            ],
+                            "fonts": [parseFont("md_body_small"), parseFont("md_label_medium")],
+                            "itemHeight": 54
+                        }
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"

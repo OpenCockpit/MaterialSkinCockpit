@@ -19,15 +19,15 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (135, 0), size = (900, 45), font=0, text = 0),
-                				MultiContentEntryText(pos = (165, 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
-                				MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (120, 120), png = 2),
-                			],
-                			"fonts": [parseFont("md_headline_small"), parseFont("md_body_large")],
-                			"itemHeight": 128
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (135, 0), size = (900, 45), font=0, text = 0),
+                                MultiContentEntryText(pos = (165, 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
+                                MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (120, 120), png = 2),
+                            ],
+                            "fonts": [parseFont("md_title_large"), parseFont("md_body_large")],
+                            "itemHeight": 128
+                        }
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_menu.png"

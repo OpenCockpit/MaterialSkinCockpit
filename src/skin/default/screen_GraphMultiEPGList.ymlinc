@@ -88,7 +88,7 @@ screen:
         borderColor: "md_shadow"
         borderWidth: "1"
         cornerRadius: "$radius_rating"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         halign: "center"
         position: "33,931"
         render: "RatingIconLabel"

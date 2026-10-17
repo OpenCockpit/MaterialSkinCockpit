@@ -14,7 +14,7 @@ screen:
         size: "1,870"
         zPosition: "-5"
     - widget:
-        additionalInfoFont: "md_label_large"
+        additionalInfoFont: "md_body_small"
         backgroundColor: "md_surface"
         backgroundColorMarked: "md_surface_container_low"
         backgroundColorMarkedSelected: "md_success_container"
@@ -50,7 +50,7 @@ screen:
         serviceInfoFont: "md_body_small"
         serviceNameFont: "md_body_large"
         serviceNumberFont: "md_body_large"
-        serviceRemainingInfoFont: "md_label_large"
+        serviceRemainingInfoFont: "md_body_small"
         sidesMargin: "20"
         size: "1152,840"
         textSeparator: "  •  "
@@ -150,7 +150,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         position: "1235,380"
         render: "Label"
         size: "160,30"
@@ -178,7 +178,7 @@ screen:
               text: "Progress"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_label_large_emphasized"
+        font: "md_title_small_emphasized"
         halign: "right"
         position: "1795,380"
         render: "Label"

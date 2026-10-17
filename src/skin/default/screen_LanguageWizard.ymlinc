@@ -23,11 +23,11 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-                				MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
-                			],
-                			"fonts": [parseFont("md_body_large")],
-                			"itemHeight": 50
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+                                MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+                            ],
+                            "fonts": [parseFont("md_body_large")],
+                            "itemHeight": 50
+                        }

@@ -60,14 +60,14 @@ screen:
           - convert:
               type: "TemplatedMultiContent"
               text: |
-                		{
-                			"template": [
-                				MultiContentEntryText(size=(188,30), text = 1, backcolor = MultiContentTemplateColor(3)),
-                				MultiContentEntryText(pos=(198,0), size=(75,30), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
-                			],
-                			"fonts": [parseFont("md_body_small")],
-                			"itemHeight": 30
-                		}
+                        {
+                            "template": [
+                                MultiContentEntryText(size=(188,30), text = 1, backcolor = MultiContentTemplateColor(3)),
+                                MultiContentEntryText(pos=(198,0), size=(75,30), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
+                            ],
+                            "fonts": [parseFont("md_body_small")],
+                            "itemHeight": 30
+                        }
     - widget:
         backgroundColor: "md_on_surface_variant"
         foregroundColor: "md_shadow"

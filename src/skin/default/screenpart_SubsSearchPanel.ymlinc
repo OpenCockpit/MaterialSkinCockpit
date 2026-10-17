@@ -10,15 +10,15 @@
       - convert:
           type: "TemplatedMultiContent"
           text: |
-            	{"templates":
-            														{"default": (33, [
-            															MultiContentEntryText(pos = (0, 0),   size = (620, 33),  font = 0, color = "md_primary", flags = RT_HALIGN_LEFT,  text = 0), # langname,
-            			MultiContentEntryText(pos = (307, 0),   size = (920, 33),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
-            		], False, "showNever"),
-            														},
-            		"fonts": [parseFont("md_body_small")],
-            		"itemHeight": 33,
-            	}
+                {"templates":
+                                                                    {"default": (33, [
+                                                                        MultiContentEntryText(pos = (0, 0),   size = (620, 33),  font = 0, color = "md_primary", flags = RT_HALIGN_LEFT,  text = 0), # langname,
+                        MultiContentEntryText(pos = (307, 0),   size = (920, 33),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
+                    ], False, "showNever"),
+                                                                    },
+                    "fonts": [parseFont("md_body_small")],
+                    "itemHeight": 33,
+                }
 - widget:
     font: "md_body_small"
     foregroundColor: "md_on_surface_variant"
@@ -86,18 +86,18 @@
       - convert:
           type: "TemplatedMultiContent"
           text: |
-            	{"templates":
-            														{"default": (40, [
-            															MultiContentEntryPixmapAlphaBlend(pos = (10, 4),   size = (36, 36), png=0), # key,
-            			MultiContentEntryText(pos = (55, 2),   size = (150, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
-            			MultiContentEntryText(pos = (220, 2),  size = (1022, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
-            			MultiContentEntryText(pos = (1270, 2), size = (302, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # site,
-            			MultiContentEntryPixmapAlphaBlend(pos = (1607, 8),   size = (36, 36), png=4), # syncPng,
-            		], True, "showNever"),
-            														},
-            		"fonts": [parseFont("md_body_small"), parseFont("md_label_small")],
-            		"itemHeight": 40
-            	}
+                {"templates":
+                                                                    {"default": (40, [
+                                                                        MultiContentEntryPixmapAlphaBlend(pos = (10, 4),   size = (36, 36), png=0), # key,
+                        MultiContentEntryText(pos = (55, 2),   size = (150, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # language,
+                        MultiContentEntryText(pos = (220, 2),  size = (1022, 37),  font = 0, flags = RT_HALIGN_LEFT,  text = 2), # filename,
+                        MultiContentEntryText(pos = (1270, 2), size = (302, 37), font = 0, flags = RT_HALIGN_LEFT,  text = 3), # site,
+                        MultiContentEntryPixmapAlphaBlend(pos = (1607, 8),   size = (36, 36), png=4), # syncPng,
+                    ], True, "showNever"),
+                                                                    },
+                    "fonts": [parseFont("md_body_small"), parseFont("md_label_medium")],
+                    "itemHeight": 40
+                }
 - widget:
     addon: "Pager"
     backgroundColor: "md_surface"

@@ -17,7 +17,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_tertiary"
         halign: "left"
         name: "videofps"

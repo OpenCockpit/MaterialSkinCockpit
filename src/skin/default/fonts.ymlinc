@@ -9,16 +9,8 @@
           name: "Bold"
           scale: "71"
       - font:
-          filename: "fonts/BNR.otf"
-          name: "ExtraF_3"
-          scale: "100"
-      - font:
           filename: "fonts/Bignoodletitling.ttf"
           name: "CAID"
-          scale: "100"
-      - font:
-          filename: "lcd.ttf"
-          name: "LCD"
           scale: "100"
       - font:
           filename: "tuxtxt.ttf"
@@ -30,16 +22,8 @@
           scale: "100"
       - alias:
           font: "Regular"
-          name: "md_label_small"
-          size: "16"
-      - alias:
-          font: "Regular"
           name: "md_label_medium"
           size: "20"
-      - alias:
-          font: "Regular"
-          name: "md_label_large"
-          size: "24"
       - alias:
           font: "Regular"
           name: "md_body_small"
@@ -58,24 +42,12 @@
           size: "34"
       - alias:
           font: "Regular"
-          name: "md_headline_small"
-          size: "36"
-      - alias:
-          font: "Regular"
           name: "md_headline_medium"
           size: "40"
       - alias:
           font: "Regular"
-          name: "md_headline_large"
-          size: "44"
-      - alias:
-          font: "Regular"
           name: "md_display_small"
           size: "50"
-      - alias:
-          font: "Regular"
-          name: "md_display_medium"
-          size: "60"
       - alias:
           font: "Regular"
           name: "md_display_large"
@@ -84,10 +56,6 @@
           font: "Bold"
           name: "md_label_small_emphasized"
           size: "18"
-      - alias:
-          font: "Bold"
-          name: "md_label_large_emphasized"
-          size: "26"
       - alias:
           font: "Bold"
           name: "md_title_small_emphasized"
@@ -102,16 +70,8 @@
           size: "36"
       - alias:
           font: "Bold"
-          name: "md_headline_medium_emphasized"
-          size: "40"
-      - alias:
-          font: "Bold"
           name: "md_headline_large_emphasized"
           size: "42"
-      - alias:
-          font: "Bold"
-          name: "md_display_small_emphasized"
-          size: "50"
       - alias:
           font: "Bold"
           name: "md_display_medium_emphasized"

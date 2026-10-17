@@ -25,11 +25,11 @@ screen:
         zPosition: "4"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "md_label_large"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         name: "ServiceInfo"
         position: "140,15"
-        size: "190,25"
+        size: "190,27"
         transparent: "1"
         zPosition: "4"
     - widget:
