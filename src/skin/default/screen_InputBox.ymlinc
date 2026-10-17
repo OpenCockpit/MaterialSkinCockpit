@@ -9,7 +9,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "text"
         position: "396,210"
         size: "1110,39"
@@ -20,7 +20,7 @@ screen:
         size: "816,78"
         zPosition: "-1"
     - widget:
-        font: "$heading_font"
+        font: "md_headline_medium"
         name: "input"
         position: "548,332"
         size: "806,45"

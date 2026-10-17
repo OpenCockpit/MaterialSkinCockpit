@@ -1,6 +1,6 @@
 - widget:
     conditional: "data"
-    font: "$caption_font"
+    font: "md_label_medium"
     name: "data"
     position: "0,0"
     size: "0,0"

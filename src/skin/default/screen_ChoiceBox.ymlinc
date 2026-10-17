@@ -8,7 +8,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface_container_high"
-        font: "$title_font"
+        font: "md_title_small_emphasized"
         foregroundColor: "md_primary"
         halign: "left"
         position: "15,3"
@@ -20,7 +20,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_secondary"
         name: "text"
         position: "15,15"
@@ -28,7 +28,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         name: "description"
         position: "0,0"
@@ -63,7 +63,7 @@ screen:
           except:
           	loadLogo = None
           	
-          font = parseFont("$title_font", ((1, 1), (1, 1)))
+          font = parseFont("md_title_small_emphasized", ((1, 1), (1, 1)))
           self.textRenderer = Label("")
           self.textRenderer.GUIcreate(self.instance)
           self.textRenderer.resize(1920,40)

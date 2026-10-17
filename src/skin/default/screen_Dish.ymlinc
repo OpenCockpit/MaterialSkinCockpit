@@ -15,7 +15,7 @@ screen:
         size: "130,160"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "right"
         name: "turnTime"
@@ -25,7 +25,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "right"
         name: "From"
@@ -35,7 +35,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "posFrom"
@@ -45,7 +45,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "right"
         name: "Goto"
@@ -55,7 +55,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "posGoto"
@@ -65,7 +65,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "Tuner"
@@ -75,7 +75,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "tunerName"
@@ -85,7 +85,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "turnSpeed"

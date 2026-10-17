@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "progress"
@@ -18,7 +18,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "post_action"

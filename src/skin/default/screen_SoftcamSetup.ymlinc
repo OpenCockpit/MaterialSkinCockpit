@@ -9,13 +9,13 @@ screen:
         file: "screenpart_Screen_menu2.ymlinc"
         position: "495,136"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "45"
         name: "config"
         position: "514,221"
         size: "889,150"
     - widget:
-        font: "$mono_font"
+        font: "mono_font"
         name: "info"
         position: "518,383"
         size: "885,473"

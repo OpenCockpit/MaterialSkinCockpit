@@ -11,7 +11,7 @@ screen:
         file: "screenpart_RemoteControlTemplate.ymlinc"
         position: "1436,150"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "text"
         position: "10,100"
         size: "1416,400"
@@ -30,11 +30,11 @@ screen:
                 			"template": [
                 				MultiContentEntryText(pos = (0, 0), size = (1035, 42), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)
                 			],
-                			"fonts": [gFont("Regular", $list_large_font_size)],
+                			"fonts": [parseFont("md_title_large")],
                 			"itemHeight": 42
                 		}
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "config"

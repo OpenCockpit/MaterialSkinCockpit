@@ -11,7 +11,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "config"
@@ -79,7 +79,7 @@ screen:
                 				MultiContentEntryPixmapAlphaBlend(pos = (840, 6), size = (32, 32), png = 6), # selection,
                 																							], False, "showNever")
                 																							},
-                			"fonts": [gFont("Regular", $text_font_size), gFont("Regular", $text_font_size)],
+                			"fonts": [parseFont("md_body_medium"), parseFont("md_body_medium")],
                 			"itemHeight": 45
                 		}
     - widget:

@@ -1,5 +1,5 @@
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     halign: "block"
     name: "fulldescription"
     position: "0,60"
@@ -22,7 +22,7 @@
     zPosition: "0"
 - widget:
     backgroundColor: "md_primary"
-    font: "$label_font"
+    font: "md_body_small"
     foregroundColor: "md_shadow"
     halign: "center"
     name: "rating"
@@ -32,7 +32,7 @@
     valign: "center"
     zPosition: "2"
 - widget:
-    font: "$label_font"
+    font: "md_body_small"
     halign: "center"
     name: "votes_brackets"
     position: "835,110"
@@ -47,7 +47,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "year_txt"
     position: "835,267"
@@ -56,7 +56,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "year"
     position: "1000,267"
@@ -65,7 +65,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "country_txt"
     position: "835,317"
@@ -74,7 +74,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "country"
     position: "1000,317"
@@ -83,7 +83,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "runtime_txt"
     position: "835,367"
@@ -92,7 +92,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "runtime"
     position: "1000,367"
@@ -101,7 +101,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "votes_txt"
     position: "835,417"
@@ -110,7 +110,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "votes"
     position: "1000,417"
@@ -119,7 +119,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "director_txt"
     position: "835,567"
@@ -128,7 +128,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "director"
     position: "1000,567"
@@ -137,7 +137,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "author_txt"
     position: "835,617"
@@ -146,7 +146,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "author"
     position: "1000,617"
@@ -155,7 +155,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "genre_txt"
     position: "835,667"
@@ -163,7 +163,7 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "genre"
     position: "1000,667"
@@ -172,7 +172,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "studio_txt"
     position: "835,717"
@@ -180,7 +180,7 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface_container_highest"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_on_surface"
     name: "studio"
     position: "1000,717"

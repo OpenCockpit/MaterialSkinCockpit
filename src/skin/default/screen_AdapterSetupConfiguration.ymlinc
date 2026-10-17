@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menulist"
@@ -18,7 +18,7 @@ screen:
         textOffset: "20,5"
         zPosition: "10"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "395,636"
         render: "Label"
@@ -27,7 +27,7 @@ screen:
         transparent: "1"
         valign: "center"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         position: "891,812"
         render: "Label"
@@ -37,7 +37,7 @@ screen:
         valign: "center"
         zPosition: "10"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1149,812"
         render: "Label"
@@ -47,7 +47,7 @@ screen:
         valign: "center"
         zPosition: "10"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         position: "395,812"
         render: "Label"

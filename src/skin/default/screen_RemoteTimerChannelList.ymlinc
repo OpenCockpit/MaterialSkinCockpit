@@ -5,7 +5,7 @@ screen:
   position: "fill"
   children:
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "text"
         position: "780,100"

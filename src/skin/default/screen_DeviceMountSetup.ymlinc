@@ -8,7 +8,7 @@ screen:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "lab1"
         position: "145,865"

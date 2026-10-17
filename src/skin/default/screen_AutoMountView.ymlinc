@@ -8,7 +8,7 @@ screen:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         halign: "left"
         position: "346,130"
         render: "Label"
@@ -18,7 +18,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         halign: "center"
         position: "696,130"
         render: "Label"
@@ -28,7 +28,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         halign: "right"
         position: "1256,130"
         render: "Label"
@@ -57,11 +57,11 @@ screen:
                 																						MultiContentEntryPixmapAlphaTest(pos = (950, 25), size = (72, 72), png = 4), # index 4 is the activepng pixmap
                 																						MultiContentEntryPixmapAlphaTest(pos = (995, 15), size = (72, 72), png = 5), # index 4 is the mounttype pixmap
                 			],
-                			"fonts": [gFont("Regular", $subtitle_font_size), gFont("Regular", $label_font_size)],
+                			"fonts": [parseFont("md_headline_small"), parseFont("md_body_small")],
                 			"itemHeight": 75
                 		}
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "780,875"
         render: "Label"

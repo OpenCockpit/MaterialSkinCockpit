@@ -16,11 +16,11 @@
             			MultiContentEntryText(pos = (307, 0),   size = (920, 33),  font = 0, flags = RT_HALIGN_LEFT,  text = 1)
             		], False, "showNever"),
             														},
-            		"fonts": [gFont("Regular", $label_font_size)],
+            		"fonts": [parseFont("md_body_small")],
             		"itemHeight": 33,
             	}
 - widget:
-    font: "$label_font"
+    font: "md_body_small"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
     position: "13,247"
@@ -28,7 +28,7 @@
     size: "500,37"
     source: "header_country"
 - widget:
-    font: "$label_font"
+    font: "md_body_small"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
     position: "220,247"
@@ -36,7 +36,7 @@
     size: "500,37"
     source: "header_release"
 - widget:
-    font: "$label_font"
+    font: "md_body_small"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
     position: "1270,247"
@@ -44,7 +44,7 @@
     size: "400,37"
     source: "header_provider"
 - widget:
-    font: "$label_font"
+    font: "md_body_small"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
     position: "1613,247"
@@ -56,7 +56,7 @@
     position: "0,292"
     size: "1655,1"
 - widget:
-    font: "$text_font"
+    font: "md_body_medium"
     foregroundColor: "md_on_surface"
     halign: "center"
     name: "loadmessage"
@@ -65,7 +65,7 @@
     valign: "center"
     zPosition: "4"
 - widget:
-    font: "$text_font"
+    font: "md_body_medium"
     foregroundColor: "md_error"
     halign: "center"
     name: "errormessage"
@@ -95,7 +95,7 @@
             			MultiContentEntryPixmapAlphaBlend(pos = (1607, 8),   size = (36, 36), png=4), # syncPng,
             		], True, "showNever"),
             														},
-            		"fonts": [gFont("Regular", $label_font_size), gFont("Regular", $micro_font_size)],
+            		"fonts": [parseFont("md_body_small"), parseFont("md_label_small")],
             		"itemHeight": 40
             	}
 - widget:

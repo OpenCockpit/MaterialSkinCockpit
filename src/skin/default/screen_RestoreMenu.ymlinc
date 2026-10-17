@@ -10,7 +10,7 @@ screen:
         position: "495,136"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "45"
         name: "filelist"
         position: "513,216"

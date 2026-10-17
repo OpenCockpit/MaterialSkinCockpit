@@ -8,7 +8,7 @@ screen:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface_variant"
         name: "PluginInfo"
         position: "30,570"

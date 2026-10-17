@@ -11,7 +11,7 @@ screen:
         position: "96,54"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "lmemtext"
         position: "124,141"
@@ -20,7 +20,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         name: "lmemvalue"
         position: "125,141"
@@ -29,7 +29,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "rmemtext"
         position: "998,139"
@@ -38,7 +38,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         name: "rmemvalue"
         position: "999,140"
@@ -47,7 +47,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$caption_font"
+        font: "md_label_medium"
         halign: "right"
         name: "pfree"
         position: "853,345"
@@ -56,7 +56,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$caption_font"
+        font: "md_label_medium"
         halign: "right"
         name: "pused"
         position: "857,679"

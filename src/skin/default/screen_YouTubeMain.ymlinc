@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "text"
         position: "1000,130"
@@ -33,7 +33,7 @@ screen:
                 																						MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
                 																						MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
                 			],
-                			"fonts": [gFont("Regular", $list_font_size), gFont("Regular", $hint_font_size)],
+                			"fonts": [parseFont("md_body_large"), parseFont("md_label_large")],
                 			"itemHeight": 108
                 		}
     - widget:

@@ -9,7 +9,7 @@ screen:
         position: "96,54"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "name"
         position: "780,105"
@@ -17,7 +17,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "ip"
         position: "960,105"
@@ -25,7 +25,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "port"
         position: "1185,105"
@@ -33,14 +33,14 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "type"
         position: "1395,105"
         size: "300,36"
         transparent: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "entrylist"

@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_menu2.ymlinc"
         position: "0,0"
     - widget:
-        font: "$subtitle_font"
+        font: "md_headline_small"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
@@ -17,7 +17,7 @@ screen:
         size: "889,590"
     - widget:
         backgroundColor: "md_surface"
-        font: "$caption_font"
+        font: "md_label_medium"
         halign: "center"
         position: "21,686"
         render: "Label"

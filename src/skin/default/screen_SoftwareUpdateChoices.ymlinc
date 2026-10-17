@@ -13,7 +13,7 @@ screen:
         size: "1,870"
         zPosition: "-5"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         itemCornerRadius: "$radius_item"
         itemHeight: "50"
         name: "list"
@@ -21,7 +21,7 @@ screen:
         scrollbarMode: "showOnDemand"
         size: "1110,550"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_primary"
         name: "text"
         position: "25,700"

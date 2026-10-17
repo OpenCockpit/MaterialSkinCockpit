@@ -9,7 +9,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "status_bar"
@@ -19,7 +19,7 @@ screen:
         file: "screenpart_PositionerSetupPanel.ymlinc"
         position: "405,205"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "status_bar"

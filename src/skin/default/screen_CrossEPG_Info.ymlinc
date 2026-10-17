@@ -5,57 +5,57 @@ screen:
   title: "CrossEPG Info"
   children:
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "version"
         position: "900,199"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "create"
         position: "900,244"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "last_update"
         position: "900,289"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "headersdb_size"
         position: "900,334"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "descriptorsdb_size"
         position: "900,379"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "indexesdb_size"
         position: "900,424"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "aliasesdb_size"
         position: "900,469"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "total_size"
         position: "900,514"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "channels_count"
         position: "900,559"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "events_count"
         position: "900,604"
         size: "900,37"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "hashes_count"
         position: "900,649"
         size: "900,37"

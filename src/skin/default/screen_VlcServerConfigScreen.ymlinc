@@ -19,7 +19,7 @@ screen:
         transparent: "1"
     - eLabel:
         backgroundColor: "md_surface"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "center"
         position: "1245,180"
         size: "615,44"

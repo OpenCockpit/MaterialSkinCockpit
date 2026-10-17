@@ -11,7 +11,7 @@ screen:
         size: "150,112"
         zPosition: "2"
     - widget:
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "name"
@@ -20,7 +20,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "right"
         name: "current"
@@ -29,7 +29,7 @@ screen:
         valign: "top"
         zPosition: "2"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "reference"
@@ -38,7 +38,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "orbital"
@@ -47,7 +47,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "provider"
@@ -56,7 +56,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "text"
@@ -100,7 +100,7 @@ screen:
         size: "150,112"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "message"
@@ -109,7 +109,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "path"
@@ -118,7 +118,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "search"

@@ -3,7 +3,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "0,0"
         render: "Label"
@@ -13,7 +13,7 @@ screen:
         zPosition: "10"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "180,0"
         render: "Label"
@@ -23,7 +23,7 @@ screen:
         zPosition: "10"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "0,57"
         render: "Label"

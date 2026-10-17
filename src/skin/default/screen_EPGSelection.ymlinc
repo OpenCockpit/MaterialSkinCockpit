@@ -19,13 +19,13 @@ screen:
         scrollbarMode: "showNever"
         setColGap: "40"
         setColWidths: "120,220"
-        setEventItemFont: "$list_large_font"
+        setEventItemFont: "md_title_large"
         setIconDistance: "10"
         sidesMargin: "25"
         size: "1095,890"
         transparent: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         position: "1160,382"
         render: "Label"
@@ -37,7 +37,7 @@ screen:
               type: "EventName"
               text: "Name"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "block"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1159,467"
@@ -52,7 +52,7 @@ screen:
               text: "FullDescription"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_secondary"
         position: "1162,957"
         render: "Label"
@@ -68,7 +68,7 @@ screen:
               text: "ShortDate"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_secondary"
         halign: "right"
         position: "1353,957"
@@ -85,7 +85,7 @@ screen:
               text: "Format:%H:%M"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_secondary"
         halign: "left"
         position: "1475,957"
@@ -102,7 +102,7 @@ screen:
               text: "Format:- %H:%M"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_secondary"
         halign: "left"
         position: "1659,957"
@@ -119,7 +119,7 @@ screen:
               text: "InMinutes"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_secondary"
         halign: "right"
         position: "1726,957"

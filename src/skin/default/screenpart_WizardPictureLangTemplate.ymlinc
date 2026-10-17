@@ -3,7 +3,7 @@ screen:
   children:
     - eLabel:
         alphatest: "blend"
-        font: "$list_large_font"
+        font: "md_title_large"
         position: "0,50"
         size: "75,50"
         text: "<<<"
@@ -17,18 +17,18 @@ screen:
         transparent: "1"
         zPosition: "0"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "backtext"
         position: "125,50"
         size: "350,50"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "languagetext"
         position: "475,50"
         size: "350,50"
     - eLabel:
         alphatest: "blend"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "right"
         position: "$width-75,50"
         size: "75,50"
@@ -43,7 +43,7 @@ screen:
         transparent: "1"
         zPosition: "0"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "right"
         name: "nexttext"
         position: "$width-475,50"
@@ -56,7 +56,7 @@ screen:
         transparent: "1"
         zPosition: "0"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "languagetext"
         position: "50,$height-100"
         size: "350,50"

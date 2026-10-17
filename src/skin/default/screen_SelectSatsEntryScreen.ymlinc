@@ -12,7 +12,7 @@ screen:
         scrollbarMode: "showNever"
         size: "1110,540"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "hint"
         position: "405,780"

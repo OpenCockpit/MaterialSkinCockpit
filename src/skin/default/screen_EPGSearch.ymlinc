@@ -16,8 +16,8 @@ screen:
         scrollbarMode: "showNever"
         setColGap: "40"
         setColWidths: "120,220"
-        setEventItemFont: "$list_large_font"
-        setEventTimeFont: "$list_large_font"
+        setEventItemFont: "md_title_large"
+        setEventTimeFont: "md_title_large"
         setIconDistance: "-5"
         setPboxDistance: "80"
         setPiconDistance: "0"
@@ -36,7 +36,7 @@ screen:
         size: "1,870"
         zPosition: "-5"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         position: "1200,356"
@@ -51,7 +51,7 @@ screen:
               type: "TransponderInfo"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "right"
         position: "1730,355"
@@ -64,7 +64,7 @@ screen:
           - convert:
               type: "ServiceOrbitalPosition"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "block"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1200,404"

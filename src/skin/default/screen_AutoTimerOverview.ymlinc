@@ -9,9 +9,9 @@ screen:
         file: "screenpart_Screen_1_1.ymlinc"
         position: "96,54"
     - widget:
-        DayNameFont: "$list_font"
-        EventNameFont: "$list_large_font"
-        ServiceNameFont: "$list_large_font"
+        DayNameFont: "md_body_large"
+        EventNameFont: "md_title_large"
+        ServiceNameFont: "md_title_large"
         iconMargin: "20"
         itemCornerRadius: "$radius_item"
         itemHeight: "90"

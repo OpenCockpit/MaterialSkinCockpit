@@ -9,7 +9,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$mono_font"
+        font: "mono_font"
         foregroundColor: "md_on_surface"
         itemHeight: "38"
         name: "text"

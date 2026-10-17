@@ -24,7 +24,7 @@ screen:
         zPosition: "3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "filelist_text"
         position: "120,168"
@@ -33,7 +33,7 @@ screen:
         zPosition: "4"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "playlist_text"
         position: "345,168"

@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "lab2"
@@ -16,7 +16,7 @@ screen:
         size: "255,45"
         zPosition: "2"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "activecam"
@@ -25,7 +25,7 @@ screen:
         size: "360,225"
         zPosition: "2"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "lab1"
@@ -34,7 +34,7 @@ screen:
         zPosition: "2"
     - widget:
         enableWrapAround: "1"
-        font: "SelectionList;30"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         itemCornerRadius: "$radius_item"
         name: "list"

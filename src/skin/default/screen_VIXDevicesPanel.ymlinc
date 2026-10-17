@@ -25,7 +25,7 @@ screen:
                 																						MultiContentEntryText(pos = (135, 49), size = (975, 57), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
                 																						MultiContentEntryPixmapAlphaBlend(pos = (22, 7), size = (72, 72), png = 2), # index 2 is the status pixmap
                 			],
-                			"fonts": [gFont("Regular", $list_large_font_size), gFont("Regular", $hint_font_size)],
+                			"fonts": [parseFont("md_title_large"), parseFont("md_label_large")],
                 			"itemHeight": 112
                 		}
     - widget:
@@ -37,7 +37,7 @@ screen:
         size: "1130,25"
         transparent: "1"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "lab1"
         position: "406,690"

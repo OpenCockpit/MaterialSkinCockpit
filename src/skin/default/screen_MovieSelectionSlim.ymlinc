@@ -14,7 +14,7 @@ screen:
         zPosition: "-5"
     - widget:
         conditional: "waitingtext"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         halign: "center"
         name: "waitingtext"
         position: "20,100"
@@ -27,7 +27,7 @@ screen:
         compactColumn: "400"
         dateWidth: "260"
         dirShift: "10"
-        font: "$list_font"
+        font: "md_body_large"
         fontSizesCompact: "36,28"
         fontSizesMinimal: "34,30"
         fontSizesOriginal: "36,26,24"
@@ -61,7 +61,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1235,570"
@@ -76,7 +76,7 @@ screen:
               text: "ExtendedDescription"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "left"
         position: "1235,500"
@@ -91,7 +91,7 @@ screen:
               text: "  •  ,TIMECREATED,DURATION,FILESIZE"
     - widget:
         backgroundColor: "md_surface"
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         foregroundColor: "md_on_surface"
         halign: "left"
         position: "1235,400"
@@ -105,7 +105,7 @@ screen:
               text: "RecordServiceName"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_primary"
         halign: "left"
         position: "1235,450"
@@ -143,7 +143,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         name: "freeDiskSpace"
         position: "1290,935"

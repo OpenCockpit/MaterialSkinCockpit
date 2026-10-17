@@ -29,11 +29,11 @@ screen:
                 																					MultiContentEntryPixmapAlphaTest(pos = (67, 0), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
                 																					MultiContentEntryPixmapAlphaTest(pos = (135, 0), size = (72, 72), png = 6), # index 6 is the isMounted icon
                 			],
-                			"fonts": [gFont("Regular", $label_font_size), gFont("Regular", $caption_font_size), gFont("Regular", $list_large_font_size)],
+                			"fonts": [parseFont("md_body_small"), parseFont("md_label_medium"), parseFont("md_title_large")],
                 			"itemHeight": 78
                 		}
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "405,780"
         render: "Label"

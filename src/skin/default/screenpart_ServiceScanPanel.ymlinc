@@ -53,7 +53,7 @@
       - convert:
           type: "ConditionalShowHide"
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     name: "network"
     position: "105,5"
     size: "675,45"
@@ -61,7 +61,7 @@
     valign: "center"
     zPosition: "2"
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     name: "transponder"
     position: "105,57"
     size: "675,45"
@@ -76,7 +76,7 @@
     position: "0,170"
     size: "810,22"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "scan_state"
     position: "0,207"
     size: "810,70"
@@ -84,14 +84,14 @@
     valign: "top"
     zPosition: "2"
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     name: "pass"
     position: "0,280"
     size: "810,45"
     transparent: "1"
     valign: "center"
 - widget:
-    font: "$text_font"
+    font: "md_body_medium"
     itemHeight: "45"
     name: "servicelist"
     position: "840,0"

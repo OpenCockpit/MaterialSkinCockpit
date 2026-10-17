@@ -33,7 +33,7 @@ screen:
     - widget:
         backgroundColor: "md_shadow"
         borderWidth: "2"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         noWrap: "1"

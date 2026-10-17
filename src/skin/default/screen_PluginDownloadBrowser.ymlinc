@@ -15,7 +15,7 @@ screen:
         scrollbarMode: "showNever"
         size: "1356,610"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "text"
         position: "399,225"

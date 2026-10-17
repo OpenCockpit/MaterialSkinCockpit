@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_1_1.ymlinc"
         position: "0,0"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "38"
         name: "infolist"
         position: "29,96"

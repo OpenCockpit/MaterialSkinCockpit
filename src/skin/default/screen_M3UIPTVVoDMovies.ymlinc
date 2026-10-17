@@ -9,7 +9,7 @@ screen:
         position: "96,54"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         name: "overlay"
         position: "125,150"
@@ -34,7 +34,7 @@ screen:
                 				MultiContentEntryText(pos = (50, 0), size = (1250, 45), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
                 				MultiContentEntryPixmapAlphaBlend(pos = (10, 8), size = (30, 30), png = 2, flags=BT_SCALE|BT_KEEP_ASPECT_RATIO),
                 			],
-                			"fonts": [gFont("Regular", $list_font_size)],
+                			"fonts": [parseFont("md_body_large")],
                 			"itemHeight": 45
                 		}
     - widget:
@@ -70,7 +70,7 @@ screen:
         zPosition: "12"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "125,790"
         render: "Label"

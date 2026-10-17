@@ -26,7 +26,7 @@ screen:
         zPosition: "-5"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_primary"
         noWrap: "1"
         position: "18,11"
@@ -39,7 +39,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         halign: "left"
         noWrap: "1"
         position: "18,76"
@@ -56,7 +56,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         halign: "left"
         noWrap: "1"
         position: "93,76"
@@ -73,7 +73,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_tertiary"
         halign: "center"
         position: "192,76"
@@ -92,7 +92,7 @@ screen:
         borderWidth: "1"
         cornerRadius: "$radius_rating"
         extendDirection: "left"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         halign: "center"
         position: "817,16"
         render: "RatingIconLabel"
@@ -108,7 +108,7 @@ screen:
               text: "RatingTextAndColor"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_secondary"
         halign: "right"
         noWrap: "1"
@@ -126,7 +126,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "18,131"
@@ -140,7 +140,7 @@ screen:
               text: "FullDescription"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         halign: "left"
         noWrap: "1"
         position: "879,76"
@@ -157,7 +157,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         halign: "left"
         noWrap: "1"
         position: "954,76"
@@ -174,7 +174,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_tertiary"
         halign: "center"
         position: "1053,76"
@@ -193,7 +193,7 @@ screen:
         borderWidth: "1"
         cornerRadius: "$radius_rating"
         extendDirection: "left"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         halign: "center"
         position: "1679,16"
         render: "RatingIconLabel"
@@ -209,7 +209,7 @@ screen:
               text: "RatingTextAndColor"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_secondary"
         halign: "right"
         noWrap: "1"
@@ -227,7 +227,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         noWrap: "1"
         position: "879,11"
         render: "Label"
@@ -239,7 +239,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "879,131"
         render: "COCRunningText"
@@ -264,7 +264,7 @@ screen:
               text: "Reference"
     - widget:
         backgroundColor: "md_surface_container_high"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_on_surface"
         halign: "left"
         noWrap: "1"
@@ -286,7 +286,7 @@ screen:
         backgroundColor: "md_surface_container_high"
         connection: "session"
         elements: "gamma,videoRes,txt,dolby,audiotrack,subtitletrack,subservices,stream,hbbtv,separator,catchup,separator,servicetype,separator,record,separator,tuners"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_success"
         pixmaps: "IS_HDR:icons/hdr_on.png,IS_HDR10:icons/hdr10_on.png,IS_HLG:icons/hlg_on.png,IS_HD:icons/HD_s_n.png,IS_4K:icons/4K_s_n.png,IS_SD:icons/SD_s_n.png,txt:icons/ico_txt_on.png,dolby:icons/dd_s.png,crypt:icons/crypt_s.png,cryptscsa:icons/cryptscsa.png,audiotrack:icons/ml_s_alt2.png,subtitletrack:icons/subs_s.png,hbbtv:icons/hbbtv_s.png,subservices:icons/ico_subs_on.png,stream:icons/streaming.png,record:icons/rec2.png,catchup:icons/ico_catchup.png,sat:icons/satdish.png,cable:icons/ico_dvb-c.png,terestrial:icons/ico_dvb-t.png,iptv:icons/ico_stream.png"
         position: "1004,925"
@@ -299,7 +299,7 @@ screen:
         zPosition: "110"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$clock_huge_font"
+        font: "md_display_medium_emphasized"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "1425,708"
@@ -315,7 +315,7 @@ screen:
               text: "Default"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "1425,778"
@@ -331,7 +331,7 @@ screen:
               text: "Format: %d %B %Y"
     - widget:
         backgroundColor: "md_surface"
-        font: "$caid_font"
+        font: "caid_font"
         foregroundColor: "md_on_surface"
         halign: "right"
         position: "1357,841"

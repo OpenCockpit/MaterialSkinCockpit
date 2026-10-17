@@ -9,7 +9,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "config"
@@ -27,7 +27,7 @@ screen:
         size: "1130,25"
         transparent: "1"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "description"
@@ -35,12 +35,12 @@ screen:
         size: "0,0"
         valign: "top"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         name: "statusbar"
         position: "396,856"
         size: "1110,34"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         name: "status"
         position: "396,770"
         size: "1110,90"

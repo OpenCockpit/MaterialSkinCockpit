@@ -1,5 +1,5 @@
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     name: "fulldescription"
     position: "0,0"
     scrollbarMode: "showNever"

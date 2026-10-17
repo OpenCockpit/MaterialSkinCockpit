@@ -39,7 +39,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface"
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "397,2"

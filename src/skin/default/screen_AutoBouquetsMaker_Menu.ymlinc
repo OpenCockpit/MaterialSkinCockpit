@@ -23,7 +23,7 @@ screen:
                 				MultiContentEntryPixmapAlphaTest(pos = (18, 12), size = (48, 48), png = 0),
                 				MultiContentEntryText(pos = (87, 11), size = (1060, 49), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
                 			],
-                			"fonts": [gFont("Regular", $list_font_size)],
+                			"fonts": [parseFont("md_body_large")],
                 			"itemHeight": 60
                 		}
     - widget:

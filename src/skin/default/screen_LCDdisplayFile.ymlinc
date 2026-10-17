@@ -10,7 +10,7 @@ screen:
         position: "370,118"
     - widget:
         enableWrapAround: "1"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface_variant"
         itemCornerRadius: "$radius_item"
         itemHeight: "35"
@@ -23,7 +23,7 @@ screen:
         scrollbarWidth: "6"
         size: "1126,560"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
         position: "410,820"

@@ -1,6 +1,6 @@
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,0"
     render: "Label"
     size: "300,37"
@@ -8,7 +8,7 @@
     valign: "left"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,105"
     render: "Label"
     size: "300,37"
@@ -16,7 +16,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,165"
     render: "Label"
     size: "300,37"
@@ -24,7 +24,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,225"
     render: "Label"
     size: "300,37"
@@ -32,7 +32,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,285"
     render: "Label"
     size: "300,37"
@@ -40,7 +40,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "143,345"
     render: "Label"
     size: "300,37"
@@ -48,7 +48,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,0"
     render: "Label"
     size: "495,37"
@@ -56,7 +56,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,105"
     render: "Label"
     size: "495,37"
@@ -64,7 +64,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,165"
     render: "Label"
     size: "495,37"
@@ -72,7 +72,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,225"
     render: "Label"
     size: "495,37"
@@ -80,7 +80,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,285"
     render: "Label"
     size: "495,37"
@@ -88,7 +88,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     position: "458,345"
     render: "Label"
     size: "495,37"
@@ -96,7 +96,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "right"
     position: "458,760"
     render: "Label"
@@ -105,7 +105,7 @@
     zPosition: "10"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "left"
     position: "713,760"
     render: "Label"
@@ -113,7 +113,7 @@
     source: "IF"
     zPosition: "10"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     halign: "right"
     position: "0,720"
     render: "Label"

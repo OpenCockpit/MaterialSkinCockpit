@@ -1,6 +1,6 @@
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "InfoText"
     position: "0,0"
     size: "1100,455"
@@ -12,7 +12,7 @@
     size: "1110,525"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_success"
     halign: "left"
     name: "Adaptertext"
@@ -21,7 +21,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_error,md_success"
     halign: "center"
     name: "Adapter"
@@ -37,7 +37,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "right"
     name: "AdapterInfo_Text"
@@ -52,7 +52,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$text_font"
+    font: "md_body_medium"
     foregroundColors: "md_outline,md_success"
     halign: "left"
     name: "Networktext"
@@ -61,7 +61,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_error,md_success"
     halign: "center"
     name: "Network"
@@ -77,7 +77,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "right"
     name: "NetworkInfo_Text"
@@ -92,7 +92,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_success"
     halign: "left"
     name: "Dhcptext"
@@ -101,7 +101,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_error,md_success"
     halign: "center"
     name: "Dhcp"
@@ -117,7 +117,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "right"
     name: "DhcpInfo_Text"
@@ -131,7 +131,7 @@
     size: "300,34"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_success"
     halign: "left"
     name: "IPtext"
@@ -140,7 +140,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_error,md_success"
     halign: "center"
     name: "IP"
@@ -156,7 +156,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "right"
     name: "IPInfo_Text"
@@ -171,7 +171,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_success"
     halign: "left"
     name: "DNStext"
@@ -180,7 +180,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_error,md_success"
     halign: "center"
     name: "DNS"
@@ -196,7 +196,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "right"
     name: "DNSInfo_Text"

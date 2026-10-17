@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         backgroundColor: "md_surface"
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         halign: "left"
         position: "145,150"
         render: "Label"
@@ -17,7 +17,7 @@ screen:
         source: "city"
     - widget:
         backgroundColor: "md_surface"
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         halign: "left"
         position: "900,150"
         render: "Label"
@@ -25,7 +25,7 @@ screen:
         source: "degreetype"
     - widget:
         conditional: "entrylist"
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "45"
         name: "entrylist"
         position: "125,200"

@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         conditional: "entrylist"
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "45"
         name: "entrylist"
         position: "125,150"

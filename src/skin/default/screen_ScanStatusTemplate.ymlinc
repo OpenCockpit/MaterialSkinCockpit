@@ -5,7 +5,7 @@ screen:
         file: "screenpart_Screen_Window_Full.ymlinc"
         position: "5,5"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         name: "scan_state"
         position: "40,327"
         size: "810,70"

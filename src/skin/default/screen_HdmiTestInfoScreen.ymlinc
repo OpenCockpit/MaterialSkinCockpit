@@ -7,7 +7,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_on_surface"
         itemHeight: "45"
         name: "rxtext"

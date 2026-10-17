@@ -11,7 +11,7 @@ screen:
     - widget:
         colposition: "0"
         dividechar: ":"
-        font: "$mono_font"
+        font: "mono_font"
         halign: "block"
         name: "text"
         position: "121,138"

@@ -7,7 +7,7 @@ screen:
         file: "screenpart_RemoteControlTemplate.ymlinc"
         position: "1628,236"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         position: "202,186"
         render: "Label"

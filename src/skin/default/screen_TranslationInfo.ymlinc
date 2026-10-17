@@ -9,7 +9,7 @@ screen:
         position: "370,118"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         position: "401,196"
         render: "Label"
@@ -18,7 +18,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         position: "401,317"
         render: "Label"

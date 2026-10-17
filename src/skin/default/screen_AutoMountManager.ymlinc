@@ -26,11 +26,11 @@ screen:
                 																							MultiContentEntryText(pos = (90, 52), size = (870, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
                 																							MultiContentEntryPixmapAlphaBlend(pos = (15, 15), size = (72, 72), png = 3), # index 4 is the pixmap
                 			],
-                			"fonts": [gFont("Regular", $list_large_font_size), gFont("Regular", $hint_font_size)],
+                			"fonts": [parseFont("md_title_large"), parseFont("md_label_large")],
                 			"itemHeight": 90
                 		}
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "405,780"
         render: "Label"

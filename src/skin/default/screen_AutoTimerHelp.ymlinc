@@ -6,7 +6,7 @@ screen:
   title: "AutoTimerHelp"
   children:
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "780,105"
         render: "Label"
@@ -14,7 +14,7 @@ screen:
         source: "title"
         zPosition: "1"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         name: "detailtext"
         position: "780,205"
         size: "1110,805"

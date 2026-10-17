@@ -7,7 +7,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         itemHeight: "45"
         name: "config"
         position: "396,200"
@@ -16,7 +16,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "Linconn"

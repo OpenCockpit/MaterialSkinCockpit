@@ -25,7 +25,7 @@ screen:
                 																						MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
                 																						MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
                 			],
-                			"fonts": [gFont("Regular", $hint_font_size), gFont("Regular", $micro_font_size)],
+                			"fonts": [parseFont("md_label_large"), parseFont("md_label_small")],
                 			"itemHeight": 54
                 		}
     - widget:

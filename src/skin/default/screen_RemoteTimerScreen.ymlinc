@@ -15,9 +15,9 @@ screen:
         rowSplit: "45"
         satPosLeft: "250"
         scrollbarMode: "showNever"
-        setEventNameFont: "$list_large_font"
-        setFont: "$text_font"
-        setServiceNameFont: "$text_font"
+        setEventNameFont: "md_title_large"
+        setFont: "md_body_medium"
+        setServiceNameFont: "md_body_medium"
         sidesMargin: "20"
         size: "1650,6*90"
     - widget:
@@ -34,7 +34,7 @@ screen:
         zPosition: "-7"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "text"
         position: "145,730"

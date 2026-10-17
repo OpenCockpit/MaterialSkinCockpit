@@ -10,7 +10,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         conditional: "introduction"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "145,865"
@@ -22,7 +22,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         conditional: "lab1"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "145,865"

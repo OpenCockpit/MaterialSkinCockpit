@@ -9,7 +9,7 @@ screen:
         position: "96,54"
     - widget:
         conditional: "arrowdown"
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "38"
         name: "list"
         position: "125,150"
@@ -17,7 +17,7 @@ screen:
         size: "1200,20*38"
     - widget:
         conditional: "long_key"
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "long_key"
@@ -25,7 +25,7 @@ screen:
         size: "375,30"
     - widget:
         conditional: "longshift_key1"
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "longshift_key0"
@@ -33,7 +33,7 @@ screen:
         size: "375,30"
     - widget:
         conditional: "longshift_key1"
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "longshift_key1"
@@ -96,7 +96,7 @@ screen:
                 																						],
                 																						],
                 																					},
-                			"fonts": [gFont("Regular", $heading_font_size), gFont("Regular", $subtitle_font_size), gFont("Regular", $heading_font_size), gFont("Regular", $heading_font_size)],
+                			"fonts": [parseFont("md_headline_medium"), parseFont("md_headline_small"), parseFont("md_headline_medium"), parseFont("md_headline_medium")],
                 			"itemHeight": 57
                 		}
     - widget:

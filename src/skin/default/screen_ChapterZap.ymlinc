@@ -20,14 +20,14 @@ screen:
         zPosition: "-8"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_secondary"
         name: "chapter"
         position: "30,22"
         size: "180,39"
         transparent: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "right"
         name: "number"
         position: "210,22"

@@ -10,7 +10,7 @@ screen:
         backgroundColor: "md_transparent"
         borderColor: "md_shadow"
         borderWidth: "2"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         position: "0,0"
         size: "450,45"
         text: "Timeshift Live"

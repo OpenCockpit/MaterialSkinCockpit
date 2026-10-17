@@ -27,12 +27,12 @@ screen:
                 				MultiContentEntryText(pos = (98, 8), size = (1193, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
                 				MultiContentEntryText(pos = (1410, 8), size = (360, 60), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
                 			],
-                			"fonts": [gFont("Regular", $display_font_size)],
+                			"fonts": [parseFont("md_headline_large")],
                 			"itemHeight": 75
                 		}
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "lab1"

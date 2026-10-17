@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_1_1.ymlinc"
         position: "96,54"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menulist"
@@ -18,7 +18,7 @@ screen:
         size: "1670,13*45"
         zPosition: "10"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "145,865"

@@ -8,7 +8,7 @@ screen:
         file: "screen_ServiceInfoSimple.ymlinc"
         position: "96,54"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "386,900"

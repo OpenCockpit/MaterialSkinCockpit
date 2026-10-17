@@ -9,7 +9,7 @@ screen:
         position: "370,118"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         name: "about"
         position: "396,210"
         size: "1130,660"

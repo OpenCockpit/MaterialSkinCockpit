@@ -10,7 +10,7 @@ screen:
         backgroundColor: "md_transparent"
         borderColor: "md_shadow"
         borderWidth: "2"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "left"
         name: "videomode"
         position: "0,0"

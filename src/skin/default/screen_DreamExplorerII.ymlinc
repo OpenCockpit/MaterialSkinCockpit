@@ -7,7 +7,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         itemHeight: "45"
         name: "filelist"

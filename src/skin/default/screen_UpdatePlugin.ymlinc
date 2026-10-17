@@ -10,7 +10,7 @@ screen:
         position: "370,118"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         position: "396,220"
         render: "Label"
@@ -18,7 +18,7 @@ screen:
         source: "package"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         position: "396,295"
         render: "Label"

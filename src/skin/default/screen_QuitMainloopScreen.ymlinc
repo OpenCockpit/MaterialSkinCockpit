@@ -14,7 +14,7 @@ screen:
         zPosition: "10"
     - widget:
         backgroundColor: "md_shadow"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "text"
         position: "c-885,c+15"

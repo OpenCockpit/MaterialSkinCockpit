@@ -1,5 +1,5 @@
 - widget:
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_primary"
     name: "searchinfo"
     position: "30,123"
@@ -22,7 +22,7 @@
     size: "830,25"
 - widget:
     conditional: "data"
-    font: "$list_large_font"
+    font: "md_title_large"
     name: "data"
     position: "30,600"
     scrollbarMode: "showNever"

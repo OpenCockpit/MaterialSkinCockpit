@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menu"
@@ -24,7 +24,7 @@ screen:
         size: "1130,25"
         transparent: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         name: "info"
         position: "408,213"

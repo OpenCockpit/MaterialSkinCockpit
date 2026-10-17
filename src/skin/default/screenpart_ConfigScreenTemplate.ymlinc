@@ -6,7 +6,7 @@ screen:
         position: "96,54"
     - widget:
         conditional: "config"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "config"
@@ -25,7 +25,7 @@ screen:
         transparent: "1"
     - widget:
         conditional: "list"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
@@ -51,7 +51,7 @@ screen:
         transparent: "1"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         name: "description"
         objectTypes: "description,Button,Label"
@@ -59,7 +59,7 @@ screen:
         size: "1630,145"
         valign: "center"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         objectTypes: "description,StaticText"
         position: "145,750"
@@ -73,7 +73,7 @@ screen:
         position: "0,0"
         size: "0,0"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         name: "footnote"
@@ -83,7 +83,7 @@ screen:
         valign: "center"
         zPosition: "5"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         objectTypes: "footnote,StaticText"

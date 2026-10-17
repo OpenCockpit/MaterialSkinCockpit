@@ -25,7 +25,7 @@ screen:
                 				MultiContentEntryPixmapAlphaBlend(pos = (1520, 1), size = (42, 42), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 3),
                 				MultiContentEntryPixmapAlphaBlend(pos = (1572, 12), size = (88, 20), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 2),
                 			],
-                			"fonts": [gFont("Regular", $list_font_size), gFont("Regular", $caption_font_size)],
+                			"fonts": [parseFont("md_body_large"), parseFont("md_label_medium")],
                 			"itemHeight": 45
                 		}
     - widget:
@@ -37,7 +37,7 @@ screen:
         size: "1630,25"
         transparent: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         objectTypes: "description,StaticText"
         position: "145,801"

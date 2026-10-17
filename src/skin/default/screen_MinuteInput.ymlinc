@@ -18,14 +18,14 @@ screen:
         zPosition: "-8"
     - eLabel:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_secondary"
         position: "30,22"
         size: "150,37"
         text: "Seek"
         transparent: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "right"
         name: "minutes"
         position: "180,22"

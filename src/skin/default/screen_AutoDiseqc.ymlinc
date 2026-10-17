@@ -15,7 +15,7 @@ screen:
         size: "96,96"
         zPosition: "2"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "255,745"
         render: "Label"
@@ -27,7 +27,7 @@ screen:
         valign: "center"
         zPosition: "10"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "255,830"
         render: "Label"

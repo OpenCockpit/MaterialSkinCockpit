@@ -5,7 +5,7 @@ screen:
   children:
     - widget:
         conditional: "feedStatusMSG"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "center"
         name: "feedStatusMSG"

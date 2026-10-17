@@ -26,7 +26,7 @@ screen:
         size: "220,132"
     - widget:
         backgroundColor: "md_surface"
-        font: "$display_font"
+        font: "md_headline_large"
         halign: "left"
         name: "chNumName"
         position: "290,50"

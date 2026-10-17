@@ -9,7 +9,7 @@ screen:
         position: "495,136"
     - widget:
         enableWrapAround: "1"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "devicelist"
@@ -26,7 +26,7 @@ screen:
         transparent: "1"
     - widget:
         alphatest: "blend"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_primary"
         halign: "center"
         name: "ConnStatus"

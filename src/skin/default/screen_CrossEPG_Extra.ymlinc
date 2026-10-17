@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "menu"
         position: "396,210"
         scrollbarMode: "showNever"

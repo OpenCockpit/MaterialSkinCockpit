@@ -10,7 +10,7 @@ screen:
         position: "370,118"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         position: "473,198"
         render: "Label"
         size: "990,45"
@@ -26,7 +26,7 @@ screen:
         size: "990,3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         position: "474,267"
         render: "Label"
         size: "990,112"
@@ -34,7 +34,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         position: "475,391"
         render: "Label"
         size: "990,45"
@@ -60,7 +60,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         position: "473,473"
         render: "Label"
         size: "990,400"

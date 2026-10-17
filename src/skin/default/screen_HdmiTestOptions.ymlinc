@@ -7,7 +7,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface"
         itemHeight: "45"
         name: "config"

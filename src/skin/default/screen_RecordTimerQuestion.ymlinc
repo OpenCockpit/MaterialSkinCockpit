@@ -7,7 +7,7 @@ screen:
   zPosition: "5"
   children:
     - widget:
-        font: "$caption_font"
+        font: "md_label_medium"
         name: "text"
         position: "0,0"
         size: "0,0"

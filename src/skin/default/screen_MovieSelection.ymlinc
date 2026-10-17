@@ -17,7 +17,7 @@ screen:
         zPosition: "-2"
     - widget:
         conditional: "waitingtext"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         halign: "center"
         name: "waitingtext"
         position: "35,429"
@@ -30,7 +30,7 @@ screen:
         compactColumn: "400"
         dateWidth: "260"
         dirShift: "10"
-        font: "$list_font"
+        font: "md_body_large"
         fontSizesCompact: "36,28"
         fontSizesMinimal: "34,30"
         fontSizesOriginal: "36,26,24"
@@ -64,7 +64,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "30,167"
@@ -93,7 +93,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_primary"
         halign: "left"
         position: "142,379"
@@ -108,7 +108,7 @@ screen:
               text: "  •  ,RECSERVICE,TIMECREATED,DURATION,FILESIZE"
     - widget:
         backgroundColor: "md_surface"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_primary"
         halign: "left"
         position: "30,97"
@@ -140,7 +140,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         halign: "right"
         name: "freeDiskSpace"
         position: "1311,383"

@@ -10,7 +10,7 @@ screen:
         position: "495,136"
     - widget:
         enableWrapAround: "1"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface_variant"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"

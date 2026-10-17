@@ -40,7 +40,7 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         halign: "center"
         position: "70,920"
         render: "Label"
@@ -51,7 +51,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_shadow"
-        font: "$xlarge_font"
+        font: "md_display_small"
         halign: "center"
         name: "loading"
         position: "center,center"
@@ -72,7 +72,7 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        font: "$subtitle_font"
+        font: "md_headline_small"
         foregroundColor: "md_warning"
         position: "778,150"
         render: "Label"
@@ -102,7 +102,7 @@ screen:
         transparent: "1"
         zPosition: "5"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         name: "info"
         position: "1223,205"
         size: "619,675"

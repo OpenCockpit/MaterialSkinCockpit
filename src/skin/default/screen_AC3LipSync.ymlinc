@@ -16,7 +16,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_on_surface"
         name: "ServiceInfoLabel"
         position: "20,15"
@@ -25,7 +25,7 @@ screen:
         zPosition: "4"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_on_surface"
         name: "ServiceInfo"
         position: "140,15"
@@ -42,7 +42,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColors: "md_on_surface,md_warning"
         halign: "left"
         name: "ChannelLabel"
@@ -61,7 +61,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColors: "md_on_surface,md_warning"
         halign: "left"
         name: "GlobalLabel"
@@ -87,7 +87,7 @@ screen:
         zPosition: "3"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "AudioSlider"
@@ -122,7 +122,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "key_red"
@@ -133,7 +133,7 @@ screen:
         zPosition: "4"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "key_green"
@@ -144,7 +144,7 @@ screen:
         zPosition: "4"
     - widget:
         backgroundColor: "md_surface_container"
-        font: "$caption_font"
+        font: "md_label_medium"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "key_blue"

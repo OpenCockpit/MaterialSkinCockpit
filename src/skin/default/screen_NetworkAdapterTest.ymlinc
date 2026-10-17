@@ -22,7 +22,7 @@ screen:
         zPosition: "20"
     - widget:
         backgroundColor: "md_surface_container_high"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColors: "md_on_surface,md_outline,md_success"
         halign: "left"
         name: "EditSettings_Text"

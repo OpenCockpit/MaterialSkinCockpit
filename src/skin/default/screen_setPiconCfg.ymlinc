@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "statusbar"
         position: "145,865"

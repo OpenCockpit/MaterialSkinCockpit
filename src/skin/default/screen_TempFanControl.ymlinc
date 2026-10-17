@@ -16,7 +16,7 @@ screen:
         size: "40,20"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_on_surface_variant"
         halign: "left"
         position: "242,1030"
@@ -27,7 +27,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_on_surface_variant"
         halign: "left"
         position: "678,1030"
@@ -37,7 +37,7 @@ screen:
         transparent: "1"
         zPosition: "2"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "config"
@@ -46,7 +46,7 @@ screen:
         size: "1110,180"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,315"
         render: "Label"
@@ -56,7 +56,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,315"
         render: "Label"
@@ -68,7 +68,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,345"
         render: "Label"
@@ -78,7 +78,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,345"
         render: "Label"
@@ -90,7 +90,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,375"
         render: "Label"
@@ -100,7 +100,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,375"
         render: "Label"
@@ -112,7 +112,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,405"
         render: "Label"
@@ -122,7 +122,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,405"
         render: "Label"
@@ -134,7 +134,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,435"
         render: "Label"
@@ -144,7 +144,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,435"
         render: "Label"
@@ -156,7 +156,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,465"
         render: "Label"
@@ -166,7 +166,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,465"
         render: "Label"
@@ -178,7 +178,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,495"
         render: "Label"
@@ -188,7 +188,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,495"
         render: "Label"
@@ -200,7 +200,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "795,525"
         render: "Label"
@@ -210,7 +210,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "930,525"
         render: "Label"
@@ -222,7 +222,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,315"
         render: "Label"
@@ -232,7 +232,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,315"
         render: "Label"
@@ -244,7 +244,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,345"
         render: "Label"
@@ -254,7 +254,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,345"
         render: "Label"
@@ -266,7 +266,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,375"
         render: "Label"
@@ -276,7 +276,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,375"
         render: "Label"
@@ -288,7 +288,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,405"
         render: "Label"
@@ -298,7 +298,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,405"
         render: "Label"
@@ -310,7 +310,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,435"
         render: "Label"
@@ -320,7 +320,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,435"
         render: "Label"
@@ -332,7 +332,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,465"
         render: "Label"
@@ -342,7 +342,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,465"
         render: "Label"
@@ -354,7 +354,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,495"
         render: "Label"
@@ -364,7 +364,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,495"
         render: "Label"
@@ -376,7 +376,7 @@ screen:
               type: "SensorToText"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1305,525"
         render: "Label"
@@ -386,7 +386,7 @@ screen:
         valign: "top"
         zPosition: "1"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "right"
         position: "1440,525"
         render: "Label"

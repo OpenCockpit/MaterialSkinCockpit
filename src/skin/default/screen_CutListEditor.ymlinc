@@ -15,7 +15,7 @@ screen:
         size: "1044,566"
         zPosition: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         position: "771,710"
         render: "Label"
@@ -27,7 +27,7 @@ screen:
               type: "ServiceName"
               text: "Name"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "771,787"
         render: "Label"
@@ -40,7 +40,7 @@ screen:
               type: "ServicePosition"
               text: "Position,Detailed"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "SeekState"
         position: "771,830"
@@ -65,7 +65,7 @@ screen:
                 				MultiContentEntryText(size=(188,30), text = 1, backcolor = MultiContentTemplateColor(3)),
                 				MultiContentEntryText(pos=(198,0), size=(75,30), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
                 			],
-                			"fonts": [gFont("Regular", $label_font_size)],
+                			"fonts": [parseFont("md_body_small")],
                 			"itemHeight": 30
                 		}
     - widget:

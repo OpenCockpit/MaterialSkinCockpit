@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Window_Full_Pig.ymlinc"
         position: "5,5"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "date"
         position: "35,95"
@@ -24,8 +24,8 @@ screen:
         scrollbarMode: "showNever"
         setColGap: "20"
         setColWidths: "350,150"
-        setEventItemFont: "$text_font"
-        setEventTimeFont: "$hint_font"
+        setEventItemFont: "md_body_medium"
+        setEventTimeFont: "md_label_large"
         setIconDistance: "10"
         setTimeWidth: "135"
         sidesMargin: "25"
@@ -35,7 +35,7 @@ screen:
         backgroundColor: "md_surface"
         backgroundColorSelected: "md_outline_variant"
         borderColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColorSelected: "md_primary"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
@@ -53,7 +53,7 @@ screen:
         zPosition: "-5"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1235,455"
@@ -79,7 +79,7 @@ screen:
               text: "Reference"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         halign: "left"
         noWrap: "1"
@@ -94,7 +94,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         position: "1240,345"
         render: "Label"
         size: "160,30"
@@ -121,7 +121,7 @@ screen:
         zPosition: "3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         halign: "center"
         name: "now_text"
         position: "155,150"
@@ -146,7 +146,7 @@ screen:
         zPosition: "3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         halign: "center"
         name: "next_text"
         position: "470,150"
@@ -171,7 +171,7 @@ screen:
         zPosition: "3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$label_font"
+        font: "md_body_small"
         halign: "center"
         name: "more_text"
         position: "785,150"

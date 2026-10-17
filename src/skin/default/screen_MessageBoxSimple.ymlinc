@@ -9,7 +9,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface_container_high"
-        font: "$title_font"
+        font: "md_title_small_emphasized"
         foregroundColor: "md_primary"
         halign: "left"
         position: "15,3"
@@ -20,7 +20,7 @@ screen:
         zPosition: "2"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "text"
         position: "100,12"
         size: "780,0"
@@ -61,7 +61,7 @@ screen:
         size: "80,80"
     - widget:
         backgroundColor: "md_transparent"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
@@ -72,7 +72,7 @@ screen:
         zPosition: "2"
     - widget:
         conditional: "autoresize"
-        font: "$text_font"
+        font: "md_body_medium"
         name: "autoresize"
         noWrap: "1"
         position: "0,0"

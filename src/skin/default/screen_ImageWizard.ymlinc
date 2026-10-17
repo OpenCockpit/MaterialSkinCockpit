@@ -8,7 +8,7 @@ screen:
         position: "5,5"
     - eLabel:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$subtitle_font"
+        font: "md_headline_small"
         halign: "left"
         position: "30,7"
         size: "1830,75"
@@ -17,7 +17,7 @@ screen:
         valign: "center"
         zPosition: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "text"
         position: "1090,153"
         size: "510,495"
@@ -32,7 +32,7 @@ screen:
           - convert:
               type: "StringList"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "config"
@@ -47,7 +47,7 @@ screen:
         position: "810,492"
         size: "40,20"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         name: "languagetext"
         position: "860,485"
         size: "165,34"

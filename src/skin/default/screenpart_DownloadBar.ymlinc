@@ -3,13 +3,13 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "action"
         position: "0,0"
         size: "650,45"
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "status"
         position: "690,0"
@@ -46,7 +46,7 @@ screen:
     - widget:
         backgroundColor: "md_surface_overlay"
         conditional: "tuner_text"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "tuner_text"
         position: "1423,0"
@@ -54,7 +54,7 @@ screen:
     - widget:
         backgroundColor: "md_surface_overlay"
         conditional: "Frontend"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "1460,0"
         render: "Label"
@@ -66,7 +66,7 @@ screen:
               text: "SNRdB"
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "right"
         position: "1610,0"
         render: "Label"
@@ -78,7 +78,7 @@ screen:
               text: "InText"
     - widget:
         backgroundColor: "md_surface_overlay"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "left"
         position: "1770,0"
         render: "Label"

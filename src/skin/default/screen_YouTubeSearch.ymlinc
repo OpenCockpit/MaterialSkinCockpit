@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         itemHeight: "45"
         name: "config"
@@ -31,7 +31,7 @@ screen:
                 			"template": [
                 				MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
                 			],
-                			"fonts": [gFont("Regular", $list_font_size)],
+                			"fonts": [parseFont("md_body_large")],
                 			"itemHeight": 45
                 		}
     - widget:

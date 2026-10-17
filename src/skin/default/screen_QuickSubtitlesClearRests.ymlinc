@@ -7,7 +7,7 @@ screen:
   title: "Subtitle settings"
   children:
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "38"
         name: "config"
         position: "7,7"

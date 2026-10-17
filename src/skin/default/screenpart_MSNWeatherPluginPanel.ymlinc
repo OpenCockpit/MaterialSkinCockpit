@@ -1,6 +1,6 @@
 - widget:
     backgroundColor: "md_surface"
-    font: "$emphasis_font"
+    font: "md_headline_medium_emphasized"
     position: "10,10"
     render: "Label"
     size: "600,60"
@@ -8,7 +8,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$caption_font"
+    font: "md_label_medium"
     halign: "right"
     position: "$width-370,10"
     render: "Label"
@@ -17,7 +17,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$caption_font"
+    font: "md_label_medium"
     halign: "right"
     position: "$width-440,50"
     render: "Label"
@@ -32,7 +32,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$clock_large_font"
+    font: "md_display_small_emphasized"
     position: "440,170"
     render: "Label"
     size: "200,80"
@@ -41,7 +41,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     position: "440,260"
     render: "Label"
     size: "200,40"
@@ -50,7 +50,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     position: "680,170"
     render: "Label"
     size: "300,40"
@@ -59,7 +59,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     position: "680,220"
     render: "Label"
     size: "300,40"
@@ -68,7 +68,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     position: "680,270"
     render: "Label"
     size: "300,40"
@@ -77,7 +77,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     halign: "center"
     position: "10,390"
     render: "Label"
@@ -93,7 +93,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "center"
     position: "10,590"
     render: "Label"
@@ -103,7 +103,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     halign: "center"
     position: "($width-20)/5 + ($width-20)/5 - 200,390"
     render: "Label"
@@ -119,7 +119,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "center"
     position: "($width-20)/5 + ($width-20)/5 - 200,590"
     render: "Label"
@@ -129,7 +129,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     halign: "center"
     position: "($width-20)/5*2 + ($width-20)/5 - 200,390"
     render: "Label"
@@ -145,7 +145,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "center"
     position: "($width-20)/5*2 + ($width-20)/5 - 200,590"
     render: "Label"
@@ -155,7 +155,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     halign: "center"
     position: "($width-20)/5*3 + ($width-20)/5 - 200,390"
     render: "Label"
@@ -171,7 +171,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "center"
     position: "($width-20)/5*3 + ($width-20)/5 - 200,590"
     render: "Label"
@@ -181,7 +181,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     halign: "center"
     position: "($width-20)/5*4 + ($width-20)/5 - 200,390"
     render: "Label"
@@ -197,7 +197,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "center"
     position: "($width-20)/5*4 + ($width-20)/5 - 200,590"
     render: "Label"

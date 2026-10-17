@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "left"
         position: "145,755"
         render: "Label"
@@ -19,7 +19,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "left"
         itemHeight: "45"
         position: "e,755"

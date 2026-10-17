@@ -8,7 +8,7 @@ screen:
         file: "screenpart_Screen_1_1.ymlinc"
         position: "96,54"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "text"
         position: "125,150"

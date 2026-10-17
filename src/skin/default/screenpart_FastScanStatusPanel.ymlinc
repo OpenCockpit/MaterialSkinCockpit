@@ -7,7 +7,7 @@
     transparent: "1"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "scan_state"
     position: "0,165"
     size: "810,45"

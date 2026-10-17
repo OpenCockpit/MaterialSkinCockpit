@@ -31,7 +31,7 @@ screen:
         size: "90,90"
         zPosition: "3"
     - widget:
-        font: "$emphasis_font"
+        font: "md_headline_medium_emphasized"
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "speed"
@@ -40,7 +40,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$display_font"
+        font: "md_headline_large"
         noWrap: "1"
         position: "362,75"
         render: "Label"
@@ -54,7 +54,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         foregroundColor: "md_on_surface"
         halign: "left"
         position: "367,4"
@@ -69,7 +69,7 @@ screen:
               text: "Position"
     - widget:
         backgroundColor: "md_surface"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         halign: "center"
         position: "473,4"
         render: "Label"
@@ -83,7 +83,7 @@ screen:
               text: "Length,ShowHours"
     - widget:
         backgroundColor: "md_surface"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         foregroundColor: "md_on_surface"
         halign: "right"
         position: "583,4"
@@ -130,7 +130,7 @@ screen:
               text: "Position"
     - widget:
         backgroundColor: "md_surface"
-        font: "$clock_huge_font"
+        font: "md_display_medium_emphasized"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "1552,65"
@@ -146,7 +146,7 @@ screen:
               text: "EndTime,ShowNoSeconds"
     - widget:
         backgroundColor: "md_surface"
-        font: "$event_font"
+        font: "md_title_medium_emphasized"
         foregroundColor: "md_on_surface"
         halign: "center"
         position: "1552,130"

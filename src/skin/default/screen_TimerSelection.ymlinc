@@ -16,9 +16,9 @@ screen:
         rowSplit: "42"
         satPosLeft: "250"
         scrollbarMode: "showNever"
-        setEventNameFont: "$list_large_font"
-        setFont: "$text_font"
-        setServiceNameFont: "$text_font"
+        setEventNameFont: "md_title_large"
+        setFont: "md_body_medium"
+        setServiceNameFont: "md_body_medium"
         size: "1130,635"
     - widget:
         addon: "Pager"

@@ -9,7 +9,7 @@ screen:
         file: "screen_AutoTimerServiceEditor.ymlinc"
         position: "0,0"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "center"
         position: "49,701"
         render: "Label"

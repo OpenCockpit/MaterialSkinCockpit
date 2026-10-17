@@ -23,7 +23,7 @@ screen:
     - eLabel:
         backgroundColor: "md_surface_container_highest"
         borderWidth: "1"
-        font: "$xlarge_font"
+        font: "md_display_small"
         position: "37,135"
         size: "140,75"
         text: "SNR:"
@@ -31,7 +31,7 @@ screen:
         valign: "center"
     - widget:
         borderWidth: "1"
-        font: "$xlarge_font"
+        font: "md_display_small"
         halign: "right"
         position: "1552,135"
         render: "Label"
@@ -58,7 +58,7 @@ screen:
     - eLabel:
         backgroundColor: "md_surface_container_highest"
         borderWidth: "1"
-        font: "$xlarge_font"
+        font: "md_display_small"
         position: "37,230"
         size: "150,75"
         text: "AGC:"
@@ -66,7 +66,7 @@ screen:
         valign: "center"
     - widget:
         borderWidth: "1"
-        font: "$xlarge_font"
+        font: "md_display_small"
         halign: "right"
         position: "1552,230"
         render: "Label"
@@ -80,7 +80,7 @@ screen:
               text: "AGC"
     - eLabel:
         backgroundColor: "md_surface_container_highest"
-        font: "$label_font"
+        font: "md_body_small"
         position: "30,360"
         size: "180,30"
         text: "SNR:"
@@ -88,7 +88,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$giant_font"
+        font: "md_display_large"
         halign: "left"
         position: "30,390"
         render: "Label"
@@ -101,7 +101,7 @@ screen:
               text: "SNRdB"
     - eLabel:
         backgroundColor: "md_surface_container_highest"
-        font: "$label_font"
+        font: "md_body_small"
         position: "30,540"
         size: "180,30"
         text: "AGC:"
@@ -109,7 +109,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$giant_font"
+        font: "md_display_large"
         halign: "left"
         position: "30,570"
         render: "Label"
@@ -122,7 +122,7 @@ screen:
               text: "AGC"
     - eLabel:
         backgroundColor: "md_surface_container_highest"
-        font: "$label_font"
+        font: "md_body_small"
         position: "30,720"
         size: "180,30"
         text: "BER:"
@@ -130,7 +130,7 @@ screen:
         zPosition: "5"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$giant_font"
+        font: "md_display_large"
         halign: "left"
         position: "30,750"
         render: "Label"
@@ -143,7 +143,7 @@ screen:
               text: "BER"
     - widget:
         backgroundColor: "md_surface_container_highest"
-        font: "$giant_font"
+        font: "md_display_large"
         foregroundColor: "md_success"
         halign: "left"
         position: "30,880"
@@ -160,7 +160,7 @@ screen:
               type: "ConditionalShowHide"
     - widget:
         enableWrapAround: "1"
-        font: "$heading_font"
+        font: "md_headline_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "49"
         name: "config"
@@ -175,7 +175,7 @@ screen:
         zPosition: "0"
     - widget:
         conditional: "pos"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "right"
         position: "450,930"
         render: "FixedLabel"
@@ -188,7 +188,7 @@ screen:
     - widget:
         backgroundColor: "md_surface_container_highest"
         conditional: "pos"
-        font: "$heading_font"
+        font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "640,930"
@@ -200,7 +200,7 @@ screen:
               type: "ConditionalShowHide"
     - widget:
         conditional: "onid"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "right"
         position: "880,930"
         render: "FixedLabel"
@@ -213,7 +213,7 @@ screen:
     - widget:
         backgroundColor: "md_surface_container_highest"
         conditional: "onid"
-        font: "$heading_font"
+        font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "1065,930"
@@ -225,7 +225,7 @@ screen:
               type: "ConditionalShowHide"
     - widget:
         conditional: "tsid"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "right"
         position: "1315,930"
         render: "FixedLabel"
@@ -238,7 +238,7 @@ screen:
     - widget:
         backgroundColor: "md_surface_container_highest"
         conditional: "tsid"
-        font: "$heading_font"
+        font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
         position: "1520,930"

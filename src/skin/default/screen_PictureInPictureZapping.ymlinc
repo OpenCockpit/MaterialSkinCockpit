@@ -11,7 +11,7 @@ screen:
         backgroundColor: "md_transparent"
         borderColor: "md_shadow"
         borderWidth: "3"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         position: "0,0"
         size: "180,39"

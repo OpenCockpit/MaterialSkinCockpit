@@ -13,7 +13,7 @@ screen:
         transparent: "1"
         zPosition: "10"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "lab1"
         position: "center,c+50"

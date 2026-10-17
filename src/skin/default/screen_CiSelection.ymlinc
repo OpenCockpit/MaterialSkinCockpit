@@ -8,12 +8,12 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "text"
         position: "395,202"
         size: "1100,36"
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "entries"

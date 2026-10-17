@@ -11,7 +11,7 @@ screen:
         backgroundColor: "md_surface"
         colposition: "0"
         dividechar: ":"
-        font: "$text_font"
+        font: "md_body_medium"
         name: "AboutScrollLabel"
         position: "29,96"
         scrollbarMode: "showNever"

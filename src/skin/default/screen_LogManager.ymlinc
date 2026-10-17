@@ -9,7 +9,7 @@ screen:
         position: "370,118"
     - widget:
         enableWrapAround: "1"
-        font: "$list_font"
+        font: "md_body_large"
         name: "list"
         position: "396,210"
         scrollbarMode: "showNever"

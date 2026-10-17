@@ -9,7 +9,7 @@ screen:
         position: "96,54"
     - widget:
         enableWrapAround: "1"
-        font: "$list_large_font"
+        font: "md_title_large"
         itemHeight: "45"
         name: "mainmenu"
         position: "125,150"

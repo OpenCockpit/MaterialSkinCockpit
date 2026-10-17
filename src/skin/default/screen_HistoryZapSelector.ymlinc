@@ -29,7 +29,7 @@ screen:
                 																							MultiContentEntryText(pos = (10, 70), size = (1650, 90), font = 4, flags = RT_HALIGN_LEFT|RT_WRAP, text = 4, color = "md_on_surface", color_sel = "md_primary"), #epg
                 																							MultiContentEntryPixmapAlphaBlend(pos=(0,5), size=(110,60), png=6, flags = BT_SCALE) #picon must be last otherwise won't work
                 			],
-                			"fonts": [gFont("Regular", $hint_font_size), gFont("Regular", $caption_font_size), gFont("Regular", $micro_font_size), gFont("Regular", $micro_font_size), gFont("Regular", $label_font_size)],
+                			"fonts": [parseFont("md_label_large"), parseFont("md_label_medium"), parseFont("md_label_small"), parseFont("md_label_small"), parseFont("md_body_small")],
                 			"itemHeight": 150
                 		}
     - widget:

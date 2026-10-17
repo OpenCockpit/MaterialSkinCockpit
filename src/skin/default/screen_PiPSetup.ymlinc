@@ -10,7 +10,7 @@ screen:
         backgroundColor: "md_transparent"
         borderColor: "md_shadow"
         borderWidth: "3"
-        font: "$list_large_font"
+        font: "md_title_large"
         halign: "center"
         name: "text"
         position: "0,0"

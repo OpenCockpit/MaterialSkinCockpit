@@ -3,7 +3,7 @@ screen:
   children:
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         name: "prompt"
         noWrap: "1"
         position: "4,0"
@@ -11,7 +11,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "right"
         name: "text"
         noWrap: "1"
@@ -35,14 +35,14 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface_variant"
         name: "locale"
         position: "4,540"
         size: "800,39"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         name: "mode"
         position: "856,540"
@@ -50,7 +50,7 @@ screen:
         valign: "center"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface_variant"
         halign: "right"
         name: "language"

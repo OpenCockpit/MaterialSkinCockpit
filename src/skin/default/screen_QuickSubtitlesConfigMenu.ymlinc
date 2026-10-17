@@ -7,7 +7,7 @@ screen:
   title: "Subtitle settings"
   children:
     - widget:
-        font: "$text_font"
+        font: "md_body_medium"
         itemHeight: "38"
         name: "config"
         position: "7,7"
@@ -17,7 +17,7 @@ screen:
         zPosition: "1"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_tertiary"
         halign: "left"
         name: "videofps"

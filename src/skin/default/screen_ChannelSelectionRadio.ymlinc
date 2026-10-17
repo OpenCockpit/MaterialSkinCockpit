@@ -14,7 +14,7 @@ screen:
         size: "1,870"
         zPosition: "-5"
     - widget:
-        additionalInfoFont: "$hint_font"
+        additionalInfoFont: "md_label_large"
         backgroundColor: "md_surface"
         backgroundColorMarked: "md_surface_container_low"
         backgroundColorMarkedSelected: "md_success_container"
@@ -47,10 +47,10 @@ screen:
         scrollbarSliderForegroundColor: "md_on_surface_variant"
         scrollbarWidth: "3"
         serviceEventSeparator: " • "
-        serviceInfoFont: "$label_font"
-        serviceNameFont: "$list_font"
-        serviceNumberFont: "$list_font"
-        serviceRemainingInfoFont: "$hint_font"
+        serviceInfoFont: "md_body_small"
+        serviceNameFont: "md_body_large"
+        serviceNumberFont: "md_body_large"
+        serviceRemainingInfoFont: "md_label_large"
         sidesMargin: "20"
         size: "1152,840"
         textSeparator: "  •  "
@@ -64,7 +64,7 @@ screen:
         transparent: "1"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$text_font"
+        font: "md_body_medium"
         halign: "left"
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1230,480"
@@ -93,7 +93,7 @@ screen:
     - widget:
         NumberOfItems: "4"
         backgroundColor: "md_surface"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_on_surface"
         noLabel: "1"
         noWrap: "1"
@@ -117,7 +117,7 @@ screen:
               text: "Reference"
     - widget:
         backgroundColor: "md_surface"
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         foregroundColor: "md_primary"
         halign: "center"
         noWrap: "1"
@@ -135,7 +135,7 @@ screen:
               text: "  •  ,ORBPOS,TUNERSYSTEM"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_primary"
         halign: "left"
         noWrap: "1"
@@ -150,7 +150,7 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         position: "1235,380"
         render: "Label"
         size: "160,30"
@@ -178,7 +178,7 @@ screen:
               text: "Progress"
     - widget:
         backgroundColor: "md_surface"
-        font: "$info_font"
+        font: "md_label_large_emphasized"
         halign: "right"
         position: "1795,380"
         render: "Label"

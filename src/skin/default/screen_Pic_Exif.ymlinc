@@ -24,7 +24,7 @@ screen:
                 				MultiContentEntryText(pos = (7, 10), size = (375, 45), flags = RT_HALIGN_LEFT, text = 0),
                 				MultiContentEntryText(pos = (390, 10), size = (645, 45), flags = RT_HALIGN_LEFT, text = 1)
                 			],
-                			"fonts": [gFont("Regular", $list_font_size)],
+                			"fonts": [parseFont("md_body_large")],
                 			"itemHeight": 52
                 		}
     - widget:

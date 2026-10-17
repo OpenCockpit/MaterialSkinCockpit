@@ -4,7 +4,7 @@
     position: "0,0"
     size: "390,375"
 - widget:
-    font: "$text_font"
+    font: "md_body_medium"
     itemCornerRadius: "$radius_item"
     itemHeight: "45"
     name: "filelist"
@@ -13,7 +13,7 @@
     size: "1220,17*45"
     zPosition: "3"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "label"
     position: "420,858"
     size: "390,34"

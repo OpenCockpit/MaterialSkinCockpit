@@ -9,7 +9,7 @@ screen:
         position: "495,136"
     - widget:
         enableWrapAround: "1"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_on_surface_variant"
         itemCornerRadius: "$radius_item"
         itemHeight: "60"
@@ -26,7 +26,7 @@ screen:
                 			"template": [
                 				MultiContentEntryText(pos = (60, 0), size = (809, 60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0)
                 			],
-                			"fonts": [gFont("Regular", $subtitle_font_size)],
+                			"fonts": [parseFont("md_headline_small")],
                 			"itemHeight": 60
                 		}
     - widget:

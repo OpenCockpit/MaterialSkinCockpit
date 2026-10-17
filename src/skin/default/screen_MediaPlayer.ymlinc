@@ -10,7 +10,7 @@ screen:
         position: "5,5"
     - eLabel:
         backgroundColor: "md_on_surface_variant"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_shadow"
         halign: "center"
         position: "30,93"
@@ -25,7 +25,7 @@ screen:
         size: "922,610"
     - eLabel:
         backgroundColor: "md_on_surface_variant"
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_shadow"
         halign: "center"
         position: "967,93"
@@ -41,7 +41,7 @@ screen:
         size: "922,610"
     - widget:
         backgroundColor: "md_surface"
-        font: "$heading_font"
+        font: "md_headline_medium"
         halign: "center"
         name: "title"
         position: "200,765"
@@ -54,7 +54,7 @@ screen:
         size: "1540,3"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "titletext"
         position: "200,832"
@@ -63,7 +63,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "currenttext"
         position: "350,832"
@@ -72,7 +72,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "artisttext"
         position: "200,877"
@@ -81,7 +81,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         name: "artist"
         position: "350,877"
         size: "1020,37"
@@ -89,7 +89,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "albumtext"
         position: "200,922"
@@ -98,7 +98,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         name: "album"
         position: "350,922"
         size: "1020,37"
@@ -106,7 +106,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "yeartext"
         position: "200,967"
@@ -115,7 +115,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         name: "year"
         position: "350,967"
         size: "375,37"
@@ -123,7 +123,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "genretext"
         position: "825,967"
@@ -132,7 +132,7 @@ screen:
         valign: "top"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         foregroundColor: "md_surface_container_highest"
         name: "genre"
         position: "975,967"
@@ -162,7 +162,7 @@ screen:
         zPosition: "12"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "right"
         position: "210,1025"
         render: "Label"
@@ -177,7 +177,7 @@ screen:
               text: "Position"
     - widget:
         backgroundColor: "md_surface"
-        font: "$list_font"
+        font: "md_body_large"
         halign: "left"
         position: "1000,1025"
         render: "Label"

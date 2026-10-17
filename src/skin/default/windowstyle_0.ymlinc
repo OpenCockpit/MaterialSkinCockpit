@@ -3,7 +3,7 @@ windowstyle:
   type: "skinned"
   children:
     - title:
-        font: "$header_font"
+        font: "md_headline_small_emphasized"
         offset: "25,10"
     - color:
         color: "md_surface"

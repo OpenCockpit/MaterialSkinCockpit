@@ -26,7 +26,7 @@ screen:
                 																					MultiContentEntryPixmapAlphaBlend(pos = (12, 12), size = (81, 81), png = 3), # index 3 is the interface pixmap
                 																					MultiContentEntryPixmapAlphaBlend(pos = (105, 63), size = (22, 24), png = 4), # index 4 is the default pixmap
                 			],
-                			"fonts": [gFont("Regular", $display_font_size), gFont("Regular", $list_font_size)],
+                			"fonts": [parseFont("md_headline_large"), parseFont("md_body_large")],
                 			"itemHeight": 105
                 		}
     - widget:
@@ -38,7 +38,7 @@ screen:
         size: "1130,25"
         transparent: "1"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         position: "393,844"
         render: "Label"

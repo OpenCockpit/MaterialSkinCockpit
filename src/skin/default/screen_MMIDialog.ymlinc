@@ -7,17 +7,17 @@ screen:
         file: "screenpart_Screen_Menu1.ymlinc"
         position: "370,118"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "title"
         position: "396,212"
         size: "900,36"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "subtitle"
         position: "396,248"
         size: "900,36"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         itemCornerRadius: "$radius_item"
         itemHeight: "35"
         name: "entries"
@@ -32,7 +32,7 @@ screen:
         size: "1130,25"
         transparent: "1"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "bottom"
         position: "397,797"
         size: "900,36"

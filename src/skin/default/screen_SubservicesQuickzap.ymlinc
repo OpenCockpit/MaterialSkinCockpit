@@ -20,19 +20,19 @@ screen:
               text: "Blink,1000,4000"
     - eLabel:
         backgroundColor: "md_surface_container_lowest"
-        font: "$caption_font"
+        font: "md_label_medium"
         position: "0,0"
         size: "705,30"
         text: "Subservices"
     - widget:
         backgroundColor: "md_surface_container_lowest"
-        font: "$list_large_font"
+        font: "md_title_large"
         name: "CurrentSubserviceNumber"
         position: "0,30"
         size: "75,36"
     - widget:
         backgroundColor: "md_surface_container_lowest"
-        font: "$list_large_font"
+        font: "md_title_large"
         position: "75,30"
         render: "Label"
         size: "630,36"

@@ -10,7 +10,7 @@ screen:
         position: "0,0"
     - widget:
         conditional: "config"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "config"

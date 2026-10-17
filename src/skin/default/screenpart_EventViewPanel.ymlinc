@@ -3,7 +3,7 @@
     position: "0,0"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     foregroundColor: "md_primary"
     halign: "left"
     name: "epg_eventname"
@@ -16,7 +16,7 @@
     borderWidth: "1"
     cornerRadius: "$radius_rating_large"
     extendDirection: "left"
-    font: "$clock_huge_font"
+    font: "md_display_medium_emphasized"
     halign: "center"
     position: "$width-122,92"
     render: "RatingIconLabel"
@@ -32,7 +32,7 @@
           text: "RatingTextAndColor"
 - widget:
     backgroundColor: "md_surface"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     foregroundColor: "md_on_surface"
     halign: "left"
     name: "channel"
@@ -41,7 +41,7 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     halign: "left"
     name: "datetime"
     position: "30,$height-140"
@@ -49,7 +49,7 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$title_font"
+    font: "md_title_small_emphasized"
     foregroundColor: "md_secondary"
     halign: "left"
     name: "duration"
@@ -58,7 +58,7 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_large_font"
+    font: "md_title_large"
     foregroundColor: "md_tertiary"
     halign: "left"
     position: "714,$height-145"
@@ -72,7 +72,7 @@
           text: "Genre"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_large_font"
+    font: "md_title_large"
     halign: "block"
     name: "FullDescription"
     position: "30,212"
@@ -85,7 +85,7 @@
     size: "$width-50,25"
 - widget:
     backgroundColor: "md_surface_container_low"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     foregroundColor: "md_on_surface"
     halign: "right"
     position: "$width-438,2"
@@ -101,7 +101,7 @@
           text: "Default"
 - widget:
     backgroundColor: "md_surface_container_low"
-    font: "$header_font"
+    font: "md_headline_small_emphasized"
     foregroundColor: "md_primary"
     halign: "left"
     position: "22,2"

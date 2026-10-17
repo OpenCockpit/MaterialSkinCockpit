@@ -21,7 +21,7 @@ screen:
         scrollbarMode: "showOnDemand"
         size: "703,495"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         halign: "center"
         name: "description"
         position: "1174,952"

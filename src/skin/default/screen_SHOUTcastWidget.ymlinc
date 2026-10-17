@@ -13,7 +13,7 @@ screen:
         size: "1,876"
         zPosition: "-5"
     - widget:
-        font: "$list_large_font"
+        font: "md_title_large"
         foregroundColor: "md_secondary"
         name: "headertext"
         position: "30,120"
@@ -21,7 +21,7 @@ screen:
         transparent: "1"
         zPosition: "1"
     - widget:
-        font: "$list_font"
+        font: "md_body_large"
         halign: "center"
         name: "statustext"
         position: "30,500"
@@ -59,7 +59,7 @@ screen:
         valign: "center"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_primary"
         halign: "center"
         name: "titel"
@@ -68,7 +68,7 @@ screen:
         transparent: "1"
         zPosition: "1"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
         name: "station"
@@ -77,7 +77,7 @@ screen:
         transparent: "1"
         zPosition: "1"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_error"
         name: "console"
         position: "1140,883"

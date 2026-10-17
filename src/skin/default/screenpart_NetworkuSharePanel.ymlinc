@@ -1,5 +1,5 @@
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "autostart"
     position: "0,4"
     size: "150,36"
@@ -7,7 +7,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_key_red"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "center"
     name: "labdisabled"
     position: "160,0"
@@ -16,7 +16,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_key_green"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "center"
     name: "labactive"
     position: "160,0"
@@ -24,7 +24,7 @@
     valign: "center"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "status"
     position: "420,4"
     size: "225,36"
@@ -32,7 +32,7 @@
     valign: "center"
 - widget:
     backgroundColor: "md_key_red"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "center"
     name: "labstop"
     position: "660,0"
@@ -41,7 +41,7 @@
     zPosition: "1"
 - widget:
     backgroundColor: "md_key_green"
-    font: "$list_font"
+    font: "md_body_large"
     halign: "center"
     name: "labrun"
     position: "660,0"
@@ -49,7 +49,7 @@
     valign: "center"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "username"
     position: "0,91"
     size: "225,45"
@@ -57,13 +57,13 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "labuser"
     position: "315,91"
     size: "465,45"
     valign: "center"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "iface"
     position: "0,141"
     size: "225,45"
@@ -71,13 +71,13 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "labiface"
     position: "315,141"
     size: "465,45"
     valign: "center"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "port"
     position: "0,191"
     size: "225,45"
@@ -85,13 +85,13 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "labport"
     position: "315,191"
     size: "465,45"
     valign: "center"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "telnetport"
     position: "0,241"
     size: "225,45"
@@ -99,13 +99,13 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "labtelnetport"
     position: "315,241"
     size: "465,45"
     valign: "center"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "sharedir"
     position: "0,291"
     size: "225,45"
@@ -113,13 +113,13 @@
     valign: "center"
 - widget:
     backgroundColor: "md_surface"
-    font: "$list_font"
+    font: "md_body_large"
     name: "labsharedir"
     position: "315,291"
     size: "465,45"
     valign: "center"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "web"
     position: "0,391"
     size: "270,45"
@@ -140,7 +140,7 @@
     size: "48,48"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "telnet"
     position: "0,441"
     size: "270,45"
@@ -161,7 +161,7 @@
     size: "48,48"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "xbox"
     position: "0,491"
     size: "300,45"
@@ -182,7 +182,7 @@
     size: "48,48"
     zPosition: "2"
 - widget:
-    font: "$list_font"
+    font: "md_body_large"
     name: "dlna"
     position: "0,541"
     size: "300,45"

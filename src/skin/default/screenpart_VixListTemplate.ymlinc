@@ -6,7 +6,7 @@ screen:
         position: "0,0"
     - widget:
         conditional: "list"
-        font: "$text_font"
+        font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
@@ -15,7 +15,7 @@ screen:
         size: "1670,13*45"
     - widget:
         conditional: "lab1"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_warning"
         halign: "center"
         name: "lab1"
@@ -26,7 +26,7 @@ screen:
         zPosition: "1"
     - widget:
         conditional: "backupstatus"
-        font: "$text_font"
+        font: "md_body_medium"
         foregroundColor: "md_warning"
         halign: "center"
         name: "backupstatus"

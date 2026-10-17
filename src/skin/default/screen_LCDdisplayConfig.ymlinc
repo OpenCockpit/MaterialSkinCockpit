@@ -13,7 +13,7 @@ screen:
         zPosition: "-5"
     - widget:
         enableWrapAround: "1"
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_on_surface_variant"
         itemCornerRadius: "$radius_item"
         itemHeight: "35"
@@ -22,7 +22,7 @@ screen:
         scrollbarMode: "showNever"
         size: "928,807"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_primary"
         halign: "center"
         noWrap: "1"
@@ -63,7 +63,7 @@ screen:
         transparent: "1"
         zPosition: "3"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
         position: "1223,370"
@@ -72,7 +72,7 @@ screen:
         source: "LCD1text"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
         position: "987,785"
@@ -81,7 +81,7 @@ screen:
         source: "LCD2text"
         zPosition: "2"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
         position: "1450,785"
@@ -90,7 +90,7 @@ screen:
         source: "LCD3text"
         zPosition: "2"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_surface_container_highest"
         halign: "left"
         position: "1002,958"
@@ -99,7 +99,7 @@ screen:
         source: "Version"
         zPosition: "2"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_surface_container_highest"
         halign: "right"
         position: "1630,958"
@@ -108,7 +108,7 @@ screen:
         source: "About"
         zPosition: "2"
     - widget:
-        font: "$hint_font"
+        font: "md_label_large"
         foregroundColor: "md_error"
         halign: "center"
         position: "1466,958"

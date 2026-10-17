@@ -9,7 +9,7 @@ screen:
         file: "screenpart_Screen_menu2.ymlinc"
         position: "495,136"
     - widget:
-        font: "$label_font"
+        font: "md_body_small"
         itemCornerRadius: "$radius_item"
         itemHeight: "37"
         name: "config"
