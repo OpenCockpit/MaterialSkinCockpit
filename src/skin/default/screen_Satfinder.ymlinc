@@ -92,7 +92,7 @@ screen:
         halign: "left"
         position: "25,385"
         render: "Label"
-        size: "450,112"
+        size: "450,131"
         source: "Frontend"
         transparent: "1"
         children:
@@ -113,7 +113,7 @@ screen:
         halign: "left"
         position: "25,565"
         render: "Label"
-        size: "450,112"
+        size: "450,131"
         source: "Frontend"
         transparent: "1"
         children:
@@ -134,7 +134,7 @@ screen:
         halign: "left"
         position: "25,745"
         render: "Label"
-        size: "450,112"
+        size: "450,131"
         source: "Frontend"
         transparent: "1"
         children:
@@ -179,7 +179,7 @@ screen:
         halign: "right"
         position: "445,925"
         render: "FixedLabel"
-        size: "180,45"
+        size: "180,48"
         source: "pos"
         text: "Orb Pos:"
         children:
@@ -193,7 +193,7 @@ screen:
         halign: "center"
         position: "635,925"
         render: "Label"
-        size: "150,45"
+        size: "150,48"
         source: "pos"
         children:
           - convert:
@@ -204,7 +204,7 @@ screen:
         halign: "right"
         position: "875,925"
         render: "FixedLabel"
-        size: "180,45"
+        size: "180,48"
         source: "onid"
         text: "ONID:"
         children:
@@ -218,7 +218,7 @@ screen:
         halign: "center"
         position: "1060,925"
         render: "Label"
-        size: "150,45"
+        size: "150,48"
         source: "onid"
         children:
           - convert:
@@ -229,7 +229,7 @@ screen:
         halign: "right"
         position: "1310,925"
         render: "FixedLabel"
-        size: "180,45"
+        size: "180,48"
         source: "tsid"
         text: "TSID:"
         children:
@@ -243,7 +243,7 @@ screen:
         halign: "center"
         position: "1515,925"
         render: "Label"
-        size: "150,45"
+        size: "150,48"
         source: "tsid"
         children:
           - convert:

@@ -21,7 +21,7 @@ screen:
         font: "md_title_large"
         foregroundColor: "md_secondary"
         position: "30,22"
-        size: "150,37"
+        size: "150,41"
         text: "Seek"
         transparent: "1"
     - widget:
@@ -29,6 +29,6 @@ screen:
         halign: "right"
         name: "minutes"
         position: "180,22"
-        size: "150,37"
+        size: "150,41"
         transparent: "1"
         zPosition: "1"

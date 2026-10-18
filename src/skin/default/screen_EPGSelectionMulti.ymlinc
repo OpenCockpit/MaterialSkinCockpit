@@ -15,8 +15,8 @@ screen:
         font: "md_title_large"
         halign: "center"
         name: "date"
-        position: "30,90"
-        size: "1110,38"
+        position: "30,89"
+        size: "1110,41"
         transparent: "1"
         valign: "center"
     - widget:

@@ -10,12 +10,12 @@ screen:
         font: "md_title_large"
         name: "title"
         position: "26,94"
-        size: "900,36"
+        size: "900,41"
     - widget:
         font: "md_title_large"
         name: "subtitle"
         position: "26,130"
-        size: "900,36"
+        size: "900,41"
     - widget:
         font: "md_title_large"
         itemCornerRadius: "$radius_item"
@@ -35,4 +35,4 @@ screen:
         font: "md_title_large"
         name: "bottom"
         position: "27,679"
-        size: "900,36"
+        size: "900,41"

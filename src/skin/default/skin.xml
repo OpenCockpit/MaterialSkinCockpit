@@ -711,7 +711,7 @@
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1454,99" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 		<eLabel backgroundColor="md_outline_variant" position="1134,104" size="1,870" zPosition="-5"/>
 		<widget itemCornerRadius="6" itemHeight="45" name="list" position="25,90" scrollbarMode="showNever" setColGap="40" setColWidths="120,220" setEventItemFont="md_title_large" setIconDistance="10" sidesMargin="25" size="1095,890" transparent="1"/>
-		<widget font="md_title_large" foregroundColor="md_primary" position="1159,381" render="Label" size="720,36" source="Event" transparent="1">
+		<widget font="md_title_large" foregroundColor="md_primary" position="1159,381" render="Label" size="720,41" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget font="md_body_large" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1158,466" render="COCRunningText" size="720,455" source="Event" transparent="1" valign="top">
@@ -779,7 +779,7 @@
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="md_body_small" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="24,1024" size="1790,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
 		<widget alphatest="blend" halign="right" logoType="brand" position="1819,1024" render="BoxLogo" size="84,34" source="global.CurrentTime" zPosition="-3"/>
 		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1535,99" render="Pig" size="354,200" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
-		<widget font="md_title_large" halign="center" name="date" position="34,94" size="1110,38" transparent="1" valign="center"/>
+		<widget font="md_title_large" halign="center" name="date" position="34,93" size="1110,41" transparent="1" valign="center"/>
 		<widget backgroundColor="md_surface" itemCornerRadius="6" itemHeight="45" name="list" position="34,224" scrollbarMode="showNever" setColGap="20" setColWidths="350,150" setEventItemFont="md_body_medium" setEventTimeFont="md_body_small" setIconDistance="10" setTimeWidth="135" sidesMargin="25" size="1110,17*45" transparent="1"/>
 		<widget backgroundColor="md_surface" backgroundColorSelected="md_outline_variant" borderColor="md_surface" font="md_title_large" foregroundColorSelected="md_primary" itemCornerRadius="6" itemHeight="45" name="bouquetlist" position="34,224" scrollbarMode="showNever" sidesMargin="25" size="1110,17*45" transparent="0" zPosition="4"/>
 		<eLabel backgroundColor="md_outline_variant" position="1202,104" size="1,870" zPosition="-5"/>
@@ -3280,8 +3280,8 @@ if callable(loadLogo):
 	<screen flags="wfNoBorder" name="MinuteInput" position="780,499" size="360,82">
 		<ePixmap alphatest="blend" pixmap="chzap_bg.png" position="0,0" size="364,86" zPosition="-9"/>
 		<ePixmap alphatest="blend" pixmap="chzap_overlay.png" position="2,2" size="360,82" zPosition="-8"/>
-		<eLabel backgroundColor="md_surface_overlay_soft" font="md_title_large" foregroundColor="md_secondary" position="30,22" size="150,37" text="Seek" transparent="1"/>
-		<widget font="md_title_large" halign="right" name="minutes" position="180,22" size="150,37" transparent="1" zPosition="1"/>
+		<eLabel backgroundColor="md_surface_overlay_soft" font="md_title_large" foregroundColor="md_secondary" position="30,22" size="150,41" text="Seek" transparent="1"/>
+		<widget font="md_title_large" halign="right" name="minutes" position="180,22" size="150,41" transparent="1" zPosition="1"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="MovieContextMenu" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="494,137" size="932,805" zPosition="-11"/>
@@ -3338,7 +3338,7 @@ if callable(loadLogo):
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="390,123" size="920,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget font="md_title_large" itemCornerRadius="6" itemHeight="38" name="loglist" position="391,213" scrollbarMode="showNever" size="1130,535" textOffset="20,0"/>
 		<eLabel backgroundColor="md_outline_variant" position="391,763" size="1130,2" zPosition="-5"/>
-		<widget font="md_title_large" halign="center" name="logentry" position="420,793" size="1090,36"/>
+		<widget font="md_title_large" halign="center" name="logentry" position="420,793" size="1090,41"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="loglist" position="396,853" size="1130,25" transparent="1"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="TimerSanityConflict" position="fill" title="Timer sanity error">
@@ -3405,7 +3405,7 @@ if callable(loadLogo):
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="116,56" size="1468,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget font="md_body_medium" itemHeight="38" name="infolist" position="125,150" scrollbarMode="showOnDemand" selectionDisabled="1" size="1696,741"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="infolist" position="125,900" size="1696,25" transparent="1"/>
-		<widget font="md_title_large" foregroundColor="md_on_surface" halign="center" position="386,900" render="Label" size="1153,37" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+		<widget font="md_title_large" foregroundColor="md_on_surface" halign="center" position="386,900" render="Label" size="1153,41" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 		</widget>
 	</screen>
@@ -3560,9 +3560,9 @@ if callable(loadLogo):
 		</widget>
 		<eLabel backgroundColor="md_surface_container_high" position="390,124" size="920,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="390,123" size="920,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
-		<widget font="md_title_large" name="model" position="412,335" size="1110,38"/>
-		<widget font="md_title_large" name="capacity" position="416,488" size="1110,38"/>
-		<widget font="md_title_large" name="bus" position="416,544" size="1110,38"/>
+		<widget font="md_title_large" name="model" position="412,335" size="1110,41"/>
+		<widget font="md_title_large" name="capacity" position="416,488" size="1110,41"/>
+		<widget font="md_title_large" name="bus" position="416,544" size="1110,41"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="HelpMenu" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
@@ -4064,15 +4064,15 @@ if callable(loadLogo):
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel backgroundColor="md_surface_container_highest" font="md_body_small" position="29,359" size="180,30" text="SNR:" transparent="1" zPosition="5"/>
-		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,389" render="Label" size="450,112" source="Frontend" transparent="1">
+		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,389" render="Label" size="450,131" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel backgroundColor="md_surface_container_highest" font="md_body_small" position="29,539" size="180,30" text="AGC:" transparent="1" zPosition="5"/>
-		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,569" render="Label" size="450,112" source="Frontend" transparent="1">
+		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,569" render="Label" size="450,131" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel backgroundColor="md_surface_container_highest" font="md_body_small" position="29,719" size="180,30" text="BER:" transparent="1" zPosition="5"/>
-		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,749" render="Label" size="450,112" source="Frontend" transparent="1">
+		<widget backgroundColor="md_surface_container_highest" font="md_display_large" halign="left" position="29,749" render="Label" size="450,131" source="Frontend" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<widget backgroundColor="md_surface_container_highest" font="md_display_large" foregroundColor="md_success" halign="left" position="29,879" render="FixedLabel" size="465,135" source="Frontend" text="LOCK" transparent="1">
@@ -4081,22 +4081,22 @@ if callable(loadLogo):
 		</widget>
 		<widget enableWrapAround="1" font="md_headline_medium" itemCornerRadius="6" itemHeight="49" name="config" position="449,359" scrollbarMode="showOnDemand" size="1440,643" transparent="1"/>
 		<widget name="introduction" position="4,4" size="0,0" zPosition="0"/>
-		<widget conditional="pos" font="md_headline_medium" halign="right" position="449,929" render="FixedLabel" size="180,45" source="pos" text="Orb Pos:">
+		<widget conditional="pos" font="md_headline_medium" halign="right" position="449,929" render="FixedLabel" size="180,48" source="pos" text="Orb Pos:">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget backgroundColor="md_surface_container_highest" conditional="pos" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="639,929" render="Label" size="150,45" source="pos">
+		<widget backgroundColor="md_surface_container_highest" conditional="pos" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="639,929" render="Label" size="150,48" source="pos">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget conditional="onid" font="md_headline_medium" halign="right" position="879,929" render="FixedLabel" size="180,45" source="onid" text="ONID:">
+		<widget conditional="onid" font="md_headline_medium" halign="right" position="879,929" render="FixedLabel" size="180,48" source="onid" text="ONID:">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget backgroundColor="md_surface_container_highest" conditional="onid" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="1064,929" render="Label" size="150,45" source="onid">
+		<widget backgroundColor="md_surface_container_highest" conditional="onid" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="1064,929" render="Label" size="150,48" source="onid">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget conditional="tsid" font="md_headline_medium" halign="right" position="1314,929" render="FixedLabel" size="180,45" source="tsid" text="TSID:">
+		<widget conditional="tsid" font="md_headline_medium" halign="right" position="1314,929" render="FixedLabel" size="180,48" source="tsid" text="TSID:">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget backgroundColor="md_surface_container_highest" conditional="tsid" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="1519,929" render="Label" size="150,45" source="tsid">
+		<widget backgroundColor="md_surface_container_highest" conditional="tsid" font="md_headline_medium" foregroundColor="md_primary" halign="center" position="1519,929" render="Label" size="150,48" source="tsid">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
@@ -4241,7 +4241,7 @@ if callable(loadLogo):
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="AC3LipSync" position="20,15" size="600,460" title="Audio Sync" zPosition="1">
 		<ePixmap alphatest="on" pixmap="~/img/AudioSyncBG.png" position="0,0" size="600,460" transparent="1" zPosition="1"/>
 		<widget backgroundColor="md_surface_container" font="md_label_medium" foregroundColor="md_on_surface" name="ServiceInfoLabel" position="20,15" size="110,22" transparent="1" zPosition="4"/>
-		<widget backgroundColor="md_surface_container" font="md_body_small" foregroundColor="md_on_surface" name="ServiceInfo" position="140,15" size="190,27" transparent="1" zPosition="4"/>
+		<widget backgroundColor="md_surface_container" font="md_body_small" foregroundColor="md_on_surface" name="ServiceInfo" position="140,15" size="190,31" transparent="1" zPosition="4"/>
 		<widget alphatest="on" name="ChannelImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="20,43" size="11,11" transparent="1" zPosition="2"/>
 		<widget backgroundColor="md_surface_container" font="md_label_medium" foregroundColors="md_on_surface,md_warning" halign="left" name="ChannelLabel" position="36,40" size="160,22" transparent="1" valign="center" zPosition="2"/>
 		<widget alphatest="on" name="GlobalImg" pixmaps="~/img/OptionButtonOff.png,~/img/OptionButtonOn.png" position="220,43" size="11,11" transparent="1" zPosition="2"/>
@@ -4268,7 +4268,7 @@ if callable(loadLogo):
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="390,123" size="920,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget font="md_title_large" name="text" position="396,213" size="1110,39"/>
 		<ePixmap alphatest="blend" pixmap="buttons/vkey_text.png" position="543,318" size="816,78" zPosition="-1"/>
-		<widget font="md_headline_medium" name="input" position="548,335" size="806,45" valign="center"/>
+		<widget font="md_headline_medium" name="input" position="548,334" size="806,48" valign="center"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="ParentalControlEditor" position="fill" title="Parental control services Editor">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,121" size="1180,838" zPosition="-11"/>
@@ -4349,11 +4349,11 @@ if callable(loadLogo):
 		</widget>
 		<eLabel backgroundColor="md_surface_container_high" position="390,124" size="920,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="390,123" size="920,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
-		<widget font="md_title_large" name="title" position="396,215" size="900,36"/>
-		<widget font="md_title_large" name="subtitle" position="396,251" size="900,36"/>
+		<widget font="md_title_large" name="title" position="396,215" size="900,41"/>
+		<widget font="md_title_large" name="subtitle" position="396,251" size="900,41"/>
 		<widget font="md_title_large" itemCornerRadius="6" itemHeight="35" name="entries" position="396,297" scrollbarMode="showOnDemand" size="1130,510"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="entries" position="396,852" size="1130,25" transparent="1"/>
-		<widget font="md_title_large" name="bottom" position="397,800" size="900,36"/>
+		<widget font="md_title_large" name="bottom" position="397,800" size="900,41"/>
 	</screen>
 	<screen backgroundColor="md_transparent" name="CiSelection" position="fill" title="Common Interface">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,121" size="1180,838" zPosition="-11"/>
@@ -4365,7 +4365,7 @@ if callable(loadLogo):
 		</widget>
 		<eLabel backgroundColor="md_surface_container_high" position="390,124" size="920,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="390,123" size="920,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
-		<widget font="md_title_large" name="text" position="395,205" size="1100,36"/>
+		<widget font="md_title_large" name="text" position="395,205" size="1100,41"/>
 		<widget font="md_body_medium" itemCornerRadius="6" itemHeight="38" name="entries" position="396,248" scrollbarMode="showOnDemand" size="1130,600"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="entries" position="396,852" size="1130,25" transparent="1"/>
 	</screen>
@@ -4374,8 +4374,8 @@ if callable(loadLogo):
 			<convert type="ConditionalShowHide">Blink,1000,4000</convert>
 		</widget>
 		<eLabel backgroundColor="md_surface_container_lowest" font="md_label_medium" position="0,0" size="705,30" text="Subservices"/>
-		<widget backgroundColor="md_surface_container_lowest" font="md_title_large" name="CurrentSubserviceNumber" position="0,30" size="75,36"/>
-		<widget backgroundColor="md_surface_container_lowest" font="md_title_large" position="75,30" render="Label" size="630,36" source="session.CurrentService">
+		<widget backgroundColor="md_surface_container_lowest" font="md_title_large" name="CurrentSubserviceNumber" position="0,30" size="75,41"/>
+		<widget backgroundColor="md_surface_container_lowest" font="md_title_large" position="75,30" render="Label" size="630,41" source="session.CurrentService">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
@@ -4426,10 +4426,10 @@ if callable(loadLogo):
 		</widget>
 		<eLabel backgroundColor="md_surface_container_high" position="116,57" size="1468,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="116,56" size="1468,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
-		<widget font="md_title_large" name="text" position="125,150" size="1670,37"/>
-		<widget font="md_title_large" name="target" position="125,195" size="1670,37" valign="center"/>
+		<widget font="md_title_large" name="text" position="125,150" size="1670,41"/>
+		<widget font="md_title_large" name="target" position="125,193" size="1670,41" valign="center"/>
 		<widget name="filelist" position="125,190" scrollbarMode="showOnDemand" selectionDisabled="1" size="1670,310" zPosition="1"/>
-		<widget font="md_title_large" name="textbook" position="125,562" size="1670,37"/>
+		<widget font="md_title_large" name="textbook" position="125,562" size="1670,41"/>
 		<widget font="md_body_medium" itemCornerRadius="6" itemHeight="38" name="booklist" position="132,607" scrollbarMode="showOnDemand" size="1656,38*8" zPosition="2"/>
 	</screen>
 	<screen backgroundColor="md_transparent" name="PackageManager" position="fill" title="Packet manager">
@@ -5295,71 +5295,71 @@ if callable(loadLogo):
 	<screen flags="wfNoBorder" name="TempFanControl" position="fill" title="Fan Control">
 		<ePixmap alphatest="on" pixmap="buttons/key_red.png" position="192,1039" size="40,20"/>
 		<ePixmap alphatest="on" pixmap="buttons/key_green.png" position="628,1039" size="40,20"/>
-		<widget backgroundColor="md_surface_container_highest" font="md_title_large" foregroundColor="md_on_surface_variant" halign="left" position="242,1030" render="Label" size="370,38" source="red" transparent="1" zPosition="2"/>
-		<widget backgroundColor="md_surface_container_highest" font="md_title_large" foregroundColor="md_on_surface_variant" halign="left" position="678,1030" render="Label" size="370,38" source="green" transparent="1" zPosition="2"/>
+		<widget backgroundColor="md_surface_container_highest" font="md_title_large" foregroundColor="md_on_surface_variant" halign="left" position="242,1030" render="Label" size="370,41" source="red" transparent="1" zPosition="2"/>
+		<widget backgroundColor="md_surface_container_highest" font="md_title_large" foregroundColor="md_on_surface_variant" halign="left" position="678,1030" render="Label" size="370,41" source="green" transparent="1" zPosition="2"/>
 		<widget font="md_body_medium" itemCornerRadius="6" itemHeight="38" name="config" position="780,105" scrollbarMode="showOnDemand" size="1110,180"/>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,315" render="Label" size="135,60" source="SensorTempText0" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,315" render="Label" size="150,30" source="SensorTemp0" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,315" render="Label" size="150,33" source="SensorTemp0" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,345" render="Label" size="135,60" source="SensorTempText1" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,345" render="Label" size="150,30" source="SensorTemp1" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,345" render="Label" size="150,33" source="SensorTemp1" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,375" render="Label" size="135,60" source="SensorTempText2" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,375" render="Label" size="150,30" source="SensorTemp2" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,375" render="Label" size="150,33" source="SensorTemp2" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,405" render="Label" size="135,60" source="SensorTempText3" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,405" render="Label" size="150,30" source="SensorTemp3" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,405" render="Label" size="150,33" source="SensorTemp3" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,435" render="Label" size="135,60" source="SensorTempText4" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,435" render="Label" size="150,30" source="SensorTemp4" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,435" render="Label" size="150,33" source="SensorTemp4" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,465" render="Label" size="135,60" source="SensorTempText5" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,465" render="Label" size="150,30" source="SensorTemp5" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,465" render="Label" size="150,33" source="SensorTemp5" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,495" render="Label" size="135,60" source="SensorTempText6" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,495" render="Label" size="150,30" source="SensorTemp6" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,495" render="Label" size="150,33" source="SensorTemp6" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="795,525" render="Label" size="135,60" source="SensorTempText7" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="930,525" render="Label" size="150,30" source="SensorTemp7" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="930,525" render="Label" size="150,33" source="SensorTemp7" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,315" render="Label" size="135,60" source="SensorFanText0" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,315" render="Label" size="225,30" source="SensorFan0" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,315" render="Label" size="225,33" source="SensorFan0" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,345" render="Label" size="135,60" source="SensorFanText1" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,345" render="Label" size="225,30" source="SensorFan1" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,345" render="Label" size="225,33" source="SensorFan1" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,375" render="Label" size="135,60" source="SensorFanText2" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,375" render="Label" size="225,30" source="SensorFan2" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,375" render="Label" size="225,33" source="SensorFan2" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,405" render="Label" size="135,60" source="SensorFanText3" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,405" render="Label" size="225,30" source="SensorFan3" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,405" render="Label" size="225,33" source="SensorFan3" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,435" render="Label" size="135,60" source="SensorFanText4" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,435" render="Label" size="225,30" source="SensorFan4" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,435" render="Label" size="225,33" source="SensorFan4" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,465" render="Label" size="135,60" source="SensorFanText5" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,465" render="Label" size="225,30" source="SensorFan5" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,465" render="Label" size="225,33" source="SensorFan5" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,495" render="Label" size="135,60" source="SensorFanText6" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,495" render="Label" size="225,30" source="SensorFan6" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,495" render="Label" size="225,33" source="SensorFan6" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 		<widget backgroundColor="md_surface_overlay_soft" font="md_body_large" halign="left" position="1305,525" render="Label" size="135,60" source="SensorFanText7" transparent="1" valign="top" zPosition="1"/>
-		<widget font="md_body_medium" halign="right" position="1440,525" render="Label" size="225,30" source="SensorFan7" zPosition="1">
+		<widget font="md_body_medium" halign="right" position="1440,525" render="Label" size="225,33" source="SensorFan7" zPosition="1">
 			<convert type="SensorToText"/>
 		</widget>
 	</screen>
@@ -5545,17 +5545,17 @@ if callable(loadLogo):
 		<widget font="md_body_large" halign="center" name="information" position="396,703" size="1130,150" valign="top"/>
 	</screen>
 	<screen flags="wfNoBorder" name="CrossEPG_Info" position="fill" title="CrossEPG Info">
-		<widget font="md_title_large" name="version" position="900,199" size="900,37"/>
-		<widget font="md_title_large" name="create" position="900,244" size="900,37"/>
-		<widget font="md_title_large" name="last_update" position="900,289" size="900,37"/>
-		<widget font="md_title_large" name="headersdb_size" position="900,334" size="900,37"/>
-		<widget font="md_title_large" name="descriptorsdb_size" position="900,379" size="900,37"/>
-		<widget font="md_title_large" name="indexesdb_size" position="900,424" size="900,37"/>
-		<widget font="md_title_large" name="aliasesdb_size" position="900,469" size="900,37"/>
-		<widget font="md_title_large" name="total_size" position="900,514" size="900,37"/>
-		<widget font="md_title_large" name="channels_count" position="900,559" size="900,37"/>
-		<widget font="md_title_large" name="events_count" position="900,604" size="900,37"/>
-		<widget font="md_title_large" name="hashes_count" position="900,649" size="900,37"/>
+		<widget font="md_title_large" name="version" position="900,199" size="900,41"/>
+		<widget font="md_title_large" name="create" position="900,244" size="900,41"/>
+		<widget font="md_title_large" name="last_update" position="900,289" size="900,41"/>
+		<widget font="md_title_large" name="headersdb_size" position="900,334" size="900,41"/>
+		<widget font="md_title_large" name="descriptorsdb_size" position="900,379" size="900,41"/>
+		<widget font="md_title_large" name="indexesdb_size" position="900,424" size="900,41"/>
+		<widget font="md_title_large" name="aliasesdb_size" position="900,469" size="900,41"/>
+		<widget font="md_title_large" name="total_size" position="900,514" size="900,41"/>
+		<widget font="md_title_large" name="channels_count" position="900,559" size="900,41"/>
+		<widget font="md_title_large" name="events_count" position="900,604" size="900,41"/>
+		<widget font="md_title_large" name="hashes_count" position="900,649" size="900,41"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="CrossEPG_Extra" position="fill">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="370,121" size="1180,838" zPosition="-11"/>
@@ -6642,7 +6642,7 @@ if callable(loadLogo):
 		<widget font="md_body_medium" foregroundColor="md_primary" halign="center" name="footnote" objectTypes="footnote,Button,Label" position="145,895" size="1630,30" valign="center" zPosition="5"/>
 		<widget font="md_body_medium" foregroundColor="md_primary" halign="center" objectTypes="footnote,StaticText" position="145,895" render="Label" size="1630,30" source="footnote" valign="center" zPosition="1000"/>
 		<eLabel backgroundColor="md_surface" position="108,218" size="1074,690" zPosition="2"/>
-		<eLabel backgroundColor="md_surface" font="md_headline_medium" halign="center" position="1245,180" size="615,44" text="Select a VLC-Server Profile" transparent="1"/>
+		<eLabel backgroundColor="md_surface" font="md_headline_medium" halign="center" position="1245,180" size="615,48" text="Select a VLC-Server Profile" transparent="1"/>
 		<widget font="md_body_large" name="serverlabel" position="105,150" size="1080,38" transparent="1"/>
 		<eLabel backgroundColor="md_surface_container_high" position="105,215" size="1080,696" zPosition="1"/>
 		<widget enableWrapAround="1" name="serverlist" position="120,233" scrollbarMode="showNever" size="1050,656" transparent="1" zPosition="3"/>
@@ -6670,7 +6670,7 @@ if callable(loadLogo):
 		<widget font="md_body_medium" foregroundColor="md_primary" halign="center" name="footnote" objectTypes="footnote,Button,Label" position="145,895" size="1630,30" valign="center" zPosition="5"/>
 		<widget font="md_body_medium" foregroundColor="md_primary" halign="center" objectTypes="footnote,StaticText" position="145,895" render="Label" size="1630,30" source="footnote" valign="center" zPosition="1000"/>
 		<eLabel backgroundColor="md_surface" font="global_title;51" foregroundColor="md_on_surface" halign="left" position="87,54" size="1200,75" text="VLC Video Player" transparent="1"/>
-		<eLabel backgroundColor="md_surface" font="md_headline_medium" halign="center" position="1245,180" size="615,44" text="Edit VLC Server" transparent="1"/>
+		<eLabel backgroundColor="md_surface" font="md_headline_medium" halign="center" position="1245,180" size="615,48" text="Edit VLC Server" transparent="1"/>
 		<widget enableWrapAround="1" name="config" position="105,180" scrollbarMode="showNever" size="1095,735" transparent="1"/>
 		<ePixmap alphatest="blend" pixmap="MaterialSkinCockpit/icons/db.png" position="1245,840" size="600,99" transparent="1" zPosition="2"/>
 	</screen>
@@ -7174,7 +7174,7 @@ if callable(loadLogo):
 		</widget>
 		<eLabel backgroundColor="md_surface_container_high" position="272,114" size="1156,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="272,113" size="1156,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
-		<widget itemCornerRadius="6" orientation="orGrid" position="282,210" render="Listbox" scrollbarMode="showNever" size="1356,580" source="list">
+		<widget itemCornerRadius="6" orientation="orGrid" position="282,210" render="COCGridListbox" scrollbarMode="showNever" size="1356,580" source="list">
 			<convert type="TemplatedMultiContent">
 			{
 				"template": [
@@ -7242,9 +7242,9 @@ if callable(loadLogo):
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="116,56" size="1468,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget backgroundColor="md_surface" colposition="0" dividechar=":" font="md_body_medium" name="AboutScrollLabel" position="125,150" scrollbarMode="showNever" size="1696,726" split="1" zPosition="2"/>
 		<widget addon="Pager" backgroundColor="md_surface" connection="AboutScrollLabel" position="125,904" size="1696,25" transparent="1"/>
-		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="125,838" render="Label" size="180,36" source="IFtext" transparent="1" zPosition="10"/>
-		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="305,838" render="Label" size="750,36" source="IF" transparent="1" zPosition="10"/>
-		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="125,895" render="Label" size="180,36" source="Statustext" transparent="1" zPosition="10"/>
+		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="125,838" render="Label" size="180,41" source="IFtext" transparent="1" valign="center" zPosition="10"/>
+		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="305,838" render="Label" size="750,41" source="IF" transparent="1" valign="center" zPosition="10"/>
+		<widget backgroundColor="md_surface" font="md_title_large" halign="left" position="125,890" render="Label" size="180,41" source="Statustext" transparent="1" valign="center" zPosition="10"/>
 		<widget alphatest="on" name="statuspic" pixmaps="icons/lock_on.png,icons/lock_off.png" position="305,892" scale="1" size="37,36" transparent="1" zPosition="10"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="Devices" position="fill">

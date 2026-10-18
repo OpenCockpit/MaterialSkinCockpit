@@ -29,13 +29,13 @@ screen:
         font: "md_title_large"
         name: "CurrentSubserviceNumber"
         position: "0,30"
-        size: "75,36"
+        size: "75,41"
     - widget:
         backgroundColor: "md_surface_container_lowest"
         font: "md_title_large"
         position: "75,30"
         render: "Label"
-        size: "630,36"
+        size: "630,41"
         source: "session.CurrentService"
         children:
           - convert:

@@ -21,7 +21,7 @@ screen:
         halign: "left"
         position: "242,1030"
         render: "Label"
-        size: "370,38"
+        size: "370,41"
         source: "red"
         transparent: "1"
         zPosition: "2"
@@ -32,7 +32,7 @@ screen:
         halign: "left"
         position: "678,1030"
         render: "Label"
-        size: "370,38"
+        size: "370,41"
         source: "green"
         transparent: "1"
         zPosition: "2"
@@ -60,7 +60,7 @@ screen:
         halign: "right"
         position: "930,315"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp0"
         zPosition: "1"
         children:
@@ -82,7 +82,7 @@ screen:
         halign: "right"
         position: "930,345"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp1"
         zPosition: "1"
         children:
@@ -104,7 +104,7 @@ screen:
         halign: "right"
         position: "930,375"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp2"
         zPosition: "1"
         children:
@@ -126,7 +126,7 @@ screen:
         halign: "right"
         position: "930,405"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp3"
         zPosition: "1"
         children:
@@ -148,7 +148,7 @@ screen:
         halign: "right"
         position: "930,435"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp4"
         zPosition: "1"
         children:
@@ -170,7 +170,7 @@ screen:
         halign: "right"
         position: "930,465"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp5"
         zPosition: "1"
         children:
@@ -192,7 +192,7 @@ screen:
         halign: "right"
         position: "930,495"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp6"
         zPosition: "1"
         children:
@@ -214,7 +214,7 @@ screen:
         halign: "right"
         position: "930,525"
         render: "Label"
-        size: "150,30"
+        size: "150,33"
         source: "SensorTemp7"
         zPosition: "1"
         children:
@@ -236,7 +236,7 @@ screen:
         halign: "right"
         position: "1440,315"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan0"
         zPosition: "1"
         children:
@@ -258,7 +258,7 @@ screen:
         halign: "right"
         position: "1440,345"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan1"
         zPosition: "1"
         children:
@@ -280,7 +280,7 @@ screen:
         halign: "right"
         position: "1440,375"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan2"
         zPosition: "1"
         children:
@@ -302,7 +302,7 @@ screen:
         halign: "right"
         position: "1440,405"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan3"
         zPosition: "1"
         children:
@@ -324,7 +324,7 @@ screen:
         halign: "right"
         position: "1440,435"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan4"
         zPosition: "1"
         children:
@@ -346,7 +346,7 @@ screen:
         halign: "right"
         position: "1440,465"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan5"
         zPosition: "1"
         children:
@@ -368,7 +368,7 @@ screen:
         halign: "right"
         position: "1440,495"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan6"
         zPosition: "1"
         children:
@@ -390,7 +390,7 @@ screen:
         halign: "right"
         position: "1440,525"
         render: "Label"
-        size: "225,30"
+        size: "225,33"
         source: "SensorFan7"
         zPosition: "1"
         children:

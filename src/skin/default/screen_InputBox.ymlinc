@@ -22,6 +22,6 @@ screen:
     - widget:
         font: "md_headline_medium"
         name: "input"
-        position: "178,214"
-        size: "806,45"
+        position: "178,213"
+        size: "806,48"
         valign: "center"

@@ -23,7 +23,7 @@ screen:
         font: "md_headline_medium"
         halign: "center"
         position: "1149,126"
-        size: "615,44"
+        size: "615,48"
         text: "Edit VLC Server"
         transparent: "1"
     - widget:

@@ -33,7 +33,7 @@ screen:
         foregroundColor: "md_primary"
         position: "1155,377"
         render: "Label"
-        size: "720,36"
+        size: "720,41"
         source: "Event"
         transparent: "1"
         children:

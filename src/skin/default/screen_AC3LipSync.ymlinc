@@ -29,7 +29,7 @@ screen:
         foregroundColor: "md_on_surface"
         name: "ServiceInfo"
         position: "140,15"
-        size: "190,27"
+        size: "190,31"
         transparent: "1"
         zPosition: "4"
     - widget:
