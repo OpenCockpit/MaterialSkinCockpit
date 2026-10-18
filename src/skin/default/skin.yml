@@ -7,6 +7,8 @@ skin:
     - xmlinc:
         file: "radii.ymlinc"
     - xmlinc:
+        file: "frames.ymlinc"
+    - xmlinc:
         file: "colors.ymlinc"
     - xmlinc:
         file: "parameters.ymlinc"
@@ -42,7 +44,6 @@ skin:
         file: "screen_ChapterZap.ymlinc"
     - xmlinc:
         file: "screen_ChannelSelection.ymlinc"
-        position: "5,5"
     - xmlinc:
         file: "screen_SimpleChannelSelection.ymlinc"
     - xmlinc:
@@ -59,45 +60,150 @@ skin:
         file: "screen_EPGSearchHistory.ymlinc"
     - xmlinc:
         file: "screen_GraphMultiEPG.ymlinc"
-        position: "5,5"
     - xmlinc:
         file: "screen_GraphMultiEPGList.ymlinc"
-        position: "5,5"
-    - xmlinc:
-        file: "screen_GraphMultiEpgSetup.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_ConfigScreenTemplate.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "GraphMultiEpgSetup"
+              title: "Electronic Program Guide Setup"
+          - screen:
+              name: "Setup"
+              title: "Setup"
+          - screen:
+              name: "ScanSetup"
+          - screen:
+              name: "ScanSimple"
+          - screen:
+              name: "RecordPathsSettings"
+          - screen:
+              name: "MovieBrowserConfiguration"
+          - screen:
+              name: "TimerEntry"
+              title: "Timer entry"
+          - screen:
+              name: "SoftwareManagerSetup"
+              title: "SoftwareManager setup"
+          - screen:
+              name: "BackupScreen"
+              title: "Backup is running"
+          - screen:
+              name: "InputDeviceSetup"
+              title: "Input device setup"
+          - screen:
+              name: "TimeDateInput"
+              title: "Time/Date Input"
+          - screen:
+              name: "NimSetup"
+              title: "Reception Settings"
+          - screen:
+              name: "ParentalControlSetup"
+              title: "Parental control setup"
+          - screen:
+              name: "OSD3DSetupScreen"
+              title: "Select Location"
+          - screen:
+              name: "EcmInfoConfigMenu"
+              title: "Select Location"
+          - screen:
+              name: "RestoreScreen"
+              title: "Restore is running"
+          - screen:
+              name: "NameserverSetup"
+          - screen:
+              name: "AutoMountEdit"
+              title: "MountEdit"
+          - screen:
+              name: "UserDialog"
+              title: "UserDialog"
+          - screen:
+              name: "ScanIP"
+              title: "Scan IP"
+          - screen:
+              name: "Pic_Setup"
+              title: "Settings"
+          - screen:
+              name: "PartnerboxEntryConfigScreen"
+          - screen:
+              name: "PartnerboxSetup"
+          - screen:
+              name: "RemoteTimerEntry"
+          - screen:
+              name: "OpenWebifConfig"
+          - screen:
+              name: "EPGRefreshConfiguration"
+              title: "Configuration of EPGRefresh"
+          - screen:
+              name: "EPGRefreshServiceEditor"
+              title: "Edit Services to refresh"
+          - screen:
+              name: "EPGRefreshProfile"
+              title: "EPGRefreshProfile"
+          - screen:
+              name: "BluetoothSetupConfig"
+          - screen:
+              name: "MSNWeatherPluginEntryConfigScreen"
+          - screen:
+              name: "FastScanScreen"
+              title: "Fast Scan"
+          - screen:
+              name: "CableScanScreen"
+              title: "Cable Scan"
+          - screen:
+              name: "FilebrowserConfigScreen"
+              title: "File browser config"
+          - screen:
+              name: "SubsSetupGeneral"
+          - screen:
+              name: "SubsSearchSettings"
+          - screen:
+              name: "SubsSetupExternal"
+          - screen:
+              name: "SubsSetupEmbedded"
+          - screen:
+              name: "SubsSetupDVBPlayer"
+          - screen:
+              name: "AnimationSetupConfig"
+          - screen:
+              name: "AnimationSetupScreen"
+          - screen:
+              name: "MovieListTags"
+          - screen:
+              name: "VuplusKexec"
     - xmlinc:
         file: "screen_SelectBouquet.ymlinc"
-    - xmlinc:
-        file: "screen_Menu.ymlinc"
-    - xmlinc:
-        file: "screen_menu_mainmenu.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_MenuTemplate.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "Menu"
+          - screen:
+              name: "menu_mainmenu"
+          - screen:
+              name: "menu_setup"
+          - screen:
+              name: "menu_system"
+          - screen:
+              name: "menu_information"
+          - screen:
+              name: "menu_scan"
     - xmlinc:
         file: "screen_MenuSort.ymlinc"
-    - xmlinc:
-        file: "screen_menu_setup.ymlinc"
-    - xmlinc:
-        file: "screen_menu_system.ymlinc"
-    - xmlinc:
-        file: "screen_menu_information.ymlinc"
-    - xmlinc:
-        file: "screen_menu_scan.ymlinc"
-    - xmlinc:
-        file: "screen_Setup.ymlinc"
-    - xmlinc:
-        file: "screen_ScanSetup.ymlinc"
-    - xmlinc:
-        file: "screen_ScanSimple.ymlinc"
     - xmlinc:
         file: "screen_ScanStatusTemplate.ymlinc"
     - xmlinc:
         file: "screen_ServiceScan.ymlinc"
     - xmlinc:
-        file: "screen_RecordPathsSettings.ymlinc"
-    - xmlinc:
         file: "screen_SoftcamSetup.ymlinc"
     - xmlinc:
         file: "screen_ChoiceBox.ymlinc"
-        position: "0,0"
     - xmlinc:
         file: "screen_ExtensionsList.ymlinc"
     - xmlinc:
@@ -108,10 +214,8 @@ skin:
         file: "screen_MovieoffChoiceBox.ymlinc"
     - xmlinc:
         file: "screen_HotkeySetup.ymlinc"
-        position: "5,5"
     - xmlinc:
         file: "screen_HotkeySetupSelect.ymlinc"
-        position: "5,5"
     - xmlinc:
         file: "screen_Console.ymlinc"
     - xmlinc:
@@ -120,8 +224,21 @@ skin:
         file: "screen_NumberZap.ymlinc"
     - xmlinc:
         file: "screen_VideoMode.ymlinc"
-    - xmlinc:
-        file: "screen_VideoEnhancementSetup.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_ConfigScreenTemplate.ymlinc"
+        position: "fill"
+        children:
+          - screen:
+              name: "VideoEnhancementSetup"
+              title: "VideoEnhancementSetup"
+          - screen:
+              name: "PositionerSetupLog"
+          - screen:
+              name: "TunerScreen"
+          - screen:
+              name: "RemoteControlCode"
+              title: "Remote Control Code"
     - xmlinc:
         file: "screen_PVRState.ymlinc"
     - xmlinc:
@@ -149,11 +266,7 @@ skin:
     - xmlinc:
         file: "screen_MovieContextMenu.ymlinc"
     - xmlinc:
-        file: "screen_MovieBrowserConfiguration.ymlinc"
-    - xmlinc:
         file: "screen_BouquetSelector.ymlinc"
-    - xmlinc:
-        file: "screen_TimerEntry.ymlinc"
     - xmlinc:
         file: "screen_TimerEditList.ymlinc"
     - xmlinc:
@@ -166,16 +279,10 @@ skin:
         file: "screen_FileBrowser.ymlinc"
     - xmlinc:
         file: "screen_ServiceInfoSimple.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_ServiceInfo.ymlinc"
     - xmlinc:
-        file: "screen_SoftwareManagerSetup.ymlinc"
-    - xmlinc:
-        file: "screen_BackupScreen.ymlinc"
-    - xmlinc:
         file: "screen_BackupSelection.ymlinc"
-        position: "370,118"
     - xmlinc:
         file: "screen_UpdatePlugin.ymlinc"
     - xmlinc:
@@ -186,8 +293,6 @@ skin:
         file: "screen_WlanScan.ymlinc"
     - xmlinc:
         file: "screen_InputDeviceSelection.ymlinc"
-    - xmlinc:
-        file: "screen_InputDeviceSetup.ymlinc"
     - xmlinc:
         file: "screen_HarddiskSelection.ymlinc"
     - xmlinc:
@@ -204,9 +309,6 @@ skin:
         file: "screen_MessageBox.ymlinc"
     - xmlinc:
         file: "screen_MessageBoxSimple.ymlinc"
-        position: "0,0"
-    - xmlinc:
-        file: "screen_TimeDateInput.ymlinc"
     - xmlinc:
         file: "screen_LanguageSelection.ymlinc"
     - xmlinc:
@@ -214,15 +316,9 @@ skin:
     - xmlinc:
         file: "screen_NimSelection.ymlinc"
     - xmlinc:
-        file: "screen_NimSetup.ymlinc"
-    - xmlinc:
         file: "screen_PositionerSetup.ymlinc"
     - xmlinc:
-        file: "screen_PositionerSetupLog.ymlinc"
-    - xmlinc:
         file: "screen_SelectSatsEntryScreen.ymlinc"
-    - xmlinc:
-        file: "screen_TunerScreen.ymlinc"
     - xmlinc:
         file: "screen_RotorNimSelection.ymlinc"
     - xmlinc:
@@ -233,12 +329,10 @@ skin:
         file: "screen_SubtitleDisplay.ymlinc"
     - xmlinc:
         file: "screen_About.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_MemoryInfo.ymlinc"
     - xmlinc:
         file: "screen_CommitInfo.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_Troubleshoot.ymlinc"
     - xmlinc:
@@ -254,12 +348,9 @@ skin:
     - xmlinc:
         file: "screen_InputBox.ymlinc"
     - xmlinc:
-        file: "screen_ParentalControlSetup.ymlinc"
-    - xmlinc:
         file: "screen_ParentalControlEditor.ymlinc"
     - xmlinc:
         file: "screen_PinInput.ymlinc"
-        position: "370,118"
     - xmlinc:
         file: "screen_PinInputPopup.ymlinc"
     - xmlinc:
@@ -283,29 +374,27 @@ skin:
     - xmlinc:
         file: "screen_SubservicesQuickzap.ymlinc"
     - xmlinc:
-        file: "screen_OSD3DSetupScreen.ymlinc"
-    - xmlinc:
-        file: "screen_EcmInfoConfigMenu.ymlinc"
-    - xmlinc:
         file: "screen_Standby.ymlinc"
     - xmlinc:
         file: "screen_IpkgInstaller.ymlinc"
-        position: "0,0"
     - xmlinc:
         file: "screen_LocationBox.ymlinc"
     - xmlinc:
         file: "screen_PackageManager.ymlinc"
     - xmlinc:
-        file: "screen_RestoreScreen.ymlinc"
-    - xmlinc:
         file: "screen_RestoreMenu.ymlinc"
-    - xmlinc:
-        file: "screen_StartWizard.ymlinc"
-    - xmlinc:
-        file: "screen_DefaultWizard.ymlinc"
-        position: "192,86"
-    - xmlinc:
-        file: "screen_NetworkWizard.ymlinc"
+    - screenfamily:
+        body: "screenpart_DefaultWizard.ymlinc"
+        bodyPosition: "($screen_width-$window_wizard_width)/2,($screen_height-$window_wizard_height)/2"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "DefaultWizard"
+          - screen:
+              name: "StartWizard"
+          - screen:
+              name: "NetworkWizard"
     - xmlinc:
         file: "screen_VideoWizard.ymlinc"
     - xmlinc:
@@ -319,8 +408,6 @@ skin:
     - xmlinc:
         file: "screen_AdapterSetup.ymlinc"
     - xmlinc:
-        file: "screen_NameserverSetup.ymlinc"
-    - xmlinc:
         file: "screen_NetworkAdapterSelection.ymlinc"
     - xmlinc:
         file: "screen_NetworkAdapterTest.ymlinc"
@@ -333,29 +420,17 @@ skin:
     - xmlinc:
         file: "screen_AutoMountView.ymlinc"
     - xmlinc:
-        file: "screen_AutoMountEdit.ymlinc"
-    - xmlinc:
-        file: "screen_UserDialog.ymlinc"
-    - xmlinc:
-        file: "screen_ScanIP.ymlinc"
-    - xmlinc:
         file: "screen_MediaPlayer.ymlinc"
     - xmlinc:
         file: "screen_picshow.ymlinc"
     - xmlinc:
         file: "screen_Pic_Exif.ymlinc"
     - xmlinc:
-        file: "screen_Pic_Setup.ymlinc"
-    - xmlinc:
         file: "screen_Pic_Full_View.ymlinc"
     - xmlinc:
         file: "screen_CurrentRemoteTV.ymlinc"
     - xmlinc:
-        file: "screen_PartnerboxEntryConfigScreen.ymlinc"
-    - xmlinc:
         file: "screen_PartnerboxEntriesListConfigScreen.ymlinc"
-    - xmlinc:
-        file: "screen_PartnerboxSetup.ymlinc"
     - xmlinc:
         file: "screen_RemotePlayer.ymlinc"
     - xmlinc:
@@ -371,12 +446,9 @@ skin:
     - xmlinc:
         file: "screen_RemoteTimerEventView.ymlinc"
     - xmlinc:
-        file: "screen_RemoteTimerEntry.ymlinc"
-    - xmlinc:
         file: "screen_PartnerboxAutoTimerOverview.ymlinc"
     - xmlinc:
         file: "screen_MovieTagEditor.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_TagEditor.ymlinc"
     - xmlinc:
@@ -389,8 +461,22 @@ skin:
         file: "screen_EPGImportSources.ymlinc"
     - xmlinc:
         file: "screen_EPGImportLog.ymlinc"
-    - xmlinc:
-        file: "screen_downloader.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_surface_overlay"
+        body: "screenpart_DownloadBar.ymlinc"
+        bodyPosition: "10,5"
+        flags: "wfNoBorder"
+        position: "0,0"
+        size: "1920,60"
+        children:
+          - screen:
+              name: "downloader"
+          - screen:
+              name: "AutoBouquetsMaker"
+          - screen:
+              name: "TerrestrialScan"
+          - screen:
+              name: "MisPlsLcnScan"
     - xmlinc:
         file: "screen_CrossEPG_Menu.ymlinc"
     - xmlinc:
@@ -410,19 +496,15 @@ skin:
     - xmlinc:
         file: "screen_setPiconCfg.ymlinc"
     - xmlinc:
-        file: "screen_OpenWebifConfig.ymlinc"
-    - xmlinc:
         file: "screen_AutoTimer.ymlinc"
     - xmlinc:
         file: "screen_AutoTimerSettings.ymlinc"
     - xmlinc:
         file: "screen_AutoTimerEditor.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_AutoTimerFilterEditor.ymlinc"
     - xmlinc:
         file: "screen_AutoTimerServiceEditor.ymlinc"
-        position: "96,54"
     - xmlinc:
         file: "screen_AutoTimerImporter.ymlinc"
     - xmlinc:
@@ -431,12 +513,6 @@ skin:
         file: "screen_AutoTimerPreview.ymlinc"
     - xmlinc:
         file: "screen_AutoTimerHelp.ymlinc"
-    - xmlinc:
-        file: "screen_EPGRefreshConfiguration.ymlinc"
-    - xmlinc:
-        file: "screen_EPGRefreshServiceEditor.ymlinc"
-    - xmlinc:
-        file: "screen_EPGRefreshProfile.ymlinc"
     - xmlinc:
         file: "screen_EPGSaveLoadConfiguration.ymlinc"
     - xmlinc:
@@ -457,21 +533,12 @@ skin:
         file: "screen_AutoBouquetsMaker_Ordering.ymlinc"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_HideSections.ymlinc"
-        position: "370,118"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_KeepBouquets.ymlinc"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_Log.ymlinc"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_About.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker.ymlinc"
-    - xmlinc:
-        file: "screen_TerrestrialScan.ymlinc"
-    - xmlinc:
-        file: "screen_MisPlsLcnScan.ymlinc"
-    - xmlinc:
-        file: "screen_BluetoothSetupConfig.ymlinc"
     - xmlinc:
         file: "screen_BluetoothSetupScreen.ymlinc"
     - xmlinc:
@@ -480,19 +547,21 @@ skin:
         file: "screen_CIselectMainMenu.ymlinc"
     - xmlinc:
         file: "screen_CAidSelect.ymlinc"
-        position: "495,136"
-    - xmlinc:
-        file: "screen_myProviderSelection.ymlinc"
-    - xmlinc:
-        file: "screen_myChannelSelection.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screen_CAidSelect.ymlinc"
+        position: "fill"
+        children:
+          - screen:
+              name: "myProviderSelection"
+              title: "Select provider to add..."
+          - screen:
+              name: "myChannelSelection"
+              title: "Select service to add..."
     - xmlinc:
         file: "screen_CIconfigMenu.ymlinc"
     - xmlinc:
-        file: "screen_RemoteControlCode.ymlinc"
-    - xmlinc:
         file: "screen_MSNWeatherPlugin.ymlinc"
-    - xmlinc:
-        file: "screen_MSNWeatherPluginEntryConfigScreen.ymlinc"
     - xmlinc:
         file: "screen_MSNWeatherPluginEntriesListConfigScreen.ymlinc"
     - xmlinc:
@@ -500,25 +569,27 @@ skin:
     - xmlinc:
         file: "screen_AutoDiseqc.ymlinc"
     - xmlinc:
-        file: "screen_FastScanScreen.ymlinc"
-    - xmlinc:
         file: "screen_FastScanStatus.ymlinc"
     - xmlinc:
-        file: "screen_CableScanScreen.ymlinc"
-    - xmlinc:
         file: "screen_CableScanStatus.ymlinc"
-    - xmlinc:
-        file: "screen_FilebrowserConfigScreen.ymlinc"
     - xmlinc:
         file: "screen_FilebrowserScreen.ymlinc"
     - xmlinc:
         file: "screen_IMDB.ymlinc"
     - xmlinc:
         file: "screen_IMDbSetup.ymlinc"
-    - xmlinc:
-        file: "screen_tmdbScreen.ymlinc"
-    - xmlinc:
-        file: "screen_tmdbScreenPeople.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_tmdbTemplate2.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "tmdbScreen"
+              title: "TMDb - The Movie Database"
+          - screen:
+              name: "tmdbScreenPeople"
+              title: "TMDb - The Movie Database - Cast"
     - xmlinc:
         file: "screen_tmdbScreenPerson.ymlinc"
     - xmlinc:
@@ -564,17 +635,6 @@ skin:
     - xmlinc:
         file: "screen_SubsSupportSettings.ymlinc"
     - xmlinc:
-        file: "screen_SubsSetupGeneral.ymlinc"
-        position: "0,0"
-    - xmlinc:
-        file: "screen_SubsSearchSettings.ymlinc"
-    - xmlinc:
-        file: "screen_SubsSetupExternal.ymlinc"
-    - xmlinc:
-        file: "screen_SubsSetupEmbedded.ymlinc"
-    - xmlinc:
-        file: "screen_SubsSetupDVBPlayer.ymlinc"
-    - xmlinc:
         file: "screen_SubsSearch.ymlinc"
     - xmlinc:
         file: "screen_CutListEditor.ymlinc"
@@ -600,10 +660,16 @@ skin:
         file: "screen_PluginBrowser.ymlinc"
     - xmlinc:
         file: "screen_PluginDownloadBrowser.ymlinc"
-    - xmlinc:
-        file: "screen_AboutOE.ymlinc"
-    - xmlinc:
-        file: "screen_SystemMemoryInfo.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screen_About.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "AboutOE"
+          - screen:
+              name: "SystemMemoryInfo"
     - xmlinc:
         file: "screen_SystemNetworkInfo.ymlinc"
     - xmlinc:
@@ -622,7 +688,6 @@ skin:
         file: "screen_LogManager.ymlinc"
     - xmlinc:
         file: "screen_LogManagerViewLog.ymlinc"
-        position: "370,118"
     - xmlinc:
         file: "screen_LogManagerFb.ymlinc"
     - xmlinc:
@@ -633,14 +698,6 @@ skin:
         file: "screen_OscamInfoConfigScreen.ymlinc"
     - xmlinc:
         file: "screen_HistoryZapSelector.ymlinc"
-    - xmlinc:
-        file: "screen_AnimationSetupConfig.ymlinc"
-    - xmlinc:
-        file: "screen_AnimationSetupScreen.ymlinc"
-    - xmlinc:
-        file: "screen_MovieListTags.ymlinc"
-    - xmlinc:
-        file: "screen_VuplusKexec.ymlinc"
     - xmlinc:
         file: "screen_NetworkInadynLog.ymlinc"
     - xmlinc:
@@ -655,18 +712,30 @@ skin:
         file: "screen_uShareSelection.ymlinc"
     - xmlinc:
         file: "screen_NetworkuShare.ymlinc"
-    - xmlinc:
-        file: "screen_VIXBackupManager.ymlinc"
-    - xmlinc:
-        file: "screen_VIXBackupManagerLogView.ymlinc"
-    - xmlinc:
-        file: "screen_VIXImageManager.ymlinc"
-    - xmlinc:
-        file: "screen_ImageManagerDownload.ymlinc"
-    - xmlinc:
-        file: "screen_VIXIPKInstaller.ymlinc"
-    - xmlinc:
-        file: "screen_VIXScriptRunner.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_VixListTemplate.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "VIXBackupManager"
+          - screen:
+              name: "VIXBackupManagerLogView"
+          - screen:
+              name: "VIXImageManager"
+          - screen:
+              name: "ImageManagerDownload"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screen_IpkgInstaller.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "VIXIPKInstaller"
+          - screen:
+              name: "VIXScriptRunner"
     - xmlinc:
         file: "screen_VIXSwap.ymlinc"
     - xmlinc:
@@ -675,10 +744,16 @@ skin:
         file: "screen_DeviceMountSetup.ymlinc"
     - xmlinc:
         file: "screen_VIXSoftcamManager.ymlinc"
-    - xmlinc:
-        file: "screen_VIXStartCam.ymlinc"
-    - xmlinc:
-        file: "screen_VIXStopCam.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        body: "screenpart_SoftcamSpinnerTemplate.ymlinc"
+        flags: "wfNoBorder"
+        position: "fill"
+        children:
+          - screen:
+              name: "VIXStartCam"
+          - screen:
+              name: "VIXStopCam"
     - xmlinc:
         file: "screen_RecordTimerQuestion.ymlinc"
     - xmlinc:

@@ -5,14 +5,14 @@ screen:
   title: "EPG Import Log"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
-        position: "135,160"
+        position: "39,106"
         scrollbarMode: "showNever"
         size: "1650,12*45"
         valign: "center"
@@ -21,7 +21,7 @@ screen:
         connection: "list"
         pagerBackground: "md_surface"
         pagerForeground: "md_on_surface"
-        position: "145,915"
+        position: "$window_large_margin,861"
         render: "Pager"
-        size: "1630,25"
+        size: "$window_large_inner_width,25"
         transparent: "1"

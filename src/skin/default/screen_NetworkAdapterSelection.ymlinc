@@ -5,14 +5,14 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         itemCornerRadius: "$radius_item"
-        position: "392,205"
+        position: "22,87"
         render: "Listbox"
         scrollbarMode: "showNever"
-        size: "1130,600"
+        size: "$window_medium_content_width,600"
         source: "list"
         zPosition: "10"
         children:
@@ -34,15 +34,15 @@ screen:
         backgroundColor: "md_surface"
         conditional: "list"
         connection: "list"
-        position: "392,815"
-        size: "1130,25"
+        position: "22,697"
+        size: "$window_medium_content_width,$window_medium_pager_height"
         transparent: "1"
     - widget:
         font: "md_body_large"
         halign: "center"
-        position: "393,844"
+        position: "23,726"
         render: "Label"
-        size: "1130,34"
+        size: "$window_medium_content_width,34"
         source: "introduction"
         transparent: "1"
         valign: "center"

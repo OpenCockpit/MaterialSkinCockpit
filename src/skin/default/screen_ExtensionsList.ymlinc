@@ -7,12 +7,12 @@ screen:
   title: ""
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
-        position: "514,226"
+        position: "19,90"
         scrollbarMode: "showNever"
-        size: "889,628"
+        size: "$window_small_content_width,628"

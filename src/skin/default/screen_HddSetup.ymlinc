@@ -6,13 +6,13 @@ screen:
   title: "Hard Drive Setup"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
         foregroundColor: "md_on_surface"
-        position: "396,200"
+        position: "26,82"
         render: "Listbox"
         size: "990,836"
         source: "menu"
@@ -36,7 +36,7 @@ screen:
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "lab1"
-        position: "530,294"
+        position: "160,176"
         size: "900,60"
         transparent: "1"
         zPosition: "2"

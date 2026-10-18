@@ -6,7 +6,7 @@ screen:
   title: "Second InfoBar"
   children:
     - xmlinc:
-        file: "screenpart_SecondInfoBarTemplatePanel.ymlinc"
+        file: "screenpart_WindowBaseNoTitle.ymlinc"
         position: "0,0"
         size: "1728,990"
     - eLabel:
@@ -131,7 +131,7 @@ screen:
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "18,131"
         render: "COCRunningText"
-        size: "842,505"
+        size: "842,490"
         source: "session.Event_Now"
         valign: "top"
         children:
@@ -243,7 +243,7 @@ screen:
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "879,131"
         render: "COCRunningText"
-        size: "842,505"
+        size: "842,490"
         source: "session.Event_Next"
         valign: "top"
         children:

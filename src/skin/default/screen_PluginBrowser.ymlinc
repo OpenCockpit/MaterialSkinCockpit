@@ -5,12 +5,12 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_3.ymlinc"
+        file: "screenpart_Window_Wide.ymlinc"
         position: "252,111"
     - widget:
         itemCornerRadius: "$radius_item"
         orientation: "orGrid"
-        position: "center,210"
+        position: "30,99"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1356,580"
@@ -33,6 +33,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "396,835"
+        position: "144,724"
         size: "1130,25"
         transparent: "1"

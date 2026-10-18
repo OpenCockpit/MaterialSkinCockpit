@@ -6,7 +6,7 @@ screen:
   title: "Radio Channel Selection"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full.ymlinc"
+        file: "screenpart_Window_Full.ymlinc"
         position: "0,0"
     - eLabel:
         backgroundColor: "md_outline_variant"
@@ -69,7 +69,7 @@ screen:
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1230,480"
         render: "COCRunningText"
-        size: "645,310"
+        size: "645,297"
         source: "ServiceEvent"
         transparent: "1"
         valign: "top"
@@ -99,7 +99,7 @@ screen:
         noWrap: "1"
         position: "1230,840"
         render: "NextEpgInfo"
-        size: "645,160"
+        size: "645,132"
         source: "ServiceEvent"
         timeColor: "md_on_surface"
         transparent: "1"
@@ -123,7 +123,7 @@ screen:
         noWrap: "1"
         position: "1230,245"
         render: "Label"
-        size: "200,80"
+        size: "200,58"
         source: "ServiceEvent"
         transparent: "1"
         valign: "bottom"

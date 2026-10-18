@@ -5,17 +5,17 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         colposition: "0"
         dividechar: ":"
         font: "md_body_medium"
         name: "AboutScrollLabel"
-        position: "29,96"
+        position: "$window_large_content_x,$window_large_content_y"
         scrollbarMode: "showNever"
-        size: "1696,734"
+        size: "1696,726"
         split: "1"
         zPosition: "2"
     - widget:

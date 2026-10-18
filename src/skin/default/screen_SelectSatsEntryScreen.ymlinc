@@ -4,23 +4,23 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         name: "list"
-        position: "405,205"
+        position: "35,87"
         scrollbarMode: "showNever"
         size: "1110,540"
     - widget:
         font: "md_body_large"
         halign: "center"
         name: "hint"
-        position: "405,780"
+        position: "35,662"
         size: "1110,35"
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "396,849"
-        size: "1130,25"
+        position: "$window_medium_content_x,$window_medium_pager_y"
+        size: "$window_medium_content_width,$window_medium_pager_height"
         transparent: "1"

@@ -1,7 +1,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,0"
+    position: "20,120"
     render: "Label"
     size: "300,37"
     source: "LabelBSSID"
@@ -9,7 +9,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,105"
+    position: "20,225"
     render: "Label"
     size: "300,37"
     source: "LabelESSID"
@@ -17,7 +17,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,165"
+    position: "20,285"
     render: "Label"
     size: "300,37"
     source: "LabelQuality"
@@ -25,7 +25,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,225"
+    position: "20,345"
     render: "Label"
     size: "300,37"
     source: "LabelSignal"
@@ -33,7 +33,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,285"
+    position: "20,405"
     render: "Label"
     size: "300,37"
     source: "LabelBitrate"
@@ -41,7 +41,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "143,345"
+    position: "20,465"
     render: "Label"
     size: "300,37"
     source: "LabelEnc"
@@ -49,7 +49,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,0"
+    position: "335,120"
     render: "Label"
     size: "495,37"
     source: "BSSID"
@@ -57,7 +57,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,105"
+    position: "335,225"
     render: "Label"
     size: "495,37"
     source: "ESSID"
@@ -65,7 +65,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,165"
+    position: "335,285"
     render: "Label"
     size: "495,37"
     source: "quality"
@@ -73,7 +73,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,225"
+    position: "335,345"
     render: "Label"
     size: "495,37"
     source: "signal"
@@ -81,7 +81,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,285"
+    position: "335,405"
     render: "Label"
     size: "495,37"
     source: "bitrate"
@@ -89,7 +89,7 @@
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
-    position: "458,345"
+    position: "335,465"
     render: "Label"
     size: "495,37"
     source: "enc"
@@ -98,7 +98,7 @@
     backgroundColor: "md_surface"
     font: "md_body_large"
     halign: "right"
-    position: "458,760"
+    position: "335,880"
     render: "Label"
     size: "247,37"
     source: "IFtext"
@@ -107,7 +107,7 @@
     backgroundColor: "md_surface"
     font: "md_body_large"
     halign: "left"
-    position: "713,760"
+    position: "590,880"
     render: "Label"
     size: "375,37"
     source: "IF"
@@ -115,7 +115,7 @@
 - widget:
     font: "md_body_large"
     halign: "right"
-    position: "0,720"
+    position: "-123,840"
     render: "Label"
     size: "300,37"
     source: "Statustext"
@@ -125,7 +125,7 @@
     alphatest: "blend"
     name: "statuspic"
     pixmaps: "icons/lock_on.png,icons/lock_off.png"
-    position: "308,722"
+    position: "185,842"
     size: "32,32"
     transparent: "1"
     zPosition: "10"

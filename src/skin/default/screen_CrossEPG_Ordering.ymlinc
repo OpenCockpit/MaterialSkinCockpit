@@ -5,14 +5,14 @@ screen:
   title: "Cross EPG - Providers start order"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "list"
-        position: "396,210"
+        position: "$window_medium_content_x,$window_medium_content_y"
         scrollbarMode: "showNever"
-        size: "1130,660"
+        size: "$window_medium_content_width,660"
         transparent: "1"

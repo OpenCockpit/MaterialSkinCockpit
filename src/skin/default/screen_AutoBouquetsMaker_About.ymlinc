@@ -5,19 +5,19 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         font: "md_body_medium"
         name: "about"
-        position: "396,210"
-        size: "1130,660"
+        position: "$window_medium_content_x,$window_medium_content_y"
+        size: "$window_medium_content_width,660"
     - widget:
         alphatest: "blend"
         backgroundColor: "md_surface"
         conditional: "oealogo"
         name: "oealogo"
-        position: "1350,728"
+        position: "980,610"
         size: "176,142"
         transparent: "1"

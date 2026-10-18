@@ -6,12 +6,12 @@ screen:
   title: "Timer sanity error"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         itemHeight: "75"
         name: "timer1"
-        position: "396,210"
+        position: "$window_medium_content_x,$window_medium_content_y"
         rowSplit: "40"
         satPosLeft: "250"
         scrollbarMode: "showNever"
@@ -22,7 +22,7 @@ screen:
     - widget:
         itemHeight: "75"
         name: "timer2"
-        position: "396,400"
+        position: "26,282"
         rowSplit: "40"
         satPosLeft: "250"
         scrollbarMode: "showNever"
@@ -35,7 +35,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "list"
-        position: "396,590"
+        position: "26,472"
         scrollbarMode: "showOnDemand"
         size: "1110,152"
         valign: "center"

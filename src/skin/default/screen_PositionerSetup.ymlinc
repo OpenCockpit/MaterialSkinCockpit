@@ -6,22 +6,22 @@ screen:
   title: "Positioner setup"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "status_bar"
-        position: "center,140"
+        position: "425,22"
         size: "330,37"
     - xmlinc:
         file: "screenpart_PositionerSetupPanel.ymlinc"
-        position: "405,205"
+        position: "35,87"
     - widget:
         font: "md_body_large"
         foregroundColor: "md_primary"
         halign: "center"
         name: "status_bar"
-        position: "1120,847"
+        position: "750,729"
         size: "425,37"

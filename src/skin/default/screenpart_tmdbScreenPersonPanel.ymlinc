@@ -3,7 +3,7 @@
     name: "fulldescription"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "830,680"
+    size: "830,656"
     transparent: "1"
 - widget:
     addon: "Pager"

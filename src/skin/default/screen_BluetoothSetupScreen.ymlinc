@@ -9,7 +9,7 @@ screen:
         position: "0,0"
     - widget:
         itemHeight: "45"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1670,13*45"

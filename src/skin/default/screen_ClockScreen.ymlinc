@@ -2,7 +2,7 @@ screen:
   backgroundColor: "md_transparent"
   flags: "wfNoBorder"
   name: "ClockScreen"
-  position: "center,30"
+  position: "$screen_center-118,30"
   size: "235,55"
   title: "Clock"
   zPosition: "-1"

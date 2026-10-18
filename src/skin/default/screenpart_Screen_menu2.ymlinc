@@ -1,7 +1,0 @@
-screen:
-  name: "Screen_menu2"
-  children:
-    - xmlinc:
-        file: "screenpart_Screen_menu2Panel.ymlinc"
-        position: "0,0"
-        size: "932,825"

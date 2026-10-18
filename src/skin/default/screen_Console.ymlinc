@@ -6,14 +6,14 @@ screen:
   title: "Command execution"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "mono_font"
         foregroundColor: "md_on_surface"
         itemHeight: "38"
         name: "text"
-        position: "394,204"
+        position: "24,86"
         scrollbarMode: "showOnDemand"
-        size: "1130,680"
+        size: "$window_medium_content_width,667"
         transparent: "1"

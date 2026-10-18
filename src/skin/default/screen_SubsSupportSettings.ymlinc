@@ -5,12 +5,12 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
-        position: "515,234"
+        position: "20,98"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "890,400"
@@ -33,6 +33,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "menuList"
-        position: "545,424"
+        position: "50,288"
         size: "860,25"
         transparent: "1"

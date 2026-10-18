@@ -5,11 +5,15 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full_Pig.ymlinc"
-        position: "5,5"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
+    - xmlinc:
+        file: "screenpart_Pig.ymlinc"
+        position: "1531,95"
+        size: "354,200"
     - eLabel:
         backgroundColor: "md_outline_variant"
-        position: "1200,105"
+        position: "1195,100"
         size: "1,870"
         zPosition: "-5"
     - widget:
@@ -17,17 +21,17 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "50"
         name: "list"
-        position: "25,100"
+        position: "20,95"
         scrollbarMode: "showOnDemand"
         size: "1110,550"
     - widget:
         font: "md_body_large"
         foregroundColor: "md_primary"
         name: "text"
-        position: "25,700"
-        size: "1110,200"
+        position: "20,695"
+        size: "1110,175"
         valign: "bottom"
         zPosition: "2"
     - xmlinc:
         file: "screenpart_FeedsStatusTemplate.ymlinc"
-        position: "1202,165"
+        position: "1197,160"

@@ -2,7 +2,7 @@ screen:
   backgroundColor: "md_transparent"
   flags: "wfNoBorder"
   name: "ChapterZap"
-  position: "center,center"
+  position: "$screen_center-182,$screen_center-43"
   size: "364,86"
   title: "Chapter"
   children:

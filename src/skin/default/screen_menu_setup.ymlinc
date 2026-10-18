@@ -1,9 +1,0 @@
-screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
-  name: "menu_setup"
-  position: "fill"
-  children:
-    - xmlinc:
-        file: "screenpart_MenuTemplate.ymlinc"
-        position: "0,0"

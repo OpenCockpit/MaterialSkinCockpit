@@ -6,4 +6,4 @@ screen:
   children:
     - xmlinc:
         file: "screen_MovieTagEditor.ymlinc"
-        position: "96,54"
+        position: "0,0"

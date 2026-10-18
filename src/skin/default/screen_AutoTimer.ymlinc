@@ -7,4 +7,4 @@ screen:
   children:
     - xmlinc:
         file: "screen_AutoTimerServiceEditor.ymlinc"
-        position: "96,54"
+        position: "0,0"

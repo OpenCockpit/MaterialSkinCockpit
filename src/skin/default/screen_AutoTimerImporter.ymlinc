@@ -6,14 +6,14 @@ screen:
   title: "Import AutoTimer"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
-        position: "516,222"
+        position: "21,86"
         scrollbarMode: "showNever"
-        size: "889,630"
+        size: "$window_small_content_width,630"

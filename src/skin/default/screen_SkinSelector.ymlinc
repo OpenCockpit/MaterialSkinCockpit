@@ -5,17 +5,17 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         alphatest: "blend"
         backgroundColor: "md_transparent"
         name: "preview"
-        position: "767,554"
+        position: "397,436"
         size: "420,315"
     - widget:
         font: "md_body_small"
-        position: "394,198"
+        position: "24,80"
         render: "Label"
         size: "0,0"
         source: "description"
@@ -23,10 +23,10 @@ screen:
     - widget:
         enableWrapAround: "1"
         itemCornerRadius: "$radius_item"
-        position: "394,198"
+        position: "24,80"
         render: "Listbox"
         scrollbarMode: "showNever"
-        size: "1130,350"
+        size: "$window_medium_content_width,350"
         source: "skins"
         children:
           - convert:

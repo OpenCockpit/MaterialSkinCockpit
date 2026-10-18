@@ -11,7 +11,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         font: "md_body_large"
-        position: "30,570"
+        position: "0,0"
         render: "Label"
         size: "0,0"
         source: "help"

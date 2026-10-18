@@ -5,8 +5,8 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - xmlinc:
         file: "screenpart_NetworkuSharePanel.ymlinc"
-        position: "420,219"
+        position: "50,101"

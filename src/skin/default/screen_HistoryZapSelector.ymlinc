@@ -5,12 +5,12 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         foregroundColor: "md_on_surface"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1670,750"
@@ -36,6 +36,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "menu"
-        position: "396,915"
+        position: "300,861"
         size: "1130,25"
         transparent: "1"

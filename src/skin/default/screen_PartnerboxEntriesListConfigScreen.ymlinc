@@ -5,14 +5,14 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_body_large"
         halign: "left"
         name: "name"
-        position: "780,105"
+        position: "684,51"
         size: "150,36"
         transparent: "1"
     - widget:
@@ -20,7 +20,7 @@ screen:
         font: "md_body_large"
         halign: "left"
         name: "ip"
-        position: "960,105"
+        position: "864,51"
         size: "225,36"
         transparent: "1"
     - widget:
@@ -28,7 +28,7 @@ screen:
         font: "md_body_large"
         halign: "left"
         name: "port"
-        position: "1185,105"
+        position: "1089,51"
         size: "150,36"
         transparent: "1"
     - widget:
@@ -36,7 +36,7 @@ screen:
         font: "md_body_large"
         halign: "left"
         name: "type"
-        position: "1395,105"
+        position: "1299,51"
         size: "300,36"
         transparent: "1"
     - widget:
@@ -44,7 +44,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "entrylist"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         scrollbarMode: "showNever"
         size: "1670,13*45"
         valign: "center"
@@ -52,6 +52,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "entrylist"
-        position: "145,915"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"

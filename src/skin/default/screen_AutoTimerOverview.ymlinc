@@ -6,8 +6,8 @@ screen:
   title: "AutoTimer Overview"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         DayNameFont: "md_body_large"
         EventNameFont: "md_title_large"
@@ -16,7 +16,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "90"
         name: "entries"
-        position: "115,160"
+        position: "19,106"
         rowHeight: "42"
         rowSplit1: "50"
         rowSplit2: "45"
@@ -26,6 +26,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "entries"
-        position: "145,915"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"

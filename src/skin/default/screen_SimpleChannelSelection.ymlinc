@@ -6,4 +6,4 @@ screen:
   children:
     - xmlinc:
         file: "screen_ChannelSelection.ymlinc"
-        position: "5,5"
+        position: "0,0"

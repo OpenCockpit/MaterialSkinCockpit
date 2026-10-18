@@ -3,7 +3,7 @@ screen:
   cornerRadius: "$radius_popup"
   flags: "wfNoBorder"
   name: "Mute"
-  position: "center,30"
+  position: "$screen_center-45,30"
   size: "90,90"
   title: "Mute"
   zPosition: "10"

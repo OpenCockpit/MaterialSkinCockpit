@@ -5,13 +5,13 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_large"
         halign: "center"
         name: "text"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         size: "1670,630"
         valign: "center"
         zPosition: "1"

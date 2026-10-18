@@ -6,13 +6,13 @@ screen:
   title: "Choose bouquet"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         font: "md_title_large"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menu"
-        position: "516,222"
+        position: "21,86"
         scrollbarMode: "showOnDemand"
-        size: "889,630"
+        size: "$window_small_content_width,630"

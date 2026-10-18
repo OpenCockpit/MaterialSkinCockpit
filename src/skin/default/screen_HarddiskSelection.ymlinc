@@ -5,13 +5,13 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemHeight: "45"
         name: "hddlist"
-        position: "396,210"
+        position: "$window_medium_content_x,$window_medium_content_y"
         scrollbarMode: "showNever"
-        size: "1130,635"
+        size: "$window_medium_content_width,$window_medium_list_height"
         textOffset: "20,5"

@@ -5,14 +5,14 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         conditional: "arrowdown"
         font: "md_body_medium"
         itemHeight: "38"
         name: "list"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         scrollbarMode: "showNever"
         size: "1200,20*38"
     - widget:
@@ -21,7 +21,7 @@ screen:
         foregroundColor: "md_primary"
         halign: "center"
         name: "long_key"
-        position: "1430,800"
+        position: "1334,746"
         size: "375,30"
     - widget:
         conditional: "longshift_key1"
@@ -29,7 +29,7 @@ screen:
         foregroundColor: "md_primary"
         halign: "center"
         name: "longshift_key0"
-        position: "1430,800"
+        position: "1334,746"
         size: "375,30"
     - widget:
         conditional: "longshift_key1"
@@ -37,15 +37,15 @@ screen:
         foregroundColor: "md_primary"
         halign: "center"
         name: "longshift_key1"
-        position: "1430,830"
+        position: "1334,776"
         size: "375,30"
     - xmlinc:
-        file: "screenpart_HelpMenuPanel.ymlinc"
-        position: "1550,275"
+        file: "screenpart_RcPanel.ymlinc"
+        position: "1454,221"
         size: "154,500"
     - widget:
         conditional: "indicatorU0"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1300,743"
@@ -103,6 +103,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "396,915"
+        position: "300,861"
         size: "1130,25"
         transparent: "1"

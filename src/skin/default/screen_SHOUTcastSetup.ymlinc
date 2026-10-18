@@ -6,14 +6,14 @@ screen:
   title: "SHOUTcast Setup"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_small"
         itemCornerRadius: "$radius_item"
         itemHeight: "37"
         name: "config"
-        position: "515,230"
+        position: "20,94"
         scrollbarMode: "showOnDemand"
-        size: "889,592"
+        size: "$window_small_content_width,592"
         transparent: "1"

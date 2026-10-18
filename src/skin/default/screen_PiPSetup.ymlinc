@@ -14,6 +14,6 @@ screen:
         halign: "center"
         name: "text"
         position: "0,0"
-        size: "1200,300"
+        size: "1200,287"
         transparent: "1"
         valign: "center"

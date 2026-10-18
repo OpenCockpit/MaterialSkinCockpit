@@ -6,9 +6,9 @@ screen:
   title: "Fast Scan"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - xmlinc:
         file: "screenpart_FastScanStatusPanel.ymlinc"
-        position: "135,235"
+        position: "39,181"
         size: "1690,902"

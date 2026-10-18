@@ -5,12 +5,12 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         halign: "center"
         name: "text"
-        position: "center,center"
-        size: "490,325"
+        position: "345,270"
+        size: "490,297"
         valign: "center"

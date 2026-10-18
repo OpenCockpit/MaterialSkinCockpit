@@ -5,8 +5,8 @@ screen:
   title: "Electronic Program Guide"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
     - widget:
         alphatest: "blend"
         name: "timeline_now"

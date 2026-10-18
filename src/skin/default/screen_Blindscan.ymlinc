@@ -13,7 +13,7 @@ screen:
         foregroundColor: "md_secondary"
         halign: "center"
         name: "rotorstatus"
-        position: "e,120"
+        position: "1824,66"
         size: "720,405"
         transparent: "1"
         valign: "center"

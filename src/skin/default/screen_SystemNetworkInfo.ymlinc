@@ -6,7 +6,7 @@ screen:
   children:
     - xmlinc:
         file: "screen_About.ymlinc"
-        position: "96,54"
+        position: "0,0"
     - xmlinc:
         file: "screenpart_NetworkStatusTemplate.ymlinc"
-        position: "125,838"
+        position: "29,784"

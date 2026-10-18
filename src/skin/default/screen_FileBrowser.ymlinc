@@ -5,11 +5,11 @@ screen:
   title: "DVD File Browser"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         itemCornerRadius: "$radius_item"
         name: "filelist"
-        position: "396,201"
+        position: "26,83"
         scrollbarMode: "showOnDemand"
         size: "1110,640"

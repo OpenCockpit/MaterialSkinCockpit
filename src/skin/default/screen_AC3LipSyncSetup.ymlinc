@@ -11,6 +11,6 @@ screen:
         font: "md_body_small"
         foregroundColor: "md_on_surface_variant"
         name: "PluginInfo"
-        position: "30,570"
+        position: "0,0"
         size: "0,0"
         zPosition: "4"

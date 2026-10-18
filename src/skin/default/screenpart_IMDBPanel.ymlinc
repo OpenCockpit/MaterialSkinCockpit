@@ -17,7 +17,7 @@
     halign: "left"
     name: "detailslabel"
     position: "380,130"
-    size: "945,270"
+    size: "945,245"
 - widget:
     alphatest: "blend"
     name: "starsbg"
@@ -52,7 +52,7 @@
     name: "extralabel"
     position: "380,240"
     scrollbarMode: "showNever"
-    size: "1282,555"
+    size: "1282,533"
 - widget:
     addon: "Pager"
     backgroundColor: "md_surface"
@@ -82,7 +82,7 @@
     name: "castlabel"
     position: "380,370"
     scrollbarMode: "showNever"
-    size: "1282,400"
+    size: "1282,369"
 - widget:
     addon: "Pager"
     backgroundColor: "md_surface"

@@ -6,10 +6,10 @@ screen:
   title: "Choose a Wireless Network"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1670,8*75"
@@ -34,15 +34,15 @@ screen:
         backgroundColor: "md_surface"
         conditional: "list"
         connection: "list"
-        position: "145,915"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"
     - widget:
         font: "md_body_medium"
         halign: "center"
-        position: "145,755"
+        position: "$window_large_margin,701"
         render: "Label"
-        size: "1630,100"
+        size: "$window_large_inner_width,100"
         source: "info"
         transparent: "1"
         valign: "center"

@@ -6,13 +6,13 @@ screen:
   title: "Software Update"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         font: "md_body_large"
         foregroundColor: "md_on_surface"
-        position: "396,220"
+        position: "26,102"
         render: "Label"
         size: "1050,45"
         source: "package"
@@ -20,14 +20,14 @@ screen:
         backgroundColor: "md_surface"
         font: "md_body_large"
         foregroundColor: "md_on_surface"
-        position: "396,295"
+        position: "26,177"
         render: "Label"
         size: "1050,45"
         source: "status"
     - widget:
         backgroundColor: "md_surface"
         name: "slider"
-        position: "396,670"
+        position: "26,552"
         size: "1128,20"
         zPosition: "100"
     - widget:
@@ -35,6 +35,6 @@ screen:
         backgroundColor: "md_surface"
         foregroundColor: "md_on_surface_variant"
         name: "activityslider"
-        position: "396,690"
+        position: "26,572"
         size: "1128,6"
         zPosition: "100"

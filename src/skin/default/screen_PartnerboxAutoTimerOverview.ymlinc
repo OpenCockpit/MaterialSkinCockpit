@@ -6,20 +6,20 @@ screen:
   title: "AutoTimer Overview"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "entries"
-        position: "396,245"
+        position: "26,127"
         scrollbarMode: "showOnDemand"
-        size: "1130,600"
+        size: "$window_medium_content_width,600"
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "entries"
-        position: "396,849"
-        size: "1130,25"
+        position: "$window_medium_content_x,$window_medium_pager_y"
+        size: "$window_medium_content_width,$window_medium_pager_height"
         transparent: "1"

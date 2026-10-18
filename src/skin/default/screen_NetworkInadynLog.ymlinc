@@ -5,10 +5,10 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full.ymlinc"
-        position: "5,5"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_small"
         name: "infotext"
-        position: "25,123"
-        size: "1870,855"
+        position: "20,118"
+        size: "1870,837"

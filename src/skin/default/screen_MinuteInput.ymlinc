@@ -1,7 +1,7 @@
 screen:
   flags: "wfNoBorder"
   name: "MinuteInput"
-  position: "center,center"
+  position: "$screen_center-180,$screen_center-41"
   size: "360,82"
   children:
     - ePixmap:

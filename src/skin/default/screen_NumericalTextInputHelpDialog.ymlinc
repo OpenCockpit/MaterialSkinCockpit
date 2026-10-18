@@ -2,7 +2,7 @@ screen:
   backgroundColor: "md_surface"
   flags: "wfNoBorder"
   name: "NumericalTextInputHelpDialog"
-  position: "center,675"
+  position: "$screen_center-423,675"
   size: "846,246"
   zPosition: "2"
   children:

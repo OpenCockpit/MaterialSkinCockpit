@@ -5,8 +5,8 @@ screen:
   title: "Select CAId's"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         font: "md_title_large"
         itemCornerRadius: "$radius_item"
@@ -14,14 +14,14 @@ screen:
         name: "list"
         position: "21,86"
         scrollbarMode: "showOnDemand"
-        size: "889,590"
+        size: "$window_small_content_width,590"
     - widget:
         backgroundColor: "md_surface"
         font: "md_label_medium"
         halign: "center"
         position: "21,686"
         render: "Label"
-        size: "889,40"
+        size: "$window_small_content_width,40"
         source: "introduction"
         valign: "center"
         zPosition: "10"

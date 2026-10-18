@@ -7,7 +7,7 @@ screen:
   children:
     - widget:
         alphatest: "blend"
-        position: "center,c-65"
+        position: "$screen_center-151,$screen_center-65"
         render: "BoxLogo"
         size: "302,65"
         source: "global.CurrentTime"
@@ -17,5 +17,5 @@ screen:
         font: "md_body_large"
         halign: "center"
         name: "text"
-        position: "c-885,c+15"
-        size: "1770,150"
+        position: "$screen_center-885,$screen_center+15"
+        size: "1770,140"

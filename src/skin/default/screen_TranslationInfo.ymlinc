@@ -5,13 +5,13 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         font: "md_body_medium"
         halign: "center"
-        position: "401,196"
+        position: "31,78"
         render: "Label"
         size: "1110,120"
         source: "TranslatorName"
@@ -20,8 +20,8 @@ screen:
         backgroundColor: "md_surface"
         font: "md_body_medium"
         halign: "center"
-        position: "401,317"
+        position: "31,199"
         render: "Label"
-        size: "1110,570"
+        size: "1110,561"
         source: "TranslationInfo"
         transparent: "1"

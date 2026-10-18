@@ -5,22 +5,22 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         font: "md_title_large"
         name: "text"
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         size: "1670,37"
     - widget:
         font: "md_title_large"
         name: "target"
-        position: "125,195"
+        position: "29,141"
         size: "1670,37"
         valign: "center"
     - widget:
         name: "filelist"
-        position: "125,190"
+        position: "29,136"
         scrollbarMode: "showOnDemand"
         selectionDisabled: "1"
         size: "1670,310"
@@ -28,14 +28,14 @@ screen:
     - widget:
         font: "md_title_large"
         name: "textbook"
-        position: "125,562"
+        position: "29,508"
         size: "1670,37"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "booklist"
-        position: "132,607"
+        position: "36,553"
         scrollbarMode: "showOnDemand"
         size: "1656,38*8"
         zPosition: "2"

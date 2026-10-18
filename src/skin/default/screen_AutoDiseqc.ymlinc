@@ -11,13 +11,13 @@ screen:
     - ePixmap:
         alphatest: "blend"
         pixmap: "icons/scan-s.png"
-        position: "145,745"
+        position: "$window_large_margin,691"
         size: "96,96"
         zPosition: "2"
     - widget:
         font: "md_title_large"
         halign: "left"
-        position: "255,745"
+        position: "159,691"
         render: "Label"
         shadowColor: "md_shadow"
         shadowOffset: "-1,-1"
@@ -29,7 +29,7 @@ screen:
     - widget:
         font: "md_title_large"
         halign: "left"
-        position: "255,830"
+        position: "159,776"
         render: "Label"
         shadowColor: "md_shadow"
         shadowOffset: "-1,-1"

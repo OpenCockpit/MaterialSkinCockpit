@@ -4,7 +4,7 @@ screen:
     - eLabel:
         alphatest: "blend"
         font: "md_title_large"
-        position: "0,50"
+        position: "0,0"
         size: "75,50"
         text: "<<<"
         transparent: "1"
@@ -12,25 +12,25 @@ screen:
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_red.png"
-        position: "75,65"
+        position: "75,15"
         size: "40,20"
         transparent: "1"
         zPosition: "0"
     - widget:
         font: "md_title_large"
         name: "backtext"
-        position: "125,50"
+        position: "125,0"
         size: "350,50"
     - widget:
         font: "md_title_large"
         name: "languagetext"
-        position: "475,50"
+        position: "475,0"
         size: "350,50"
     - eLabel:
         alphatest: "blend"
         font: "md_title_large"
         halign: "right"
-        position: "$width-75,50"
+        position: "$width-75,0"
         size: "75,50"
         text: ">>>"
         transparent: "1"
@@ -38,7 +38,7 @@ screen:
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_blue.png"
-        position: "$width-120,65"
+        position: "$width-120,15"
         size: "40,20"
         transparent: "1"
         zPosition: "0"
@@ -46,7 +46,7 @@ screen:
         font: "md_title_large"
         halign: "right"
         name: "nexttext"
-        position: "$width-475,50"
+        position: "$width-475,0"
         size: "350,50"
     - ePixmap:
         alphatest: "blend"

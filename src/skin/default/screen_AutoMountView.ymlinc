@@ -10,7 +10,7 @@ screen:
     - widget:
         font: "md_body_small"
         halign: "left"
-        position: "346,130"
+        position: "250,76"
         render: "Label"
         size: "300,75"
         source: "legend1"
@@ -20,7 +20,7 @@ screen:
     - widget:
         font: "md_body_small"
         halign: "center"
-        position: "696,130"
+        position: "600,76"
         render: "Label"
         size: "525,75"
         source: "legend2"
@@ -30,7 +30,7 @@ screen:
     - widget:
         font: "md_body_small"
         halign: "right"
-        position: "1256,130"
+        position: "1160,76"
         render: "Label"
         size: "300,75"
         source: "legend3"
@@ -39,7 +39,7 @@ screen:
         zPosition: "1"
     - widget:
         itemCornerRadius: "$radius_item"
-        position: "396,230"
+        position: "300,176"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1110,630"
@@ -63,7 +63,7 @@ screen:
     - widget:
         font: "md_body_large"
         halign: "center"
-        position: "780,875"
+        position: "684,821"
         render: "Label"
         size: "1110,34"
         source: "introduction"

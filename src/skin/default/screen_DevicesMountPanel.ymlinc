@@ -6,10 +6,10 @@ screen:
   title: "Mount Manager"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
-        position: "396,200"
+        position: "26,82"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "990,836"
@@ -31,7 +31,7 @@ screen:
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_menu.png"
-        position: "1415,910"
+        position: "1045,792"
         size: "36,26"
         zPosition: "2"
     - widget:
@@ -40,7 +40,7 @@ screen:
         foregroundColor: "md_on_surface"
         halign: "left"
         name: "key_menu"
-        position: "1250,825"
+        position: "880,707"
         size: "278,57"
         valign: "center"
         zPosition: "1"

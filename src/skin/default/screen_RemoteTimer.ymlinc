@@ -5,14 +5,14 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         iconMargin: "30"
         itemCornerRadius: "$radius_item"
         itemHeight: "90"
         name: "timerlist"
-        position: "135,160"
+        position: "39,106"
         rowSplit: "45"
         satPosLeft: "250"
         scrollbarMode: "showNever"
@@ -25,12 +25,12 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "timerlist"
-        position: "145,915"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"
     - eLabel:
         backgroundColor: "md_surface_container_high"
-        position: "135,720"
+        position: "39,666"
         size: "1650,2"
         zPosition: "-7"
     - widget:
@@ -38,6 +38,6 @@ screen:
         font: "md_body_large"
         halign: "center"
         name: "text"
-        position: "145,730"
-        size: "1620,150"
+        position: "$window_large_margin,676"
+        size: "1620,140"
         valign: "center"

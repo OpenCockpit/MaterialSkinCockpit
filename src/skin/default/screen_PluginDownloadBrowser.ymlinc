@@ -6,19 +6,19 @@ screen:
   title: "Downloadable plugins"
   children:
     - xmlinc:
-        file: "screenpart_Screen_3.ymlinc"
+        file: "screenpart_Window_Wide.ymlinc"
         position: "252,111"
     - widget:
         itemCornerRadius: "$radius_item"
         name: "list"
-        position: "center,210"
+        position: "30,99"
         scrollbarMode: "showNever"
         size: "1356,610"
     - widget:
         font: "md_title_large"
         halign: "center"
         name: "text"
-        position: "399,225"
+        position: "147,114"
         size: "1110,75"
         transparent: "1"
         valign: "center"
@@ -27,6 +27,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "396,835"
+        position: "144,724"
         size: "1130,25"
         transparent: "1"

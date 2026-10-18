@@ -1,8 +1,0 @@
-screen:
-  flags: "wfNoBorder"
-  name: "NetworkWizard"
-  position: "fill"
-  children:
-    - xmlinc:
-        file: "screen_DefaultWizard.ymlinc"
-        position: "192,86"

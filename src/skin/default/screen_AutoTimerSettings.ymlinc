@@ -7,8 +7,8 @@ screen:
   children:
     - xmlinc:
         file: "screen_AutoTimerEditor.ymlinc"
-        position: "96,54"
+        position: "0,0"
     - widget:
         name: "HelpWindow"
-        position: "e,650"
+        position: "1824,596"
         size: "80,0"

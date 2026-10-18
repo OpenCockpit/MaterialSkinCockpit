@@ -7,8 +7,8 @@ screen:
   children:
     - xmlinc:
         file: "screenpart_tmdbTemplate1.ymlinc"
-        position: "96,40"
+        position: "0,0"
     - xmlinc:
         file: "screenpart_tmdbScreenPersonPanel.ymlinc"
-        position: "150,223"
+        position: "54,169"
         size: "1690,902"

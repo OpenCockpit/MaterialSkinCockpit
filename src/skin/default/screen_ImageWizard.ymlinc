@@ -4,13 +4,13 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full.ymlinc"
-        position: "5,5"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
     - eLabel:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_title_large"
         halign: "left"
-        position: "30,7"
+        position: "25,2"
         size: "1830,75"
         text: "Welcome..."
         transparent: "1"
@@ -19,11 +19,11 @@ screen:
     - widget:
         font: "md_title_large"
         name: "text"
-        position: "1090,153"
+        position: "1085,148"
         size: "510,495"
     - widget:
         itemCornerRadius: "$radius_item"
-        position: "864,661"
+        position: "859,656"
         render: "Listbox"
         scrollbarMode: "showOnDemand"
         size: "735,270"
@@ -36,7 +36,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "38"
         name: "config"
-        position: "127,655"
+        position: "122,650"
         scrollbarMode: "showOnDemand"
         size: "637,270"
         transparent: "1"
@@ -44,23 +44,23 @@ screen:
     - ePixmap:
         alphatest: "on"
         pixmap: "buttons/key_red.png"
-        position: "810,492"
+        position: "805,487"
         size: "40,20"
     - widget:
         font: "md_body_medium"
         name: "languagetext"
-        position: "860,485"
+        position: "855,480"
         size: "165,34"
     - widget:
         alphatest: "blend"
         name: "wizard"
-        position: "811,120"
+        position: "806,115"
         size: "165,261"
         zPosition: "10"
     - widget:
         alphatest: "blend"
         name: "rc"
         pixmaps: "rc.png,rcold.png"
-        position: "1623,148"
+        position: "1618,143"
         size: "231,750"
         zPosition: "10"

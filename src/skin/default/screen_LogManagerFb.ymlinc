@@ -6,4 +6,4 @@ screen:
   children:
     - xmlinc:
         file: "screen_LogManagerViewLog.ymlinc"
-        position: "370,118"
+        position: "0,0"

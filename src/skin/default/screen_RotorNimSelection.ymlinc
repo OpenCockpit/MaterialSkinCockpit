@@ -4,9 +4,9 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         name: "nimlist"
-        position: "405,205"
+        position: "35,87"
         size: "1110,570"

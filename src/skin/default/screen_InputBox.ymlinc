@@ -6,22 +6,22 @@ screen:
   title: "Input"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_title_large"
         name: "text"
-        position: "396,210"
+        position: "$window_medium_content_x,$window_medium_content_y"
         size: "1110,39"
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/vkey_text.png"
-        position: "543,315"
+        position: "173,197"
         size: "816,78"
         zPosition: "-1"
     - widget:
         font: "md_headline_medium"
         name: "input"
-        position: "548,332"
+        position: "178,214"
         size: "806,45"
         valign: "center"

@@ -5,13 +5,13 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemHeight: "38"
         name: "infolist"
-        position: "29,96"
+        position: "$window_large_content_x,$window_large_content_y"
         scrollbarMode: "showOnDemand"
         selectionDisabled: "1"
         size: "1696,741"

@@ -1,9 +1,0 @@
-screen:
-  backgroundColor: "md_transparent"
-  name: "myChannelSelection"
-  position: "fill"
-  title: "Select service to add..."
-  children:
-    - xmlinc:
-        file: "screen_CAidSelect.ymlinc"
-        position: "495,136"

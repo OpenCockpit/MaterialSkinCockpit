@@ -6,8 +6,8 @@ screen:
   title: "LCD4linux - Config"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         enableWrapAround: "1"
         font: "md_body_large"
@@ -15,10 +15,10 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menu"
-        position: "515,230"
+        position: "20,94"
         scrollbarMode: "showOnDemand"
         scrollbarSliderBorderColor: "md_primary"
         scrollbarSliderBorderWidth: "1"
         scrollbarSliderForegroundColor: "md_primary"
         scrollbarWidth: "6"
-        size: "889,592"
+        size: "$window_small_content_width,592"

@@ -5,19 +5,19 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "menu"
-        position: "512,215"
+        position: "17,79"
         scrollbarMode: "showNever"
-        size: "889,635"
+        size: "$window_small_content_width,635"
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "menu"
-        position: "512,849"
-        size: "889,25"
+        position: "17,713"
+        size: "$window_small_content_width,25"
         transparent: "1"

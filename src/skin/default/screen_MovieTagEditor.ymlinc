@@ -6,14 +6,14 @@ screen:
   title: "Edit tags"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "list"
-        position: "29,96"
+        position: "$window_large_content_x,$window_large_content_y"
         scrollbarMode: "showNever"
         size: "1670,13*45"
         valign: "center"
@@ -21,6 +21,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "49,861"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"

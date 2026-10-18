@@ -6,11 +6,11 @@ screen:
   title: "Timer Overview"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - eLabel:
         backgroundColor: "md_outline_variant"
-        position: "1240,140"
+        position: "1144,86"
         size: "1,805"
         zPosition: "-5"
     - widget:
@@ -18,7 +18,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "90"
         name: "timerlist"
-        position: "120,145"
+        position: "24,91"
         rowSplit: "45"
         satPosLeft: "250"
         scrollbarMode: "showNever"
@@ -31,7 +31,7 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "timerlist"
-        position: "135,915"
+        position: "39,861"
         size: "1100,25"
         transparent: "1"
     - widget:
@@ -39,7 +39,7 @@ screen:
         font: "md_body_large"
         halign: "block"
         name: "description"
-        position: "1255,160"
-        size: "530,780"
+        position: "1159,106"
+        size: "530,770"
         transparent: "1"
         valign: "center"

@@ -6,9 +6,9 @@ screen:
   title: "TMDb - The Movie Database"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "0,14"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - xmlinc:
         file: "screenpart_tmdbTemplate1Panel.ymlinc"
-        position: "24,0"
-        size: "1690,902"
+        position: "54,107"
+        size: "1660,795"

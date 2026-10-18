@@ -7,4 +7,4 @@ screen:
   children:
     - xmlinc:
         file: "screen_PinInput.ymlinc"
-        position: "370,118"
+        position: "0,0"

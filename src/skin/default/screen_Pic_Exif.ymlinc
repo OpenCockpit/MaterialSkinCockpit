@@ -5,10 +5,10 @@ screen:
   title: "Info"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
-        position: "125,150"
+        position: "$window_large_content_x,$window_large_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         selectionDisabled: "1"
@@ -32,6 +32,6 @@ screen:
         backgroundColor: "md_surface"
         conditional: "menu"
         connection: "menu"
-        position: "145,915"
-        size: "1630,25"
+        position: "$window_large_margin,861"
+        size: "$window_large_inner_width,25"
         transparent: "1"

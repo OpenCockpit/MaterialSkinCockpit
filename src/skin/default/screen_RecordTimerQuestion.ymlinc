@@ -2,7 +2,7 @@ screen:
   backgroundColor: "md_surface"
   flags: "wfNoBorder"
   name: "RecordTimerQuestion"
-  position: "center,center"
+  position: "$screen_center-175,$screen_center-148"
   size: "350,295"
   zPosition: "5"
   children:

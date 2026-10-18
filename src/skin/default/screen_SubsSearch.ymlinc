@@ -5,8 +5,8 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - xmlinc:
         file: "screenpart_SubsSearchPanel.ymlinc"
-        position: "132,165"
+        position: "36,111"

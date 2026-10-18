@@ -6,11 +6,11 @@ screen:
   title: "Network Neighbourhood"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         itemCornerRadius: "$radius_item"
-        position: "405,205"
+        position: "35,87"
         render: "Listbox"
         scrollbarMode: "showOnDemand"
         size: "1110,7*78"
@@ -35,7 +35,7 @@ screen:
     - widget:
         font: "md_body_large"
         halign: "center"
-        position: "405,780"
+        position: "35,662"
         render: "Label"
         size: "1110,34"
         source: "infotext"

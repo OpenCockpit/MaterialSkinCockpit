@@ -5,21 +5,21 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_large"
         halign: "center"
         name: "text"
-        position: "1000,130"
+        position: "630,12"
         size: "400,50"
         zPosition: "1"
     - widget:
         itemCornerRadius: "$radius_item"
-        position: "396,225"
+        position: "26,107"
         render: "Listbox"
         scrollbarMode: "showNever"
-        size: "1130,648"
+        size: "$window_medium_content_width,648"
         source: "list"
         transparent: "0"
         children:
@@ -38,5 +38,6 @@ screen:
                         }
     - widget:
         name: "thumbnail"
-        position: "0,0"
+        origin: "screen"
+        position: "0,3"
         size: "150,108"

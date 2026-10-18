@@ -5,15 +5,15 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_1_1.ymlinc"
-        position: "96,54"
+        file: "screenpart_Window_Large.ymlinc"
+        position: "center"
     - widget:
         backgroundColor: "md_surface"
         font: "md_body_medium"
         halign: "center"
         name: "text"
-        position: "145,730"
-        size: "1620,150"
+        position: "$window_large_margin,676"
+        size: "1620,132"
         valign: "center"
     - widget:
         name: "epglist"

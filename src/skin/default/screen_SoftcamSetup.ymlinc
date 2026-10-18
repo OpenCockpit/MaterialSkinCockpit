@@ -6,16 +6,16 @@ screen:
   size: "1920,1080"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         font: "md_body_medium"
         itemHeight: "45"
         name: "config"
-        position: "514,221"
-        size: "889,150"
+        position: "19,85"
+        size: "$window_small_content_width,150"
     - widget:
         font: "mono_font"
         name: "info"
-        position: "518,383"
-        size: "885,473"
+        position: "23,247"
+        size: "885,464"

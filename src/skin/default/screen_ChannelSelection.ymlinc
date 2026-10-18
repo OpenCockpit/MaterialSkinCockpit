@@ -6,8 +6,12 @@ screen:
   title: "Channel Selection"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full_Big_Pig.ymlinc"
-        position: "0,0"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
+    - xmlinc:
+        file: "screenpart_Pig.ymlinc"
+        position: "1450,95"
+        size: "435,248"
     - eLabel:
         backgroundColor: "md_outline_variant"
         position: "1198,100"
@@ -69,7 +73,7 @@ screen:
         options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
         position: "1230,480"
         render: "COCRunningText"
-        size: "645,310"
+        size: "645,297"
         source: "ServiceEvent"
         transparent: "1"
         valign: "top"
@@ -99,7 +103,7 @@ screen:
         noWrap: "1"
         position: "1230,840"
         render: "NextEpgInfo"
-        size: "645,160"
+        size: "645,132"
         source: "ServiceEvent"
         timeColor: "md_on_surface"
         transparent: "1"
@@ -123,7 +127,7 @@ screen:
         noWrap: "1"
         position: "1230,245"
         render: "Label"
-        size: "200,80"
+        size: "200,58"
         source: "ServiceEvent"
         transparent: "1"
         valign: "bottom"

@@ -6,8 +6,8 @@ screen:
   title: "Select File/Dir..."
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
         enableWrapAround: "1"
         font: "md_body_small"
@@ -15,7 +15,7 @@ screen:
         itemCornerRadius: "$radius_item"
         itemHeight: "35"
         name: "LCDfile"
-        position: "410,230"
+        position: "40,112"
         scrollbarMode: "showOnDemand"
         scrollbarSliderBorderColor: "md_primary"
         scrollbarSliderBorderWidth: "1"
@@ -26,7 +26,7 @@ screen:
         font: "md_body_small"
         foregroundColor: "md_secondary"
         halign: "center"
-        position: "410,820"
+        position: "40,702"
         render: "Label"
         size: "1126,45"
         source: "File"

@@ -6,13 +6,13 @@ screen:
   title: "Language selection"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
-        position: "512,214"
+        position: "17,78"
         render: "Listbox"
         scrollbarMode: "showNever"
-        size: "889,653"
+        size: "$window_small_content_width,653"
         source: "languages"
         children:
           - convert:

@@ -11,8 +11,8 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "center"
-        position: "49,701"
+        position: "$window_large_margin,701"
         render: "Label"
-        size: "1630,100"
+        size: "$window_large_inner_width,100"
         source: "help"
         valign: "center"

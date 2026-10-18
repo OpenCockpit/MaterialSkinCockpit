@@ -5,9 +5,9 @@ screen:
   title: "Service scan"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Window_Full.ymlinc"
-        position: "5,5"
+        file: "screenpart_Window_Full.ymlinc"
+        position: "center"
     - xmlinc:
         file: "screenpart_ServiceScanPanel.ymlinc"
-        position: "40,120"
+        position: "35,115"
         size: "1900,850"

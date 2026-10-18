@@ -3,12 +3,12 @@
     font: "md_title_large"
     foregroundColor: "md_primary"
     name: "searchinfo"
-    position: "30,123"
+    position: "0,2"
     size: "830,40"
 - eLabel:
     backgroundColor: "md_surface"
     cornerRadius: "$radius_panel"
-    position: "$width-342,121"
+    position: "$width-342,0"
     size: "324,484"
     widgetBorderColor: "md_outline_variant"
     widgetBorderWidth: "1"
@@ -16,7 +16,7 @@
     alphatest: "blend"
     cornerRadius: "$radius_panel"
     name: "cover"
-    position: "$width-340,123"
+    position: "$width-340,2"
     size: "320,480"
     zPosition: "100"
 - widget:

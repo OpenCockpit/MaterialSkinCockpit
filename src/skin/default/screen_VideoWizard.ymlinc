@@ -5,8 +5,8 @@ screen:
   children:
     - xmlinc:
         file: "screenpart_WizardPictureLangTemplate.ymlinc"
-        position: "192,86"
-        size: "1590,895"
+        position: "192,136"
+        size: "1590,845"
     - xmlinc:
         file: "screenpart_RemoteControlTemplate.ymlinc"
         position: "1628,236"
@@ -14,7 +14,7 @@ screen:
         font: "md_title_large"
         name: "text"
         position: "202,186"
-        size: "1416,400"
+        size: "1416,369"
         valign: "center"
     - widget:
         alphatest: "on"

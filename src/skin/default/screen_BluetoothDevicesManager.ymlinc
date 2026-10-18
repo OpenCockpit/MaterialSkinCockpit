@@ -5,15 +5,15 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_menu2.ymlinc"
-        position: "495,136"
+        file: "screenpart_Window_Small.ymlinc"
+        position: "center"
     - widget:
         enableWrapAround: "1"
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
         itemHeight: "45"
         name: "devicelist"
-        position: "545,234"
+        position: "50,98"
         scrollbarMode: "showNever"
         size: "860,11*45"
         transparent: "1"
@@ -21,7 +21,7 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "devicelist"
-        position: "545,750"
+        position: "50,614"
         size: "860,25"
         transparent: "1"
     - widget:
@@ -30,7 +30,7 @@ screen:
         foregroundColor: "md_primary"
         halign: "center"
         name: "ConnStatus"
-        position: "545,780"
+        position: "50,644"
         size: "860,75"
         transparent: "1"
         valign: "center"

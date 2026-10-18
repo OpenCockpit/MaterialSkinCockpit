@@ -1,5 +1,5 @@
 - xmlinc:
-    file: "screenpart_Screen_1.ymlinc"
+    file: "screenpart_WindowBase.ymlinc"
     position: "0,0"
 - widget:
     font: "md_body_large"
@@ -27,5 +27,5 @@
     font: "md_title_large"
     name: "epg_description"
     position: "780,100"
-    size: "1110,912"
+    size: "1110,902"
     transparent: "1"

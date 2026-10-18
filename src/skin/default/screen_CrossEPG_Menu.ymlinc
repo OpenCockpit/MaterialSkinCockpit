@@ -5,10 +5,10 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Screen_Menu1.ymlinc"
-        position: "370,118"
+        file: "screenpart_Window_Medium.ymlinc"
+        position: "center"
     - widget:
-        position: "396,210"
+        position: "$window_medium_content_x,$window_medium_content_y"
         render: "Listbox"
         scrollbarMode: "showNever"
         size: "1130,11*60"
@@ -30,6 +30,6 @@ screen:
         addon: "Pager"
         backgroundColor: "md_surface"
         connection: "list"
-        position: "396,849"
-        size: "1130,25"
+        position: "$window_medium_content_x,$window_medium_pager_y"
+        size: "$window_medium_content_width,$window_medium_pager_height"
         transparent: "1"
