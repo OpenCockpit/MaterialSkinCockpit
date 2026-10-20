@@ -136,7 +136,3 @@
       - convert:
           type: "MovieInfo"
           text: "RecordServiceRef"
-- xmlinc:
-    file: "screenpart_BrandLogoTemplate.ymlinc"
-    position: "$width-104,$height-70"
-    size: "54,34"

@@ -88,3 +88,47 @@
           font: "CAID"
           name: "caid_font"
           size: "36"
+
+# the files shared with the plugins (Common) use $md_... for the fonts: here the name of the alias
+- global:
+    name: "md_label_medium"
+    value: "md_label_medium"
+- global:
+    name: "md_body_small"
+    value: "md_body_small"
+- global:
+    name: "md_body_medium"
+    value: "md_body_medium"
+- global:
+    name: "md_body_large"
+    value: "md_body_large"
+- global:
+    name: "md_title_large"
+    value: "md_title_large"
+- global:
+    name: "md_headline_medium"
+    value: "md_headline_medium"
+- global:
+    name: "md_display_small"
+    value: "md_display_small"
+- global:
+    name: "md_display_large"
+    value: "md_display_large"
+- global:
+    name: "md_label_small_emphasized"
+    value: "md_label_small_emphasized"
+- global:
+    name: "md_title_small_emphasized"
+    value: "md_title_small_emphasized"
+- global:
+    name: "md_title_medium_emphasized"
+    value: "md_title_medium_emphasized"
+- global:
+    name: "md_headline_small_emphasized"
+    value: "md_headline_small_emphasized"
+- global:
+    name: "md_headline_large_emphasized"
+    value: "md_headline_large_emphasized"
+- global:
+    name: "md_display_medium_emphasized"
+    value: "md_display_medium_emphasized"

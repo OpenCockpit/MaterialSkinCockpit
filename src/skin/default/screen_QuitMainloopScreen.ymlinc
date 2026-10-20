@@ -6,13 +6,6 @@ screen:
   zPosition: "100"
   children:
     - widget:
-        alphatest: "blend"
-        position: "$screen_center-151,$screen_center-65"
-        render: "BoxLogo"
-        size: "302,65"
-        source: "global.CurrentTime"
-        zPosition: "10"
-    - widget:
         backgroundColor: "md_shadow"
         font: "md_body_large"
         halign: "center"

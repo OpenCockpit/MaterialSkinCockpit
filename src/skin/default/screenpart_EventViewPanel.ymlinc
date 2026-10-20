@@ -123,7 +123,3 @@
       - convert:
           type: "ServiceName"
           text: "Reference"
-- xmlinc:
-    file: "screenpart_BrandLogoTemplate.ymlinc"
-    position: "$width-94,$height-70"
-    size: "74,34"

@@ -17,10 +17,10 @@ parameters:
         value: "22,3"
     - parameter:
         name: "ChoicelistName"
-        value: "72,5,1920,31"
+        value: "72,4,1920,40"
     - parameter:
         name: "ChoicelistNameSingle"
-        value: "15,5,1920,31"
+        value: "15,4,1920,40"
     - parameter:
         name: "ChoicelistIcon"
         value: "15,0,45,47"

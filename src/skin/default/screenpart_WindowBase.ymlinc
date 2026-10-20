@@ -16,4 +16,4 @@ screen:
     - xmlinc:
         file: "screenpart_ButtonsBarTemplate.ymlinc"
         position: "20,$height-68"
-        size: "$width-128,62"
+        size: "$width-40,62"

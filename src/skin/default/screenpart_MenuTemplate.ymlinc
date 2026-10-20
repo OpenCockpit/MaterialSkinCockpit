@@ -17,10 +17,6 @@ screen:
               from skin import setListAnimation  # animation engine, not in every build
           except ImportError:
               setListAnimation = None
-          try:
-              from Components.Renderer.BoxLogo import setLogo as loadLogo
-          except:
-              loadLogo = None
           minWidth = 610
           if "menu_list" not in self:
               radiusItem, edgeValueItem = parseRadius("$radius_item")
@@ -73,21 +69,6 @@ screen:
               
           self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
 
-          if "logo" not in self:
-              self["logo"] = Pixmap()
-              self["logo"].GUIcreate(self.instance)
-              self["logo"].instance.setAlphatest(BT_ALPHABLEND)
-              self["logo"].setZPosition(10)
-              self["logo"].instance.move(ePoint(98,961))
-
-          logoCurrentSize = self["logo"].instance.size()
-          if logoCurrentSize.width() != menu_list_size.width() + 20:
-              self["logo"].instance.resize(eSize(menu_list_size.width() + 20,64))
-
-
-          if callable(loadLogo):
-              loadLogo(self["logo"].instance, "model", menu_list_size.width() + 20, 64, "center")
-              
           if "header" not in self:
               self["header"] = ScreenHeader()
               self["header"].connectRelatedElement("Image,Title,ScreenPath", self)

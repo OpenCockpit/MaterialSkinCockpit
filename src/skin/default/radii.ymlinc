@@ -52,3 +52,24 @@
 - global:
     name: "radius_bar_thick"
     value: "6"
+- global:
+    name: "radius_panel_large"
+    value: "12"
+- global:
+    name: "radius_cover"
+    value: "12"
+- global:
+    name: "radius_cover_large"
+    value: "20"
+- global:
+    name: "radius_chip"
+    value: "4"
+- global:
+    name: "radius_dialog"
+    value: "8"
+- global:
+    name: "radius_tile"
+    value: "48"
+- global:
+    name: "radius_tile_inner"
+    value: "16"

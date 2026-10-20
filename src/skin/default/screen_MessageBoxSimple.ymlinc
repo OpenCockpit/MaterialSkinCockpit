@@ -86,11 +86,6 @@ screen:
           from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
           from Tools.LoadPixmap import LoadPixmap
           from skin import parseRadius, parseColor
-          try:
-              from Components.Renderer.BoxLogo import setLogo as loadLogo
-          except:
-              loadLogo = None
-
           if self.timerRunning:
               titleheight = 0
           else:
@@ -164,10 +159,3 @@ screen:
           self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
           self["tlayer"].instance.move(ePoint(2,47))
           self["tlayer"].setZPosition(-6)
-          self["logo"] = Pixmap()
-          self["logo"].GUIcreate(self.instance)
-          self["logo"].instance.resize(eSize(74,34))
-          self["logo"].instance.move(ePoint(wsizex-94,wsizey-70))
-          self["logo"].instance.setAlphatest(BT_ALPHABLEND)
-          if callable(loadLogo):
-              loadLogo(self["logo"].instance, "brand", 74, 34, "right")

@@ -26,7 +26,6 @@ screen:
           from Components.Pixmap import Pixmap
           from Tools.Directories import resolveFilename, SCOPE_CURRENT_SKIN
           from Tools.LoadPixmap import LoadPixmap
-          from Components.Renderer.BoxLogo import setLogo
 
           pxtlc = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, "Screens/small_tl.png"))
           pxtrc = LoadPixmap(resolveFilename(SCOPE_CURRENT_SKIN, "Screens/small_tr.png"))

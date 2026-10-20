@@ -1,0 +1,21 @@
+- widget:
+    conditional: "data"
+    font: "md_label_medium"
+    name: "data"
+    position: "0,0"
+    size: "0,0"
+- widget:
+    conditional: "list"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "45"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "830,680"
+    transparent: "1"
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    connection: "list"
+    position: "0,677"
+    size: "830,25"
