@@ -15,8 +15,8 @@ screen:
         font: "md_title_large"
         halign: "center"
         name: "date"
-        position: "30,89"
-        size: "1110,41"
+        position: "30,88"
+        size: "1110,43"
         transparent: "1"
         valign: "center"
     - widget:
@@ -87,9 +87,9 @@ screen:
         foregroundColor: "md_primary"
         halign: "left"
         noWrap: "1"
-        position: "1230,390"
+        position: "1230,389"
         render: "Label"
-        size: "645,40"
+        size: "645,43"
         source: "Event"
         transparent: "1"
         children:

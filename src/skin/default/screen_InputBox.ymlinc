@@ -12,7 +12,7 @@ screen:
         font: "md_title_large"
         name: "text"
         position: "$window_medium_content_x,$window_medium_content_y"
-        size: "1110,39"
+        size: "1110,42"
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/vkey_text.png"
@@ -22,6 +22,6 @@ screen:
     - widget:
         font: "md_headline_medium"
         name: "input"
-        position: "178,213"
-        size: "806,48"
+        position: "178,211"
+        size: "806,50"
         valign: "center"

@@ -139,9 +139,9 @@ screen:
         foregroundColor: "md_primary"
         halign: "left"
         noWrap: "1"
-        position: "1230,425"
+        position: "1230,424"
         render: "Label"
-        size: "645,40"
+        size: "645,43"
         source: "ServiceEvent"
         transparent: "1"
         children:

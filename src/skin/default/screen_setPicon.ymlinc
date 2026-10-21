@@ -104,8 +104,8 @@ screen:
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "message"
-        position: "1275,607"
-        size: "150,30"
+        position: "1275,605"
+        size: "150,34"
         valign: "center"
         zPosition: "2"
     - widget:

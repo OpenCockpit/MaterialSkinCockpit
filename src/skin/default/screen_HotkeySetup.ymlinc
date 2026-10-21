@@ -28,6 +28,6 @@ screen:
         font: "md_body_small"
         halign: "center"
         name: "description"
-        position: "1174,952"
-        size: "708,29"
+        position: "1174,950"
+        size: "708,34"
         zPosition: "1"

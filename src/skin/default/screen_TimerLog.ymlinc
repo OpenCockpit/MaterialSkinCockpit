@@ -26,8 +26,8 @@ screen:
         font: "md_title_large"
         halign: "center"
         name: "logentry"
-        position: "50,672"
-        size: "1090,41"
+        position: "50,671"
+        size: "1090,43"
     - widget:
         addon: "Pager"
         backgroundColor: "md_surface"

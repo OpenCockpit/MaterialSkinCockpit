@@ -20,8 +20,8 @@ screen:
         foregroundColor: "md_on_surface"
         halign: "center"
         name: "Linconn"
-        position: "30,707"
-        size: "1050,30"
+        position: "30,705"
+        size: "1050,34"
         transparent: "1"
         valign: "center"
     - xmlinc:

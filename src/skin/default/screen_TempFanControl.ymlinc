@@ -19,9 +19,9 @@ screen:
         font: "md_title_large"
         foregroundColor: "md_on_surface_variant"
         halign: "left"
-        position: "242,1030"
+        position: "242,1029"
         render: "Label"
-        size: "370,41"
+        size: "370,43"
         source: "red"
         transparent: "1"
         zPosition: "2"
@@ -30,9 +30,9 @@ screen:
         font: "md_title_large"
         foregroundColor: "md_on_surface_variant"
         halign: "left"
-        position: "678,1030"
+        position: "678,1029"
         render: "Label"
-        size: "370,41"
+        size: "370,43"
         source: "green"
         transparent: "1"
         zPosition: "2"
@@ -58,9 +58,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,315"
+        position: "930,314"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp0"
         zPosition: "1"
         children:
@@ -80,9 +80,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,345"
+        position: "930,344"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp1"
         zPosition: "1"
         children:
@@ -102,9 +102,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,375"
+        position: "930,374"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp2"
         zPosition: "1"
         children:
@@ -124,9 +124,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,405"
+        position: "930,404"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp3"
         zPosition: "1"
         children:
@@ -146,9 +146,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,435"
+        position: "930,434"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp4"
         zPosition: "1"
         children:
@@ -168,9 +168,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,465"
+        position: "930,464"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp5"
         zPosition: "1"
         children:
@@ -190,9 +190,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,495"
+        position: "930,494"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp6"
         zPosition: "1"
         children:
@@ -212,9 +212,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "930,525"
+        position: "930,524"
         render: "Label"
-        size: "150,33"
+        size: "150,35"
         source: "SensorTemp7"
         zPosition: "1"
         children:
@@ -234,9 +234,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,315"
+        position: "1440,314"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan0"
         zPosition: "1"
         children:
@@ -256,9 +256,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,345"
+        position: "1440,344"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan1"
         zPosition: "1"
         children:
@@ -278,9 +278,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,375"
+        position: "1440,374"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan2"
         zPosition: "1"
         children:
@@ -300,9 +300,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,405"
+        position: "1440,404"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan3"
         zPosition: "1"
         children:
@@ -322,9 +322,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,435"
+        position: "1440,434"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan4"
         zPosition: "1"
         children:
@@ -344,9 +344,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,465"
+        position: "1440,464"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan5"
         zPosition: "1"
         children:
@@ -366,9 +366,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,495"
+        position: "1440,494"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan6"
         zPosition: "1"
         children:
@@ -388,9 +388,9 @@ screen:
     - widget:
         font: "md_body_medium"
         halign: "right"
-        position: "1440,525"
+        position: "1440,524"
         render: "Label"
-        size: "225,33"
+        size: "225,35"
         source: "SensorFan7"
         zPosition: "1"
         children:

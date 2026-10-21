@@ -10,15 +10,15 @@ screen:
     - widget:
         font: "md_title_large"
         name: "model"
-        position: "42,214"
-        size: "1110,41"
+        position: "42,213"
+        size: "1110,43"
     - widget:
         font: "md_title_large"
         name: "capacity"
-        position: "46,367"
-        size: "1110,41"
+        position: "46,366"
+        size: "1110,43"
     - widget:
         font: "md_title_large"
         name: "bus"
-        position: "46,423"
-        size: "1110,41"
+        position: "46,422"
+        size: "1110,43"

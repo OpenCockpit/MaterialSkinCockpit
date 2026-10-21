@@ -15,8 +15,8 @@
 - widget:
     font: "md_body_large"
     name: "label"
-    position: "420,858"
-    size: "390,34"
+    position: "420,856"
+    size: "390,38"
     transparent: "1"
 - widget:
     addon: "Pager"

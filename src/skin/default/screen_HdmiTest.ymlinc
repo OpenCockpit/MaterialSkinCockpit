@@ -39,8 +39,8 @@ screen:
         foregroundColor: "md_success"
         halign: "left"
         name: "ltx"
-        position: "9,689"
-        size: "60,30"
+        position: "9,687"
+        size: "60,34"
         zPosition: "1"
     - widget:
         font: "md_body_small"
@@ -54,8 +54,8 @@ screen:
         foregroundColor: "md_error"
         halign: "left"
         name: "lrx"
-        position: "429,689"
-        size: "60,30"
+        position: "429,687"
+        size: "60,34"
         zPosition: "1"
     - widget:
         font: "md_body_small"

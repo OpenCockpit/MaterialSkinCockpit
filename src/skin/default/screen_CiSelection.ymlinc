@@ -10,8 +10,8 @@ screen:
     - widget:
         font: "md_title_large"
         name: "text"
-        position: "25,84"
-        size: "1100,41"
+        position: "25,83"
+        size: "1100,43"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"

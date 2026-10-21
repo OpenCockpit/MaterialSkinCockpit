@@ -1,8 +1,8 @@
 - widget:
     font: "md_body_large"
     name: "autostart"
-    position: "0,4"
-    size: "150,36"
+    position: "0,3"
+    size: "150,38"
     transparent: "0"
     valign: "center"
 - widget:
@@ -10,8 +10,8 @@
     font: "md_body_large"
     halign: "center"
     name: "labdisabled"
-    position: "160,0"
-    size: "150,36"
+    position: "160,-1"
+    size: "150,38"
     valign: "center"
     zPosition: "1"
 - widget:
@@ -19,15 +19,15 @@
     font: "md_body_large"
     halign: "center"
     name: "labactive"
-    position: "160,0"
-    size: "150,36"
+    position: "160,-1"
+    size: "150,38"
     valign: "center"
     zPosition: "2"
 - widget:
     font: "md_body_large"
     name: "status"
-    position: "420,4"
-    size: "225,36"
+    position: "420,3"
+    size: "225,38"
     transparent: "0"
     valign: "center"
 - widget:
@@ -35,8 +35,8 @@
     font: "md_body_large"
     halign: "center"
     name: "labstop"
-    position: "660,0"
-    size: "150,36"
+    position: "660,-1"
+    size: "150,38"
     valign: "center"
     zPosition: "1"
 - widget:
@@ -44,8 +44,8 @@
     font: "md_body_large"
     halign: "center"
     name: "labrun"
-    position: "660,0"
-    size: "150,36"
+    position: "660,-1"
+    size: "150,38"
     valign: "center"
     zPosition: "2"
 - widget:

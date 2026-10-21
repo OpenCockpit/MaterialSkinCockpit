@@ -16,8 +16,8 @@ screen:
         font: "md_title_large"
         foregroundColor: "md_secondary"
         name: "headertext"
-        position: "25,115"
-        size: "1070,40"
+        position: "25,114"
+        size: "1070,43"
         transparent: "1"
         zPosition: "1"
     - widget:

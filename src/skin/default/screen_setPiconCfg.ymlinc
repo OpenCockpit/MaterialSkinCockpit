@@ -12,6 +12,6 @@ screen:
         font: "md_body_large"
         halign: "center"
         name: "statusbar"
-        position: "$window_large_margin,811"
-        size: "$window_large_inner_width,32"
+        position: "$window_large_margin,808"
+        size: "$window_large_inner_width,38"
         zPosition: "5"

@@ -22,8 +22,8 @@ screen:
         backgroundColor: "md_surface"
         font: "md_headline_medium"
         halign: "center"
-        position: "1149,126"
-        size: "615,48"
+        position: "1149,125"
+        size: "615,50"
         text: "Edit VLC Server"
         transparent: "1"
     - widget:

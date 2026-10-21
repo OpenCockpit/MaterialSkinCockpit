@@ -37,8 +37,8 @@ screen:
     - widget:
         font: "md_body_large"
         name: "statusbar"
-        position: "26,738"
-        size: "1110,34"
+        position: "26,736"
+        size: "1110,38"
     - widget:
         font: "md_body_large"
         name: "status"

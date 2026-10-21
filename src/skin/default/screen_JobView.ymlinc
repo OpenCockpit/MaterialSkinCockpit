@@ -31,9 +31,9 @@ screen:
         font: "md_headline_medium"
         foregroundColor: "md_shadow"
         halign: "center"
-        position: "35,344"
+        position: "35,343"
         render: "Label"
-        size: "1110,48"
+        size: "1110,50"
         source: "job_progress"
         transparent: "1"
         zPosition: "2"
@@ -42,9 +42,9 @@ screen:
               type: "ProgressToText"
     - widget:
         font: "md_title_large"
-        position: "38,454"
+        position: "38,452"
         render: "Label"
-        size: "1110,39"
+        size: "1110,43"
         source: "job_status"
     - widget:
         font: "md_body_medium"

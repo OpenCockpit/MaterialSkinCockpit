@@ -40,9 +40,9 @@ screen:
     - widget:
         font: "md_body_large"
         halign: "center"
-        position: "23,726"
+        position: "23,724"
         render: "Label"
-        size: "$window_medium_content_width,34"
+        size: "$window_medium_content_width,38"
         source: "introduction"
         transparent: "1"
         valign: "center"

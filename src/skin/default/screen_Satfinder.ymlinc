@@ -81,8 +81,8 @@ screen:
     - eLabel:
         backgroundColor: "md_surface_container_highest"
         font: "md_body_small"
-        position: "25,355"
-        size: "180,30"
+        position: "25,353"
+        size: "180,34"
         text: "SNR:"
         transparent: "1"
         zPosition: "5"
@@ -102,8 +102,8 @@ screen:
     - eLabel:
         backgroundColor: "md_surface_container_highest"
         font: "md_body_small"
-        position: "25,535"
-        size: "180,30"
+        position: "25,533"
+        size: "180,34"
         text: "AGC:"
         transparent: "1"
         zPosition: "5"
@@ -123,8 +123,8 @@ screen:
     - eLabel:
         backgroundColor: "md_surface_container_highest"
         font: "md_body_small"
-        position: "25,715"
-        size: "180,30"
+        position: "25,713"
+        size: "180,34"
         text: "BER:"
         transparent: "1"
         zPosition: "5"
@@ -177,9 +177,9 @@ screen:
         conditional: "pos"
         font: "md_headline_medium"
         halign: "right"
-        position: "445,925"
+        position: "445,924"
         render: "FixedLabel"
-        size: "180,48"
+        size: "180,50"
         source: "pos"
         text: "Orb Pos:"
         children:
@@ -191,9 +191,9 @@ screen:
         font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
-        position: "635,925"
+        position: "635,924"
         render: "Label"
-        size: "150,48"
+        size: "150,50"
         source: "pos"
         children:
           - convert:
@@ -202,9 +202,9 @@ screen:
         conditional: "onid"
         font: "md_headline_medium"
         halign: "right"
-        position: "875,925"
+        position: "875,924"
         render: "FixedLabel"
-        size: "180,48"
+        size: "180,50"
         source: "onid"
         text: "ONID:"
         children:
@@ -216,9 +216,9 @@ screen:
         font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
-        position: "1060,925"
+        position: "1060,924"
         render: "Label"
-        size: "150,48"
+        size: "150,50"
         source: "onid"
         children:
           - convert:
@@ -227,9 +227,9 @@ screen:
         conditional: "tsid"
         font: "md_headline_medium"
         halign: "right"
-        position: "1310,925"
+        position: "1310,924"
         render: "FixedLabel"
-        size: "180,48"
+        size: "180,50"
         source: "tsid"
         text: "TSID:"
         children:
@@ -241,9 +241,9 @@ screen:
         font: "md_headline_medium"
         foregroundColor: "md_primary"
         halign: "center"
-        position: "1515,925"
+        position: "1515,924"
         render: "Label"
-        size: "150,48"
+        size: "150,50"
         source: "tsid"
         children:
           - convert:

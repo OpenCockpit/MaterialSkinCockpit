@@ -11,12 +11,12 @@ screen:
         font: "md_title_large"
         name: "text"
         position: "$window_large_content_x,$window_large_content_y"
-        size: "1670,41"
+        size: "1670,43"
     - widget:
         font: "md_title_large"
         name: "target"
-        position: "29,139"
-        size: "1670,41"
+        position: "29,138"
+        size: "1670,43"
         valign: "center"
     - widget:
         name: "filelist"
@@ -28,8 +28,8 @@ screen:
     - widget:
         font: "md_title_large"
         name: "textbook"
-        position: "29,508"
-        size: "1670,41"
+        position: "29,507"
+        size: "1670,43"
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"

@@ -12,7 +12,7 @@ screen:
         halign: "center"
         name: "key"
         position: "$window_medium_content_x,$window_medium_content_y"
-        size: "$window_medium_content_width,35"
+        size: "$window_medium_content_width,38"
         transparent: "1"
         valign: "center"
     - widget:
@@ -80,6 +80,6 @@ screen:
         font: "md_body_medium"
         foregroundColor: "md_on_surface_variant"
         name: "footnote"
-        position: "26,735"
-        size: "$window_medium_content_width,32"
+        position: "26,733"
+        size: "$window_medium_content_width,36"
         valign: "center"

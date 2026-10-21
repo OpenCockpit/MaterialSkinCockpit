@@ -143,7 +143,7 @@ screen:
         halign: "left"
         position: "462,68"
         render: "Label"
-        size: "980,36"
+        size: "980,38"
         source: "session.Event_Now"
         transparent: "1"
         children:
@@ -225,7 +225,7 @@ screen:
         noWrap: "1"
         position: "462,131"
         render: "Label"
-        size: "980,36"
+        size: "980,38"
         source: "session.Event_Next"
         transparent: "1"
         zPosition: "2"

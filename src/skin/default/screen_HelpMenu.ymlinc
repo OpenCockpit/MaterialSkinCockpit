@@ -22,7 +22,7 @@ screen:
         halign: "center"
         name: "long_key"
         position: "1334,746"
-        size: "375,30"
+        size: "375,34"
     - widget:
         conditional: "longshift_key1"
         font: "md_body_small"
@@ -30,15 +30,15 @@ screen:
         halign: "center"
         name: "longshift_key0"
         position: "1334,746"
-        size: "375,30"
+        size: "375,34"
     - widget:
         conditional: "longshift_key1"
         font: "md_body_small"
         foregroundColor: "md_primary"
         halign: "center"
         name: "longshift_key1"
-        position: "1334,776"
-        size: "375,30"
+        position: "1334,780"
+        size: "375,34"
     - xmlinc:
         file: "screenpart_RcPanel.ymlinc"
         position: "1454,221"

@@ -3,8 +3,8 @@
     font: "md_title_large"
     foregroundColor: "md_primary"
     name: "searchinfo"
-    position: "0,2"
-    size: "830,40"
+    position: "0,1"
+    size: "830,42"
 - eLabel:
     backgroundColor: "md_surface"
     cornerRadius: "$radius_panel"

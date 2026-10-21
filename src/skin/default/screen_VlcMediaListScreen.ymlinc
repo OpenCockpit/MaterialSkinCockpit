@@ -27,8 +27,8 @@ screen:
         font: "md_body_large"
         halign: "center"
         name: "filelist_text"
-        position: "24,114"
-        size: "225,35"
+        position: "24,113"
+        size: "225,38"
         transparent: "1"
         zPosition: "4"
     - widget:
@@ -36,8 +36,8 @@ screen:
         font: "md_body_large"
         halign: "center"
         name: "playlist_text"
-        position: "249,114"
-        size: "225,35"
+        position: "249,113"
+        size: "225,38"
         transparent: "1"
         zPosition: "4"
     - eLabel:

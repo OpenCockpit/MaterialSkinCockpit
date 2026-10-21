@@ -63,9 +63,9 @@ screen:
     - widget:
         font: "md_body_large"
         halign: "center"
-        position: "684,821"
+        position: "684,819"
         render: "Label"
-        size: "1110,34"
+        size: "1110,38"
         source: "introduction"
         transparent: "1"
         valign: "center"
