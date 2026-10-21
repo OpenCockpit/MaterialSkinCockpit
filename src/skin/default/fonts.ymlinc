@@ -76,6 +76,16 @@
           font: "Bold"
           name: "md_display_medium_emphasized"
           size: "60"
+      # classic PluginList (PluginDownloadBrowser): 0 = name, 1 = description, height = row height
+      - alias:
+          font: "Regular"
+          height: "80"
+          name: "PluginBrowser0"
+          size: "28"
+      - alias:
+          font: "Regular"
+          name: "PluginBrowser1"
+          size: "20"
       - alias:
           font: "Fixed"
           name: "mono_font"

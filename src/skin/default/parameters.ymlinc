@@ -108,9 +108,25 @@ parameters:
     - parameter:
         name: "ConfigListSeperator"
         value: "500"
+    # rows of the classic PluginList: 80 high, name (28 -> 35) at 6, description (20 -> 26) at 44
+    - parameter:
+        name: "PluginBrowserIcon"
+        value: "10,2,90,76"
+    - parameter:
+        name: "PluginBrowserName"
+        value: "116,6,36"
+    - parameter:
+        name: "PluginBrowserDescr"
+        value: "116,44,28"
     - parameter:
         name: "PluginBrowserDownloadIcon"
-        value: "10,0,90,76"
+        value: "10,2,90,76"
+    - parameter:
+        name: "PluginBrowserDownloadName"
+        value: "116,6,36"
+    - parameter:
+        name: "PluginBrowserDownloadDescr"
+        value: "116,44,28"
     - parameter:
         name: "ScreenParamSeparatorChar"
         value: "*  •  "

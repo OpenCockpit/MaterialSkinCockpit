@@ -19,7 +19,7 @@ screen:
         halign: "center"
         name: "text"
         position: "147,114"
-        size: "1110,75"
+        size: "1110,130"
         transparent: "1"
         valign: "center"
         zPosition: "-1"
