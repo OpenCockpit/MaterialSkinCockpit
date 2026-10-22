@@ -45,7 +45,7 @@ screen:
         scrollbarSliderBorderColor: "md_on_surface"
         scrollbarSliderBorderWidth: "1"
         scrollbarSliderForegroundColor: "md_on_surface_variant"
-        scrollbarWidth: "3"
+        scrollbarWidth: "5"
         serviceEventSeparator: " • "
         serviceInfoFont: "md_body_small"
         serviceNameFont: "md_body_large"

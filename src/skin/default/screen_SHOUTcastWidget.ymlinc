@@ -39,7 +39,7 @@ screen:
         scrollbarSliderBorderColor: "md_primary"
         scrollbarSliderBorderWidth: "1"
         scrollbarSliderForegroundColor: "md_primary"
-        scrollbarWidth: "6"
+        scrollbarWidth: "5"
         size: "1070,726"
         zPosition: "2"
     - widget:

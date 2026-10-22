@@ -20,7 +20,7 @@ screen:
         scrollbarSliderBorderColor: "md_surface_container_lowest"
         scrollbarSliderBorderWidth: "0"
         scrollbarSliderForegroundColor: "md_on_surface_variant"
-        scrollbarWidth: "3"
+        scrollbarWidth: "5"
         size: "860,180"
         transparent: "1"
     - widget:
@@ -44,7 +44,7 @@ screen:
         scrollbarSliderBorderColor: "md_surface_container_lowest"
         scrollbarSliderBorderWidth: "0"
         scrollbarSliderForegroundColor: "md_on_surface_variant"
-        scrollbarWidth: "3"
+        scrollbarWidth: "5"
         size: "$window_small_content_width,320"
         source: "streams"
         transparent: "1"

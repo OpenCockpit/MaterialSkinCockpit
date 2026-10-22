@@ -13,7 +13,7 @@ screen:
         borderWidth: "3"
         font: "md_title_large"
         halign: "center"
-        position: "0,-2"
+        position: "0,0"
         size: "180,43"
         text: "PiP-Zap"
         transparent: "1"

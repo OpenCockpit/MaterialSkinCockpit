@@ -20,7 +20,7 @@ screen:
         scrollbarSliderBorderColor: "md_primary"
         scrollbarSliderBorderWidth: "1"
         scrollbarSliderForegroundColor: "md_primary"
-        scrollbarWidth: "6"
+        scrollbarWidth: "5"
         size: "1126,560"
     - widget:
         font: "md_body_small"

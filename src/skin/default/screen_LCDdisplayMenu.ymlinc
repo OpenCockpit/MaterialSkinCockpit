@@ -20,5 +20,5 @@ screen:
         scrollbarSliderBorderColor: "md_primary"
         scrollbarSliderBorderWidth: "1"
         scrollbarSliderForegroundColor: "md_primary"
-        scrollbarWidth: "6"
+        scrollbarWidth: "5"
         size: "$window_small_content_width,592"

@@ -45,7 +45,7 @@ screen:
         scrollbarSliderBorderColor: "md_surface_container_lowest"
         scrollbarSliderBorderWidth: "0"
         scrollbarSliderForegroundColor: "md_on_surface_variant"
-        scrollbarWidth: "3"
+        scrollbarWidth: "5"
         size: "869,498"
         transparent: "1"
         zPosition: "2"

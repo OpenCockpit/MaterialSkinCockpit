@@ -123,14 +123,21 @@ screen:
           - convert:
               type: "ClockToText"
               text: "Format: %d %B %Y"
-    - widget:
-        backgroundColor: "md_surface_container_highest"
-        cornerRadius: "$radius_bar_thin"
-        foregroundColor: "md_on_surface_variant"
+    - eLabel:
+        backgroundColor: "md_surface_container"
         position: "352,117"
-        render: "Progress"
         size: "1220,4"
+        transparent: "0"
+        zPosition: "4"
+    - widget:
+        alphatest: "blend"
+        cornerRadius: "$radius_bar_thick"
+        foregroundColor: "md_primary"
+        position: "352,113"
+        render: "Progress"
+        size: "1220,12"
         source: "session.Event_Now"
+        transparent: "1"
         zPosition: "5"
         children:
           - convert:
