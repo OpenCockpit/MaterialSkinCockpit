@@ -12,10 +12,6 @@ A Material Design 3 skin in a dark theme.
 
 ![Screenshot](s3.jpg)
 
-## Documentation
-
-The colour concept and the recolouring of the artwork are described in the [MaterialSkinCockpit wiki](https://github.com/OpenCockpit/materialskincockpit/wiki).
-
 ## Installation
 - https://OpenCockpit.github.io/MaterialSkinCockpit
 

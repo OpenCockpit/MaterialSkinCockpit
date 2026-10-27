@@ -154,12 +154,13 @@ screen:
               text: "Name"
     - widget:
         backgroundColor: "md_surface_container_low"
-        font: "md_title_small_emphasized"
+        font: "md_title_medium_emphasized"
         position: "1235,380"
         render: "Label"
         size: "160,30"
         source: "ServiceEvent"
         transparent: "1"
+        valign: "center"
         children:
           - convert:
               nostrip: "1"
@@ -171,9 +172,9 @@ screen:
         borderWidth: "1"
         cornerRadius: "$radius_bar"
         foregroundColor: "md_on_surface_variant"
-        position: "1373,394"
+        position: "1373,380+(30-8)/2"
         render: "Progress"
-        size: "400,6"
+        size: "400,8"
         source: "ServiceEvent"
         zPosition: "6"
         children:
@@ -182,13 +183,14 @@ screen:
               text: "Progress"
     - widget:
         backgroundColor: "md_surface"
-        font: "md_title_small_emphasized"
+        font: "md_title_medium_emphasized"
         halign: "right"
         position: "1795,380"
         render: "Label"
         size: "85,30"
         source: "ServiceEvent"
         transparent: "1"
+        valign: "center"
         zPosition: "2"
         children:
           - convert:
