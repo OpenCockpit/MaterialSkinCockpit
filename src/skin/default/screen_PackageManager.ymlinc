@@ -5,34 +5,11 @@ screen:
   title: "Packet manager"
   children:
     - xmlinc:
-        file: "screenpart_Window_Small.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
-    - widget:
-        itemCornerRadius: "$radius_item"
-        itemHeight: "54"
-        position: "19,85"
-        render: "Listbox"
-        scrollbarMode: "showNever"
-        size: "889,11*54"
-        source: "list"
-        children:
-          - convert:
-              type: "TemplatedMultiContent"
-              text: |
-                        {
-                            "template": [
-                                MultiContentEntryText(pos = (5, 2), size = (829, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-                                                                                                        MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-                                                                                                        MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
-                            ],
-                            "fonts": [parseFont("md_body_small"), parseFont("md_label_medium")],
-                            "itemHeight": 54
-                        }
-    - widget:
-        addon: "Pager"
-        backgroundColor: "md_surface"
-        conditional: "list"
-        connection: "list"
-        position: "19,697"
-        size: "$window_small_content_width,25"
-        transparent: "1"
+        size: "$window_small_width,$window_small_height"
+        window_inset_x: "$window_small_body_x"
+    - xmlinc:
+        file: "screenpart_PackageManagerBody.ymlinc"
+        position: "$window_small_body_x,$window_small_body_y"
+        size: "$window_small_body_width,$window_small_body_height"

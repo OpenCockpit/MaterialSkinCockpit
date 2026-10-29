@@ -5,9 +5,8 @@
     scrollbarMode: "showNever"
     size: "830,656"
     transparent: "1"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "fulldescription"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,687"
     size: "830,25"
+    connection: "fulldescription"

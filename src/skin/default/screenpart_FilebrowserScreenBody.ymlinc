@@ -1,0 +1,4 @@
+- xmlinc:
+    file: "screenpart_FilebrowserScreenPanel.ymlinc"
+    position: "$width-1670,$height-790"
+    size: "1690,902"

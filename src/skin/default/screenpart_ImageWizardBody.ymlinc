@@ -1,0 +1,48 @@
+- widget:
+    font: "md_title_large"
+    name: "text"
+    position: "1059,52"
+    size: "510,495"
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "833,560"
+    render: "Listbox"
+    scrollbarMode: "showOnDemand"
+    size: "735,270"
+    source: "list"
+    children:
+      - convert:
+          type: "StringList"
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "config"
+    position: "96,554"
+    scrollbarMode: "showOnDemand"
+    size: "637,7*$list_item_height_compact"
+    transparent: "1"
+    zPosition: "1"
+- ePixmap:
+    alphatest: "on"
+    pixmap: "buttons/key_red.png"
+    position: "779,391"
+    size: "40,20"
+- widget:
+    font: "md_body_medium"
+    name: "languagetext"
+    position: "829,384"
+    size: "165,34"
+- widget:
+    alphatest: "blend"
+    name: "wizard"
+    position: "780,19"
+    size: "165,261"
+    zPosition: "10"
+- widget:
+    alphatest: "blend"
+    name: "rc"
+    pixmaps: "rc.png,rcold.png"
+    position: "$width-231,47"
+    size: "231,750"
+    zPosition: "10"

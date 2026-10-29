@@ -6,12 +6,11 @@
     scrollbarMode: "showNever"
     size: "770,656"
     transparent: "1"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "fulldescription"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,737"
     size: "770,25"
+    connection: "fulldescription"
 - ePixmap:
     alphatest: "blend"
     pixmap: "/usr/lib/enigma2/python/Plugins/Extensions/tmdb/pic/star.png"

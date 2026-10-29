@@ -7,12 +7,7 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - widget:
-        font: "md_title_large"
-        halign: "center"
-        name: "status"
-        position: "$window_large_margin,808"
-        render: "Label"
-        size: "$window_large_inner_width,43"
-        valign: "center"
-        zPosition: "20"
+    - xmlinc:
+        file: "screenpart_OscamInfoConfigScreenBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

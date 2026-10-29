@@ -1,0 +1,19 @@
+- widget:
+    alphatest: "blend"
+    name: "thn"
+    position: "0,0"
+    size: "390,375"
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "filelist"
+    position: "$width-1220,0"
+    scrollbarMode: "showNever"
+    size: "1220,17*$list_item_height"
+    zPosition: "3"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "420,$height-25"
+    size: "1210,25"
+    connection: "filelist"

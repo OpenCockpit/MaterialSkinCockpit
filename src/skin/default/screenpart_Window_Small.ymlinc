@@ -1,8 +1,0 @@
-screen:
-  frame: "true"
-  name: "Window_Small"
-  children:
-    - xmlinc:
-        file: "screenpart_WindowChrome.ymlinc"
-        position: "0,0"
-        size: "$window_small_width,$window_small_height"

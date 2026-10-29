@@ -1,0 +1,36 @@
+- widget:
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,600"
+    source: "list"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (15, 3), size = (825, 37), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the essid
+                                                                                                    MultiContentEntryText(pos = (15, 39), size = (262, 30), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the interface
+                                                                                                    MultiContentEntryText(pos = (300, 39), size = (262, 30), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the encryption
+                                                                                                    MultiContentEntryText(pos = (600, 3), size = (352, 30), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the signal
+                                                                                                    MultiContentEntryText(pos = (600, 39), size = (352, 30), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the maxrate
+                        ],
+                        "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
+                        "itemHeight": 75
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "20,$height-25"
+    size: "1630,25"
+    connection: "list"
+- widget:
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    position: "20,605"
+    render: "Label"
+    size: "1630,100"
+    source: "info"
+    transparent: "1"
+    valign: "center"

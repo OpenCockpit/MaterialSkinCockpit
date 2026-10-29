@@ -1,0 +1,28 @@
+- widget:
+    font: "md_title_large"
+    name: "title"
+    position: "0,0"
+    size: "900,43"
+- widget:
+    font: "md_title_large"
+    name: "subtitle"
+    position: "0,36"
+    size: "900,43"
+- widget:
+    font: "md_title_large"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "35"
+    name: "entries"
+    position: "0,83"
+    scrollbarMode: "showOnDemand"
+    size: "$width,490"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "entries"
+- widget:
+    font: "md_title_large"
+    name: "bottom"
+    position: "1,585"
+    size: "900,43"

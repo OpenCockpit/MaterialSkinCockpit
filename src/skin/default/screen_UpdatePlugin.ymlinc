@@ -6,35 +6,11 @@ screen:
   title: "Software Update"
   children:
     - xmlinc:
-        file: "screenpart_Window_Medium.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
-    - widget:
-        backgroundColor: "md_surface"
-        font: "md_body_large"
-        foregroundColor: "md_on_surface"
-        position: "26,102"
-        render: "Label"
-        size: "1050,45"
-        source: "package"
-    - widget:
-        backgroundColor: "md_surface"
-        font: "md_body_large"
-        foregroundColor: "md_on_surface"
-        position: "26,177"
-        render: "Label"
-        size: "1050,45"
-        source: "status"
-    - widget:
-        backgroundColor: "md_surface"
-        name: "slider"
-        position: "26,552"
-        size: "1128,20"
-        zPosition: "100"
-    - widget:
-        alphatest: "blend"
-        backgroundColor: "md_surface"
-        foregroundColor: "md_on_surface_variant"
-        name: "activityslider"
-        position: "26,572"
-        size: "1128,6"
-        zPosition: "100"
+        size: "$window_medium_width,$window_medium_height"
+        window_inset_x: "$window_medium_body_x"
+    - xmlinc:
+        file: "screenpart_UpdatePluginBody.ymlinc"
+        position: "$window_medium_body_x,$window_medium_body_y"
+        size: "$window_medium_body_width,$window_medium_body_height"

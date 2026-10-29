@@ -26,6 +26,7 @@ screen:
     - widget:
         backgroundColor: "md_surface"
         font: "md_title_large"
+        foregroundColor: "md_warning"
         halign: "left"
         position: "0,51"
         render: "Label"

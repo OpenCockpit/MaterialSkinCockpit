@@ -7,21 +7,7 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - widget:
-        backgroundColor: "md_surface"
-        font: "md_body_large"
-        foregroundColor: "md_primary"
-        halign: "center"
-        name: "progress"
-        position: "$window_large_margin,808"
-        size: "$window_large_inner_width,38"
-        zPosition: "5"
-    - widget:
-        backgroundColor: "md_surface"
-        font: "md_body_large"
-        foregroundColor: "md_on_surface"
-        halign: "center"
-        name: "post_action"
-        position: "$window_large_margin,676"
-        size: "1620,150"
-        valign: "center"
+    - xmlinc:
+        file: "screenpart_BlindscanStateBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

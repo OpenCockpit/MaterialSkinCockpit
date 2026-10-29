@@ -1,0 +1,47 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,585"
+    source: "list"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (10, 5), size = (950, 35), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+                            MultiContentEntryText(pos = (970, 10), size = (500, 35), font=1, flags = RT_HALIGN_RIGHT, text = 4),
+                            MultiContentEntryPixmapAlphaBlend(pos = (1520, 1), size = (42, 42), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 3),
+                            MultiContentEntryPixmapAlphaBlend(pos = (1572, 12), size = (88, 20), flags = BT_SCALE|BT_KEEP_ASPECT_RATIO, png = 2),
+                        ],
+                        "fonts": [parseFont("md_body_large"), parseFont("md_label_medium")],
+                        "itemHeight": 45
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "20,$height-25"
+    size: "1630,25"
+    connection: "list"
+- widget:
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    objectTypes: "description,StaticText"
+    position: "20,651"
+    render: "Label"
+    size: "1630,66"
+    source: "description"
+    valign: "center"
+- widget:
+    backgroundColor: "md_surface"
+    borderColor: "md_outline"
+    borderWidth: "0"
+    cornerRadius: "$radius_bar"
+    foregroundColor: "md_on_surface_variant"
+    position: "20,605"
+    render: "Progress"
+    size: "1630,6"
+    source: "progress"
+    zPosition: "1"

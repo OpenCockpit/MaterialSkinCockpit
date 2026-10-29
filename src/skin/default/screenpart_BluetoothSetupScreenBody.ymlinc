@@ -1,0 +1,21 @@
+- widget:
+    itemHeight: "$list_item_height"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,13*$list_item_height"
+    source: "deviceList"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (80, 0), size = (1000, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
+                                                                                                MultiContentEntryText(pos = (80, 40), size = (250, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is type
+                                                                                                MultiContentEntryText(pos = (350, 40), size = (400, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2), # index 2 is status
+                                                                                                MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 3), # index 3 is bt_icon
+                        ],
+                        "fonts": [parseFont("md_body_medium") , parseFont("md_body_small")],
+                        "itemHeight": 70
+                    }

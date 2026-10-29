@@ -1,0 +1,12 @@
+- widget:
+    font: "md_title_large"
+    name: "menu"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,450"
+    transparent: "1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "menu"

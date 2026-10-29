@@ -4,63 +4,21 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Full.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
+        size: "$window_full_width,$window_full_height"
+        window_inset_x: "$window_full_body_x"
     - eLabel:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_title_large"
         halign: "left"
         position: "25,2"
-        size: "1830,75"
+        size: "1830,60"
         text: "Welcome..."
         transparent: "1"
         valign: "center"
         zPosition: "1"
-    - widget:
-        font: "md_title_large"
-        name: "text"
-        position: "1085,148"
-        size: "510,495"
-    - widget:
-        itemCornerRadius: "$radius_item"
-        position: "859,656"
-        render: "Listbox"
-        scrollbarMode: "showOnDemand"
-        size: "735,270"
-        source: "list"
-        children:
-          - convert:
-              type: "StringList"
-    - widget:
-        font: "md_body_medium"
-        itemCornerRadius: "$radius_item"
-        itemHeight: "38"
-        name: "config"
-        position: "122,650"
-        scrollbarMode: "showOnDemand"
-        size: "637,270"
-        transparent: "1"
-        zPosition: "1"
-    - ePixmap:
-        alphatest: "on"
-        pixmap: "buttons/key_red.png"
-        position: "805,487"
-        size: "40,20"
-    - widget:
-        font: "md_body_medium"
-        name: "languagetext"
-        position: "855,480"
-        size: "165,34"
-    - widget:
-        alphatest: "blend"
-        name: "wizard"
-        position: "806,115"
-        size: "165,261"
-        zPosition: "10"
-    - widget:
-        alphatest: "blend"
-        name: "rc"
-        pixmaps: "rc.png,rcold.png"
-        position: "1618,143"
-        size: "231,750"
-        zPosition: "10"
+    - xmlinc:
+        file: "screenpart_ImageWizardBody.ymlinc"
+        position: "$window_full_body_x,$window_full_body_y"
+        size: "$window_full_body_width,$window_full_body_height"

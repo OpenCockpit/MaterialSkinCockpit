@@ -1,0 +1,13 @@
+- widget:
+    font: "md_body_medium"
+    itemHeight: "$list_item_height"
+    name: "checkList"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+    valign: "center"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "checkList"

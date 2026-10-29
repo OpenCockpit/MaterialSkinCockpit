@@ -1,0 +1,12 @@
+- widget:
+    font: "mono_font"
+    halign: "left"
+    name: "text"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,754"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "text"

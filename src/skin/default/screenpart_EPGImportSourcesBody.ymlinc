@@ -1,0 +1,18 @@
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+    valign: "center"
+- widget:
+    backgroundColor: "md_surface"
+    connection: "list"
+    pagerBackground: "md_surface"
+    pagerForeground: "md_on_surface"
+    position: "0,$height-25"
+    render: "Pager"
+    size: "$width,25"
+    transparent: "1"

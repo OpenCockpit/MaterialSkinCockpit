@@ -1,0 +1,7 @@
+- widget:
+    font: "md_body_medium"
+    itemHeight: "$list_item_height_compact"
+    name: "list"
+    position: "0,0"
+    size: "$width,16*$list_item_height_compact"
+    valign: "top"

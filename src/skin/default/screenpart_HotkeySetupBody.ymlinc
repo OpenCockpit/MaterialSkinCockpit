@@ -1,0 +1,25 @@
+- xmlinc:
+    file: "screenpart_Pig.ymlinc"
+    position: "$width-435,6"
+    size: "435,248"
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "1130,eval($height/$list_item_height*$list_item_height)"
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "choosen"
+    position: "1153,357"
+    scrollbarMode: "showOnDemand"
+    size: "703,495"
+- widget:
+    font: "md_body_small"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "description"
+    position: "1150,$height-34"
+    size: "708,34"
+    zPosition: "1"

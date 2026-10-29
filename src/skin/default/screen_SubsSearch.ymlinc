@@ -5,8 +5,11 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Large.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
+        size: "$window_large_width,$window_large_height"
+        window_inset_x: "$window_large_body_x"
     - xmlinc:
-        file: "screenpart_SubsSearchPanel.ymlinc"
-        position: "36,111"
+        file: "screenpart_SubsSearchBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

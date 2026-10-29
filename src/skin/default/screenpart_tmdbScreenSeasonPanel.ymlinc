@@ -8,18 +8,17 @@
 - widget:
     conditional: "list"
     itemCornerRadius: "$radius_item"
-    itemHeight: "45"
+    itemHeight: "$list_item_height"
     name: "list"
     position: "0,62"
     scrollbarMode: "showNever"
-    size: "830,315"
+    size: "830,7*$list_item_height"
     transparent: "1"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "list"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,392"
     size: "830,25"
+    connection: "list"
 - widget:
     conditional: "data"
     font: "md_title_large"
@@ -27,12 +26,11 @@
     position: "0,479"
     scrollbarMode: "showNever"
     size: "830,246"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "data"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,749"
     size: "830,25"
+    connection: "data"
 - eLabel:
     backgroundColor: "md_surface"
     cornerRadius: "$radius_panel"

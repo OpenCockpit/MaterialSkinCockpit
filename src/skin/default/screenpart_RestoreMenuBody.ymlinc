@@ -1,0 +1,10 @@
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_body_medium"
+    itemHeight: "$list_item_height"
+    name: "filelist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,12*$list_item_height"
+    transparent: "1"
+    zPosition: "3"

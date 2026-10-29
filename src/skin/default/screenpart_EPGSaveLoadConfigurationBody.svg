@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1690" height="773" viewBox="0 0 1690 773">
+<metadata id="xml2svg-source">{&quot;fragment&quot;: true, &quot;screens&quot;: [{&quot;tag&quot;: &quot;screen&quot;, &quot;attrs&quot;: {&quot;name&quot;: &quot;screenpart_EPGSaveLoadConfigurationBody&quot;, &quot;size&quot;: &quot;1650,705&quot;}, &quot;children&quot;: [{&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;backgroundColor&quot;: &quot;md_surface_overlay_soft&quot;, &quot;font&quot;: &quot;md_body_medium&quot;, &quot;halign&quot;: &quot;left&quot;, &quot;position&quot;: &quot;20,605&quot;, &quot;render&quot;: &quot;Label&quot;, &quot;size&quot;: &quot;1630,100&quot;, &quot;source&quot;: &quot;epgcachelocation&quot;, &quot;transparent&quot;: &quot;1&quot;, &quot;zPosition&quot;: &quot;1&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}], &quot;text&quot;: null}]}</metadata>
+<rect x="0" y="0" width="1690" height="773" fill="#f4f4f4"/>
+<text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_EPGSaveLoadConfigurationBody (1650x705) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_EPGSaveLoadConfigurationBody.ymlinc</tspan></text>
+<g data-screen="0" transform="translate(20,48)">
+<rect x="0" y="0" width="1650" height="705" fill="#ffffff" stroke="#999999" stroke-width="1"/>
+<rect data-ref="0:0" data-src="screenpart_EPGSaveLoadConfigurationBody.ymlinc:1" x="20" y="605" width="1630" height="100" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_EPGSaveLoadConfigurationBody.ymlinc:1
+&lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_medium&quot; halign=&quot;left&quot; position=&quot;20,605&quot; render=&quot;Label&quot; size=&quot;1630,100&quot; source=&quot;epgcachelocation&quot; transparent=&quot;1&quot; zPosition=&quot;1&quot;</title></rect>
+<g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
+<text x="24" y="619"><tspan font-weight="bold">#1</tspan> epgcachelocation (Label)</text>
+</g>
+</g>
+</svg>

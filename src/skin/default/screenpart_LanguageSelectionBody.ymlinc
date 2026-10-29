@@ -1,0 +1,18 @@
+- widget:
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,eval($height/51*51)"
+    source: "languages"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (120, 10), size = (300, 40), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+                            MultiContentEntryPixmap(pos = (20, 6), size = (60, 40), png = 2), # index 2 is the pixmap
+                        ],
+                        "fonts": [parseFont("md_body_medium")],
+                        "itemHeight": 51
+                    }

@@ -17,7 +17,7 @@ screen:
         position: "202,326"
         render: "Listbox"
         scrollbarMode: "showOnDemand"
-        size: "1416,605"
+        size: "1416,12*50"
         source: "languages"
         children:
           - convert:

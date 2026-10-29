@@ -1,0 +1,8 @@
+- widget:
+    font: "md_body_medium"
+    itemHeight: "$list_item_height"
+    name: "hddlist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+    textOffset: "20,5"

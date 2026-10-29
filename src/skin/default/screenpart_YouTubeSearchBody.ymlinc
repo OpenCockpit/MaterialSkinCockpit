@@ -1,0 +1,34 @@
+- widget:
+    font: "md_body_large"
+    halign: "center"
+    itemHeight: "$list_item_height"
+    name: "config"
+    position: "0,15"
+    size: "$width,1*$list_item_height"
+    zPosition: "1"
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,80"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,eval(($height-80)/$list_item_height*$list_item_height)"
+    source: "list"
+    transparent: "0"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos=(15,1), size=(870,45), font=0, flags=RT_HALIGN_LEFT, text=0)
+                        ],
+                        "fonts": [parseFont("md_body_large")],
+                        "itemHeight": 45
+                    }
+- widget:
+    alphatest: "blend"
+    name: "HelpWindow"
+    position: "654,500"
+    size: "1,1"
+    transparent: "1"
+    zPosition: "3"

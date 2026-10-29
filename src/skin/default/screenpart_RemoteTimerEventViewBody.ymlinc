@@ -1,0 +1,28 @@
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    name: "channel"
+    position: "1,444"
+    size: "720,45"
+    transparent: "1"
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    name: "datetime"
+    position: "376,444"
+    size: "345,45"
+    transparent: "1"
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    halign: "right"
+    name: "duration"
+    position: "376,444"
+    size: "345,45"
+    transparent: "1"
+- widget:
+    font: "md_title_large"
+    name: "epg_description"
+    position: "751,4"
+    size: "$width-751,$height-4"
+    transparent: "1"

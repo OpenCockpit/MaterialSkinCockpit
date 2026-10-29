@@ -1,0 +1,36 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,5*112"
+    source: "list"
+    transparent: "1"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (135, 7), size = (975, 39), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                                                                                                    MultiContentEntryText(pos = (135, 49), size = (975, 57), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+                                                                                                    MultiContentEntryPixmapAlphaBlend(pos = (22, 7), size = (72, 72), png = 2), # index 2 is the status pixmap
+                        ],
+                        "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
+                        "itemHeight": 112
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "list"
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "lab1"
+    position: "10,478"
+    size: "1110,38"
+    transparent: "1"
+    valign: "top"
+    zPosition: "1"

@@ -1,0 +1,6 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "bouquetlist"
+    position: "0,0"
+    scrollbarMode: "showOnDemand"
+    size: "$width,$height"

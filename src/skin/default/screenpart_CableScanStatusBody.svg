@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1415" height="337" viewBox="0 0 1415 337">
+<metadata id="xml2svg-source">{&quot;fragment&quot;: true, &quot;screens&quot;: [{&quot;tag&quot;: &quot;screen&quot;, &quot;attrs&quot;: {&quot;name&quot;: &quot;screenpart_CableScanStatusBody&quot;, &quot;size&quot;: &quot;1375,269&quot;}, &quot;children&quot;: [{&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;alphatest&quot;: &quot;on&quot;, &quot;name&quot;: &quot;frontend&quot;, &quot;pixmap&quot;: &quot;icons/scan-c.png&quot;, &quot;position&quot;: &quot;655,30&quot;, &quot;size&quot;: &quot;96,96&quot;, &quot;transparent&quot;: &quot;1&quot;, &quot;zPosition&quot;: &quot;2&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_body_large&quot;, &quot;name&quot;: &quot;scan_state&quot;, &quot;position&quot;: &quot;655,195&quot;, &quot;size&quot;: &quot;720,45&quot;, &quot;transparent&quot;: &quot;1&quot;, &quot;valign&quot;: &quot;center&quot;, &quot;zPosition&quot;: &quot;2&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;borderColor&quot;: &quot;md_on_surface_variant&quot;, &quot;borderWidth&quot;: &quot;2&quot;, &quot;name&quot;: &quot;scan_progress&quot;, &quot;pixmap&quot;: &quot;progress_big.png&quot;, &quot;position&quot;: &quot;655,247&quot;, &quot;size&quot;: &quot;720,22&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}], &quot;text&quot;: null}]}</metadata>
+<rect x="0" y="0" width="1415" height="337" fill="#f4f4f4"/>
+<text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_CableScanStatusBody (1375x269) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_CableScanStatusBody.ymlinc</tspan></text>
+<g data-screen="0" transform="translate(20,48)">
+<rect x="0" y="0" width="1375" height="269" fill="#ffffff" stroke="#999999" stroke-width="1"/>
+<rect data-ref="0:2" data-src="screenpart_CableScanStatusBody.ymlinc:17" x="655" y="247" width="720" height="22" fill="#e15759" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_CableScanStatusBody.ymlinc:17
+&lt;widget&gt; borderColor=&quot;md_on_surface_variant&quot; borderWidth=&quot;2&quot; name=&quot;scan_progress&quot; pixmap=&quot;progress_big.png&quot; position=&quot;655,247&quot; size=&quot;720,22&quot;</title></rect>
+<rect data-ref="0:0" data-src="screenpart_CableScanStatusBody.ymlinc:1" x="655" y="30" width="96" height="96" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_CableScanStatusBody.ymlinc:1
+&lt;widget&gt; alphatest=&quot;on&quot; name=&quot;frontend&quot; pixmap=&quot;icons/scan-c.png&quot; position=&quot;655,30&quot; size=&quot;96,96&quot; transparent=&quot;1&quot; zPosition=&quot;2&quot;</title></rect>
+<rect data-ref="0:1" data-src="screenpart_CableScanStatusBody.ymlinc:9" x="655" y="195" width="720" height="45" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_CableScanStatusBody.ymlinc:9
+&lt;widget&gt; font=&quot;md_body_large&quot; name=&quot;scan_state&quot; position=&quot;655,195&quot; size=&quot;720,45&quot; transparent=&quot;1&quot; valign=&quot;center&quot; zPosition=&quot;2&quot;</title></rect>
+<g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
+<text x="659" y="261"><tspan font-weight="bold">#17</tspan> scan_progress</text>
+<text x="659" y="44"><tspan font-weight="bold">#1</tspan> frontend</text>
+<text x="659" y="209"><tspan font-weight="bold">#9</tspan> scan_state</text>
+</g>
+</g>
+</svg>

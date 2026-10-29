@@ -1,0 +1,4 @@
+- xmlinc:
+    file: "screenpart_tmdbTemplatePanel.ymlinc"
+    position: "25,101"
+    size: "$width-25,$height-101"

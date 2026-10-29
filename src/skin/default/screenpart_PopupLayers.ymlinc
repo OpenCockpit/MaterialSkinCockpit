@@ -1,0 +1,27 @@
+# The surfaces of a popup whose size follows its content (ChoiceBox, MessageBoxSimple): the screen sizes itself in its own
+# applet, this one - included after it - draws the two surfaces of the window into that size, like screenpart_Window.ymlinc does
+# for a window of a fixed size. popup_bottom: how much lower than the screen the bottom of the window is.
+- applet:
+    type: "onLayoutFinish"
+    text: |
+      from enigma import ePoint, eSize
+      from Components.Label import Label
+      from skin import parseRadius, parseColor
+      wsizex = self.instance.size().width()
+      wsizey = self.instance.size().height() - $popup_bottom
+      radiusBLayer, edgeValueBLayer = parseRadius("$radius_window")
+      radiusTLayer, edgeValueTLayer = parseRadius("$radius_window_inner")
+      self["blayer"] = Label()
+      self["blayer"].GUIcreate(self.instance)
+      self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
+      self["blayer"].instance.resize(eSize(wsizex, wsizey))
+      self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+      self["blayer"].instance.move(ePoint(0, 0))
+      self["blayer"].setZPosition(-7)
+      self["tlayer"] = Label()
+      self["tlayer"].GUIcreate(self.instance)
+      self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
+      self["tlayer"].instance.resize(eSize(wsizex - 4, wsizey - $window_popup_header_height - $window_footer_height))
+      self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
+      self["tlayer"].instance.move(ePoint(2, $window_popup_header_height))
+      self["tlayer"].setZPosition(-6)

@@ -1,0 +1,13 @@
+- widget:
+    enableWrapAround: "1"
+    font: "md_body_large"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,608"
+    transparent: "0"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,455"
+    size: "$width,25"
+    connection: "list"

@@ -1,0 +1,4 @@
+- xmlinc:
+    file: "screenpart_ServiceScanPanel.ymlinc"
+    position: "0,19"
+    size: "$width,$height-19"

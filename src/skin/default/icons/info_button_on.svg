@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the selected button of the network test: a ring (md_primary) around the label, drawn over it; radius as radius_item -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="38" viewBox="0 0 300 38">
+  <rect x="1.500" y="1.500" width="297" height="35" rx="6" ry="6" fill="none" stroke="#a8c7fa" stroke-width="3"/>
+</svg>

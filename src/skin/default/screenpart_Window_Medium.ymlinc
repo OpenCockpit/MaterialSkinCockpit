@@ -1,8 +1,0 @@
-screen:
-  frame: "true"
-  name: "Window_Medium"
-  children:
-    - xmlinc:
-        file: "screenpart_WindowChrome.ymlinc"
-        position: "0,0"
-        size: "$window_medium_width,$window_medium_height"

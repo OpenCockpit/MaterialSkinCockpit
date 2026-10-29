@@ -1,0 +1,240 @@
+- widget:
+    borderColor: "md_outline"
+    borderWidth: "1"
+    pixmap: "infobar/bar_big.png"
+    position: "0,34"
+    render: "Progress"
+    size: "$width,75"
+    source: "Frontend"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "SNR"
+- eLabel:
+    backgroundColor: "md_surface_container_highest"
+    borderWidth: "1"
+    font: "md_display_small"
+    position: "7,34"
+    size: "140,75"
+    text: "SNR:"
+    transparent: "1"
+    valign: "center"
+- widget:
+    borderWidth: "1"
+    font: "md_display_small"
+    halign: "right"
+    position: "1522,34"
+    render: "Label"
+    size: "330,75"
+    source: "Frontend"
+    transparent: "1"
+    valign: "center"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "SNR"
+- widget:
+    borderColor: "md_outline"
+    borderWidth: "1"
+    pixmap: "infobar/bar_big.png"
+    position: "0,129"
+    render: "Progress"
+    size: "$width,75"
+    source: "Frontend"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "AGC"
+- eLabel:
+    backgroundColor: "md_surface_container_highest"
+    borderWidth: "1"
+    font: "md_display_small"
+    position: "7,129"
+    size: "150,75"
+    text: "AGC:"
+    transparent: "1"
+    valign: "center"
+- widget:
+    borderWidth: "1"
+    font: "md_display_small"
+    halign: "right"
+    position: "1522,129"
+    render: "Label"
+    size: "330,75"
+    source: "Frontend"
+    transparent: "1"
+    valign: "center"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "AGC"
+- eLabel:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_body_small"
+    position: "0,257"
+    size: "180,34"
+    text: "SNR:"
+    transparent: "1"
+    zPosition: "5"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_display_large"
+    halign: "left"
+    position: "0,289"
+    render: "Label"
+    size: "450,131"
+    source: "Frontend"
+    transparent: "1"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "SNRdB"
+- eLabel:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_body_small"
+    position: "0,437"
+    size: "180,34"
+    text: "AGC:"
+    transparent: "1"
+    zPosition: "5"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_display_large"
+    halign: "left"
+    position: "0,469"
+    render: "Label"
+    size: "450,131"
+    source: "Frontend"
+    transparent: "1"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "AGC"
+- eLabel:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_body_small"
+    position: "0,617"
+    size: "180,34"
+    text: "BER:"
+    transparent: "1"
+    zPosition: "5"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_display_large"
+    halign: "left"
+    position: "0,649"
+    render: "Label"
+    size: "450,131"
+    source: "Frontend"
+    transparent: "1"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "BER"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    font: "md_display_large"
+    foregroundColor: "md_success"
+    halign: "left"
+    position: "0,$height-135"
+    render: "FixedLabel"
+    size: "465,135"
+    source: "Frontend"
+    text: "LOCK"
+    transparent: "1"
+    children:
+      - convert:
+          type: "FrontendInfo"
+          text: "LOCK"
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    enableWrapAround: "1"
+    font: "md_headline_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "49"
+    name: "config"
+    position: "420,$height-643"
+    scrollbarMode: "showOnDemand"
+    size: "$width-420,637"
+    transparent: "1"
+- widget:
+    name: "introduction"
+    position: "0,0"
+    size: "0,0"
+    zPosition: "0"
+- widget:
+    conditional: "pos"
+    font: "md_headline_medium"
+    halign: "right"
+    position: "420,828"
+    render: "FixedLabel"
+    size: "180,50"
+    source: "pos"
+    text: "Orb Pos:"
+    children:
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    conditional: "pos"
+    font: "md_headline_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    position: "610,828"
+    render: "Label"
+    size: "150,50"
+    source: "pos"
+    children:
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    conditional: "onid"
+    font: "md_headline_medium"
+    halign: "right"
+    position: "850,828"
+    render: "FixedLabel"
+    size: "180,50"
+    source: "onid"
+    text: "ONID:"
+    children:
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    conditional: "onid"
+    font: "md_headline_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    position: "1035,828"
+    render: "Label"
+    size: "150,50"
+    source: "onid"
+    children:
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    conditional: "tsid"
+    font: "md_headline_medium"
+    halign: "right"
+    position: "1285,828"
+    render: "FixedLabel"
+    size: "180,50"
+    source: "tsid"
+    text: "TSID:"
+    children:
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    backgroundColor: "md_surface_container_highest"
+    conditional: "tsid"
+    font: "md_headline_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    position: "1490,828"
+    render: "Label"
+    size: "150,50"
+    source: "tsid"
+    children:
+      - convert:
+          type: "ConditionalShowHide"

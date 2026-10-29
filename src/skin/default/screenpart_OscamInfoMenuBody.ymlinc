@@ -1,0 +1,14 @@
+- widget:
+    enableWrapAround: "1"
+    font: "md_title_large"
+    itemHeight: "$list_item_height"
+    name: "mainmenu"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,17*$list_item_height"
+    zPosition: "10"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "mainmenu"

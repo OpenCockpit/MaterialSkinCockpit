@@ -1,0 +1,25 @@
+- widget:
+    font: "md_title_large"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "loglist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height_compact"
+    textOffset: "20,0"
+- eLabel:
+    backgroundColor: "md_outline_variant"
+    position: "0,550"
+    size: "$width,2"
+    zPosition: "-5"
+- widget:
+    font: "md_title_large"
+    halign: "center"
+    name: "logentry"
+    position: "29,579"
+    size: "1090,43"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "5,$height-25"
+    size: "$width-5,25"
+    connection: "loglist"

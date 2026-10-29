@@ -1,0 +1,24 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,5*128"
+    source: "nimlist"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (15, 3), size = (1005, 37), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+                            MultiContentEntryText(pos = (75, 41), size = (945, 84), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+                        ],
+                        "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
+                        "itemHeight": 128
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "10,$height-25"
+    size: "$width-10,25"
+    connection: "nimlist"

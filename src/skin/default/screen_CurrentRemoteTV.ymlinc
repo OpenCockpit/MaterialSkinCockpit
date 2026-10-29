@@ -5,13 +5,11 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Large.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
-    - widget:
-        font: "md_body_large"
-        halign: "center"
-        name: "text"
-        position: "$window_large_content_x,$window_large_content_y"
-        size: "1670,630"
-        valign: "center"
-        zPosition: "1"
+        size: "$window_large_width,$window_large_height"
+        window_inset_x: "$window_large_body_x"
+    - xmlinc:
+        file: "screenpart_CurrentRemoteTVBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

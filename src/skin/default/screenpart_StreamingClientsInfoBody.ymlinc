@@ -1,0 +1,22 @@
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "menu"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+    valign: "center"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "menu"
+- widget:
+    font: "md_body_medium"
+    halign: "center"
+    name: "info"
+    position: "12,3"
+    size: "1110,38"
+    transparent: "1"
+    zPosition: "2"

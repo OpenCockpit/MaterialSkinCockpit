@@ -1,0 +1,85 @@
+- xmlinc:
+    file: "screenpart_Pig.ymlinc"
+    position: "$width-354,4"
+    size: "354,200"
+- widget:
+    backgroundColor: "md_surface"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    setColGap: "40"
+    setColWidths: "120,220"
+    setEventItemFont: "md_title_large"
+    setEventTimeFont: "md_title_large"
+    setIconDistance: "-5"
+    setPboxDistance: "80"
+    setPiconDistance: "0"
+    setPiconSize: "50,30"
+    sidesMargin: "10"
+    size: "1120,19*$list_item_height"
+    transparent: "1"
+- widget:
+    addon: "Pager"
+    connection: "list"
+    position: "0,$height-25"
+    size: "1120,25"
+- eLabel:
+    backgroundColor: "md_outline_variant"
+    position: "1146,9"
+    size: "1,870"
+    zPosition: "-5"
+- widget:
+    font: "md_body_small"
+    foregroundColor: "md_on_surface"
+    halign: "left"
+    position: "1171,258"
+    render: "Label"
+    size: "560,34"
+    source: "Service"
+    transparent: "1"
+    valign: "center"
+    zPosition: "1"
+    children:
+      - convert:
+          type: "TransponderInfo"
+- widget:
+    backgroundColor: "md_surface_overlay_soft"
+    font: "md_body_small"
+    foregroundColor: "md_secondary"
+    halign: "right"
+    position: "1701,257"
+    render: "Label"
+    size: "150,34"
+    source: "Service"
+    transparent: "1"
+    zPosition: "1"
+    children:
+      - convert:
+          type: "ServiceOrbitalPosition"
+- widget:
+    font: "md_body_large"
+    halign: "block"
+    options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
+    position: "1171,308"
+    render: "COCRunningText"
+    size: "680,560"
+    source: "Event"
+    transparent: "1"
+    valign: "top"
+    children:
+      - convert:
+          type: "EventName"
+          text: "FullDescription"
+- widget:
+    alphatest: "blend"
+    position: "1191,49"
+    render: "Picon"
+    size: "220,132"
+    source: "Service"
+    zPosition: "12"
+    children:
+      - convert:
+          type: "ServiceName"
+          text: "Reference"

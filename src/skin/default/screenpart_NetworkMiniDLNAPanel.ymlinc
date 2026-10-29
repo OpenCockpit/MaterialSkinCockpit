@@ -25,6 +25,7 @@
     zPosition: "2"
 - widget:
     font: "md_body_large"
+    foregroundColor: "md_warning"
     name: "status"
     position: "345,4"
     size: "225,45"

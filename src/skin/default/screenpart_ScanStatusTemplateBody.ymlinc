@@ -1,0 +1,15 @@
+- widget:
+    font: "md_body_large"
+    name: "scan_state"
+    position: "0,226"
+    size: "810,70"
+    transparent: "1"
+    valign: "top"
+    zPosition: "2"
+- widget:
+    borderColor: "md_outline"
+    borderWidth: "2"
+    name: "scan_progress"
+    pixmap: "progress_big.png"
+    position: "0,189"
+    size: "810,22"

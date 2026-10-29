@@ -1,0 +1,15 @@
+- widget:
+    colposition: "0"
+    dividechar: ":"
+    font: "mono_font"
+    halign: "block"
+    name: "text"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,754"
+    split: "1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "text"

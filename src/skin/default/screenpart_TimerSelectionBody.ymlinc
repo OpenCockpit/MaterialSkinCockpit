@@ -1,0 +1,17 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "76"
+    name: "timerlist"
+    position: "0,0"
+    rowSplit: "42"
+    satPosLeft: "250"
+    scrollbarMode: "showNever"
+    setEventNameFont: "md_title_large"
+    setFont: "md_body_medium"
+    setServiceNameFont: "md_body_medium"
+    size: "$width,608"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "timerlist"

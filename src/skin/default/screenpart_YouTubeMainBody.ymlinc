@@ -1,0 +1,22 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    position: "0,15"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,eval(($height-15)/108*108)"
+    source: "list"
+    transparent: "0"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryPixmapAlphaTest(pos=(0,0), flags=BT_SCALE, size=(150,108), png=2), # Thumbnail
+                                                                                                    MultiContentEntryText(pos=(165,1), size=(862,78), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=3), # Title
+                                                                                                    MultiContentEntryText(pos=(180,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=4), # Views
+                                                                                                    MultiContentEntryText(pos=(540,75), size=(300,33), font=1, flags=RT_HALIGN_LEFT, text=5), # Duration
+                        ],
+                        "fonts": [parseFont("md_body_large"), parseFont("md_body_small")],
+                        "itemHeight": 108
+                    }

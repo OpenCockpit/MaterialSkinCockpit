@@ -38,7 +38,7 @@ screen:
         backgroundColor: "md_surface"
         enableWrapAround: "1"
         itemCornerRadius: "$radius_item"
-        itemHeight: "45"
+        itemHeight: "$list_item_height"
         name: "list"
         position: "525,330"
         scrollbarMode: "showNever"
@@ -46,7 +46,7 @@ screen:
         scrollbarSliderBorderWidth: "0"
         scrollbarSliderForegroundColor: "md_on_surface_variant"
         scrollbarWidth: "5"
-        size: "869,498"
+        size: "869,11*$list_item_height"
         transparent: "1"
         zPosition: "2"
     - applet:
@@ -91,11 +91,11 @@ screen:
           if descriptionHeight > 0:
               wsizey += 10
           # move and resize elements
-          borderWidth = 2
+          titleMargin = 10
           for titleRenderer in self.renderer:
               if getattr(titleRenderer, "source", None) is self["Title"] and titleRenderer.instance:
-                  titleRenderer.instance.move(ePoint(borderWidth, 3))
-                  titleRenderer.instance.resize(eSize(wsizex - 2 * borderWidth, 40))
+                  titleRenderer.instance.move(ePoint(titleMargin, 3))
+                  titleRenderer.instance.resize(eSize(wsizex - 2 * titleMargin, 40))
           self["description"].move(20, textHeight + textPadding + 60 + offset + 10)
           self["description"].resize(wsizex - 40, descriptionHeight)
           self["list"].move(15, textHeight + textPadding + 60)
@@ -105,20 +105,7 @@ screen:
           # center window
           width, height = getDesktop(0).size().width(), getDesktop(0).size().height()
           wintlcpos = ePoint((width - wsizex) // 2, (height - wsizey) // 2)
-          radiusBLayer, edgeValueBLayer = parseRadius("$radius_window")
-          radiusTLayer, edgeValueTLayer = parseRadius("$radius_window_inner")
           self.instance.move(wintlcpos)
-          self["blayer"] = Label()
-          self["blayer"].GUIcreate(self.instance)
-          self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
-          self["blayer"].instance.resize(eSize(wsizex,wsizey-15))
-          self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
-          self["blayer"].instance.move(ePoint(0,0))
-          self["blayer"].setZPosition(-7)
-          self["tlayer"] = Label()
-          self["tlayer"].GUIcreate(self.instance)
-          self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
-          self["tlayer"].instance.resize(eSize(wsizex-4,wsizey-15-64-45))
-          self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
-          self["tlayer"].instance.move(ePoint(2,47))
-          self["tlayer"].setZPosition(-6)
+    - xmlinc:
+        file: "screenpart_PopupLayers.ymlinc"
+        popup_bottom: "15"

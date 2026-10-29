@@ -7,15 +7,14 @@
 - widget:
     conditional: "list"
     itemCornerRadius: "$radius_item"
-    itemHeight: "45"
+    itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "830,680"
+    size: "830,15*$list_item_height"
     transparent: "1"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "list"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,677"
     size: "830,25"
+    connection: "list"

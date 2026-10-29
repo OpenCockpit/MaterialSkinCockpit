@@ -7,20 +7,7 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - widget:
-        conditional: "entrylist"
-        font: "md_body_medium"
-        itemHeight: "45"
-        name: "entrylist"
-        position: "$window_large_content_x,$window_large_content_y"
-        scrollbarMode: "showNever"
-        size: "1670,13*45"
-        valign: "center"
-    - widget:
-        addon: "Pager"
-        backgroundColor: "md_surface"
-        conditional: "entrylist"
-        connection: "entrylist"
-        position: "$window_large_margin,861"
-        size: "$window_large_inner_width,25"
-        transparent: "1"
+    - xmlinc:
+        file: "screenpart_MSNWeatherPluginSearchBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

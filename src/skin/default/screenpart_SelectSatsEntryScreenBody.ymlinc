@@ -1,0 +1,16 @@
+- widget:
+    name: "list"
+    position: "9,0"
+    scrollbarMode: "showNever"
+    size: "1110,540"
+- widget:
+    font: "md_body_large"
+    halign: "center"
+    name: "hint"
+    position: "9,574"
+    size: "1110,38"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "list"

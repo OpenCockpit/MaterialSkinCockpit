@@ -1,0 +1,14 @@
+- widget:
+    conditional: "entrylist"
+    font: "md_body_medium"
+    itemHeight: "$list_item_height"
+    name: "entrylist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,13*$list_item_height"
+    valign: "center"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "20,765"
+    size: "1630,25"
+    connection: "entrylist"

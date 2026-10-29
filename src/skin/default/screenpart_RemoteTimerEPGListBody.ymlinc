@@ -1,0 +1,14 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    halign: "center"
+    name: "text"
+    position: "0,580"
+    size: "$width,132"
+    valign: "center"
+- widget:
+    name: "epglist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,540"
+    zPosition: "2"

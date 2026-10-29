@@ -1,0 +1,18 @@
+- widget:
+    font: "md_title_large"
+    name: "text"
+    position: "0,0"
+    size: "1100,43"
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "entries"
+    position: "1,44"
+    scrollbarMode: "showOnDemand"
+    size: "$width-1,15*$list_item_height_compact"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "1,$height-25"
+    size: "$width-1,25"
+    connection: "entries"

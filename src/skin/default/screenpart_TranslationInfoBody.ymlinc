@@ -1,0 +1,18 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    halign: "center"
+    position: "0,0"
+    render: "Label"
+    size: "$width,120"
+    source: "TranslatorName"
+    transparent: "1"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    halign: "center"
+    position: "0,121"
+    render: "Label"
+    size: "$width,$height-121"
+    source: "TranslationInfo"
+    transparent: "1"

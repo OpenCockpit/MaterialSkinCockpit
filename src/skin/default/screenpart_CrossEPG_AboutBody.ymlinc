@@ -1,0 +1,6 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    name: "about"
+    position: "0,0"
+    size: "$width,$height"

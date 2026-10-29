@@ -1,0 +1,8 @@
+- widget:
+    enableWrapAround: "1"
+    itemHeight: "$list_item_height"
+    name: "servicelist"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+    transparent: "1"

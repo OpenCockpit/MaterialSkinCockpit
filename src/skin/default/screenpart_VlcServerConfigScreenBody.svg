@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="828" viewBox="0 0 1960 828">
+<metadata id="xml2svg-source">{&quot;fragment&quot;: true, &quot;screens&quot;: [{&quot;tag&quot;: &quot;screen&quot;, &quot;attrs&quot;: {&quot;name&quot;: &quot;screenpart_VlcServerConfigScreenBody&quot;, &quot;size&quot;: &quot;1920,760&quot;}, &quot;children&quot;: [{&quot;tag&quot;: &quot;eLabel&quot;, &quot;attrs&quot;: {&quot;backgroundColor&quot;: &quot;md_surface&quot;, &quot;font&quot;: &quot;md_headline_medium&quot;, &quot;halign&quot;: &quot;center&quot;, &quot;position&quot;: &quot;1305,0&quot;, &quot;size&quot;: &quot;615,50&quot;, &quot;text&quot;: &quot;Edit VLC Server&quot;, &quot;transparent&quot;: &quot;1&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;enableWrapAround&quot;: &quot;1&quot;, &quot;name&quot;: &quot;config&quot;, &quot;position&quot;: &quot;0,1&quot;, &quot;scrollbarMode&quot;: &quot;showNever&quot;, &quot;size&quot;: &quot;1095,735&quot;, &quot;transparent&quot;: &quot;1&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;ePixmap&quot;, &quot;attrs&quot;: {&quot;alphatest&quot;: &quot;blend&quot;, &quot;pixmap&quot;: &quot;MaterialSkinCockpit/icons/db.png&quot;, &quot;position&quot;: &quot;1320,661&quot;, &quot;size&quot;: &quot;600,99&quot;, &quot;transparent&quot;: &quot;1&quot;, &quot;zPosition&quot;: &quot;2&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}], &quot;text&quot;: null}]}</metadata>
+<rect x="0" y="0" width="1960" height="828" fill="#f4f4f4"/>
+<text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_VlcServerConfigScreenBody (1920x760) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_VlcServerConfigScreenBody.ymlinc</tspan></text>
+<g data-screen="0" transform="translate(20,48)">
+<rect x="0" y="0" width="1920" height="760" fill="#ffffff" stroke="#999999" stroke-width="1"/>
+<rect data-ref="0:0" data-src="screenpart_VlcServerConfigScreenBody.ymlinc:1" x="1305" y="0" width="615" height="50" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_VlcServerConfigScreenBody.ymlinc:1
+&lt;eLabel&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_headline_medium&quot; halign=&quot;center&quot; position=&quot;1305,0&quot; size=&quot;615,50&quot; text=&quot;Edit VLC Server&quot; transparent=&quot;1&quot;</title></rect>
+<rect data-ref="0:1" data-src="screenpart_VlcServerConfigScreenBody.ymlinc:9" x="0" y="1" width="1095" height="735" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_VlcServerConfigScreenBody.ymlinc:9
+&lt;widget&gt; enableWrapAround=&quot;1&quot; name=&quot;config&quot; position=&quot;0,1&quot; scrollbarMode=&quot;showNever&quot; size=&quot;1095,735&quot; transparent=&quot;1&quot;</title></rect>
+<rect data-ref="0:2" data-src="screenpart_VlcServerConfigScreenBody.ymlinc:16" x="1320" y="661" width="600" height="99" fill="#e15759" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_VlcServerConfigScreenBody.ymlinc:16
+&lt;ePixmap&gt; alphatest=&quot;blend&quot; pixmap=&quot;MaterialSkinCockpit/icons/db.png&quot; position=&quot;1320,661&quot; size=&quot;600,99&quot; transparent=&quot;1&quot; zPosition=&quot;2&quot;</title></rect>
+<g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
+<text x="1309" y="14"><tspan font-weight="bold">#1</tspan> eLabel</text>
+<text x="4" y="15"><tspan font-weight="bold">#9</tspan> config</text>
+<text x="1324" y="675"><tspan font-weight="bold">#16</tspan> ePixmap</text>
+</g>
+</g>
+</svg>

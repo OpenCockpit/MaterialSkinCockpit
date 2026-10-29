@@ -5,34 +5,11 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Small.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
-    - widget:
-        font: "md_body_medium"
-        itemCornerRadius: "$radius_item"
-        position: "20,98"
-        render: "Listbox"
-        scrollbarMode: "showNever"
-        size: "890,400"
-        source: "menuList"
-        transparent: "1"
-        zPosition: "3"
-        children:
-          - convert:
-              type: "TemplatedMultiContent"
-              text: |
-                        {"templates":
-                                                                                                    {"default": (45, [
-                                                                                                        MultiContentEntryText(pos=(10,0), size=(860,45), font=0, flags=RT_HALIGN_LEFT|RT_VALIGN_CENTER|RT_WRAP, text=0)
-                            ], True, "showNever"),
-                                                                                                    },
-                            "fonts": [parseFont("md_body_medium")],
-                            "itemHeight": 45
-                        }
-    - widget:
-        addon: "Pager"
-        backgroundColor: "md_surface"
-        connection: "menuList"
-        position: "50,288"
-        size: "860,25"
-        transparent: "1"
+        size: "$window_small_width,$window_small_height"
+        window_inset_x: "$window_small_body_x"
+    - xmlinc:
+        file: "screenpart_SubsSupportSettingsBody.ymlinc"
+        position: "$window_small_body_x,$window_small_body_y"
+        size: "$window_small_body_width,$window_small_body_height"

@@ -1,0 +1,45 @@
+- widget:
+    font: "md_title_large"
+    position: "0,36"
+    render: "Label"
+    size: "1110,52"
+    source: "job_name"
+- widget:
+    font: "md_title_large"
+    position: "3,145"
+    render: "Label"
+    size: "$width-3,45"
+    source: "job_task"
+- widget:
+    backgroundColor: "md_primary_container_translucent"
+    borderWidth: "2"
+    position: "3,248"
+    render: "Progress"
+    size: "$width-3,54"
+    source: "job_progress"
+- widget:
+    font: "md_headline_medium"
+    foregroundColor: "md_shadow"
+    halign: "center"
+    position: "0,251"
+    render: "Label"
+    size: "1110,50"
+    source: "job_progress"
+    transparent: "1"
+    zPosition: "2"
+    children:
+      - convert:
+          type: "ProgressToText"
+- widget:
+    font: "md_title_large"
+    position: "3,360"
+    render: "Label"
+    size: "$width-3,43"
+    source: "job_status"
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "config"
+    position: "3,465"
+    size: "$width-3,1*$list_item_height_compact"

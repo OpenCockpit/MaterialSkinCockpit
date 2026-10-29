@@ -8,45 +8,10 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - eLabel:
-        backgroundColor: "md_surface"
-        position: "12,164"
-        size: "1074,690"
-        zPosition: "2"
-    - eLabel:
-        backgroundColor: "md_surface"
-        font: "md_headline_medium"
-        halign: "center"
-        position: "1149,125"
-        size: "615,50"
-        text: "Select a VLC-Server Profile"
-        transparent: "1"
-    - widget:
-        font: "md_body_large"
-        name: "serverlabel"
-        position: "9,96"
-        size: "1080,38"
-        transparent: "1"
-    - eLabel:
-        backgroundColor: "md_surface_container_high"
-        position: "9,161"
-        size: "1080,696"
-        zPosition: "1"
-    - widget:
-        enableWrapAround: "1"
-        name: "serverlist"
-        position: "24,179"
-        scrollbarMode: "showNever"
-        size: "1050,656"
-        transparent: "1"
-        zPosition: "3"
-    - ePixmap:
-        alphatest: "blend"
-        pixmap: "MaterialSkinCockpit/icons/db.png"
-        position: "1149,786"
-        size: "600,99"
-        transparent: "1"
-        zPosition: "2"
+    - xmlinc:
+        file: "screenpart_VlcServerListScreenBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_ok.png"

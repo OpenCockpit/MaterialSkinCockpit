@@ -1,0 +1,143 @@
+- xmlinc:
+    file: "screenpart_Pig.ymlinc"
+    position: "$width-435,9"
+    size: "435,248"
+- eLabel:
+    backgroundColor: "md_outline_variant"
+    position: "1109,14"
+    size: "1,870"
+    zPosition: "-5"
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    setColGap: "40"
+    setColWidths: "120,220"
+    setEventItemFont: "md_title_large"
+    setIconDistance: "10"
+    sidesMargin: "25"
+    size: "1095,19*$list_item_height"
+    transparent: "1"
+- widget:
+    font: "md_title_large"
+    foregroundColor: "md_primary"
+    position: "1134,290"
+    render: "Label"
+    size: "720,43"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventName"
+          text: "Name"
+- widget:
+    font: "md_body_large"
+    halign: "block"
+    options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
+    position: "1133,376"
+    render: "COCRunningText"
+    size: "720,455"
+    source: "Event"
+    transparent: "1"
+    valign: "top"
+    children:
+      - convert:
+          type: "EventName"
+          text: "FullDescription"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    position: "1136,$height-38"
+    render: "Label"
+    size: "330,38"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "StartTime"
+      - convert:
+          type: "ClockToText"
+          text: "ShortDate"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    halign: "right"
+    position: "1327,$height-38"
+    render: "Label"
+    size: "120,38"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "StartTime"
+      - convert:
+          type: "ClockToText"
+          text: "Format:%H:%M"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    halign: "left"
+    position: "1449,$height-38"
+    render: "Label"
+    size: "120,38"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "EndTime"
+      - convert:
+          type: "ClockToText"
+          text: "Format:- %H:%M"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    halign: "left"
+    position: "1633,$height-38"
+    render: "Label"
+    size: "165,38"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "Duration"
+      - convert:
+          type: "ClockToText"
+          text: "InMinutes"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_secondary"
+    halign: "right"
+    position: "1700,$height-38"
+    render: "Label"
+    size: "160,38"
+    source: "Event"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "Duration"
+      - convert:
+          type: "ClockToText"
+          text: "AsLengthHours"
+- widget:
+    alphatest: "blend"
+    position: "1164,64"
+    render: "Picon"
+    size: "200,120"
+    source: "Service"
+    zPosition: "12"
+    children:
+      - convert:
+          type: "ServiceName"
+          text: "Reference"

@@ -1,0 +1,22 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    position: "0,0"
+    render: "Label"
+    size: "0,0"
+    source: "help"
+    transparent: "1"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,16*$list_item_height_compact"
+    source: "history"
+    transparent: "1"
+    children:
+      - convert:
+          type: "StringList"

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="364" viewBox="0 0 850 364">
+<metadata id="xml2svg-source">{&quot;fragment&quot;: true, &quot;screens&quot;: [{&quot;tag&quot;: &quot;screen&quot;, &quot;attrs&quot;: {&quot;name&quot;: &quot;screenpart_ScanStatusTemplateBody&quot;, &quot;size&quot;: &quot;810,296&quot;}, &quot;children&quot;: [{&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_body_large&quot;, &quot;name&quot;: &quot;scan_state&quot;, &quot;position&quot;: &quot;0,226&quot;, &quot;size&quot;: &quot;810,70&quot;, &quot;transparent&quot;: &quot;1&quot;, &quot;valign&quot;: &quot;top&quot;, &quot;zPosition&quot;: &quot;2&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;borderColor&quot;: &quot;md_outline&quot;, &quot;borderWidth&quot;: &quot;2&quot;, &quot;name&quot;: &quot;scan_progress&quot;, &quot;pixmap&quot;: &quot;progress_big.png&quot;, &quot;position&quot;: &quot;0,189&quot;, &quot;size&quot;: &quot;810,22&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}], &quot;text&quot;: null}]}</metadata>
+<rect x="0" y="0" width="850" height="364" fill="#f4f4f4"/>
+<text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_ScanStatusTemplateBody (810x296) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_ScanStatusTemplateBody.ymlinc</tspan></text>
+<g data-screen="0" transform="translate(20,48)">
+<rect x="0" y="0" width="810" height="296" fill="#ffffff" stroke="#999999" stroke-width="1"/>
+<rect data-ref="0:1" data-src="screenpart_ScanStatusTemplateBody.ymlinc:9" x="0" y="189" width="810" height="22" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_ScanStatusTemplateBody.ymlinc:9
+&lt;widget&gt; borderColor=&quot;md_outline&quot; borderWidth=&quot;2&quot; name=&quot;scan_progress&quot; pixmap=&quot;progress_big.png&quot; position=&quot;0,189&quot; size=&quot;810,22&quot;</title></rect>
+<rect data-ref="0:0" data-src="screenpart_ScanStatusTemplateBody.ymlinc:1" x="0" y="226" width="810" height="70" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_ScanStatusTemplateBody.ymlinc:1
+&lt;widget&gt; font=&quot;md_body_large&quot; name=&quot;scan_state&quot; position=&quot;0,226&quot; size=&quot;810,70&quot; transparent=&quot;1&quot; valign=&quot;top&quot; zPosition=&quot;2&quot;</title></rect>
+<g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
+<text x="4" y="203"><tspan font-weight="bold">#9</tspan> scan_progress</text>
+<text x="4" y="240"><tspan font-weight="bold">#1</tspan> scan_state</text>
+</g>
+</g>
+</svg>

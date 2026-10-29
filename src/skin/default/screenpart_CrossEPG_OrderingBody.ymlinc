@@ -1,0 +1,9 @@
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,eval($height/$list_item_height_compact*$list_item_height_compact)"
+    transparent: "1"

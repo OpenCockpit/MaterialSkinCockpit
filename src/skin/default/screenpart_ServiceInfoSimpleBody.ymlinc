@@ -1,0 +1,13 @@
+- widget:
+    font: "md_body_medium"
+    itemHeight: "$list_item_height_compact"
+    name: "infolist"
+    position: "0,0"
+    scrollbarMode: "showOnDemand"
+    selectionDisabled: "1"
+    size: "$width,19*$list_item_height_compact"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "infolist"

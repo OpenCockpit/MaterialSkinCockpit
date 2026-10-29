@@ -1,4 +1,5 @@
 screen:
+  alphaBlend: "1"
   backgroundColor: "md_transparent"
   flags: "wfNoBorder"
   name: "UnhandledKey"

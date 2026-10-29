@@ -1,0 +1,15 @@
+- widget:
+    font: "md_title_large"
+    name: "model"
+    position: "16,121"
+    size: "1110,43"
+- widget:
+    font: "md_title_large"
+    name: "capacity"
+    position: "20,274"
+    size: "$width-20,43"
+- widget:
+    font: "md_title_large"
+    name: "bus"
+    position: "20,330"
+    size: "$width-20,43"

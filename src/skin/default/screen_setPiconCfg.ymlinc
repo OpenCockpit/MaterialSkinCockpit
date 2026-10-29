@@ -7,11 +7,7 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - widget:
-        backgroundColor: "md_surface"
-        font: "md_body_large"
-        halign: "center"
-        name: "statusbar"
-        position: "$window_large_margin,808"
-        size: "$window_large_inner_width,38"
-        zPosition: "5"
+    - xmlinc:
+        file: "screenpart_setPiconCfgBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

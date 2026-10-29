@@ -2,7 +2,7 @@
     position: "8,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "1640,225"
+    size: "1640,6*33"
     source: "search_info"
     transparent: "1"
     zPosition: "3"
@@ -98,10 +98,8 @@
                     "fonts": [parseFont("md_body_small"), parseFont("md_label_medium")],
                     "itemHeight": 40
                 }
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "subtitles"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,750"
     size: "1655,25"
-    transparent: "1"
+    connection: "subtitles"

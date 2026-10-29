@@ -1,0 +1,28 @@
+- xmlinc:
+    file: "screenpart_Pig.ymlinc"
+    position: "$width-354,0"
+    size: "354,200"
+- eLabel:
+    backgroundColor: "md_outline_variant"
+    position: "1175,5"
+    size: "1,$height-5"
+    zPosition: "-5"
+- widget:
+    font: "md_body_large"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "50"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showOnDemand"
+    size: "1110,550"
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_primary"
+    name: "text"
+    position: "0,600"
+    size: "1110,175"
+    valign: "bottom"
+    zPosition: "2"
+- xmlinc:
+    file: "screenpart_FeedsStatusTemplate.ymlinc"
+    position: "$width-690,65"

@@ -1,0 +1,97 @@
+- widget:
+    conditional: "arrowdown"
+    font: "md_body_medium"
+    itemHeight: "$list_item_height_compact"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "1200,20*$list_item_height_compact"
+- widget:
+    conditional: "long_key"
+    font: "md_body_small"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "long_key"
+    position: "$width-375,650"
+    size: "375,34"
+- widget:
+    conditional: "longshift_key1"
+    font: "md_body_small"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "longshift_key0"
+    position: "$width-375,650"
+    size: "375,34"
+- widget:
+    conditional: "longshift_key1"
+    font: "md_body_small"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "longshift_key1"
+    position: "$width-375,684"
+    size: "375,34"
+- xmlinc:
+    file: "screenpart_RcPanel.ymlinc"
+    position: "1425,125"
+    size: "154,500"
+- widget:
+    conditional: "indicatorU0"
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "1300,13*57"
+    source: "list"
+    transparent: "0"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                                                                                                "templates": {
+                                                                                                    # Simple help with no headings ("flat")
+                                                                                                    # data[1:] = [helpText]
+                                                                                                    "default": [
+                                                                                                    57,  # itemHeight
+                                                                                                    [
+                                                                                                    MultiContentEntryText(pos=(0,6), size=(1100,57), font=1, text=1),
+                                                                                                    ]
+                        ],
+                                                                                                    # Simple help with headings
+                                                                                                    # data[1:] = [heading, None]  # For heading entries
+                                                                                                    # data[1:] = [None, helpText]  # For help entries
+                                                                                                    "default+headings": [  # data[1:] = [helpText]
+                                                                                                    57,  # itemHeight
+                                                                                                    [
+                                                                                                    MultiContentEntryText(pos=(0,6), size=(1100,57), font=0, text=1),
+                            MultiContentEntryText(pos=(30,6), size=(1070,57), font=1, text=2),
+                                                                                                    ]
+                                                                                                    ],
+                                                                                                    # Extended help with no headings
+                                                                                                    # data[1:] = [helpText, extendedHelpText]
+                                                                                                    "extended": [
+                                                                                                    86,  # itemHeight
+                                                                                                    [
+                                                                                                    MultiContentEntryText(pos=(0,0), size=(1100,45), font=2, text=1),
+                            MultiContentEntryText(pos=(0,60), size=(1100,40), color="md_on_surface_variant", font=3, text=2),
+                                                                                                    ],
+                                                                                                    ],
+                                                                                                    # Extended help with headings
+                                                                                                    # data[1:] = [heading, None, None]  # For heading entries
+                                                                                                    # data[1:] = [None, helpText, extendedHelpText]  # For help entries
+                                                                                                    "extended+headings": [
+                                                                                                    86,  # itemHeight
+                                                                                                    [
+                                                                                                    MultiContentEntryText(pos=(0,14), size=(1100,48), font=0, text=1),
+                            MultiContentEntryText(pos=(30,0), size=(1070,45), font=2, text=2),
+                            MultiContentEntryText(pos=(30,45), size=(1070,40), color="md_on_surface_variant", font=3, text=3),
+                                                                                                    ],
+                                                                                                    ],
+                                                                                                },
+                        "fonts": [parseFont("md_headline_medium"), parseFont("md_title_large"), parseFont("md_headline_medium"), parseFont("md_headline_medium")],
+                        "itemHeight": 57
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "271,$height-25"
+    size: "1130,25"
+    connection: "list"

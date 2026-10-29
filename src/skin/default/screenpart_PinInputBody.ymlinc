@@ -1,0 +1,24 @@
+- widget:
+    font: "md_title_large"
+    halign: "center"
+    name: "service"
+    position: "16,207"
+    size: "$width-16,43"
+- widget:
+    font: "md_body_large"
+    halign: "center"
+    name: "text"
+    position: "16,275"
+    size: "$width-16,38"
+- widget:
+    font: "md_body_large"
+    halign: "center"
+    name: "tries"
+    position: "17,325"
+    size: "$width-17,38"
+- widget:
+    font: "md_display_small"
+    halign: "center"
+    name: "input"
+    position: "17,399"
+    size: "$width-17,63"

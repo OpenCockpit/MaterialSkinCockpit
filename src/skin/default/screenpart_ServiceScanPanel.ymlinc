@@ -92,17 +92,15 @@
     valign: "center"
 - widget:
     font: "md_body_medium"
-    itemHeight: "45"
+    itemHeight: "$list_item_height"
     name: "servicelist"
     position: "840,0"
     scrollbarMode: "showNever"
     selectionDisabled: "1"
-    size: "1020,800"
+    size: "1020,17*$list_item_height"
     textOffset: "25,5"
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "servicelist"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "840,810"
     size: "1020,25"
-    transparent: "1"
+    connection: "servicelist"

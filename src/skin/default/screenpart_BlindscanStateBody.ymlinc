@@ -1,0 +1,18 @@
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "progress"
+    position: "20,712"
+    size: "1630,38"
+    zPosition: "5"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_large"
+    foregroundColor: "md_on_surface"
+    halign: "center"
+    name: "post_action"
+    position: "20,580"
+    size: "1620,150"
+    valign: "center"

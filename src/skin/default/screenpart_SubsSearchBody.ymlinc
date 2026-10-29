@@ -1,0 +1,3 @@
+- xmlinc:
+    file: "screenpart_SubsSearchPanel.ymlinc"
+    position: "$width-1670,$height-775"

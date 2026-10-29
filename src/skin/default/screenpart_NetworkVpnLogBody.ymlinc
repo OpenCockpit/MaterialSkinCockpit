@@ -1,0 +1,5 @@
+- widget:
+    font: "md_body_small"
+    name: "infotext"
+    position: "0,22"
+    size: "$width,837"

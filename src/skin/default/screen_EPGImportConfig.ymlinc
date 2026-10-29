@@ -6,41 +6,11 @@ screen:
   title: "EPG Import Configuration"
   children:
     - xmlinc:
-        file: "screenpart_Window_Medium.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
-    - widget:
-        font: "md_body_medium"
-        itemCornerRadius: "$radius_item"
-        itemHeight: "45"
-        name: "config"
-        position: "$window_medium_content_x,$window_medium_content_y"
-        scrollbarMode: "showNever"
-        size: "$window_medium_content_width,500"
-        valign: "center"
-    - widget:
-        backgroundColor: "md_surface"
-        connection: "config"
-        pagerBackground: "md_surface"
-        pagerForeground: "md_on_surface"
-        position: "26,612"
-        render: "Pager"
-        size: "$window_medium_content_width,$window_medium_pager_height"
-        transparent: "1"
-    - widget:
-        font: "md_body_large"
-        itemCornerRadius: "$radius_item"
-        itemHeight: "45"
-        name: "description"
-        position: "26,535"
-        size: "0,0"
-        valign: "top"
-    - widget:
-        font: "md_body_large"
-        name: "statusbar"
-        position: "26,736"
-        size: "1110,38"
-    - widget:
-        font: "md_body_large"
-        name: "status"
-        position: "26,652"
-        size: "1110,90"
+        size: "$window_medium_width,$window_medium_height"
+        window_inset_x: "$window_medium_body_x"
+    - xmlinc:
+        file: "screenpart_EPGImportConfigBody.ymlinc"
+        position: "$window_medium_body_x,$window_medium_body_y"
+        size: "$window_medium_body_width,$window_medium_body_height"

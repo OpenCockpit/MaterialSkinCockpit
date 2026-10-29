@@ -1,0 +1,10 @@
+- widget:
+    font: "md_title_large"
+    foregroundColor: "md_warning"
+    halign: "center"
+    name: "status"
+    position: "20,712"
+    render: "Label"
+    size: "1630,43"
+    valign: "center"
+    zPosition: "20"

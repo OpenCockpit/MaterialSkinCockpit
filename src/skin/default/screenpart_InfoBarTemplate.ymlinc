@@ -130,7 +130,6 @@ screen:
         transparent: "0"
         zPosition: "4"
     - widget:
-        alphatest: "blend"
         cornerRadius: "$radius_bar_thick"
         foregroundColor: "md_primary"
         position: "352,115"

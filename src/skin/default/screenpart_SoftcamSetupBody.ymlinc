@@ -1,0 +1,11 @@
+- widget:
+    font: "md_body_medium"
+    itemHeight: "$list_item_height"
+    name: "config"
+    position: "0,0"
+    size: "$width,3*$list_item_height"
+- widget:
+    font: "mono_font"
+    name: "info"
+    position: "4,162"
+    size: "$width-4,464"

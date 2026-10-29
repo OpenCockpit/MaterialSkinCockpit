@@ -1,0 +1,32 @@
+- widget:
+    font: "md_title_large"
+    name: "text"
+    position: "0,0"
+    size: "$width,43"
+- widget:
+    font: "md_title_large"
+    name: "target"
+    position: "0,42"
+    size: "$width,43"
+    valign: "center"
+- widget:
+    name: "filelist"
+    position: "0,40"
+    scrollbarMode: "showOnDemand"
+    selectionDisabled: "1"
+    size: "$width,310"
+    zPosition: "1"
+- widget:
+    font: "md_title_large"
+    name: "textbook"
+    position: "0,411"
+    size: "$width,43"
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height_compact"
+    name: "booklist"
+    position: "7,457"
+    scrollbarMode: "showOnDemand"
+    size: "1656,8*$list_item_height_compact"
+    zPosition: "2"

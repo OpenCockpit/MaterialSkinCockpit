@@ -1,0 +1,8 @@
+- widget:
+    font: "md_title_large"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "CiList"
+    position: "0,0"
+    scrollbarMode: "showOnDemand"
+    size: "$width,eval($height/$list_item_height*$list_item_height)"

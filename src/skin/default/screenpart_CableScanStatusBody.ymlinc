@@ -1,0 +1,23 @@
+- widget:
+    alphatest: "on"
+    name: "frontend"
+    pixmap: "icons/scan-c.png"
+    position: "655,30"
+    size: "96,96"
+    transparent: "1"
+    zPosition: "2"
+- widget:
+    font: "md_body_large"
+    name: "scan_state"
+    position: "655,195"
+    size: "720,45"
+    transparent: "1"
+    valign: "center"
+    zPosition: "2"
+- widget:
+    borderColor: "md_on_surface_variant"
+    borderWidth: "2"
+    name: "scan_progress"
+    pixmap: "progress_big.png"
+    position: "655,247"
+    size: "720,22"

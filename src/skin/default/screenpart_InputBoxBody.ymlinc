@@ -1,0 +1,17 @@
+- widget:
+    font: "md_title_large"
+    name: "text"
+    position: "0,0"
+    size: "$width,42"
+- ePixmap:
+    alphatest: "blend"
+    pixmap: "buttons/vkey_text.png"
+    position: "147,105"
+    size: "816,78"
+    zPosition: "-1"
+- widget:
+    font: "md_headline_medium"
+    name: "input"
+    position: "152,119"
+    size: "806,50"
+    valign: "center"

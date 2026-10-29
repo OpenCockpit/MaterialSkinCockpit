@@ -9,6 +9,8 @@ skin:
     - xmlinc:
         file: "frames.ymlinc"
     - xmlinc:
+        file: "lists.ymlinc"
+    - xmlinc:
         file: "globals.ymlinc"
     - xmlinc:
         file: "colors.ymlinc"

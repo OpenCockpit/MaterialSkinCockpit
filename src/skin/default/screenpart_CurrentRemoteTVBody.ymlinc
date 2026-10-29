@@ -1,0 +1,8 @@
+- widget:
+    font: "md_body_large"
+    halign: "center"
+    name: "text"
+    position: "0,0"
+    size: "$width,630"
+    valign: "center"
+    zPosition: "1"

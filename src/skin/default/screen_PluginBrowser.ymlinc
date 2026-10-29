@@ -5,34 +5,11 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Wide.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "252,111"
-    - widget:
-        itemCornerRadius: "$radius_item"
-        orientation: "orGrid"
-        position: "30,99"
-        render: "COCGridListbox"
-        scrollbarMode: "showNever"
-        size: "1356,580"
-        source: "list"
-        children:
-          - convert:
-              type: "TemplatedMultiContent"
-              text: |
-                        {
-                            "template": [
-                                MultiContentEntryPixmapAlphaBlend(pos = (17, 8), size = (190, 96), png = 3, cornerRadius=$radius_icon, flags = BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_HALIGN_CENTER|BT_VALIGN_CENTER),
-                                MultiContentEntryText(pos = (5, 120), size = (214, 64), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 1),
-                            ],
-                            "fonts": [parseFont("md_body_small")],
-                            "itemHeight": 190,
-                            "itemWidth": 226,
-                            "orientation": "orGrid",
-                        }
-    - widget:
-        addon: "Pager"
-        backgroundColor: "md_surface"
-        connection: "list"
-        position: "144,724"
-        size: "1130,25"
-        transparent: "1"
+        size: "$window_wide_width,$window_wide_height"
+        window_inset_x: "$window_wide_body_x"
+    - xmlinc:
+        file: "screenpart_PluginBrowserBody.ymlinc"
+        position: "$window_wide_body_x,$window_wide_body_y"
+        size: "$window_wide_body_width,$window_wide_body_height"

@@ -7,22 +7,7 @@ screen:
     - xmlinc:
         file: "screenpart_ConfigScreenTemplate.ymlinc"
         position: "0,0"
-    - widget:
-        itemHeight: "45"
-        position: "$window_large_content_x,$window_large_content_y"
-        render: "Listbox"
-        scrollbarMode: "showNever"
-        size: "1670,13*45"
-        source: "deviceList"
-        children:
-          - convert:
-              type: "TemplatedMultiContent"
-              text: |
-                        {
-                            "template": [
-                                MultiContentEntryText(pos = (80, 0), size = (1000, 40), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is Name
-                                                                                                    MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (50, 50), png = 1), # index 1 is bt_icon
-                            ],
-                            "fonts": [parseFont("md_headline_medium"), parseFont("md_body_medium") , parseFont("md_body_small"), parseFont("md_label_medium")],
-                            "itemHeight": 70
-                        }
+    - xmlinc:
+        file: "screenpart_BluetoothDiscoveryScreenBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

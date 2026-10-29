@@ -18,7 +18,7 @@ screen:
         position: "10,500"
         render: "Listbox"
         scrollbarMode: "showOnDemand"
-        size: "1416,295"
+        size: "1416,7*42"
         source: "list"
         children:
           - convert:
@@ -34,10 +34,10 @@ screen:
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
-        itemHeight: "38"
+        itemHeight: "$list_item_height_compact"
         name: "config"
         position: "10,500"
         scrollbarMode: "showOnDemand"
-        size: "1416,295"
+        size: "1416,7*$list_item_height_compact"
         transparent: "1"
         zPosition: "1"

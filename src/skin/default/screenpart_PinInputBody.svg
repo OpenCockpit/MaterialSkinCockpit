@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="530" viewBox="0 0 1960 530">
+<metadata id="xml2svg-source">{&quot;fragment&quot;: true, &quot;screens&quot;: [{&quot;tag&quot;: &quot;screen&quot;, &quot;attrs&quot;: {&quot;name&quot;: &quot;screenpart_PinInputBody&quot;, &quot;size&quot;: &quot;1920,462&quot;}, &quot;children&quot;: [{&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_title_large&quot;, &quot;halign&quot;: &quot;center&quot;, &quot;name&quot;: &quot;service&quot;, &quot;position&quot;: &quot;16,207&quot;, &quot;size&quot;: &quot;1904,43&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_body_large&quot;, &quot;halign&quot;: &quot;center&quot;, &quot;name&quot;: &quot;text&quot;, &quot;position&quot;: &quot;16,275&quot;, &quot;size&quot;: &quot;1904,38&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_body_large&quot;, &quot;halign&quot;: &quot;center&quot;, &quot;name&quot;: &quot;tries&quot;, &quot;position&quot;: &quot;17,325&quot;, &quot;size&quot;: &quot;1903,38&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}, {&quot;tag&quot;: &quot;widget&quot;, &quot;attrs&quot;: {&quot;font&quot;: &quot;md_display_small&quot;, &quot;halign&quot;: &quot;center&quot;, &quot;name&quot;: &quot;input&quot;, &quot;position&quot;: &quot;17,399&quot;, &quot;size&quot;: &quot;1903,63&quot;}, &quot;children&quot;: null, &quot;text&quot;: null}], &quot;text&quot;: null}]}</metadata>
+<rect x="0" y="0" width="1960" height="530" fill="#f4f4f4"/>
+<text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_PinInputBody (1920x462) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_PinInputBody.ymlinc</tspan></text>
+<g data-screen="0" transform="translate(20,48)">
+<rect x="0" y="0" width="1920" height="462" fill="#ffffff" stroke="#999999" stroke-width="1"/>
+<rect data-ref="0:0" data-src="screenpart_PinInputBody.ymlinc:1" x="16" y="207" width="1904" height="43" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PinInputBody.ymlinc:1
+&lt;widget&gt; font=&quot;md_title_large&quot; halign=&quot;center&quot; name=&quot;service&quot; position=&quot;16,207&quot; size=&quot;1904,43&quot;</title></rect>
+<rect data-ref="0:1" data-src="screenpart_PinInputBody.ymlinc:7" x="16" y="275" width="1904" height="38" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PinInputBody.ymlinc:7
+&lt;widget&gt; font=&quot;md_body_large&quot; halign=&quot;center&quot; name=&quot;text&quot; position=&quot;16,275&quot; size=&quot;1904,38&quot;</title></rect>
+<rect data-ref="0:2" data-src="screenpart_PinInputBody.ymlinc:13" x="17" y="325" width="1903" height="38" fill="#e15759" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PinInputBody.ymlinc:13
+&lt;widget&gt; font=&quot;md_body_large&quot; halign=&quot;center&quot; name=&quot;tries&quot; position=&quot;17,325&quot; size=&quot;1903,38&quot;</title></rect>
+<rect data-ref="0:3" data-src="screenpart_PinInputBody.ymlinc:19" x="17" y="399" width="1903" height="63" fill="#76b7b2" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PinInputBody.ymlinc:19
+&lt;widget&gt; font=&quot;md_display_small&quot; halign=&quot;center&quot; name=&quot;input&quot; position=&quot;17,399&quot; size=&quot;1903,63&quot;</title></rect>
+<g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
+<text x="20" y="221"><tspan font-weight="bold">#1</tspan> service</text>
+<text x="20" y="289"><tspan font-weight="bold">#7</tspan> text</text>
+<text x="21" y="339"><tspan font-weight="bold">#13</tspan> tries</text>
+<text x="21" y="413"><tspan font-weight="bold">#19</tspan> input</text>
+</g>
+</g>
+</svg>

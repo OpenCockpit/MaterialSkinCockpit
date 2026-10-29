@@ -5,8 +5,10 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_Window_Large.ymlinc"
+        file: "screenpart_Window.ymlinc"
         position: "center"
+        size: "$window_large_width,$window_large_height"
+        window_inset_x: "$window_large_body_x"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_body_large"
@@ -39,19 +41,7 @@ screen:
         position: "1299,50"
         size: "300,38"
         transparent: "1"
-    - widget:
-        font: "md_body_medium"
-        itemCornerRadius: "$radius_item"
-        itemHeight: "45"
-        name: "entrylist"
-        position: "$window_large_content_x,$window_large_content_y"
-        scrollbarMode: "showNever"
-        size: "1670,13*45"
-        valign: "center"
-    - widget:
-        addon: "Pager"
-        backgroundColor: "md_surface"
-        connection: "entrylist"
-        position: "$window_large_margin,861"
-        size: "$window_large_inner_width,25"
-        transparent: "1"
+    - xmlinc:
+        file: "screenpart_PartnerboxEntriesListConfigScreenBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

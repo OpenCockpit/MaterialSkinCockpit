@@ -1,0 +1,20 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "list"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,610"
+- widget:
+    font: "md_title_large"
+    halign: "center"
+    name: "text"
+    position: "117,15"
+    size: "1110,130"
+    transparent: "1"
+    valign: "center"
+    zPosition: "-1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "114,$height-25"
+    size: "1130,25"
+    connection: "list"

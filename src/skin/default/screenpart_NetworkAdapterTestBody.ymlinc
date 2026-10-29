@@ -1,0 +1,4 @@
+- xmlinc:
+    file: "screenpart_NetworkAdapterTestPanel.ymlinc"
+    position: "49,0"
+    size: "2625,850"

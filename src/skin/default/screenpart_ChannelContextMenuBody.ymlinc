@@ -1,0 +1,12 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "menu"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,14*$list_item_height"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "menu"

@@ -1,0 +1,23 @@
+- widget:
+    position: "0,0"
+    render: "Listbox"
+    scrollbarMode: "showNever"
+    size: "$width,630"
+    source: "list"
+    transparent: "0"
+    children:
+      - convert:
+          type: "TemplatedMultiContent"
+          text: |
+                    {
+                        "template": [
+                            MultiContentEntryText(pos = (18, 0), size = (1060, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+                        ],
+                        "fonts": [parseFont("md_body_medium")],
+                        "itemHeight": 45
+                    }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "list"

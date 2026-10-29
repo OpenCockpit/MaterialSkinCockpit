@@ -1,0 +1,9 @@
+- widget:
+    font: "md_body_large"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "lab1"
+    position: "20,712"
+    size: "1630,38"
+    valign: "center"
+    zPosition: "10"

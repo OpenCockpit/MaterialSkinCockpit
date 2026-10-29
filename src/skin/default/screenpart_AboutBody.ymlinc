@@ -1,0 +1,16 @@
+- widget:
+    backgroundColor: "md_surface"
+    colposition: "0"
+    dividechar: ":"
+    font: "md_body_medium"
+    name: "AboutScrollLabel"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,726"
+    split: "1"
+    zPosition: "2"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "AboutScrollLabel"
