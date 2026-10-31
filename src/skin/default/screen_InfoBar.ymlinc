@@ -7,5 +7,5 @@ screen:
   title: "InfoBar"
   children:
     - xmlinc:
-        file: "screenpart_InfoBarTemplate.ymlinc"
+        file: "screenpart_InfoBar.ymlinc"
         position: "38,862"

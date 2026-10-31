@@ -8,5 +8,5 @@ screen:
         file: "screen_About.ymlinc"
         position: "0,0"
     - xmlinc:
-        file: "screenpart_NetworkStatusTemplate.ymlinc"
+        file: "screenpart_NetworkStatus.ymlinc"
         position: "29,784"

@@ -24,9 +24,9 @@
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "booklist"
     position: "7,457"
     scrollbarMode: "showOnDemand"
-    size: "1656,8*$list_item_height_compact"
+    size: "1656,6*$list_item_height"
     zPosition: "2"

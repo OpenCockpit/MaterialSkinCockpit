@@ -5,7 +5,7 @@
     name: "config"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "$width,10*$list_item_height"
+    size: "$width,13*$list_item_height"
     valign: "center"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
@@ -16,6 +16,6 @@
     font: "md_body_large"
     halign: "center"
     name: "information"
-    position: "0,490"
-    size: "$width,150"
+    position: "20,600"
+    size: "$width-40,132"
     valign: "top"

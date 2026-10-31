@@ -6,7 +6,7 @@ screen:
   title: "EPGSearch Setup"
   children:
     - xmlinc:
-        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        file: "screenpart_ConfigScreen.ymlinc"
         position: "0,0"
     - widget:
         backgroundColor: "md_surface"

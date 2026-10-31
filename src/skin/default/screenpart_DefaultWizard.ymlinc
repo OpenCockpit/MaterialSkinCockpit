@@ -2,11 +2,11 @@ screen:
   name: "DefaultWizard"
   children:
     - xmlinc:
-        file: "screenpart_WizardPictureLangTemplate.ymlinc"
+        file: "screenpart_WizardPictureLang.ymlinc"
         position: "0,50"
         size: "1590,845"
     - xmlinc:
-        file: "screenpart_RemoteControlTemplate.ymlinc"
+        file: "screenpart_RemoteControl.ymlinc"
         position: "1436,150"
     - widget:
         font: "md_title_large"
@@ -34,10 +34,10 @@ screen:
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
-        itemHeight: "$list_item_height_compact"
+        itemHeight: "$list_item_height"
         name: "config"
         position: "10,500"
         scrollbarMode: "showOnDemand"
-        size: "1416,7*$list_item_height_compact"
+        size: "1416,5*$list_item_height"
         transparent: "1"
         zPosition: "1"

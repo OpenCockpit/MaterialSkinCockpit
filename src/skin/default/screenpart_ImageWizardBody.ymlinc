@@ -16,11 +16,11 @@
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "config"
     position: "96,554"
     scrollbarMode: "showOnDemand"
-    size: "637,7*$list_item_height_compact"
+    size: "637,5*$list_item_height"
     transparent: "1"
     zPosition: "1"
 - ePixmap:

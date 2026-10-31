@@ -4,7 +4,7 @@
     position: "0,0"
     render: "COCGridListbox"
     scrollbarMode: "showNever"
-    size: "$width,3*190"
+    size: "$width,4*190"
     source: "list"
     children:
       - convert:
@@ -12,16 +12,16 @@
           text: |
                     {
                         "template": [
-                            MultiContentEntryPixmapAlphaBlend(pos = (17, 8), size = (190, 96), png = 3, cornerRadius=$radius_icon, flags = BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_HALIGN_CENTER|BT_VALIGN_CENTER),
-                            MultiContentEntryText(pos = (5, 120), size = (214, 64), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 1),
+                            MultiContentEntryPixmapAlphaBlend(pos = (24, 8), size = (190, 96), png = 3, cornerRadius=$radius_icon, flags = BT_SCALE|BT_KEEP_ASPECT_RATIO|BT_HALIGN_CENTER|BT_VALIGN_CENTER),
+                            MultiContentEntryText(pos = (5, 120), size = (228, 64), font = 0, flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 1),
                         ],
                         "fonts": [parseFont("md_body_small")],
                         "itemHeight": 190,
-                        "itemWidth": 226,
+                        "itemWidth": 238,
                         "orientation": "orGrid",
                     }
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "114,$height-25"
+    position: "270,$height-25"
     size: "1130,25"
     connection: "list"

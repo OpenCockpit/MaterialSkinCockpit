@@ -6,5 +6,5 @@ screen:
   title: "Second InfoBar"
   children:
     - xmlinc:
-        file: "screenpart_SecondInfoBarTemplate.ymlinc"
+        file: "screenpart_SecondInfoBar.ymlinc"
         position: "96,54"

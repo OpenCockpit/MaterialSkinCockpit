@@ -8,10 +8,10 @@ screen:
   children:
     - widget:
         font: "md_body_medium"
-        itemHeight: "$list_item_height_compact"
+        itemHeight: "$list_item_height"
         name: "config"
         position: "7,7"
-        size: "910,11*$list_item_height_compact"
+        size: "910,9*$list_item_height"
         transparent: "1"
         valign: "center"
         zPosition: "1"

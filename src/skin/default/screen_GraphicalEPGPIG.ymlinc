@@ -8,10 +8,10 @@ screen:
         position: "0,0"
     - widget:
         font: "md_body_medium"
-        itemHeight: "$list_item_height_compact"
+        itemHeight: "$list_item_height"
         name: "bouquetlist"
         position: "1507,75"
         scrollbarMode: "showNever"
-        size: "384,7*$list_item_height_compact"
+        size: "384,5*$list_item_height"
         transparent: "0"
         zPosition: "100"

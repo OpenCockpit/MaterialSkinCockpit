@@ -1,10 +1,10 @@
 - widget:
     backgroundColor: "md_surface_overlay_soft"
     font: "md_body_medium"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
-    size: "1110,7*$list_item_height_compact"
+    size: "1110,5*$list_item_height"
     transparent: "1"
 - eLabel:
     backgroundColor: "md_surface_overlay_soft"

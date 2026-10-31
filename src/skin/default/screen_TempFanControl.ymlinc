@@ -39,11 +39,11 @@ screen:
     - widget:
         font: "md_body_medium"
         itemCornerRadius: "$radius_item"
-        itemHeight: "$list_item_height_compact"
+        itemHeight: "$list_item_height"
         name: "config"
         position: "780,105"
         scrollbarMode: "showOnDemand"
-        size: "1110,4*$list_item_height_compact"
+        size: "1110,3*$list_item_height"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_body_large"

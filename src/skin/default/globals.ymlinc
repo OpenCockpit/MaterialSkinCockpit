@@ -1,4 +1,4 @@
-# the key icons of the button bar (Common/screenpart_ButtonsBarTemplate): in the directory of this skin
+# the key icons of the button bar (Common/screenpart_ButtonsBar): in the directory of this skin
 - global:
     name: "buttons_dir"
     value: "buttons"

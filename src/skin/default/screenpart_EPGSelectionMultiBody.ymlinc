@@ -28,10 +28,10 @@
     transparent: "1"
 - widget:
     backgroundColor: "md_surface"
-    backgroundColorSelected: "md_outline_variant"
+    backgroundColorSelected: "md_inverse_surface"
     borderColor: "md_surface"
     font: "md_title_large"
-    foregroundColorSelected: "md_primary"
+    foregroundColorSelected: "md_inverse_on_surface"
     itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "bouquetlist"

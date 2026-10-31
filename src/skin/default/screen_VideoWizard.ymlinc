@@ -4,11 +4,11 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_WizardPictureLangTemplate.ymlinc"
+        file: "screenpart_WizardPictureLang.ymlinc"
         position: "192,136"
         size: "1590,845"
     - xmlinc:
-        file: "screenpart_RemoteControlTemplate.ymlinc"
+        file: "screenpart_RemoteControl.ymlinc"
         position: "1628,236"
     - widget:
         font: "md_title_large"

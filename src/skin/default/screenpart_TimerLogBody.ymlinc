@@ -1,11 +1,11 @@
 - widget:
     font: "md_title_large"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "loglist"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "$width,14*$list_item_height_compact"
+    size: "$width,11*$list_item_height"
     textOffset: "20,0"
 - eLabel:
     backgroundColor: "md_outline_variant"

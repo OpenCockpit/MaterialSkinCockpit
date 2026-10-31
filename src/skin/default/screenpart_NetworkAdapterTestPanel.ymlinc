@@ -37,7 +37,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_secondary_container"
-    cornerRadius: "$radius_item"
+    cornerRadius: "$radius_panel"
     font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "center"
@@ -80,7 +80,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_secondary_container"
-    cornerRadius: "$radius_item"
+    cornerRadius: "$radius_panel"
     font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "center"
@@ -123,7 +123,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_secondary_container"
-    cornerRadius: "$radius_item"
+    cornerRadius: "$radius_panel"
     font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "center"
@@ -166,7 +166,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_secondary_container"
-    cornerRadius: "$radius_item"
+    cornerRadius: "$radius_panel"
     font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "center"
@@ -209,7 +209,7 @@
     zPosition: "2"
 - widget:
     backgroundColor: "md_secondary_container"
-    cornerRadius: "$radius_item"
+    cornerRadius: "$radius_panel"
     font: "md_body_large"
     foregroundColors: "md_outline,md_on_surface_variant,md_success"
     halign: "center"

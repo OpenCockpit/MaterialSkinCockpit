@@ -1,9 +1,9 @@
 - widget:
     font: "mono_font"
     foregroundColor: "md_on_surface"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "text"
     position: "0,0"
     scrollbarMode: "showOnDemand"
-    size: "$width,eval($height/$list_item_height_compact*$list_item_height_compact)"
+    size: "$width,eval($height/$list_item_height*$list_item_height)"
     transparent: "1"

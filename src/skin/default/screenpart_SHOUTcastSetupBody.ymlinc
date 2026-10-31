@@ -1,9 +1,0 @@
-- widget:
-    font: "md_body_small"
-    itemCornerRadius: "$radius_item"
-    itemHeight: "37"
-    name: "config"
-    position: "0,0"
-    scrollbarMode: "showOnDemand"
-    size: "$width,592"
-    transparent: "1"

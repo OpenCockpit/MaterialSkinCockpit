@@ -1,9 +1,16 @@
 - fonts:
     children:
+      # Roboto, the typeface of Material Design: Regular (400) for the text, Medium (500) for the emphasized styles (labels,
+      # titles), where Material uses 500, not 700. The scale makes the size the same as before: Open Sans at 89 and Roboto
+      # at 90 have the same x-height, and Roboto Medium has the metrics of the Roboto Bold it replaces, so it keeps its 71.
       - font:
-          filename: "OpenSans-Regular.ttf"
+          filename: "fonts/Roboto-Regular.ttf"
           name: "Regular"
-          scale: "89"
+          scale: "90"
+      - font:
+          filename: "fonts/Roboto-Medium.ttf"
+          name: "Medium"
+          scale: "71"
       - font:
           filename: "Roboto-Bold.ttf"
           name: "Bold"
@@ -53,27 +60,27 @@
           name: "md_display_large"
           size: "108"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_label_small_emphasized"
           size: "18"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_title_small_emphasized"
           size: "28"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_title_medium_emphasized"
           size: "30"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_headline_small_emphasized"
           size: "36"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_headline_large_emphasized"
           size: "42"
       - alias:
-          font: "Bold"
+          font: "Medium"
           name: "md_display_medium_emphasized"
           size: "60"
       # classic PluginList (PluginDownloadBrowser): 0 = name, 1 = description, height = row height

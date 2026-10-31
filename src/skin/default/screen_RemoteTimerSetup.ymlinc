@@ -5,5 +5,5 @@ screen:
   title: "Timer entry"
   children:
     - xmlinc:
-        file: "screenpart_ConfigScreenTemplate.ymlinc"
+        file: "screenpart_ConfigScreen.ymlinc"
         position: "0,0"

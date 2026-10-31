@@ -23,9 +23,9 @@
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "list"
     position: "0,380"
     scrollbarMode: "showOnDemand"
-    size: "$width,4*$list_item_height_compact"
+    size: "$width,3*$list_item_height"
     valign: "center"

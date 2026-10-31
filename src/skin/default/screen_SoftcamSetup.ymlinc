@@ -8,9 +8,9 @@ screen:
     - xmlinc:
         file: "screenpart_Window.ymlinc"
         position: "center"
-        size: "$window_small_width,$window_small_height"
-        window_inset_x: "$window_small_body_x"
+        size: "$window_large_width,$window_large_height"
+        window_inset_x: "$window_large_body_x"
     - xmlinc:
         file: "screenpart_SoftcamSetupBody.ymlinc"
-        position: "$window_small_body_x,$window_small_body_y"
-        size: "$window_small_body_width,$window_small_body_height"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

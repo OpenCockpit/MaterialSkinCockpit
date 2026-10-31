@@ -5,7 +5,7 @@ screen:
   position: "fill"
   children:
     - xmlinc:
-        file: "screenpart_MenuTemplate.ymlinc"
+        file: "screenpart_Menu.ymlinc"
         position: "0,0"
     - ePixmap:
         alphatest: "blend"

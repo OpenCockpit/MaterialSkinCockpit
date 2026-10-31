@@ -68,7 +68,7 @@ skin:
         file: "screen_GraphMultiEPGList.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_ConfigScreenTemplate.ymlinc"
+        body: "screenpart_ConfigScreen.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:
@@ -178,11 +178,22 @@ skin:
               name: "MovieListTags"
           - screen:
               name: "VuplusKexec"
+          - screen:
+              name: "SHOUTcastSetup"
+              title: "SHOUTcast Setup"
+          - screen:
+              name: "HdmiTestOptions"
+          - screen:
+              name: "TranscodingSetup"
+              title: "Transcoding Setup"
+          - screen:
+              name: "EPGImportProfile"
+              title: "EPG Import Profile"
     - xmlinc:
         file: "screen_SelectBouquet.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_MenuTemplate.ymlinc"
+        body: "screenpart_Menu.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:
@@ -201,7 +212,7 @@ skin:
     - xmlinc:
         file: "screen_MenuSort.ymlinc"
     - xmlinc:
-        file: "screen_ScanStatusTemplate.ymlinc"
+        file: "screen_ScanStatus.ymlinc"
     - xmlinc:
         file: "screen_ServiceScan.ymlinc"
     - xmlinc:
@@ -230,7 +241,7 @@ skin:
         file: "screen_VideoMode.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_ConfigScreenTemplate.ymlinc"
+        body: "screenpart_ConfigScreen.ymlinc"
         position: "fill"
         children:
           - screen:
@@ -460,8 +471,6 @@ skin:
     - xmlinc:
         file: "screen_EPGImportConfig.ymlinc"
     - xmlinc:
-        file: "screen_EPGImportProfile.ymlinc"
-    - xmlinc:
         file: "screen_EPGImportSources.ymlinc"
     - xmlinc:
         file: "screen_EPGImportLog.ymlinc"
@@ -528,8 +537,6 @@ skin:
     - xmlinc:
         file: "screen_RemoteTimerScreen.ymlinc"
     - xmlinc:
-        file: "screen_TranscodingSetup.ymlinc"
-    - xmlinc:
         file: "screen_AutoBouquetsMaker_Setup.ymlinc"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_Menu.ymlinc"
@@ -584,7 +591,7 @@ skin:
         file: "screen_IMDbSetup.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_tmdbTemplate2.ymlinc"
+        body: "screenpart_tmdb2.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:
@@ -601,7 +608,7 @@ skin:
     - xmlinc:
         file: "screen_tmdbScreenMovie.ymlinc"
     - xmlinc:
-        file: "screen_tmdbTemplate.ymlinc"
+        file: "screen_tmdb.ymlinc"
     - xmlinc:
         file: "screen_Dish.ymlinc"
     - xmlinc:
@@ -624,8 +631,6 @@ skin:
         file: "screen_HdmiTest.ymlinc"
     - xmlinc:
         file: "screen_HdmiTestInfoScreen.ymlinc"
-    - xmlinc:
-        file: "screen_HdmiTestOptions.ymlinc"
     - xmlinc:
         file: "screen_YouTubeMain.ymlinc"
     - xmlinc:
@@ -654,8 +659,6 @@ skin:
         file: "screen_LCDdisplayFile.ymlinc"
     - xmlinc:
         file: "screen_SHOUTcastWidget.ymlinc"
-    - xmlinc:
-        file: "screen_SHOUTcastSetup.ymlinc"
     - xmlinc:
         file: "screen_SHOUTcastStreamripperRecordingPath.ymlinc"
     - xmlinc:
@@ -718,7 +721,7 @@ skin:
         file: "screen_NetworkuShare.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_VixListTemplate.ymlinc"
+        body: "screenpart_VixList.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:
@@ -750,7 +753,7 @@ skin:
         file: "screen_VIXSoftcamManager.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
-        body: "screenpart_SoftcamSpinnerTemplate.ymlinc"
+        body: "screenpart_SoftcamSpinner.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:

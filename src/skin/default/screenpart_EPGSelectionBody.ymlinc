@@ -9,7 +9,7 @@
     zPosition: "-5"
 - widget:
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height"
+    itemHeight: "52"
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"
@@ -18,8 +18,13 @@
     setEventItemFont: "md_title_large"
     setIconDistance: "10"
     sidesMargin: "25"
-    size: "1095,19*$list_item_height"
+    size: "1095,16*52"
     transparent: "1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "1095,25"
+    connection: "list"
 - widget:
     font: "md_title_large"
     foregroundColor: "md_primary"

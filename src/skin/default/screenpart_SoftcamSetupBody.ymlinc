@@ -8,4 +8,4 @@
     font: "mono_font"
     name: "info"
     position: "4,162"
-    size: "$width-4,464"
+    size: "$width-4,$height-162"

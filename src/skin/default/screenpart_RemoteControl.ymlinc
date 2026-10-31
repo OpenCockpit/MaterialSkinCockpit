@@ -1,0 +1,7 @@
+screen:
+  name: "RemoteControl"
+  children:
+    - xmlinc:
+        file: "screenpart_RcPanel.ymlinc"
+        position: "0,0"
+        size: "154,500"

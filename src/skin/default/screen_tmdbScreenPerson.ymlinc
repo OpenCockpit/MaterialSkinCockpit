@@ -6,7 +6,7 @@ screen:
   title: "TMDb - The Movie Database - Actor"
   children:
     - xmlinc:
-        file: "screenpart_tmdbTemplate1.ymlinc"
+        file: "screenpart_tmdb1.ymlinc"
         position: "0,0"
     - xmlinc:
         file: "screenpart_tmdbScreenPersonPanel.ymlinc"

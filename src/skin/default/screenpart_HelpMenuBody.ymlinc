@@ -1,11 +1,11 @@
 - widget:
     conditional: "arrowdown"
     font: "md_body_medium"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "1200,20*$list_item_height_compact"
+    size: "1200,16*$list_item_height"
 - widget:
     conditional: "long_key"
     font: "md_body_small"

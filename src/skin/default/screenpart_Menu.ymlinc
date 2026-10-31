@@ -1,0 +1,119 @@
+screen:
+  name: "Menu"
+  children:
+    - applet:
+        type: "onContentChanged"
+        text: |
+          from enigma import ePoint, eSize, getDesktop, gRGB, BT_ALPHABLEND
+          from Components.Label import Label
+          from Components.Pixmap import Pixmap
+          from Components.Addons.Pager import Pager
+          from Components.Addons.ScreenHeader import ScreenHeader
+          from Components.Addons.MainMenu import MainMenu as MainMenuAddon
+          from Tools.Directories import resolveFilename, fileExists, SCOPE_CURRENT_SKIN
+          from Tools.LoadPixmap import LoadPixmap
+          from skin import parseRadius, parseColor, parseFont, menuicons, parameters
+          try:
+              from skin import setListAnimation  # animation engine, not in every build
+          except ImportError:
+              setListAnimation = None
+          # the menu window has a fixed width, whatever its entries: the list is 26 px narrower than the window (the frame
+          # around it). The list sizes itself between its minimum and maximum width, so both are the same.
+          menuWidth = 700
+          minWidth = menuWidth - 26
+          if "menu_list" not in self:
+              radiusItem, edgeValueItem = parseRadius("$radius_item")
+              self["menu_list"] = MainMenuAddon()
+              self["menu_list"].connectRelatedElement("menu", self)
+              self["menu_list"].GUIcreate(self.instance)
+              self["menu_list"].instance.move(ePoint(108, 140))
+              self["menu_list"].instance.resize(eSize(minWidth, 754))
+              font = parseFont("md_title_large", ((1, 1), (1, 1)))
+              self["menu_list"].font = font
+              self["menu_list"].l.setFont(0, font)
+              self["menu_list"].setMinWidth(str(minWidth))
+              self["menu_list"].setMaxWidth(str(minWidth))
+              self["menu_list"].setIconSize("48")
+              self["menu_list"].setForegroundColor("md_on_surface")
+              self["menu_list"].setForegroundColorSelected("md_inverse_on_surface")
+              self["menu_list"].setItemHeight("58")
+              # The selected item is the inverse pill (windowstyle); its icon is the filled one, <name>_selected.svg next to
+              # the outlined icon of the menu, in the dark colour of the pill. The list builds a row whenever it paints it,
+              # so the row that is selected at that moment is the one that gets the filled icon.
+              # An applet runs as exec(code, globals(), locals()): a function defined here does not see the names of the
+              # applet (its imports, menuList), so everything it uses is bound as a default argument.
+              menuList = self["menu_list"]
+              def selectedIcon(key, cache={}, menuicons=menuicons, parameters=parameters, resolveFilename=resolveFilename,
+                               skinScope=SCOPE_CURRENT_SKIN, fileExists=fileExists, LoadPixmap=LoadPixmap):
+                  if key not in cache:
+                      icon = None
+                      path = menuicons.get(key, menuicons.get("default", ""))
+                      if path.endswith(".svg"):
+                          path = resolveFilename(skinScope, path[:-4] + "_selected.svg")
+                          if fileExists(path):
+                              icon = LoadPixmap(path, cached=True, width=parameters.get("MenuIconSize", (50, 50))[0], height=0)
+                      cache[key] = icon
+                  return cache[key]
+              def buildSelectedRow(*item, menuList=menuList, buildRow=menuList.buildEntry, selectedIcon=selectedIcon):
+                  if len(item) >= 6 and item[5]:
+                      rows = menuList.source.list
+                      # the selection is source.index, which the list sets when it changes (MainMenu.selectionChanged); not
+                      # instance.getCurrentIndex(): painting moves the cursor of the list onto each row in turn, so it
+                      # is the row that is painted, and every row would get the filled icon
+                      index = menuList.source.index or 0
+                      if 0 <= index < len(rows) and rows[index][2] == item[2] and rows[index][0] == item[0]:
+                          icon = selectedIcon(item[2])
+                          if icon:
+                              item = item[:5] + (icon,) + item[6:]
+                  return buildRow(*item)
+              menuList.l.setBuildFunc(buildSelectedRow)
+              self["menu_list"].instance.setItemCornerRadius(radiusItem, edgeValueItem)
+              self["menu_list"].instance.setWrapAround(True)
+              if setListAnimation:
+                  setListAnimation(self["menu_list"].instance, self.skinName, {"name": "menu_list", "render": "Listbox"})
+              
+          menu_list_size = self["menu_list"].instance.size()
+              
+          radiusBLayer, edgeValueBLayer = parseRadius("$radius_window")
+          radiusTLayer, edgeValueTLayer = parseRadius("$radius_window_inner")
+
+          if "blayer" not in self:
+              self["blayer"] = Label()
+              self["blayer"].GUIcreate(self.instance)
+              self["blayer"].instance.setCornerRadius(radiusBLayer, edgeValueBLayer)
+              self["blayer"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+              self["blayer"].instance.move(ePoint(96,54))
+              self["blayer"].setZPosition(-7)
+          self["blayer"].instance.resize(eSize(menu_list_size.width() + 26,972))
+
+          if "tlayer" not in self:
+              self["tlayer"] = Label()
+              self["tlayer"].GUIcreate(self.instance)
+              self["tlayer"].instance.setCornerRadius(radiusTLayer, edgeValueTLayer)
+              self["tlayer"].instance.setBackgroundColor(parseColor("md_surface"))
+              self["tlayer"].instance.move(ePoint(98,120))
+              self["tlayer"].setZPosition(-6)
+          self["tlayer"].instance.resize(eSize(menu_list_size.width() + 22,840))
+
+          if "pager" not in self:
+              self["pager"] = Pager()
+              self["pager"].connectRelatedElement("menu", self)
+              self["pager"].GUIcreate(self.instance)
+              self["pager"].instance.move(ePoint(108, 907))
+              
+          self["pager"].instance.resize(eSize(menu_list_size.width(), 25))
+
+          if "header" not in self:
+              self["header"] = ScreenHeader()
+              self["header"].connectRelatedElement("Image,Title,ScreenPath", self)
+              self["header"].GUIcreate(self.instance)
+              self["header"].instance.setBackgroundColor(parseColor("md_surface_container_high"))
+              self["header"].instance.move(ePoint(108,56))
+              self["header"].titleForeground = parseColor("md_primary").argb()
+              self["header"].pathForeground = parseColor("md_primary").argb()
+              self["header"].backgroundColor = parseColor("md_surface_container_high").argb()
+              self["header"].l.setFont(0, parseFont("md_title_small_emphasized", ((1, 1), (1, 1))))
+              self["header"].l.setFont(1, parseFont("md_label_small_emphasized", ((1, 1), (1, 1))))
+              self["header"].l.setFont(2, parseFont("md_headline_large_emphasized", ((1, 1), (1, 1))))
+          self["header"].instance.resize(eSize(menu_list_size.width() - 10,60))
+          self["header"].onContainerShown()

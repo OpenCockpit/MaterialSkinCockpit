@@ -7,7 +7,7 @@ screen:
   title: "InfoBar"
   children:
     - xmlinc:
-        file: "screenpart_PlayerTemplate.ymlinc"
+        file: "screenpart_Player.ymlinc"
         position: "38,860"
     - widget:
         backgroundColor: "md_transparent"

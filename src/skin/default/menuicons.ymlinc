@@ -7,7 +7,7 @@ menuicons:
         image: "menu/a_setup.svg"
         key: "a_setup"
     - menuicon:
-        image: "menu/animation_setup.png"
+        image: "menu/animation_setup.svg"
         key: "animation_setup"
     - menuicon:
         image: "menu/audio_icon.svg"
@@ -148,7 +148,7 @@ menuicons:
         image: "menu/network_tools.svg"
         key: "netservices"
     - menuicon:
-        image: "menu/osd_video_audio_selection.png"
+        image: "menu/osd_video_audio_selection.svg"
         key: "osd_video_audio_selection"
     - menuicon:
         image: "menu/parental_setup.svg"
@@ -408,3 +408,117 @@ menuicons:
     - menuicon:
         image: "menu/recovery.svg"
         key: "maintenance_mode"
+    - menuicon:
+        image: "menu/swaps.svg"
+        key: "swaps_screen"
+    - menuicon:
+        image: "menu/swaps.svg"
+        key: "swap_manager"
+    - menuicon:
+        image: "menu/backup_manager.svg"
+        key: "backup_manager"
+    - menuicon:
+        image: "menu/image_manager.svg"
+        key: "image_manager"
+    - menuicon:
+        image: "menu/mounts.svg"
+        key: "mount_manager"
+    - menuicon:
+        image: "menu/ipkg_install.svg"
+        key: "ipkg_install"
+    - menuicon:
+        image: "menu/script_runner.svg"
+        key: "script_runner"
+    - menuicon:
+        image: "menu/sd_card.svg"
+        key: "h9sdcard_manager"
+    - menuicon:
+        image: "menu/sd_card.svg"
+        key: "H9SDswap"
+    - menuicon:
+        image: "menu/multiboot.svg"
+        key: "recovery_multiboot"
+    - menuicon:
+        image: "menu/other.svg"
+        key: "recovery_other"
+    - menuicon:
+        image: "menu/update.svg"
+        key: "softwareupdatemenu"
+    - menuicon:
+        image: "menu/fcc.svg"
+        key: "FCCSetup"
+    - menuicon:
+        image: "menu/download.svg"
+        key: "OpentvZapper_Setup"
+    - menuicon:
+        image: "menu/auto_scan.svg"
+        key: "cablescan"
+    - menuicon:
+        image: "menu/fastscan.svg"
+        key: "fastscan"
+    - menuicon:
+        image: "menu/dvd_player.svg"
+        key: "dvd_player"
+    - menuicon:
+        image: "menu/playback.svg"
+        key: "media_player"
+    - menuicon:
+        image: "menu/package_manager.svg"
+        key: "packagemanager"
+    - menuicon:
+        image: "menu/positioner.svg"
+        key: "positioner_setup"
+    - menuicon:
+        image: "menu/dish.svg"
+        key: "satellite_equipment_setup"
+    - menuicon:
+        image: "menu/gui_settings.svg"
+        key: "skinconf"
+    - menuicon:
+        image: "menu/softcam.svg"
+        key: "softcamsetup"
+    - menuicon:
+        image: "menu/video_clipping.svg"
+        key: "video_clipping"
+    - menuicon:
+        image: "menu/video_finetune.svg"
+        key: "video_finetune"
+    - menuicon:
+        image: "menu/video_enhancement.svg"
+        key: "videoenhancement_setup"
+    - menuicon:
+        image: "menu/vix_menu.svg"
+        key: "vix_menu"
+    - menuicon:
+        image: "menu/epg_refresh.svg"
+        key: "epgrefresh"
+    - menuicon:
+        image: "menu/epg_import.svg"
+        key: "epgimporter"
+    - menuicon:
+        image: "menu/satfinder.svg"
+        key: "satfinder"
+    - menuicon:
+        image: "menu/manual_scan.svg"
+        key: "blindscan"
+    - menuicon:
+        image: "menu/download.svg"
+        key: "xmlUpdate"
+    - menuicon:
+        image: "menu/network_share.svg"
+        key: "netmounts_browser"
+    - menuicon:
+        image: "menu/mounts.svg"
+        key: "netmounts_manager"
+    - menuicon:
+        image: "menu/openwebif.svg"
+        key: "openwebif"
+    - menuicon:
+        image: "menu/setup_selection.svg"
+        key: "iptv_config"
+    - menuicon:
+        image: "menu/iptv.svg"
+        key: "iptv_main"
+    - menuicon:
+        image: "menu/multiboot.svg"
+        key: "multiboot_slots"

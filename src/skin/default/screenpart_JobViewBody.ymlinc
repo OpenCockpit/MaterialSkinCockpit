@@ -39,7 +39,7 @@
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     name: "config"
     position: "3,465"
-    size: "$width-3,1*$list_item_height_compact"
+    size: "$width-3,1*$list_item_height"

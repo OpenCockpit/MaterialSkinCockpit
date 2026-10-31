@@ -10,11 +10,11 @@
     backgroundColor: "md_surface"
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height_compact"
+    itemHeight: "$list_item_height"
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "$width,16*$list_item_height_compact"
+    size: "$width,13*$list_item_height"
     source: "history"
     transparent: "1"
     children:

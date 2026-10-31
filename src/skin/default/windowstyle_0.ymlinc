@@ -17,11 +17,13 @@ windowstyle:
     - color:
         color: "md_on_surface"
         name: "ListboxForeground"
+    # the selected entry is the inverse selection of Google TV: light grey, with dark blue text; marked ones are tonal, and an entry
+    # that is both is the light primary, so that it still reads as the selected one
     - color:
-        color: "md_surface_container_high"
+        color: "md_inverse_surface"
         name: "ListboxSelectedBackground"
     - color:
-        color: "md_primary"
+        color: "md_inverse_on_surface"
         name: "ListboxSelectedForeground"
     - color:
         color: "md_secondary_container"
@@ -30,10 +32,10 @@ windowstyle:
         color: "md_on_secondary_container"
         name: "ListboxMarkedForeground"
     - color:
-        color: "md_primary_container"
+        color: "md_primary"
         name: "ListboxMarkedAndSelectedBackground"
     - color:
-        color: "md_on_primary_container"
+        color: "md_on_primary"
         name: "ListboxMarkedAndSelectedForeground"
     - color:
         color: "md_primary"
