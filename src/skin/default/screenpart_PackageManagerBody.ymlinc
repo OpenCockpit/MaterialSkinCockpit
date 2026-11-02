@@ -4,7 +4,7 @@
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "$width,594"
+    size: "$width,eval(($height-25)/54*54)"
     source: "list"
     children:
       - convert:
@@ -12,9 +12,9 @@
           text: |
                     {
                         "template": [
-                            MultiContentEntryText(pos = (5, 2), size = (829, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-                                                                                                    MultiContentEntryText(pos = (5, 28), size = (829, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-                                                                                                    MultiContentEntryPixmapAlphaBlend(pos = (840, 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
+                            MultiContentEntryText(pos = (5, 2), size = (eval($width-61), 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+                                                                                                    MultiContentEntryText(pos = (5, 28), size = (eval($width-61), 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+                                                                                                    MultiContentEntryPixmapAlphaBlend(pos = (eval($width-50), 3), size = (48, 48), png = 4, flags=BT_SCALE), # index 4 is the status pixmap
                         ],
                         "fonts": [parseFont("md_body_small"), parseFont("md_label_medium")],
                         "itemHeight": 54

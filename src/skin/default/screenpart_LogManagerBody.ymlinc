@@ -4,10 +4,10 @@
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "$width,608"
+    size: "$width,$height-56"
     transparent: "0"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "0,455"
+    position: "0,$height-25"
     size: "$width,25"
     connection: "list"

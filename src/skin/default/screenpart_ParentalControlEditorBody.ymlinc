@@ -4,5 +4,5 @@
     name: "servicelist"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "$width,14*$list_item_height"
+    size: "$width,eval($height/$list_item_height*$list_item_height)"
     transparent: "1"

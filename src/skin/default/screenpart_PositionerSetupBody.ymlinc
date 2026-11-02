@@ -4,7 +4,7 @@
     itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
-    size: "1110,5*$list_item_height"
+    size: "$width,5*$list_item_height"
     transparent: "1"
 - eLabel:
     backgroundColor: "md_surface_overlay_soft"

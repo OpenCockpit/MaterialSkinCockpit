@@ -3,7 +3,7 @@
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showOnDemand"
-    size: "$width,540"
+    size: "$width,eval(($height-48)/90*90)"
     source: "config"
     transparent: "1"
     children:
@@ -12,7 +12,7 @@
           text: |
                     {
                         "template": [
-                            MultiContentEntryText(pos = (90, 24), size = (870, 42), font=0, flags = RT_HALIGN_LEFT, text = 0),
+                            MultiContentEntryText(pos = (90, 24), size = (eval($width-258), 42), font=0, flags = RT_HALIGN_LEFT, text = 0),
                             MultiContentEntryPixmapAlphaBlend(pos = (15, 15), size = (72, 72), png = 3),
                         ],
                         "fonts": [parseFont("md_title_large"), parseFont("md_body_small")],
@@ -22,7 +22,7 @@
     font: "md_body_large"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "0,573"
+    position: "0,$height-38"
     render: "Label"
     size: "$width,38"
     source: "introduction"

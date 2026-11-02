@@ -1,0 +1,17 @@
+# The name is the class in Screens/InstallWizard.py (InstallWizardIpkgUpdater). It is a plain Screen with one text, the
+# statusbar: it has no remote control (rc) and no arrows, so a part with them would be a SkinError.
+screen:
+  flags: "wfNoBorder"
+  name: "InstallWizardIpkgUpdater"
+  position: "fill"
+  children:
+    - widget:
+        font: "md_title_large"
+        halign: "center"
+        position: "($screen_width-1416)/2,186"
+        render: "Label"
+        size: "1416,795"
+        source: "statusbar"
+        transparent: "1"
+        valign: "center"
+        zPosition: "10"

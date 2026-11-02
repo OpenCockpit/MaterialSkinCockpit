@@ -10,7 +10,7 @@
     scrollbarSliderBorderWidth: "0"
     scrollbarSliderForegroundColor: "md_on_surface_variant"
     scrollbarWidth: "5"
-    size: "$width,13*$list_item_height"
+    size: "$width,eval(($height-25)/$list_item_height*$list_item_height)"
     transparent: "1"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"

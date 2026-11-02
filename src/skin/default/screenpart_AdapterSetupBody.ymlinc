@@ -14,15 +14,16 @@
     halign: "center"
     position: "0,410"
     render: "Label"
-    size: "1110,36"
+    size: "$width,36"
     source: "introduction"
 
+# The settings (IP address, net mask, gateway, adapter and the DNS servers) are 1150 wide: centered in the body
 # IP address
 - widget:
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "0,460"
+    position: "($width-1150)/2,460"
     render: "Label"
     size: "225,36"
     source: "IPtext"
@@ -32,7 +33,7 @@
 # IP address value
 - widget:
     font: "md_body_medium"
-    position: "237,460"
+    position: "($width-1150)/2+237,460"
     render: "Label"
     size: "300,36"
     source: "IP"
@@ -44,7 +45,7 @@
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "0,496"
+    position: "($width-1150)/2,496"
     render: "Label"
     size: "225,36"
     source: "Netmasktext"
@@ -54,7 +55,7 @@
 # Net mask value
 - widget:
     font: "md_body_medium"
-    position: "237,496"
+    position: "($width-1150)/2+237,496"
     render: "Label"
     size: "300,36"
     source: "Mask"
@@ -66,7 +67,7 @@
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "0,532"
+    position: "($width-1150)/2,532"
     render: "Label"
     size: "225,36"
     source: "Gatewaytext"
@@ -76,7 +77,7 @@
 # Gateway value
 - widget:
     font: "md_body_medium"
-    position: "237,532"
+    position: "($width-1150)/2+237,532"
     render: "Label"
     size: "300,36"
     source: "Gateway"
@@ -88,7 +89,7 @@
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "0,574"
+    position: "($width-1150)/2,574"
     render: "Label"
     size: "400,36"
     source: "Adaptertext"
@@ -99,7 +100,7 @@
 - widget:
     font: "md_body_medium"
     halign: "left"
-    position: "237,568"
+    position: "($width-1150)/2+237,568"
     render: "Label"
     size: "600,36"
     source: "Adapter"
@@ -111,7 +112,7 @@
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "613,460"
+    position: "($width-1150)/2+613,460"
     render: "Label"
     size: "225,36"
     source: "DNS1text"
@@ -123,7 +124,7 @@
 - widget:
     font: "md_body_medium"
     halign: "left"
-    position: "$width-300,460"
+    position: "($width-1150)/2+850,460"
     render: "Label"
     size: "300,36"
     source: "DNS1"
@@ -136,7 +137,7 @@
     font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     halign: "left"
-    position: "613,496"
+    position: "($width-1150)/2+613,496"
     render: "Label"
     size: "225,36"
     source: "DNS2text"
@@ -148,7 +149,7 @@
 - widget:
     font: "md_body_medium"
     halign: "left"
-    position: "$width-300,496"
+    position: "($width-1150)/2+850,496"
     render: "Label"
     size: "300,36"
     source: "DNS2"

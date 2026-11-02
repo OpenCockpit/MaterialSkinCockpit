@@ -67,7 +67,7 @@ screen:
         name: "list"
         position: "150,150"
         size: "720,12*$list_item_height"
-        textOffset: "20, 2"
+        textOffset: "20, 7"
         transparent: "1"
         zPosition: "2"
     - widget:

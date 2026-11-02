@@ -4,7 +4,7 @@
     foregroundColor: "md_on_surface"
     position: "0,0"
     render: "Label"
-    size: "1050,45"
+    size: "$width,45"
     source: "package"
 - widget:
     backgroundColor: "md_surface"
@@ -12,7 +12,7 @@
     foregroundColor: "md_warning"
     position: "0,75"
     render: "Label"
-    size: "1050,45"
+    size: "$width,45"
     source: "status"
 - widget:
     backgroundColor: "md_surface"

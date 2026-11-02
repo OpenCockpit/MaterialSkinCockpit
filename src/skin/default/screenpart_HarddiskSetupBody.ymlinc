@@ -2,7 +2,7 @@
     font: "md_title_large"
     name: "model"
     position: "16,121"
-    size: "1110,43"
+    size: "$width-32,43"
 - widget:
     font: "md_title_large"
     name: "capacity"

@@ -2,8 +2,8 @@
     alphatest: "blend"
     backgroundColor: "md_transparent"
     name: "preview"
-    position: "373,$height-315"
-    size: "420,315"
+    position: "eval(($width-768)/2),$height-432"
+    size: "768,432"
 - widget:
     font: "md_body_small"
     position: "0,0"
@@ -25,8 +25,8 @@
           text: |
                     {
                         "template": [
-                            MultiContentEntryText(pos = (15, 0), size = (815, 45), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-                            MultiContentEntryText(pos = (830, 0), size = (285, 45), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2)
+                            MultiContentEntryText(pos = (15, 0), size = (eval($width-313), 45), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+                            MultiContentEntryText(pos = (eval($width-298), 0), size = (285, 45), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2)
                         ],
                         "fonts": [parseFont("md_body_medium")],
                         "itemHeight": 45

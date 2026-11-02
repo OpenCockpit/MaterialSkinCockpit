@@ -1,25 +1,24 @@
-- xmlinc:
-    file: "screenpart_Pig.ymlinc"
-    position: "$width-435,6"
-    size: "435,248"
+# The list of the buttons (functions) on top, the chosen functions of the selected one below it, both as wide as the body,
+# and the description in up to two lines across the bottom. The chosen list is 6 rows high; the list gets the rows that are left.
 - widget:
     itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "1130,eval($height/$list_item_height*$list_item_height)"
+    size: "$width,eval(($height-68-23-13-6*$list_item_height)/$list_item_height*$list_item_height)"
 - widget:
     itemCornerRadius: "$radius_item"
     name: "choosen"
-    position: "1153,357"
+    position: "0,eval($height-68-23-6*$list_item_height)"
     scrollbarMode: "showOnDemand"
-    size: "703,495"
+    size: "$width,6*$list_item_height"
 - widget:
     font: "md_body_small"
     foregroundColor: "md_primary"
     halign: "center"
     name: "description"
-    position: "1150,$height-34"
-    size: "708,34"
+    position: "0,$height-68"
+    size: "$width,68"
+    valign: "center"
     zPosition: "1"

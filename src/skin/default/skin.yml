@@ -415,9 +415,7 @@ skin:
     - xmlinc:
         file: "screen_LanguageWizard.ymlinc"
     - xmlinc:
-        file: "screen_InstallWizardOpkgUpdater.ymlinc"
-    - xmlinc:
-        file: "screen_ImageWizard.ymlinc"
+        file: "screen_InstallWizardIpkgUpdater.ymlinc"
     - xmlinc:
         file: "screen_AdapterSetupConfiguration.ymlinc"
     - xmlinc:

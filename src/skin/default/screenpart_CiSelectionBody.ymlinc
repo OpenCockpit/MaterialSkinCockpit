@@ -2,7 +2,7 @@
     font: "md_title_large"
     name: "text"
     position: "0,0"
-    size: "1100,43"
+    size: "$width,43"
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"
@@ -10,7 +10,7 @@
     name: "entries"
     position: "1,44"
     scrollbarMode: "showOnDemand"
-    size: "$width-1,12*$list_item_height"
+    size: "$width-1,eval(($height-44-25)/$list_item_height*$list_item_height)"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
     position: "1,$height-25"

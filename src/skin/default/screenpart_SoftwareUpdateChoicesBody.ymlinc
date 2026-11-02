@@ -1,10 +1,6 @@
-- xmlinc:
-    file: "screenpart_Pig.ymlinc"
-    position: "$width-354,0"
-    size: "354,200"
 - eLabel:
     backgroundColor: "md_outline_variant"
-    position: "1175,5"
+    position: "$width-685,5"
     size: "1,$height-5"
     zPosition: "-5"
 - widget:
@@ -14,13 +10,13 @@
     name: "list"
     position: "0,0"
     scrollbarMode: "showOnDemand"
-    size: "1110,550"
+    size: "eval($width-750),eval(($height-175-15)/50*50)"
 - widget:
     font: "md_body_large"
     foregroundColor: "md_primary"
     name: "text"
-    position: "0,600"
-    size: "1110,175"
+    position: "0,$height-175"
+    size: "eval($width-750),175"
     valign: "bottom"
     zPosition: "2"
 - xmlinc:
