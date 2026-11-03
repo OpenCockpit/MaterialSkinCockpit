@@ -30,7 +30,7 @@
     markerTextAlignment: "center"
     name: "list"
     nonplayableMargins: "0"
-    piconMargin: "2"
+    piconMargin: "4"
     position: "8,0"
     progressBarWidth: "60"
     progressPercentWidth: "80"

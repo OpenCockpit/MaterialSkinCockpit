@@ -2,7 +2,7 @@
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "$width,600"
+    size: "$width,eval(($height-97)/75*75)"
     source: "list"
     children:
       - convert:
@@ -21,16 +21,16 @@
                     }
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "20,$height-25"
-    size: "1630,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "list"
 - widget:
     font: "md_body_medium"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "20,605"
+    position: "0,$height-97"
     render: "Label"
-    size: "1630,100"
+    size: "$width,72"
     source: "info"
     transparent: "1"
     valign: "center"

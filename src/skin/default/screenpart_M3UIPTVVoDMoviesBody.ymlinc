@@ -6,7 +6,7 @@
     position: "0,0"
     shadowColor: "md_shadow"
     shadowOffset: "-1,-1"
-    size: "1320,12*45"
+    size: "1320,eval(($height-110)/$list_item_height*$list_item_height)"
     valign: "center"
     zPosition: "12"
 - widget:
@@ -14,7 +14,7 @@
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "1320,12*45"
+    size: "1320,eval(($height-110)/$list_item_height*$list_item_height)"
     source: "list"
     children:
       - convert:
@@ -30,18 +30,18 @@
                     }
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "0,555"
+    position: "0,eval(($height-110)/$list_item_height*$list_item_height+3)"
     size: "1320,25"
     connection: "list"
 - eLabel:
     backgroundColor: "md_outline_variant"
-    position: "0,605"
+    position: "0,$height-82"
     size: "$width,2"
     zPosition: "-7"
 - eLabel:
     backgroundColor: "md_outline_variant"
     position: "1345,0"
-    size: "2,575"
+    size: "2,$height-87"
     zPosition: "-7"
 - eLabel:
     backgroundColor: "md_surface"
@@ -60,11 +60,11 @@
     backgroundColor: "md_surface"
     font: "md_body_large"
     halign: "center"
-    position: "0,$height-140"
+    position: "0,$height-72"
     render: "Label"
     shadowColor: "md_shadow"
     shadowOffset: "-1,-1"
-    size: "$width,140"
+    size: "$width,72"
     source: "description"
     valign: "center"
     zPosition: "10"

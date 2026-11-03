@@ -71,6 +71,7 @@
 - widget:
     borderColor: "md_outline"
     borderWidth: "2"
+    cornerRadius: "$radius_bar"
     name: "scan_progress"
     pixmap: "progress_big.png"
     position: "0,170"

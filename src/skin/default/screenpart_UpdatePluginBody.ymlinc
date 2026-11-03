@@ -16,6 +16,7 @@
     source: "status"
 - widget:
     backgroundColor: "md_surface"
+    cornerRadius: "$radius_bar"
     name: "slider"
     position: "0,450"
     size: "$width,20"
@@ -23,6 +24,7 @@
 - widget:
     alphatest: "blend"
     backgroundColor: "md_surface"
+    cornerRadius: "$radius_bar_thin"
     foregroundColor: "md_on_surface_variant"
     name: "activityslider"
     position: "0,470"

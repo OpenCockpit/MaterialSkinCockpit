@@ -54,6 +54,7 @@
     zPosition: "1"
 - widget:
     borderWidth: "1"
+    cornerRadius: "$radius_bar"
     name: "slide"
     orientation: "orBottomToTop"
     position: "846,0"

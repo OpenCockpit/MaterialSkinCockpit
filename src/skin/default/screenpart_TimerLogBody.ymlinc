@@ -20,6 +20,6 @@
     size: "1090,43"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "5,$height-25"
-    size: "$width-5,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "loglist"

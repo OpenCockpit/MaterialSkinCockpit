@@ -4,8 +4,8 @@
     foregroundColor: "md_primary"
     halign: "center"
     name: "progress"
-    position: "20,712"
-    size: "1630,38"
+    position: "0,712"
+    size: "$width,38"
     zPosition: "5"
 - widget:
     backgroundColor: "md_surface"

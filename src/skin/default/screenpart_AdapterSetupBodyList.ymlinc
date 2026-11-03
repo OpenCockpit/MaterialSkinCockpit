@@ -1,0 +1,9 @@
+# The settings of the adapter: as many rows as fit in the height of the part.
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "config"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,eval($height/$list_item_height*$list_item_height)"

@@ -19,7 +19,7 @@ screen:
         backgroundColor: "md_surface_container_high"
         name: "EditSettingsButton"
         pixmaps: "buttons/key_grey.png,buttons/key_blue.png"
-        position: "880,1027"
+        position: "880,1030"
         size: "40,20"
         zPosition: "20"
     - widget:
@@ -28,6 +28,7 @@ screen:
         foregroundColors: "md_on_surface,md_outline,md_success"
         halign: "left"
         name: "EditSettings_Text"
-        position: "930,1018"
-        size: "370,38"
+        position: "930,1020"
+        size: "370,40"
+        valign: "center"
         zPosition: "21"

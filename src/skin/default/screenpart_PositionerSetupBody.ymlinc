@@ -81,6 +81,7 @@
 - widget:
     backgroundColor: "md_surface_overlay_soft"
     borderWidth: "1"
+    cornerRadius: "$radius_bar"
     name: "snr_bar"
     position: "330,548"
     size: "300,26"
@@ -102,6 +103,7 @@
 - widget:
     backgroundColor: "md_surface_overlay_soft"
     borderWidth: "1"
+    cornerRadius: "$radius_bar"
     name: "ber_bar"
     position: "330,593"
     size: "300,26"

@@ -3,7 +3,7 @@
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"
-    size: "$width,585"
+    size: "$width,eval(($height-111)/$list_item_height*$list_item_height)"
     source: "list"
     children:
       - convert:
@@ -21,17 +21,17 @@
                     }
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "20,$height-25"
-    size: "1630,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "list"
 - widget:
     font: "md_body_medium"
     foregroundColor: "md_primary"
     halign: "center"
     objectTypes: "description,StaticText"
-    position: "20,651"
+    position: "0,$height-97"
     render: "Label"
-    size: "1630,66"
+    size: "$width,72"
     source: "description"
     valign: "center"
 - widget:
@@ -40,8 +40,8 @@
     borderWidth: "0"
     cornerRadius: "$radius_bar"
     foregroundColor: "md_on_surface_variant"
-    position: "20,605"
+    position: "0,$height-111"
     render: "Progress"
-    size: "1630,6"
+    size: "$width,6"
     source: "progress"
     zPosition: "1"

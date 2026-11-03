@@ -14,6 +14,6 @@
     size: "$width,720"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "30,$height-25"
-    size: "1630,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "entries"

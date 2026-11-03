@@ -96,6 +96,7 @@ screen:
     - widget:
         backgroundColor: "md_on_surface"
         borderWidth: "2"
+        cornerRadius: "$radius_bar"
         position: "0,366"
         render: "Progress"
         size: "180,15"

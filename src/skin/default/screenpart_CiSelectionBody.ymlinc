@@ -13,6 +13,6 @@
     size: "$width-1,eval(($height-44-25)/$list_item_height*$list_item_height)"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "1,$height-25"
-    size: "$width-1,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "entries"

@@ -25,6 +25,6 @@
     valign: "center"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "20,765"
-    size: "1630,25"
+    position: "0,765"
+    size: "$width,25"
     connection: "entrylist"

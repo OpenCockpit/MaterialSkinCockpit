@@ -19,6 +19,6 @@
                     }
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "10,$height-25"
-    size: "$width-10,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "nimlist"

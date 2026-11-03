@@ -1,171 +1,29 @@
-- widget:
-    font: "md_body_medium"
-    itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height"
-    name: "config"
+# The settings list on top, the current settings below it (each half of the body without the description) and the
+# description of the selected entry in up to two lines across the bottom.
+- xmlinc:
+    file: "screenpart_AdapterSetupBodyList.ymlinc"
     position: "0,0"
-    scrollbarMode: "showNever"
-    size: "$width,9*$list_item_height"
-
-# Settings title
+    size: "$width,eval(($height-72)/2)"
+- xmlinc:
+    file: "screenpart_AdapterSetupBodyInfo.ymlinc"
+    position: "0,eval(($height-72)/2)"
+    size: "$width,eval(($height-72)/2)"
 - widget:
-    font: "md_title_medium"
+    font: "md_body_medium"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "0,410"
-    render: "Label"
-    size: "$width,36"
-    source: "introduction"
-
-# The settings (IP address, net mask, gateway, adapter and the DNS servers) are 1150 wide: centered in the body
-# IP address
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2,460"
-    render: "Label"
-    size: "225,36"
-    source: "IPtext"
+    name: "description"
+    objectTypes: "description,Button,Label"
+    position: "0,$height-72"
+    size: "$width,72"
     valign: "center"
-    zPosition: "1"
-
-# IP address value
 - widget:
     font: "md_body_medium"
-    position: "($width-1150)/2+237,460"
-    render: "Label"
-    size: "300,36"
-    source: "IP"
-    valign: "center"
-    zPosition: "1"
-
-# Net mask
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2,496"
-    render: "Label"
-    size: "225,36"
-    source: "Netmasktext"
-    valign: "center"
-    zPosition: "1"
-
-# Net mask value
-- widget:
-    font: "md_body_medium"
-    position: "($width-1150)/2+237,496"
-    render: "Label"
-    size: "300,36"
-    source: "Mask"
-    valign: "center"
-    zPosition: "1"
-
-# Gateway
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2,532"
-    render: "Label"
-    size: "225,36"
-    source: "Gatewaytext"
-    valign: "center"
-    zPosition: "1"
-
-# Gateway value
-- widget:
-    font: "md_body_medium"
-    position: "($width-1150)/2+237,532"
-    render: "Label"
-    size: "300,36"
-    source: "Gateway"
-    valign: "center"
-    zPosition: "1"
-
-# Adapter
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2,574"
-    render: "Label"
-    size: "400,36"
-    source: "Adaptertext"
-    transparent: "1"
-    zPosition: "10"
-
-# Adapter value
-- widget:
-    font: "md_body_medium"
-    halign: "left"
-    position: "($width-1150)/2+237,568"
-    render: "Label"
-    size: "600,36"
-    source: "Adapter"
-    transparent: "1"
-    zPosition: "10"
-
-# DNS1
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2+613,460"
-    render: "Label"
-    size: "225,36"
-    source: "DNS1text"
-    transparent: "1"
-    valign: "center"
-    zPosition: "1"
-
-# DNS1 value
-- widget:
-    font: "md_body_medium"
-    halign: "left"
-    position: "($width-1150)/2+850,460"
-    render: "Label"
-    size: "300,36"
-    source: "DNS1"
-    transparent: "1"
-    valign: "center"
-    zPosition: "1"
-
-# DNS2
-- widget:
-    font: "md_body_medium"
-    foregroundColor: "md_on_surface_variant"
-    halign: "left"
-    position: "($width-1150)/2+613,496"
-    render: "Label"
-    size: "225,36"
-    source: "DNS2text"
-    transparent: "1"
-    valign: "center"
-    zPosition: "1"
-
-# DNS2 value
-- widget:
-    font: "md_body_medium"
-    halign: "left"
-    position: "($width-1150)/2+850,496"
-    render: "Label"
-    size: "300,36"
-    source: "DNS2"
-    transparent: "1"
-    valign: "center"
-    zPosition: "1"
-
-# Instruction
-- widget:
-    font: "md_body_large"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "0,$height-40"
+    objectTypes: "description,StaticText"
+    position: "0,$height-72"
     render: "Label"
-    size: "$width,40"
-    source: "introduction2"
-    transparent: "1"
+    size: "$width,72"
+    source: "description"
     valign: "center"
-    zPosition: "10"

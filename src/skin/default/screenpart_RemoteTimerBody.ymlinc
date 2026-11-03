@@ -14,8 +14,8 @@
     size: "$width,540"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "10,$height-25"
-    size: "1630,25"
+    position: "0,$height-25"
+    size: "$width,25"
     connection: "timerlist"
 - eLabel:
     backgroundColor: "md_surface_container_high"

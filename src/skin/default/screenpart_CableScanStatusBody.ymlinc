@@ -17,6 +17,7 @@
 - widget:
     borderColor: "md_on_surface_variant"
     borderWidth: "2"
+    cornerRadius: "$radius_bar"
     name: "scan_progress"
     pixmap: "progress_big.png"
     position: "655,247"

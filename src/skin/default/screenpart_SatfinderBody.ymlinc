@@ -1,6 +1,7 @@
 - widget:
     borderColor: "md_outline"
     borderWidth: "1"
+    cornerRadius: "$radius_item"
     pixmap: "infobar/bar_big.png"
     position: "0,34"
     render: "Progress"
@@ -36,6 +37,7 @@
 - widget:
     borderColor: "md_outline"
     borderWidth: "1"
+    cornerRadius: "$radius_item"
     pixmap: "infobar/bar_big.png"
     position: "0,129"
     render: "Progress"
