@@ -1,5 +1,6 @@
 - widget:
     iconMargin: "30"
+    itemCornerRadius: "$radius_item"
     itemHeight: "90"
     name: "timerlist"
     position: "0,0"

@@ -1,6 +1,7 @@
 - widget:
     enableWrapAround: "1"
     font: "md_title_large"
+    itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "mainmenu"
     position: "0,0"

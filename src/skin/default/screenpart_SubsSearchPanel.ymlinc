@@ -1,4 +1,5 @@
 - widget:
+    itemCornerRadius: "$radius_item"
     position: "8,0"
     render: "Listbox"
     scrollbarMode: "showNever"

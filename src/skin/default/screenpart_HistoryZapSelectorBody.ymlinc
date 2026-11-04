@@ -1,6 +1,7 @@
 - widget:
     backgroundColor: "md_surface"
     foregroundColor: "md_on_surface"
+    itemCornerRadius: "$radius_item"
     position: "0,0"
     render: "Listbox"
     scrollbarMode: "showNever"

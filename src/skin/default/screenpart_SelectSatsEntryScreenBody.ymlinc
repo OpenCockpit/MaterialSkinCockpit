@@ -1,4 +1,5 @@
 - widget:
+    itemCornerRadius: "$radius_item"
     name: "list"
     position: "9,0"
     scrollbarMode: "showNever"

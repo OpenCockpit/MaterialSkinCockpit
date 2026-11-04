@@ -11,8 +11,13 @@
     itemCornerRadius: "$radius_item"
     name: "choosen"
     position: "0,eval($height-68-23-6*$list_item_height)"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     size: "$width,6*$list_item_height"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-91"
+    size: "$width,23"
+    connection: "choosen"
 - widget:
     font: "md_body_small"
     foregroundColor: "md_primary"

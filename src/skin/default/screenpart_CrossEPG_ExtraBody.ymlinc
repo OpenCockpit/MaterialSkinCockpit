@@ -1,5 +1,6 @@
 - widget:
     font: "md_title_large"
+    itemCornerRadius: "$radius_item"
     name: "menu"
     position: "0,0"
     scrollbarMode: "showNever"

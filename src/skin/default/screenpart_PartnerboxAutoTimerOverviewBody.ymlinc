@@ -4,7 +4,7 @@
     itemHeight: "$list_item_height"
     name: "entries"
     position: "0,35"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     size: "$width,12*$list_item_height"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"

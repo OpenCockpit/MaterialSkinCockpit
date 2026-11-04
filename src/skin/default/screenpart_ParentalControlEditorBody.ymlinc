@@ -1,5 +1,6 @@
 - widget:
     enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "servicelist"
     position: "0,0"

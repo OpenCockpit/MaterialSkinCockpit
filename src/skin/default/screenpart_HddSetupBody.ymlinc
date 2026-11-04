@@ -2,6 +2,7 @@
     backgroundColor: "md_surface"
     enableWrapAround: "1"
     foregroundColor: "md_on_surface"
+    itemCornerRadius: "$radius_item"
     position: "0,0"
     render: "Listbox"
     size: "$width,eval($height/75*75)"

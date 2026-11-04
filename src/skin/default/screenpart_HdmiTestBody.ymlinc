@@ -1,6 +1,7 @@
 - widget:
-    font: "md_title_large"
+    font: "md_body_medium"
     foregroundColor: "md_on_surface"
+    itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "config"
     position: "0,0"

@@ -41,6 +41,7 @@
 - widget:
     font: "md_body_medium"
     backgroundColorSelected: "$backgroundColorSelected"
+    itemCornerRadius: "$radius_item"
     itemCornerRadiusSelected: "$radius_item"
     itemHeight: "$list_item_height"
     name: "config"

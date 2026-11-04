@@ -8,6 +8,7 @@ screen:
         position: "0,0"
     - widget:
         font: "md_body_medium"
+        itemCornerRadius: "$radius_item"
         itemHeight: "$list_item_height"
         name: "bouquetlist"
         position: "1507,75"

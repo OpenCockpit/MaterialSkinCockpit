@@ -14,7 +14,7 @@
     itemHeight: "35"
     name: "entries"
     position: "0,83"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     size: "$width,490"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"

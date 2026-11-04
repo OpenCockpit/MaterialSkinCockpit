@@ -27,6 +27,12 @@
     itemHeight: "$list_item_height"
     name: "booklist"
     position: "7,457"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     size: "1656,6*$list_item_height"
     zPosition: "2"
+
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "7,eval(459+6*$list_item_height)"
+    size: "1656,25"
+    connection: "booklist"

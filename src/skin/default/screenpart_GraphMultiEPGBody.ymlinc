@@ -50,6 +50,7 @@
     EventTextSidesMargin: "10"
     IconXPadding: "6"
     IconYPadding: "4"
+    itemCornerRadius: "$radius_item"
     RecIconSize: "32"
     RecordBackgroundColor: "md_error_container"
     RecordBackgroundColorSelected: "md_error_container"

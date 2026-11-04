@@ -43,6 +43,7 @@
 - widget:
     backgroundColor: "md_surface"
     enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
     name: "filelist"
     position: "15,66"
     scrollbarMode: "showNever"
@@ -52,6 +53,7 @@
 - widget:
     backgroundColor: "md_surface"
     enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
     name: "playlist"
     position: "15,66"
     scrollbarMode: "showNever"

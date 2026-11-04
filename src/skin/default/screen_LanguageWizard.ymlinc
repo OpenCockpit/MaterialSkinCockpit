@@ -16,7 +16,7 @@ screen:
         itemCornerRadius: "$radius_item"
         position: "202,326"
         render: "Listbox"
-        scrollbarMode: "showOnDemand"
+        scrollbarMode: "showNever"
         size: "1416,12*50"
         source: "languages"
         children:
@@ -31,3 +31,9 @@ screen:
                             "fonts": [parseFont("md_body_large")],
                             "itemHeight": 50
                         }
+
+    - xmlinc:
+        file: "screenpart_Pager.ymlinc"
+        position: "202,928"
+        size: "1416,25"
+        connection: "languages"

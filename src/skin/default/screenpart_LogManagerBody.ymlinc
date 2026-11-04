@@ -1,6 +1,7 @@
 - widget:
     enableWrapAround: "1"
     font: "md_body_large"
+    itemCornerRadius: "$radius_item"
     name: "list"
     position: "0,0"
     scrollbarMode: "showNever"

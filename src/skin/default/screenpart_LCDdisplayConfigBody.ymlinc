@@ -8,14 +8,14 @@
     zPosition: "-5"
 - widget:
     enableWrapAround: "1"
-    font: "md_body_small"
+    font: "md_body_medium"
     foregroundColor: "md_on_surface_variant"
     itemCornerRadius: "$radius_item"
-    itemHeight: "35"
+    itemHeight: "$list_item_height"
     name: "config"
     position: "0,0"
     scrollbarMode: "showNever"
-    size: "eval($width/2),eval(($height-104)/35*35)"
+    size: "eval($width/2),eval(($height-104)/$list_item_height*$list_item_height)"
 - widget:
     font: "md_body_small"
     foregroundColor: "md_primary"

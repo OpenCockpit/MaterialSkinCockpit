@@ -2,6 +2,7 @@
     backgroundColor: "md_surface"
     font: "md_body_large"
     foregroundColor: "md_on_surface"
+    itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "filelist"
     position: "0,0"

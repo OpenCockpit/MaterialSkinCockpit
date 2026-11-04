@@ -13,6 +13,7 @@ screen:
         size: "0,0"
     - widget:
         enableWrapAround: "1"
+        itemCornerRadius: "$radius_item"
         itemHeight: "$list_item_height"
         name: "list"
         position: "15,15"

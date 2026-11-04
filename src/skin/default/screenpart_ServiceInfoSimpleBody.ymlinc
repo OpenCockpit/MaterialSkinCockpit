@@ -3,7 +3,7 @@
     itemHeight: "$list_item_height"
     name: "infolist"
     position: "0,0"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     selectionDisabled: "1"
     size: "$width,16*$list_item_height"
 - xmlinc:

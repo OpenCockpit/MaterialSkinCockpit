@@ -2,8 +2,9 @@
     itemCornerRadius: "$radius_item"
     position: "0,0"
     render: "Listbox"
-    scrollbarMode: "showOnDemand"
-    size: "$width,546"
+    scrollbarMode: "showNever"
+    itemHeight: "eval(2*$list_item_height)"
+    size: "$width,eval(($height-97)/(2*$list_item_height)*(2*$list_item_height))"
     source: "list"
     zPosition: "10"
     children:
@@ -12,22 +13,27 @@
           text: |
                     {
                         "template": [
-                                                                                                MultiContentEntryText(pos = (20, 0), size = (eval($width-40), 78), font=2, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
-                                                                                                MultiContentEntryText(pos = (210, 10), size = (480, 37), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
-                                                                                                MultiContentEntryText(pos = (210, 42), size = (480, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
-                                                                                                MultiContentEntryPixmapAlphaTest(pos = (67, 0), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
-                                                                                                MultiContentEntryPixmapAlphaTest(pos = (135, 0), size = (72, 72), png = 6), # index 6 is the isMounted icon
+                            MultiContentEntryText(pos = (20, 0), size = (eval($width-40), eval(2*$list_item_height)), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is the Hostname
+                            MultiContentEntryText(pos = (210, 14), size = (eval($width-230), 37), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is the sharename
+                            MultiContentEntryText(pos = (210, 51), size = (eval($width-230), 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is the sharedescription
+                            MultiContentEntryPixmapAlphaTest(pos = (67, 9), size = (72, 72), png = 5), # index 5 is the nfs/cifs icon
+                            MultiContentEntryPixmapAlphaTest(pos = (135, 9), size = (72, 72), png = 6), # index 6 is the isMounted icon
                         ],
-                        "fonts": [parseFont("md_body_small"), parseFont("md_label_medium"), parseFont("md_title_large")],
-                        "itemHeight": 78
+                        "fonts": [parseFont("md_body_medium"), parseFont("md_label_medium")],
+                        "itemHeight": eval(2*$list_item_height)
                     }
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "list"
 - widget:
-    font: "md_body_large"
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
     halign: "center"
-    position: "0,573"
+    position: "0,$height-97"
     render: "Label"
-    size: "$width,38"
+    size: "$width,72"
     source: "infotext"
-    transparent: "1"
     valign: "center"
     zPosition: "10"

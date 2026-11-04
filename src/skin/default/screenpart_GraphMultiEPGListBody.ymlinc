@@ -43,6 +43,7 @@
     EventTextSidesMargin: "10"
     IconXPadding: "6"
     IconYPadding: "4"
+    itemCornerRadius: "$radius_item"
     RecIconSize: "32"
     ServiceBorderWidth: "1"
     ServiceFont: "md_body_medium"

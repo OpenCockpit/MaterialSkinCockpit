@@ -24,6 +24,7 @@
     zPosition: "1"
 - widget:
     enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
     name: "serverlist"
     position: "15,83"
     scrollbarMode: "showNever"

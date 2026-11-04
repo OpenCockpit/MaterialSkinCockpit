@@ -7,12 +7,18 @@
     zPosition: "1"
 - widget:
     enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
     name: "feedlist"
     position: "0,0"
-    scrollbarMode: "showOnDemand"
+    scrollbarMode: "showNever"
     size: "615,728"
     transparent: "1"
     zPosition: "5"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,753"
+    size: "615,25"
+    connection: "feedlist"
 - widget:
     alphatest: "blend"
     pixmap: "extensions/transblack.png"

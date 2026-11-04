@@ -1,5 +1,6 @@
 - widget:
     font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"
     name: "hddlist"
     position: "0,0"
