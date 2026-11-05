@@ -9,7 +9,6 @@
     itemHeight: "$list_item_height"
     name: "filelist"
     position: "$width-1220,0"
-    scrollbarMode: "showNever"
     size: "1220,17*$list_item_height"
     zPosition: "3"
 - xmlinc:

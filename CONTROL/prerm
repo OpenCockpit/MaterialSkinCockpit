@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# The python files of enigma2 that the plugin has replaced (while the skin is the primary skin) are put back, as far as they are still the ones
+# of the plugin: a file that enigma2 has updated since is the original already. This is the prerm because PyReplace.py is part of the plugin and
+# gone in the postrm.
+if [ "$1" = "remove" ]; then
+	python3 /usr/lib/enigma2/python/Plugins/SystemPlugins/MaterialSkinCockpit/PyReplace.py restore
+fi
+exit 0

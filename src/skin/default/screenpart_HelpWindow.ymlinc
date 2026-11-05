@@ -1,0 +1,11 @@
+# The marker of the help of the virtual keyboard (HelpWindow of ConfigListScreen): a pixmap of one pixel that enigma2 moves to where
+# it wants the key icon. It is only parked here, and the widget is skipped by a screen that has no HelpWindow.
+- widget:
+    alphatest: "blend"
+    conditional: "HelpWindow"
+    name: "HelpWindow"
+    pixmap: "icons/vkey_icon.png"
+    position: "1824,96"
+    size: "1,1"
+    transparent: "1"
+    zPosition: "1"

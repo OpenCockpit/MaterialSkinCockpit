@@ -27,7 +27,6 @@
     itemCornerRadius: "$radius_item"
     name: "serverlist"
     position: "15,83"
-    scrollbarMode: "showNever"
     size: "1050,656"
     transparent: "1"
     zPosition: "3"

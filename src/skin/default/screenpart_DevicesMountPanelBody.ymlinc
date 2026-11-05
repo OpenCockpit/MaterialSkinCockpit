@@ -2,8 +2,7 @@
     itemCornerRadius: "$radius_item"
     position: "0,0"
     render: "Listbox"
-    scrollbarMode: "showNever"
-    size: "990,eval($height/128*128)"
+    size: "990,eval(($height-25)/128*128)"
     source: "list"
     transparent: "1"
     children:
@@ -12,9 +11,9 @@
           text: |
                     {
                         "template": [
-                            MultiContentEntryText(pos = (135, 0), size = (900, 45), font=0, text = 0),
-                            MultiContentEntryText(pos = (165, 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
-                            MultiContentEntryPixmapAlphaBlend(pos = (0, 0), size = (120, 120), png = 2),
+                            MultiContentEntryText(pos = (eval($list_indent+135), 0), size = (900, $list_item_height), font=0, text = 0),
+                            MultiContentEntryText(pos = (eval($list_indent+165), 45), size = (900, 75), font=1, flags = RT_VALIGN_TOP, text = 1),
+                            MultiContentEntryPixmapAlphaBlend(pos = ($list_indent, 0), size = (120, 120), png = 2),
                         ],
                         "fonts": [parseFont("md_title_large"), parseFont("md_body_large")],
                         "itemHeight": 128
@@ -29,3 +28,8 @@
     size: "278,57"
     valign: "center"
     zPosition: "1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "990,25"
+    connection: "list"

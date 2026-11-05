@@ -70,7 +70,6 @@
     itemHeight: "64"
     name: "list"
     position: "20,313"
-    scrollbarMode: "showNever"
     scrollbarSliderBorderColor: "md_surface_container_lowest"
     scrollbarSliderBorderWidth: "0"
     scrollbarSliderForegroundColor: "md_on_surface_variant"

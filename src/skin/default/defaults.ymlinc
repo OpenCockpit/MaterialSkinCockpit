@@ -1,0 +1,26 @@
+# What the widgets of the skin have in common without every screen saying it. A widget that sets an attribute itself keeps its own value.
+#
+# A list (a widget with an itemCornerRadius): no scrollbar (the pager shows where the list is), the text of a row at the indent of
+# the skin and in the middle of the row. textOffset and valign are only read by the lists of strings: a list drawn by a template
+# ignores both.
+- default:
+    tag: "widget[itemCornerRadius]"
+    scrollbarMode: "showNever"
+    textOffset: "$list_indent,0"
+    valign: "center"
+
+# The font of every line of a list of timers (the timers, the power timers, the AutoTimers): one size, so no line is smaller than another.
+- global:
+    name: "timer_list_font"
+    value: "md_body_large"
+
+# A list of timers (TimerList, PowerTimerList: the widgets with a satPosLeft): two lines a row, all in the one font of timer_list_font. The screens set only what is theirs (the size, satPosLeft).
+- default:
+    tag: "widget[satPosLeft]"
+    iconMargin: "30"
+    itemHeight: "$list_item_height_double"
+    rowSplit: "45"
+    setEventNameFont: "$timer_list_font"
+    setFont: "$timer_list_font"
+    setServiceNameFont: "$timer_list_font"
+    sidesMargin: "$list_indent"

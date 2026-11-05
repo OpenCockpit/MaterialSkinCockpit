@@ -1,0 +1,14 @@
+# The frame of a wizard and its body: a screenfamily of screen_* files hands the body in as content=, the name of the part (without
+# extension) that is placed in the body rectangle of the frame. A screen of its own, like screenpart_ScreenLarge.
+screen:
+  name: "ScreenWizard"
+  children:
+    - xmlinc:
+        file: "screenpart_Window.ymlinc"
+        position: "center"
+        size: "$window_wizard_width,$window_wizard_height"
+        window_inset_x: "$window_wizard_body_x"
+    - xmlinc:
+        file: "$content"
+        position: "$window_wizard_body_x,$window_wizard_body_y"
+        size: "$window_wizard_body_width,$window_wizard_body_height"

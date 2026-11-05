@@ -5,7 +5,6 @@
     itemHeight: "$list_item_height"
     name: "list"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "$width,eval(($height-137)/$list_item_height*$list_item_height)"
 - widget:
     conditional: "lab1"

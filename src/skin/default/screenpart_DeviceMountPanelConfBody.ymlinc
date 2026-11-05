@@ -5,7 +5,6 @@
     itemHeight: "$list_item_height"
     name: "config"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "$width,eval(($height-72)/$list_item_height*$list_item_height)"
     transparent: "1"
 - widget:

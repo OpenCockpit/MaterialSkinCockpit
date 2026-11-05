@@ -17,16 +17,16 @@ parameters:
         value: "22,3"
     - parameter:
         name: "ChoicelistName"
-        value: "72,4,1920,40"
+        value: "eval($list_indent+57),6,1920,40"
     - parameter:
         name: "ChoicelistNameSingle"
-        value: "15,4,1920,40"
+        value: "$list_indent,6,1920,40"
     - parameter:
         name: "ChoicelistIcon"
-        value: "15,0,45,47"
+        value: "$list_indent,0,45,47"
     - parameter:
         name: "ChoicelistButtonIcon"
-        value: "15,10,45,30"
+        value: "$list_indent,10,45,30"
     - parameter:
         name: "ChoicelistUseGraphicalSeparator"
         value: "1"
@@ -38,13 +38,13 @@ parameters:
         value: "0x00424242"
     - parameter:
         name: "HelpMenuListHlp"
-        value: "15,2,800,31"
+        value: "$list_indent,2,800,31"
     - parameter:
         name: "ExpandableListIcon"
-        value: "0,0,55,38"
+        value: "$list_indent,0,55,38"
     - parameter:
         name: "ExpandableListDescr"
-        value: "55,2,1000,45"
+        value: "eval($list_indent+55),2,1000,45"
     - parameter:
         name: "VirtualKeyBoard"
         value: "69,68"
@@ -77,28 +77,39 @@ parameters:
         value: "0x00F28B82"
     - parameter:
         name: "ImsSelectionListDescr"
-        value: "46,4,1000,45"
+        value: "eval($list_indent+46),4,1000,45"
     - parameter:
         name: "ImsSelectionListLock"
-        value: "0,2,36,36"
+        value: "$list_indent,2,36,36"
     - parameter:
         name: "FcFileListIcon"
-        value: "10,4,30,30"
+        value: "$list_indent,4,30,30"
     - parameter:
         name: "FcFileListMultiIcon"
-        value: "45,4,30,30"
+        value: "eval($list_indent+35),4,30,30"
     - parameter:
         name: "FcFileListMultiLock"
-        value: "2,0,30,30"
+        value: "$list_indent,0,30,30"
     - parameter:
         name: "FcFileListMultiName"
-        value: "90,2,1000,32"
+        value: "eval($list_indent+80),2,1000,32"
+    # the selection list of files (MultiFileSelectList: debug logs, backups): the lock icon, then the name (a file has no icon
+    # of its own: its name starts at the icon's x)
+    - parameter:
+        name: "FileListMultiLock"
+        value: "$list_indent,7,30,30"
+    - parameter:
+        name: "FileListMultiIcon"
+        value: "eval($list_indent+40),12,22,22"
+    - parameter:
+        name: "FileListMultiName"
+        value: "eval($list_indent+70),4,1000,40"
     - parameter:
         name: "FcFileListName"
-        value: "68,2,1000,34"
+        value: "eval($list_indent+58),2,1000,34"
     - parameter:
         name: "AutomaticVolumeAdjustmentEntryList0"
-        value: "20,2,980,35"
+        value: "$list_indent,2,980,35"
     - parameter:
         name: "AutomaticVolumeAdjustmentEntryList1"
         value: "1000,2,80,35"
@@ -111,22 +122,22 @@ parameters:
     # rows of the classic PluginList: 80 high, name (28 -> 35) at 6, description (20 -> 26) at 44
     - parameter:
         name: "PluginBrowserIcon"
-        value: "10,2,90,76"
+        value: "$list_indent,2,90,76"
     - parameter:
         name: "PluginBrowserName"
-        value: "116,6,36"
+        value: "eval($list_indent+106),6,36"
     - parameter:
         name: "PluginBrowserDescr"
-        value: "116,44,28"
+        value: "eval($list_indent+106),44,28"
     - parameter:
         name: "PluginBrowserDownloadIcon"
-        value: "10,2,90,76"
+        value: "$list_indent,2,90,76"
     - parameter:
         name: "PluginBrowserDownloadName"
-        value: "116,6,36"
+        value: "eval($list_indent+106),6,36"
     - parameter:
         name: "PluginBrowserDownloadDescr"
-        value: "116,44,28"
+        value: "eval($list_indent+106),44,28"
     - parameter:
         name: "ScreenParamSeparatorChar"
         value: "*  •  "
@@ -138,19 +149,19 @@ parameters:
         value: "600,0,1940,36"
     - parameter:
         name: "SelectionListLock"
-        value: "25,6,32,32"
+        value: "$list_indent,6,32,32"
     - parameter:
         name: "SelectionListLockOff"
-        value: "25,6,32,32"
+        value: "$list_indent,6,32,32"
     - parameter:
         name: "SelectionListDescr"
-        value: "80,5,650,45"
+        value: "eval($list_indent+55),5,650,45"
     - parameter:
         name: "EPGImportSelectionListDescr"
-        value: "60,5,1000,45"
+        value: "eval($list_indent+55),5,1000,45"
     - parameter:
         name: "EPGImportSelectionListLock"
-        value: "5,6,53,45"
+        value: "$list_indent,6,53,45"
     - parameter:
         name: "AllowUserDatesAndTimes"
         value: "1,1"

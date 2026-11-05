@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# The python files of the plugin that replace files of enigma2 (src/<dir>/<file>.py) are not copied here: the plugin puts them in place
+# when the skin is selected and puts the originals back when another skin is selected (see plugin.py).
+
 echo "***********************************"
 echo "*        MaterialSkinCockpit      *"
 echo "*               by                *"

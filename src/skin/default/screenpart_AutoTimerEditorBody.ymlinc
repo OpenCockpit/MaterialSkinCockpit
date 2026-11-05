@@ -5,9 +5,7 @@
     itemHeight: "$list_item_height"
     name: "config"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "$width,eval(($height-97)/$list_item_height*$list_item_height)"
-    valign: "center"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
     position: "0,$height-25"

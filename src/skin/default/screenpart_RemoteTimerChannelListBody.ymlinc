@@ -2,7 +2,6 @@
     itemCornerRadius: "$radius_item"
     name: "channellist"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "$width,$height-25"
 
 - xmlinc:

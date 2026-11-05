@@ -13,7 +13,6 @@
     itemHeight: "$list_item_height"
     name: "config"
     position: "0,1"
-    scrollbarMode: "showNever"
     size: "1095,16*$list_item_height"
     transparent: "1"
 - ePixmap:

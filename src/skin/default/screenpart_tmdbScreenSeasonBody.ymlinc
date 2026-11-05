@@ -1,4 +1,0 @@
-- xmlinc:
-    file: "screenpart_tmdbScreenSeasonPanel.ymlinc"
-    position: "25,0"
-    size: "$width-25,$height"

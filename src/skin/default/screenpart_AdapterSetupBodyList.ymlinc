@@ -5,5 +5,4 @@
     itemHeight: "$list_item_height"
     name: "config"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "$width,eval($height/$list_item_height*$list_item_height)"

@@ -40,7 +40,7 @@
     serviceNameFont: "md_body_large"
     serviceNumberFont: "md_body_large"
     serviceRemainingInfoFont: "md_body_small"
-    sidesMargin: "10"
+    sidesMargin: "$list_indent"
     size: "1152,832"
     textSeparator: "  •  "
 - widget:

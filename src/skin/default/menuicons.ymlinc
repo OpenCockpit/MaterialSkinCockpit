@@ -346,6 +346,9 @@ menuicons:
         image: "menu/network_share.svg"
         key: "netsmba_setup"
     - menuicon:
+        image: "menu/network_share.svg"
+        key: "netafp_setup"
+    - menuicon:
         image: "menu/vpn.svg"
         key: "netvpn_setup"
     - menuicon:
@@ -366,6 +369,12 @@ menuicons:
     - menuicon:
         image: "menu/timeshift.svg"
         key: "timeshift_setup"
+    - menuicon:
+        image: "menu/timeshift.svg"
+        key: "timeshiftcockpit_setup"
+    - menuicon:
+        image: "menu/broadcast.svg"
+        key: "streamproxycockpit_setup"
     - menuicon:
         image: "menu/logs.svg"
         key: "logs_menu"

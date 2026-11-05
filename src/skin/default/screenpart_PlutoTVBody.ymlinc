@@ -10,7 +10,6 @@
     itemCornerRadius: "$radius_item"
     name: "feedlist"
     position: "0,0"
-    scrollbarMode: "showNever"
     size: "615,728"
     transparent: "1"
     zPosition: "5"

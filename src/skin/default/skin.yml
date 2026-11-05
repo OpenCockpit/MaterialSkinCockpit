@@ -15,6 +15,8 @@ skin:
     - xmlinc:
         file: "colors.ymlinc"
     - xmlinc:
+        file: "defaults.ymlinc"
+    - xmlinc:
         file: "parameters.ymlinc"
     - xmlinc:
         file: "switchpixmap.ymlinc"
@@ -30,8 +32,494 @@ skin:
         file: "screen_Mute.ymlinc"
     - xmlinc:
         file: "screen_BufferIndicator.ymlinc"
-    - xmlinc:
-        file: "screen_JobView.ymlinc"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenLarge.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_AdapterSetupConfigurationBody"
+              name: "AdapterSetupConfiguration"
+          - screen:
+              content: "screenpart_AutoBouquetsMaker_SetupBody"
+              name: "AutoBouquetsMaker_Setup"
+          - screen:
+              content: "screenpart_AutoMountManagerBody"
+              name: "AutoMountManager"
+              title: "MountManager"
+          - screen:
+              content: "screenpart_AutoTimerOverviewBody"
+              name: "AutoTimerOverview"
+              title: "AutoTimer Overview"
+          - screen:
+              content: "screenpart_CIconfigMenuBody"
+              name: "CIconfigMenu"
+              title: "CI Assignment"
+          - screen:
+              content: "screenpart_CableScanStatusBody"
+              name: "CableScanStatus"
+              title: "Cable Scan"
+          - screen:
+              content: "screenpart_CronTimersBody"
+              name: "CronTimers"
+          - screen:
+              content: "screenpart_CrossEPG_SetupBody"
+              name: "CrossEPG_Setup"
+          - screen:
+              content: "screenpart_CurrentRemoteTVBody"
+              name: "CurrentRemoteTV"
+          - screen:
+              content: "screenpart_DevicesBody"
+              name: "Devices"
+          - screen:
+              content: "screenpart_EPGImportConfigBody"
+              name: "EPGImportConfig"
+              title: "EPG Import Configuration"
+          - screen:
+              content: "screenpart_EventViewBody"
+              name: "EventView"
+              title: "Eventview"
+          - screen:
+              content: "screenpart_EventViewSimpleBody"
+              name: "EventViewSimple"
+          - screen:
+              content: "screenpart_FastScanStatusBody"
+              name: "FastScanStatus"
+              title: "Fast Scan"
+          - screen:
+              content: "screenpart_FilebrowserScreenBody"
+              name: "FilebrowserScreen"
+              title: "File browser"
+          - screen:
+              content: "screenpart_HarddiskSelectionBody"
+              name: "HarddiskSelection"
+          - screen:
+              content: "screenpart_HarddiskSetupBody"
+              name: "HarddiskSetup"
+          - screen:
+              content: "screenpart_HddSetupBody"
+              name: "HddSetup"
+              title: "Hard Drive Setup"
+          - screen:
+              content: "screenpart_HelpMenuBody"
+              name: "HelpMenu"
+          - screen:
+              content: "screenpart_HistoryZapSelectorBody"
+              name: "HistoryZapSelector"
+          - screen:
+              content: "screenpart_IMDBBody"
+              name: "IMDB"
+              title: "Internet Movie Database Details Plugin"
+          - screen:
+              content: "screenpart_InputDeviceSelectionBody"
+              name: "InputDeviceSelection"
+              title: "Select input device"
+          - screen:
+              content: "screenpart_LanguageSelectionBody"
+              name: "LanguageSelection"
+              title: "Language selection"
+          - screen:
+              content: "screenpart_LocationBoxBody"
+              name: "LocationBox"
+          - screen:
+              content: "screenpart_LogManagerBody"
+              name: "LogManager"
+          - screen:
+              content: "screenpart_M3UIPTVManagerConfigBody"
+              name: "M3UIPTVManagerConfig"
+          - screen:
+              content: "screenpart_M3UIPTVVoDMoviesBody"
+              name: "M3UIPTVVoDMovies"
+          - screen:
+              content: "screenpart_NetworkBrowserBody"
+              name: "NetworkBrowser"
+              title: "Network Neighbourhood"
+          - screen:
+              content: "screenpart_NetworkInadynBody"
+              name: "NetworkInadyn"
+          - screen:
+              content: "screenpart_NetworkMiniDLNABody"
+              name: "NetworkMiniDLNA"
+          - screen:
+              content: "screenpart_NetworkMountsMenuBody"
+              name: "NetworkMountsMenu"
+          - screen:
+              content: "screenpart_NetworkServiceSetupBody"
+              name: "NetworkServiceSetup"
+          - screen:
+              content: "screenpart_NetworkuShareBody"
+              name: "NetworkuShare"
+          - screen:
+              content: "screenpart_NimSelectionBody"
+              name: "NimSelection"
+          - screen:
+              content: "screenpart_OscamInfoMenuBody"
+              name: "OscamInfoMenu"
+          - screen:
+              content: "screenpart_ParentalControlEditorBody"
+              name: "ParentalControlEditor"
+              title: "Parental control services Editor"
+          - screen:
+              content: "screenpart_PluginBrowserBody"
+              name: "PluginBrowser"
+          - screen:
+              content: "screenpart_PluginDownloadBrowserBody"
+              name: "PluginDownloadBrowser"
+              title: "Downloadable plugins"
+          - screen:
+              content: "screenpart_RemoteTimerBody"
+              name: "RemoteTimer"
+          - screen:
+              content: "screenpart_RemoteTimerEPGListBody"
+              name: "RemoteTimerEPGList"
+          - screen:
+              content: "screenpart_RemoteTimerEventViewBody"
+              name: "RemoteTimerEventView"
+              title: "Eventview"
+          - screen:
+              content: "screenpart_RestoreMenuBody"
+              name: "RestoreMenu"
+              title: "Restore Backups"
+          - screen:
+              content: "screenpart_SelectImageBody"
+              name: "SelectImage"
+              title: ""
+          - screen:
+              content: "screenpart_SkinSelectorBody"
+              name: "SkinSelector"
+          - screen:
+              content: "screenpart_SoftwareUpdateChoicesBody"
+              name: "SoftwareUpdateChoices"
+          - screen:
+              content: "screenpart_SubsSearchBody"
+              name: "SubsSearch"
+          - screen:
+              content: "screenpart_SubsSupportSettingsBody"
+              name: "SubsSupportSettings"
+          - screen:
+              content: "screenpart_TextBoxBody"
+              name: "TextBox"
+              title: "Message"
+          - screen:
+              content: "screenpart_TextBoxPigLessBody"
+              name: "TextBoxPigLess"
+              title: "Message"
+          - screen:
+              content: "screenpart_TextBoxSplitBody"
+              name: "TextBoxSplit"
+              title: "Message"
+          - screen:
+              content: "screenpart_TimerEditListBody"
+              name: "TimerEditList"
+              title: "Timer Overview"
+          - screen:
+              content: "screenpart_TemplatedTimerEditListBody"
+              name: "TemplatedTimerEditList"
+              title: "Timer Overview"
+          - screen:
+              content: "screenpart_PowerTimerEditListBody"
+              name: "PowerTimerEditList"
+              title: "Power Timer List"
+          - screen:
+              content: "screenpart_UpdatePluginBody"
+              name: "UpdatePlugin"
+              title: "Software Update"
+          - screen:
+              content: "screenpart_UserManagerBody"
+              name: "UserManager"
+              title: "UserManager"
+          - screen:
+              content: "screenpart_VIXDevicesPanelBody"
+              name: "VIXDevicesPanel"
+          - screen:
+              content: "screenpart_VIXSoftcamManagerBody"
+              name: "VIXSoftcamManager"
+          - screen:
+              content: "screenpart_VIXSwapBody"
+              name: "VIXSwap"
+          - screen:
+              content: "screenpart_WlanScanBody"
+              name: "WlanScan"
+              title: "Choose a Wireless Network"
+          - screen:
+              content: "screenpart_WlanStatusBody"
+              name: "WlanStatus"
+              title: "Wireless Network State"
+          - screen:
+              content: "screenpart_tmdbScreenSeasonBody"
+              name: "tmdbScreenSeason"
+              title: "TMDb - The Movie Database"
+          - screen:
+              content: "screenpart_AutoTimerHelpBody"
+              name: "AutoTimerHelp"
+              title: "AutoTimerHelp"
+          - screen:
+              content: "screenpart_AutoTimerPreviewBody"
+              name: "AutoTimerPreview"
+              title: "Preview AutoTimer"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenSmall.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_AudioSelectionBody"
+              name: "AudioSelection"
+              title: "Audio"
+          - screen:
+              content: "screenpart_AutoTimerImporterBody"
+              name: "AutoTimerImporter"
+              title: "Import AutoTimer"
+          - screen:
+              content: "screenpart_BluetoothDevicesManagerBody"
+              name: "BluetoothDevicesManager"
+          - screen:
+              content: "screenpart_BouquetSelectorBody"
+              name: "BouquetSelector"
+              title: "Choose bouquet"
+          - screen:
+              content: "screenpart_ChannelContextMenuBody"
+              name: "ChannelContextMenu"
+          - screen:
+              content: "screenpart_CutListContextMenuBody"
+              name: "CutListContextMenu"
+          - screen:
+              content: "screenpart_EventViewContextMenuBody"
+              name: "EventViewContextMenu"
+          - screen:
+              content: "screenpart_LCDdisplayMenuBody"
+              name: "LCDdisplayMenu"
+              title: "LCD4linux - Config"
+          - screen:
+              content: "screenpart_MovieContextMenuBody"
+              name: "MovieContextMenu"
+          - screen:
+              content: "screenpart_SelectBouquetBody"
+              name: "SelectBouquet"
+              title: "Choose bouquet"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenMedium.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_AutoBouquetsMaker_AboutBody"
+              name: "AutoBouquetsMaker_About"
+          - screen:
+              content: "screenpart_AutoBouquetsMaker_LogBody"
+              name: "AutoBouquetsMaker_Log"
+          - screen:
+              content: "screenpart_AutoBouquetsMaker_MenuBody"
+              name: "AutoBouquetsMaker_Menu"
+          - screen:
+              content: "screenpart_AutoBouquetsMaker_OrderingBody"
+              name: "AutoBouquetsMaker_Ordering"
+          - screen:
+              content: "screenpart_ConsoleBody"
+              name: "Console"
+              title: "Command execution"
+          - screen:
+              content: "screenpart_CrossEPG_AboutBody"
+              name: "CrossEPG_About"
+          - screen:
+              content: "screenpart_CrossEPG_ExtraBody"
+              name: "CrossEPG_Extra"
+          - screen:
+              content: "screenpart_CrossEPG_MenuBody"
+              name: "CrossEPG_Menu"
+          - screen:
+              content: "screenpart_EPGImportSourcesBody"
+              name: "EPGImportSources"
+              title: "EPG Import Sources"
+          - screen:
+              content: "screenpart_EPGSearchHistoryBody"
+              name: "EPGSearchHistory"
+              title: "EPGSearch - History"
+          - screen:
+              content: "screenpart_InputBoxBody"
+              name: "InputBox"
+              title: "Input"
+          - screen:
+              content: "screenpart_JobViewBody"
+              name: "JobView"
+              title: "Job View"
+          - screen:
+              content: "screenpart_LCDdisplayFileBody"
+              name: "LCDdisplayFile"
+              title: "Select File/Dir..."
+          - screen:
+              content: "screenpart_MSNWeatherPluginBody"
+              name: "MSNWeatherPlugin"
+              title: "Weather Plugin"
+          - screen:
+              content: "screenpart_NetworkAdapterSelectionBody"
+              name: "NetworkAdapterSelection"
+          - screen:
+              content: "screenpart_PartnerboxAutoTimerOverviewBody"
+              name: "PartnerboxAutoTimerOverview"
+              title: "AutoTimer Overview"
+          - screen:
+              content: "screenpart_SHOUTcastStreamripperRecordingPathBody"
+              name: "SHOUTcastStreamripperRecordingPath"
+              title: "Select record path for streamripper"
+          - screen:
+              content: "screenpart_SatNimSelectionBody"
+              name: "SatNimSelection"
+          - screen:
+              content: "screenpart_ServiceAppDetectPlayersBody"
+              name: "ServiceAppDetectPlayers"
+          - screen:
+              content: "screenpart_StreamingClientsInfoBody"
+              name: "StreamingClientsInfo"
+          - screen:
+              content: "screenpart_TimerLogBody"
+              name: "TimerLog"
+              title: "Timer log"
+          - screen:
+              content: "screenpart_TimerSanityConflictBody"
+              name: "TimerSanityConflict"
+              title: "Timer sanity error"
+          - screen:
+              content: "screenpart_TimerSelectionBody"
+              name: "TimerSelection"
+              title: "Timer selection"
+          - screen:
+              content: "screenpart_TranslationInfoBody"
+              name: "TranslationInfo"
+          - screen:
+              content: "screenpart_YouTubeSearchBody"
+              name: "YouTubeSearch"
+          - screen:
+              content: "screenpart_CrossEPG_InfoBody"
+              name: "CrossEPG_Info"
+              title: "CrossEPG Info"
+          - screen:
+              content: "screenpart_TempFanControlBody"
+              name: "TempFanControl"
+              title: "Fan Control"
+          - screen:
+              content: "screenpart_setPiconBody"
+              name: "setPicon"
+              title: "SetPicon"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        position: "fill"
+        body: "screenpart_ScreenLarge.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_CiSelectionBody"
+              name: "CiSelection"
+              title: "Common Interface"
+          - screen:
+              content: "screenpart_PackageManagerBody"
+              name: "PackageManager"
+              title: "Packet manager"
+    - screenfamily:
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenMedium.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_CrossEPG_OrderingBody"
+              name: "CrossEPG_Ordering"
+              title: "Cross EPG - Providers start order"
+          - screen:
+              content: "screenpart_CrossEPG_ProvidersBody"
+              name: "CrossEPG_Providers"
+              title: "CrossEPG Providers"
+          - screen:
+              content: "screenpart_FileBrowserBody"
+              name: "FileBrowser"
+              title: "DVD File Browser"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenFull.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_CutListEditorBody"
+              name: "CutListEditor"
+              title: "Cutlist editor"
+          - screen:
+              content: "screenpart_NetworkInadynLogBody"
+              name: "NetworkInadynLog"
+          - screen:
+              content: "screenpart_NetworkVpnLogBody"
+              name: "NetworkVpnLog"
+          - screen:
+              content: "screenpart_SatfinderBody"
+              name: "Satfinder"
+              title: "Satfinder"
+    - screenfamily:
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenLarge.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_EPGImportLogBody"
+              name: "EPGImportLog"
+              title: "EPG Import Log"
+          - screen:
+              content: "screenpart_LCDdisplayConfigBody"
+              name: "LCDdisplayConfig"
+          - screen:
+              content: "screenpart_Pic_ExifBody"
+              name: "Pic_Exif"
+              title: "Info"
+          - screen:
+              content: "screenpart_RemoteTimerScreenBody"
+              name: "RemoteTimerScreen"
+              title: "Timer Overview"
+    - screenfamily:
+        flags: "wfNoBorder"
+        position: "fill"
+        body: "screenpart_ScreenFull.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_EPGSearchBody"
+              name: "EPGSearch"
+              title: "EPG Search"
+          - screen:
+              content: "screenpart_EPGSelectionBody"
+              name: "EPGSelection"
+          - screen:
+              content: "screenpart_EPGSelectionMultiBody"
+              name: "EPGSelectionMulti"
+              title: "EPG Selection"
+          - screen:
+              content: "screenpart_MovieSelectionBody"
+              name: "MovieSelection"
+              title: "Movie Selection"
+          - screen:
+              content: "screenpart_MovieSelectionSlimBody"
+              name: "MovieSelectionSlim"
+              title: "Movie Selection"
+          - screen:
+              content: "screenpart_SHOUTcastWidgetBody"
+              name: "SHOUTcastWidget"
+              title: "SHOUTcast"
+          - screen:
+              content: "screenpart_ServiceScanBody"
+              name: "ServiceScan"
+              title: "Service scan"
+    - screenfamily:
+        backgroundColor: "md_transparent"
+        position: "fill"
+        body: "screenpart_ScreenMedium.ymlinc"
+        children:
+          - screen:
+              content: "screenpart_MMIDialogBody"
+              name: "MMIDialog"
+          - screen:
+              content: "screenpart_RotorNimSelectionBody"
+              name: "RotorNimSelection"
+          - screen:
+              content: "screenpart_SelectSatsEntryScreenBody"
+              name: "SelectSatsEntryScreen"
     - xmlinc:
         file: "screen_ClockScreen.ymlinc"
     - xmlinc:
@@ -51,17 +539,7 @@ skin:
     - xmlinc:
         file: "screen_SimpleChannelSelection.ymlinc"
     - xmlinc:
-        file: "screen_EPGSelection.ymlinc"
-    - xmlinc:
-        file: "screen_EventView.ymlinc"
-    - xmlinc:
-        file: "screen_EPGSelectionMulti.ymlinc"
-    - xmlinc:
-        file: "screen_EPGSearch.ymlinc"
-    - xmlinc:
         file: "screen_EPGSearchSetup.ymlinc"
-    - xmlinc:
-        file: "screen_EPGSearchHistory.ymlinc"
     - xmlinc:
         file: "screen_GraphMultiEPG.ymlinc"
     - xmlinc:
@@ -189,8 +667,6 @@ skin:
           - screen:
               name: "EPGImportProfile"
               title: "EPG Import Profile"
-    - xmlinc:
-        file: "screen_SelectBouquet.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
         body: "screenpart_Menu.ymlinc"
@@ -214,15 +690,11 @@ skin:
     - xmlinc:
         file: "screen_ScanStatus.ymlinc"
     - xmlinc:
-        file: "screen_ServiceScan.ymlinc"
-    - xmlinc:
         file: "screen_SoftcamSetup.ymlinc"
     - xmlinc:
         file: "screen_ChoiceBox.ymlinc"
     - xmlinc:
         file: "screen_ExtensionsList.ymlinc"
-    - xmlinc:
-        file: "screen_SelectImage.ymlinc"
     - xmlinc:
         file: "screen_SortbyChoiceBox.ymlinc"
     - xmlinc:
@@ -231,8 +703,6 @@ skin:
         file: "screen_HotkeySetup.ymlinc"
     - xmlinc:
         file: "screen_HotkeySetupSelect.ymlinc"
-    - xmlinc:
-        file: "screen_Console.ymlinc"
     - xmlinc:
         file: "screen_NumberZapExt.ymlinc"
     - xmlinc:
@@ -265,33 +735,9 @@ skin:
     - xmlinc:
         file: "screen_RadioInfoBar.ymlinc"
     - xmlinc:
-        file: "screen_MovieSelection.ymlinc"
-    - xmlinc:
-        file: "screen_MovieSelectionSlim.ymlinc"
-    - xmlinc:
         file: "screen_NumericalTextInputHelpDialog.ymlinc"
     - xmlinc:
-        file: "screen_AudioSelection.ymlinc"
-    - xmlinc:
-        file: "screen_ChannelContextMenu.ymlinc"
-    - xmlinc:
-        file: "screen_EventViewContextMenu.ymlinc"
-    - xmlinc:
         file: "screen_MinuteInput.ymlinc"
-    - xmlinc:
-        file: "screen_MovieContextMenu.ymlinc"
-    - xmlinc:
-        file: "screen_BouquetSelector.ymlinc"
-    - xmlinc:
-        file: "screen_TimerEditList.ymlinc"
-    - xmlinc:
-        file: "screen_TimerLog.ymlinc"
-    - xmlinc:
-        file: "screen_TimerSanityConflict.ymlinc"
-    - xmlinc:
-        file: "screen_TimerSelection.ymlinc"
-    - xmlinc:
-        file: "screen_FileBrowser.ymlinc"
     - xmlinc:
         file: "screen_ServiceInfoSimple.ymlinc"
     - xmlinc:
@@ -299,47 +745,11 @@ skin:
     - xmlinc:
         file: "screen_BackupSelection.ymlinc"
     - xmlinc:
-        file: "screen_UpdatePlugin.ymlinc"
-    - xmlinc:
-        file: "screen_SoftwareUpdateChoices.ymlinc"
-    - xmlinc:
-        file: "screen_WlanStatus.ymlinc"
-    - xmlinc:
-        file: "screen_WlanScan.ymlinc"
-    - xmlinc:
-        file: "screen_InputDeviceSelection.ymlinc"
-    - xmlinc:
-        file: "screen_HarddiskSelection.ymlinc"
-    - xmlinc:
-        file: "screen_HarddiskSetup.ymlinc"
-    - xmlinc:
-        file: "screen_HelpMenu.ymlinc"
-    - xmlinc:
-        file: "screen_TextBox.ymlinc"
-    - xmlinc:
-        file: "screen_TextBoxSplit.ymlinc"
-    - xmlinc:
-        file: "screen_TextBoxPigLess.ymlinc"
-    - xmlinc:
         file: "screen_MessageBox.ymlinc"
     - xmlinc:
         file: "screen_MessageBoxSimple.ymlinc"
     - xmlinc:
-        file: "screen_LanguageSelection.ymlinc"
-    - xmlinc:
-        file: "screen_SkinSelector.ymlinc"
-    - xmlinc:
-        file: "screen_NimSelection.ymlinc"
-    - xmlinc:
         file: "screen_PositionerSetup.ymlinc"
-    - xmlinc:
-        file: "screen_SelectSatsEntryScreen.ymlinc"
-    - xmlinc:
-        file: "screen_RotorNimSelection.ymlinc"
-    - xmlinc:
-        file: "screen_Satfinder.ymlinc"
-    - xmlinc:
-        file: "screen_SatNimSelection.ymlinc"
     - xmlinc:
         file: "screen_SubtitleDisplay.ymlinc"
     - xmlinc:
@@ -351,19 +761,11 @@ skin:
     - xmlinc:
         file: "screen_Troubleshoot.ymlinc"
     - xmlinc:
-        file: "screen_TranslationInfo.ymlinc"
-    - xmlinc:
-        file: "screen_StreamingClientsInfo.ymlinc"
-    - xmlinc:
         file: "screen_VirtualKeyBoard.ymlinc"
     - xmlinc:
         file: "screen_AC3LipSyncSetup.ymlinc"
     - xmlinc:
         file: "screen_AC3LipSync.ymlinc"
-    - xmlinc:
-        file: "screen_InputBox.ymlinc"
-    - xmlinc:
-        file: "screen_ParentalControlEditor.ymlinc"
     - xmlinc:
         file: "screen_PinInput.ymlinc"
     - xmlinc:
@@ -383,53 +785,39 @@ skin:
     - xmlinc:
         file: "screen_QuickSubtitlesClearRests.ymlinc"
     - xmlinc:
-        file: "screen_MMIDialog.ymlinc"
-    - xmlinc:
-        file: "screen_CiSelection.ymlinc"
-    - xmlinc:
         file: "screen_SubservicesQuickzap.ymlinc"
     - xmlinc:
         file: "screen_Standby.ymlinc"
     - xmlinc:
         file: "screen_IpkgInstaller.ymlinc"
-    - xmlinc:
-        file: "screen_LocationBox.ymlinc"
-    - xmlinc:
-        file: "screen_PackageManager.ymlinc"
-    - xmlinc:
-        file: "screen_RestoreMenu.ymlinc"
     - screenfamily:
-        body: "screenpart_DefaultWizard.ymlinc"
-        bodyPosition: "($screen_width-$window_wizard_width)/2,($screen_height-$window_wizard_height)/2"
+        backgroundColor: "md_transparent"
+        body: "screenpart_ScreenWizard.ymlinc"
         flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
+              content: "screenpart_DefaultWizardBody"
               name: "DefaultWizard"
           - screen:
+              content: "screenpart_DefaultWizardBody"
               name: "StartWizard"
           - screen:
+              content: "screenpart_DefaultWizardBody"
               name: "NetworkWizard"
-    - xmlinc:
-        file: "screen_VideoWizard.ymlinc"
-    - xmlinc:
-        file: "screen_LanguageWizard.ymlinc"
-    - xmlinc:
-        file: "screen_InstallWizardIpkgUpdater.ymlinc"
-    - xmlinc:
-        file: "screen_AdapterSetupConfiguration.ymlinc"
+          - screen:
+              content: "screenpart_VideoWizardBody"
+              name: "VideoWizard"
+          - screen:
+              content: "screenpart_LanguageWizardBody"
+              name: "LanguageWizard"
+          - screen:
+              content: "screenpart_InstallWizardIpkgUpdaterBody"
+              name: "InstallWizardIpkgUpdater"
     - xmlinc:
         file: "screen_AdapterSetup.ymlinc"
     - xmlinc:
-        file: "screen_NetworkAdapterSelection.ymlinc"
-    - xmlinc:
         file: "screen_NetworkAdapterTest.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkBrowser.ymlinc"
-    - xmlinc:
-        file: "screen_AutoMountManager.ymlinc"
-    - xmlinc:
-        file: "screen_UserManager.ymlinc"
     - xmlinc:
         file: "screen_AutoMountView.ymlinc"
     - xmlinc:
@@ -437,41 +825,19 @@ skin:
     - xmlinc:
         file: "screen_picshow.ymlinc"
     - xmlinc:
-        file: "screen_Pic_Exif.ymlinc"
-    - xmlinc:
         file: "screen_Pic_Full_View.ymlinc"
-    - xmlinc:
-        file: "screen_CurrentRemoteTV.ymlinc"
     - xmlinc:
         file: "screen_PartnerboxEntriesListConfigScreen.ymlinc"
     - xmlinc:
         file: "screen_RemotePlayer.ymlinc"
     - xmlinc:
-        file: "screen_ServiceAppDetectPlayers.ymlinc"
-    - xmlinc:
         file: "screen_RemoteTimerBouquetList.ymlinc"
     - xmlinc:
-        file: "screen_RemoteTimer.ymlinc"
-    - xmlinc:
-        file: "screen_RemoteTimerEPGList.ymlinc"
-    - xmlinc:
         file: "screen_RemoteTimerChannelList.ymlinc"
-    - xmlinc:
-        file: "screen_RemoteTimerEventView.ymlinc"
-    - xmlinc:
-        file: "screen_PartnerboxAutoTimerOverview.ymlinc"
     - xmlinc:
         file: "screen_MovieTagEditor.ymlinc"
     - xmlinc:
         file: "screen_TagEditor.ymlinc"
-    - xmlinc:
-        file: "screen_TempFanControl.ymlinc"
-    - xmlinc:
-        file: "screen_EPGImportConfig.ymlinc"
-    - xmlinc:
-        file: "screen_EPGImportSources.ymlinc"
-    - xmlinc:
-        file: "screen_EPGImportLog.ymlinc"
     - screenfamily:
         backgroundColor: "md_surface_overlay"
         body: "screenpart_DownloadBar.ymlinc"
@@ -489,22 +855,6 @@ skin:
           - screen:
               name: "MisPlsLcnScan"
     - xmlinc:
-        file: "screen_CrossEPG_Menu.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_Setup.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_Info.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_Extra.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_Providers.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_About.ymlinc"
-    - xmlinc:
-        file: "screen_CrossEPG_Ordering.ymlinc"
-    - xmlinc:
-        file: "screen_setPicon.ymlinc"
-    - xmlinc:
         file: "screen_setPiconCfg.ymlinc"
     - xmlinc:
         file: "screen_AutoTimer.ymlinc"
@@ -517,14 +867,6 @@ skin:
     - xmlinc:
         file: "screen_AutoTimerServiceEditor.ymlinc"
     - xmlinc:
-        file: "screen_AutoTimerImporter.ymlinc"
-    - xmlinc:
-        file: "screen_AutoTimerOverview.ymlinc"
-    - xmlinc:
-        file: "screen_AutoTimerPreview.ymlinc"
-    - xmlinc:
-        file: "screen_AutoTimerHelp.ymlinc"
-    - xmlinc:
         file: "screen_EPGSaveLoadConfiguration.ymlinc"
     - xmlinc:
         file: "screen_Blindscan.ymlinc"
@@ -533,21 +875,9 @@ skin:
     - xmlinc:
         file: "screen_RemoteTimerSetup.ymlinc"
     - xmlinc:
-        file: "screen_RemoteTimerScreen.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker_Setup.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker_Menu.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker_Ordering.ymlinc"
-    - xmlinc:
         file: "screen_AutoBouquetsMaker_HideSections.ymlinc"
     - xmlinc:
         file: "screen_AutoBouquetsMaker_KeepBouquets.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker_Log.ymlinc"
-    - xmlinc:
-        file: "screen_AutoBouquetsMaker_About.ymlinc"
     - xmlinc:
         file: "screen_BluetoothSetupScreen.ymlinc"
     - xmlinc:
@@ -568,23 +898,11 @@ skin:
               name: "myChannelSelection"
               title: "Select service to add..."
     - xmlinc:
-        file: "screen_CIconfigMenu.ymlinc"
-    - xmlinc:
-        file: "screen_MSNWeatherPlugin.ymlinc"
-    - xmlinc:
         file: "screen_MSNWeatherPluginEntriesListConfigScreen.ymlinc"
     - xmlinc:
         file: "screen_MSNWeatherPluginSearch.ymlinc"
     - xmlinc:
         file: "screen_AutoDiseqc.ymlinc"
-    - xmlinc:
-        file: "screen_FastScanStatus.ymlinc"
-    - xmlinc:
-        file: "screen_CableScanStatus.ymlinc"
-    - xmlinc:
-        file: "screen_FilebrowserScreen.ymlinc"
-    - xmlinc:
-        file: "screen_IMDB.ymlinc"
     - xmlinc:
         file: "screen_IMDbSetup.ymlinc"
     - screenfamily:
@@ -602,8 +920,6 @@ skin:
     - xmlinc:
         file: "screen_tmdbScreenPerson.ymlinc"
     - xmlinc:
-        file: "screen_tmdbScreenSeason.ymlinc"
-    - xmlinc:
         file: "screen_tmdbScreenMovie.ymlinc"
     - xmlinc:
         file: "screen_tmdb.ymlinc"
@@ -615,8 +931,6 @@ skin:
         file: "screen_DevicesMountPanel.ymlinc"
     - xmlinc:
         file: "screen_DeviceMountPanelConf.ymlinc"
-    - xmlinc:
-        file: "screen_HddSetup.ymlinc"
     - xmlinc:
         file: "screen_DreamExplorerII.ymlinc"
     - xmlinc:
@@ -632,39 +946,9 @@ skin:
     - xmlinc:
         file: "screen_YouTubeMain.ymlinc"
     - xmlinc:
-        file: "screen_YouTubeSearch.ymlinc"
-    - xmlinc:
-        file: "screen_M3UIPTVManagerConfig.ymlinc"
-    - xmlinc:
         file: "screen_CatchupPlayer.ymlinc"
     - xmlinc:
-        file: "screen_M3UIPTVVoDMovies.ymlinc"
-    - xmlinc:
-        file: "screen_SubsSupportSettings.ymlinc"
-    - xmlinc:
-        file: "screen_SubsSearch.ymlinc"
-    - xmlinc:
-        file: "screen_CutListEditor.ymlinc"
-    - xmlinc:
-        file: "screen_CutListContextMenu.ymlinc"
-    - xmlinc:
-        file: "screen_BluetoothDevicesManager.ymlinc"
-    - xmlinc:
-        file: "screen_LCDdisplayConfig.ymlinc"
-    - xmlinc:
-        file: "screen_LCDdisplayMenu.ymlinc"
-    - xmlinc:
-        file: "screen_LCDdisplayFile.ymlinc"
-    - xmlinc:
-        file: "screen_SHOUTcastWidget.ymlinc"
-    - xmlinc:
-        file: "screen_SHOUTcastStreamripperRecordingPath.ymlinc"
-    - xmlinc:
         file: "screen_PlutoTV.ymlinc"
-    - xmlinc:
-        file: "screen_PluginBrowser.ymlinc"
-    - xmlinc:
-        file: "screen_PluginDownloadBrowser.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
         body: "screen_About.ymlinc"
@@ -678,8 +962,6 @@ skin:
     - xmlinc:
         file: "screen_SystemNetworkInfo.ymlinc"
     - xmlinc:
-        file: "screen_Devices.ymlinc"
-    - xmlinc:
         file: "screen_ButtonSetup.ymlinc"
     - xmlinc:
         file: "screen_ButtonSetupSelect.ymlinc"
@@ -688,35 +970,13 @@ skin:
     - xmlinc:
         file: "screen_GraphicalEPG.ymlinc"
     - xmlinc:
-        file: "screen_CronTimers.ymlinc"
-    - xmlinc:
-        file: "screen_LogManager.ymlinc"
-    - xmlinc:
         file: "screen_LogManagerViewLog.ymlinc"
     - xmlinc:
         file: "screen_LogManagerFb.ymlinc"
     - xmlinc:
-        file: "screen_NetworkMountsMenu.ymlinc"
-    - xmlinc:
-        file: "screen_OscamInfoMenu.ymlinc"
-    - xmlinc:
         file: "screen_OscamInfoConfigScreen.ymlinc"
     - xmlinc:
-        file: "screen_HistoryZapSelector.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkInadynLog.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkVpnLog.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkInadyn.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkMiniDLNA.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkServiceSetup.ymlinc"
-    - xmlinc:
         file: "screen_uShareSelection.ymlinc"
-    - xmlinc:
-        file: "screen_NetworkuShare.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
         body: "screenpart_VixList.ymlinc"
@@ -742,13 +1002,7 @@ skin:
           - screen:
               name: "VIXScriptRunner"
     - xmlinc:
-        file: "screen_VIXSwap.ymlinc"
-    - xmlinc:
-        file: "screen_VIXDevicesPanel.ymlinc"
-    - xmlinc:
         file: "screen_DeviceMountSetup.ymlinc"
-    - xmlinc:
-        file: "screen_VIXSoftcamManager.ymlinc"
     - screenfamily:
         backgroundColor: "md_transparent"
         body: "screenpart_SoftcamSpinner.ymlinc"
@@ -761,8 +1015,6 @@ skin:
               name: "VIXStopCam"
     - xmlinc:
         file: "screen_RecordTimerQuestion.ymlinc"
-    - xmlinc:
-        file: "screen_EventViewSimple.ymlinc"
     - xmlinc:
         file: "menuicons.ymlinc"
     - xmlinc:

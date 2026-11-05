@@ -10,12 +10,5 @@ screen:
         file: "screenpart_ConfigScreenBody.ymlinc"
         position: "$window_large_body_x,$window_large_body_y"
         size: "$window_large_body_width,$window_large_body_height"
-    - widget:
-        alphatest: "blend"
-        conditional: "HelpWindow"
-        name: "HelpWindow"
-        pixmap: "icons/vkey_icon.png"
-        position: "1824,96"
-        size: "1,1"
-        transparent: "1"
-        zPosition: "1"
+    - xmlinc:
+        file: "screenpart_HelpWindow.ymlinc"

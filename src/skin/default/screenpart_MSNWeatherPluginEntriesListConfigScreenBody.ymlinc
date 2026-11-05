@@ -21,9 +21,7 @@
     itemHeight: "$list_item_height"
     name: "entrylist"
     position: "0,50"
-    scrollbarMode: "showNever"
     size: "$width,12*$list_item_height"
-    valign: "center"
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
     position: "0,765"

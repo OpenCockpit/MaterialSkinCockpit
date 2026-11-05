@@ -1,8 +1,0 @@
-- widget:
-    font: "md_body_medium"
-    itemCornerRadius: "$radius_item"
-    itemHeight: "$list_item_height"
-    name: "list"
-    position: "0,0"
-    size: "$width,13*$list_item_height"
-    valign: "top"

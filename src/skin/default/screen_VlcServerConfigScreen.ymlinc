@@ -10,7 +10,7 @@ screen:
         position: "0,0"
     - eLabel:
         backgroundColor: "md_surface"
-        font: "global_title;51"
+        font: "md_display_small"
         foregroundColor: "md_on_surface"
         halign: "left"
         origin: "screen"

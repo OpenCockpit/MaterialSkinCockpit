@@ -1,7 +1,0 @@
-- widget:
-    font: "md_body_medium"
-    halign: "center"
-    name: "text"
-    position: "319,178"
-    size: "490,297"
-    valign: "center"

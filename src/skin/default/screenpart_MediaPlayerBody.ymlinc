@@ -12,7 +12,6 @@
     itemCornerRadius: "$radius_item"
     name: "filelist"
     position: "0,44"
-    scrollbarMode: "showNever"
     size: "922,610"
 - eLabel:
     backgroundColor: "md_on_surface_variant"
