@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "DVDPlayer"
   position: "150,67"
   size: "1620,352"

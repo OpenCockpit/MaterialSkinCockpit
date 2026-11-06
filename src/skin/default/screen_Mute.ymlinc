@@ -1,7 +1,5 @@
 screen:
-  backgroundColor: "md_transparent"
   cornerRadius: "$radius_popup"
-  flags: "wfNoBorder"
   name: "Mute"
   position: "$screen_center-45,30"
   size: "90,90"

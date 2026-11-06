@@ -1,5 +1,5 @@
 screen:
-  flags: "wfNoBorder"
+  backgroundColor: "md_surface"
   name: "Standby"
   position: "fill"
   children:

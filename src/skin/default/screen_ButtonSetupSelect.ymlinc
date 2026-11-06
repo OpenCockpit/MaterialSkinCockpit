@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "ButtonSetupSelect"
   position: "fill"
   title: ""

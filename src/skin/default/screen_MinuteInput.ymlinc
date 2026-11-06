@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "MinuteInput"
   position: "$screen_center-180,$screen_center-41"
   size: "360,82"

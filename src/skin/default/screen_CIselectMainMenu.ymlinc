@@ -1,5 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
   name: "CIselectMainMenu"
   position: "fill"
   title: "CI assignment"

@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "ClockScreen"
   position: "$screen_center-118,30"
   size: "235,55"

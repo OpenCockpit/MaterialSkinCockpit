@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "RemoteTimerSetup"
   position: "fill"
   title: "Timer entry"

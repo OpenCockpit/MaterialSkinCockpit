@@ -35,10 +35,6 @@
     progressBarWidth: "60"
     progressPercentWidth: "80"
     progressbarHeight: "10"
-    scrollbarSliderBorderColor: "md_on_surface"
-    scrollbarSliderBorderWidth: "1"
-    scrollbarSliderForegroundColor: "md_on_surface_variant"
-    scrollbarWidth: "5"
     serviceEventSeparator: " • "
     serviceInfoFont: "md_body_small"
     serviceNameFont: "md_body_large"
@@ -47,14 +43,12 @@
     sidesMargin: "$list_indent"
     size: "1152,832"
     textSeparator: "  •  "
-- widget:
-    addon: "Pager"
-    backgroundColor: "md_surface"
-    connection: "list"
-    maxPages: "15"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
     position: "0,$height-25"
     size: "1160,25"
-    transparent: "1"
+    connection: "list"
+    pager_max_pages: "15"
 - widget:
     backgroundColor: "md_surface_container_low"
     font: "md_body_medium"
@@ -98,7 +92,6 @@
     transparent: "1"
     valign: "top"
 - widget:
-    alphatest: "blend"
     position: "1215,45"
     render: "Picon"
     size: "200,120"

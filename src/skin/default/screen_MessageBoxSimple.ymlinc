@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "MessageBoxSimple"
   position: "$screen_center-480,$screen_center-8"
   size: "960,15"

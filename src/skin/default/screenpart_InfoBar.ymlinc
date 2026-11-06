@@ -24,7 +24,6 @@ screen:
         size: "2,100"
         zPosition: "-9"
     - widget:
-        alphatest: "blend"
         backgroundColor: "md_surface_overlay_soft"
         cornerRadius: "$radius_icon"
         position: "52,29"

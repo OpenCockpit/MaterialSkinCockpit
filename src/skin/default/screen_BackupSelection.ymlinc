@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "BackupSelection"
   position: "fill"
   title: "Select files/folders to backup"

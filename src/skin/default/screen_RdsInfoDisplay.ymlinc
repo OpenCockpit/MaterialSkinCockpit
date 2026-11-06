@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "RdsInfoDisplay"
   position: "22,90"
   size: "1920,300"

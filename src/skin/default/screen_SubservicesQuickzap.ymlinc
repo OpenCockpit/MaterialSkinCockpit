@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "SubservicesQuickzap"
   position: "$screen_center-384,$screen_center-15"
   size: "768,300"

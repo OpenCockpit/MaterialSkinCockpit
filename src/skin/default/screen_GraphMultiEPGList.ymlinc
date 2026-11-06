@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "GraphMultiEPGList"
   position: "fill"
   title: "Electronic Program Guide"

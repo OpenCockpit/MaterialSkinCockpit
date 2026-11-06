@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "GraphicalEPG"
   position: "fill"
   children:

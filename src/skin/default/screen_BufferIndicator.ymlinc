@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "BufferIndicator"
   position: "$screen_center-300,45"
   size: "600,48"

@@ -1,0 +1,266 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MaterialSkinCockpit\n"
+"POT-Creation-Date: 2026-11-06 23:12+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Favorites"
+msgstr "Favoriten"
+
+msgid "Move up"
+msgstr ""
+
+msgid "Move down"
+msgstr ""
+
+msgid "MENU"
+msgstr ""
+
+msgid "Move the current favorite up"
+msgstr ""
+
+msgid "Move the current favorite down"
+msgstr ""
+
+msgid "Favorites Actions"
+msgstr ""
+
+msgid "Open the favorite of the red button"
+msgstr ""
+
+msgid "Open the favorite of the green button"
+msgstr ""
+
+msgid "Open the favorite of the yellow button"
+msgstr ""
+
+msgid "Open the favorite of the blue button"
+msgstr ""
+
+msgid "Open the favorites editor or the button editor"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "All menus"
+msgstr ""
+
+msgid "Favorites Editor"
+msgstr ""
+
+msgid "Button Editor"
+msgstr ""
+
+msgid "Edit favorites"
+msgstr ""
+
+msgid "Open the menu, or add the entry to the favorites or remove it"
+msgstr ""
+
+msgid "Back"
+msgstr ""
+
+msgid "Add/remove"
+msgstr ""
+
+msgid "Add the selected entry to the favorites or remove it"
+msgstr ""
+
+msgid "Choose the favorite of the button"
+msgstr ""
+
+msgid "Red"
+msgstr ""
+
+msgid "Green"
+msgstr ""
+
+msgid "Yellow"
+msgstr ""
+
+msgid "Blue"
+msgstr ""
+
+msgid "none"
+msgstr ""
+
+msgid "OK chooses the favorite of this button"
+msgstr ""
+
+msgid "None"
+msgstr ""
+
+msgid "Favorite of the button"
+msgstr ""
+
+msgid "Power Timer List"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "INFO"
+msgstr ""
+
+msgid "Stop current event but not future events"
+msgstr ""
+
+msgid "Stop current event and disable future events"
+msgstr ""
+
+msgid "Don't stop current event but disable future events"
+msgstr ""
+
+msgid "Repeating the event currently recording... What do you want to do?"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "Cleanup"
+msgstr ""
+
+msgid "mins"
+msgstr ""
+
+msgid "waiting"
+msgstr ""
+
+msgid "about to start"
+msgstr ""
+
+msgid "running..."
+msgstr ""
+
+msgid "done!"
+msgstr ""
+
+msgid "<unknown>"
+msgstr ""
+
+msgid "Delay:"
+msgstr ""
+
+msgid "Nothing"
+msgstr ""
+
+msgid "Wake Up To Standby"
+msgstr ""
+
+msgid "Standby"
+msgstr ""
+
+msgid "Deep Standby"
+msgstr ""
+
+msgid "At End:"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+msgid "Tue"
+msgstr ""
+
+msgid "Wed"
+msgstr ""
+
+msgid "Thu"
+msgstr ""
+
+msgid "Fri"
+msgstr ""
+
+msgid "Sat"
+msgstr ""
+
+msgid "Sun"
+msgstr ""
+
+msgid "Everyday"
+msgstr ""
+
+msgid "Weekday"
+msgstr ""
+
+msgid "Weekend"
+msgstr ""
+
+msgid "disabled"
+msgstr ""
+
+msgid "failed"
+msgstr ""
+
+msgid "Really delete completed timers?"
+msgstr ""
+
+msgid "Do you really want to delete this timer ?"
+msgstr ""
+
+msgid "Timer List"
+msgstr ""
+
+msgid "Repeating event currently recording... What do you want to do?"
+msgstr ""
+
+msgid "Stop"
+msgstr ""
+
+msgid "zapped"
+msgstr ""
+
+msgid "recording..."
+msgstr ""
+
+msgid "(ZAP)"
+msgstr ""
+
+msgid "(ZAP as PiP)"
+msgstr ""
+
+msgid "Stream"
+msgstr ""
+
+msgid "DVB-T"
+msgstr ""
+
+msgid "DVB-C"
+msgstr ""
+
+msgid "Do you really want to stop the current recording and delete timer %s?"
+msgstr ""
+
+msgid "Do you really want to delete %s?"
+msgstr ""
+
+msgid "Timer Sanity Error"
+msgstr ""
+
+msgid "Conflicting timer"
+msgstr ""
+
+msgid "Channel not in services list"
+msgstr ""
+
+msgid "Edit new entry"
+msgstr ""
+
+msgid "Edit"
+msgstr ""

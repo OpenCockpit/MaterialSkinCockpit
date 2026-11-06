@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "RemotePlayer"
   position: "424,270"
   size: "1080,864"

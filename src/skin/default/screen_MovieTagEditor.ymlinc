@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "MovieTagEditor"
   position: "fill"
   title: "Edit tags"

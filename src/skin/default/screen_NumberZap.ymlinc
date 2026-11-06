@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "NumberZap"
   position: "150,67"
   size: "860,155"

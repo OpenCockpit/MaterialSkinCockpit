@@ -1,5 +1,4 @@
 screen:
-  flags: "wfNoBorder"
   name: "SimpleChannelSelection"
   position: "fill"
   title: "Channel Selection"

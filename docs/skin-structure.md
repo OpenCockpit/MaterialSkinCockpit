@@ -59,12 +59,33 @@ skin.yml                      lists the screens (and families of screens)
   `<name>_selected.svg`, filled and in the dark colour of the pill. `screenpart_Menu` swaps in the
   filled one for the selected row (it is not named in `menuicons.ymlinc`; it is found next to the
   outlined one). Brand icons (`e2_emby_menu.png`, ...) have no filled variant and stay as they are.
+* **The menus as a grid:** `screenpart_MenuGridBody` (screen `MenuHorizontal`, a `ScreenLarge` like the plugin
+  list): 3 rows of 7 tiles, the description of the selected entry and the pager under them. `Screens/Menu.py` uses it
+  for the main menu and every sub menu when the setting *Menu style* (System > User interface, stored in
+  `config.usage.menu_style`) is *Horizontal*. With *Standard* the lists (`Menu`, `menu_<id>`, `screenpart_Menu`) are
+  used as before. enigma2 only offers the setting when the skin has a `MenuHorizontal` screen. The tiles load their icons at
+  96 px from `menuicons` in an applet (the menu hands in 48 px ones, `MenuIconSize`, which the list needs). The selected
+  tile is the inverse pill of the lists with the filled dark blue icon (`<name>_selected.svg`): the applet puts a build
+  function on the content of the tiles that swaps it in for the tile that is selected at the moment it is painted, as
+  `screenpart_Menu` does for its list. An icon without a `_selected` variant (the brand PNGs) stays as it is.
+* **The favorites menu:** the MENU key opens `FavoritesMenu` (`src/FavoritesMenu.py`, a `Screens.Menu.Menu`) instead of the
+  main menu: the entries of the menu tree that the user has picked, and a last tile *Menu* that opens the whole tree. The skin
+  draws it like any other menu (the grid with *Menu style* *Horizontal*, `menu_favorites` / `Menu` otherwise): the tiles need the
+  `menuicons` keys of their entries, `mainmenu` and `favorites` are in the skin, a plugin can have one with its id (`moviecockpit`);
+  without one it gets the puzzle piece, the menuicon `plugin`.
+  The favorites are in `config.plugins.materialskincockpit.favorites` (a JSON list of key paths, `plugin:<id>` for the plugin
+  list, `extension:<id>` for the extensions), PREVIOUS / NEXT move the selected one, the four colour keys open the favorite that is
+  assigned to them (`favorites_buttons`, a JSON dict colour -> path; the footer shows its name) and MENU opens a choice of the
+  *Favorites Editor* (the tree level by level, OK opens a menu or adds an entry, YELLOW adds a menu or an entry) and the
+  *Button Editor* (a row for each colour key, OK chooses its favorite; the rows have the icons `button_red` ... `button_blue`,
+  dots in the colours of the keys). It is always on with this skin; there is no setup
+  entry. Whoever does not want it adds `config.plugins.materialskincockpit.favorites_menu=false` to `/etc/enigma2/settings`
+  (enigma2 stopped: it writes the file when it ends): MENU opens the main menu then, as it does with another skin.
 * **Fonts:** Roboto Regular for the text, Roboto Medium for the `*_emphasized` styles (Material uses 500
   there, not 700). Both are in `fonts/`.
 
 ## Known exceptions
 
-* `screen_ChannelSelectionRadio`: its frame is at `0,0`, the TV channel list's is centred.
 * `screenpart_WlanStatusPanel`: the `Statustext` label is off-screen to the left, so the part
   does not start at its origin.
 * `screenpart_Menu` builds its frame in a Python applet, with coordinates in the code.

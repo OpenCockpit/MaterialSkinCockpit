@@ -1,6 +1,5 @@
 screen:
   backgroundColor: "md_shadow"
-  flags: "wfNoBorder"
   name: "QuitMainloopScreen"
   position: "fill"
   zPosition: "100"

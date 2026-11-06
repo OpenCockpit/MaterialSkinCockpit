@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "MemoryInfo"
   position: "fill"
   size: "1923,1080"

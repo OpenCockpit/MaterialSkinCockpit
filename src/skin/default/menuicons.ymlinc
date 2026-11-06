@@ -25,6 +25,18 @@ menuicons:
         image: "menu/av_setup.svg"
         key: "av_setup"
     - menuicon:
+        image: "menu/button_blue.svg"
+        key: "button_blue"
+    - menuicon:
+        image: "menu/button_green.svg"
+        key: "button_green"
+    - menuicon:
+        image: "menu/button_red.svg"
+        key: "button_red"
+    - menuicon:
+        image: "menu/button_yellow.svg"
+        key: "button_yellow"
+    - menuicon:
         image: "menu/gui_settings.svg"
         key: "channelselection_setup"
     - menuicon:
@@ -39,6 +51,15 @@ menuicons:
     - menuicon:
         image: "menu/softcam.svg"
         key: "cam"
+    - menuicon:
+        image: "menu/favorites.svg"
+        key: "favorites"
+    - menuicon:
+        image: "menu/mainmenu.svg"
+        key: "mainmenu"
+    - menuicon:
+        image: "menu/film.svg"
+        key: "moviecockpit"
     - menuicon:
         image: "menu/softcam.svg"
         key: "softcam_setup"
@@ -153,6 +174,9 @@ menuicons:
     - menuicon:
         image: "menu/parental_setup.svg"
         key: "parental_setup"
+    - menuicon:
+        image: "menu/plugin_selection.svg"
+        key: "plugin"
     - menuicon:
         image: "menu/plugin_selection.svg"
         key: "plugin_selection"

@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "PictureInPictureZapping"
   position: "870,45"
   size: "180,39"

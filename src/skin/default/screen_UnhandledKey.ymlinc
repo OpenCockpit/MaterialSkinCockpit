@@ -1,7 +1,5 @@
 screen:
   alphaBlend: "1"
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "UnhandledKey"
   position: "1797,41"
   size: "56,68"

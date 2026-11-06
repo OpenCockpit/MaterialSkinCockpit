@@ -1,7 +1,5 @@
 screen:
-  backgroundColor: "md_transparent"
   cornerRadius: "$radius_popup"
-  flags: "wfNoBorder"
   name: "Volume"
   position: "710,65"
   size: "474,50"

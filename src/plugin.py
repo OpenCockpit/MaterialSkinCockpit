@@ -30,13 +30,18 @@ def syncPYs():
         restore()
 
 
-def onSkinSelected(configElement=None):
+def onSkinSelected(_configElement=None):
     syncPYs()
 
 
 def Plugins(**__):
     logger.info("  +++ Version: %s starts...", VERSION)
     syncPYs()  # what the skin selector may not have done (an update of the plugin, the skin set by hand)
+    try:  # the MENU key opens a menu of favorites, unless config.plugins.materialskincockpit.favorites_menu is off (see FavoritesMenu)
+        from .FavoritesMenu import install  # pylint: disable=import-outside-toplevel
+        install()
+    except Exception:  # pylint: disable=broad-except
+        logger.exception("FavoritesMenu not installed")
     # the skin selector writes the setting before it reloads the skin or restarts the GUI
     config.skin.primary_skin.addNotifier(onSkinSelected, initial_call=False)
     return []

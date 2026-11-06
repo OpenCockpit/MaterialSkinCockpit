@@ -1,8 +1,8 @@
 from enigma import RT_HALIGN_LEFT, RT_VALIGN_CENTER, eListboxPythonMultiContent, gFont
-from Components.MenuList import MenuList
-from Components.MultiContent import MultiContentEntryText
 from Tools.Directories import fileExists, SCOPE_CURRENT_SKIN, resolveFilename
 from Tools.LoadPixmap import LoadPixmap
+from Components.MenuList import MenuList
+from Components.MultiContent import MultiContentEntryText
 from skin import applySkinFactor, fonts, parameters
 
 
@@ -50,7 +50,7 @@ def ChoiceEntryComponent(key=None, text=None):
 				pngfile = resolveFilename(SCOPE_CURRENT_SKIN, "icons/bullet.png")
 			else:
 				iconKeyConfigName = "ChoicelistButtonIcon"
-				pngfile = resolveFilename(SCOPE_CURRENT_SKIN, "buttons/key_%s.png" % key)
+				pngfile = resolveFilename(SCOPE_CURRENT_SKIN, f"buttons/key_{key}.png")
 			if fileExists(pngfile):
 				png = LoadPixmap(pngfile)
 				x, y, w, h = parameters.get(iconKeyConfigName, (applySkinFactor(5), applySkinFactor(0), png.size().width(), png.size().height()))
@@ -61,7 +61,7 @@ def ChoiceEntryComponent(key=None, text=None):
 class ChoiceList(MenuList):
 	SPACER = "--"
 
-	def __init__(self, list, selection=0, enableWrapAround=False):
+	def __init__(self, list, selection=0, enableWrapAround=False):  # pylint: disable=redefined-builtin  # callers pass list= by keyword
 		MenuList.__init__(self, list, enableWrapAround, eListboxPythonMultiContent)
 		font = fonts.get("ChoiceList", applySkinFactor("Regular", 20, 25))
 		self.l.setFont(0, gFont(font[0], font[1]))

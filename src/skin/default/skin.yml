@@ -33,8 +33,6 @@ skin:
     - xmlinc:
         file: "screen_BufferIndicator.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenLarge.ymlinc"
         children:
@@ -131,6 +129,9 @@ skin:
           - screen:
               content: "screenpart_M3UIPTVVoDMoviesBody"
               name: "M3UIPTVVoDMovies"
+          - screen:
+              content: "screenpart_MenuGridBody"
+              name: "MenuHorizontal"
           - screen:
               content: "screenpart_NetworkBrowserBody"
               name: "NetworkBrowser"
@@ -259,8 +260,6 @@ skin:
               name: "AutoTimerPreview"
               title: "Preview AutoTimer"
     - screenfamily:
-        backgroundColor: "md_transparent"
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenSmall.ymlinc"
         children:
@@ -300,8 +299,6 @@ skin:
               name: "SelectBouquet"
               title: "Choose bouquet"
     - screenfamily:
-        backgroundColor: "md_transparent"
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenMedium.ymlinc"
         children:
@@ -405,7 +402,6 @@ skin:
               name: "setPicon"
               title: "SetPicon"
     - screenfamily:
-        backgroundColor: "md_transparent"
         position: "fill"
         body: "screenpart_ScreenLarge.ymlinc"
         children:
@@ -418,7 +414,6 @@ skin:
               name: "PackageManager"
               title: "Packet manager"
     - screenfamily:
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenMedium.ymlinc"
         children:
@@ -435,11 +430,13 @@ skin:
               name: "FileBrowser"
               title: "DVD File Browser"
     - screenfamily:
-        backgroundColor: "md_transparent"
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenFull.ymlinc"
         children:
+          - screen:
+              content: "screenpart_ChannelSelectionRadioBody"
+              name: "ChannelSelectionRadio"
+              title: "Radio Channel Selection"
           - screen:
               content: "screenpart_CutListEditorBody"
               name: "CutListEditor"
@@ -455,7 +452,6 @@ skin:
               name: "Satfinder"
               title: "Satfinder"
     - screenfamily:
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenLarge.ymlinc"
         children:
@@ -475,7 +471,6 @@ skin:
               name: "RemoteTimerScreen"
               title: "Timer Overview"
     - screenfamily:
-        flags: "wfNoBorder"
         position: "fill"
         body: "screenpart_ScreenFull.ymlinc"
         children:
@@ -507,7 +502,6 @@ skin:
               name: "ServiceScan"
               title: "Service scan"
     - screenfamily:
-        backgroundColor: "md_transparent"
         position: "fill"
         body: "screenpart_ScreenMedium.ymlinc"
         children:
@@ -545,9 +539,7 @@ skin:
     - xmlinc:
         file: "screen_GraphMultiEPGList.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_ConfigScreen.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -668,9 +660,7 @@ skin:
               name: "EPGImportProfile"
               title: "EPG Import Profile"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_Menu.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -710,7 +700,6 @@ skin:
     - xmlinc:
         file: "screen_VideoMode.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_ConfigScreen.ymlinc"
         position: "fill"
         children:
@@ -730,8 +719,6 @@ skin:
         file: "screen_TimeshiftState.ymlinc"
     - xmlinc:
         file: "screen_TimeshiftLive.ymlinc"
-    - xmlinc:
-        file: "screen_ChannelSelectionRadio.ymlinc"
     - xmlinc:
         file: "screen_RadioInfoBar.ymlinc"
     - xmlinc:
@@ -791,9 +778,7 @@ skin:
     - xmlinc:
         file: "screen_IpkgInstaller.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_ScreenWizard.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -842,7 +827,6 @@ skin:
         backgroundColor: "md_surface_overlay"
         body: "screenpart_DownloadBar.ymlinc"
         bodyPosition: "10,5"
-        flags: "wfNoBorder"
         position: "0,0"
         size: "1920,60"
         children:
@@ -887,7 +871,6 @@ skin:
     - xmlinc:
         file: "screen_CAidSelect.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screen_CAidSelect.ymlinc"
         position: "fill"
         children:
@@ -906,9 +889,7 @@ skin:
     - xmlinc:
         file: "screen_IMDbSetup.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_tmdb2.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -950,9 +931,7 @@ skin:
     - xmlinc:
         file: "screen_PlutoTV.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screen_About.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -978,9 +957,7 @@ skin:
     - xmlinc:
         file: "screen_uShareSelection.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_VixList.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -992,9 +969,7 @@ skin:
           - screen:
               name: "ImageManagerDownload"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screen_IpkgInstaller.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:
@@ -1004,9 +979,7 @@ skin:
     - xmlinc:
         file: "screen_DeviceMountSetup.ymlinc"
     - screenfamily:
-        backgroundColor: "md_transparent"
         body: "screenpart_SoftcamSpinner.ymlinc"
-        flags: "wfNoBorder"
         position: "fill"
         children:
           - screen:

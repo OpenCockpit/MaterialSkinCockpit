@@ -1,6 +1,4 @@
 screen:
-  backgroundColor: "md_transparent"
-  flags: "wfNoBorder"
   name: "PositionerSetup"
   position: "fill"
   title: "Positioner setup"

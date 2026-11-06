@@ -1,6 +1,5 @@
 screen:
   backgroundColor: "md_surface"
-  flags: "wfNoBorder"
   name: "Pic_Full_View"
   position: "fill"
   title: "Picture"

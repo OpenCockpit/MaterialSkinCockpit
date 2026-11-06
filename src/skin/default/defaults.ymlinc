@@ -3,6 +3,16 @@
 # A list (a widget with an itemCornerRadius): no scrollbar (the pager shows where the list is), the text of a row at the indent of
 # the skin and in the middle of the row. textOffset and valign are only read by the lists of strings: a list drawn by a template
 # ignores both.
+
+# A screen: no border, and transparent. Its surface is the window frame it includes (rounded, so what is under the corners and around a
+# smaller window shows). A screen that draws its own surface, or has to hide what is under it, says backgroundColor itself. Only a screen
+# that has a name: the screen entries of screens.ymlinc (key and image, the icon of a screen) are no screens, enigma2 reads nothing else of them.
+- default:
+    tag: "screen[name]"
+    flags: "wfNoBorder"
+    resolution: "1920,1080"
+    backgroundColor: "md_transparent"
+
 - default:
     tag: "widget[itemCornerRadius]"
     scrollbarMode: "showNever"
@@ -24,3 +34,8 @@
     setFont: "$timer_list_font"
     setServiceNameFont: "$timer_list_font"
     sidesMargin: "$list_indent"
+
+# A picon is drawn with its transparency.
+- default:
+    tag: "widget[render=Picon]"
+    alphatest: "blend"
