@@ -1,0 +1,11 @@
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "channellist"
+    position: "0,0"
+    size: "$width,$height-25"
+
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "channellist"

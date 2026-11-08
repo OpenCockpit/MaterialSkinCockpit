@@ -1,0 +1,8 @@
+screen:
+  name: "MoviePlayer"
+  position: "fill"
+  title: "InfoBar"
+  children:
+    - xmlinc:
+        file: "screenpart_Player.ymlinc"
+        position: "38,860"

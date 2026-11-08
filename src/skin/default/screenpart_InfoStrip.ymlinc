@@ -1,0 +1,13 @@
+# A line (or two) of information under a list: the text of a source of the screen, centred, in the colour of the information.
+# The includer places it with position= and size=. Parameters of the include:
+#   strip_source    the source of the screen the text comes from (introduction, description, ...)
+#   strip_font      the font
+- widget:
+    font: "$strip_font"
+    foregroundColor: "md_primary"
+    halign: "center"
+    position: "0,0"
+    render: "Label"
+    size: "$width,$height"
+    source: "$strip_source"
+    valign: "center"

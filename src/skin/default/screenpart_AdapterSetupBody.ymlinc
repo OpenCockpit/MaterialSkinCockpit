@@ -1,0 +1,29 @@
+# The settings list on top, the current settings below it (each half of the body without the description) and the
+# description of the selected entry in up to two lines across the bottom.
+- xmlinc:
+    file: "screenpart_AdapterSetupBodyList.ymlinc"
+    position: "0,0"
+    size: "$width,eval(($height-72)/2)"
+- xmlinc:
+    file: "screenpart_AdapterSetupBodyInfo.ymlinc"
+    position: "0,eval(($height-72)/2)"
+    size: "$width,eval(($height-72)/2)"
+- widget:
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "description"
+    objectTypes: "description,Button,Label"
+    position: "0,$height-72"
+    size: "$width,72"
+    valign: "center"
+- widget:
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    halign: "center"
+    objectTypes: "description,StaticText"
+    position: "0,$height-72"
+    render: "Label"
+    size: "$width,72"
+    source: "description"
+    valign: "center"

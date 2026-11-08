@@ -1,0 +1,27 @@
+# The list of the buttons (functions) on top, the chosen functions of the selected one below it, both as wide as the body,
+# and the description in up to two lines across the bottom. The chosen list is 6 rows high; the list gets the rows that are left.
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    size: "$width,eval(($height-68-23-13-6*$list_item_height)/$list_item_height*$list_item_height)"
+- widget:
+    itemCornerRadius: "$radius_item"
+    name: "choosen"
+    position: "0,eval($height-68-23-6*$list_item_height)"
+    size: "$width,6*$list_item_height"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-91"
+    size: "$width,23"
+    connection: "choosen"
+- widget:
+    font: "md_body_small"
+    foregroundColor: "md_primary"
+    halign: "center"
+    name: "description"
+    position: "0,$height-68"
+    size: "$width,68"
+    valign: "center"
+    zPosition: "1"

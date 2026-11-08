@@ -1,0 +1,12 @@
+# The page indicator of a list (Pager addon). The includer places it with position= and size= (at the bottom edge of the
+# body: position "0,$height-25", size "$width,25") and names the list or label it follows with connection=. A list that has more
+# pages than pager_max_pages (lists.ymlinc) says how many pages the indicator shows as dots with pager_max_pages= on its xmlinc.
+- widget:
+    addon: "Pager"
+    backgroundColor: "md_surface"
+    conditional: "$connection"
+    connection: "$connection"
+    maxPages: "$pager_max_pages"
+    position: "0,0"
+    size: "$width,$height"
+    transparent: "1"

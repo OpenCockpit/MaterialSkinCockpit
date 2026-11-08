@@ -1,0 +1,18 @@
+screen:
+  name: "PictureInPictureZapping"
+  position: "870,45"
+  size: "180,39"
+  title: "PiPZap"
+  zPosition: "2"
+  children:
+    - eLabel:
+        backgroundColor: "md_transparent"
+        borderColor: "md_shadow"
+        borderWidth: "3"
+        font: "md_title_large"
+        halign: "center"
+        position: "0,0"
+        size: "180,43"
+        text: "PiP-Zap"
+        transparent: "1"
+        valign: "center"

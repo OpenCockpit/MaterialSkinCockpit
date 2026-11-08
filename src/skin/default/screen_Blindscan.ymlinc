@@ -1,0 +1,19 @@
+screen:
+  name: "Blindscan"
+  position: "fill"
+  title: "Blind scan"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreen.ymlinc"
+        position: "0,0"
+    - widget:
+        conditional: "rotorstatus"
+        font: "md_display_small"
+        foregroundColor: "md_secondary"
+        halign: "center"
+        name: "rotorstatus"
+        position: "1824,66"
+        size: "720,405"
+        transparent: "1"
+        valign: "center"
+        zPosition: "1"

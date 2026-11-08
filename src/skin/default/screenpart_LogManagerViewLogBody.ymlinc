@@ -1,0 +1,5 @@
+- widget:
+    font: "console_font"
+    name: "list"
+    position: "0,0"
+    size: "$width,$height"

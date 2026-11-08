@@ -1,0 +1,16 @@
+screen:
+  name: "EPGSearchSetup"
+  position: "fill"
+  title: "EPGSearch Setup"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreen.ymlinc"
+        position: "0,0"
+    - widget:
+        backgroundColor: "md_surface"
+        font: "md_body_large"
+        position: "0,0"
+        render: "Label"
+        size: "0,0"
+        source: "help"
+        transparent: "1"

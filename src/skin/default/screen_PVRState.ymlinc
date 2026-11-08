@@ -1,0 +1,5 @@
+screen:
+  name: "PVRState"
+  position: "192,172"
+  size: "225,45"
+  zPosition: "2"

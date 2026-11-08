@@ -1,0 +1,8 @@
+screen:
+  name: "SecondInfoBarSimple"
+  position: "fill"
+  title: "Second InfoBar"
+  children:
+    - xmlinc:
+        file: "screenpart_SecondInfoBar.ymlinc"
+        position: "96,54"

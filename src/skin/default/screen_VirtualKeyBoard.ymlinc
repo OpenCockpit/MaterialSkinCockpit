@@ -1,0 +1,13 @@
+screen:
+  name: "VirtualKeyBoard"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screenpart_Window.ymlinc"
+        position: "center"
+        size: "$window_medium_width,$window_medium_height"
+        window_inset_x: "$window_medium_body_x"
+    - xmlinc:
+        file: "screenpart_VirtualKeyBoard.ymlinc"
+        position: "$window_medium_body_x+82,$window_medium_body_y+40"
+        size: "964,580"

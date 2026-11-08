@@ -1,0 +1,12 @@
+screen:
+  name: "AutoTimerSettings"
+  position: "fill"
+  title: "AutoTimer Settings"
+  children:
+    - xmlinc:
+        file: "screen_AutoTimerEditor.ymlinc"
+        position: "0,0"
+    - widget:
+        name: "HelpWindow"
+        position: "1824,596"
+        size: "80,0"

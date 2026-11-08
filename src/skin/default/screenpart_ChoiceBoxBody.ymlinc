@@ -1,0 +1,64 @@
+# The body of a ChoiceBox in the small window (screenpart_ScreenSmall): the window has a fixed size, nothing here resizes it. The
+# applet only lays out what is inside the body: the text above the list (if the box has one), the list, and the description of the
+# selected entry below it (if an entry has one). The list gets whole rows; if there are more entries than rows, it scrolls.
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_title_medium_emphasized"
+    foregroundColor: "md_secondary"
+    name: "text"
+    position: "10,10"
+    size: "$width-20,0"
+    valign: "center"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    name: "description"
+    position: "10,$height"
+    size: "$width-20,0"
+    transparent: "1"
+- widget:
+    backgroundColor: "md_surface"
+    enableWrapAround: "1"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "list"
+    position: "0,0"
+    size: "$width,$height"
+    transparent: "1"
+    zPosition: "2"
+- applet:
+    type: "onLayoutFinish"
+    text: |
+      from enigma import ePoint
+      # the body: where the list was put, and the size it was given (all of the body)
+      bodyX = self["list"].instance.position().x()
+      bodyY = self["list"].instance.position().y()
+      bodyWidth = self["list"].instance.size().width()
+      bodyHeight = self["list"].instance.size().height()
+      margin = 10
+      # the text above the list: as high as its text needs at the width of the body (none if the box has no text)
+      textHeight = 0
+      textpos = self["text"].instance.position()
+      if not (textpos.x() < 0 and textpos.y() < 0):
+          self["text"].resize(bodyWidth - 2 * margin, self["text"].getSize()[1])
+          textHeight = self["text"].getSize()[1]
+          self["text"].resize(bodyWidth - 2 * margin, textHeight)
+      top = bodyY
+      if textHeight > 0:
+          self["text"].move(bodyX + margin, bodyY + margin)
+          top = bodyY + margin + textHeight + margin
+      # the description of the selected entry, at the bottom of the body, if any entry has one
+      descriptionHeight = 0
+      if bool(self.list) and any([(True if len(x[0]) > 2 and x[0][2] and isinstance(x[0][2], str) else False) for x in self.list]):
+          descriptionHeight = 75
+      bottom = bodyY + bodyHeight
+      if descriptionHeight > 0:
+          bottom -= descriptionHeight + margin
+          self["description"].move(bodyX + margin, bottom + margin)
+          self["description"].resize(bodyWidth - 2 * margin, descriptionHeight)
+      # the list: whole rows between the text and the description
+      itemHeight = self["list"].l.getItemSize().height()
+      rows = max(1, (bottom - top) // itemHeight)
+      self["list"].move(bodyX, top)
+      self["list"].resize(bodyWidth, rows * itemHeight)

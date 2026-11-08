@@ -1,0 +1,8 @@
+screen:
+  name: "RemoteTimerSetup"
+  position: "fill"
+  title: "Timer entry"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreen.ymlinc"
+        position: "0,0"

@@ -1,0 +1,16 @@
+screen:
+  name: "GraphicalEPGPIG"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_GraphMultiEPG.ymlinc"
+        position: "0,0"
+    - widget:
+        font: "md_body_medium"
+        itemCornerRadius: "$radius_item"
+        itemHeight: "$list_item_height"
+        name: "bouquetlist"
+        position: "1507,75"
+        size: "384,5*$list_item_height"
+        transparent: "0"
+        zPosition: "100"

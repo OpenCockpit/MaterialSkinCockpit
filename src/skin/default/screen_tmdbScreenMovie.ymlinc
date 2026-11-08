@@ -1,0 +1,12 @@
+screen:
+  name: "tmdbScreenMovie"
+  position: "fill"
+  title: "TMDb - The Movie Database - Details"
+  children:
+    - xmlinc:
+        file: "screenpart_tmdb1.ymlinc"
+        position: "0,0"
+    - xmlinc:
+        file: "screenpart_tmdbScreenMoviePanel.ymlinc"
+        position: "54,109"
+        size: "1690,902"

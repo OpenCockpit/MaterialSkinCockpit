@@ -1,0 +1,13 @@
+- widget:
+    font: "mono_font"
+    halign: "left"
+    name: "AboutScrollLabel"
+    position: "0,0"
+    scrollbarMode: "showNever"
+    size: "$width,754"
+    zPosition: "2"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "AboutScrollLabel"

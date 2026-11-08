@@ -1,0 +1,7 @@
+screen:
+  name: "LogManagerFb"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_LogManagerViewLog.ymlinc"
+        position: "0,0"

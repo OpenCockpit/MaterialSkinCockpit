@@ -1,0 +1,9 @@
+screen:
+  name: "InfoBar"
+  position: "0,0"
+  size: "1920,1080"
+  title: "InfoBar"
+  children:
+    - xmlinc:
+        file: "screenpart_InfoBar.ymlinc"
+        position: "38,862"

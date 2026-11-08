@@ -1,0 +1,34 @@
+screen:
+  name: "ChapterZap"
+  position: "$screen_center-182,$screen_center-43"
+  size: "364,86"
+  title: "Chapter"
+  children:
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "chzap_bg.png"
+        position: "0,0"
+        size: "364,86"
+        zPosition: "-9"
+    - ePixmap:
+        alphatest: "blend"
+        pixmap: "chzap_overlay.png"
+        position: "2,2"
+        size: "360,82"
+        zPosition: "-8"
+    - widget:
+        backgroundColor: "md_surface_overlay_soft"
+        font: "md_title_large"
+        foregroundColor: "md_secondary"
+        name: "chapter"
+        position: "30,20"
+        size: "180,43"
+        transparent: "1"
+    - widget:
+        font: "md_title_large"
+        halign: "right"
+        name: "number"
+        position: "210,20"
+        size: "120,43"
+        transparent: "1"
+        zPosition: "1"

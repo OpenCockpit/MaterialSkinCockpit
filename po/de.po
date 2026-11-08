@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MaterialSkinCockpit\n"
+"POT-Creation-Date: 2026-11-06 23:12+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "Cockpit"
+msgstr "Cockpit"
+
+msgid "Move up"
+msgstr "Nach oben"
+
+msgid "Move down"
+msgstr "Nach unten"
+
+msgid "MENU"
+msgstr "MENU"
+
+msgid "Move the current cockpit item up"
+msgstr "Cockpit-Eintrag nach oben verschieben"
+
+msgid "Move the current cockpit item down"
+msgstr "Cockpit-Eintrag nach unten verschieben"
+
+msgid "Cockpit Actions"
+msgstr "Cockpit-Aktionen"
+
+msgid "Cockpit - Channels"
+msgstr "Cockpit - Kanäle"
+
+msgid "Cockpit - Menu"
+msgstr "Cockpit - Menü"
+
+msgid "Jump to the media list (the bouquets)"
+msgstr "Zur Medienliste (Bouquets) springen"
+
+msgid "Jump to the functions list"
+msgstr "Zur Funktionsliste springen"
+
+msgid "Open the cockpit item of the red button"
+msgstr "Cockpit-Eintrag der roten Taste öffnen"
+
+msgid "Open the cockpit item of the green button"
+msgstr "Cockpit-Eintrag der grünen Taste öffnen"
+
+msgid "Open the cockpit item of the yellow button"
+msgstr "Cockpit-Eintrag der gelben Taste öffnen"
+
+msgid "Open the cockpit item of the blue button"
+msgstr "Cockpit-Eintrag der blauen Taste öffnen"
+
+msgid "Open the menu, the cockpit editor, the bouquet editor or the button editor"
+msgstr "Menü, Cockpit-Editor, Bouquet-Editor oder Tasten-Editor öffnen"
+
+msgid "Cockpit Editor"
+msgstr "Cockpit-Editor"
+
+msgid "Bouquet Editor"
+msgstr "Bouquet-Editor"
+
+msgid "Channel"
+msgstr "Sender"
+
+msgid "Channel list"
+msgstr "Senderliste"
+
+msgid "Button Editor"
+msgstr "Tasten-Editor"
+
+msgid "Edit cockpit items"
+msgstr "Cockpit-Einträge bearbeiten"
+
+msgid "Open the selected menu"
+msgstr "Gewähltes Menü öffnen"
+
+msgid "Back"
+msgstr "Zurück"
+
+msgid "Add/remove"
+msgstr "Hinzufügen/Entfernen"
+
+msgid "Add the selected entry as a cockpit item or remove it"
+msgstr "Gewählten Eintrag als Cockpit-Eintrag hinzufügen oder entfernen"
+
+msgid "Choose the cockpit item of the button"
+msgstr "Cockpit-Eintrag der Taste wählen"
+
+msgid "Red"
+msgstr "Rot"
+
+msgid "Green"
+msgstr "Grün"
+
+msgid "Yellow"
+msgstr "Gelb"
+
+msgid "Blue"
+msgstr "Blau"
+
+msgid "OK chooses the cockpit item of this button"
+msgstr "OK wählt den Cockpit-Eintrag dieser Taste"
+
+msgid "None"
+msgstr "Nichts"
+
+msgid "Cockpit item of the button"
+msgstr "Cockpit-Eintrag der Taste"

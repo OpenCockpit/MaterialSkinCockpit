@@ -1,0 +1,7 @@
+- widget:
+    font: "md_body_medium"
+    foregroundColor: "md_primary"
+    position: "20,605"
+    render: "Label"
+    size: "1630,100"
+    source: "help"

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- the button of the network test that is not selected: nothing is drawn over the label (the button itself is the label's own rounded background) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="38" viewBox="0 0 300 38"/>

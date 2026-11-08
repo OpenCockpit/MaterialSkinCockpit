@@ -1,0 +1,8 @@
+screen:
+  name: "PinInputPopup"
+  position: "fill"
+  title: "Change pin code"
+  children:
+    - xmlinc:
+        file: "screen_PinInput.ymlinc"
+        position: "0,0"

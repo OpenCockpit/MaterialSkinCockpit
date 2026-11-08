@@ -1,0 +1,7 @@
+screen:
+  name: "TagEditor"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_MovieTagEditor.ymlinc"
+        position: "0,0"

@@ -1,0 +1,10 @@
+- widget:
+    backgroundColor: "md_surface_overlay_soft"
+    font: "md_body_medium"
+    halign: "left"
+    position: "20,605"
+    render: "Label"
+    size: "1630,100"
+    source: "epgcachelocation"
+    transparent: "1"
+    zPosition: "1"

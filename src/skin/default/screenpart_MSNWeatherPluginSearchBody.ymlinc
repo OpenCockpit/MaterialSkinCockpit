@@ -1,0 +1,13 @@
+- widget:
+    conditional: "entrylist"
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "entrylist"
+    position: "0,0"
+    size: "$width,13*$list_item_height"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,765"
+    size: "$width,25"
+    connection: "entrylist"

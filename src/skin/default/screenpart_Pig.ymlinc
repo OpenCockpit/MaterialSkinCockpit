@@ -1,0 +1,13 @@
+screen:
+  name: "Pig"
+  children:
+    - widget:
+        backgroundColor: "md_surface_overlay_strong"
+        cornerRadius: "$radius_video"
+        position: "0,0"
+        render: "Pig"
+        size: "$width,$height"
+        source: "session.VideoPicture"
+        widgetBorderColor: "md_surface_container_high"
+        widgetBorderWidth: "2"
+        zPosition: "10"

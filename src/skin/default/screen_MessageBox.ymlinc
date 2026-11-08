@@ -1,0 +1,9 @@
+screen:
+  name: "MessageBox"
+  position: "$screen_center-460,$screen_center-8"
+  size: "920,15"
+  title: "Message"
+  children:
+    - xmlinc:
+        file: "screen_MessageBoxSimple.ymlinc"
+        position: "0,0"

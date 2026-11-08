@@ -1,0 +1,12 @@
+screen:
+  name: "tmdbScreenPerson"
+  position: "fill"
+  title: "TMDb - The Movie Database - Actor"
+  children:
+    - xmlinc:
+        file: "screenpart_tmdb1.ymlinc"
+        position: "0,0"
+    - xmlinc:
+        file: "screenpart_tmdbScreenPersonPanel.ymlinc"
+        position: "54,169"
+        size: "1690,902"

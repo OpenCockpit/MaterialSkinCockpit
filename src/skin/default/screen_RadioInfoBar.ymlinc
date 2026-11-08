@@ -1,0 +1,6 @@
+screen:
+  backgroundColor: "md_surface"
+  name: "RadioInfoBar"
+  position: "0,0"
+  size: "0,0"
+  title: "InfoBar"

@@ -1,0 +1,13 @@
+screen:
+  backgroundColor: "md_shadow"
+  name: "QuitMainloopScreen"
+  position: "fill"
+  zPosition: "100"
+  children:
+    - widget:
+        backgroundColor: "md_shadow"
+        font: "md_body_large"
+        halign: "center"
+        name: "text"
+        position: "$screen_center-885,$screen_center+15"
+        size: "1770,140"

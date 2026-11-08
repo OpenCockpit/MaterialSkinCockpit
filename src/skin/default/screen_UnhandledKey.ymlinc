@@ -1,0 +1,15 @@
+screen:
+  alphaBlend: "1"
+  name: "UnhandledKey"
+  position: "1797,41"
+  size: "56,68"
+  title: "UnhandledKey"
+  zPosition: "100"
+  children:
+    - widget:
+        alphatest: "blend"
+        name: "UnhandledKeyPixmap"
+        pixmap: "icons/unhandled-key.png"
+        position: "0,0"
+        size: "56,68"
+        zPosition: "12"

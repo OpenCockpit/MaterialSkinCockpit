@@ -1,0 +1,10 @@
+screen:
+  name: "SystemNetworkInfo"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_About.ymlinc"
+        position: "0,0"
+    - xmlinc:
+        file: "screenpart_NetworkStatus.ymlinc"
+        position: "29,784"

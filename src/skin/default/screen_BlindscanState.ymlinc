@@ -1,0 +1,12 @@
+screen:
+  name: "BlindscanState"
+  position: "fill"
+  title: "Blind scan"
+  children:
+    - xmlinc:
+        file: "screenpart_ConfigScreen.ymlinc"
+        position: "0,0"
+    - xmlinc:
+        file: "screenpart_BlindscanStateBody.ymlinc"
+        position: "$window_large_body_x,$window_large_body_y"
+        size: "$window_large_body_width,$window_large_body_height"

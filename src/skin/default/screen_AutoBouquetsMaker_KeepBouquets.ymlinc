@@ -1,0 +1,7 @@
+screen:
+  name: "AutoBouquetsMaker_KeepBouquets"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_AutoBouquetsMaker_HideSections.ymlinc"
+        position: "0,0"

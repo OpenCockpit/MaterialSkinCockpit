@@ -1,0 +1,32 @@
+screen:
+  name: "NetworkAdapterTest"
+  position: "fill"
+  title: "Network test"
+  children:
+    - xmlinc:
+        file: "screenpart_Window.ymlinc"
+        position: "center"
+        size: "$window_full_width,$window_full_height"
+        window_inset_x: "$window_full_body_x"
+    - xmlinc:
+        file: "screenpart_NetworkAdapterTestBody.ymlinc"
+        position: "$window_full_body_x,$window_full_body_y"
+        size: "$window_full_body_width,$window_full_body_height"
+    - widget:
+        alphatest: "blend"
+        backgroundColor: "md_surface_container_high"
+        name: "EditSettingsButton"
+        pixmaps: "buttons/key_grey.png,buttons/key_blue.png"
+        position: "880,1030"
+        size: "40,20"
+        zPosition: "20"
+    - widget:
+        backgroundColor: "md_surface_container_high"
+        font: "md_body_small"
+        foregroundColors: "md_on_surface,md_outline,md_success"
+        halign: "left"
+        name: "EditSettings_Text"
+        position: "930,1020"
+        size: "370,40"
+        valign: "center"
+        zPosition: "21"

@@ -1,0 +1,8 @@
+screen:
+  name: "SimpleChannelSelection"
+  position: "fill"
+  title: "Channel Selection"
+  children:
+    - xmlinc:
+        file: "screen_ChannelSelection.ymlinc"
+        position: "0,0"

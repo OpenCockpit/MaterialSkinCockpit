@@ -1,0 +1,7 @@
+screen:
+  name: "GraphicalEPG"
+  position: "fill"
+  children:
+    - xmlinc:
+        file: "screen_GraphMultiEPGList.ymlinc"
+        position: "0,0"

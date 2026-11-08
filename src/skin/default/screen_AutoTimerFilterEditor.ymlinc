@@ -1,0 +1,12 @@
+screen:
+  name: "AutoTimerFilterEditor"
+  position: "fill"
+  title: "Edit AutoTimer Filters"
+  children:
+    - xmlinc:
+        file: "screen_AutoTimerServiceEditor.ymlinc"
+        position: "0,0"
+    - widget:
+        name: "HelpWindow"
+        position: "1824,396"
+        size: "80,0"
