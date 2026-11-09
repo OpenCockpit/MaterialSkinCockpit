@@ -115,3 +115,12 @@ msgstr ""
 
 msgid "Cockpit item of the button"
 msgstr ""
+
+msgid "TEXT"
+msgstr ""
+
+msgid "Open the menu"
+msgstr ""
+
+msgid "Open the cockpit editor, the bouquet editor or the button editor"
+msgstr ""

@@ -1,48 +1,5 @@
 # Copyright (C) 2018-2026 by xcentaurix
 # License: GNU General Public License v3.0
-#
-# A cockpit menu. The MENU key opens a menu of the entries of the menu tree that the user has picked; the whole tree (the main menu, as it was
-# before) is opened by the MENU key of that menu. It is a Screens.Menu.Menu, so the skin draws it like any other menu (the grid of the skin
-# if the setting "Menu style" is "Horizontal"), and the entries are the ones of the tree, made by the same Menu.addItem / Menu.addMenu: the
-# conditions of menu.xml (requires, conditional, the setup level), the translations, the icons (menuicons) and the actions are the same.
-#
-# The cockpit items are, in the order in which they were picked, in config.plugins.materialskincockpit.cockpit (a JSON list):
-#   - the keys of an entry on the way down from the main menu ("timermenu", "setup/system/skin_setup"); the last key may also be the id of an
-#     entry that a plugin adds to that menu (WHERE_MENU);
-#   - "plugin:<id>" for a plugin of the list of the plugins (WHERE_PLUGINMENU, like MovieCockpit) and "extension:<id>" for one of the
-#     extensions (WHERE_EXTENSIONSMENU, the blue key of the infobar); the id is the name in lower case, with "_" for the blanks, like
-#     enigma2 makes it for the plugins of the menus;
-#   - "bouquet:<service reference>" for a bouquet of the TV: it opens the channel selection on that bouquet (see openBouquet);
-#   - "service:<bouquet reference> >> <service reference>" for a channel of a bouquet of the TV: it zaps to the channel (see zapService),
-#     in that bouquet, as the channel selection does.
-# A cockpit item that is not there (a plugin that is not installed) is skipped. The icon of an entry is the one of menuicons for its key: a
-# plugin needs a menuicon with its id (moviecockpit), or it gets the puzzle piece (the menuicon "plugin"), not the question mark.
-#
-# Nothing is defined in the settings the first time (the setting is empty, not "[]", which is a cockpit that the user has emptied): the
-# cockpit is then filled once, see initialCockpit, with up to 7 bouquets of the TV (the upper list) and up to 7 plugins that the user has
-# installed (the lower list). From then on it is the user's.
-#
-# In the cockpit menu PREVIOUS / NEXT (the keys that move an entry in the list of the plugins) move the selected cockpit item up or down, the
-# four colour keys open the cockpit item that is assigned to them (config.plugins.materialskincockpit.cockpit_buttons, a JSON dict colour ->
-# path of a cockpit item; the name of the item is the label of the key in the footer), MENU opens the menu tree (the main menu) and TEXT
-# (TXT) opens a choice of the three editors:
-#   - the cockpit editor is the menu tree, level by level, with the lists of the plugins and of the extensions as menus of their own:
-#     OK (and YELLOW) adds / removes the selected entry, a menu as well, RIGHT opens a menu; a cockpit item that is removed leaves the colour keys;
-#   - the bouquet editor lists the bouquets of the TV: OK (and YELLOW) adds / removes the selected one, RIGHT opens a bouquet, to add /
-#     remove its channels;
-#   - the button editor has a row for each colour key: OK chooses the cockpit item of the key (or none).
-# The cockpit menu opens with the cursor on the cockpit item that it was on when it was left or an entry was opened
-# (config.plugins.materialskincockpit.cockpit_last, the path of the cockpit item).
-#
-# With the menus drawn as grids ("Menu style" "Horizontal") and a skin that has the screen MenuHorizontal_cockpit (SPLIT_SKIN) the menu
-# is two lists, each a source of the screen with its own grid: the bouquets and the channels above (UPPER, "Cockpit - Media") and everything else below
-# (LOWER, "Cockpit - Menu/Plugins"). Only the list that has the cursor (self.active) has a selection and the focus; CHANNEL UP / DOWN
-# move the cursor between them (setActive), the title says which list it is in, and OK, PREVIOUS / NEXT, the description and the saved
-# position all work on that list. With one list (the list style of the menus, another skin) all entries are in LOWER, as before.
-#
-# It is used instead of the main menu if the plugin's skin is the primary skin and config.plugins.materialskincockpit.cockpit_menu is on
-# (on by default, there is no setup screen for it yet); install() puts it in place of InfoBarMenu.mainMenu. If the cockpit cannot be
-# opened the main menu is.
 
 import json
 from os.path import dirname

@@ -26,7 +26,7 @@ screen:
         alphatest: "blend"
         conditional: "icon"
         name: "icon"
-        pixmaps: "icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png"
+        pixmaps: "icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.svg"
         position: "10,10"
         size: "80,80"
     - widget:

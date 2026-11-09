@@ -114,3 +114,12 @@ msgstr "Nichts"
 
 msgid "Cockpit item of the button"
 msgstr "Cockpit-Eintrag der Taste"
+
+msgid "TEXT"
+msgstr "TEXT"
+
+msgid "Open the menu"
+msgstr "Das Menü öffnen"
+
+msgid "Open the cockpit editor, the bouquet editor or the button editor"
+msgstr "Cockpit-Editor, Bouquet-Editor oder Farbtasten-Editor öffnen"
