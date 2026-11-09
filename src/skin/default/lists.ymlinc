@@ -33,9 +33,3 @@
 - global:
     name: "list_icon_small"
     value: "32"
-
-# pager_max_pages: the number of pages of a list up to which its page indicator (screenpart_Pager) shows a dot for each page; the default
-# of the Pager addon. A list with more pages says so with pager_max_pages= on the xmlinc of its indicator.
-- global:
-    name: "pager_max_pages"
-    value: "10"

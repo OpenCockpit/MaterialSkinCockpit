@@ -6,7 +6,6 @@ screen:
   zPosition: "1"
   children:
     - widget:
-        alphatest: "blend"
         pixmap: "icons/dish.png"
         position: "0,60"
         render: "Pixmap"

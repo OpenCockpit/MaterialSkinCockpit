@@ -19,7 +19,6 @@
     size: "615,25"
     connection: "feedlist"
 - widget:
-    alphatest: "blend"
     pixmap: "extensions/transblack.png"
     position: "0,780"
     render: "Pixmap"
@@ -51,7 +50,6 @@
     valign: "center"
     zPosition: "10"
 - widget:
-    alphatest: "blend"
     pixmap: "extensions/transblack.png"
     position: "585,0"
     render: "Pixmap"

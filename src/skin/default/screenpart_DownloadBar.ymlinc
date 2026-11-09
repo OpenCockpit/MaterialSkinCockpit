@@ -15,7 +15,6 @@ screen:
         position: "690,0"
         size: "650,45"
     - widget:
-        alphatest: "blend"
         conditional: "Frontend"
         pixmap: "icons/lock_on.png"
         position: "1383,0"
@@ -29,7 +28,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         conditional: "Frontend"
         pixmap: "icons/lock_off.png"
         position: "1383,0"

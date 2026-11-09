@@ -173,7 +173,6 @@ screen:
               type: "VAudioInfo"
               text: "AudioIcon"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/mpeg2.png"
         position: "1662,9"
         render: "Pixmap"
@@ -187,7 +186,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/h264.png"
         position: "1662,9"
         render: "Pixmap"
@@ -201,7 +199,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/h265.png"
         position: "1662,9"
         render: "Pixmap"
@@ -215,7 +212,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/480.png"
         position: "1742,9"
         render: "Pixmap"
@@ -229,7 +225,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/576.png"
         position: "1742,9"
         render: "Pixmap"
@@ -243,7 +238,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/720.png"
         position: "1742,9"
         render: "Pixmap"
@@ -257,7 +251,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/1080.png"
         position: "1742,9"
         render: "Pixmap"
@@ -271,7 +264,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/videoicon/4k.png"
         position: "1742,9"
         render: "Pixmap"
@@ -285,7 +277,6 @@ screen:
           - convert:
               type: "ConditionalShowHide"
     - widget:
-        alphatest: "blend"
         pixmap: "icons/rec2.png"
         position: "1252,20"
         render: "Pixmap"
