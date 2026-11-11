@@ -930,7 +930,7 @@ class PyServiceList(GUIComponent):
 
 class PyBouquetBar(PyServiceList):
     """The bouquets as a (horizontal) list of their own beside the services: the widget "bouquetlist" of the channel selection. It shows the bouquet
-    of the services list, and while it has the focus (Tab) a move in it selects another bouquet. The rows are those of the folders of PyServiceList,
+    of the services list, and while it has the focus a move in it selects another bouquet. The rows are those of the folders of PyServiceList,
     so the template of a chip has a ROW_DIRECTORY_NAME."""
 
     def __init__(self, selection):
@@ -964,8 +964,8 @@ class PyBouquetBar(PyServiceList):
 class PyGenreBar(PyServiceList):
     """The markers of the services list as a (horizontal) list of their own above the services, the genres: the widget "genrelist" of the channel selection.
     The first one is "All" (an invalid reference: all services), the selected one is the genre that the services list shows: it has the services of the
-    section of the marker only. Like the bouquet list it has the keys (left and right) while it has the focus (Tab), the keys for the next and the previous
-    marker move in it too. The template of a chip has a ROW_DIRECTORY_NAME."""
+    section of the marker only. It has no focus and not the keys of the listbox (left and right move in the services): the keys for the next and the previous
+    marker move in it (see PyServiceList.moveToNextMarker). The template of a chip has a ROW_DIRECTORY_NAME."""
 
     def __init__(self, selection):
         PyServiceList.__init__(self, selection.servicelist)
@@ -1021,6 +1021,8 @@ class PyGenreBar(PyServiceList):
         current = self.services.getCurrent()
         if root is None or not root.valid() or self.services.filling:
             return
+        if all(ref.flags & eServiceReference.isDirectory for ref in self.services.all):
+            return  # the list of the bouquets, which is shown for a moment when the bouquet is changed
         genre = self.services.genre
         entry = {"genre": genre.toString() if genre is not None else "", "channel": current.toString() if current.valid() else ""}
         state = selectionState()
@@ -1088,14 +1090,6 @@ def switchBouquet(selection, bouquet):
         bouquets.update()
 
 
-def toggleBarFocus(selection):
-    """Tab: the focus is on the genres or on the services (left and right move in the one that has it)."""
-    genres = selection.genreBar
-    genres.setFocus(not genres.focused)
-    selection.servicelist.setFocus(not genres.focused)
-    logger.info("focus: %s", "genres" if genres.focused else "services")
-
-
 def bouquetBarChanged(selection):
     bouquets = selection.bouquetBar
     if not bouquets.syncing and bouquets.focused:
@@ -1113,7 +1107,7 @@ def attachBouquetBar(selection):
 
 
 def attachGenreBar(selection):
-    """Adds the genre list ("genrelist" of the skin) and the key (Tab) that moves the focus between it and the services list."""
+    """Adds the genre list ("genrelist" of the skin). It has no focus: left and right move in the services, the keys for the next and the previous marker in the genres."""
     genres = selection["genrelist"] = selection.genreBar = PyGenreBar(selection)
     selection.servicelist.onRootChanged.append(genres.rootChanged)
     selection.servicelist.genreBar = genres
@@ -1121,12 +1115,20 @@ def attachGenreBar(selection):
     selection.onShown.append(genres.restore)
     selection.onHide.append(genres.remember)
     selection.onClose.append(genres.remember)
-    selection["GenreBarActions"] = ActionMap(["MaterialChannelSelectActions"], {"switchFocus": boundFunction(toggleBarFocus, selection)}, prio=2)
+
+
+def enableCarouselKeys(selection):
+    selection["CarouselKeyActions"].setEnabled(selection.servicelist.horizontal)  # known when the skin is applied
+
+
+def attachCarouselKeys(selection):
+    """Up and down are the same as left and right in a carousel (the listbox takes them for a page). Not in a list that is vertical, where they are the keys of the listbox."""
+    selection["CarouselKeyActions"] = ActionMap(["DirectionActions"], {"up": selection.servicelist.moveUp, "down": selection.servicelist.moveDown}, prio=2)
+    selection.onShown.append(boundFunction(enableCarouselKeys, selection))
 
 
 def installBouquetBar(selection):
-    """Screens.ChannelSelection: ChannelSelectionBase gets the bouquet list if its services list is a PyServiceList, and the OK key of a screen with the
-    focus on the genres gives the focus back to the services (instead of selecting the channel)."""
+    """Screens.ChannelSelection: ChannelSelectionBase gets the bouquet list and the genre list if its services list is a PyServiceList."""
     base = selection.ChannelSelectionBase
     if getattr(base, "isBouquetBarInstalled", False):
         return
@@ -1138,24 +1140,12 @@ def installBouquetBar(selection):
             try:
                 attachBouquetBar(self)
                 attachGenreBar(self)
+                attachCarouselKeys(self)
             except Exception:  # pylint: disable=broad-except
                 logger.exception("bouquet list not attached")
 
     base.__init__ = init
     base.isBouquetBarInstalled = True
-
-    def wrapChannelSelected(original):
-        def channelSelected(self, *args, **kwargs):
-            genres = getattr(self, "genreBar", None)
-            if genres is not None and genres.focused:
-                toggleBarFocus(self)
-                return None
-            return original(self, *args, **kwargs)
-        return channelSelected
-
-    for cls in vars(selection).values():
-        if isinstance(cls, type) and issubclass(cls, base) and "channelSelected" in vars(cls):
-            cls.channelSelected = wrapChannelSelected(vars(cls)["channelSelected"])
 
 
 def install():

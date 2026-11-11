@@ -1,8 +1,8 @@
 # The channel selection as a carousel (needs the python list of the plugin, python_servicelist, see PyServiceList.py):
 # the genres above the services: "All" and the markers of the bouquet (PyGenreBar), a row of chips (not a carousel: a carousel keeps the selected one in its first
 # slot and scrolls the ones before it out of view, "All" would be gone) that stays where it is, "All" first, and scrolls an item at a time when there are more
-# genres than fit. The selected one is the genre that the services show: the services of its section only, all of them for "All". Tab gives it the focus,
-# left and right move in it, the keys for the next and the previous marker too. The background of a selected cell is the one of the body, so that only the chip is seen, with its own rounded corners.
+# genres than fit. The selected one is the genre that the services show: the services of its section only, all of them for "All". The keys for the next and the previous marker
+# move in it (it has no focus: left and right move in the services). The background of a selected cell is the one of the body, so that only the chip is seen, with its own rounded corners.
 - widget:
     backgroundColor: "md_surface"
     backgroundColorSelected: "md_surface"

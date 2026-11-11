@@ -1,5 +1,0 @@
-<keymap>
-	<map context="MaterialChannelSelectActions">
-		<key id="KEY_TAB" mapto="switchFocus" flags="m" />
-	</map>
-</keymap>
