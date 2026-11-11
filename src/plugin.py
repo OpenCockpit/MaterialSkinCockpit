@@ -95,6 +95,11 @@ def Plugins(**__):
         install()
     except Exception:  # pylint: disable=broad-except
         logger.exception("CockpitMenu not installed")
+    try:  # prototype, off unless config.plugins.materialskincockpit.python_servicelist is on: a channel list that the skin draws (see PyServiceList)
+        from .PyServiceList import install  # pylint: disable=import-outside-toplevel
+        install()
+    except Exception:  # pylint: disable=broad-except
+        logger.exception("PyServiceList not installed")
     # the skin selector writes the setting before it reloads the skin or restarts the GUI
     config.skin.primary_skin.addNotifier(onSkinSelected, initial_call=False)
     return [PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, fnc=autoStart)]
