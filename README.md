@@ -14,10 +14,13 @@
 ## Main Menu Settings
 ![Screenshot](s5.jpg)
 
-## Channel selection
+## Original Channel Selection
 ![Screenshot](s2.jpg)
 
-## Grid-EPG
+## New Channel Selection
+![Screenshot](s6.jpg)
+
+## Grid EPG
 ![Screenshot](s3.jpg)
 
 ## Limitations

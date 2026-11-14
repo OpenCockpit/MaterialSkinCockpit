@@ -486,9 +486,6 @@ skin:
               name: "EPGSearch"
               title: "EPG Search"
           - screen:
-              content: "screenpart_EPGSelectionBody"
-              name: "EPGSelection"
-          - screen:
               content: "screenpart_EPGSelectionMultiBody"
               name: "EPGSelectionMulti"
               title: "EPG Selection"
@@ -539,6 +536,8 @@ skin:
         file: "screen_ChannelSelection.ymlinc"
     - xmlinc:
         file: "screen_SimpleChannelSelection.ymlinc"
+    - xmlinc:
+        file: "screen_EPGSelection.ymlinc"
     - xmlinc:
         file: "screen_EPGSearchSetup.ymlinc"
     - xmlinc:
