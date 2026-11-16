@@ -22,6 +22,7 @@ from os.path import dirname, isfile, join
 from Components.config import config, configfile, ConfigText
 from Plugins.Plugin import PluginDescriptor
 from .Debug import logger
+from . import _
 from .PyReplace import sync, restore
 from .Version import PLUGIN, VERSION
 
@@ -86,6 +87,18 @@ def onSkinSelected(_configElement=None):
     syncMenuStyle()
 
 
+def openSetup(session, **__):
+    from .MaterialSkinSetup import MaterialSkinSetup  # pylint: disable=import-outside-toplevel
+    session.open(MaterialSkinSetup)
+
+
+def menuHook(menuid, **__):
+    """The setup of the skin is in MENU > System, while the skin is the primary skin."""
+    if menuid == "system" and isSkinActive():
+        return [(_("Material skin setup"), openSetup, "materialskincockpit_setup", 60)]
+    return []
+
+
 def Plugins(**__):
     logger.info("  +++ Version: %s starts...", VERSION)
     syncPYs()  # what the skin selector may not have done (an update of the plugin, the skin set by hand)
@@ -102,4 +115,8 @@ def Plugins(**__):
         logger.exception("PyServiceList not installed")
     # the skin selector writes the setting before it reloads the skin or restarts the GUI
     config.skin.primary_skin.addNotifier(onSkinSelected, initial_call=False)
-    return [PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, fnc=autoStart)]
+    return [
+        PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, fnc=autoStart),
+        PluginDescriptor(name=_("Material skin setup"), description=_("The channel selection and the other settings of the skin"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=openSetup),
+        PluginDescriptor(name=_("Material skin setup"), where=PluginDescriptor.WHERE_MENU, fnc=menuHook),
+    ]

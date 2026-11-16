@@ -8,7 +8,9 @@
 # rows that are shown, see buildEntry) and the skin says how a row looks, with a template like the one of the TemplatedMultiContent converter.
 #
 # It is used instead of the C++ list when the plugin's skin is the primary skin and config.plugins.materialskincockpit.python_servicelist is
-# on (off by default, there is no setup screen for it yet); install() puts it in place of Components.ServiceList.ServiceList.
+# on (off by default, there is no setup for it); install() puts it in place of Components.ServiceList.ServiceList. The channel selection that
+# the infobar opens (ChannelSelection) is the exception: it has it when config.plugins.materialskincockpit.channel_selection is "carousel" and the
+# list of enigma2 when it is "classic", whatever python_servicelist says (the setup of the plugin, see MaterialSkinSetup.py and installCarousel).
 #
 # The template is the "template" attribute of the list widget: a python dict like the one of TemplatedMultiContent,
 #
@@ -38,7 +40,7 @@ from time import localtime, strftime, time
 from enigma import eListbox, eListboxPythonMultiContent, eServiceCenter, eServiceReference, eSize, gFont, RT_HALIGN_LEFT, RT_HALIGN_CENTER, RT_HALIGN_RIGHT, RT_VALIGN_CENTER, RT_WRAP, BT_SCALE, BT_KEEP_ASPECT_RATIO, BT_HALIGN_CENTER, BT_VALIGN_CENTER, BT_ALPHABLEND, RT_BLEND  # noqa: F401
 from Components.ActionMap import ActionMap
 from Components.GUIComponent import GUIComponent
-from Components.config import config, ConfigYesNo
+from Components.config import config, ConfigSelection, ConfigYesNo
 from Components.MultiContent import MultiContentEntryText, MultiContentEntryPixmapAlphaBlend, MultiContentEntryProgress, MultiContentEntryRectangle, MultiContentTemplateColor  # noqa: F401
 from Components.Renderer.Picon import getPiconName
 from Tools.BoundFunction import boundFunction
@@ -50,8 +52,17 @@ from . import _
 from .Debug import logger
 from .Version import PLUGIN
 
+CLASSIC = "classic"
+CAROUSEL = "carousel"
+CAROUSEL_SKIN = "ChannelSelectionCarousel"  # the screen of the skin for the carousel; the classic one is "ChannelSelection"
+
 settings = getattr(config.plugins, PLUGIN.lower())
 settings.python_servicelist = ConfigYesNo(default=False)
+settings.channel_selection = ConfigSelection(default=CLASSIC, choices=[(CLASSIC, _("Classic list")), (CAROUSEL, _("Carousel"))])  # see installCarousel
+
+# What the channel selection that is being made says about its list, whatever python_servicelist says: "carousel": a PyServiceList, "classic": the
+# list of enigma2 (the original). Both are False while any other screen is made: python_servicelist decides there.
+building = {"carousel": False, "classic": False}
 
 # The fields of a row, in the order of the tuple that buildEntry returns. ROW_<NAME> is the index of a field.
 ROW_FIELDS = (
@@ -152,6 +163,11 @@ def writeSelectionState():
 
 def isSkinActive():
     return dirname(config.skin.primary_skin.value) == PLUGIN
+
+
+def useCarousel():
+    """The channel selection is the carousel: the setting says so and the skin of the plugin is the primary skin."""
+    return settings.channel_selection.value == CAROUSEL and isSkinActive()
 
 
 def color(value, default=None):
@@ -1148,6 +1164,33 @@ def installBouquetBar(selection):
     base.isBouquetBarInstalled = True
 
 
+def installCarousel(selection):
+    """Screens.ChannelSelection: the channel selection that the infobar keeps (UP / DOWN, OK and the list key open it) is the carousel if the
+    setting "Channel selection" says so: the screen of the skin is ChannelSelectionCarousel (the classic one is ChannelSelection), and its list is a
+    PyServiceList. The classic one has the list of enigma2, the original, also if python_servicelist is on (that is for the other lists). The
+    screen is made when the GUI starts, so the setting applies after a restart of the GUI. The simple mode of enigma2 and the other channel
+    selections (radio, PiP) are left as they are."""
+    base = selection.ChannelSelection
+    if getattr(base, "isCarouselInstalled", False):
+        return
+    originalInit = base.__init__
+
+    def init(self, *args, **kwargs):
+        carousel = type(self) is base and useCarousel()
+        building["carousel"] = carousel
+        building["classic"] = type(self) is base and not carousel
+        try:
+            originalInit(self, *args, **kwargs)
+        finally:
+            building["carousel"] = building["classic"] = False
+        if carousel and self.skinName == "ChannelSelection" and isinstance(getattr(self, "servicelist", None), PyServiceList):
+            self.skinName = [CAROUSEL_SKIN, "ChannelSelection"]  # the classic screen if the skin has no carousel
+            logger.info("channel selection: carousel")
+
+    base.__init__ = init
+    base.isCarouselInstalled = True
+
+
 def install():
     """Puts PyServiceList in place of Components.ServiceList.ServiceList where the plugin's skin is the primary skin and the setting is on."""
     import Components.ServiceList as module  # pylint: disable=import-outside-toplevel
@@ -1156,7 +1199,7 @@ def install():
         return
 
     def createServiceList(serviceList):
-        if settings.python_servicelist.value and isSkinActive():
+        if (settings.python_servicelist.value or building["carousel"]) and not building["classic"] and isSkinActive():
             try:
                 return PyServiceList(serviceList)
             except Exception as err:  # pylint: disable=broad-except
@@ -1176,5 +1219,6 @@ def install():
         if getattr(selection, "ServiceList", None) is original:  # it has been imported with the name already
             selection.ServiceList = createServiceList
         installBouquetBar(selection)
+        installCarousel(selection)
     except ImportError as err:
         logger.error("Screens.ChannelSelection: %r", err)

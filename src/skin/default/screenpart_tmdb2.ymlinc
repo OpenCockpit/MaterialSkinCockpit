@@ -1,7 +1,5 @@
 screen:
   name: "tmdb2"
-  position: "fill"
-  title: "TMDb - The Movie Database"
   children:
     - xmlinc:
         file: "screenpart_Window.ymlinc"

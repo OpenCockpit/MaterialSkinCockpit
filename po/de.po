@@ -123,3 +123,27 @@ msgstr "Das Menü öffnen"
 
 msgid "Open the cockpit editor, the bouquet editor or the button editor"
 msgstr "Cockpit-Editor, Bouquet-Editor oder Farbtasten-Editor öffnen"
+
+msgid "Classic list"
+msgstr "Klassische Liste"
+
+msgid "Carousel"
+msgstr "Karussell"
+
+msgid "Material skin setup"
+msgstr "Material-Skin-Einstellungen"
+
+msgid "Channel selection"
+msgstr "Senderauswahl"
+
+msgid "The channel selection that UP / DOWN, OK and the list key open: the classic list, or the carousel of tiles with the genres of the bouquet above it. The carousel needs the skin of this plugin. A change applies after a restart of the GUI."
+msgstr "Die Senderauswahl, die AUF / AB, OK und die Listentaste öffnen: die klassische Liste oder das Karussell aus Kacheln mit den Genres des Bouquets darüber. Das Karussell braucht den Skin dieses Plugins. Eine Änderung gilt nach einem Neustart der GUI."
+
+msgid "This skin is not the active skin: the setting applies when it is."
+msgstr "Dieser Skin ist nicht der aktive Skin: die Einstellung gilt, sobald er es ist."
+
+msgid "Restart the GUI now to apply the channel selection?"
+msgstr "Die GUI jetzt neu starten, um die Senderauswahl zu übernehmen?"
+
+msgid "The channel selection and the other settings of the skin"
+msgstr "Die Senderauswahl und die weiteren Einstellungen des Skins"

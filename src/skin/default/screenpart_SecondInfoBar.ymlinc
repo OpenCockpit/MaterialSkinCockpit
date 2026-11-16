@@ -1,7 +1,5 @@
 screen:
   name: "SecondInfoBar"
-  position: "fill"
-  title: "Second InfoBar"
   children:
     - xmlinc:
         file: "screenpart_WindowBaseNoTitle.ymlinc"

@@ -124,3 +124,31 @@ msgstr ""
 
 msgid "Open the cockpit editor, the bouquet editor or the button editor"
 msgstr ""
+
+msgid "Classic list"
+msgstr ""
+
+msgid "Carousel"
+msgstr ""
+
+msgid "Material skin setup"
+msgstr ""
+
+msgid "Channel selection"
+msgstr ""
+
+msgid ""
+"The channel selection that UP / DOWN, OK and the list key open: the classic "
+"list, or the carousel of tiles with the genres of the bouquet above it. The "
+"carousel needs the skin of this plugin. A change applies after a restart of "
+"the GUI."
+msgstr ""
+
+msgid "This skin is not the active skin: the setting applies when it is."
+msgstr ""
+
+msgid "Restart the GUI now to apply the channel selection?"
+msgstr ""
+
+msgid "The channel selection and the other settings of the skin"
+msgstr ""

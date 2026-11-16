@@ -14,6 +14,10 @@
 ## Main Menu Settings
 ![Screenshot](s5.jpg)
 
+## Channel Selection
+
+The channel selection that UP / DOWN, OK and the list key open is the original list or the new carousel. Choose it in MENU > System > *Material skin setup* (or the plugin browser); the GUI restarts to apply it. The original list is the default.
+
 ## Original Channel Selection
 ![Screenshot](s2.jpg)
 

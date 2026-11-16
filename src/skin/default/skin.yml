@@ -535,6 +535,8 @@ skin:
     - xmlinc:
         file: "screen_ChannelSelection.ymlinc"
     - xmlinc:
+        file: "screen_ChannelSelectionCarousel.ymlinc"
+    - xmlinc:
         file: "screen_SimpleChannelSelection.ymlinc"
     - xmlinc:
         file: "screen_EPGSelection.ymlinc"
