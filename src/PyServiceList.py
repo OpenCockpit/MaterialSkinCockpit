@@ -1177,9 +1177,10 @@ def installCarousel(selection):
     originalInit = base.__init__
 
     def init(self, *args, **kwargs):
-        carousel = type(self) is base and useCarousel()
+        exact = self.__class__ is base      # exactly this class: not isinstance, the subclasses (radio, PiP, simple) stay as they are
+        carousel = exact and useCarousel()
         building["carousel"] = carousel
-        building["classic"] = type(self) is base and not carousel
+        building["classic"] = exact and not carousel
         try:
             originalInit(self, *args, **kwargs)
         finally:
