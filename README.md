@@ -32,6 +32,3 @@ The channel selection that UP / DOWN, OK and the list key open is the original l
 
 ## Installation
 - https://OpenCockpit.github.io/MaterialSkinCockpit
-
-## Wiki
-- https://github.com/OpenCockpit/MaterialSkinCockpit/wiki

@@ -37,6 +37,14 @@ class MaterialSkinSetup(Setup):
             Setup.keySave(self)
 
     def restartAnswer(self, restart):
-        Setup.keySave(self)  # saves and closes
-        if restart:
-            self.session.open(TryQuitMainloop, QUIT_RESTART)
+        if not restart:
+            Setup.keySave(self)  # saves and closes
+            return
+        # Setup.keySave() closes this screen, after which it is no longer modal and session.open() raises
+        # "Modal open are allowed only from a screen which is modal". So: save, open the restart dialog, then close
+        # (a close of a screen that is not executing is deferred until it is again, like ConfigListScreen.restartConfirm).
+        for notifier in self.onSave:
+            notifier()
+        self.saveAll()
+        self.session.open(TryQuitMainloop, QUIT_RESTART)
+        self.close()
