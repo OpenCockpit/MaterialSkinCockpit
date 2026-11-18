@@ -608,6 +608,7 @@ class PyServiceList(GUIComponent):
                     if self.select(ref):
                         config.servicelist.lastmode.save()
                         self.serviceList.saveChannel(ref)
+                        self.serviceList.saveRoot()  # the bouquet of the service goes with it, else the saved root is the old one: after a restart the service is not in the channel list that is shown, and the EPG opens on the wrong bouquet
                         return True
                 self.serviceList.enterUserbouquet(revertSearchRoot)
                 logger.info("service not found in any userbouquets")
