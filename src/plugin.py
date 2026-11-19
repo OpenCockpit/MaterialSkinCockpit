@@ -117,6 +117,6 @@ def Plugins(**__):
     config.skin.primary_skin.addNotifier(onSkinSelected, initial_call=False)
     return [
         PluginDescriptor(where=PluginDescriptor.WHERE_AUTOSTART, fnc=autoStart),
-        PluginDescriptor(name=_("Material skin setup"), description=_("The channel selection and the other settings of the skin"), where=PluginDescriptor.WHERE_PLUGINMENU, fnc=openSetup),
+        PluginDescriptor(name=_("Material skin setup"), description=_("The channel selection and the other settings of the skin"), where=PluginDescriptor.WHERE_PLUGINMENU, icon="plugin.png", fnc=openSetup),
         PluginDescriptor(name=_("Material skin setup"), where=PluginDescriptor.WHERE_MENU, fnc=menuHook),
     ]
