@@ -2140,7 +2140,7 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<widget font="md_title_large" position="396,249" render="Label" size="1110,52" source="job_name"/>
 		<widget font="md_title_large" position="396,358" render="Label" size="1128,45" source="job_task"/>
 		<widget backgroundColor="md_surface_container" borderWidth="2" cornerRadius="18" foregroundColor="md_primary" position="396,461" render="Progress" size="1128,54" source="job_progress" transparent="0"/>
-		<widget font="md_headline_medium" halign="center" position="396,464" render="Label" size="1110,50" source="job_progress" transparent="1" zPosition="2">
+		<widget font="md_headline_medium" foregroundColor="md_primary_container" halign="center" position="396,464" render="Label" size="1110,50" source="job_progress" transparent="1" zPosition="2">
 			<convert type="ProgressToText"/>
 		</widget>
 		<widget font="md_title_large" position="396,573" render="Label" size="1128,43" source="job_status"/>
