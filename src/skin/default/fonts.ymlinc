@@ -33,6 +33,10 @@
           size: "20"
       - alias:
           font: "Regular"
+          name: "md_label_large"
+          size: "22"
+      - alias:
+          font: "Regular"
           name: "md_body_small"
           size: "26"
       - alias:
@@ -110,6 +114,9 @@
 - global:
     name: "md_label_medium"
     value: "md_label_medium"
+- global:
+    name: "md_label_large"
+    value: "md_label_large"
 - global:
     name: "md_body_small"
     value: "md_body_small"
