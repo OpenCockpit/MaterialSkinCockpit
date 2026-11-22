@@ -10,6 +10,6 @@
                       MultiContentEntryPixmapAlphaBlend(pos = ($list_indent, eval(($list_item_height_icon-$list_icon_medium)/2)), size = ($list_icon_medium, $list_icon_medium), png = $row_icon, flags = BT_SCALE|BT_KEEP_ASPECT_RATIO),
                       MultiContentEntryText(pos = (eval($list_indent+$list_icon_medium+12), 0), size = (eval($width-2*$list_indent-$list_icon_medium-12), $list_item_height_icon), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = $row_text),
                   ],
-                  "fonts": [parseFont("md_body_medium")],
+                  "fonts": [parseFont("$md_body_medium")],
                   "itemHeight": $list_item_height_icon
               }
