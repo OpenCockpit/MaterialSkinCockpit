@@ -12,43 +12,43 @@
 &lt;widget&gt; addon=&quot;ScreenHeader&quot; connection=&quot;Image,Title,ScreenPath&quot; position=&quot;122,56&quot; size=&quot;1556,60&quot;</title></rect>
 <rect data-ref="0:6" data-src="screen_PositionerSetup.ymlinc:11" x="795" y="76" width="330" height="37" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_PositionerSetup.ymlinc:11
 &lt;widget&gt; font=&quot;md_body_large&quot; foregroundColor=&quot;md_primary&quot; halign=&quot;center&quot; name=&quot;status_bar&quot; position=&quot;795,76&quot; size=&quot;330,37&quot;</title></rect>
-<rect data-ref="0:7" data-src="screenpart_PositionerSetupBody.ymlinc:1" x="122" y="146" width="1676" height="225" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:1
+<rect data-ref="0:7" data-src="screenpart_PositionerSetupBody.ymlinc:3" x="122" y="146" width="1676" height="225" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:3
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_medium&quot; itemCornerRadius=&quot;12&quot; itemHeight=&quot;45&quot; name=&quot;list&quot; position=&quot;122,146&quot; size=&quot;1676,225&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:8" data-src="screenpart_PositionerSetupBody.ymlinc:10" x="122" y="441" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:10
+<rect data-ref="0:8" data-src="screenpart_PositionerSetupBody.ymlinc:12" x="122" y="441" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:12
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,441&quot; size=&quot;330,37&quot; text=&quot;Frequency:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:9" data-src="screenpart_PositionerSetupBody.ymlinc:17" x="452" y="441" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:17
+<rect data-ref="0:9" data-src="screenpart_PositionerSetupBody.ymlinc:19" x="452" y="441" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:19
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;frequency_value&quot; position=&quot;452,441&quot; size=&quot;150,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:10" data-src="screenpart_PositionerSetupBody.ymlinc:24" x="122" y="488" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:24
+<rect data-ref="0:10" data-src="screenpart_PositionerSetupBody.ymlinc:26" x="122" y="488" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:26
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,488&quot; size=&quot;330,37&quot; text=&quot;Polarisation:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:11" data-src="screenpart_PositionerSetupBody.ymlinc:31" x="452" y="488" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:31
+<rect data-ref="0:11" data-src="screenpart_PositionerSetupBody.ymlinc:33" x="452" y="488" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:33
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;polarisation&quot; position=&quot;452,488&quot; size=&quot;150,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:12" data-src="screenpart_PositionerSetupBody.ymlinc:38" x="122" y="534" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:38
+<rect data-ref="0:12" data-src="screenpart_PositionerSetupBody.ymlinc:40" x="122" y="534" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:40
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,534&quot; size=&quot;330,37&quot; text=&quot;Symbolrate:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:13" data-src="screenpart_PositionerSetupBody.ymlinc:45" x="452" y="534" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:45
+<rect data-ref="0:13" data-src="screenpart_PositionerSetupBody.ymlinc:47" x="452" y="534" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:47
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;symbolrate_value&quot; position=&quot;452,534&quot; size=&quot;150,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:14" data-src="screenpart_PositionerSetupBody.ymlinc:52" x="122" y="581" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:52
+<rect data-ref="0:14" data-src="screenpart_PositionerSetupBody.ymlinc:54" x="122" y="581" width="330" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:54
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,581&quot; size=&quot;330,37&quot; text=&quot;FEC:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:15" data-src="screenpart_PositionerSetupBody.ymlinc:59" x="452" y="581" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:59
+<rect data-ref="0:15" data-src="screenpart_PositionerSetupBody.ymlinc:61" x="452" y="581" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:61
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;fec_value&quot; position=&quot;452,581&quot; size=&quot;150,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:16" data-src="screenpart_PositionerSetupBody.ymlinc:66" x="452" y="651" width="300" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:66
+<rect data-ref="0:16" data-src="screenpart_PositionerSetupBody.ymlinc:68" x="452" y="651" width="300" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:68
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_on_surface&quot; halign=&quot;center&quot; name=&quot;snr_db&quot; position=&quot;452,651&quot; size=&quot;300,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:17" data-src="screenpart_PositionerSetupBody.ymlinc:75" x="122" y="691" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:75
+<rect data-ref="0:17" data-src="screenpart_PositionerSetupBody.ymlinc:77" x="122" y="691" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:77
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,691&quot; size=&quot;120,37&quot; text=&quot;SNR:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:18" data-src="screenpart_PositionerSetupBody.ymlinc:82" x="452" y="694" width="300" height="26" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:82
+<rect data-ref="0:18" data-src="screenpart_PositionerSetupBody.ymlinc:84" x="452" y="694" width="300" height="26" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:84
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; borderWidth=&quot;1&quot; cornerRadius=&quot;4&quot; name=&quot;snr_bar&quot; position=&quot;452,694&quot; size=&quot;300,26&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:19" data-src="screenpart_PositionerSetupBody.ymlinc:90" x="767" y="691" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:90
+<rect data-ref="0:19" data-src="screenpart_PositionerSetupBody.ymlinc:92" x="767" y="691" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:92
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;snr_percentage&quot; position=&quot;767,691&quot; size=&quot;120,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:20" data-src="screenpart_PositionerSetupBody.ymlinc:97" x="122" y="736" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:97
+<rect data-ref="0:20" data-src="screenpart_PositionerSetupBody.ymlinc:99" x="122" y="736" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:99
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,736&quot; size=&quot;120,37&quot; text=&quot;BER:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:21" data-src="screenpart_PositionerSetupBody.ymlinc:104" x="452" y="739" width="300" height="26" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:104
+<rect data-ref="0:21" data-src="screenpart_PositionerSetupBody.ymlinc:106" x="452" y="739" width="300" height="26" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:106
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; borderWidth=&quot;1&quot; cornerRadius=&quot;4&quot; name=&quot;ber_bar&quot; position=&quot;452,739&quot; size=&quot;300,26&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:22" data-src="screenpart_PositionerSetupBody.ymlinc:112" x="767" y="736" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:112
+<rect data-ref="0:22" data-src="screenpart_PositionerSetupBody.ymlinc:114" x="767" y="736" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:114
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;ber_value&quot; position=&quot;767,736&quot; size=&quot;120,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:23" data-src="screenpart_PositionerSetupBody.ymlinc:119" x="122" y="903" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:119
+<rect data-ref="0:23" data-src="screenpart_PositionerSetupBody.ymlinc:121" x="122" y="903" width="120" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:121
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; position=&quot;122,903&quot; size=&quot;120,37&quot; text=&quot;Lock:&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:24" data-src="screenpart_PositionerSetupBody.ymlinc:126" x="452" y="903" width="300" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:126
+<rect data-ref="0:24" data-src="screenpart_PositionerSetupBody.ymlinc:128" x="452" y="903" width="300" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:128
 &lt;widget&gt; backgroundColor=&quot;md_surface_overlay_soft&quot; font=&quot;md_body_large&quot; name=&quot;lock_state&quot; position=&quot;452,903&quot; size=&quot;300,37&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:25" data-src="screenpart_PositionerSetupBody.ymlinc:133" x="1373" y="903" width="425" height="37" fill="#edc948" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:133
+<rect data-ref="0:25" data-src="screenpart_PositionerSetupBody.ymlinc:135" x="1373" y="903" width="425" height="37" fill="#edc948" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_PositionerSetupBody.ymlinc:135
 &lt;widget&gt; font=&quot;md_body_large&quot; foregroundColor=&quot;md_primary&quot; halign=&quot;center&quot; name=&quot;status_bar&quot; position=&quot;1373,903&quot; size=&quot;425,37&quot;</title></rect>
 <rect data-ref="0:5" data-src="screenpart_WindowFooter.ymlinc:4" x="122" y="978" width="1676" height="36" fill="#edc948" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_WindowFooter.ymlinc:4
 &lt;widget&gt; addon=&quot;ScreenButtonsBar&quot; connection=&quot;key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0&quot; pixmaps=&quot;key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png&quot; position=&quot;122,978&quot; size=&quot;1676,36&quot; zPosition=&quot;10&quot;</title></rect>
@@ -61,25 +61,25 @@
 <text x="102" y="130"><tspan font-weight="bold">#1:10</tspan> eLabel</text>
 <text x="126" y="70"><tspan font-weight="bold">#3:12</tspan> widget</text>
 <text x="799" y="90"><tspan font-weight="bold">#5:11</tspan> status_bar</text>
-<text x="126" y="160"><tspan font-weight="bold">#6:1</tspan> list</text>
-<text x="126" y="455"><tspan font-weight="bold">#6:10</tspan> eLabel</text>
-<text x="456" y="455"><tspan font-weight="bold">#6:17</tspan> frequency_va…</text>
-<text x="126" y="502"><tspan font-weight="bold">#6:24</tspan> eLabel</text>
-<text x="456" y="502"><tspan font-weight="bold">#6:31</tspan> polarisation</text>
-<text x="126" y="548"><tspan font-weight="bold">#6:38</tspan> eLabel</text>
-<text x="456" y="548"><tspan font-weight="bold">#6:45</tspan> symbolrate_v…</text>
-<text x="126" y="595"><tspan font-weight="bold">#6:52</tspan> eLabel</text>
-<text x="456" y="595"><tspan font-weight="bold">#6:59</tspan> fec_value</text>
-<text x="456" y="665"><tspan font-weight="bold">#6:66</tspan> snr_db</text>
-<text x="126" y="705"><tspan font-weight="bold">#6:75</tspan> eLabel</text>
-<text x="456" y="708"><tspan font-weight="bold">#6:82</tspan> snr_bar</text>
-<text x="771" y="705"><tspan font-weight="bold">#6:90</tspan> snr_perc…</text>
-<text x="126" y="750"><tspan font-weight="bold">#6:97</tspan> eLabel</text>
-<text x="456" y="753"><tspan font-weight="bold">#6:104</tspan> ber_bar</text>
-<text x="771" y="750"><tspan font-weight="bold">#6:112</tspan> ber_val…</text>
-<text x="126" y="917"><tspan font-weight="bold">#6:119</tspan> eLabel</text>
-<text x="456" y="917"><tspan font-weight="bold">#6:126</tspan> lock_state</text>
-<text x="1377" y="917"><tspan font-weight="bold">#6:133</tspan> status_bar</text>
+<text x="126" y="160"><tspan font-weight="bold">#6:3</tspan> list</text>
+<text x="126" y="455"><tspan font-weight="bold">#6:12</tspan> eLabel</text>
+<text x="456" y="455"><tspan font-weight="bold">#6:19</tspan> frequency_va…</text>
+<text x="126" y="502"><tspan font-weight="bold">#6:26</tspan> eLabel</text>
+<text x="456" y="502"><tspan font-weight="bold">#6:33</tspan> polarisation</text>
+<text x="126" y="548"><tspan font-weight="bold">#6:40</tspan> eLabel</text>
+<text x="456" y="548"><tspan font-weight="bold">#6:47</tspan> symbolrate_v…</text>
+<text x="126" y="595"><tspan font-weight="bold">#6:54</tspan> eLabel</text>
+<text x="456" y="595"><tspan font-weight="bold">#6:61</tspan> fec_value</text>
+<text x="456" y="665"><tspan font-weight="bold">#6:68</tspan> snr_db</text>
+<text x="126" y="705"><tspan font-weight="bold">#6:77</tspan> eLabel</text>
+<text x="456" y="708"><tspan font-weight="bold">#6:84</tspan> snr_bar</text>
+<text x="771" y="705"><tspan font-weight="bold">#6:92</tspan> snr_perc…</text>
+<text x="126" y="750"><tspan font-weight="bold">#6:99</tspan> eLabel</text>
+<text x="456" y="753"><tspan font-weight="bold">#6:106</tspan> ber_bar</text>
+<text x="771" y="750"><tspan font-weight="bold">#6:114</tspan> ber_val…</text>
+<text x="126" y="917"><tspan font-weight="bold">#6:121</tspan> eLabel</text>
+<text x="456" y="917"><tspan font-weight="bold">#6:128</tspan> lock_state</text>
+<text x="1377" y="917"><tspan font-weight="bold">#6:135</tspan> status_bar</text>
 <text x="126" y="992"><tspan font-weight="bold">#4:4</tspan> widget</text>
 <text x="1594" y="71"><tspan font-weight="bold">#3:7</tspan> eLabel</text>
 <text x="1682" y="70"><tspan font-weight="bold">#2:1</tspan> global.Cu…</text>

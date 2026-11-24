@@ -1,10 +1,12 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
     foregroundColor: "md_primary"
     halign: "center"
     name: "progress"
-    position: "0,712"
+    position: "0,132"
     size: "$width,38"
     zPosition: "5"
 - widget:
@@ -13,6 +15,6 @@
     foregroundColor: "md_on_surface"
     halign: "center"
     name: "post_action"
-    position: "20,580"
+    position: "20,0"
     size: "1620,150"
     valign: "center"

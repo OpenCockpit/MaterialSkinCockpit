@@ -1,3 +1,5 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - eLabel:
     backgroundColor: "md_surface"
     font: "md_headline_medium"

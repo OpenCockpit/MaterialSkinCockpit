@@ -16,8 +16,9 @@ screen:
         zPosition: "1"
     - xmlinc:
         file: "screenpart_YouTubeMainBody.ymlinc"
-        position: "$window_medium_body_x,$window_medium_body_y"
-        size: "$window_medium_body_width,$window_medium_body_height"
+        position: "$window_medium_body_x,$window_medium_body_y+15"
+        width: "$window_medium_body_width"
+        height: "$window_medium_body_height-15"
     - widget:
         name: "thumbnail"
         origin: "screen"

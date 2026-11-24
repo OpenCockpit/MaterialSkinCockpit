@@ -1,9 +1,11 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     font: "md_body_large"
     foregroundColor: "md_warning"
     halign: "center"
     name: "statusbar"
-    position: "0,712"
+    position: "0,0"
     size: "$width,38"
     zPosition: "5"

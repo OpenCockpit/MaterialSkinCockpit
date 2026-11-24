@@ -10,7 +10,7 @@
 &lt;eLabel&gt; backgroundColor=&quot;md_surface&quot; cornerRadius=&quot;14&quot; position=&quot;496,199&quot; size=&quot;928,681&quot; zPosition=&quot;-10&quot;</title></rect>
 <rect data-ref="0:5" data-src="screenpart_WindowHeader.ymlinc:12" x="520" y="139" width="760" height="60" fill="#edc948" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_WindowHeader.ymlinc:12
 &lt;widget&gt; addon=&quot;ScreenHeader&quot; connection=&quot;Image,Title,ScreenPath&quot; position=&quot;520,139&quot; size=&quot;760,60&quot;</title></rect>
-<rect data-ref="0:7" data-src="screenpart_RemoteTimerBouquetListBody.ymlinc:1" x="520" y="229" width="880" height="602" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_RemoteTimerBouquetListBody.ymlinc:1
+<rect data-ref="0:7" data-src="screenpart_RemoteTimerBouquetListBody.ymlinc:3" x="520" y="229" width="880" height="602" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_RemoteTimerBouquetListBody.ymlinc:3
 &lt;widget&gt; itemCornerRadius=&quot;12&quot; name=&quot;bouquetlist&quot; position=&quot;520,229&quot; size=&quot;880,602&quot;</title></rect>
 <rect data-ref="0:8" data-src="screenpart_Pager.ymlinc:9" x="520" y="831" width="880" height="25" fill="#9c755f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_Pager.ymlinc:9
 &lt;widget&gt; addon=&quot;Pager&quot; conditional=&quot;bouquetlist&quot; connection=&quot;bouquetlist&quot; maxPages=&quot;20&quot; position=&quot;520,831&quot; size=&quot;880,25&quot;</title></rect>
@@ -26,7 +26,7 @@
 <text x="498" y="179"><tspan font-weight="bold">#2:4</tspan> eLabel</text>
 <text x="500" y="213"><tspan font-weight="bold">#2:10</tspan> eLabel</text>
 <text x="524" y="153"><tspan font-weight="bold">#4:12</tspan> widget</text>
-<text x="524" y="243"><tspan font-weight="bold">#6:1</tspan> bouquetlist</text>
+<text x="524" y="243"><tspan font-weight="bold">#6:3</tspan> bouquetlist</text>
 <text x="524" y="845"><tspan font-weight="bold">#7:9</tspan> widget</text>
 <text x="783" y="115"><tspan font-weight="bold">#1:5</tspan> text</text>
 <text x="524" y="908"><tspan font-weight="bold">#5:4</tspan> widget</text>

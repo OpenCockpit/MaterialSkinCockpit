@@ -10,5 +10,6 @@ screen:
         window_inset_x: "$window_medium_body_x"
     - xmlinc:
         file: "screenpart_PinInputBody.ymlinc"
-        position: "$window_medium_body_x,$window_medium_body_y"
-        size: "$window_medium_body_width,$window_medium_body_height"
+        position: "$window_medium_body_x+16,$window_medium_body_y+207"
+        width: "$window_medium_body_width-16"
+        height: "$window_medium_body_height-207"

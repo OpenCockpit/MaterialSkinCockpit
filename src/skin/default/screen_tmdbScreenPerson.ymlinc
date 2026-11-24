@@ -7,6 +7,7 @@ screen:
         file: "screenpart_tmdb1.ymlinc"
         position: "0,0"
     - xmlinc:
-        file: "screenpart_tmdbScreenPersonPanel.ymlinc"
+        file: "screenpart_tmdbScreenPersonBody.ymlinc"
         position: "54,169"
-        size: "1690,902"
+        width: "1690"
+        height: "902"

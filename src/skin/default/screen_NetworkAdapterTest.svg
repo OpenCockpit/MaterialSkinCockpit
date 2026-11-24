@@ -68,9 +68,9 @@
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_container_high&quot; position=&quot;30,7&quot; size=&quot;1740,60&quot; zPosition=&quot;19&quot;</title></rect>
 <rect data-ref="0:2" data-src="screenpart_Clock.ymlinc:1" x="1770" y="6" width="120" height="60" fill="#1d1d1d" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_Clock.ymlinc:1
 &lt;widget&gt; backgroundColor=&quot;md_surface_container_low&quot; font=&quot;md_headline_small_emphasized&quot; foregroundColor=&quot;md_on_surface&quot; halign=&quot;right&quot; position=&quot;1770,6&quot; render=&quot;Label&quot; size=&quot;120,60&quot; source=&quot;global.CurrentTime&quot; transparent=&quot;1&quot; valign=&quot;center&quot; zPosition=&quot;20&quot;</title></rect>
-<rect data-ref="0:33" data-src="screen_NetworkAdapterTest.ymlinc:15" x="884" y="1034" width="40" height="20" fill="#2c2c2c" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_NetworkAdapterTest.ymlinc:15
+<rect data-ref="0:33" data-src="screen_NetworkAdapterTest.ymlinc:16" x="884" y="1034" width="40" height="20" fill="#2c2c2c" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_NetworkAdapterTest.ymlinc:16
 &lt;widget&gt; alphatest=&quot;blend&quot; backgroundColor=&quot;md_surface_container_high&quot; name=&quot;EditSettingsButton&quot; pixmaps=&quot;buttons/key_grey.png,buttons/key_blue.png&quot; position=&quot;884,1034&quot; size=&quot;40,20&quot; zPosition=&quot;20&quot;</title></rect>
-<rect data-ref="0:34" data-src="screen_NetworkAdapterTest.ymlinc:23" x="934" y="1024" width="370" height="40" fill="#2c2c2c" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_NetworkAdapterTest.ymlinc:23
+<rect data-ref="0:34" data-src="screen_NetworkAdapterTest.ymlinc:24" x="934" y="1024" width="370" height="40" fill="#2c2c2c" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_NetworkAdapterTest.ymlinc:24
 &lt;widget&gt; backgroundColor=&quot;md_surface_container_high&quot; font=&quot;md_body_small&quot; foregroundColors=&quot;md_on_surface,md_outline,md_success&quot; halign=&quot;left&quot; name=&quot;EditSettings_Text&quot; position=&quot;934,1024&quot; size=&quot;370,40&quot; valign=&quot;center&quot; zPosition=&quot;21&quot;</title></rect>
 <rect data-ref="0:6" data-src="screenpart_NetworkAdapterTestPanel.ymlinc:1" x="79" y="90" width="1100" height="455" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_NetworkAdapterTestPanel.ymlinc:1
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; name=&quot;InfoText&quot; position=&quot;79,90&quot; size=&quot;1100,455&quot; zPosition=&quot;25&quot;</title></rect>
@@ -107,8 +107,8 @@
 <text x="34" y="1041"><tspan font-weight="bold">#4:4</tspan> widget</text>
 <text x="1686" y="21"><tspan font-weight="bold">#3:7</tspan> eLabel</text>
 <text x="1774" y="20"><tspan font-weight="bold">#2:1</tspan> global.Cu…</text>
-<text x="884" y="1030"><tspan font-weight="bold">#6:15</tspan> EditSettingsButton</text>
-<text x="1132" y="1038"><tspan font-weight="bold">#6:23</tspan> EditSettings_Text</text>
+<text x="884" y="1030"><tspan font-weight="bold">#6:16</tspan> EditSettingsButton</text>
+<text x="1132" y="1038"><tspan font-weight="bold">#6:24</tspan> EditSettings_Text</text>
 <text x="83" y="104"><tspan font-weight="bold">#5:1</tspan> InfoText</text>
 </g>
 </g>

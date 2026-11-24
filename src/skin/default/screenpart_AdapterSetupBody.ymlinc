@@ -1,13 +1,17 @@
 # The settings list on top, the current settings below it (each half of the body without the description) and the
 # description of the selected entry in up to two lines across the bottom.
+- param: {name: "width"}
+- param: {name: "height"}
 - xmlinc:
     file: "screenpart_AdapterSetupBodyList.ymlinc"
     position: "0,0"
-    size: "$width,eval(($height-72)/2)"
+    width: "$width"
+    height: "eval(($height-72)/2)"
 - xmlinc:
     file: "screenpart_AdapterSetupBodyInfo.ymlinc"
-    position: "0,eval(($height-72)/2)"
-    size: "$width,eval(($height-72)/2)"
+    position: "0,eval(($height-72)/2+5)"
+    width: "$width"
+    height: "eval(($height-72)/2-5)"
 - widget:
     font: "md_body_medium"
     foregroundColor: "md_primary"

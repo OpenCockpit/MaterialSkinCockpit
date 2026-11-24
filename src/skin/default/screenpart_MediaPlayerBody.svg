@@ -4,58 +4,58 @@
 <text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_MediaPlayerBody (1920x1080) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = line in screenpart_MediaPlayerBody.ymlinc</tspan></text>
 <g data-screen="0" transform="translate(20,48)">
 <rect x="0" y="0" width="1920" height="1080" fill="#ffffff" stroke="#999999" stroke-width="1"/>
-<rect data-ref="0:1" data-src="screenpart_MediaPlayerBody.ymlinc:10" x="0" y="44" width="922" height="610" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:10
+<rect data-ref="0:1" data-src="screenpart_MediaPlayerBody.ymlinc:12" x="0" y="44" width="922" height="610" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:12
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; itemCornerRadius=&quot;12&quot; name=&quot;filelist&quot; position=&quot;0,44&quot; size=&quot;922,610&quot;</title></rect>
-<rect data-ref="0:3" data-src="screenpart_MediaPlayerBody.ymlinc:25" x="998" y="44" width="922" height="610" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:25
+<rect data-ref="0:3" data-src="screenpart_MediaPlayerBody.ymlinc:27" x="998" y="44" width="922" height="610" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:27
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; name=&quot;playlist&quot; position=&quot;998,44&quot; scrollbarMode=&quot;showNever&quot; selectionDisabled=&quot;1&quot; size=&quot;922,610&quot;</title></rect>
-<rect data-ref="0:4" data-src="screenpart_MediaPlayerBody.ymlinc:32" x="170" y="674" width="1520" height="60" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:32
+<rect data-ref="0:4" data-src="screenpart_MediaPlayerBody.ymlinc:34" x="170" y="674" width="1520" height="60" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:34
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_headline_medium&quot; halign=&quot;center&quot; name=&quot;title&quot; position=&quot;170,674&quot; size=&quot;1520,60&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:5" data-src="screenpart_MediaPlayerBody.ymlinc:41" x="160" y="726" width="1540" height="3" fill="#363636" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:41
+<rect data-ref="0:5" data-src="screenpart_MediaPlayerBody.ymlinc:43" x="160" y="726" width="1540" height="3" fill="#363636" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:43
 &lt;eLabel&gt; backgroundColor=&quot;md_surface_container_highest&quot; position=&quot;160,726&quot; size=&quot;1540,3&quot;</title></rect>
-<rect data-ref="0:6" data-src="screenpart_MediaPlayerBody.ymlinc:45" x="170" y="741" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:45
+<rect data-ref="0:6" data-src="screenpart_MediaPlayerBody.ymlinc:47" x="170" y="741" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:47
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;titletext&quot; position=&quot;170,741&quot; size=&quot;150,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:7" data-src="screenpart_MediaPlayerBody.ymlinc:54" x="320" y="741" width="1200" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:54
+<rect data-ref="0:7" data-src="screenpart_MediaPlayerBody.ymlinc:56" x="320" y="741" width="1200" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:56
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;currenttext&quot; position=&quot;320,741&quot; size=&quot;1200,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:8" data-src="screenpart_MediaPlayerBody.ymlinc:63" x="170" y="786" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:63
+<rect data-ref="0:8" data-src="screenpart_MediaPlayerBody.ymlinc:65" x="170" y="786" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:65
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;artisttext&quot; position=&quot;170,786&quot; size=&quot;150,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:9" data-src="screenpart_MediaPlayerBody.ymlinc:72" x="320" y="786" width="1020" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:72
+<rect data-ref="0:9" data-src="screenpart_MediaPlayerBody.ymlinc:74" x="320" y="786" width="1020" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:74
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; name=&quot;artist&quot; position=&quot;320,786&quot; size=&quot;1020,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:10" data-src="screenpart_MediaPlayerBody.ymlinc:80" x="170" y="831" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:80
+<rect data-ref="0:10" data-src="screenpart_MediaPlayerBody.ymlinc:82" x="170" y="831" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:82
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;albumtext&quot; position=&quot;170,831&quot; size=&quot;150,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:11" data-src="screenpart_MediaPlayerBody.ymlinc:89" x="320" y="831" width="1020" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:89
+<rect data-ref="0:11" data-src="screenpart_MediaPlayerBody.ymlinc:91" x="320" y="831" width="1020" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:91
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; name=&quot;album&quot; position=&quot;320,831&quot; size=&quot;1020,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:12" data-src="screenpart_MediaPlayerBody.ymlinc:97" x="170" y="1043" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:97
+<rect data-ref="0:12" data-src="screenpart_MediaPlayerBody.ymlinc:99" x="170" y="1043" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:99
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;yeartext&quot; position=&quot;170,1043&quot; size=&quot;150,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:13" data-src="screenpart_MediaPlayerBody.ymlinc:106" x="320" y="1043" width="375" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:106
+<rect data-ref="0:13" data-src="screenpart_MediaPlayerBody.ymlinc:108" x="320" y="1043" width="375" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:108
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; name=&quot;year&quot; position=&quot;320,1043&quot; size=&quot;375,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:14" data-src="screenpart_MediaPlayerBody.ymlinc:114" x="795" y="1043" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:114
+<rect data-ref="0:14" data-src="screenpart_MediaPlayerBody.ymlinc:116" x="795" y="1043" width="150" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:116
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;genretext&quot; position=&quot;795,1043&quot; size=&quot;150,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:15" data-src="screenpart_MediaPlayerBody.ymlinc:123" x="945" y="1043" width="517" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:123
+<rect data-ref="0:15" data-src="screenpart_MediaPlayerBody.ymlinc:125" x="945" y="1043" width="517" height="37" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:125
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; foregroundColor=&quot;md_surface_container_highest&quot; name=&quot;genre&quot; position=&quot;945,1043&quot; size=&quot;517,37&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:16" data-src="screenpart_MediaPlayerBody.ymlinc:132" x="0" y="726" width="116" height="116" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:132
+<rect data-ref="0:16" data-src="screenpart_MediaPlayerBody.ymlinc:134" x="0" y="726" width="116" height="116" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:134
 &lt;widget&gt; alphatest=&quot;blend&quot; name=&quot;coverArt&quot; pixmap=&quot;no_coverArt.png&quot; position=&quot;0,726&quot; size=&quot;116,116&quot; transparent=&quot;1&quot;</title></rect>
-<rect data-ref="0:0" data-src="screenpart_MediaPlayerBody.ymlinc:1" x="0" y="0" width="922" height="43" fill="#c4c4c4" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:1
+<rect data-ref="0:0" data-src="screenpart_MediaPlayerBody.ymlinc:3" x="0" y="0" width="922" height="43" fill="#c4c4c4" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:3
 &lt;eLabel&gt; backgroundColor=&quot;md_on_surface_variant&quot; font=&quot;md_title_large&quot; foregroundColor=&quot;md_shadow&quot; halign=&quot;center&quot; position=&quot;0,0&quot; size=&quot;922,43&quot; text=&quot;F i l e l i s t&quot; zPosition=&quot;5&quot;</title></rect>
-<rect data-ref="0:2" data-src="screenpart_MediaPlayerBody.ymlinc:16" x="998" y="0" width="922" height="43" fill="#c4c4c4" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:16
+<rect data-ref="0:2" data-src="screenpart_MediaPlayerBody.ymlinc:18" x="998" y="0" width="922" height="43" fill="#c4c4c4" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_MediaPlayerBody.ymlinc:18
 &lt;eLabel&gt; backgroundColor=&quot;md_on_surface_variant&quot; font=&quot;md_title_large&quot; foregroundColor=&quot;md_shadow&quot; halign=&quot;center&quot; position=&quot;998,0&quot; size=&quot;922,43&quot; text=&quot;P l a y l i s t&quot; zPosition=&quot;5&quot;</title></rect>
 <g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
-<text x="4" y="58"><tspan font-weight="bold">#10</tspan> filelist</text>
-<text x="1002" y="58"><tspan font-weight="bold">#25</tspan> playlist</text>
-<text x="174" y="688"><tspan font-weight="bold">#32</tspan> title</text>
-<text x="160" y="722"><tspan font-weight="bold">#41</tspan> eLabel</text>
-<text x="174" y="755"><tspan font-weight="bold">#45</tspan> titletext</text>
-<text x="324" y="755"><tspan font-weight="bold">#54</tspan> currenttext</text>
-<text x="174" y="800"><tspan font-weight="bold">#63</tspan> artisttext</text>
-<text x="324" y="800"><tspan font-weight="bold">#72</tspan> artist</text>
-<text x="174" y="845"><tspan font-weight="bold">#80</tspan> albumtext</text>
-<text x="324" y="845"><tspan font-weight="bold">#89</tspan> album</text>
-<text x="174" y="1057"><tspan font-weight="bold">#97</tspan> yeartext</text>
-<text x="324" y="1057"><tspan font-weight="bold">#106</tspan> year</text>
-<text x="799" y="1057"><tspan font-weight="bold">#114</tspan> genretext</text>
-<text x="949" y="1057"><tspan font-weight="bold">#123</tspan> genre</text>
-<text x="4" y="740"><tspan font-weight="bold">#132</tspan> coverArt</text>
-<text x="4" y="14"><tspan font-weight="bold">#1</tspan> eLabel</text>
-<text x="1002" y="14"><tspan font-weight="bold">#16</tspan> eLabel</text>
+<text x="4" y="58"><tspan font-weight="bold">#12</tspan> filelist</text>
+<text x="1002" y="58"><tspan font-weight="bold">#27</tspan> playlist</text>
+<text x="174" y="688"><tspan font-weight="bold">#34</tspan> title</text>
+<text x="160" y="722"><tspan font-weight="bold">#43</tspan> eLabel</text>
+<text x="174" y="755"><tspan font-weight="bold">#47</tspan> titletext</text>
+<text x="324" y="755"><tspan font-weight="bold">#56</tspan> currenttext</text>
+<text x="174" y="800"><tspan font-weight="bold">#65</tspan> artisttext</text>
+<text x="324" y="800"><tspan font-weight="bold">#74</tspan> artist</text>
+<text x="174" y="845"><tspan font-weight="bold">#82</tspan> albumtext</text>
+<text x="324" y="845"><tspan font-weight="bold">#91</tspan> album</text>
+<text x="174" y="1057"><tspan font-weight="bold">#99</tspan> yeartext</text>
+<text x="324" y="1057"><tspan font-weight="bold">#108</tspan> year</text>
+<text x="799" y="1057"><tspan font-weight="bold">#116</tspan> genretext</text>
+<text x="949" y="1057"><tspan font-weight="bold">#125</tspan> genre</text>
+<text x="4" y="740"><tspan font-weight="bold">#134</tspan> coverArt</text>
+<text x="4" y="14"><tspan font-weight="bold">#3</tspan> eLabel</text>
+<text x="1002" y="14"><tspan font-weight="bold">#18</tspan> eLabel</text>
 </g>
 </g>
 </svg>

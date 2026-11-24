@@ -4,48 +4,48 @@
 <text x="20" y="38" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111">screenpart_GraphMultiEPGBody (1920x1080) <tspan font-family="monospace" font-size="12" font-weight="normal" fill="#555555">ids = file:line - 1=screenpart_GraphMultiEPGBody.ymlinc  2=screenpart_Pager.ymlinc</tspan></text>
 <g data-screen="0" transform="translate(20,48)">
 <rect x="0" y="0" width="1920" height="1080" fill="#ffffff" stroke="#999999" stroke-width="1"/>
-<rect data-ref="0:2" data-src="screenpart_GraphMultiEPGBody.ymlinc:13" x="20" y="473" width="1900" height="607" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:13
+<rect data-ref="0:2" data-src="screenpart_GraphMultiEPGBody.ymlinc:15" x="20" y="473" width="1900" height="607" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:15
 &lt;eLabel&gt; backgroundColor=&quot;md_surface&quot; cornerRadius=&quot;6&quot; position=&quot;20,473&quot; size=&quot;1900,607&quot; widgetBorderColor=&quot;md_outline_variant&quot; widgetBorderWidth=&quot;1&quot; zPosition=&quot;-2&quot;</title></rect>
 <rect data-ref="0:0" x="0" y="0" width="1920" height="1080" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>&lt;screen&gt; name=&quot;Pig&quot;</title></rect>
-<rect data-ref="0:5" data-src="screenpart_GraphMultiEPGBody.ymlinc:36" x="20" y="313" width="1900" height="512" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:36
+<rect data-ref="0:5" data-src="screenpart_GraphMultiEPGBody.ymlinc:38" x="20" y="313" width="1900" height="512" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:38
 &lt;widget&gt; EntryActiveBackgroundColor=&quot;md_error_container&quot; EntryActiveBackgroundColorSelected=&quot;md_inverse_surface&quot; EntryBackgroundColor=&quot;md_surface&quot; EntryBackgroundColorNow=&quot;md_surface_container&quot; EntryBackgroundColorNowSelected=&quot;md_inverse_surface&quot; EntryBackgroundColorSelected=&quot;md_inverse_surface&quot; EntryBorderColor=&quot;md_outline_variant&quot; EntryFont=&quot;md_body_medium&quot; EntryForegroundColor=&quot;md_on_surface&quot; EntryForegroundColorNowSelected=&quot;md_inverse_on_surface&quot; EntryForegroundColorSelected=&quot;md_inverse_on_surface&quot; EventBorderWidth=&quot;1&quot; EventNamePadding=&quot;6&quot; EventTextSidesMargin=&quot;10&quot; IconXPadding=&quot;6&quot; IconYPadding=&quot;4&quot; itemCornerRadius=&quot;12&quot; RecIconSize=&quot;32&quot; RecordBackgroundColor=&quot;md_error_container&quot; RecordBackgroundColorSelected=&quot;md_error_container&quot; ServiceBackgroundColor=&quot;md_surface&quot; ServiceBorderColor=&quot;md_outline_variant&quot; ServiceBorderWidth=&quot;1&quot; ServiceFont=&quot;md_body_medium&quot; ServiceForegroundColorNow=&quot;md_primary&quot; ServiceNameBackgroundColor=&quot;md_surface&quot; ServiceNameBackgroundColorSelected=&quot;md_success_container&quot; ServiceNameForegroundColor=&quot;md_on_surface&quot; ServiceNamePadding=&quot;6&quot; ZapBackgroundColor=&quot;md_warning_container&quot; ZapBackgroundColorSelected=&quot;md_warning_container&quot; backgroundColor=&quot;md_surface&quot; enableWrapAround=&quot;1&quot; itemHeight=&quot;64&quot; name=&quot;list&quot; position=&quot;20,313&quot; size=&quot;1900,512&quot;</title></rect>
 <rect data-ref="0:7" data-src="screenpart_Pager.ymlinc:9" x="20" y="845" width="1900" height="25" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_Pager.ymlinc:9
 &lt;widget&gt; addon=&quot;Pager&quot; conditional=&quot;list&quot; connection=&quot;list&quot; maxPages=&quot;20&quot; position=&quot;20,845&quot; size=&quot;1900,25&quot;</title></rect>
-<rect data-ref="0:9" data-src="screenpart_GraphMultiEPGBody.ymlinc:91" x="1095" y="10" width="310" height="34" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:91
+<rect data-ref="0:9" data-src="screenpart_GraphMultiEPGBody.ymlinc:93" x="1095" y="10" width="310" height="34" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:93
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_small&quot; halign=&quot;left&quot; position=&quot;1095,10&quot; render=&quot;Label&quot; size=&quot;310,34&quot; source=&quot;Event&quot; transparent=&quot;1&quot; valign=&quot;center&quot;</title></rect>
-<rect data-ref="0:12" data-src="screenpart_GraphMultiEPGBody.ymlinc:140" x="25" y="0" width="790" height="47" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:140
+<rect data-ref="0:12" data-src="screenpart_GraphMultiEPGBody.ymlinc:142" x="25" y="0" width="790" height="47" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:142
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_title_large&quot; foregroundColor=&quot;md_primary&quot; halign=&quot;left&quot; position=&quot;25,0&quot; render=&quot;Label&quot; size=&quot;790,47&quot; source=&quot;Event&quot; transparent=&quot;1&quot; valign=&quot;center&quot;</title></rect>
-<rect data-ref="0:13" data-src="screenpart_GraphMultiEPGBody.ymlinc:155" x="25" y="68" width="1385" height="175" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:155
+<rect data-ref="0:13" data-src="screenpart_GraphMultiEPGBody.ymlinc:157" x="25" y="68" width="1385" height="175" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:157
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_body_large&quot; options=&quot;movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1&quot; position=&quot;25,68&quot; render=&quot;COCRunningText&quot; size=&quot;1385,175&quot; source=&quot;Event&quot; transparent=&quot;1&quot; valign=&quot;top&quot;</title></rect>
-<rect data-ref="0:10" data-src="screenpart_GraphMultiEPGBody.ymlinc:106" x="33" y="841" width="32" height="32" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:106
+<rect data-ref="0:10" data-src="screenpart_GraphMultiEPGBody.ymlinc:108" x="33" y="841" width="32" height="32" fill="#4e79a7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:108
 &lt;widget&gt; alphatest=&quot;blend&quot; borderColor=&quot;md_shadow&quot; borderWidth=&quot;1&quot; cornerRadius=&quot;6&quot; font=&quot;md_title_small_emphasized&quot; halign=&quot;center&quot; position=&quot;33,841&quot; render=&quot;RatingIconLabel&quot; size=&quot;32,32&quot; source=&quot;Event&quot; valign=&quot;center&quot; widgetBorderColor=&quot;md_outline_variant&quot; widgetBorderWidth=&quot;1&quot; zPosition=&quot;1&quot;</title></rect>
-<rect data-ref="0:11" data-src="screenpart_GraphMultiEPGBody.ymlinc:125" x="1420" y="840" width="500" height="34" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:125
+<rect data-ref="0:11" data-src="screenpart_GraphMultiEPGBody.ymlinc:127" x="1420" y="840" width="500" height="34" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:127
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; font=&quot;md_title_small_emphasized&quot; foregroundColor=&quot;md_tertiary&quot; halign=&quot;right&quot; position=&quot;1420,840&quot; render=&quot;Label&quot; size=&quot;500,34&quot; source=&quot;Event&quot; valign=&quot;center&quot; zPosition=&quot;1&quot;</title></rect>
-<rect data-ref="0:1" data-src="screenpart_GraphMultiEPGBody.ymlinc:5" x="0" y="314" width="28" height="516" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:5
+<rect data-ref="0:1" data-src="screenpart_GraphMultiEPGBody.ymlinc:7" x="0" y="314" width="28" height="516" fill="#f28e2b" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:7
 &lt;widget&gt; alphatest=&quot;blend&quot; name=&quot;timeline_now&quot; pixmap=&quot;window/timeline-now.png&quot; position=&quot;0,314&quot; scale=&quot;1&quot; size=&quot;28,516&quot; zPosition=&quot;2&quot;</title></rect>
-<rect data-ref="0:3" data-src="screenpart_GraphMultiEPGBody.ymlinc:21" x="22" y="280" width="1898" height="31" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:21
+<rect data-ref="0:3" data-src="screenpart_GraphMultiEPGBody.ymlinc:23" x="22" y="280" width="1898" height="31" fill="#121212" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:23
 &lt;widget&gt; backgroundColor=&quot;md_surface&quot; borderColor=&quot;md_outline_variant&quot; borderWidth=&quot;1&quot; foregroundColor=&quot;md_on_surface&quot; fullBorder=&quot;0&quot; name=&quot;timeline_text&quot; position=&quot;22,280&quot; size=&quot;1898,31&quot; zPosition=&quot;2&quot;</title></rect>
-<rect data-ref="0:8" data-src="screenpart_GraphMultiEPGBody.ymlinc:85" x="1055" y="17" width="22" height="22" fill="#9c755f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:85
+<rect data-ref="0:8" data-src="screenpart_GraphMultiEPGBody.ymlinc:87" x="1055" y="17" width="22" height="22" fill="#9c755f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:87
 &lt;ePixmap&gt; alphatest=&quot;blend&quot; pixmap=&quot;icons/clock_22.png&quot; position=&quot;1055,17&quot; size=&quot;22,22&quot; zPosition=&quot;2&quot;</title></rect>
-<rect data-ref="0:4" data-src="screenpart_GraphMultiEPGBody.ymlinc:31" x="20" y="313" width="1900" height="1" fill="#424242" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:31
+<rect data-ref="0:4" data-src="screenpart_GraphMultiEPGBody.ymlinc:33" x="20" y="313" width="1900" height="1" fill="#424242" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:33
 &lt;eLabel&gt; backgroundColor=&quot;md_outline_variant&quot; position=&quot;20,313&quot; size=&quot;1900,1&quot; zPosition=&quot;10&quot;</title></rect>
-<rect data-ref="0:6" data-src="screenpart_GraphMultiEPGBody.ymlinc:74" x="20" y="830" width="1900" height="1" fill="#424242" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:74
+<rect data-ref="0:6" data-src="screenpart_GraphMultiEPGBody.ymlinc:76" x="20" y="830" width="1900" height="1" fill="#424242" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_GraphMultiEPGBody.ymlinc:76
 &lt;eLabel&gt; backgroundColor=&quot;md_outline_variant&quot; position=&quot;20,830&quot; size=&quot;1900,1&quot; zPosition=&quot;10&quot;</title></rect>
 <g pointer-events="none" font-family="monospace" font-size="12" fill="#000000" stroke="#ffffff" stroke-width="3" stroke-opacity="0.85" stroke-linejoin="round" paint-order="stroke">
-<text x="24" y="487"><tspan font-weight="bold">#1:13</tspan> eLabel</text>
+<text x="24" y="487"><tspan font-weight="bold">#1:15</tspan> eLabel</text>
 <text x="1894" y="14">Pig</text>
-<text x="1843" y="327"><tspan font-weight="bold">#1:36</tspan> list</text>
+<text x="1843" y="327"><tspan font-weight="bold">#1:38</tspan> list</text>
 <text x="24" y="859"><tspan font-weight="bold">#2:9</tspan> widget</text>
-<text x="1262" y="24"><tspan font-weight="bold">#1:91</tspan> Event (Label)</text>
-<text x="29" y="14"><tspan font-weight="bold">#1:140</tspan> Event (Label)</text>
-<text x="29" y="82"><tspan font-weight="bold">#1:155</tspan> Event (COCRunningText)</text>
-<text x="33" y="837"><tspan font-weight="bold">#1:106</tspan> Event (RatingIconLabel)</text>
-<text x="1424" y="854"><tspan font-weight="bold">#1:125</tspan> Event (Label)</text>
-<text x="32" y="328"><tspan font-weight="bold">#1:5</tspan> timeline_now</text>
-<text x="26" y="294"><tspan font-weight="bold">#1:21</tspan> timeline_text</text>
-<text x="1055" y="13"><tspan font-weight="bold">#1:85</tspan> ePixmap</text>
-<text x="20" y="309"><tspan font-weight="bold">#1:31</tspan> eLabel</text>
-<text x="1832" y="826"><tspan font-weight="bold">#1:74</tspan> eLabel</text>
+<text x="1262" y="24"><tspan font-weight="bold">#1:93</tspan> Event (Label)</text>
+<text x="29" y="14"><tspan font-weight="bold">#1:142</tspan> Event (Label)</text>
+<text x="29" y="82"><tspan font-weight="bold">#1:157</tspan> Event (COCRunningText)</text>
+<text x="33" y="837"><tspan font-weight="bold">#1:108</tspan> Event (RatingIconLabel)</text>
+<text x="1424" y="854"><tspan font-weight="bold">#1:127</tspan> Event (Label)</text>
+<text x="32" y="328"><tspan font-weight="bold">#1:7</tspan> timeline_now</text>
+<text x="26" y="294"><tspan font-weight="bold">#1:23</tspan> timeline_text</text>
+<text x="1055" y="13"><tspan font-weight="bold">#1:87</tspan> ePixmap</text>
+<text x="20" y="309"><tspan font-weight="bold">#1:33</tspan> eLabel</text>
+<text x="1832" y="826"><tspan font-weight="bold">#1:76</tspan> eLabel</text>
 </g>
 </g>
 </svg>

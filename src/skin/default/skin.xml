@@ -400,15 +400,15 @@
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="12" extendDirection="left" font="md_display_medium_emphasized" halign="center" position="1702,146" render="RatingIconLabel" size="96,96" source="Event" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="2" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="md_headline_small_emphasized" foregroundColor="md_on_surface" halign="left" name="channel" position="122,146" size="1086,50" transparent="1"/>
+		<widget backgroundColor="md_surface" font="md_headline_medium" foregroundColor="md_on_surface" halign="left" name="channel" position="122,146" size="1086,50" transparent="1"/>
 		<widget backgroundColor="md_surface" font="md_title_small_emphasized" halign="left" name="datetime" position="122,900" size="340,40" transparent="1"/>
 		<widget backgroundColor="md_surface" font="md_title_small_emphasized" foregroundColor="md_secondary" halign="left" name="duration" position="462,900" size="340,40" transparent="1"/>
 		<widget backgroundColor="md_surface" font="md_title_large" foregroundColor="md_tertiary" halign="left" position="807,895" render="Label" size="670,45" source="Event" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="md_title_large" halign="block" name="FullDescription" position="122,215" scrollbarMode="showNever" size="1676,502"/>
-		<widget addon="Pager" backgroundColor="md_surface" conditional="FullDescription" connection="FullDescription" maxPages="20" position="122,742" size="1676,25" transparent="1"/>
-		<widget alphatest="blend" backgroundColor="md_surface" position="1523,770" render="Picon" size="220,132" source="Service" transparent="1" zPosition="1">
+		<widget backgroundColor="md_surface" font="md_title_large" halign="block" name="FullDescription" position="122,261" scrollbarMode="showNever" size="1676,459"/>
+		<widget addon="Pager" backgroundColor="md_surface" conditional="FullDescription" connection="FullDescription" maxPages="20" position="122,740" size="1676,25" transparent="1"/>
+		<widget alphatest="blend" backgroundColor="md_surface" position="1578,770" render="Picon" size="220,130" source="Service" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>

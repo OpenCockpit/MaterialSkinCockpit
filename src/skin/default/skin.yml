@@ -52,10 +52,13 @@ skin:
               title: "AutoTimer Overview"
           - screen:
               content: "screenpart_CIconfigMenuBody"
+              content_dx: "77"
               name: "CIconfigMenu"
               title: "CI Assignment"
           - screen:
               content: "screenpart_CableScanStatusBody"
+              content_dx: "655"
+              content_dy: "30"
               name: "CableScanStatus"
               title: "Cable Scan"
           - screen:
@@ -83,10 +86,13 @@ skin:
               name: "EventViewSimple"
           - screen:
               content: "screenpart_FastScanStatusBody"
+              content_dy: "85"
               name: "FastScanStatus"
               title: "Fast Scan"
           - screen:
               content: "screenpart_FilebrowserScreenBody"
+              content_dx: "6"
+              content_dy: "4"
               name: "FilebrowserScreen"
               title: "File browser"
           - screen:
@@ -94,6 +100,8 @@ skin:
               name: "HarddiskSelection"
           - screen:
               content: "screenpart_HarddiskSetupBody"
+              content_dx: "16"
+              content_dy: "121"
               name: "HarddiskSetup"
           - screen:
               content: "screenpart_HddSetupBody"
@@ -141,18 +149,22 @@ skin:
               title: "Network Neighbourhood"
           - screen:
               content: "screenpart_NetworkInadynBody"
+              content_dy: "74"
               name: "NetworkInadyn"
           - screen:
               content: "screenpart_NetworkMiniDLNABody"
+              content_dx: "24"
               name: "NetworkMiniDLNA"
           - screen:
               content: "screenpart_NetworkMountsMenuBody"
               name: "NetworkMountsMenu"
           - screen:
               content: "screenpart_NetworkServiceSetupBody"
+              content_dy: "15"
               name: "NetworkServiceSetup"
           - screen:
               content: "screenpart_NetworkuShareBody"
+              content_dx: "24"
               name: "NetworkuShare"
           - screen:
               content: "screenpart_NimSelectionBody"
@@ -179,6 +191,8 @@ skin:
               name: "RemoteTimerEPGList"
           - screen:
               content: "screenpart_RemoteTimerEventViewBody"
+              content_dx: "1"
+              content_dy: "4"
               name: "RemoteTimerEventView"
               title: "Eventview"
           - screen:
@@ -197,6 +211,8 @@ skin:
               name: "SoftwareUpdateChoices"
           - screen:
               content: "screenpart_SubsSearchBody"
+              content_dx: "6"
+              content_dy: "19"
               name: "SubsSearch"
           - screen:
               content: "screenpart_SubsSupportSettingsBody"
@@ -223,6 +239,7 @@ skin:
               title: "Timer Overview"
           - screen:
               content: "screenpart_PowerTimerEditListBody"
+              content_dy: "5"
               name: "PowerTimerEditList"
               title: "Power Timer List"
           - screen:
@@ -252,6 +269,7 @@ skin:
               title: "Wireless Network State"
           - screen:
               content: "screenpart_tmdbScreenSeasonBody"
+              content_dx: "25"
               name: "tmdbScreenSeason"
               title: "TMDb - The Movie Database"
           - screen:
@@ -276,6 +294,7 @@ skin:
               title: "Import AutoTimer"
           - screen:
               content: "screenpart_BluetoothDevicesManagerBody"
+              content_dx: "29"
               name: "BluetoothDevicesManager"
           - screen:
               content: "screenpart_BouquetSelectorBody"
@@ -348,14 +367,18 @@ skin:
               title: "Input"
           - screen:
               content: "screenpart_JobViewBody"
+              content_dy: "36"
               name: "JobView"
               title: "Job View"
           - screen:
               content: "screenpart_LCDdisplayFileBody"
+              content_dx: "14"
+              content_dy: "20"
               name: "LCDdisplayFile"
               title: "Select File/Dir..."
           - screen:
               content: "screenpart_MSNWeatherPluginBody"
+              content_dx: "14"
               name: "MSNWeatherPlugin"
               title: "Weather Plugin"
           - screen:
@@ -363,10 +386,13 @@ skin:
               name: "NetworkAdapterSelection"
           - screen:
               content: "screenpart_PartnerboxAutoTimerOverviewBody"
+              content_dy: "35"
               name: "PartnerboxAutoTimerOverview"
               title: "AutoTimer Overview"
           - screen:
               content: "screenpart_SHOUTcastStreamripperRecordingPathBody"
+              content_dx: "14"
+              content_dy: "15"
               name: "SHOUTcastStreamripperRecordingPath"
               title: "Select record path for streamripper"
           - screen:
@@ -374,6 +400,8 @@ skin:
               name: "SatNimSelection"
           - screen:
               content: "screenpart_ServiceAppDetectPlayersBody"
+              content_dx: "319"
+              content_dy: "178"
               name: "ServiceAppDetectPlayers"
           - screen:
               content: "screenpart_StreamingClientsInfoBody"
@@ -395,6 +423,7 @@ skin:
               name: "TranslationInfo"
           - screen:
               content: "screenpart_YouTubeSearchBody"
+              content_dy: "15"
               name: "YouTubeSearch"
           - screen:
               content: "screenpart_CrossEPG_InfoBody"
@@ -446,13 +475,17 @@ skin:
               title: "Radio Channel Selection"
           - screen:
               content: "screenpart_CutListEditorBody"
+              content_dx: "74"
+              content_dy: "17"
               name: "CutListEditor"
               title: "Cutlist editor"
           - screen:
               content: "screenpart_NetworkInadynLogBody"
+              content_dy: "22"
               name: "NetworkInadynLog"
           - screen:
               content: "screenpart_NetworkVpnLogBody"
+              content_dy: "22"
               name: "NetworkVpnLog"
           - screen:
               content: "screenpart_SatfinderBody"
@@ -503,6 +536,7 @@ skin:
               title: "SHOUTcast"
           - screen:
               content: "screenpart_ServiceScanBody"
+              content_dy: "19"
               name: "ServiceScan"
               title: "Service scan"
     - screenfamily:

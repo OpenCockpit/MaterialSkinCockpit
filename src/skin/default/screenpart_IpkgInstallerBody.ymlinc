@@ -1,10 +1,12 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     conditional: "introduction"
     font: "md_body_medium"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "0,715"
+    position: "0,0"
     render: "Label"
     size: "$width,35"
     source: "introduction"
@@ -16,7 +18,7 @@
     font: "md_body_medium"
     foregroundColor: "md_primary"
     halign: "center"
-    position: "0,715"
+    position: "0,0"
     render: "Label"
     size: "$width,35"
     source: "lab1"

@@ -7,8 +7,9 @@ screen:
         position: "0,0"
     - xmlinc:
         file: "screenpart_EPGSaveLoadConfigurationBody.ymlinc"
-        position: "$window_large_body_x,$window_large_body_y"
-        size: "$window_large_body_width,$window_large_body_height"
+        position: "$window_large_body_x+20,$window_large_body_y+605"
+        width: "$window_large_body_width-20"
+        height: "$window_large_body_height-605"
     - widget:
         backgroundColor: "md_surface_overlay_soft"
         font: "md_body_medium"

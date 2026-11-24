@@ -1,3 +1,5 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     conditional: "list"
     font: "md_body_medium"

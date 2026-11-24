@@ -1,0 +1,12 @@
+# The list of the rests that can be cleared, in the body of the dialog.
+- param: {name: "width"}
+- param: {name: "height"}
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "config"
+    position: "0,0"
+    size: "$width,4*$list_item_height"
+    transparent: "1"
+    zPosition: "1"

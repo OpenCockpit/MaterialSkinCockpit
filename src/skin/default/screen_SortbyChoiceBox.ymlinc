@@ -11,7 +11,8 @@ screen:
     - xmlinc:
         file: "screenpart_ChoiceBoxBody.ymlinc"
         position: "$window_small_body_x,$window_small_body_y"
-        size: "$window_small_body_width,$window_small_body_height"
+        width: "$window_small_body_width"
+        height: "$window_small_body_height"
     - ePixmap:
         alphatest: "blend"
         pixmap: "icons/default.png"

@@ -19,4 +19,5 @@ screen:
     - xmlinc:
         file: "screenpart_RemoteTimerChannelListBody.ymlinc"
         position: "$window_small_body_x,$window_small_body_y"
-        size: "$window_small_body_width,$window_small_body_height"
+        width: "$window_small_body_width"
+        height: "$window_small_body_height"

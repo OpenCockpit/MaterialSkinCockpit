@@ -1,0 +1,22 @@
+# The settings list of the subtitles, and the frame rate of the video under it.
+- param: {name: "width"}
+- param: {name: "height"}
+- widget:
+    font: "md_body_medium"
+    itemCornerRadius: "$radius_item"
+    itemHeight: "$list_item_height"
+    name: "config"
+    position: "0,0"
+    size: "$width,9*$list_item_height"
+    transparent: "1"
+    zPosition: "1"
+- widget:
+    font: "md_body_small"
+    foregroundColor: "md_tertiary"
+    halign: "left"
+    name: "videofps"
+    position: "0,eval(9*$list_item_height+10)"
+    size: "$width,34"
+    transparent: "1"
+    valign: "center"
+    zPosition: "1"

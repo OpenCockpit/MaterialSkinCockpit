@@ -1,4 +1,6 @@
 # The settings of the adapter: as many rows as fit in the height of the part.
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     font: "md_body_medium"
     itemCornerRadius: "$radius_item"

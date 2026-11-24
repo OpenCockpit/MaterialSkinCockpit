@@ -1,8 +1,10 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface_overlay_soft"
     font: "md_body_medium"
     halign: "left"
-    position: "20,605"
+    position: "0,0"
     render: "Label"
     size: "1630,100"
     source: "epgcachelocation"

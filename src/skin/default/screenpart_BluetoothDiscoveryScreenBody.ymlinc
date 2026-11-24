@@ -1,3 +1,5 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height_icon"

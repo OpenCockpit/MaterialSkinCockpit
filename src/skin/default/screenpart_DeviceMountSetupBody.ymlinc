@@ -1,9 +1,11 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     font: "md_body_large"
     foregroundColor: "md_primary"
     halign: "center"
     name: "lab1"
-    position: "0,712"
+    position: "0,0"
     size: "$width,38"
     valign: "center"
     zPosition: "10"

@@ -24,8 +24,16 @@ skin.yml                      lists the screens (and families of screens)
 * **Parts** (`screenpart_*`) sit at their own origin: the top-left of their content is 0,0 and
   the includer's `position` carries the offset. A part that is given a `size` can use
   `$width`/`$height`; other attributes on the include become variables (`clock_font`, ...).
+  **A body (`screenpart_*Body*`) declares `width` and `height` as parameters** (`- param: {name: "width"}`) and is
+  included with `position`, `width` and `height` instead of `size`: the compiler puts `$width`/`$height` back afterwards and
+  warns about an attribute the body does not declare. What a body lays out starts at 0,0 of that box; a margin or a band that the
+  body leaves free (`screenpart_DeviceMountSetupBody`: the status line at the bottom) is in the includer (`position` plus the
+  margin, `width`/`height` minus it), not a constant in the body.
+  A body that a frame places for a `screenfamily` member gets the margin from the member: `content_dx` / `content_dy` in `skin.yml`
+  (the compiler hands every `content_*` of a member on to the frame, `screenpart_Screen*` apply them to the body's `position`,
+  `width` and `height`; 0 when not given).
   A part has no "template" kind: a part used by several screens (a window skeleton such as `screenpart_ConfigScreen`,
-  the key bar `screenpart_ButtonsBar`) is named for what it is, and a *Panel* is the content of one screen.
+  the key bar `screenpart_ButtonsBar`) is named for what it is, and the content of one screen's frame is a *Body* (with `width`/`height`, see below).
 * **Screens that differ only in name (and title)** are a `screenfamily` in `skin.yml`, not
   one file each.
 * Positions that follow the screen size use `$screen_width`, `$screen_height` and

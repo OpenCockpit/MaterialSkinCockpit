@@ -7,10 +7,12 @@ screen:
         size: "$window_large_width,$window_large_height"
         window_inset_x: "$window_large_body_x"
     - xmlinc:
-        file: "screenpart_tmdb1Panel.ymlinc"
+        file: "screenpart_tmdb1Body.ymlinc"
         position: "54,107"
-        size: "1660,795"
+        width: "1660"
+        height: "795"
     - xmlinc:
-        file: "screenpart_tmdb2Panel.ymlinc"
+        file: "screenpart_tmdb2Body.ymlinc"
         position: "54,169"
-        size: "1660,733"
+        width: "1660"
+        height: "733"

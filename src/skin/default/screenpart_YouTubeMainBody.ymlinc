@@ -1,8 +1,10 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     itemCornerRadius: "$radius_item"
-    position: "0,15"
+    position: "0,0"
     render: "Listbox"
-    size: "$width,eval(($height-15)/108*108)"
+    size: "$width,eval(($height)/108*108)"
     source: "list"
     transparent: "0"
     children:

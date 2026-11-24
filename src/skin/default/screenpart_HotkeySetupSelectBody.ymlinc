@@ -1,5 +1,7 @@
 # The list of the buttons (functions) on top, the chosen functions of the selected one below it, both as wide as the body,
 # and the description in up to two lines across the bottom. The chosen list is 6 rows high; the list gets the rows that are left.
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     itemCornerRadius: "$radius_item"
     itemHeight: "$list_item_height"

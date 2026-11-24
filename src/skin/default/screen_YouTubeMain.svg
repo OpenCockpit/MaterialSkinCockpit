@@ -10,9 +10,9 @@
 &lt;eLabel&gt; backgroundColor=&quot;md_surface&quot; cornerRadius=&quot;14&quot; position=&quot;372,183&quot; size=&quot;1176,714&quot; zPosition=&quot;-10&quot;</title></rect>
 <rect data-ref="0:4" data-src="screenpart_WindowHeader.ymlinc:12" x="396" y="123" width="1008" height="60" fill="#59a14f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_WindowHeader.ymlinc:12
 &lt;widget&gt; addon=&quot;ScreenHeader&quot; connection=&quot;Image,Title,ScreenPath&quot; position=&quot;396,123&quot; size=&quot;1008,60&quot;</title></rect>
-<rect data-ref="0:7" data-src="screenpart_YouTubeMainBody.ymlinc:1" x="396" y="228" width="1128" height="540" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_YouTubeMainBody.ymlinc:1
+<rect data-ref="0:7" data-src="screenpart_YouTubeMainBody.ymlinc:3" x="396" y="228" width="1128" height="540" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_YouTubeMainBody.ymlinc:3
 &lt;widget&gt; itemCornerRadius=&quot;12&quot; position=&quot;396,228&quot; render=&quot;Listbox&quot; size=&quot;1128,540&quot; source=&quot;list&quot; transparent=&quot;0&quot;</title></rect>
-<rect data-ref="0:8" data-src="screen_YouTubeMain.ymlinc:21" x="0" y="3" width="150" height="108" fill="#9c755f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_YouTubeMain.ymlinc:21
+<rect data-ref="0:8" data-src="screen_YouTubeMain.ymlinc:22" x="0" y="3" width="150" height="108" fill="#9c755f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_YouTubeMain.ymlinc:22
 &lt;widget&gt; name=&quot;thumbnail&quot; position=&quot;0,3&quot; size=&quot;150,108&quot;</title></rect>
 <rect data-ref="0:6" data-src="screen_YouTubeMain.ymlinc:10" x="1000" y="133" width="400" height="50" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screen_YouTubeMain.ymlinc:10
 &lt;widget&gt; font=&quot;md_body_large&quot; halign=&quot;center&quot; name=&quot;text&quot; position=&quot;1000,133&quot; size=&quot;400,50&quot; zPosition=&quot;1&quot;</title></rect>
@@ -26,8 +26,8 @@
 <text x="374" y="163"><tspan font-weight="bold">#1:4</tspan> eLabel</text>
 <text x="376" y="197"><tspan font-weight="bold">#1:10</tspan> eLabel</text>
 <text x="400" y="137"><tspan font-weight="bold">#3:12</tspan> widget</text>
-<text x="400" y="242"><tspan font-weight="bold">#6:1</tspan> list (Listbox)</text>
-<text x="4" y="17"><tspan font-weight="bold">#5:21</tspan> thumbnail</text>
+<text x="400" y="242"><tspan font-weight="bold">#6:3</tspan> list (Listbox)</text>
+<text x="4" y="17"><tspan font-weight="bold">#5:22</tspan> thumbnail</text>
 <text x="1004" y="147"><tspan font-weight="bold">#5:10</tspan> text</text>
 <text x="400" y="925"><tspan font-weight="bold">#4:4</tspan> widget</text>
 <text x="1320" y="138"><tspan font-weight="bold">#3:7</tspan> eLabel</text>

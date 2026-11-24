@@ -1,3 +1,5 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - xmlinc:
     file: "screenpart_Pig.ymlinc"
     position: "$width-435,5"

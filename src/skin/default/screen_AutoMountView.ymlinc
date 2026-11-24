@@ -7,5 +7,6 @@ screen:
         position: "0,0"
     - xmlinc:
         file: "screenpart_AutoMountViewBody.ymlinc"
-        position: "$window_large_body_x,$window_large_body_y"
-        size: "$window_large_body_width,$window_large_body_height"
+        position: "$window_large_body_x+221,$window_large_body_y"
+        width: "$window_large_body_width-221"
+        height: "$window_large_body_height"

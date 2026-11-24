@@ -1,4 +1,6 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - xmlinc:
     file: "screenpart_NetworkAdapterTestPanel.ymlinc"
-    position: "49,0"
+    position: "0,0"
     size: "2625,850"

@@ -10,7 +10,7 @@
 &lt;eLabel&gt; backgroundColor=&quot;md_surface&quot; cornerRadius=&quot;14&quot; position=&quot;372,183&quot; size=&quot;1176,714&quot; zPosition=&quot;-10&quot;</title></rect>
 <rect data-ref="0:4" data-src="screenpart_WindowHeader.ymlinc:12" x="396" y="123" width="1008" height="60" fill="#59a14f" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_WindowHeader.ymlinc:12
 &lt;widget&gt; addon=&quot;ScreenHeader&quot; connection=&quot;Image,Title,ScreenPath&quot; position=&quot;396,123&quot; size=&quot;1008,60&quot;</title></rect>
-<rect data-ref="0:6" data-src="screenpart_AutoBouquetsMaker_HideSectionsBody.ymlinc:1" x="396" y="213" width="1128" height="630" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_AutoBouquetsMaker_HideSectionsBody.ymlinc:1
+<rect data-ref="0:6" data-src="screenpart_AutoBouquetsMaker_HideSectionsBody.ymlinc:3" x="396" y="213" width="1128" height="630" fill="#b07aa1" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_AutoBouquetsMaker_HideSectionsBody.ymlinc:3
 &lt;widget&gt; itemCornerRadius=&quot;12&quot; position=&quot;396,213&quot; render=&quot;Listbox&quot; size=&quot;1128,630&quot; source=&quot;list&quot; transparent=&quot;0&quot;</title></rect>
 <rect data-ref="0:7" data-src="screenpart_Pager.ymlinc:9" x="396" y="848" width="1128" height="25" fill="#ff9da7" fill-opacity="0.45" stroke="#000000" stroke-opacity="0.6" stroke-width="1"><title>screenpart_Pager.ymlinc:9
 &lt;widget&gt; addon=&quot;Pager&quot; conditional=&quot;list&quot; connection=&quot;list&quot; maxPages=&quot;20&quot; position=&quot;396,848&quot; size=&quot;1128,25&quot;</title></rect>
@@ -24,7 +24,7 @@
 <text x="374" y="163"><tspan font-weight="bold">#1:4</tspan> eLabel</text>
 <text x="376" y="197"><tspan font-weight="bold">#1:10</tspan> eLabel</text>
 <text x="400" y="137"><tspan font-weight="bold">#3:12</tspan> widget</text>
-<text x="400" y="227"><tspan font-weight="bold">#5:1</tspan> list (Listbox)</text>
+<text x="400" y="227"><tspan font-weight="bold">#5:3</tspan> list (Listbox)</text>
 <text x="400" y="862"><tspan font-weight="bold">#6:9</tspan> widget</text>
 <text x="400" y="925"><tspan font-weight="bold">#4:4</tspan> widget</text>
 <text x="1320" y="138"><tspan font-weight="bold">#3:7</tspan> eLabel</text>

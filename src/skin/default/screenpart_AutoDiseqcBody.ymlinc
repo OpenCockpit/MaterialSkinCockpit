@@ -1,14 +1,16 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - ePixmap:
     alphatest: "blend"
     pixmap: "icons/scan-s.png"
-    position: "20,595"
+    position: "0,0"
     size: "96,96"
     zPosition: "2"
 - widget:
     font: "md_title_large"
     foregroundColor: "md_warning"
     halign: "left"
-    position: "130,595"
+    position: "110,0"
     render: "Label"
     shadowColor: "md_shadow"
     shadowOffset: "-1,-1"
@@ -21,7 +23,7 @@
     font: "md_title_large"
     foregroundColor: "md_warning"
     halign: "left"
-    position: "130,680"
+    position: "110,85"
     render: "Label"
     shadowColor: "md_shadow"
     shadowOffset: "-1,-1"

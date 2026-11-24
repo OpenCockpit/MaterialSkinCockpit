@@ -10,4 +10,5 @@ screen:
     - xmlinc:
         file: "screenpart_AutoBouquetsMaker_HideSectionsBody.ymlinc"
         position: "$window_medium_body_x,$window_medium_body_y"
-        size: "$window_medium_body_width,$window_medium_body_height"
+        width: "$window_medium_body_width"
+        height: "$window_medium_body_height"

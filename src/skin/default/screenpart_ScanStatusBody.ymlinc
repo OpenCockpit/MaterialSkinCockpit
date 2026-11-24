@@ -1,7 +1,9 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     font: "md_body_large"
     name: "scan_state"
-    position: "0,226"
+    position: "0,37"
     size: "810,70"
     transparent: "1"
     valign: "top"
@@ -12,5 +14,5 @@
     cornerRadius: "$radius_bar"
     name: "scan_progress"
     pixmap: "progress_big.png"
-    position: "0,189"
+    position: "0,0"
     size: "810,22"

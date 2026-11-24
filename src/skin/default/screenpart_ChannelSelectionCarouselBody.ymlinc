@@ -3,6 +3,8 @@
 # slot and scrolls the ones before it out of view, "All" would be gone) that stays where it is, "All" first, and scrolls an item at a time when there are more
 # genres than fit. The selected one is the genre that the services show: the services of its section only, all of them for "All". The keys for the next and the previous marker
 # move in it (it has no focus: left and right move in the services). The background of a selected cell is the one of the body, so that only the chip is seen, with its own rounded corners.
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     backgroundColorSelected: "md_surface"
@@ -10,7 +12,7 @@
     itemCornerRadius: "$radius_item"
     listOrientation: "horizontal"
     name: "genrelist"
-    position: "42,30"
+    position: "42,0"
     scrollType: "item"
     scrollbarMode: "showNever"
     size: "1800,40"
@@ -45,7 +47,7 @@
     carousel: "1"
     carouselZoom: "130"
     name: "list"
-    position: "30,245"
+    position: "30,215"
     scrollbarMode: "showNever"
     size: "1800,230"
     template: |
@@ -71,7 +73,7 @@
     font: "md_display_medium_emphasized"
     foregroundColor: "md_on_surface_variant"
     halign: "center"
-    position: "0,310"
+    position: "0,280"
     size: "30,100"
     text: "‹"
     transparent: "1"
@@ -81,7 +83,7 @@
     font: "md_display_medium_emphasized"
     foregroundColor: "md_on_surface_variant"
     halign: "center"
-    position: "1830,310"
+    position: "1830,280"
     size: "30,100"
     text: "›"
     transparent: "1"
@@ -97,7 +99,7 @@
     foregroundColor: "md_primary"
     halign: "left"
     noWrap: "1"
-    position: "43,649"
+    position: "43,619"
     render: "Label"
     size: "1347,43"
     source: "ServiceEvent"
@@ -110,7 +112,7 @@
     backgroundColor: "md_surface"
     font: "md_title_medium_emphasized"
     halign: "right"
-    position: "1380,649"
+    position: "1380,619"
     render: "Label"
     size: "450,43"
     source: "ServiceEvent"
@@ -124,7 +126,7 @@
     backgroundColor: "md_surface"
     font: "md_body_medium"
     halign: "left"
-    position: "43,699"
+    position: "43,669"
     render: "Label"
     size: "$width-51,200"
     source: "ServiceEvent"

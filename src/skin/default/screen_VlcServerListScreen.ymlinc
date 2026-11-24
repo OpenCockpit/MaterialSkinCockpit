@@ -9,7 +9,8 @@ screen:
     - xmlinc:
         file: "screenpart_VlcServerListScreenBody.ymlinc"
         position: "$window_large_body_x,$window_large_body_y"
-        size: "$window_large_body_width,$window_large_body_height"
+        width: "$window_large_body_width"
+        height: "$window_large_body_height"
     - ePixmap:
         alphatest: "blend"
         pixmap: "buttons/key_ok.png"

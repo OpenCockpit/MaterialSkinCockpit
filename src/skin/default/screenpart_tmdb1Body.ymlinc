@@ -1,3 +1,5 @@
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     font: "md_title_large"

@@ -1,6 +1,8 @@
 # The body of a ChoiceBox in the small window (screenpart_ScreenSmall): the window has a fixed size, nothing here resizes it. The
 # applet only lays out what is inside the body: the text above the list (if the box has one), the list, and the description of the
 # selected entry below it (if an entry has one). The list gets whole rows; if there are more entries than rows, it scrolls.
+- param: {name: "width"}
+- param: {name: "height"}
 - widget:
     backgroundColor: "md_surface"
     font: "md_title_medium_emphasized"

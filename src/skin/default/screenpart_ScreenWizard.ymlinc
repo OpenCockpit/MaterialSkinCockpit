@@ -1,8 +1,11 @@
 # The frame of a wizard and its body: a screenfamily of screen_* files hands the body in as content=, the name of the part (without
-# extension) that is placed in the body rectangle of the frame. A screen of its own, like screenpart_ScreenLarge.
+# extension) that is placed in the body rectangle of the frame (content_dx / content_dy: how far the body starts inside it, 0 by default). A screen of its own, like screenpart_ScreenLarge.
 screen:
   name: "ScreenWizard"
   children:
+    - param: {name: "content"}
+    - param: {name: "content_dx", default: "0"}
+    - param: {name: "content_dy", default: "0"}
     - xmlinc:
         file: "screenpart_Window.ymlinc"
         position: "center"
@@ -10,5 +13,6 @@ screen:
         window_inset_x: "$window_wizard_body_x"
     - xmlinc:
         file: "$content"
-        position: "$window_wizard_body_x,$window_wizard_body_y"
-        size: "$window_wizard_body_width,$window_wizard_body_height"
+        position: "$window_wizard_body_x+$content_dx,$window_wizard_body_y+$content_dy"
+        width: "$window_wizard_body_width-$content_dx"
+        height: "$window_wizard_body_height-$content_dy"
