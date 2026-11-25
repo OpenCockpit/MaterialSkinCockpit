@@ -65,9 +65,10 @@
     position: "20,830"
     size: "$width-20,1"
     zPosition: "10"
+# the pager vertically centered in the space between the line below the list (830) and the bottom of the body
 - xmlinc:
     file: "screenpart_Pager.ymlinc"
-    position: "20,845"
+    position: "20,(831+$height-25)/2"
     size: "$width-20,25"
     connection: "list"
     pager_max_pages: "20"

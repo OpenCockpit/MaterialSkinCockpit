@@ -1,0 +1,19 @@
+- param: {name: "width"}
+- param: {name: "height"}
+- widget:
+    itemCornerRadius: "$radius_item"
+    itemHeight: "52"
+    name: "list"
+    position: "0,0"
+    setColGap: "40"
+    setColWidths: "120,220"
+    setEventItemFont: "md_title_large"
+    setIconDistance: "10"
+    sidesMargin: "$list_indent"
+    size: "$width,16*52"
+    transparent: "1"
+- xmlinc:
+    file: "screenpart_Pager.ymlinc"
+    position: "0,$height-25"
+    size: "$width,25"
+    connection: "list"

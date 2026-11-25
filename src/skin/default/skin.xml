@@ -3580,10 +3580,11 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<eLabel backgroundColor="md_outline_variant" position="1139,104" size="1,870" zPosition="-5"/>
 		<widget itemCornerRadius="12" itemHeight="52" name="list" position="30,90" scrollbarMode="showNever" setColGap="40" setColWidths="120,220" setEventItemFont="md_title_large" setIconDistance="10" sidesMargin="10" size="1095,832" textOffset="10,0" transparent="1" valign="center"/>
 		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="20" position="30,974" size="1095,25" transparent="1"/>
-		<widget font="md_title_large" foregroundColor="md_primary" position="1164,240" render="Label" size="720,43" source="Event" transparent="1">
+		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,90" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
+		<widget font="md_title_large" foregroundColor="md_primary" position="1164,360" render="Label" size="720,43" source="Event" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="md_body_large" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1163,320" render="COCRunningText" size="720,455" source="Event" transparent="1" valign="top">
+		<widget font="md_body_large" halign="block" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1163,420" render="COCRunningText" size="720,500" source="Event" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="md_body_large" foregroundColor="md_secondary" position="1166,961" render="Label" size="330,38" source="Event" transparent="1">
@@ -3606,7 +3607,7 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">AsLengthHours</convert>
 		</widget>
-		<widget alphatest="blend" position="1163,90" render="Picon" size="200,120" source="Service" zPosition="12">
+		<widget alphatest="blend" position="1163,135" render="Picon" size="200,120" source="Service" zPosition="12">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -3680,7 +3681,7 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<widget backgroundColor="md_surface" cornerRadius="6;top" foregroundColor="md_on_surface" itemCornerRadius="6;top" name="timeline_text" position="52,93" scrollbarMode="showNever" size="1838,29" textOffset="10,0" valign="center" zPosition="2"/>
 		<widget EntryActiveBackgroundColor="md_error_container" EntryActiveBackgroundColorSelected="md_inverse_surface" EntryBackgroundColor="md_surface" EntryBackgroundColorSelected="md_inverse_surface" EntryBorderColor="md_outline_variant" EntryFont="md_body_medium" EntryForegroundColor="md_on_surface" EntryForegroundColorNowSelected="md_inverse_on_surface" EntryForegroundColorSelected="md_inverse_on_surface" EventBorderWidth="1" EventNamePadding="6" EventTextSidesMargin="10" IconXPadding="6" IconYPadding="4" RecIconSize="32" ServiceBorderWidth="1" ServiceFont="md_body_medium" ServiceForegroundColorNow="md_primary" ServiceNameBackgroundColor="md_surface_container_high" ServiceNameBackgroundColorSelected="md_primary_container" ServiceNameForegroundColor="md_on_surface" ServiceNamePadding="6" backgroundColor="md_surface" enableWrapAround="1" itemCornerRadius="12" itemHeight="72" name="list" position="50,125" scrollbarMode="showNever" size="1840,792" textOffset="10,0" valign="center"/>
 		<eLabel backgroundColor="md_outline_variant" position="50,920" size="1840,1" zPosition="10"/>
-		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="20" position="50,935" size="1840,25" transparent="1"/>
+		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="20" position="50,947" size="1840,25" transparent="1"/>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" font="md_title_small_emphasized" halign="center" position="63,931" render="RatingIconLabel" size="32,32" source="Event" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
@@ -7809,7 +7810,7 @@ self["tlayer"].setZPosition(-6)</applet>
 		<widget backgroundColor="md_surface" cornerRadius="6;top" foregroundColor="md_on_surface" itemCornerRadius="6;top" name="timeline_text" position="52,93" scrollbarMode="showNever" size="1838,29" textOffset="10,0" valign="center" zPosition="2"/>
 		<widget EntryActiveBackgroundColor="md_error_container" EntryActiveBackgroundColorSelected="md_inverse_surface" EntryBackgroundColor="md_surface" EntryBackgroundColorSelected="md_inverse_surface" EntryBorderColor="md_outline_variant" EntryFont="md_body_medium" EntryForegroundColor="md_on_surface" EntryForegroundColorNowSelected="md_inverse_on_surface" EntryForegroundColorSelected="md_inverse_on_surface" EventBorderWidth="1" EventNamePadding="6" EventTextSidesMargin="10" IconXPadding="6" IconYPadding="4" RecIconSize="32" ServiceBorderWidth="1" ServiceFont="md_body_medium" ServiceForegroundColorNow="md_primary" ServiceNameBackgroundColor="md_surface_container_high" ServiceNameBackgroundColorSelected="md_primary_container" ServiceNameForegroundColor="md_on_surface" ServiceNamePadding="6" backgroundColor="md_surface" enableWrapAround="1" itemCornerRadius="12" itemHeight="72" name="list" position="50,125" scrollbarMode="showNever" size="1840,792" textOffset="10,0" valign="center"/>
 		<eLabel backgroundColor="md_outline_variant" position="50,920" size="1840,1" zPosition="10"/>
-		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="20" position="50,935" size="1840,25" transparent="1"/>
+		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="20" position="50,947" size="1840,25" transparent="1"/>
 		<widget alphatest="blend" borderColor="md_shadow" borderWidth="1" cornerRadius="6" font="md_title_small_emphasized" halign="center" position="63,931" render="RatingIconLabel" size="32,32" source="Event" valign="center" widgetBorderColor="md_outline_variant" widgetBorderWidth="1" zPosition="1">
 			<convert type="EventName">RatingTextAndColor</convert>
 		</widget>
