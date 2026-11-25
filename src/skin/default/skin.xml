@@ -135,6 +135,71 @@
 		<parameter name="AllowUserDatesAndTimes" value="1,1"/>
 		<parameter name="PlutoTvColors" value="#00E3E3E3,#00A8C7FA"/>
 	</parameters>
+	<servicelisttemplates>
+		<styles>
+			<style fg="md_on_surface" fgNotAvail="md_outline" fgSelected="md_inverse_on_surface" name="event"/>
+			<style fg="md_on_surface_variant" fgNotAvail="md_outline" fgSelected="md_inverse_on_surface" name="next"/>
+			<style fg="md_secondary" fgNotAvail="md_outline" fgSelected="md_inverse_primary" name="remaining"/>
+			<style border="md_outline" borderSelected="md_inverse_primary" fg="md_on_surface_variant" fgSelected="md_inverse_primary" name="progress"/>
+			<style fg="md_outline_variant" fgSelected="md_outline_variant" name="marker_line"/>
+		</styles>
+		<template name="single" title="Single line">
+			<row for="service" gap="8" id="service" padding="10,20">
+				<item align="right" font="md_body_large" fontGroup="number" text="{number}" type="number" visible="cfg.numbers,hasnumber" width="85"/>
+				<item style="progress" type="progress" visible="cfg.barleft" width="60"/>
+				<item font="md_body_small" fontGroup="info" style="remaining" text="{percent}" type="text" visible="cfg.percleft,event" width="80"/>
+				<item margin="4" reserve="1" type="picon" visible="cfg.picons" width="auto"/>
+				<item type="servicetype" visible="cfg.typeLeft"/>
+				<item type="crypto" visible="cfg.cryptoLeft,crypted"/>
+				<item type="record" visible="cfg.recLeft,recorded"/>
+				<item font="md_body_large" fontGroup="name" text="{name}" type="text" width="@column"/>
+				<item type="servicetype" visible="cfg.typeRight"/>
+				<item type="crypto" visible="cfg.cryptoRight,crypted"/>
+				<item type="record" visible="cfg.recRight,recorded"/>
+				<item font="md_body_small" fontGroup="info" style="event" text="•  {event}" type="text" visible="event" width="*"/>
+				<item type="spacer" visible="!event" width="*"/>
+				<item style="progress" type="progress" visible="cfg.barright" width="60"/>
+				<item align="right" font="md_body_small" fontGroup="info" style="remaining" text="{percent}" type="text" visible="cfg.percright,event" width="80"/>
+			</row>
+			<row for="marker" gap="24" id="marker" padding="10,10">
+				<item height="1" style="marker_line" type="line" width="*"/>
+				<item font="md_body_large" fontGroup="name" text="{name}" type="text" width="auto"/>
+				<item height="1" style="marker_line" type="line" width="*"/>
+			</row>
+			<row for="directory" gap="8" id="directory" padding="10,10">
+				<item type="kind"/>
+				<item font="md_body_large" fontGroup="name" text="{name}" type="text" width="*"/>
+			</row>
+		</template>
+		<template base="single" itemHeight="84" name="double" title="Two lines">
+			<row for="service" gap="8" id="service" padding="10,20,6,0">
+				<item pos="10,6,125,72" type="picon" visible="cfg.picons"/>
+				<item type="spacer" visible="cfg.picons" width="125"/>
+				<item font="md_body_large" fontGroup="number" text="{number}" type="number" visible="cfg.numbers,hasnumber" width="auto"/>
+				<item font="md_body_large" fontGroup="name" text="{name}" type="text" width="auto"/>
+				<item type="servicetype" visible="cfg.typeAny"/>
+				<item type="crypto" visible="cfg.cryptoAny,crypted"/>
+				<item type="record" visible="cfg.recLeft,recorded"/>
+				<item type="record" visible="cfg.recRight,recorded"/>
+				<item type="spacer" width="*"/>
+				<item style="progress" type="progress" visible="cfg.bar" width="60"/>
+				<item align="right" font="md_body_small" fontGroup="info" style="remaining" text="{percent}" type="text" visible="cfg.percent,event" width="80"/>
+			</row>
+			<row for="service" gap="8" id="event" padding="10,20,0,6" visible="event">
+				<item type="spacer" visible="cfg.picons" width="125"/>
+				<item font="md_body_small" fontGroup="info" style="event" text="{event}" type="text" width="*"/>
+				<item align="right" font="md_body_small" fontGroup="remaining" style="remaining" text="{remaining}" type="text" width="auto"/>
+			</row>
+		</template>
+		<template base="double" name="double_next" title="Two lines and next event">
+			<row for="service" gap="8" id="event" padding="10,20,0,6" visible="event">
+				<item type="spacer" visible="cfg.picons" width="125"/>
+				<item font="md_body_small" fontGroup="info" style="event" text="{event}" type="text" width="*"/>
+				<item font="md_body_small" fontGroup="next" style="next" text="•  {next}" type="text" visible="nextevent" width="*"/>
+				<item align="right" font="md_body_small" fontGroup="remaining" style="remaining" text="{remaining}" type="text" width="auto"/>
+			</row>
+		</template>
+	</servicelisttemplates>
 	<switchpixmap>
 		<pixmap filename="icons/menu_on.png" name="menu_on"/>
 		<pixmap filename="icons/menu_off.png" name="menu_off"/>
@@ -3413,14 +3478,14 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<eLabel backgroundColor="md_surface_container_high" position="30,7" size="1740,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="30,6" size="1740,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="md_body_small" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="30,1027" size="1860,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
-		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,90" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 		<eLabel backgroundColor="md_outline_variant" position="1213,95" size="1,870" zPosition="-5"/>
-		<widget backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarBorder="md_outline" colorEventProgressbarBorderSelected="md_inverse_primary" colorEventProgressbarSelected="md_inverse_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_inverse_on_surface" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_inverse_primary" foregroundColorMarkedSelected="md_inverse_on_surface" foregroundColorServiceNotAvail="md_outline" itemCornerRadius="12" itemHeight="52" itemHeightTwoLine="84" markerLine="1" markerLineColor="md_outline_variant" markerTextAlignment="center" name="list" nonplayableMargins="0" piconMargin="4" position="38,90" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarMode="showNever" serviceEventSeparator=" • " serviceInfoFont="md_body_small" serviceNameFont="md_body_large" serviceNumberFont="md_body_large" serviceRemainingInfoFont="md_body_small" sidesMargin="10" size="1152,832" textOffset="10,0" textSeparator="  •  " valign="center"/>
-		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="15" position="30,974" size="1160,25" transparent="1"/>
+		<widget backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarSelected="md_inverse_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_inverse_on_surface" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_inverse_primary" foregroundColorMarkedSelected="md_inverse_on_surface" foregroundColorServiceNotAvail="md_outline" itemCornerRadius="12" itemHeight="52" itemHeightTwoLine="84" markerTextAlignment="center" name="list" piconMargin="4" position="38,90" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarMode="showNever" serviceInfoFont="md_body_small" serviceNameFont="md_body_large" serviceNumberFont="md_body_large" serviceRemainingInfoFont="md_body_small" sidesMargin="10" size="1152,832" textOffset="10,0" valign="center"/>
+		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="15" position="38,948" size="1152,25" transparent="1"/>
+		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,90" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 		<widget backgroundColor="md_surface_container_low" font="md_body_medium" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1245,475" render="COCRunningText" size="645,297" source="ServiceEvent" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget backgroundColor="md_outline_variant" position="1241,815" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
+		<widget backgroundColor="md_outline_variant" position="1245,815" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
 			<convert type="EventName">Name</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -3428,16 +3493,13 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<widget alphatest="blend" position="1245,135" render="Picon" size="200,120" source="ServiceEvent" zPosition="12">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="md_headline_small_emphasized" foregroundColor="md_primary" halign="center" noWrap="1" position="1245,240" render="Label" size="200,58" source="ServiceEvent" transparent="1" valign="bottom" zPosition="14">
-			<convert nostrip="1" type="ServiceName">  •  ,ORBPOS,TUNERSYSTEM</convert>
-		</widget>
 		<widget backgroundColor="md_surface_container_low" font="md_title_large" foregroundColor="md_primary" halign="left" noWrap="1" position="1245,419" render="Label" size="645,43" source="ServiceEvent" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface_container_low" font="md_title_medium_emphasized" position="1250,375" render="Label" size="160,30" source="ServiceEvent" transparent="1" valign="center">
+		<widget backgroundColor="md_surface_container_low" font="md_title_medium_emphasized" position="1245,375" render="Label" size="160,30" source="ServiceEvent" transparent="1" valign="center">
 			<convert nostrip="1" type="EventName">  •  ,TIMERANGE</convert>
 		</widget>
-		<widget backgroundColor="md_surface" borderColor="md_outline" borderWidth="1" cornerRadius="4" foregroundColor="md_on_surface_variant" position="1388,386" render="Progress" size="400,8" source="ServiceEvent" zPosition="6">
+		<widget backgroundColor="md_surface" borderColor="md_outline" borderWidth="1" cornerRadius="4" foregroundColor="md_on_surface_variant" position="1385,386" render="Progress" size="400,8" source="ServiceEvent" zPosition="6">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="md_title_medium_emphasized" halign="right" position="1805,375" render="Label" size="85,30" source="ServiceEvent" transparent="1" valign="center" zPosition="2">
@@ -3477,14 +3539,14 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<eLabel backgroundColor="md_surface_container_high" position="30,7" size="1740,60" zPosition="19"/>
 		<widget addon="ScreenHeader" backgroundColor="md_surface_container_high" connection="Image,Title,ScreenPath" pathFont="md_label_small_emphasized" pathForegroundColor="md_primary" position="30,6" size="1740,60" titleFont="md_title_small_emphasized" titleForegroundColor="md_primary" titleSingleFont="md_headline_large_emphasized" transparent="1" zPosition="20"/>
 		<widget actionButtonsPos="farRight" addon="ScreenButtonsBar" backgroundColor="md_surface_container_high" connection="key_red,key_green,key_yellow,key_blue,key_play,key_previous,key_left,key_info,key_help,key_pvr,key_menu,key_text,VKeyIcon,key_next,key_right,key_0" font="md_body_small" layoutStyle="fluid" pixmaps="key_red:buttons/key_red.png,key_green:buttons/key_green.png,key_yellow:buttons/key_yellow.png,key_blue:buttons/key_blue.png,key_play:buttons/key_play.png,key_info:buttons/key_info.png,key_help:buttons/key_help.png,key_pvr:buttons/key_pvr.png,key_menu:buttons/key_menu.png,key_text:buttons/key_text.png,VKeyIcon:buttons/key_text.png,key_previous:buttons/key_prev.png,key_next:buttons/key_next.png,key_left:buttons/key_left.png,key_right:buttons/key_right.png,key_0:buttons/key_0.png" position="30,1027" size="1860,36" spacingActionColorGroups="60" spacingColor="120" spacingPixmapText="10" zPosition="10"/>
-		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,90" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 		<eLabel backgroundColor="md_outline_variant" position="1213,95" size="1,870" zPosition="-5"/>
-		<widget backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarBorder="md_outline" colorEventProgressbarBorderSelected="md_inverse_primary" colorEventProgressbarSelected="md_inverse_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_inverse_on_surface" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_inverse_primary" foregroundColorMarkedSelected="md_inverse_on_surface" foregroundColorServiceNotAvail="md_outline" itemCornerRadius="12" itemHeight="52" itemHeightTwoLine="84" markerLine="1" markerLineColor="md_outline_variant" markerTextAlignment="center" name="list" nonplayableMargins="0" piconMargin="4" position="38,90" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarMode="showNever" serviceEventSeparator=" • " serviceInfoFont="md_body_small" serviceNameFont="md_body_large" serviceNumberFont="md_body_large" serviceRemainingInfoFont="md_body_small" sidesMargin="10" size="1152,832" textOffset="10,0" textSeparator="  •  " valign="center"/>
-		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="15" position="30,974" size="1160,25" transparent="1"/>
+		<widget backgroundColor="md_surface" backgroundColorMarked="md_surface_container_low" backgroundColorMarkedSelected="md_success" colorEventProgressbar="md_on_surface_variant" colorEventProgressbarSelected="md_inverse_primary" colorServiceDescription="md_on_surface" colorServiceDescriptionSelected="md_inverse_on_surface" enableWrapAround="1" foregroundColorEventRemaining="md_secondary" foregroundColorEventRemainingSelected="md_inverse_primary" foregroundColorMarkedSelected="md_inverse_on_surface" foregroundColorServiceNotAvail="md_outline" itemCornerRadius="12" itemHeight="52" itemHeightTwoLine="84" markerTextAlignment="center" name="list" piconMargin="4" position="38,90" progressBarWidth="60" progressPercentWidth="80" progressbarHeight="10" scrollbarMode="showNever" serviceInfoFont="md_body_small" serviceNameFont="md_body_large" serviceNumberFont="md_body_large" serviceRemainingInfoFont="md_body_small" sidesMargin="10" size="1152,832" textOffset="10,0" valign="center"/>
+		<widget addon="Pager" backgroundColor="md_surface" conditional="list" connection="list" maxPages="15" position="38,948" size="1152,25" transparent="1"/>
+		<widget backgroundColor="md_surface_overlay_strong" cornerRadius="8" position="1455,90" render="Pig" size="435,248" source="session.VideoPicture" widgetBorderColor="md_surface_container_high" widgetBorderWidth="2" zPosition="10"/>
 		<widget backgroundColor="md_surface_container_low" font="md_body_medium" halign="left" options="movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1" position="1245,475" render="COCRunningText" size="645,297" source="ServiceEvent" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget backgroundColor="md_outline_variant" position="1241,815" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
+		<widget backgroundColor="md_outline_variant" position="1245,815" render="FixedLabel" size="645,1" source="ServiceEvent" text="">
 			<convert type="EventName">Name</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -3492,16 +3554,13 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<widget alphatest="blend" position="1245,135" render="Picon" size="200,120" source="ServiceEvent" zPosition="12">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget backgroundColor="md_surface" font="md_headline_small_emphasized" foregroundColor="md_primary" halign="center" noWrap="1" position="1245,240" render="Label" size="200,58" source="ServiceEvent" transparent="1" valign="bottom" zPosition="14">
-			<convert nostrip="1" type="ServiceName">  •  ,ORBPOS,TUNERSYSTEM</convert>
-		</widget>
 		<widget backgroundColor="md_surface_container_low" font="md_title_large" foregroundColor="md_primary" halign="left" noWrap="1" position="1245,419" render="Label" size="645,43" source="ServiceEvent" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="md_surface_container_low" font="md_title_medium_emphasized" position="1250,375" render="Label" size="160,30" source="ServiceEvent" transparent="1" valign="center">
+		<widget backgroundColor="md_surface_container_low" font="md_title_medium_emphasized" position="1245,375" render="Label" size="160,30" source="ServiceEvent" transparent="1" valign="center">
 			<convert nostrip="1" type="EventName">  •  ,TIMERANGE</convert>
 		</widget>
-		<widget backgroundColor="md_surface" borderColor="md_outline" borderWidth="1" cornerRadius="4" foregroundColor="md_on_surface_variant" position="1388,386" render="Progress" size="400,8" source="ServiceEvent" zPosition="6">
+		<widget backgroundColor="md_surface" borderColor="md_outline" borderWidth="1" cornerRadius="4" foregroundColor="md_on_surface_variant" position="1385,386" render="Progress" size="400,8" source="ServiceEvent" zPosition="6">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget backgroundColor="md_surface" font="md_title_medium_emphasized" halign="right" position="1805,375" render="Label" size="85,30" source="ServiceEvent" transparent="1" valign="center" zPosition="2">
@@ -5540,7 +5599,7 @@ self["list"].resize(bodyWidth, rows * itemHeight)</applet>
 		<widget alphatest="blend" backgroundColor="md_transparent" borderColor="md_shadow" borderWidth="2" font="md_title_large" halign="left" name="servicename" position="10,72" size="651,70" transparent="1" valign="center"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="VideoMode" position="127,67" resolution="1920,1080" size="600,75" title="VideoMode">
-		<widget backgroundColor="md_transparent" borderColor="md_shadow" borderWidth="2" font="md_headline_medium" halign="left" name="videomode" position="0,0" size="570,60" transparent="1" valign="center"/>
+		<widget backgroundColor="md_transparent" borderColor="md_shadow" borderWidth="2" font="md_headline_medium" halign="left" name="videomode" position="0,0" size="600,75" transparent="1" valign="center"/>
 	</screen>
 	<screen backgroundColor="md_transparent" flags="wfNoBorder" name="VideoEnhancementSetup" position="fill" resolution="1920,1080" title="VideoEnhancementSetup">
 		<eLabel backgroundColor="md_surface_container_high" cornerRadius="16" position="96,54" size="1728,972" zPosition="-11"/>
@@ -6117,7 +6176,7 @@ self["tlayer"].setZPosition(-6)</applet>
 			<convert type="ClockToText">Format:%F %H:%M</convert>
 		</widget>
 		<eLabel font="md_display_small" position="50,250" size="400,100" text="Streaming Info:"/>
-		<widget font="md_display_small" halign="left" noWrap="1" position="450,250" render="Label" size="1620,800" source="session.CurrentService" valign="top">
+		<widget font="md_display_small" halign="left" noWrap="1" position="450,250" render="Label" size="1420,780" source="session.CurrentService" valign="top">
 			<convert type="ClientsStreaming">INFO_RESOLVE_SHORT</convert>
 		</widget>
 	</screen>

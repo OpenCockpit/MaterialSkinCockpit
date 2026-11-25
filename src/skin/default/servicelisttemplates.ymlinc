@@ -1,0 +1,141 @@
+# The rows of the channel list, drawn by enigma2's templated service list (eListboxServiceTemplateContent, see enigma2
+# doc/SERVICELIST_TEMPLATES.md). Used instead of the classic list when the channel selection setting "Channel list design"
+# (config.usage.servicelist_template, setup level expert) is not "legacy"; a GUI restart is needed after changing it. "auto" picks
+# single, double or double_next by the "two lines" setting.
+# The widget "list" of the channel selection still gives what the templates do not set: the item height of single, the colours
+# of the name and the selection, the corner radius of the selected row.
+# Every row starts at list_indent, a service row ends at 2*list_indent (clear of the rounded corners of the selection): the classic list puts the progress bar much further from the right edge (see
+# listboxservice.cpp, the right margin counts every distance twice) and cannot be told otherwise by the skin.
+- servicelisttemplates:
+    children:
+      - styles:
+          children:
+            # the event (now): colorServiceDescription of the classic list
+            - style:
+                name: "event"
+                fg: "md_on_surface"
+                fgSelected: "md_inverse_on_surface"
+                fgNotAvail: "md_outline"
+            # the next event
+            - style:
+                name: "next"
+                fg: "md_on_surface_variant"
+                fgSelected: "md_inverse_on_surface"
+                fgNotAvail: "md_outline"
+            # the remaining time and the percentage: foregroundColorEventRemaining
+            - style:
+                name: "remaining"
+                fg: "md_secondary"
+                fgSelected: "md_inverse_primary"
+                fgNotAvail: "md_outline"
+            # the progress bar: fg is the elapsed part, border its frame (colorEventProgressbar, colorEventProgressbarBorder)
+            - style:
+                name: "progress"
+                fg: "md_on_surface_variant"
+                fgSelected: "md_inverse_primary"
+                border: "md_outline"
+                borderSelected: "md_inverse_primary"
+            # the lines left and right of a marker (markerLineColor)
+            - style:
+                name: "marker_line"
+                fg: "md_outline_variant"
+                fgSelected: "md_outline_variant"
+
+      # one line: number, picon, icons, name, event, progress
+      - template:
+          name: "single"
+          title: "Single line"
+          children:
+            - row:
+                id: "service"
+                for: "service"
+                gap: "8"
+                padding: "$list_indent,2*$list_indent"
+                children:
+                  - item: {type: "number", text: "{number}", width: "85", align: "right", font: "md_body_large", fontGroup: "number", visible: "cfg.numbers,hasnumber"}
+                  - item: {type: "progress", width: "60", style: "progress", visible: "cfg.barleft"}
+                  - item: {type: "text", text: "{percent}", width: "80", font: "md_body_small", fontGroup: "info", style: "remaining", visible: "cfg.percleft,event"}
+                  - item: {type: "picon", width: "auto", margin: "4", reserve: "1", visible: "cfg.picons"}
+                  - item: {type: "servicetype", visible: "cfg.typeLeft"}
+                  - item: {type: "crypto", visible: "cfg.cryptoLeft,crypted"}
+                  - item: {type: "record", visible: "cfg.recLeft,recorded"}
+                  - item: {type: "text", text: "{name}", width: "@column", font: "md_body_large", fontGroup: "name"}
+                  - item: {type: "servicetype", visible: "cfg.typeRight"}
+                  - item: {type: "crypto", visible: "cfg.cryptoRight,crypted"}
+                  - item: {type: "record", visible: "cfg.recRight,recorded"}
+                  - item: {type: "text", text: "•  {event}", width: "*", font: "md_body_small", fontGroup: "info", style: "event", visible: "event"}
+                  - item: {type: "spacer", width: "*", visible: "!event"}
+                  - item: {type: "progress", width: "60", style: "progress", visible: "cfg.barright"}
+                  - item: {type: "text", text: "{percent}", width: "80", align: "right", font: "md_body_small", fontGroup: "info", style: "remaining", visible: "cfg.percright,event"}
+            # a marker: its name in the middle, a line left and right of it
+            - row:
+                id: "marker"
+                for: "marker"
+                gap: "24"
+                padding: "$list_indent,$list_indent"
+                children:
+                  - item: {type: "line", width: "*", height: "1", style: "marker_line"}
+                  - item: {type: "text", text: "{name}", width: "auto", font: "md_body_large", fontGroup: "name"}
+                  - item: {type: "line", width: "*", height: "1", style: "marker_line"}
+            # a bouquet or a folder
+            - row:
+                id: "directory"
+                for: "directory"
+                gap: "8"
+                padding: "$list_indent,$list_indent"
+                children:
+                  - item: {type: "kind"}
+                  - item: {type: "text", text: "{name}", width: "*", font: "md_body_large", fontGroup: "name"}
+
+      # two lines: the picon over both, number, name, icons and progress on the first line, the event and its remaining time on the second
+      - template:
+          name: "double"
+          title: "Two lines"
+          base: "single"
+          itemHeight: "84"
+          children:
+            - row:
+                id: "service"
+                for: "service"
+                gap: "8"
+                padding: "$list_indent,2*$list_indent,6,0"
+                children:
+                  - item: {type: "picon", pos: "$list_indent,6,125,72", visible: "cfg.picons"}
+                  - item: {type: "spacer", width: "125", visible: "cfg.picons"}
+                  - item: {type: "number", text: "{number}", width: "auto", font: "md_body_large", fontGroup: "number", visible: "cfg.numbers,hasnumber"}
+                  - item: {type: "text", text: "{name}", width: "auto", font: "md_body_large", fontGroup: "name"}
+                  - item: {type: "servicetype", visible: "cfg.typeAny"}
+                  - item: {type: "crypto", visible: "cfg.cryptoAny,crypted"}
+                  - item: {type: "record", visible: "cfg.recLeft,recorded"}
+                  - item: {type: "record", visible: "cfg.recRight,recorded"}
+                  - item: {type: "spacer", width: "*"}
+                  - item: {type: "progress", width: "60", style: "progress", visible: "cfg.bar"}
+                  - item: {type: "text", text: "{percent}", width: "80", align: "right", font: "md_body_small", fontGroup: "info", style: "remaining", visible: "cfg.percent,event"}
+            - row:
+                id: "event"
+                for: "service"
+                visible: "event"
+                gap: "8"
+                padding: "$list_indent,2*$list_indent,0,6"
+                children:
+                  - item: {type: "spacer", width: "125", visible: "cfg.picons"}
+                  - item: {type: "text", text: "{event}", width: "*", font: "md_body_small", fontGroup: "info", style: "event"}
+                  - item: {type: "text", text: "{remaining}", width: "auto", align: "right", font: "md_body_small", fontGroup: "remaining", style: "remaining"}
+
+      # two lines as double, the second line with the event and the next event
+      - template:
+          name: "double_next"
+          title: "Two lines and next event"
+          base: "double"
+          children:
+            - row:
+                id: "event"
+                for: "service"
+                visible: "event"
+                gap: "8"
+                padding: "$list_indent,2*$list_indent,0,6"
+                children:
+                  - item: {type: "spacer", width: "125", visible: "cfg.picons"}
+                  - item: {type: "text", text: "{event}", width: "*", font: "md_body_small", fontGroup: "info", style: "event"}
+                  - item: {type: "text", text: "•  {next}", width: "*", font: "md_body_small", fontGroup: "next", style: "next", visible: "nextevent"}
+                  - item: {type: "text", text: "{remaining}", width: "auto", align: "right", font: "md_body_small", fontGroup: "remaining", style: "remaining"}

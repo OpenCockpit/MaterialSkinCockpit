@@ -12,6 +12,6 @@ screen:
         halign: "left"
         name: "videomode"
         position: "0,0"
-        size: "570,60"
+        size: "600,75"
         transparent: "1"
         valign: "center"

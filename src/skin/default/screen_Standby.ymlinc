@@ -46,7 +46,7 @@ screen:
         noWrap: "1"
         position: "450,250"
         render: "Label"
-        size: "1620,800"
+        size: "1420,780"
         source: "session.CurrentService"
         valign: "top"
         children:

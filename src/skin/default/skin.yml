@@ -19,6 +19,8 @@ skin:
     - xmlinc:
         file: "parameters.ymlinc"
     - xmlinc:
+        file: "servicelisttemplates.ymlinc"
+    - xmlinc:
         file: "switchpixmap.ymlinc"
     - xmlinc:
         file: "setups.ymlinc"

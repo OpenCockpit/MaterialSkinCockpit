@@ -1194,14 +1194,43 @@ def installCarousel(selection):
 
 
 def install():
-    """Puts PyServiceList in place of Components.ServiceList.ServiceList where the plugin's skin is the primary skin and the setting is on."""
+    """Puts PyServiceList in place of the list of enigma2 where the plugin's skin is the primary skin and the setting is on: in place of
+    Components.ServiceList.createServiceList where enigma2 has it, else in place of Components.ServiceList.ServiceList."""
     import Components.ServiceList as module  # pylint: disable=import-outside-toplevel
     original = module.ServiceList
-    if getattr(original, "isPyServiceListFactory", False):
+    if getattr(original, "isPyServiceListFactory", False) or getattr(getattr(module, "createServiceList", None), "isPyServiceListFactory", False):
+        return
+
+    def usePyServiceList():
+        return (settings.python_servicelist.value or building["carousel"]) and not building["classic"] and isSkinActive()
+
+    originalFactory = getattr(module, "createServiceList", None)
+    if originalFactory is not None:
+        # An enigma2 that makes its list with createServiceList() (the classic list or the one of the skin's <servicelisttemplates>):
+        # that function is replaced, the class ServiceList stays what it is. TemplatedServiceList derives from it and calls it by its
+        # name, a function in its place broke it ("'TemplatedServiceList' object has no attribute 'ItemHeight'" at the start).
+        def createServiceListFactory(serviceList):
+            if usePyServiceList():
+                try:
+                    return PyServiceList(serviceList)
+                except Exception as err:  # pylint: disable=broad-except
+                    logger.error("PyServiceList failed, the list of enigma2 is used: %r", err)
+            return originalFactory(serviceList)
+
+        createServiceListFactory.isPyServiceListFactory = True
+        module.createServiceList = createServiceListFactory
+        try:
+            import Screens.ChannelSelection as selection  # pylint: disable=import-outside-toplevel
+            if getattr(selection, "createServiceList", None) is originalFactory:  # it has been imported with the name already
+                selection.createServiceList = createServiceListFactory
+            installBouquetBar(selection)
+            installCarousel(selection)
+        except ImportError as err:
+            logger.error("Screens.ChannelSelection: %r", err)
         return
 
     def createServiceList(serviceList):
-        if (settings.python_servicelist.value or building["carousel"]) and not building["classic"] and isSkinActive():
+        if usePyServiceList():
             try:
                 return PyServiceList(serviceList)
             except Exception as err:  # pylint: disable=broad-except

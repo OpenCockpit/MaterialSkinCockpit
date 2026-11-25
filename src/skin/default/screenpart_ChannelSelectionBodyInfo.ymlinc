@@ -1,0 +1,120 @@
+- param: {name: "width"}
+- param: {name: "height"}
+- xmlinc:
+    file: "screenpart_Pig.ymlinc"
+    position: "$width-435,0"
+    size: "435,248"
+- widget:
+    backgroundColor: "md_surface_container_low"
+    font: "md_body_medium"
+    halign: "left"
+    options: "movetype=swimming,direction=top,startdelay=4000,pause=3000,steptime=50,pagelength=0,wrap,repeat=1"
+    position: "0,385"
+    render: "COCRunningText"
+    size: "$width,297"
+    source: "ServiceEvent"
+    transparent: "1"
+    valign: "top"
+    children:
+      - convert:
+          type: "EventName"
+          text: "FullDescription"
+- widget:
+    backgroundColor: "md_outline_variant"
+    position: "0,725"
+    render: "FixedLabel"
+    size: "$width,1"
+    source: "ServiceEvent"
+    text: ""
+    children:
+      - convert:
+          type: "EventName"
+          text: "Name"
+      - convert:
+          type: "ConditionalShowHide"
+- widget:
+    NumberOfItems: "4"
+    backgroundColor: "md_surface"
+    font: "md_body_medium"
+    foregroundColor: "md_on_surface"
+    noLabel: "1"
+    noWrap: "1"
+    position: "0,745"
+    render: "NextEpgInfo"
+    size: "$width,132"
+    source: "ServiceEvent"
+    timeColor: "md_on_surface"
+    transparent: "1"
+    valign: "top"
+- widget:
+    position: "0,45"
+    render: "Picon"
+    size: "200,120"
+    source: "ServiceEvent"
+    zPosition: "12"
+    children:
+      - convert:
+          type: "ServiceName"
+          text: "Reference"
+- widget:
+    backgroundColor: "md_surface_container_low"
+    font: "md_title_large"
+    foregroundColor: "md_primary"
+    halign: "left"
+    noWrap: "1"
+    position: "0,329"
+    render: "Label"
+    size: "$width,43"
+    source: "ServiceEvent"
+    transparent: "1"
+    children:
+      - convert:
+          type: "EventName"
+          text: "Name"
+- widget:
+    backgroundColor: "md_surface_container_low"
+    font: "md_title_medium_emphasized"
+    position: "0,285"
+    render: "Label"
+    size: "160,30"
+    source: "ServiceEvent"
+    transparent: "1"
+    valign: "center"
+    children:
+      - convert:
+          nostrip: "1"
+          type: "EventName"
+          text: "  •  ,TIMERANGE"
+- widget:
+    backgroundColor: "md_surface"
+    borderColor: "md_outline"
+    borderWidth: "1"
+    cornerRadius: "$radius_bar"
+    foregroundColor: "md_on_surface_variant"
+    position: "140,296"
+    render: "Progress"
+    size: "400,8"
+    source: "ServiceEvent"
+    zPosition: "6"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "Progress"
+- widget:
+    backgroundColor: "md_surface"
+    font: "md_title_medium_emphasized"
+    halign: "right"
+    position: "$width-85,285"
+    render: "Label"
+    size: "85,30"
+    source: "ServiceEvent"
+    transparent: "1"
+    valign: "center"
+    zPosition: "2"
+    children:
+      - convert:
+          type: "EventTime"
+          text: "Remaining"
+      - convert:
+          type: "RemainingToText"
+          text: "InMinutes"
