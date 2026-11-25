@@ -2,14 +2,6 @@ screen:
   name: "RemoteTimerBouquetList"
   position: "fill"
   children:
-    - widget:
-        halign: "center"
-        name: "text"
-        origin: "screen"
-        position: "779,101"
-        size: "1110,912"
-        valign: "center"
-        zPosition: "1"
     - xmlinc:
         file: "screenpart_Window.ymlinc"
         position: "center"
@@ -20,3 +12,11 @@ screen:
         position: "$window_small_body_x,$window_small_body_y"
         width: "$window_small_body_width"
         height: "$window_small_body_height"
+    - widget:
+        font: "md_title_large"
+        halign: "center"
+        name: "text"
+        position: "$window_small_body_x,$window_small_body_y"
+        size: "$window_small_body_width,$window_small_body_height"
+        valign: "center"
+        zPosition: "1"

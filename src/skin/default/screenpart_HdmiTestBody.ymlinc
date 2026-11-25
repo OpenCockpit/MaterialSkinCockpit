@@ -14,7 +14,7 @@
     foregroundColor: "md_tertiary"
     name: "address"
     position: "0,535"
-    size: "465,38"
+    size: "420,38"
     zPosition: "1"
 - widget:
     font: "md_body_large"
